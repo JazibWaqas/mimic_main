@@ -385,7 +385,7 @@ export default function VaultPage() {
                                                 ? item.thumbnail_url
                                                 : `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}${item.thumbnail_url.startsWith("/") ? item.thumbnail_url : `/${item.thumbnail_url}`}`}
                                             alt={item.filename}
-                                            className="w-full h-full object-contain"
+                                            className="w-full h-full object-cover"
                                         />
                                     ) : (
                                         <div className="w-full h-full flex flex-col items-center justify-center bg-indigo-500/5 gap-2">
