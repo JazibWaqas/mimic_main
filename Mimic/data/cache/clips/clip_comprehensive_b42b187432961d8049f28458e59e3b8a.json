@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Reflection",
+    "Establishing",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Joyful"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Emotional storytelling",
+    "Celebration sequences",
+    "Character arcs"
+  ],
+  "avoid_for": [
+    "Fast-paced sports edits",
+    "Abstract visuals"
+  ],
+  "vibes": [],
+  "content_description": "A naval officer reflects before joining a joyful celebration with friends on a beach.",
+  "best_moments": {
+    "High": {
+      "start": 6.0,
+      "end": 7.014,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "High-energy group celebration and cheering with expressive movement."
+    },
+    "Medium": {
+      "start": 3.2,
+      "end": 5.8,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Steady shot of characters in a beach setting with moderate visual interest."
+    },
+    "Low": {
+      "start": 0.2,
+      "end": 2.8,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Intimate close-up with minimal movement, focusing on character emotion."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:59:30"
+}

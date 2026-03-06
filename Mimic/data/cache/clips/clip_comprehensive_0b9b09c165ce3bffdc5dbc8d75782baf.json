@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends enthusiastically singing along to music inside a car at night.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 6.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak group energy and vocal expression as the camera pans to the back seat."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Clear focus on the primary subject singing with moderate camera movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "The start of the clip, providing context before the full group energy peaks."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "0b9b09c165ce3bffdc5dbc8d75782baf"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:07:27"
+}

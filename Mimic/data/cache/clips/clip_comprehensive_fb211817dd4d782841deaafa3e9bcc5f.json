@@ -1,0 +1,59 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel vlogs",
+    "Adventure sequences",
+    "Cultural exploration"
+  ],
+  "avoid_for": [
+    "Intimate close-ups",
+    "Calm reflective moments"
+  ],
+  "vibes": [],
+  "content_description": "People navigate a rocky river crossing in a mountainous landscape with a Pakistani flag in the background.",
+  "best_moments": {
+    "High": {
+      "start": 11.0,
+      "end": 13.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Increased movement and coordination as the group reaches the far bank."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady, controlled movement as people step across the stones."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup showing the environment and the start of the crossing."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "fb211817dd4d782841deaafa3e9bcc5f"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:47"
+}

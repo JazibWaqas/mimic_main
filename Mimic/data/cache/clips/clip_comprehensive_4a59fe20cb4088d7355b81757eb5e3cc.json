@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Crowd",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Urban atmosphere montages",
+    "Travel transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "People walk through a busy urban street at night past a brightly lit NDURE store.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Fast whip pan across the street scene creates high visual energy."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Steady walking pace towards the storefront with consistent movement."
+    },
+    "Low": {
+      "start": 1.0,
+      "end": 3.762993,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "The most stable portion of the clip, though still containing significant activity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "4a59fe20cb4088d7355b81757eb5e3cc"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:52:24"
+}

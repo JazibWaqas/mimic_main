@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Reunion scenes",
+    "Social montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Professional corporate interviews"
+  ],
+  "vibes": [],
+  "content_description": "Two men greet each other with a hug and laughter outside a house at night.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 6.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak emotional expression and physical contact during the hug."
+    },
+    "Medium": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Continued joyful interaction and conversation after the initial greeting."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial approach and setup before the high-energy interaction begins."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "aae5575cadc5d345f06bf22772bb8fa4"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:06:12"
+}

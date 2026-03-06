@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "Childhood memories",
+    "Joyful highlights"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Children playing a clapping game and laughing in a living room.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and enthusiastic clapping from the children."
+    },
+    "Medium": {
+      "start": 11.0,
+      "end": 14.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained interaction as the girl prepares for the next round."
+    },
+    "Low": {
+      "start": 23.0,
+      "end": 26.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A quiet pause in the game with minimal movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:17:52"
+}

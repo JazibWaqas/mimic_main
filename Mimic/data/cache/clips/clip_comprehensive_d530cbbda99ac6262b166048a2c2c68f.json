@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Still",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid social media clips",
+    "Laughter montages"
+  ],
+  "avoid_for": [
+    "Serious documentaries",
+    "Calm reflective scenes"
+  ],
+  "vibes": [],
+  "content_description": "Two friends are seen in a room, one hugging the other from behind before they both break into laughter.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak of the laughter and the sudden release of movement."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The initial interaction and hold before the laughter peaks."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The most stable three-second window available in this short, active clip."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "d530cbbda99ac6262b166048a2c2c68f"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:33"
+}

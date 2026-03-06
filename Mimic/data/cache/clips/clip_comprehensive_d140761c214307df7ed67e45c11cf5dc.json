@@ -1,0 +1,53 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Opening establishing shots",
+    "Build-up sequences"
+  ],
+  "avoid_for": [
+    "Fast-paced action cuts",
+    "Intimate dialogue"
+  ],
+  "vibes": [],
+  "content_description": "A pilot walks across an aircraft carrier deck toward a fighter jet during golden hour.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.263,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Pilot approaches the jet, increasing visual scale and anticipation."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 3.263,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Consistent walking motion across the deck."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial framing of the pilot and the aircraft carrier environment."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:56:07"
+}

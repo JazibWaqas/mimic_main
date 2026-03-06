@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Social media montages",
+    "Transition points"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Serious documentary segments"
+  ],
+  "vibes": [],
+  "content_description": "Two men walk down a forest path and perform a synchronized kick towards the camera.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 7.5,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "The synchronized kick provides a high-energy climax to the movement."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The subjects walk closer to the camera, increasing visual engagement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The subjects are at a distance, setting the scene in the forest."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "cc820e80a07d2463d660ceefe2d209af"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:00"
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Social montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate settings"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends sitting on a lawn, laughing and playfully kicking their legs together.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 4.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and synchronized leg movement."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial interaction and building laughter."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Setting the scene of friends hanging out on the grass."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c3242dc60f8b9f74a7d6de6544048ec8"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:07:12"
+}

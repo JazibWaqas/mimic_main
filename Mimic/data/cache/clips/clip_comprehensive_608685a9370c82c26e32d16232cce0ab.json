@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Travel and lifestyle montages",
+    "Establishing location shots"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Consistent single-subject narratives"
+  ],
+  "vibes": [],
+  "content_description": "A montage featuring Formula 1 cars racing at night, a person meditating in a gym, and a man running through Las Vegas.",
+  "best_moments": {
+    "High": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "High-speed racing action with dynamic camera tracking and clear subject focus."
+    },
+    "Medium": {
+      "start": 13.5,
+      "end": 16.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady movement of a runner through a vibrant urban environment at night."
+    },
+    "Low": {
+      "start": 9.5,
+      "end": 12.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Static, well-composed shot of meditation providing a calm contrast to the action."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:51:48"
+}

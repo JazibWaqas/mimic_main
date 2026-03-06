@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Action montages",
+    "Leisure activity highlights"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Two people driving bumper cars in an indoor arena with sparks flying from the floor.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Initial acceleration with visible sparks and dynamic movement."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained movement as the cars circle the arena."
+    },
+    "Low": {
+      "start": 5.5,
+      "end": 8.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Cars moving further away with reduced visual intensity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "fc4aca4ad4f749de52e542a949258b2e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:54"
+}

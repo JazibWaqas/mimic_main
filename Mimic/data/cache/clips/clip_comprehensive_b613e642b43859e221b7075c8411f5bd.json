@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Sports promos",
+    "Racing montages",
+    "Action sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Nature documentaries"
+  ],
+  "vibes": [],
+  "content_description": "A professional racing car speeds around a track followed by shots of a driver and racing team in the pits.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Fast tracking shot of the racing car at high speed"
+    },
+    "Medium": {
+      "start": 6.0,
+      "end": 9.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady tracking shot of the racing team walking through the pits"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Wide aerial establishing shot of the racetrack"
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:06:18"
+}

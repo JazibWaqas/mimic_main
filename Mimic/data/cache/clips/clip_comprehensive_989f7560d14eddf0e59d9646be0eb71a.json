@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Training montages",
+    "Sports promos",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A montage showing a man's intense physical training and a celebratory firework display at a racetrack.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 8.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Vibrant fireworks display over a racetrack providing peak visual energy."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Focused physical training with push-ups and sit-ups showing steady effort."
+    },
+    "Low": {
+      "start": 9.5,
+      "end": 12.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calm interior shot of a modern facility with minimal subject movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:07:00"
+}

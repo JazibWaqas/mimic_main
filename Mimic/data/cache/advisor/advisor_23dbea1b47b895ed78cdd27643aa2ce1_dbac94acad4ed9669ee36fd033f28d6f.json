@@ -1,0 +1,643 @@
+{
+  "text_overlay_intent": "The text 'For the stories we'll tell later' frames every moment as a memory-in-the-making, demanding shots that feel like future nostalgia—moments of shared experience that will be retold with warmth and significance.",
+  "dominant_narrative": "This video is about the collective joy of friendship forged through shared travel and adventure, captured as memories to be cherished.",
+  "arc_stage_guidance": {
+    "Intro": {
+      "primary_emotional_carrier": "ADVENTURE",
+      "supporting_material": "Scenic travel shots that establish the journey's beginning and the group's shared destination.",
+      "intent_diluting_material": "Solo shots without group context, static landscape pans that lack a sense of movement or anticipation.",
+      "reasoning": "The intro must establish the 'we'—the collective embarking on an adventure. It's about the promise of the trip, not just the scenery. The PEACE vibe is present but should be a subtle undertone of anticipation, not the dominant carrier.",
+      "recommended_clips": [
+        "clip_107.mp4",
+        "clip_122.mp4",
+        "clip_142.mp4",
+        "clip_165.mp4",
+        "clip_140.mp4",
+        "clip_112.mp4",
+        "clip_131.mp4",
+        "clip_164.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Build-up": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Candid interactions and laughter during transit or early activities that reveal group chemistry.",
+      "intent_diluting_material": "Extended shots of pure scenery without human presence or reaction.",
+      "reasoning": "This stage transitions from 'going somewhere' to 'being together.' The emotional core shifts from external adventure to internal group joy, building the relational foundation for the peak. ADVENTURE supports but JOY must lead.",
+      "recommended_clips": [
+        "clip_114.mp4",
+        "clip_115.mp4",
+        "clip_127.mp4",
+        "clip_137.mp4",
+        "clip_147.mp4",
+        "clip_110.mp4",
+        "clip_121.mp4",
+        "clip_128.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Peak": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "High-energy group activities, celebrations, and unfiltered laughter that feel like the trip's highlight reel.",
+      "intent_diluting_material": "Solo action shots, overly chaotic or dark footage that loses the warmth of shared experience.",
+      "reasoning": "This is the payoff—the 'stories' being made. It's a crescendo of collective euphoria. The JOY must be infectious and communal, with ADVENTURE and ACTION serving as the exciting backdrop to the group's bond.",
+      "recommended_clips": [
+        "clip_103.mp4",
+        "clip_104.mp4",
+        "clip_109.mp4",
+        "clip_123.mp4",
+        "clip_124.mp4",
+        "clip_126.mp4",
+        "clip_134.mp4",
+        "clip_135.mp4",
+        "clip_136.mp4",
+        "clip_139.mp4",
+        "clip_144.mp4",
+        "clip_145.mp4",
+        "clip_154.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Outro": {
+      "primary_emotional_carrier": "PEACE",
+      "supporting_material": "A final, warm group moment or a contemplative return to travel/scenery that bookends the journey.",
+      "intent_diluting_material": "Abrupt cuts to high energy or new action that disrupts the reflective closure.",
+      "reasoning": "The outro transforms the high-energy peak into a memory. It should feel like catching your breath together, imbued with the nostalgic warmth promised by the text. It's the first moment of looking back.",
+      "recommended_clips": [
+        "clip_133.mp4",
+        "clip_164.mp4",
+        "clip_131.mp4",
+        "clip_122.mp4"
+      ],
+      "required_energy": ""
+    }
+  },
+  "library_alignment": {
+    "strengths": [
+      "Abundant 'People-Group' and 'High Energy' clips perfectly support the JOY-driven peak and group narrative.",
+      "Strong presence of candid laughter and group interaction aligns with 'Should-Have' content."
+    ],
+    "editorial_tradeoffs": [
+      "Scarcity of pure 'Medium' and 'Low' energy clips may require using truncated segments or the quieter moments within 'High' energy clips (e.g., the scenic pans in clip_122) to build the intro and outro with the required PEACE vibe.",
+      "Must-Have 'Travel/Transit' shots are present but often embedded within group activity clips, requiring careful extraction to serve establishing functions."
+    ],
+    "constraint_gaps": [
+      "Very scarce 'Low' energy material makes crafting a purely contemplative intro challenging—the PEACE vibe must be evoked through composition and grading within available clips.",
+      "Scarcity of dedicated 'Night/Campfire' scenes limits the ability to fully explore the day-to-night arc suggested by the pacing."
+    ]
+  },
+  "editorial_strategy": "Prioritize clips where the group's reaction to the experience (joy, wonder, laughter) is more prominent than the activity itself, using adventure as the canvas for friendship.",
+  "remake_strategy": "Add more dedicated golden-hour landscape shots with the group in frame as observers, not just participants, and a genuine campfire scene to solidify the nostalgic, storytelling atmosphere implied by the text.",
+  "primary_narrative_subject": "People-Group",
+  "allowed_supporting_subjects": [
+    "Place-Nature"
+  ],
+  "subject_lock_strength": 0.9,
+  "editorial_motifs": [
+    {
+      "trigger": "Golden hour lighting",
+      "desired_continuity": "Emotional-Release",
+      "priority": "High"
+    },
+    {
+      "trigger": "Group laughter",
+      "desired_continuity": "Semantic-Resonance",
+      "priority": "High"
+    },
+    {
+      "trigger": "Motion through landscapes (vehicles, hiking)",
+      "desired_continuity": "Motion-Carry",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Transition from day to night",
+      "desired_continuity": "Narrative-Contrast",
+      "priority": "Medium"
+    }
+  ],
+  "segment_moment_plans": {
+    "1": {
+      "segment_id": 1,
+      "moments": [
+        {
+          "clip_filename": "clip_107.mp4",
+          "moment_energy_level": "Medium",
+          "start": 0.0,
+          "end": 0.93,
+          "duration": 0.93,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_107.mp4 (0.0-0.93s) perfectly matches the segment's Intro/Establish function with its steady tracking of a group walking along a snowy path, aligning with the 'Journey' vibe and Medium energy requirement. As the first segment with no previous cut, it establishes narrative context with stable framing and appropriate duration fit.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.93,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "2": {
+      "segment_id": 2,
+      "moments": [
+        {
+          "clip_filename": "clip_104.mp4",
+          "moment_energy_level": "Medium",
+          "start": 3.0,
+          "end": 3.93,
+          "duration": 0.93,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Build' role aligns with the segment's 'Arrival' vibe and 'Intro' arc stage, showing subjects walking closer to the camera with medium energy that matches the reference segment's energy level. The 2.5-second duration allows for a clean 0.93s extraction from the stable portion, satisfying the Hold Authority Rule for this visual-origin segment with Normal expected hold.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.93,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "3": {
+      "segment_id": 3,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "Medium",
+          "start": 0.0,
+          "end": 0.93,
+          "duration": 0.93,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment fits perfectly because: 1) It's a stable 'Build' moment matching the segment's 'Action' shot function and 'Medium' energy requirement, 2) The 0.93s duration fits exactly within the 2.0s available duration, 3) The 'steady approach towards the camera with moderate speed and tracking motion' aligns with the 'Adventure' vibe and 'Intro' arc stage, 4) It provides clean narrative continuity from the previous clip_104.mp4 without jarring contrast.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.93,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "4": {
+      "segment_id": 4,
+      "moments": [
+        {
+          "clip_filename": "clip_107.mp4",
+          "moment_energy_level": "Low",
+          "start": 6.5,
+          "end": 7.43,
+          "duration": 0.93,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Reflection' role aligns with the segment's 'Build-up' arc stage and 'Peace' vibe, featuring a calm view of treetops and sky that provides visual tranquility. The 0.93s duration fits perfectly within the stable 1.0s moment, and the low energy matches the segment's 'Low' energy requirement while offering a natural contrast from the previous clip's action.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.93,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "5": {
+      "segment_id": 5,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "Medium",
+          "start": 23.5,
+          "end": 24.89,
+          "duration": 1.39,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_109.mp4 (23.5-24.89s) perfectly matches the segment's requirements: 1.39s duration, medium energy, joy vibe, and build-up arc stage. The 'laughter continues but subjects begin to stabilize and sit up' creates a joyful build-up that flows naturally from the previous clip's snowy path scene, maintaining positive emotional continuity while introducing new joyful content.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 1.39,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "6": {
+      "segment_id": 6,
+      "moments": [
+        {
+          "clip_filename": "clip_106.mp4",
+          "moment_energy_level": "Low",
+          "start": 5.8,
+          "end": 7.874688,
+          "duration": 2.074688,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment perfectly matches the segment's 'Reflection' vibe with low energy and stable framing, showing the aftermath of action where the subject observes results, fitting the 'Release' shot function and 'Long' expected hold requirement.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        },
+        {
+          "clip_filename": "clip_106.mp4",
+          "moment_energy_level": "High",
+          "start": 4.0,
+          "end": 5.5,
+          "duration": 1.5,
+          "moment_role": "Climax",
+          "stable_moment": true,
+          "reason": "The moment the rifle is fired and the balloons pop, representing peak action.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 3.574688,
+      "is_single_moment": false,
+      "chaining_reason": "Selected moment (2.07s) insufficient for segment (2.32s)"
+    },
+    "7": {
+      "segment_id": 7,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "High",
+          "start": 2.0,
+          "end": 2.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Climax' role perfectly matches the segment's 'Peak' arc stage and 'High' energy requirement, with the jet ski passing close to camera creating intense visual energy. The 0.46s duration fits within the stable 1.5s moment, and the action-oriented content aligns with the 'Action' shot function.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "8": {
+      "segment_id": 8,
+      "moments": [
+        {
+          "clip_filename": "clip_108.mp4",
+          "moment_energy_level": "High",
+          "start": 0.0,
+          "end": 0.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's peak visual energy from the boat's speed and wind effect perfectly matches the segment's 'Freedom' vibe and 'Peak' arc stage, while its 1.5s duration allows precise extraction of exactly 0.47s from the climax. The high energy aligns with the segment's 'High' energy requirement and 'Action' shot function.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "9": {
+      "segment_id": 9,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "High",
+          "start": 12.5,
+          "end": 12.96,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's peak laughter and expressive facial reactions perfectly match the 'Celebration' vibe and 'Peak' arc stage, with high energy fitting the segment's 0.46s duration and stable framing supporting the visual-origin cut.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "10": {
+      "segment_id": 10,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "High",
+          "start": 2.0,
+          "end": 2.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Climax' role aligns with the segment's 'Peak' arc stage and 'High' energy, while the jet ski passing close to the camera with visible spray visually embodies the 'Connection' vibe through proximity and dynamic interaction. The 0.47s duration fits perfectly within this stable moment's 1.5s window, adhering to the Restraint Rule by using a single continuous moment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "11": {
+      "segment_id": 11,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "High",
+          "start": 12.5,
+          "end": 12.96,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's peak laughter and expressive facial reactions perfectly match the segment's 'Joy' vibe and 'Peak' arc stage, while its stable framing and 2.5-second duration allow for a clean 0.46s extraction without compromising quality.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "12": {
+      "segment_id": 12,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "High",
+          "start": 2.0,
+          "end": 2.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This High-energy 'Climax' moment from clip_103.mp4 perfectly matches the segment's 'Peak' arc stage and 'Energy' vibe with its jet ski passing close to camera with visible spray. The 0.47s duration fits precisely within the stable 1.5s moment, and the visual action aligns with the 'Action' shot function while maintaining narrative flow from the previous clip's climax.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "13": {
+      "segment_id": 13,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "High",
+          "start": 2.0,
+          "end": 2.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from the same clip provides perfect continuity while matching the segment's high-energy peak atmosphere requirement with visible spray detail, fitting the 0.46s duration precisely within a stable climax moment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "14": {
+      "segment_id": 14,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "High",
+          "start": 12.5,
+          "end": 12.97,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_109.mp4 perfectly matches the segment's requirements: it's a 0.47s excerpt from a stable 'Climax' moment with 'Peak laughter and expressive facial reactions' that directly aligns with the reference segment's 'Joy' vibe, 'High' energy, and 'Peak' arc stage. The visual reaction shot function is satisfied by the expressive facial reactions, and the short duration fits precisely within the segment timing.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "15": {
+      "segment_id": 15,
+      "moments": [
+        {
+          "clip_filename": "clip_104.mp4",
+          "moment_energy_level": "High",
+          "start": 5.5,
+          "end": 5.96,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's synchronized kick provides a high-energy climax that perfectly matches the segment's 'Celebration' vibe and 'Peak' arc stage, with stable framing suitable for the short 0.46s duration and visual-origin cut.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "16": {
+      "segment_id": 16,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "High",
+          "start": 12.5,
+          "end": 12.96,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_109.mp4 perfectly matches the segment's requirements: it has 'High' energy and 'Joy' vibe with peak laughter and expressive facial reactions, aligning with the 'Peak' arc stage and 'Reaction' shot function. The 2.5-second stable moment provides ample duration to extract exactly 0.46s of continuous footage without needing multiple cuts, respecting the Restraint Rule.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "17": {
+      "segment_id": 17,
+      "moments": [
+        {
+          "clip_filename": "clip_108.mp4",
+          "moment_energy_level": "High",
+          "start": 0.0,
+          "end": 0.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's peak visual energy from the boat's speed and wind effect perfectly matches the segment's 'High energy, Freedom vibe, Peak arc stage' requirements. The 1.5s duration allows precise extraction of exactly 0.47s from the climax, fitting the short expected hold while maintaining the intense action needed for this visual-origin segment with Dense CDE.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "18": {
+      "segment_id": 18,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "High",
+          "start": 2.0,
+          "end": 2.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Climax' role perfectly matches the segment's 'Peak' arc stage and 'High' energy requirement, with the jet ski passing close to camera creating visual 'Connection' through proximity and spray. The stable framing ensures clean execution for this short visual-origin segment with Dense CDE expectation.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "19": {
+      "segment_id": 19,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "High",
+          "start": 2.0,
+          "end": 2.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_103.mp4 (2.0-2.47s) provides peak action with visible spray as the jet ski passes close to camera, perfectly matching the segment's high-energy 'Peak' arc stage and 'Action' shot function. The 0.47s duration fits exactly within the stable climax moment, maintaining visual continuity from the previous clip_103.mp4 while delivering the required intensity.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "20": {
+      "segment_id": 20,
+      "moments": [
+        {
+          "clip_filename": "clip_103.mp4",
+          "moment_energy_level": "High",
+          "start": 2.0,
+          "end": 2.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_103.mp4 fits perfectly because it matches the segment's 'High' energy, 'Joy' vibe, and 'Peak' arc stage with its peak action of a jet ski passing close to camera with visible spray. The 0.46s duration can be extracted from this stable 1.5s climax moment, and it maintains continuity since we're staying within the same clip as the previous segment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "21": {
+      "segment_id": 21,
+      "moments": [
+        {
+          "clip_filename": "clip_107.mp4",
+          "moment_energy_level": "High",
+          "start": 4.5,
+          "end": 4.97,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.47s segment requires a high-energy atmospheric peak moment for a short visual hold. The dynamic camera pan in clip_107's High-energy moment (4.5-6.5s) provides exactly that - a sweeping upward motion through trees that creates atmospheric immersion while matching the peak arc stage. The 0.47s duration fits perfectly within this stable moment's range.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "22": {
+      "segment_id": 22,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "High",
+          "start": 12.5,
+          "end": 12.96,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_109.mp4 perfectly matches the segment's requirements: it's a 0.46s slice of peak laughter and expressive facial reactions (High energy, Joy vibe, Peak arc stage) that serves as a Reaction shot function. The stable moment provides clean visual continuity from the previous clip while delivering the emotional payoff needed for this short, high-energy segment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "23": {
+      "segment_id": 23,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "High",
+          "start": 12.5,
+          "end": 12.97,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip_109.mp4 fits perfectly because: 1) It matches the segment's 'High' energy and 'Peak' arc_stage with its 'Climax' role of peak laughter and expressive facial reactions, 2) The 'Connection' vibe aligns with the emotional human interaction, 3) The 0.47s duration can be precisely extracted from this stable moment's 2.5s duration, and 4) It provides natural continuity from the previous clip_109.mp4 while maintaining the action shot function.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "24": {
+      "segment_id": 24,
+      "moments": [
+        {
+          "clip_filename": "clip_109.mp4",
+          "moment_energy_level": "Medium",
+          "start": 23.5,
+          "end": 24.81585,
+          "duration": 1.31585,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment fits perfectly as an outro segment with 'Connection' vibe - the subjects' laughter transitioning to stabilization creates a natural emotional resolution that matches the segment's 1.31585s duration and 'Long' expected hold. The medium energy level aligns with the reference's 'Medium' energy requirement, and the stable moment satisfies Rule 2's Hold Authority for visual-origin segments.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 1.31585,
+      "is_single_moment": true,
+      "chaining_reason": null
+    }
+  },
+  "library_assessment": null,
+  "creative_audit": null,
+  "overall_strategy": "",
+  "required_improvements": [],
+  "cache_version": "4.1",
+  "cached_at": "2026-03-04T12:50:10.789011"
+}

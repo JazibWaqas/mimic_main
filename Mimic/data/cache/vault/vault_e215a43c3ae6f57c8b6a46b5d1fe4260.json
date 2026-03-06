@@ -1,0 +1,353 @@
+{
+  "header": "This edit aimed to create a cohesive narrative across 24 segments, focusing on pacing and emotional resonance. The goal was to optimize the library's content to meet the edit's demands.",
+  "advisor": {
+    "hero": "The library's limitations significantly impacted the edit, forcing strategic decisions to prioritize pacing and narrative coherence over ideal motif matches.",
+    "body": "Given the library's gaps and the edit's pacing priorities, decisions often involved choosing between maintaining momentum and perfectly matching the intended motifs. This led to a tradeoff between narrative coherence and emotional resonance in some segments."
+  },
+  "decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to establish a journey feel for this segment.",
+      "decision": "I used clip_005.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed for an arrival feeling in this segment.",
+      "decision": "I selected clip_002.mp4 due to the lack of better options in the library.",
+      "what_if": "No viable upgrade was available.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey an adventure vibe.",
+      "decision": "I locked in clip_001.mp4 as it was the best available choice.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to evoke peace in this segment.",
+      "decision": "I deployed clip_029.mp4 as a structural anchor to preserve the edit's rhythmic soul.",
+      "what_if": "Replacing with joy could have enhanced the segment but would have disrupted pacing.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    },
+    {
+      "segment_id": 5,
+      "what_i_tried": "I aimed for a joyous feeling.",
+      "decision": "I used clip_007.mp4 due to its availability and decent match.",
+      "what_if": "No better alternative was found in the library.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 6,
+      "what_i_tried": "I sought to convey reflection.",
+      "decision": "I deployed clip_004.mp4 to maintain the edit's momentum, prioritizing pacing over a perfect motif match.",
+      "what_if": "Replacing with joy could have improved the segment but at the cost of pacing coherence.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    },
+    {
+      "segment_id": 7,
+      "what_i_tried": "I wanted to inject energy into this segment.",
+      "decision": "I selected clip_014.mp4 as it was the best available option.",
+      "what_if": "No stronger alternative existed in the library.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 8,
+      "what_i_tried": "I aimed for a feeling of freedom.",
+      "decision": "I used clip_006.mp4 due to its decent match and availability.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 9,
+      "what_i_tried": "I sought to convey celebration.",
+      "decision": "I locked in clip_010.mp4 as it was the best choice available.",
+      "what_if": "No better alternative was found.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 10,
+      "what_i_tried": "I wanted to show connection.",
+      "decision": "I selected clip_016.mp4 due to its availability and match.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 11,
+      "what_i_tried": "I aimed for joy in this segment.",
+      "decision": "I used clip_011.mp4 as it was the best available choice.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 12,
+      "what_i_tried": "I sought to inject energy.",
+      "decision": "I locked in clip_023.mp4 due to its availability.",
+      "what_if": "No better alternative was available.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 13,
+      "what_i_tried": "I wanted to create an atmosphere.",
+      "decision": "I selected clip_024.mp4 as it was the best available option.",
+      "what_if": "No stronger alternative existed in the library.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 14,
+      "what_i_tried": "I aimed for joy.",
+      "decision": "I used clip_015.mp4 due to its decent match and availability.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 15,
+      "what_i_tried": "I sought to convey celebration.",
+      "decision": "I locked in clip_012.mp4 as it was the best available choice.",
+      "what_if": "No better alternative was found in the library.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 16,
+      "what_i_tried": "I wanted to evoke joy.",
+      "decision": "I selected clip_025.mp4 due to its availability and match.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 17,
+      "what_i_tried": "I aimed for a feeling of freedom.",
+      "decision": "I used clip_032.mp4 as it was the best available option.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 18,
+      "what_i_tried": "I sought to show connection.",
+      "decision": "I locked in clip_028.mp4 due to its availability and decent match.",
+      "what_if": "No better alternative was found in the library.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 19,
+      "what_i_tried": "I wanted to inject energy.",
+      "decision": "I selected clip_035.mp4 as it was the best choice available.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 20,
+      "what_i_tried": "I aimed for joy.",
+      "decision": "I used clip_018.mp4 due to its availability and match.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 21,
+      "what_i_tried": "I sought to create an atmosphere.",
+      "decision": "I locked in clip_031.mp4 as it was the best available option.",
+      "what_if": "No better alternative was found.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 22,
+      "what_i_tried": "I wanted to evoke joy.",
+      "decision": "I selected clip_022.mp4 due to its availability and decent match.",
+      "what_if": "No stronger alternative existed in the library.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 23,
+      "what_i_tried": "I aimed for connection.",
+      "decision": "I used clip_036.mp4 as it was the best available choice.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 24,
+      "what_i_tried": "I sought to convey connection.",
+      "decision": "I deployed clip_013.mp4 as a structural anchor to preserve the edit's rhythmic soul.",
+      "what_if": "Replacing with peace could have enhanced the segment but would have disrupted pacing.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    }
+  ],
+  "executive_summary": [
+    "The edit prioritized pacing and narrative coherence over perfect motif matches due to library gaps.",
+    "Key segments were deployed as structural anchors to preserve the edit's rhythmic soul.",
+    "The library's scarcity in certain motifs led to compromises, but the edit's momentum was maintained.",
+    "Tone adjustments were made to enhance the emotional impact without applying specific styling.",
+    "The technical discipline focused on syncopated pacing and tightly synced beats."
+  ],
+  "key_decision_stream": [
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to evoke peace in this segment.",
+      "decision": "I deployed clip_029.mp4 as a structural anchor to preserve the edit's rhythmic soul.",
+      "what_if": "Replacing with joy could have enhanced the segment but would have disrupted pacing.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    },
+    {
+      "segment_id": 6,
+      "what_i_tried": "I sought to convey reflection.",
+      "decision": "I deployed clip_004.mp4 to maintain the edit's momentum, prioritizing pacing over a perfect motif match.",
+      "what_if": "Replacing with joy could have improved the segment but at the cost of pacing coherence.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    },
+    {
+      "segment_id": 24,
+      "what_i_tried": "I sought to convey connection.",
+      "decision": "I deployed clip_013.mp4 as a structural anchor to preserve the edit's rhythmic soul.",
+      "what_if": "Replacing with peace could have enhanced the segment but would have disrupted pacing.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    }
+  ],
+  "friction_log": [
+    "The edit began with high confidence due to the library's initial offerings.",
+    "As the edit progressed, confidence waned due to the library's gaps and scarcity in certain motifs.",
+    "By the end, strategic decisions prioritizing pacing and narrative coherence over perfect motif matches became necessary to maintain the edit's integrity."
+  ],
+  "post_mortem": {
+    "worked": "The edit successfully maintained its pacing and narrative coherence despite library gaps.",
+    "didnt": "Perfect motif matches were often compromised due to the library's limitations.",
+    "responsibility": {
+      "vibe": "library",
+      "emotion": "library"
+    }
+  },
+  "next_steps": [
+    "Enhance the library with more diverse and specific motifs to reduce gaps.",
+    "Consider adding more clips that can serve as structural anchors for pacing.",
+    "Review and refine the edit to ensure that the narrative priorities align with the viewer's emotional journey."
+  ],
+  "clip_suggestions": [
+    "Adding clips that convey a sense of peace and joy without disrupting the pacing could enhance future edits.",
+    "Including more atmospheric and energetic clips could help maintain momentum.",
+    " Clips that show connection and freedom without being too repetitive would be beneficial.",
+    "Diversifying the library with more unique and specific motifs would reduce the need for compromises.",
+    "Substitutes for overused clips with similar vibes and subjects would reduce repetition.",
+    "More celebration and reflection clips could add depth to future narratives.",
+    "Atmosphere and energy clips that are not overly used could help in maintaining a fresh feel."
+  ],
+  "technical": [
+    "The technical discipline focused on maintaining a syncopated pacing and tightly synced beats to preserve the edit's rhythmic soul.",
+    "Tone adjustments were made to enhance emotional impact without applying specific styling, given the lack of styling applied.",
+    "The edit's technical score of 8.0 indicates a good balance between narrative coherence and technical execution."
+  ]
+}

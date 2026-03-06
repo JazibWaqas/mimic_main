@@ -1,0 +1,1057 @@
+{
+  "text_overlay": "The memories we all want to make with our friends",
+  "text_style": {
+    "font_style": "Serif",
+    "animation": "Static",
+    "placement": "Top-third",
+    "color_effects": "White with subtle shadow"
+  },
+  "text_behavior": {
+    "appearance_logic": "Continuous",
+    "entry_moment": "Opening-frame",
+    "exit_rule": "Hold-past-frame",
+    "priority": "Primary"
+  },
+  "text_cadence": "Static",
+  "text_events": [],
+  "narrative_message": "A high-energy celebration of friendship and the vibrant memories created during a mountain adventure.",
+  "intent_clarity": "Clear",
+  "color_grading": {
+    "tone": "Vibrant",
+    "contrast": "Medium",
+    "specific_look": "Commercial Clean"
+  },
+  "aspect_ratio": "1:1",
+  "visual_effects": [
+    "Slow motion",
+    "Motion blur"
+  ],
+  "stylistic_invariants": [
+    "Hard cuts only",
+    "Persistent top-third text",
+    "Rhythmic repetition of shot sequences"
+  ],
+  "shot_variety": {
+    "dominant_scale": "Mixed",
+    "variety_level": "High variety"
+  },
+  "editing_style": "Memory reel",
+  "cut_style": "Hard cuts",
+  "transition_effects": [],
+  "emotional_intent": "Nostalgic",
+  "arc_description": "The edit establishes a rapid-fire sequence of diverse travel moments that loops rhythmically, creating a dense and joyful collage of memories.",
+  "pacing_feel": "Relentless",
+  "visual_balance": "Balanced",
+  "peak_density": "Dense",
+  "music_sync": "Tightly synced",
+  "audio_style": {
+    "genre": "Bollywood Pop",
+    "vocal_presence": "Mixed",
+    "energy": "High"
+  },
+  "must_have_content": [
+    "Group camaraderie shots",
+    "Scenic mountain landscapes",
+    "Action-oriented travel activities",
+    "Iconic travel landmarks"
+  ],
+  "should_have_content": [
+    "POV travel perspectives",
+    "Candid smiles and laughter"
+  ],
+  "avoid_content": [
+    "Static or empty landscapes",
+    "Low-energy or somber moments"
+  ],
+  "music_structure": {
+    "phrases": [
+      "Intro beat",
+      "Vocal build-up",
+      "Rhythmic loop"
+    ],
+    "accent_moments": [
+      "Every 0.46s beat hit"
+    ],
+    "ending_type": "Hard stop"
+  },
+  "total_duration": 14.230975,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 0.46,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Intro",
+      "shot_function": "Action",
+      "relation_to_previous": "None",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 2,
+      "start": 0.46,
+      "end": 0.93,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Scenic",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Intro",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Spatial-Movement",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 3,
+      "start": 0.93,
+      "end": 1.39,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 4,
+      "start": 1.39,
+      "end": 1.86,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 5,
+      "start": 1.86,
+      "end": 2.32,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Static",
+      "vibe": "Atmospheric",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Build-up",
+      "shot_function": "Establish",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "None"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 6,
+      "start": 2.32,
+      "end": 2.79,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Build-up",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 7,
+      "start": 2.79,
+      "end": 3.25,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Scenic",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Build-up",
+      "shot_function": "Detail",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Spatial-Movement",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 8,
+      "start": 3.25,
+      "end": 3.72,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Build-up",
+      "shot_function": "Establish",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Spatial-Movement",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 9,
+      "start": 3.72,
+      "end": 4.18,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Build-up",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 10,
+      "start": 4.18,
+      "end": 4.64,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 11,
+      "start": 4.64,
+      "end": 5.11,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Static",
+      "vibe": "Reflective",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Build-up",
+      "shot_function": "Establish",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 12,
+      "start": 5.11,
+      "end": 5.57,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Atmospheric",
+      "shot_scale": "Medium",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Build-up",
+      "shot_function": "Detail",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "None"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 13,
+      "start": 5.57,
+      "end": 6.04,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Triumphant",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Payoff",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": true,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 14,
+      "start": 6.04,
+      "end": 6.5,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 15,
+      "start": 6.5,
+      "end": 6.97,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Scenic",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Spatial-Movement",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 16,
+      "start": 6.97,
+      "end": 7.43,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Peak",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 17,
+      "start": 7.43,
+      "end": 7.89,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 18,
+      "start": 7.89,
+      "end": 8.36,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Static",
+      "vibe": "Atmospheric",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Peak",
+      "shot_function": "Establish",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "None"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 19,
+      "start": 8.36,
+      "end": 8.82,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Peak",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 20,
+      "start": 8.82,
+      "end": 9.29,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Scenic",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Peak",
+      "shot_function": "Detail",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Spatial-Movement",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 21,
+      "start": 9.29,
+      "end": 9.75,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Peak",
+      "shot_function": "Establish",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Spatial-Movement",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 22,
+      "start": 9.75,
+      "end": 10.22,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Peak",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 23,
+      "start": 10.22,
+      "end": 10.68,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 24,
+      "start": 10.68,
+      "end": 11.15,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Static",
+      "vibe": "Reflective",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Peak",
+      "shot_function": "Establish",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 25,
+      "start": 11.15,
+      "end": 11.61,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Atmospheric",
+      "shot_scale": "Medium",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Peak",
+      "shot_function": "Detail",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "None"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 26,
+      "start": 11.61,
+      "end": 12.07,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Triumphant",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Payoff",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": true,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 27,
+      "start": 12.07,
+      "end": 12.54,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Outro",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 28,
+      "start": 12.54,
+      "end": 13.0,
+      "duration": 0.46,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Scenic",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Outro",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Spatial-Movement",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 29,
+      "start": 13.0,
+      "end": 13.47,
+      "duration": 0.47,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Joyful",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Outro",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "Gaze",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Handheld"
+    },
+    {
+      "id": 30,
+      "start": 13.47,
+      "end": 14.230975,
+      "duration": 0.760975,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Adventurous",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Outro",
+      "shot_function": "Button",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Normal",
+      "temporal_weight": "Breath",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Action-Completion",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Subtle"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "Physical-Action",
+        "type": "Physical-Action"
+      },
+      "camera_movement": "Handheld"
+    }
+  ],
+  "overall_reasoning": "The video utilizes a rapid-fire montage technique where a sequence of diverse travel shots is established and then repeated in a rhythmic loop. This creates a sense of overwhelming joy and a 'life flashing before your eyes' memory effect. The tight synchronization with the upbeat music enhances the energetic and nostalgic vibe, while the persistent text anchor provides a clear narrative frame.",
+  "ideal_material_suggestions": [
+    "High-quality travel footage with a mix of wide landscapes and intimate group moments.",
+    "Shots with clear directional motion (driving, walking, rafting) to maintain energy during fast cuts.",
+    "Candid group interactions showing genuine emotion and camaraderie.",
+    "Iconic landmarks or unique cultural details to ground the location."
+  ],
+  "reference_audio": "original",
+  "audio_confidence": "Observed",
+  "_contract": {
+    "type": "reference",
+    "version": "12.1",
+    "source_hash": "e2362fceb4d5389944729ee11e90756b",
+    "fingerprint": "h303c6724"
+  },
+  "_cache_version": "12.1",
+  "_cached_at": "2026-02-17 23:55:03"
+}

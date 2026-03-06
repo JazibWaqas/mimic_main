@@ -1,0 +1,58 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Intimate"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Casual lifestyle vlogs",
+    "Street food sequences"
+  ],
+  "avoid_for": [
+    "High-end cinematic productions",
+    "Fast-paced action montages"
+  ],
+  "vibes": [],
+  "content_description": "Friends talking and sharing french fries at a street food stall at night.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Peak interaction as friends eat and talk simultaneously with more hand movement."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady casual conversation and social interaction at the start of the clip."
+    },
+    "Low": {
+      "start": 7.0,
+      "end": 9.6,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Close-up shot of the food with minimal subject movement compared to the rest."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "2699bfce5830e158df67e629ca731d39"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:50:01"
+}

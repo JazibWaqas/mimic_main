@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Dramatic builds",
+    "Action sequences",
+    "Opening establishing shots"
+  ],
+  "avoid_for": [
+    "Peaceful reflections",
+    "Casual dialogue"
+  ],
+  "vibes": [],
+  "content_description": "A runway at dusk followed by a pilot in a cockpit adjusting his flight helmet visor.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Intense close-up of the pilot with expressive movement and high visual impact."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 1.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "The transition from the wide runway shot to the intense cockpit close-up."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 0.8,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, wide shot of the runway setting the scene before the action."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:01:22"
+}

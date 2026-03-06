@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Crowd"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy sports montages",
+    "Action sequences",
+    "Racing highlights"
+  ],
+  "avoid_for": [
+    "Calm reflective scenes",
+    "Slow-paced narratives"
+  ],
+  "vibes": [],
+  "content_description": "A montage of high-speed Formula 1 racing action, including race starts, onboard perspectives, and night racing with fireworks.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 5.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense visual activity with fireworks, night racing, and drifting cars."
+    },
+    "Medium": {
+      "start": 5.5,
+      "end": 8.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained high-speed onboard perspective providing a sense of speed and progression."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Wide high-angle shot of the race start, providing context with relatively stable framing."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:49:34"
+}

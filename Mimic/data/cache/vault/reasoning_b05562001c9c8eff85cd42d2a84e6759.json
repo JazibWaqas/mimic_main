@@ -1,0 +1,315 @@
+{
+  "edit_meta": {
+    "duration_sec": 14.1,
+    "reference_type": "memory_reel",
+    "segment_count": 18,
+    "styling_applied": false
+  },
+  "library_health": {
+    "status_tags": [
+      "aligned"
+    ],
+    "rejected_clip_count": 0,
+    "missing_motifs": [
+      "no",
+      "minimal",
+      "scarcity"
+    ],
+    "bottlenecks": [
+      "missing_payoff_shots"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": 1,
+      "intent_tag": "celebration",
+      "decision_type": "structural_necessity",
+      "decision_weight": "primary",
+      "confidence_level": "medium",
+      "causality_key": "pacing_priority",
+      "clip_used": "clip_004.mp4",
+      "missing_ideal_motif": "peace",
+      "counterfactual_tag": "replace_with_peace",
+      "is_key_candidate": true
+    },
+    {
+      "segment_id": 2,
+      "intent_tag": "freedom",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_006.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 3,
+      "intent_tag": "joy",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_001.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 4,
+      "intent_tag": "friendship",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_002.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 5,
+      "intent_tag": "thrill",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_020.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 6,
+      "intent_tag": "laughter",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_003.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 7,
+      "intent_tag": "playful",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_043.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 8,
+      "intent_tag": "casual",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_005.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 9,
+      "intent_tag": "party",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_010.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 10,
+      "intent_tag": "cool",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_044.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 11,
+      "intent_tag": "splash",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_047.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 12,
+      "intent_tag": "aesthetic",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_015.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 13,
+      "intent_tag": "hype",
+      "decision_type": "structural_necessity",
+      "decision_weight": "primary",
+      "confidence_level": "medium",
+      "causality_key": "pacing_priority",
+      "clip_used": "clip_028.mp4",
+      "missing_ideal_motif": "joy",
+      "counterfactual_tag": "replace_with_joy",
+      "is_key_candidate": true
+    },
+    {
+      "segment_id": 14,
+      "intent_tag": "hype",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_035.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 15,
+      "intent_tag": "hype",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_045.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 16,
+      "intent_tag": "hype",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_007.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 17,
+      "intent_tag": "hype",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_008.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    },
+    {
+      "segment_id": 18,
+      "intent_tag": "finality",
+      "decision_type": "confident",
+      "decision_weight": "filler",
+      "confidence_level": "high",
+      "causality_key": "library_gap",
+      "clip_used": "clip_017.mp4",
+      "missing_ideal_motif": null,
+      "counterfactual_tag": null,
+      "is_key_candidate": false
+    }
+  ],
+  "clip_usage": {
+    "counts": {
+      "clip_004.mp4": 1,
+      "clip_006.mp4": 1,
+      "clip_001.mp4": 1,
+      "clip_002.mp4": 1,
+      "clip_020.mp4": 1,
+      "clip_003.mp4": 1,
+      "clip_043.mp4": 1,
+      "clip_005.mp4": 1,
+      "clip_010.mp4": 1,
+      "clip_044.mp4": 1,
+      "clip_047.mp4": 1,
+      "clip_015.mp4": 1,
+      "clip_028.mp4": 1,
+      "clip_035.mp4": 1,
+      "clip_045.mp4": 1,
+      "clip_007.mp4": 1,
+      "clip_008.mp4": 1,
+      "clip_017.mp4": 1
+    },
+    "overused": []
+  },
+  "post_mortem": {
+    "technical_score": 8.0,
+    "sync_fidelity": "nominal",
+    "responsibility": {
+      "vibe": "library",
+      "emotion": "library"
+    },
+    "unmet_requirements": []
+  },
+  "phrase_map": {
+    "decisions": {
+      "confident": [
+        "Used",
+        "Locked in",
+        "Selected"
+      ],
+      "strategic_pivot": [
+        "Optimized with",
+        "Pivoted to",
+        "Strategically deployed"
+      ],
+      "structural_necessity": [
+        "Used out of necessity",
+        "Forced into the slot",
+        "Deployed as a structural anchor"
+      ],
+      "forced_compromise": [
+        "Settled for",
+        "Accepted",
+        "Compromised with"
+      ]
+    },
+    "causality": {
+      "narrative_priority": "to ensure the {subject} story remained the primary focus",
+      "energy_mismatch": "to prioritize the {intent} vibe over raw energy levels",
+      "missing_ideal_motif": "because the library lacked the requested {motif} motif",
+      "library_gap": "because no better alternative was available in the library",
+      "pacing_priority": "to preserve the rhythmic soul of the edit"
+    },
+    "impacts": {
+      "pacing_preserved": "preserving the edit's momentum",
+      "momentum_saved": "preventing a pacing collapse",
+      "narrative_sacrifice": "despite the semantic mismatch",
+      "strategic_choice": "maintaining narrative coherence"
+    }
+  },
+  "prescriptions": [],
+  "technical_discipline": [
+    "tone_warm",
+    "pacing_syncopated",
+    "sync_tightly_synced"
+  ]
+}

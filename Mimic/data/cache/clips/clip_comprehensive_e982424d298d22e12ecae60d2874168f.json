@@ -1,0 +1,54 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Opening establishing shots",
+    "Nature documentaries",
+    "Travel vlogs"
+  ],
+  "avoid_for": [
+    "High-energy action scenes",
+    "Fast-paced montages"
+  ],
+  "vibes": [],
+  "content_description": "A slow camera pan across a misty mountain landscape and a dirt hiking trail through a pine forest.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 4.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The most active part of the pan revealing the trail and foreground trees."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent panning motion across the mountain valley."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm opening shot establishing the misty mountain atmosphere."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:10:12"
+}

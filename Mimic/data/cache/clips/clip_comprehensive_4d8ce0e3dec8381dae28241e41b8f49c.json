@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid social media content",
+    "Friendship-themed montages"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Serious news segments"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends hanging out in a living room, sharing laughs and playful moments.",
+  "best_moments": {
+    "High": {
+      "start": 28.8,
+      "end": 31.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Expressive group laughter and physical reactions to a joke."
+    },
+    "Medium": {
+      "start": 14.0,
+      "end": 17.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Engaged conversation and preparation for a playful action."
+    },
+    "Low": {
+      "start": 36.0,
+      "end": 41.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Quiet moment as the group settles down and checks their phones."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "4d8ce0e3dec8381dae28241e41b8f49c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:09:05"
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Childhood memory montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Two young children are swinging together on a playground swing while singing and laughing.",
+  "best_moments": {
+    "High": {
+      "start": 15.0,
+      "end": 17.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak singing and expressive movement"
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady swinging with clear facial expressions"
+    },
+    "Low": {
+      "start": 27.5,
+      "end": 31.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Closer shot with relatively less chaotic motion"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "44699c7102ac7f82829f98ffb4b6aa8a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:26:28"
+}

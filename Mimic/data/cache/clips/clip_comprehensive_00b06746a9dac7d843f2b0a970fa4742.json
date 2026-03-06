@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Family montages",
+    "Joyful celebrations"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate presentations"
+  ],
+  "vibes": [],
+  "content_description": "A family playfully wrestles and tickles children on a living room floor, filled with laughter and movement.",
+  "best_moments": {
+    "High": {
+      "start": 5.0,
+      "end": 8.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak physical activity and audible laughter during the tickling match."
+    },
+    "Medium": {
+      "start": 18.5,
+      "end": 21.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Moderate movement as the children reposition themselves after the initial peak."
+    },
+    "Low": {
+      "start": 27.5,
+      "end": 29.88,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The action subsides as the adults sit back and catch their breath."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:14:26"
+}

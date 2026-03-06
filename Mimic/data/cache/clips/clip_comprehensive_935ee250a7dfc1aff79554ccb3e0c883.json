@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "Candid joyful moments"
+  ],
+  "avoid_for": [
+    "Serious dramatic scenes",
+    "Professional corporate content"
+  ],
+  "vibes": [],
+  "content_description": "Three children lying on a patterned rug, laughing and being playfully repositioned by an adult.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 8.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive joy from all three children."
+    },
+    "Medium": {
+      "start": 24.0,
+      "end": 27.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Active repositioning and moderate interaction."
+    },
+    "Low": {
+      "start": 11.5,
+      "end": 14.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Moment of relative stillness and direct gaze."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:33:43"
+}

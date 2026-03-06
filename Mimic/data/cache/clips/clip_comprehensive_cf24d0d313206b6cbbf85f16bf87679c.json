@@ -1,0 +1,55 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Nature montages",
+    "Travel transitions",
+    "Atmospheric establishing shots"
+  ],
+  "avoid_for": [
+    "High-action sequences",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A low-angle tracking shot looking up at tall pine trees against a cloudy sky.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Initial camera rotation and movement through dense canopy."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Steady tracking shot with consistent visual flow."
+    },
+    "Low": {
+      "start": 5.5,
+      "end": 8.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Slower movement with more visible sky, creating a calmer feel."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:13:12"
+}

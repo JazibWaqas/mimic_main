@@ -1,0 +1,60 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Activity-Travel",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Night travel montages",
+    "Lo-fi music videos",
+    "Atmospheric transitions"
+  ],
+  "avoid_for": [
+    "High-action sports",
+    "Bright daytime scenes"
+  ],
+  "vibes": [],
+  "content_description": "A first-person view from inside a vehicle driving through rainy city streets at night.",
+  "best_moments": {
+    "High": {
+      "start": 20.0,
+      "end": 22.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Peak visual complexity with heavy rain, fast wipers, and multiple light sources."
+    },
+    "Medium": {
+      "start": 10.0,
+      "end": 13.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Consistent driving pace with steady wiper movement and clear road view."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Slow start with minimal visual noise and lower light levels."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "046b491c1b770dc1c1aa1d770dd23469"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:12:52"
+}

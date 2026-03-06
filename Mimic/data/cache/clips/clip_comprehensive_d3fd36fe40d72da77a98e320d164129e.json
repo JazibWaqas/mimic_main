@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Social media montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men dance and laugh together in front of a large, red-lit architectural structure at night.",
+  "best_moments": {
+    "High": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak expressive action and laughter during the dance move."
+    },
+    "Medium": {
+      "start": 7.0,
+      "end": 9.5,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Continued movement and reaction following the main action."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.2,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial setup and start of movement, relatively lower energy than the peak."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "d3fd36fe40d72da77a98e320d164129e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:00:34"
+}

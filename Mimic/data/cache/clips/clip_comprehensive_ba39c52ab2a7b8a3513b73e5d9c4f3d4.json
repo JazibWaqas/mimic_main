@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Crowd",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Celebration montages",
+    "Travel highlights"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A group of people dancing and playing on a beach during a hazy sunset.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak dancing and collective movement against the sunset."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 7.128005,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Sustained activity as the scene continues."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup of the beach scene with silhouettes."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "ba39c52ab2a7b8a3513b73e5d9c4f3d4"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:53:08"
+}

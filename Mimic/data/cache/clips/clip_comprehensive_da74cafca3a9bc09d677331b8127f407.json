@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Candid vlog moments",
+    "Reaction montages"
+  ],
+  "avoid_for": [
+    "Calm reflective intros",
+    "Professional corporate presentations"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men laugh and react with surprise to a bathroom filled with steam.",
+  "best_moments": {
+    "High": {
+      "start": 1.2,
+      "end": 3.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and expressive waving through the steam."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Sustained laughter and interaction as the camera moves."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial door opening and entry into the room."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "da74cafca3a9bc09d677331b8127f407"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:52:00"
+}

@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Action sequences",
+    "Sports montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "High-speed Formula 1 racing featuring a dramatic crash at night followed by fast daytime driving.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.2,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Explosive crash and debris with intense camera movement and high visual chaos."
+    },
+    "Medium": {
+      "start": 2.2,
+      "end": 3.968,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Fast-paced daytime racing with smooth tracking motion and clear subject focus."
+    },
+    "Low": {
+      "start": 3.868,
+      "end": 3.968,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Car driving away on a straight, representing the relatively lowest intensity in the clip."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:53:05"
+}

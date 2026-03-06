@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "High-energy peaks",
+    "Fun road trip sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Serious documentary segments"
+  ],
+  "vibes": [],
+  "content_description": "Two friends are singing loudly and joyfully while driving through a city.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak vocal intensity and expressive physical movement from the passenger."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained singing with more consistent camera framing."
+    },
+    "Low": {
+      "start": 7.0,
+      "end": 10.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Relatively lower physical movement while the singing continues."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:22:01"
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Reaction shots",
+    "Humorous montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Two men sit on a bed looking at their phones and burst into intense laughter.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive physical gestures from the subject."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Casual interaction and conversation while looking at mobile devices."
+    },
+    "Low": {
+      "start": 12.0,
+      "end": 14.814331,
+      "moment_role": "Reflection",
+      "stable_moment": false,
+      "reason": "The intensity of the laughter subsides as the camera pans away."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "085c76e5ac7f1ca237815c9b8a93d766"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:40"
+}

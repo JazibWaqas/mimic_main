@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Indoor",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Intimate"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Food montages",
+    "Travel vlogs",
+    "Restaurant reviews"
+  ],
+  "avoid_for": [
+    "High-action sequences",
+    "Dramatic narratives"
+  ],
+  "vibes": [],
+  "content_description": "A camera pans over various Indian dishes like dosa and uttapam served on a wooden table in a restaurant.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Initial camera movement and background chatter create a sense of activity."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Steady pan across the plates clearly showcases the variety of food."
+    },
+    "Low": {
+      "start": 2.0,
+      "end": 4.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The camera movement slows down, focusing on the final plate of food."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:32:24"
+}

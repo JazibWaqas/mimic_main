@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Adventure montages",
+    "Travel vlogs"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A man sits on a large swinging amusement ride as it moves rapidly over a mountainous landscape.",
+  "best_moments": {
+    "High": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Rapid descent and peak kinetic motion of the ride."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Sustained upward motion with clear subject visibility."
+    },
+    "Low": {
+      "start": 6.5,
+      "end": 10.0,
+      "moment_role": "Reflection",
+      "stable_moment": false,
+      "reason": "Relatively stable framing on the passenger compared to the chaotic swings."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "5de5d668234673925fe28efdc0286273"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:50:06"
+}

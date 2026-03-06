@@ -1,0 +1,765 @@
+{
+  "text_overlay": "THE DARKNESS | THE NIGHT OF | @matte_2201",
+  "text_style": {
+    "font_style": "Serif",
+    "animation": "Fade",
+    "placement": "Center",
+    "color_effects": "White"
+  },
+  "text_behavior": {
+    "appearance_logic": "Narrative punctuation",
+    "entry_moment": "First-push",
+    "exit_rule": "Cut-with-shot",
+    "priority": "Primary"
+  },
+  "text_cadence": "Per-phrase",
+  "text_events": [
+    {
+      "content": "THE DARKNESS",
+      "start": 2.0,
+      "end": 3.5,
+      "duration": 1.5,
+      "sync_driver": "Lyric",
+      "role": "Narrative-Anchor",
+      "confidence": "High"
+    },
+    {
+      "content": "THE NIGHT OF",
+      "start": 3.8,
+      "end": 5.5,
+      "duration": 1.7,
+      "sync_driver": "Lyric",
+      "role": "Narrative-Anchor",
+      "confidence": "High"
+    }
+  ],
+  "narrative_message": "The visceral intensity and high-stakes drama of Formula 1 racing, captured through a lens of speed and danger.",
+  "intent_clarity": "Clear",
+  "color_grading": {
+    "tone": "Cool",
+    "contrast": "High",
+    "specific_look": "Filmic"
+  },
+  "aspect_ratio": "21:9",
+  "visual_effects": [
+    "Slow motion",
+    "Motion blur",
+    "Grain",
+    "Speed ramps"
+  ],
+  "stylistic_invariants": [
+    "Hard cuts only",
+    "Center-aligned serif text",
+    "21:9 aspect ratio"
+  ],
+  "shot_variety": {
+    "dominant_scale": "Mixed",
+    "variety_level": "High variety"
+  },
+  "editing_style": "Music video",
+  "cut_style": "Hard cuts",
+  "transition_effects": [],
+  "emotional_intent": "Intense",
+  "arc_description": "The edit builds from atmospheric night shots to a series of high-impact racing moments, peaking with a dramatic fire escape and side-by-side racing before a final spin.",
+  "pacing_feel": "Syncopated",
+  "visual_balance": "Action-focused",
+  "peak_density": "Dense",
+  "music_sync": "Tightly synced",
+  "audio_style": {
+    "genre": "Pop/Rock",
+    "vocal_presence": "Vocals",
+    "energy": "High"
+  },
+  "must_have_content": [
+    "High-speed racing action",
+    "Dramatic crashes or near-misses",
+    "Intimate driver close-ups",
+    "Atmospheric track environments"
+  ],
+  "should_have_content": [
+    "Fan or team reactions",
+    "Mechanical details like wheels or steering",
+    "Cinematic wide shots"
+  ],
+  "avoid_content": [
+    "Static interviews",
+    "Low-quality amateur footage",
+    "Bright, cheerful daytime colors"
+  ],
+  "music_structure": {
+    "phrases": {
+      "intro": "0.0 - 1.0",
+      "build": "1.0 - 15.75",
+      "drop": "15.75 - 21.96",
+      "resolve": "21.96 - 22.77"
+    },
+    "accent_moments": [
+      1.0,
+      5.88,
+      15.75,
+      21.96
+    ],
+    "ending_type": "Hard stop"
+  },
+  "total_duration": 22.775918,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 1.0,
+      "duration": 1.0,
+      "media_type": "Video",
+      "energy": "Low",
+      "motion": "Static",
+      "vibe": "Branding",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Intro",
+      "shot_function": "Button",
+      "relation_to_previous": "None",
+      "expected_hold": "Short",
+      "temporal_weight": "Breath",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "None"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 2,
+      "start": 1.0,
+      "end": 5.88,
+      "duration": 4.88,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "Atmospheric",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Intro",
+      "shot_function": "Establish",
+      "relation_to_previous": "Setup",
+      "expected_hold": "Long",
+      "temporal_weight": "Breath",
+      "emotional_anchor": true,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Narrative-Shift",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 3,
+      "start": 5.88,
+      "end": 7.25,
+      "duration": 1.37,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "Mechanical",
+      "shot_scale": "Extreme CU",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Detail",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Object-Interaction"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 4,
+      "start": 7.25,
+      "end": 8.36,
+      "duration": 1.11,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Competitive",
+      "shot_scale": "Wide",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 5,
+      "start": 8.36,
+      "end": 8.75,
+      "duration": 0.39,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Chaotic",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Aggressive"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "None"
+      },
+      "camera_movement": "Erratic"
+    },
+    {
+      "id": 6,
+      "start": 8.75,
+      "end": 9.75,
+      "duration": 1.0,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Fast",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 7,
+      "start": 9.75,
+      "end": 10.45,
+      "duration": 0.7,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Static",
+      "vibe": "Concerned",
+      "shot_scale": "CU",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Build-up",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": true,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Narrative-Shift",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 8,
+      "start": 10.45,
+      "end": 11.15,
+      "duration": 0.7,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Agile",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 9,
+      "start": 11.15,
+      "end": 11.46,
+      "duration": 0.31,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Impact",
+      "shot_scale": "Wide",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Aggressive"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 10,
+      "start": 11.46,
+      "end": 12.12,
+      "duration": 0.66,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "Grand",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Build-up",
+      "shot_function": "Establish",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 11,
+      "start": 12.12,
+      "end": 12.54,
+      "duration": 0.42,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "Focused",
+      "shot_scale": "CU",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Detail",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Object-Interaction"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 12,
+      "start": 12.54,
+      "end": 13.24,
+      "duration": 0.7,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Chasing",
+      "shot_scale": "Medium",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 13,
+      "start": 13.24,
+      "end": 13.54,
+      "duration": 0.3,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Triumphant",
+      "shot_scale": "Wide",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Release",
+      "relation_to_previous": "Payoff",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "Physical-Action",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 14,
+      "start": 13.54,
+      "end": 14.63,
+      "duration": 1.09,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Static",
+      "vibe": "Intense",
+      "shot_scale": "CU",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Build-up",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": true,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Narrative-Shift",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 15,
+      "start": 14.63,
+      "end": 15.75,
+      "duration": 1.12,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Dramatic",
+      "shot_scale": "Wide",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Build-up",
+      "shot_function": "Action",
+      "relation_to_previous": "Setup",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": true,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Aggressive"
+      },
+      "continuity_hook": {
+        "opens": "Physical-Action",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 16,
+      "start": 15.75,
+      "end": 18.11,
+      "duration": 2.36,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Competitive",
+      "shot_scale": "Wide",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Payoff",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 17,
+      "start": 18.11,
+      "end": 19.5,
+      "duration": 1.39,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Static",
+      "vibe": "Observant",
+      "shot_scale": "CU",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Peak",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Contrast",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": true,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Narrative-Shift",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 18,
+      "start": 19.5,
+      "end": 20.2,
+      "duration": 0.7,
+      "media_type": "Video",
+      "energy": "Medium",
+      "motion": "Static",
+      "vibe": "Focused",
+      "shot_scale": "CU",
+      "shot_scale_role": "Intimacy-Focus",
+      "arc_stage": "Peak",
+      "shot_function": "Reaction",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Short",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "Gaze"
+      },
+      "camera_movement": "Locked"
+    },
+    {
+      "id": 19,
+      "start": 20.2,
+      "end": 21.96,
+      "duration": 1.76,
+      "media_type": "Video",
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "Chaotic",
+      "shot_scale": "Wide",
+      "shot_scale_role": "Action-Link",
+      "arc_stage": "Peak",
+      "shot_function": "Action",
+      "relation_to_previous": "Continuation",
+      "expected_hold": "Normal",
+      "temporal_weight": "Push",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "Physical-Action",
+        "type": "Spatial-Movement"
+      },
+      "camera_movement": "Smooth pan"
+    },
+    {
+      "id": 20,
+      "start": 21.96,
+      "end": 22.775918,
+      "duration": 0.815918,
+      "media_type": "Video",
+      "energy": "Low",
+      "motion": "Static",
+      "vibe": "Release",
+      "shot_scale": "Wide",
+      "shot_scale_role": "World-Building",
+      "arc_stage": "Outro",
+      "shot_function": "Button",
+      "relation_to_previous": "None",
+      "expected_hold": "Short",
+      "temporal_weight": "Breath",
+      "emotional_anchor": false,
+      "audio_driver": "Music-Rhythm",
+      "audio_priority": "Music > SFX",
+      "cut_motivation": "Rhythmic-Snap",
+      "transition_intent": {
+        "type": "Hard",
+        "mechanism": "None",
+        "strength": "Normal"
+      },
+      "continuity_hook": {
+        "opens": "None",
+        "resolves": "None",
+        "type": "None"
+      },
+      "camera_movement": "Locked"
+    }
+  ],
+  "overall_reasoning": "The edit follows a classic music video structure, using high-energy racing footage synced to a rhythmic track. It balances wide action shots with intimate driver close-ups to maintain emotional engagement. The use of a 21:9 aspect ratio and cinematic color grading elevates the sports footage into a narrative experience. The pacing is relentless, with hard cuts driving the energy forward, punctuated by brief moments of reaction to ground the intensity.",
+  "ideal_material_suggestions": [
+    "High-frame-rate footage of racing cars for smooth slow-motion effects.",
+    "Onboard camera angles that provide a first-person perspective of speed.",
+    "Dramatic lighting conditions, such as night races or golden hour, to enhance the cinematic look.",
+    "Close-up shots of mechanical components (tires, steering wheels) to add texture and detail.",
+    "Reaction shots of drivers or spectators to provide emotional context to the action."
+  ],
+  "reference_audio": "original",
+  "audio_confidence": "Observed",
+  "_contract": {
+    "type": "reference",
+    "version": "12.1",
+    "source_hash": "825fdac218184a26dac5487ceeb329cb",
+    "fingerprint": "h2e7f32d0"
+  },
+  "_cache_version": "12.1",
+  "_cached_at": "2026-02-09 01:27:42"
+}

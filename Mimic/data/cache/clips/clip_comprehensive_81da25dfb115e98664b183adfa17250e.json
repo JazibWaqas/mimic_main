@@ -1,0 +1,55 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Activity-Travel",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Moody night sequences",
+    "Travel transitions",
+    "Atmospheric music videos"
+  ],
+  "avoid_for": [
+    "High-action sports",
+    "Bright daytime scenes"
+  ],
+  "vibes": [],
+  "content_description": "POV of a car driving through rainy city streets at night with music playing and wipers active.",
+  "best_moments": {
+    "High": {
+      "start": 31.0,
+      "end": 34.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Increased visual activity from rain, fast wipers, and dense traffic lights."
+    },
+    "Medium": {
+      "start": 10.0,
+      "end": 13.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady forward motion with clear visibility of the road and dashboard."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Slower initial movement and darker environment setting the scene."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:20:38"
+}

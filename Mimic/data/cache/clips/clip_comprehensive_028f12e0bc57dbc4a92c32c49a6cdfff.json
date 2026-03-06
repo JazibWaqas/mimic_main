@@ -1,0 +1,53 @@
+{
+  "energy": "Low",
+  "motion": "STILL",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Reflection",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Intimate",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Closing shots",
+    "Reflective montages",
+    "Dramatic pauses"
+  ],
+  "avoid_for": [
+    "Action sequences",
+    "High-energy transitions"
+  ],
+  "vibes": [],
+  "content_description": "A man in a white naval uniform and a woman stand side-by-side, viewed from behind, looking into a dark space.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak emotional weight of the sustained, dramatic still shot."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained presence that builds tension through stillness."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A calm, contemplative moment suitable for a quiet pause or ending."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:55:33"
+}

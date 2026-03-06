@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Action montages",
+    "Iconic cinematic intros"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate quiet moments"
+  ],
+  "vibes": [],
+  "content_description": "A fighter jet launches from an aircraft carrier at sunset followed by an intense close-up of a pilot.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Iconic high-intensity close-up of the pilot with peak musical energy."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Dynamic shot of a jet taking off, setting the scene with moderate action."
+    },
+    "Low": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The fade to black provides a necessary low-energy pause after the intense opening."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:03:48"
+}

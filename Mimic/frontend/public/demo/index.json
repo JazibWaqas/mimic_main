@@ -1,0 +1,266 @@
+{
+    "results": [
+        {
+            "filename": "result.mp4",
+            "url": "/demo/files/result.mp4",
+            "path": "/demo/files/result.mp4",
+            "timestamp": "2026-02-09 10:00:00",
+            "session_id": "sess_3d5c2dd",
+            "iteration": 1,
+            "size": 25634632,
+            "created_at": 1739097600
+        }
+    ],
+    "references": [
+        {
+            "filename": "ref26.mp4",
+            "url": "/demo/files/ref26.mp4",
+            "path": "/demo/files/ref26.mp4",
+            "hash": "3d5c2ddcbb641b1879f096b668cc3f04",
+            "size": 9532544,
+            "created_at": 1739097600
+        }
+    ],
+    "clips": [
+        {
+            "filename": "clip49.mp4",
+            "url": "/demo/files/clips/clip49.mp4",
+            "path": "/demo/files/clips/clip49.mp4",
+            "duration": 5.0,
+            "size": 1830759,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip50.mp4",
+            "url": "/demo/files/clips/clip50.mp4",
+            "path": "/demo/files/clips/clip50.mp4",
+            "duration": 5.0,
+            "size": 605535,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip51.mp4",
+            "url": "/demo/files/clips/clip51.mp4",
+            "path": "/demo/files/clips/clip51.mp4",
+            "duration": 5.0,
+            "size": 934905,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip52.mp4",
+            "url": "/demo/files/clips/clip52.mp4",
+            "path": "/demo/files/clips/clip52.mp4",
+            "duration": 5.0,
+            "size": 1108568,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip53.mp4",
+            "url": "/demo/files/clips/clip53.mp4",
+            "path": "/demo/files/clips/clip53.mp4",
+            "duration": 5.0,
+            "size": 2028432,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip54.mp4",
+            "url": "/demo/files/clips/clip54.mp4",
+            "path": "/demo/files/clips/clip54.mp4",
+            "duration": 5.0,
+            "size": 3678043,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip55.mp4",
+            "url": "/demo/files/clips/clip55.mp4",
+            "path": "/demo/files/clips/clip55.mp4",
+            "duration": 5.0,
+            "size": 1072194,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip56.mp4",
+            "url": "/demo/files/clips/clip56.mp4",
+            "path": "/demo/files/clips/clip56.mp4",
+            "duration": 5.0,
+            "size": 3596657,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip57.mp4",
+            "url": "/demo/files/clips/clip57.mp4",
+            "path": "/demo/files/clips/clip57.mp4",
+            "duration": 5.0,
+            "size": 2464670,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip58.mp4",
+            "url": "/demo/files/clips/clip58.mp4",
+            "path": "/demo/files/clips/clip58.mp4",
+            "duration": 5.0,
+            "size": 3606528,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip59.mp4",
+            "url": "/demo/files/clips/clip59.mp4",
+            "path": "/demo/files/clips/clip59.mp4",
+            "duration": 5.0,
+            "size": 970420,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip60.mp4",
+            "url": "/demo/files/clips/clip60.mp4",
+            "path": "/demo/files/clips/clip60.mp4",
+            "duration": 5.0,
+            "size": 1052040,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip61.mp4",
+            "url": "/demo/files/clips/clip61.mp4",
+            "path": "/demo/files/clips/clip61.mp4",
+            "duration": 5.0,
+            "size": 231766,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip62.mp4",
+            "url": "/demo/files/clips/clip62.mp4",
+            "path": "/demo/files/clips/clip62.mp4",
+            "duration": 5.0,
+            "size": 143142,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip63.mp4",
+            "url": "/demo/files/clips/clip63.mp4",
+            "path": "/demo/files/clips/clip63.mp4",
+            "duration": 5.0,
+            "size": 1393071,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip64.mp4",
+            "url": "/demo/files/clips/clip64.mp4",
+            "path": "/demo/files/clips/clip64.mp4",
+            "duration": 5.0,
+            "size": 382992,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip65.mp4",
+            "url": "/demo/files/clips/clip65.mp4",
+            "path": "/demo/files/clips/clip65.mp4",
+            "duration": 5.0,
+            "size": 3168937,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip66.mp4",
+            "url": "/demo/files/clips/clip66.mp4",
+            "path": "/demo/files/clips/clip66.mp4",
+            "duration": 5.0,
+            "size": 560044,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip67.mp4",
+            "url": "/demo/files/clips/clip67.mp4",
+            "path": "/demo/files/clips/clip67.mp4",
+            "duration": 5.0,
+            "size": 2227603,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip68.mp4",
+            "url": "/demo/files/clips/clip68.mp4",
+            "path": "/demo/files/clips/clip68.mp4",
+            "duration": 5.0,
+            "size": 3598887,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip69.mp4",
+            "url": "/demo/files/clips/clip69.mp4",
+            "path": "/demo/files/clips/clip69.mp4",
+            "duration": 5.0,
+            "size": 1758632,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip70.mp4",
+            "url": "/demo/files/clips/clip70.mp4",
+            "path": "/demo/files/clips/clip70.mp4",
+            "duration": 5.0,
+            "size": 5029134,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip71.mp4",
+            "url": "/demo/files/clips/clip71.mp4",
+            "path": "/demo/files/clips/clip71.mp4",
+            "duration": 5.0,
+            "size": 750353,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip72.mp4",
+            "url": "/demo/files/clips/clip72.mp4",
+            "path": "/demo/files/clips/clip72.mp4",
+            "duration": 5.0,
+            "size": 1196233,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip73.mp4",
+            "url": "/demo/files/clips/clip73.mp4",
+            "path": "/demo/files/clips/clip73.mp4",
+            "duration": 5.0,
+            "size": 236191,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip74.mp4",
+            "url": "/demo/files/clips/clip74.mp4",
+            "path": "/demo/files/clips/clip74.mp4",
+            "duration": 5.0,
+            "size": 317702,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip75.mp4",
+            "url": "/demo/files/clips/clip75.mp4",
+            "path": "/demo/files/clips/clip75.mp4",
+            "duration": 5.0,
+            "size": 792846,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip76.mp4",
+            "url": "/demo/files/clips/clip76.mp4",
+            "path": "/demo/files/clips/clip76.mp4",
+            "duration": 5.0,
+            "size": 3970748,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip77.mp4",
+            "url": "/demo/files/clips/clip77.mp4",
+            "path": "/demo/files/clips/clip77.mp4",
+            "duration": 5.0,
+            "size": 2698078,
+            "created_at": 1739097600
+        },
+        {
+            "filename": "clip78.mp4",
+            "url": "/demo/files/clips/clip78.mp4",
+            "path": "/demo/files/clips/clip78.mp4",
+            "duration": 5.0,
+            "size": 7023270,
+            "created_at": 1739097600
+        }
+    ]
+}

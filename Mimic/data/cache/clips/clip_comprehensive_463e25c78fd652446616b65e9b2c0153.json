@@ -1,0 +1,52 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Action montages",
+    "Cinematic trailers"
+  ],
+  "avoid_for": [
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A sequence featuring a silhouette by the sea, a pilot helmet, and beach football.",
+  "best_moments": {
+    "High": {
+      "start": 6.0,
+      "end": 8.481,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Energetic beach football action with clear movement"
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Slow reveal of the Maverick helmet with steady camera movement"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Contemplative silhouette against the ocean with minimal motion"
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:54:18"
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends singing and laughing enthusiastically inside a car with a sunroof.",
+  "best_moments": {
+    "High": {
+      "start": 12.5,
+      "end": 15.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak shouting and collective high energy during the song's drop."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent singing and rhythmic movement as the song progresses."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup with lower relative intensity before the main singing starts."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "af7bf77c5f30904b950967eba803bfba"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:05:36"
+}

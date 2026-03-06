@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family leisure montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Children and adults playing on a rotating playground seesaw in a park.",
+  "best_moments": {
+    "High": {
+      "start": 19.5,
+      "end": 22.32,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak rotation speed and high level of child engagement and laughter."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady rotation with clear subject interaction and moderate pacing."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The start of the clip where the motion is relatively slower as the scene is established."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:14:25"
+}

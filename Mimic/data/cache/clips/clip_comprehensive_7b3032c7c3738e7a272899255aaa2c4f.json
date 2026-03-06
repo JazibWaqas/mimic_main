@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Energetic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Action sequences",
+    "High-energy builds",
+    "Opening sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate dialogue"
+  ],
+  "vibes": [],
+  "content_description": "A deck crew member signals a thumbs up before a fighter jet launches from an aircraft carrier deck.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 4.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak G-force moment of the catapult launch with intense camera vibration."
+    },
+    "Medium": {
+      "start": 5.5,
+      "end": 8.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Sustained high-speed flight over the ocean after the initial launch jolt."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.2,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "The pre-launch signal from the deck crew, providing the lowest relative energy."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:56:38"
+}

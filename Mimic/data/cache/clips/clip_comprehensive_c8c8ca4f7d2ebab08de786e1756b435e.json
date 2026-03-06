@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "Childhood memories",
+    "Playful transitions"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Serious documentaries"
+  ],
+  "vibes": [],
+  "content_description": "Children playing with a toy scooter on a rooftop while adults watch in the background.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak physical activity with the boy pushing the girl on the scooter."
+    },
+    "Medium": {
+      "start": 6.0,
+      "end": 8.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady movement and direct engagement with the camera as the girl rides."
+    },
+    "Low": {
+      "start": 19.0,
+      "end": 23.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Action subsides as the children stand still on the toy at the end."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c8c8ca4f7d2ebab08de786e1756b435e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:24:40"
+}

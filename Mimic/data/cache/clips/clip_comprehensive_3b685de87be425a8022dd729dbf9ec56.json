@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Action-oriented montages",
+    "Humorous transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Peaceful nature scenes",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A man playfully hits a bed with a hanger to wake up his friends in a hotel room.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak action with rapid movement and high visual impact."
+    },
+    "Medium": {
+      "start": 13.5,
+      "end": 16.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Continued movement and interaction with moderate intensity."
+    },
+    "Low": {
+      "start": 17.0,
+      "end": 20.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The camera settles on the person in bed after the initial burst of energy."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "3b685de87be425a8022dd729dbf9ec56"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:49:40"
+}

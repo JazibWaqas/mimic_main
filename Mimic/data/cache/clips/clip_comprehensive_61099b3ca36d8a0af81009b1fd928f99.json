@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Action montages",
+    "Family home videos"
+  ],
+  "avoid_for": [
+    "Professional sports broadcasts",
+    "Calm cinematic sequences"
+  ],
+  "vibes": [],
+  "content_description": "A young boy demonstrates martial arts kicks and poses in a living room.",
+  "best_moments": {
+    "High": {
+      "start": 37.5,
+      "end": 39.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Powerful final kick and landing."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Controlled split and posing for the camera."
+    },
+    "Low": {
+      "start": 34.0,
+      "end": 37.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Still moment of preparation before the final action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "61099b3ca36d8a0af81009b1fd928f99"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:27:18"
+}

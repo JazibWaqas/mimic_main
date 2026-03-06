@@ -1,0 +1,55 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Nostalgic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Establishing shots",
+    "Closing sequences",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "Two individuals walk away from a large Formula 1 Las Vegas Grand Prix billboard in a desert urban setting.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Expressive arm gesture adds a burst of visual energy and character."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 4.187,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady walking provides consistent movement and clear framing of the subjects."
+    },
+    "Low": {
+      "start": 4.087000000000001,
+      "end": 4.187,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Subjects move further away, allowing the 'See You Next Year' sign to dominate."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:50:58"
+}

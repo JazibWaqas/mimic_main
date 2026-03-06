@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social media montages",
+    "Friendship highlights"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A group of four young men laughing and posing for a mirror selfie video in an indoor setting.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Initial burst of laughter and expressive group interaction"
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 6.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady posing and interaction while looking at the camera"
+    },
+    "Low": {
+      "start": 8.0,
+      "end": 11.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calmer moment as the lighting dims and subjects become more still"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "3eb88cf58ac6359bddb5ac5c08de128b"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:52:04"
+}

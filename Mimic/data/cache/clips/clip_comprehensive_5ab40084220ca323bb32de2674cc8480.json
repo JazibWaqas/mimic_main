@@ -1,0 +1,54 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Place-Urban",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Nostalgic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Atmospheric transitions",
+    "Calm reflective intros",
+    "Travel vlog establishing shots"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Fast-paced montages"
+  ],
+  "vibes": [],
+  "content_description": "A sunset view from a bridge with distinctive curved streetlights and a distant city horizon.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 4.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The most visually vibrant part of the sunset across the frame."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Subtle camera movement providing a sense of progression along the road."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, static setup of the unique architecture and sky."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:27:56"
+}

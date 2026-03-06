@@ -1,0 +1,53 @@
+{
+  "energy": "Low",
+  "motion": "Still",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Opening establishing shots",
+    "Vehicle-focused montages",
+    "Nostalgic transitions"
+  ],
+  "avoid_for": [
+    "High-energy action scenes",
+    "Intimate human moments"
+  ],
+  "vibes": [],
+  "content_description": "A close-up shot of the rear of a red Kawasaki motorcycle as its brake lights illuminate.",
+  "best_moments": {
+    "High": {
+      "start": 1.1,
+      "end": 3.047,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The moment the brake lights are fully illuminated, providing the most visual impact."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Captures the transition from lights off to lights on, creating a sense of activation."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The initial static shot of the motorcycle rear before the lights are activated."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:56:40"
+}

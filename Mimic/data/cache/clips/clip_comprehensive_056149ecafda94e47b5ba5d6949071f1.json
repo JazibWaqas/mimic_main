@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Fun youth montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate settings"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends jumping on a trampoline and laughing together while one person rolls in the center.",
+  "best_moments": {
+    "High": {
+      "start": 2.2,
+      "end": 4.8,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak chaotic jumping and physical interaction among the group."
+    },
+    "Medium": {
+      "start": 6.0,
+      "end": 8.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained rhythmic jumping with consistent energy."
+    },
+    "Low": {
+      "start": 9.8,
+      "end": 12.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The group stops jumping and shares a joyful, laughing moment."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "056149ecafda94e47b5ba5d6949071f1"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:00:56"
+}

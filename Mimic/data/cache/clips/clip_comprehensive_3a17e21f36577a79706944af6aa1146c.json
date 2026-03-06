@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Celebration montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men celebrates by carrying a friend on their shoulders while drummers play in a hallway.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak celebration with the subject being lifted and loud drumming."
+    },
+    "Medium": {
+      "start": 14.0,
+      "end": 17.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained movement through the hallway with consistent energy."
+    },
+    "Low": {
+      "start": 5.5,
+      "end": 8.5,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "A brief transition through a doorway where the main action is partially obscured."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "3a17e21f36577a79706944af6aa1146c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:11:59"
+}

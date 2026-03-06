@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy sports montages",
+    "Climactic victory sequences",
+    "Fast-paced trailers"
+  ],
+  "avoid_for": [
+    "Quiet ambient backgrounds",
+    "Instructional content"
+  ],
+  "vibes": [],
+  "content_description": "A cinematic montage showcasing the intensity of Formula 1 racing followed by explosive victory celebrations and fireworks.",
+  "best_moments": {
+    "High": {
+      "start": 7.5,
+      "end": 11.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak emotional intensity with screaming celebration and vibrant fireworks in the background."
+    },
+    "Medium": {
+      "start": 17.5,
+      "end": 20.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Joyful interaction between drivers showing camaraderie and relief after a race."
+    },
+    "Low": {
+      "start": 24.5,
+      "end": 27.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A quiet, emotional close-up of a man's face, providing a contemplative end to the high-energy sequence."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:54:22"
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Friendship highlights"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends laughing and talking inside a car at night.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and expressive interaction from the subject in the back seat."
+    },
+    "Medium": {
+      "start": 7.5,
+      "end": 9.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Camera pans to show the front of the car with moderate activity."
+    },
+    "Low": {
+      "start": 10.0,
+      "end": 11.266146,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Relatively stable shot of the car interior and dashboard as the energy settles."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "d1bc36edbf82348914f1dc2d75575a0f"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:13"
+}

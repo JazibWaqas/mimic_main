@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Intimate"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "Childhood memories",
+    "Heartwarming transitions"
+  ],
+  "avoid_for": [
+    "Corporate presentations",
+    "High-action sports sequences"
+  ],
+  "vibes": [],
+  "content_description": "Two young children hug and pose for a photo in front of a house entrance.",
+  "best_moments": {
+    "High": {
+      "start": 4.0,
+      "end": 8.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak joyful interaction with hugging and laughter."
+    },
+    "Medium": {
+      "start": 11.0,
+      "end": 14.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Expressive posing for the camera with moderate movement."
+    },
+    "Low": {
+      "start": 18.0,
+      "end": 21.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calm standing pose with minimal movement at the end."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:16:57"
+}

@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Nostalgic"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Nostalgic home video montages",
+    "Childhood memory sequences"
+  ],
+  "avoid_for": [
+    "High-definition professional commercials",
+    "Quiet reflective scenes"
+  ],
+  "vibes": [],
+  "content_description": "Two young children singing and laughing while playing together on a swing set outdoors.",
+  "best_moments": {
+    "High": {
+      "start": 15.0,
+      "end": 18.5,
+      "moment_role": "Peak",
+      "stable_moment": false,
+      "reason": "Peak singing and expressive laughter from both children."
+    },
+    "Medium": {
+      "start": 38.0,
+      "end": 41.0,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Steady swinging motion with visible smiles and interaction."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial setup of the scene as they begin their song."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:18:18"
+}

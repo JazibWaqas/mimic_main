@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Comedic montages",
+    "Candid friendship moments"
+  ],
+  "avoid_for": [
+    "Serious narratives",
+    "Calm reflective transitions"
+  ],
+  "vibes": [],
+  "content_description": "Two friends share a fit of uncontrollable laughter while relaxing in a hotel room.",
+  "best_moments": {
+    "High": {
+      "start": 12.5,
+      "end": 15.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive facial reactions."
+    },
+    "Medium": {
+      "start": 23.5,
+      "end": 26.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Laughter continues but subjects begin to stabilize and sit up."
+    },
+    "Low": {
+      "start": 7.0,
+      "end": 11.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Subject is relatively still with head down, providing a brief visual pause."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "5475e8736784aa71fb701b232b761760"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:59:44"
+}

@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy action sequences",
+    "Cinematic montages",
+    "Adventure-themed intros"
+  ],
+  "avoid_for": [
+    "Peaceful transitions",
+    "Slow-paced narratives"
+  ],
+  "vibes": [],
+  "content_description": "Fighter jets perform high-speed maneuvers through a mountain range and above the clouds, featuring a pilot in the cockpit.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense pilot reaction and rapid maneuvering during high-speed flight."
+    },
+    "Medium": {
+      "start": 3.2,
+      "end": 6.2,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained high-speed flight through a canyon with clear subject tracking."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively stable wide shot of jets above the clouds setting the scene."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:02:28"
+}

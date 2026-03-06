@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Family montages",
+    "Capturing raw childhood joy"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Two young children play and laugh energetically on a rooftop while an adult interacts with them.",
+  "best_moments": {
+    "High": {
+      "start": 38.2,
+      "end": 40.8,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive facial expressions from the child."
+    },
+    "Medium": {
+      "start": 10.5,
+      "end": 13.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained motion as the girl runs across the rooftop."
+    },
+    "Low": {
+      "start": 26.0,
+      "end": 30.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively calm moment where the girl stands still for a photo."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "0baa6d663cbe52175a6a96db4be0ea50"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:23:56"
+}

@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Action sequences",
+    "Cinematic trailers"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Fighter jets performing high-speed maneuvers at dusk and flying in formation during the day.",
+  "best_moments": {
+    "High": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Rapid ascent with visible engine glow and dynamic camera tracking."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 4.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady formation flight with consistent tracking motion and clear subject visibility."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Distant subject at the start of the shot with the least relative visual change."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:02:37"
+}

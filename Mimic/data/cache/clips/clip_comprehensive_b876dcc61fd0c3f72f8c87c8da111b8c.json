@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Playful family montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A young boy playfully climbs and braces himself against a doorframe.",
+  "best_moments": {
+    "High": {
+      "start": 14.5,
+      "end": 18.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak of the stunt with clear facial expression and high energy."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Active movement as the boy positions himself in the doorframe."
+    },
+    "Low": {
+      "start": 26.0,
+      "end": 29.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Holding a stable position with less intense movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:15:50"
+}

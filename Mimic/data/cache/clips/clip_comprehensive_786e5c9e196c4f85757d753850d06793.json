@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Celebration montages",
+    "Travel vlogs"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends singing and dancing energetically inside a car with an open sunroof.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 4.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak physical movement with hands raised and intense singing."
+    },
+    "Medium": {
+      "start": 7.0,
+      "end": 10.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Group interaction with waving and singing at a consistent pace."
+    },
+    "Low": {
+      "start": 25.0,
+      "end": 27.734,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Energy subsides into laughter and casual interaction at the end of the clip."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "786e5c9e196c4f85757d753850d06793"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:01:35"
+}

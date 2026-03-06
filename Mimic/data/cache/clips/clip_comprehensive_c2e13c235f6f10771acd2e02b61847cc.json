@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Family celebration montages",
+    "Candid joy sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos",
+    "Quiet intimate moments"
+  ],
+  "vibes": [],
+  "content_description": "A family is playfully wrestling and laughing on the floor of a living room.",
+  "best_moments": {
+    "High": {
+      "start": 10.2,
+      "end": 13.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak chaotic movement and visible laughter from the children."
+    },
+    "Medium": {
+      "start": 17.5,
+      "end": 20.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The action resets slightly as children move around before the next burst."
+    },
+    "Low": {
+      "start": 26.5,
+      "end": 29.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The intensity winds down as the group settles into laughter."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c2e13c235f6f10771acd2e02b61847cc"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:23:54"
+}

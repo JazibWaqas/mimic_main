@@ -1,0 +1,53 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Animal",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Establishing beach locations"
+  ],
+  "avoid_for": [
+    "High-speed action sequences",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "A decorated camel walks along a sandy beach with people swimming in the background.",
+  "best_moments": {
+    "High": {
+      "start": 4.5,
+      "end": 6.5,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Faster camera pan following the camel towards the crowd."
+    },
+    "Medium": {
+      "start": 2.8,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The camel enters the frame and walks steadily along the shore."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, wide shot of the beach and ocean before the main subject appears."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:27:16"
+}

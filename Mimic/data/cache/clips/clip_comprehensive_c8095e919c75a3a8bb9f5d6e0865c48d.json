@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Dramatic trailers",
+    "Narrative storytelling",
+    "Cinematic transitions"
+  ],
+  "avoid_for": [
+    "Joyful celebrations",
+    "Upbeat commercials"
+  ],
+  "vibes": [],
+  "content_description": "A vehicle arrives at a desert checkpoint followed by a large dust cloud, then cuts to a man sitting alone in a dark room.",
+  "best_moments": {
+    "High": {
+      "start": 1.2,
+      "end": 3.8,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Intense visual impact from the sudden dust cloud and explosion-like effect."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 1.2,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Controlled movement of the vehicle and personnel at the checkpoint."
+    },
+    "Low": {
+      "start": 4.5,
+      "end": 7.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A still, contemplative silhouette of a man in a dark room overlooking a city."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:00:42"
+}

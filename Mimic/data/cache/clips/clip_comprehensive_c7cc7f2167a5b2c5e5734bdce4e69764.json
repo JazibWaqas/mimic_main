@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Vlog-style adventure montages",
+    "Found footage aesthetic",
+    "Nighttime group activity sequences"
+  ],
+  "avoid_for": [
+    "Professional cinematic productions",
+    "Calm reflective moments",
+    "Clear product showcases"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends walks and runs through a dark outdoor area at night, joking and laughing.",
+  "best_moments": {
+    "High": {
+      "start": 18.5,
+      "end": 21.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak energy with running, shouting, and rapid camera movement."
+    },
+    "Medium": {
+      "start": 7.5,
+      "end": 10.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Steady walking and conversation with moderate handheld camera motion."
+    },
+    "Low": {
+      "start": 2.0,
+      "end": 5.5,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Slower movement and darker frames at the beginning of the sequence."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c7cc7f2167a5b2c5e5734bdce4e69764"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:53:06"
+}

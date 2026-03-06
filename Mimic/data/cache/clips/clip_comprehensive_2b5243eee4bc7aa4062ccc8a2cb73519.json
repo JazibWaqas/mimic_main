@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "School event montages",
+    "Childhood storytelling",
+    "Educational activity highlights"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate settings"
+  ],
+  "vibes": [],
+  "content_description": "School children perform a play called Chicken Licken in a decorated hallway under teacher supervision.",
+  "best_moments": {
+    "High": {
+      "start": 280.34,
+      "end": 280.44,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Children falling down together during the play's peak action."
+    },
+    "Medium": {
+      "start": 66.0,
+      "end": 69.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "A young student clearly reciting lines from a card with focused movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial scene setup with children standing in a decorated school hallway."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "2b5243eee4bc7aa4062ccc8a2cb73519"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:28:03"
+}

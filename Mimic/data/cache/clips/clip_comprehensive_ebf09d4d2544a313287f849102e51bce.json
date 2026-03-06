@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Music-themed montages",
+    "Friendship reels"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men singing enthusiastically along to music inside a car with a sunroof.",
+  "best_moments": {
+    "High": {
+      "start": 11.2,
+      "end": 14.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak vocal intensity and expressive facial gestures during the song's chorus."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial singing that sets the scene and introduces the group dynamic."
+    },
+    "Low": {
+      "start": 6.0,
+      "end": 9.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "A relatively calmer verse section before the energy builds back up to the climax."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "ebf09d4d2544a313287f849102e51bce"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:05:39"
+}

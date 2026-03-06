@@ -1,0 +1,54 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Place-Nature",
+    "Object-Animal"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Nostalgic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Establishing shots",
+    "Nature montages",
+    "Peaceful transitions"
+  ],
+  "avoid_for": [
+    "High-energy peaks",
+    "Action sequences"
+  ],
+  "vibes": [],
+  "content_description": "Birds fly across a pale blue sky framed by palm fronds.",
+  "best_moments": {
+    "High": {
+      "start": 2.2,
+      "end": 4.8,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Peak movement as birds fly across the frame"
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Birds entering the frame, adding visual interest"
+    },
+    "Low": {
+      "start": 5.0,
+      "end": 7.584733,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calm, static shot of the sky and palm tree"
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:31:42"
+}

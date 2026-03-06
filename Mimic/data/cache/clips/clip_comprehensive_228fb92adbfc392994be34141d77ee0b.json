@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Transition shots"
+  ],
+  "avoid_for": [
+    "Stable landscape shots",
+    "Professional documentaries"
+  ],
+  "vibes": [],
+  "content_description": "A vibrant sunset viewed from a moving vehicle passing through a forested area.",
+  "best_moments": {
+    "High": {
+      "start": 8.2,
+      "end": 9.7,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Rapid camera movement and peak sunset colors"
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady movement showing the landscape passing by"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm view through the window frame"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "228fb92adbfc392994be34141d77ee0b"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:55:44"
+}

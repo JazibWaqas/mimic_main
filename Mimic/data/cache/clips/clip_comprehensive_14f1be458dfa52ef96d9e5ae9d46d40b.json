@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Action montages",
+    "Family home videos"
+  ],
+  "avoid_for": [
+    "Calm reflective scenes",
+    "Professional sports broadcasts"
+  ],
+  "vibes": [],
+  "content_description": "A young boy demonstrates martial arts moves, including splits and kicks, in an indoor setting.",
+  "best_moments": {
+    "High": {
+      "start": 37.2,
+      "end": 40.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Powerful final kick and reaction."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Boy performing a split and posing."
+    },
+    "Low": {
+      "start": 34.5,
+      "end": 36.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Quiet moment of focus before the action."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:17:18"
+}

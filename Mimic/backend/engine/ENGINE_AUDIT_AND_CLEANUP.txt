@@ -1,0 +1,153 @@
+DIAGNOSTIC SNAPSHOT (READ-ONLY STATE DUMP)
+==========================================
+
+1. PIPELINE STAGES (REFERENCE MODE), EXECUTION ORDER
+---------------------------------------------------
+  Step 1: Validate inputs (session, reference path, clip paths).
+  Step 2: Detect visual scene changes (threshold 0.12) -> extract ref audio -> detect BPM -> merge scene + beat (_merge_scene_and_beat_timestamps) -> raw_timestamps -> analyze_reference_video (Brain: cache or Gemini with scene_timestamps) -> blueprint; assign cut_origin per segment.
+  Step 3: Analyze user clips (Brain: cache or Gemini per clip).
+  Step 3b: Standardize clips (persistent cache std_{hash}.mp4).
+  Step 4: get_advisor_suggestions (Advisor: cache or Gemini) -> optionally _generate_moment_plans_for_hints if ENABLE_CONTEXTUAL_MOMENTS and no segment_moment_plans -> match_clips_to_blueprint (Editor) -> EDL + advisor_hints.
+  Step 5: Extract segments (processors.extract_segment with slot_duration = timeline_end - timeline_start, frame-exact) -> concatenate_videos -> concat duration check (warn if |concat - blueprint.total_duration| > 0.05) -> apply visual styling only if style_config or Creator mode -> extract ref audio -> merge_audio_video (audio trimmed to video duration) -> validate_output.
+  Step 6: Generate Vault intelligence report (vault_compiler, etc.).
+
+  Input: reference_path, clip_paths, session_id, output_dir, api_key, iteration.
+  Final artifact: MP4 in output_dir, JSON/log/XRAY in output_dir.
+
+2. ENABLED VS DISABLED (REFERENCE MODE)
+---------------------------------------
+  Advisor: ENABLED. get_advisor_suggestions always called; returns AdvisorHints (arc_stage_guidance, text_overlay_intent, etc.) or None on failure (graceful).
+  Segment moment plans (V14.0): ENABLED. ENABLE_CONTEXTUAL_MOMENTS = True. If hints loaded from cache and lack segment_moment_plans, _generate_moment_plans_for_hints is called and cache updated. If hints from API, _generate_moment_plans_for_hints can run after parse. Editor uses advisor_moment_plan when present for a segment (executes moments directly, skips scoring loop).
+  Beat snapping: DISABLED in REFERENCE mode. allow_beat_snapping = (cuts_in_segment > 0 and mode != "REFERENCE"); so in REFERENCE mode allow_beat_snapping is False.
+  Governors: max_cuts_per_segment capped by CDE and sacred cut: in REFERENCE mode, cut_origin == "visual" -> is_sacred_cut_ref True -> max_cuts_per_segment = 2 (hard). get_cde_max_cuts can reduce to 1 for Sparse. Subdivision (should_subdivide): only when cut_origin != "visual" and segment.duration > max_hold (1.2 Peak/short, 2.5 build-up/peak normal, etc.).
+  Retries: GeminiConfig.MAX_RETRIES = 5 (brain). Advisor: 5 attempts; moment_selector: 5; reflector: 5; generator: 5. Brain reference analysis: retry with muted fallback if blocked.
+  Fallbacks: Reference analysis failure -> create_fallback_blueprint(reference_path) (linear 3–4s random holds). Advisor failure -> return None (editor continues without hints). Clip analysis failure -> fallback clip metadata. Best-moment invalid timestamps -> fallback. Standardization: QSV then libx264 fallback.
+
+3. CONSTRAINTS AFFECTING CUT TIMING
+-----------------------------------
+  Frame rounding: SNAP_FPS = 30.0, FRAME_DUR = 1/30. All segment.start/end, decision timeline_start/end, use_duration, clip_end, advisor moment start/duration snapped via round(x / FRAME_DUR) * FRAME_DUR.
+  Frame-exact extract: EXTRACT_FPS = 30. n_frames = max(1, round(duration * EXTRACT_FPS)); exact_duration = n_frames / EXTRACT_FPS; extract_segment uses -t exact_duration and -vf setpts=PTS-STARTPTS,fps=30.
+  Min segment duration: No explicit min segment duration in blueprint build. Editor: MIN_CUT_DURATION = 1.0s for a new cut (if segment_remaining_now < 1.0 and previous decision in same segment, extend previous cut instead). use_duration and clip_end forced >= FRAME_DUR (1/30s).
+  Max segment duration: Not capped in blueprint. Editor max_hold by arc/hold: Intro short 1.2, long 12; Build-up/Peak short 1.2, normal 2.5; etc. Subdivision only when segment.duration > max_hold and cut_origin != "visual".
+  Beat snapping: In REFERENCE mode disabled (allow_beat_snapping False). In PROMPT mode: align_to_nearest_beat(..., tolerance=0.10); BEAT_PHASE_OFFSET = -0.08; only if audio_confidence == "Observed" and not is_last_cut_of_segment.
+  Moment plans influence: When advisor_moment_plan exists for segment, editor uses it exclusively (use_duration = min(moment.duration, segment_remaining), snapped); no scoring loop. Timeline and clip_end derived from that.
+  Continuity/smoothing: Timeline drift guard: if |timeline_position - segment.start| > 0.05, timeline_position = segment.start. segment_remaining <= 0.05 exits fill loop. Gaps between decisions checked in validate_edl (gap > 0.05 logs warning). EDL total vs blueprint checked (warn if > 0.5s). Micro-cut prevention: if segment_remaining_now < MIN_CUT_DURATION (1.0) extend previous decision instead of new cut.
+
+4. SOURCES OF NON-DETERMINISM
+-----------------------------
+  Random: editor.py use_duration = base * random.uniform(0.9, 1.1) when should_subdivide True (PROMPT or non-visual segment with duration > max_hold). brain.py create_fallback_blueprint: hold_time = random.uniform(3.0, 4.0).
+  Retries: All Gemini calls use MAX_RETRIES (5); key rotation on failure; different keys can yield different model outputs.
+  Cache misses: Reference cache miss -> Gemini with scene_timestamps (non-deterministic). Clip cache miss -> Gemini clip/moment analysis. Advisor cache miss -> Gemini Advisor + optional moment plans. Standardized clip cache miss -> FFmpeg encode.
+  Conditional branches: Advisor None vs present; segment_moment_plans present vs not; audio_confidence Observed vs Inferred; cut_origin visual vs beat; CDE Sparse/Moderate/Dense; eligible_clips filter vs fallback to eligible_clips when empty; extend vs new cut when segment_remaining < MIN_CUT_DURATION.
+
+5. CHANGES SINCE LAST KNOWN "GOOD" (FROM CONVERSATION)
+------------------------------------------------------
+  - Extract: duration passed to extract_segment changed from (clip_end - clip_start) to (timeline_end - timeline_start) (timeline as authority).
+  - Extract: frame-exact duration: n_frames = round(duration * 30), exact_duration = n_frames/30, -t exact_duration, -vf fps=30 added in extract_segment.
+  - Post-concat: get_video_duration(concat) and warn if |concat_duration - blueprint.total_duration| > 0.05.
+  - Scene threshold: orchestrator calls detect_scene_changes(..., threshold=0.12) (reverted from 0.2). Processors default remains 0.3 but orchestrator overrides to 0.12.
+  - No removal of features; additions/tightenings as above.
+
+6. ACTIVE CONFIG AFFECTING PACING
+---------------------------------
+  FPS: 30 (SNAP_FPS, EXTRACT_FPS). Standardization fps=30, vsync cfr. Concat fps=30, vsync cfr.
+  Scene detection: threshold = 0.12 (orchestrator). Min gap between kept timestamps 0.15s (processors).
+  Beat merge: snap visual cut to nearest beat if within 0.25s; nearest_beat > 0.1. max_gap 8.0s for inserting one beat cut in middle of gap.
+  Beat align (PROMPT only): tolerance 0.10s; BEAT_PHASE_OFFSET -0.08.
+  Segment fill: segment_remaining <= 0.05 exit. Timeline drift snap threshold 0.05. EDL gap tolerance 0.05s (50ms). EDL total vs blueprint warn threshold 0.5s; concat vs blueprint warn 0.05s.
+  MIN_COVERAGE_RATIO: REFERENCE 0.85, PROMPT 0.5. MIN_CUT_DURATION 1.0s. max_cuts_per_segment: base min(12, max(4, segment.duration/0.6)); sacred cut cap 2; CDE Sparse reduces, Dense min(12, base*1.5).
+
+7. WHAT CAN CAUSE JITTER OR OVER-CUTTING (AS DESIGNED)
+------------------------------------------------------
+  - Scene detection threshold 0.12: sensitive; FFmpeg scene filter can fire on non-editorial changes (motion, lighting, grain) -> more cut timestamps -> more segments -> more cuts in output.
+  - Min gap 0.15s between scene timestamps: two detections 0.2s apart both kept -> two segments in that region.
+  - Hybrid merge: visual cuts snapped to beats within 0.25s; no merging of two visual cuts that are both >0.15s apart; so number of segments = number of (merged) cut points.
+  - REFERENCE mode: one clip per segment typical (sacred cut max 2); segment count is fixed by blueprint. Over-cutting = blueprint has too many segments = too many raw_timestamps from scene detection + merge.
+  - Moment plans: when used, editor takes Advisor-chosen moments; if Advisor suggests multiple moments per segment (or short durations), segment still filled to segment.end but with more cuts (up to max_cuts_per_segment).
+  - Frame rounding: segment boundaries and durations snapped to 1/30s; small cumulative rounding possible across many segments (we mitigate with frame-exact extract).
+  - random.uniform(0.9, 1.1) in editor only when should_subdivide True (non-visual or long segment in PROMPT); in REFERENCE with visual segments should_subdivide is False so no randomness in duration there.
+
+---
+ENGINE AUDIT + CLEAN RUN CHECKLIST (ORIGINAL)
+============================================
+
+You deleted data/results. Below: what each engine file does, what can hurt edits, and what else to delete for a clean run.
+
+---
+1. ORCHESTRATOR (orchestrator.py)
+   - Runs the pipeline: validate -> ref analysis -> clip analysis -> advisor -> editor -> render.
+   - Scene detection: threshold 0.12 (sensitive; can over-detect cuts). Hybrid merges visual + beat.
+   - Extract uses timeline slot duration (fixed); post-concat warns if drift.
+   - Nothing here obviously "breaks" good edits; it wires everything.
+
+2. BRAIN (brain.py)
+   - Reference: loads cache (ref_*_v12.1_*.json) or calls Gemini with scene_timestamps.
+   - If cache has "h" (hybrid hints): segments preserved, no subdivision.
+   - If cache has "hints0": can subdivide when editing_style is Music video / Fast montage / TikTok.
+   - Segment boundaries come from orchestrator's raw_timestamps (from scene + beat merge). Over-cutting = too many timestamps from scene detection or beat merge, not from subdivision when using hybrid cache.
+
+3. PROCESSORS (processors.py)
+   - detect_scene_changes: threshold 0.12 from orchestrator. Then "filter close timestamps" with 0.15s min gap — only merges cuts that are within 0.15s. So two false detections 0.2s apart both stay -> more segments.
+   - extract_segment: frame-exact (n_frames = round(duration*30)), fps=30 in filter. Good for duration.
+   - Concat: re-encode, fps=30, vsync cfr. Fine.
+   - Scene detection is the main source of "too many cuts" when FFmpeg fires on non-cuts (motion, lighting).
+
+4. EDITOR (editor.py)
+   - REFERENCE mode: sacred visual cuts (max 2 clips per segment), no subdivision of visual segments.
+   - Fills each segment from blueprint; uses Advisor moment plans when present, else scoring + moment_selector.
+   - Timeline is authority; frame-snap 30fps. No logic here that invents extra cuts — segment count is fixed by blueprint.
+
+5. MOMENT_SELECTOR (moment_selector.py)
+   - Picks which clip + in/out for a segment. Can chain moments if one doesn't fill. Quality of *which* clip, not how many segments.
+
+6. GEMINI_ADVISOR (gemini_advisor.py) + prompts
+   - Advisor suggests vibes, arc guidance, and can give segment_moment_plans. If plans are wrong, clip choice suffers; segment count still from blueprint.
+
+7. STYLIST, REFLECTOR, VAULT_COMPILER
+   - Post-edit (text, color, critique, vault). Don't change cut count or timing.
+
+8. GENERATOR (generator.py)
+   - Text-to-blueprint only; not used when you use a reference video.
+
+---
+WHAT CAN CAUSE "EDITS NOT LOOKING GOOD"
+--------------------------------------
+- Too many segments (e.g. ref27 first 7s): scene detection + 0.15s min gap. We don't add cuts in editor; we only use what we're given. So "hallucinated cuts" = too many scene_timestamps from processors + orchestrator merge.
+- Wrong clip choices: Advisor or moment_selector or scoring (editor). Can feel off if vibes/energy don't match.
+- Timing drift: we fixed extract to use timeline slot + frame-exact; if you still see length wrong, check one run's log for "[WARN] Concat duration".
+- Stale cache: old reference cache with wrong segment structure or old clip cache with bad metadata. Deleting the right caches forces fresh analysis.
+
+---
+WHAT TO DELETE FOR A CLEAN RUN
+------------------------------
+You already deleted: data/results (all output logs, json, mp4, XRAY).
+
+Delete these next so the next run is fully fresh and you can see current behavior:
+
+1. data/cache/references/*
+   - Removes all cached reference blueprints. Next run will re-detect scenes and re-call Gemini for each ref you use. You'll see exactly how many cuts are detected and what blueprint is built.
+
+2. data/cache/advisor/*
+   - Removes cached Advisor JSON. Advisor will re-run for each ref; no stale guidance.
+
+3. data/temp/*
+   - Session temp dirs (standardized clips per session, segments, temp_video). Clean slate for render. Optional: persistent standardized clips live in data/cache/standardized — keep those if you want to avoid re-encoding clips; delete if you want everything from scratch.
+
+4. (Optional) data/cache/clips/*
+   - Only if you suspect clip metadata is wrong. Keeps clip analysis cache; deleting forces re-analysis of all clips (slower runs).
+
+5. (Optional) data/cache/blueprints/*
+   - If you use text-prompt mode; less relevant for reference-only runs.
+
+Do NOT delete:
+- data/samples/reference/* and data/samples/music/*
+- data/uploads/* (if you have uploads)
+- hash_registry.json is a read cache; safe to delete for clean state but not required.
+
+---
+RECOMMENDED CLEAN RUN
+--------------------
+1. Delete: data/cache/references/*, data/cache/advisor/*, data/temp/*
+2. Keep: data/cache/clips, data/cache/standardized (so runs stay faster and clip quality is same).
+3. Run one reference that used to look good (e.g. ref5 or ref8). Check log: how many visual cuts, how many segments, and watch the output.
+4. If that run looks good, the issue is ref-specific (e.g. ref27 over-detection). If it also looks bad, then something in the pipeline or that ref's content has changed.

@@ -1,0 +1,59 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Establishing shots",
+    "Location transitions"
+  ],
+  "avoid_for": [
+    "High-action sequences",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A plane descends for a landing against a sunset sky, tracked by a panning camera.",
+  "best_moments": {
+    "High": {
+      "start": 6.0,
+      "end": 8.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The plane is lower in the frame and the tracking motion feels most pronounced."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 6.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady tracking of the aircraft across the sky with consistent motion."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial entry of the plane into the frame with a slower relative movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "f22a15677bbeeebc6d6007fd072b7179"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:05:07"
+}

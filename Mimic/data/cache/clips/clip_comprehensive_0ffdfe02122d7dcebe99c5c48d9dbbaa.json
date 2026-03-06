@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Action montages",
+    "Character-driven narratives",
+    "Cinematic transitions"
+  ],
+  "avoid_for": [
+    "Static corporate presentations",
+    "Calm nature documentaries"
+  ],
+  "vibes": [],
+  "content_description": "Cinematic sequence featuring a fighter pilot in a cockpit, a jet flying over desert terrain, and a man looking at a nostalgic photograph.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 5.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Dynamic shot of the fighter jet in motion with high visual energy."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Clear shot of the pilot in the cockpit providing context and character introduction."
+    },
+    "Low": {
+      "start": 7.5,
+      "end": 10.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A still, emotional shot of a photograph, perfect for a narrative pause."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:58:57"
+}

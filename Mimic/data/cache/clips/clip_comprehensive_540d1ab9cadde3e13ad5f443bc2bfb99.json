@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family home movies",
+    "High-energy peaks",
+    "Joyful montages"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Calm reflective scenes"
+  ],
+  "vibes": [],
+  "content_description": "Children perform dances and acrobatic stunts for their family in a lively living room setting.",
+  "best_moments": {
+    "High": {
+      "start": 44.2,
+      "end": 46.8,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak athletic movement with the boy performing a handstand and flip."
+    },
+    "Medium": {
+      "start": 23.5,
+      "end": 26.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained rhythmic dancing and interaction between the children."
+    },
+    "Low": {
+      "start": 51.5,
+      "end": 54.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "A brief pause in the action where the children are standing and interacting with family."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "540d1ab9cadde3e13ad5f443bc2bfb99"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:27:40"
+}

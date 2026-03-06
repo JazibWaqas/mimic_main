@@ -1,0 +1,59 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel vlogs",
+    "Social media stories",
+    "Casual montages"
+  ],
+  "avoid_for": [
+    "High-action sports",
+    "Formal documentaries"
+  ],
+  "vibes": [],
+  "content_description": "A young man records a selfie video while panning to show his friend and the scenic background.",
+  "best_moments": {
+    "High": {
+      "start": 5.8,
+      "end": 7.2,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak of the camera pan and subject interaction at the end of the shot."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady camera movement during the transition between the two subjects."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial framing of the primary subject with minimal camera movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "fa438f497e49c9bf63ca93a3f4055736"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:51:00"
+}

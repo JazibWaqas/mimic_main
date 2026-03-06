@@ -1,0 +1,33 @@
+# ============================================================================
+# STANDARD IGNORES
+# ============================================================================
+.git_BACKUP
+
+# Python
+backend/venv/
+backend/__pycache__/
+*.py[cod]
+*$py.class
+
+# Node / React
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+build/
+
+# Environment / Secret
+.env
+backend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Results and Cache (Heavy Files)
+data/samples/clips/
+data/cache/standardized/
+temp/
+
+# OS
+.DS_Store
+Thumbs.db

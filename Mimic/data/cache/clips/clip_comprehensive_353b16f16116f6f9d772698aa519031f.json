@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Sunset transitions",
+    "Establishing shots"
+  ],
+  "avoid_for": [
+    "High-intensity action sequences",
+    "Static landscape shots"
+  ],
+  "vibes": [],
+  "content_description": "A plane flies across a sunset sky, tracked by a handheld camera from a ground-level perspective.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 8.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Most dynamic camera tracking as the plane moves across the frame."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady tracking of the plane in the open sky with consistent motion."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial entry of the plane into the frame with minimal camera movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:13:48"
+}

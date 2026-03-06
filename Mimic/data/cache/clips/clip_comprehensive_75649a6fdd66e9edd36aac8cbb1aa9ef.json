@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Family home videos",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional cinematic projects"
+  ],
+  "vibes": [],
+  "content_description": "A young child runs and shouts playfully on a rooftop while interacting with an adult.",
+  "best_moments": {
+    "High": {
+      "start": 8.5,
+      "end": 11.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak shouting and expressive arm movements from the child."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Child walking and turning with moderate energy and interaction."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial interaction with minimal movement and lower vocal intensity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "75649a6fdd66e9edd36aac8cbb1aa9ef"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:24:05"
+}

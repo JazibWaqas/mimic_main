@@ -1,0 +1,58 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Place-Nature",
+    "Object-Animal"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Nostalgic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Establishing shots",
+    "Peaceful transitions"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Fast-paced montages"
+  ],
+  "vibes": [],
+  "content_description": "Birds fly across a clear sky with palm tree branches in the foreground.",
+  "best_moments": {
+    "High": {
+      "start": 2.6,
+      "end": 4.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Most active part with birds crossing the frame."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained movement as birds exit the frame."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, clear view of the sky and palm tree before birds enter."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "86bc34182bddd7fb9939d8ef90ea2d45"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:03:13"
+}

@@ -1,0 +1,54 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Intimate",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Establishing shots",
+    "Character introductions",
+    "Reflective narrative moments"
+  ],
+  "avoid_for": [
+    "High-energy peaks",
+    "Action sequences"
+  ],
+  "vibes": [],
+  "content_description": "A camera pans from a collection of trophies to reveal two men sitting and talking on a couch in a modern apartment.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 8.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The peak of character interaction and dialogue within the scene."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Smooth camera pan revealing the subjects and the environment."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Static focus on trophies setting the thematic context of success."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:07:34"
+}

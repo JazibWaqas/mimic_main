@@ -1,0 +1,60 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Nature transitions",
+    "POV hiking sequences"
+  ],
+  "avoid_for": [
+    "High-action sequences",
+    "Static interviews",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "A first-person perspective of walking along a rocky, dirt path through a pine forest.",
+  "best_moments": {
+    "High": {
+      "start": 28.0,
+      "end": 30.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Increased camera movement and shake while navigating more rugged, rocky terrain."
+    },
+    "Medium": {
+      "start": 10.0,
+      "end": 13.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady, consistent walking pace along the forest trail."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial slower movement that sets the scene and location of the hike."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "818e3e1157878ddc7bdca36a21938688"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:55"
+}

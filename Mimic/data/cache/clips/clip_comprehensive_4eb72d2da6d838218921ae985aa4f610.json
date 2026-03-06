@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Action sequences",
+    "Opening establishing shots",
+    "High-energy montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A fighter jet flies at high speed low over the ocean towards a misty coastline.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 3.174,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak sense of speed and proximity to the water and coastline."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained forward motion establishing the flight path."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The initial frame setting the scene before the full sense of speed takes over."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:03:33"
+}

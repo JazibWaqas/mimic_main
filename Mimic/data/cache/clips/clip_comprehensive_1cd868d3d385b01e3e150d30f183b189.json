@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Location establishing shots",
+    "Winter-themed transitions"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of men explore a snowy forest landscape near a mountain house while taking photos.",
+  "best_moments": {
+    "High": {
+      "start": 15.0,
+      "end": 18.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Subject walking away into the forest provides the most dynamic movement in the clip."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady camera pan across the subjects and the environment."
+    },
+    "Low": {
+      "start": 10.0,
+      "end": 13.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Slow pan of the house and road with minimal subject movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:24:50"
+}

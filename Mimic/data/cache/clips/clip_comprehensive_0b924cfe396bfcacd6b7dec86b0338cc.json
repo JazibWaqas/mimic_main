@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family home videos",
+    "Joyful character moments"
+  ],
+  "avoid_for": [
+    "Serious documentaries",
+    "Calm transitions"
+  ],
+  "vibes": [],
+  "content_description": "A young boy in a denim shirt talks, laughs, and moves excitedly towards the camera in a living room.",
+  "best_moments": {
+    "High": {
+      "start": 15.5,
+      "end": 18.5,
+      "moment_role": "Peak",
+      "stable_moment": false,
+      "reason": "Expressive laughter and rapid movement towards the camera lens."
+    },
+    "Medium": {
+      "start": 7.0,
+      "end": 10.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Active gesturing and talking with consistent engagement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively still subject at the start of the scene before the main action."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:15:55"
+}

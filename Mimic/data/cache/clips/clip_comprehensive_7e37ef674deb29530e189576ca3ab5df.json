@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 1,
+  "primary_subject": [
+    "People-Group",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel transitions",
+    "Outdoor adventure montages"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Static interviews"
+  ],
+  "vibes": [],
+  "content_description": "Two men scramble down a hill towards a lake as the camera pans to show the sunset.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Energetic movement of people descending the hill."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Dynamic camera pan across the water landscape."
+    },
+    "Low": {
+      "start": 6.0,
+      "end": 9.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Lingering shot of the sunset over the lake."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "7e37ef674deb29530e189576ca3ab5df"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:11"
+}

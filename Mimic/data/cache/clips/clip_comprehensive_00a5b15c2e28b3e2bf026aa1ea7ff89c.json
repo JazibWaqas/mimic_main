@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Cinematic montages",
+    "High-energy peaks",
+    "Opening establishing shots"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A racing driver and a Formula 1 car being tested in a high-tech wind tunnel.",
+  "best_moments": {
+    "High": {
+      "start": 10.0,
+      "end": 13.0,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Powerful wide shot of the car in the wind tunnel with high visual intensity."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady tracking shot of the car through the observation window."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, focused shot of the driver establishing the human element."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:11:27"
+}

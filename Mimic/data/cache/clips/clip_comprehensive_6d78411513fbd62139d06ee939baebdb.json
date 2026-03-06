@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Reflection",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Intimate"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Emotional montages",
+    "Celebration sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective intros",
+    "Static background shots"
+  ],
+  "vibes": [],
+  "content_description": "A man and woman hug intimately before cutting to men celebrating and dancing on a beach.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 6.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak energy with expressive dancing and high visual activity."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Transition into active beach movement and initial celebration."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Quiet, intimate moment with minimal subject and camera motion."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:00:17"
+}

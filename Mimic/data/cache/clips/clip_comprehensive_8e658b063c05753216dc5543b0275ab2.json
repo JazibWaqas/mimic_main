@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Action sequences",
+    "Sci-fi or aviation montages",
+    "Dramatic builds"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Casual lifestyle content"
+  ],
+  "vibes": [],
+  "content_description": "A pilot in a high-tech cockpit looks out as the vehicle moves through a dark, atmospheric environment with dramatic lighting.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.0,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Maximum visual intensity and dramatic lighting shifts."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady progression of the shot with increasing visual interest."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial frame setting the scene before the peak intensity."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:59:08"
+}

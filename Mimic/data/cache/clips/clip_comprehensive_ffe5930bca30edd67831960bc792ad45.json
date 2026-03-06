@@ -1,0 +1,53 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Crowd",
+    "Object-Animal"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Travel vlogs",
+    "Establishing shots of local culture"
+  ],
+  "avoid_for": [
+    "Professional cinematic edits",
+    "High-end commercials"
+  ],
+  "vibes": [],
+  "content_description": "A sideways handheld pan of a crowded beach with a decorated camel under an overcast sky.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 4.272472,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Faster camera movement revealing the decorated camel and closer crowd."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Steady pan across the beach-goers and horizon."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial slow movement focusing on the distant horizon and sky."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:31:04"
+}

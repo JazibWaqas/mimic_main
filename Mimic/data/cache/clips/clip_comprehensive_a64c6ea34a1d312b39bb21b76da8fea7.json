@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Crowd",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Sports montages",
+    "Narrative transitions"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Consistent calm pacing"
+  ],
+  "vibes": [],
+  "content_description": "A montage of a sports victory celebration, a friendly hug, race cars on a track, and a man resting.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense celebration with confetti and high crowd energy."
+    },
+    "Medium": {
+      "start": 2.8,
+      "end": 4.8,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Expressive hug in a laundromat setting with moderate movement."
+    },
+    "Low": {
+      "start": 9.5,
+      "end": 11.314,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Static shot of a man resting, providing a calm conclusion."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:08:46"
+}

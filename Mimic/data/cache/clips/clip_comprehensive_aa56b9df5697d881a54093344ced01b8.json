@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Crowd"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy sports montages",
+    "Action sequences",
+    "Opening establishing shots"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A race car accelerates rapidly down a track, leaving tire smoke behind as it moves away from the camera.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak acceleration with visible tire smoke and rapid movement away from the camera."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 1.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The transition from stationary to movement as the car begins its launch."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 0.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The initial stationary frame setting the scene before the high-intensity action begins."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:51:53"
+}

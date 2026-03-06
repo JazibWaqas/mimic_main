@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Celebration montages",
+    "Cultural event highlights"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men celebrates joyfully with drums and dancing, carrying one person on their shoulders through a building.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak celebration with a person being carried and intense cheering."
+    },
+    "Medium": {
+      "start": 8.5,
+      "end": 11.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady movement following the drummers through the hallway."
+    },
+    "Low": {
+      "start": 15.0,
+      "end": 18.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Relatively calmer moment following the group from behind as they move away."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:16:53"
+}

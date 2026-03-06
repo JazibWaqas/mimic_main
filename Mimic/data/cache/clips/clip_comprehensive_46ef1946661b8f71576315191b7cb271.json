@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Character introductions",
+    "Intense POV shots",
+    "Build-up to a confrontation"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Establishing shots of scenery"
+  ],
+  "vibes": [],
+  "content_description": "A man with a scarf covering his face walks toward the camera in an urban setting at night.",
+  "best_moments": {
+    "High": {
+      "start": 5.0,
+      "end": 7.5,
+      "moment_role": "Peak",
+      "stable_moment": false,
+      "reason": "Intense close-up with direct eye contact and expressive movement"
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady approach towards the camera with clear subject focus"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup showing the subject in the urban environment"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "46ef1946661b8f71576315191b7cb271"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:08"
+}

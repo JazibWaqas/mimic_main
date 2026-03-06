@@ -1,0 +1,57 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Opening establishing shots",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "High-energy peaks",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A slow pan across a misty mountain landscape with pine trees and a dirt path.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 3.2,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak visual complexity during the pan"
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady camera movement across the valley"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Complete cinematic pan of the landscape"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "8a1ec2039d9b0fd09214c88ae1e799f2"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:55:26"
+}

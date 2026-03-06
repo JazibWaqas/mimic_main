@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Action sequences",
+    "High-energy peaks",
+    "Aviation montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A fighter jet performs a sharp banking maneuver over a desert mountain landscape.",
+  "best_moments": {
+    "High": {
+      "start": 3.8,
+      "end": 5.2,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense banking maneuver with rapid visual change and high kinetic energy."
+    },
+    "Medium": {
+      "start": 2.8,
+      "end": 3.8,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The jet enters the frame and begins its descent, transitioning into high action."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Distant shot of a streak in the sky with minimal camera movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:01:21"
+}

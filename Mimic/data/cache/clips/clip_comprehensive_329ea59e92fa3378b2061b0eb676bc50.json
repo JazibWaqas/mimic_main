@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "ACTIVE",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Reaction shots",
+    "Candid moments",
+    "Vlog highlights"
+  ],
+  "avoid_for": [
+    "Formal presentations",
+    "Calm transitions"
+  ],
+  "vibes": [],
+  "content_description": "Two men sit on a bed looking at phones before one bursts into uncontrollable laughter.",
+  "best_moments": {
+    "High": {
+      "start": 7.0,
+      "end": 9.5,
+      "moment_role": "Peak",
+      "stable_moment": false,
+      "reason": "Peak laughter and expressive physical movement from the subject."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Active interaction and pointing at the phone screen before the outburst."
+    },
+    "Low": {
+      "start": 0.5,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively calm setup with subjects focused on their devices."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "329ea59e92fa3378b2061b0eb676bc50"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:52:13"
+}

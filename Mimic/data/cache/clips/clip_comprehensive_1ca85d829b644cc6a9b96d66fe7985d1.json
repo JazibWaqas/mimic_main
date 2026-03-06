@@ -1,0 +1,57 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Establishing shots",
+    "Nature montages"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Professional horizontal edits"
+  ],
+  "vibes": [],
+  "content_description": "A handheld pan across a mountainous valley with pine trees, filmed in a vertical orientation but rotated sideways.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 3.2,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Most noticeable camera jitter during the pan"
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent panning motion across the landscape"
+    },
+    "Low": {
+      "start": 0.5,
+      "end": 4.295692,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, slow reveal of the mountain scenery"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "1ca85d829b644cc6a9b96d66fe7985d1"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:05"
+}

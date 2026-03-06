@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Crowd",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Nostalgic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Establishing shots",
+    "Travel montages",
+    "Atmospheric transitions"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A crowded beach at sunset with people walking and riding horses under a hazy, golden sky.",
+  "best_moments": {
+    "High": {
+      "start": 5.0,
+      "end": 7.128526,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Increased camera movement and more visible activity across the frame."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent movement of people and horses along the shoreline."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm opening shot with minimal camera shake and clear composition."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:10:47"
+}

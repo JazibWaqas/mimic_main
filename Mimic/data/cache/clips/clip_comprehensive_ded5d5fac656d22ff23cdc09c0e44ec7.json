@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Reflection",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Hero sequences",
+    "Cinematic montages"
+  ],
+  "avoid_for": [
+    "Intimate dialogue",
+    "Minimalist scenes"
+  ],
+  "vibes": [],
+  "content_description": "A cinematic montage featuring a man on a motorcycle racing a jet, a military funeral flyover, and people running on a beach at sunset.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense high-speed motorcycle action synchronized with a jet takeoff."
+    },
+    "Medium": {
+      "start": 12.5,
+      "end": 15.156,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained group motion during a beach run with cinematic lighting."
+    },
+    "Low": {
+      "start": 10.5,
+      "end": 12.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A solemn, still moment featuring a military salute."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:01:16"
+}

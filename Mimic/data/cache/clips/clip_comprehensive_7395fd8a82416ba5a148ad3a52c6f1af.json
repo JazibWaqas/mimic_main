@@ -1,0 +1,57 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Opening establishing shots",
+    "Nature and travel montages"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Fast-paced rhythmic edits"
+  ],
+  "vibes": [],
+  "content_description": "A slow camera pan reveals a misty mountain valley and a dirt hiking trail through pine trees.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 3.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Peak of the camera pan movement across the landscape."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady camera motion revealing the hiking trail."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, continuous pan of the mountain scenery."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "7395fd8a82416ba5a148ad3a52c6f1af"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:53:07"
+}

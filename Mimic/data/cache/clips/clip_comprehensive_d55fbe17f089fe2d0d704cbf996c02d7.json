@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Action transitions",
+    "Nature montages",
+    "POV beach sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Waves crashing on a beach and splashing directly over the camera lens.",
+  "best_moments": {
+    "High": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "The peak moment where the wave crashes over the lens, creating a chaotic splash."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The wave approaches the camera with increasing speed and volume."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial view of the shoreline with waves further in the distance."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:30:21"
+}

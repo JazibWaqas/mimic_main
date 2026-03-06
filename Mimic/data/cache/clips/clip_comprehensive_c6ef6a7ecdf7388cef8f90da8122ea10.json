@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Candid social media clips",
+    "Friendship montages"
+  ],
+  "avoid_for": [
+    "Professional cinematic projects",
+    "Serious narratives"
+  ],
+  "vibes": [],
+  "content_description": "Three friends laugh and pose for a video outdoors, though the footage is captured upside down.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive close-up interaction."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Transitioning between poses with moderate movement and interaction."
+    },
+    "Low": {
+      "start": 12.0,
+      "end": 15.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A calmer moment of standing and looking at each other between actions."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:28:39"
+}

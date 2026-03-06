@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social media montages",
+    "Candid friend moments"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends sits at a picnic table outdoors, laughing and talking.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive movement from the group."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained interaction and smiling with moderate movement."
+    },
+    "Low": {
+      "start": 4.0,
+      "end": 5.249792,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The interaction settles down with minimal subject movement at the end."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "12a00b9407b773d3dfb3b8f086cb1b7a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:06:15"
+}

@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A young boy laughs and jumps on a small chair while interacting with someone off-camera in a bedroom.",
+  "best_moments": {
+    "High": {
+      "start": 75.5,
+      "end": 79.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and physical jumping action"
+    },
+    "Medium": {
+      "start": 24.0,
+      "end": 27.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Focused interaction and recitation"
+    },
+    "Low": {
+      "start": 1.0,
+      "end": 4.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Slower movement as the boy gets up from the floor"
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:17:43"
+}

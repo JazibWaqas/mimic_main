@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Celebration montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends celebrates enthusiastically, dancing around a man wearing a floral garland.",
+  "best_moments": {
+    "High": {
+      "start": 3.2,
+      "end": 5.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak dancing and expressive celebration with high visual activity."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Transition into active dancing with moderate intensity."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup of the celebration scene before peak intensity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "2546f5cc1ae830495837e49487bd88be"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:00:59"
+}

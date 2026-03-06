@@ -1,0 +1,59 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Place-Urban",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Nostalgic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Establishing shots",
+    "Calm reflective moments",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Fast-paced transitions"
+  ],
+  "vibes": [],
+  "content_description": "A person walks along a roadside sidewalk during a colorful sunset.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Slightly more dynamic movement as the subject walks through the frame."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 4.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Consistent walking motion providing a sense of progression."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.179592,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, wide view of the sunset and urban landscape."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c252a2dc856d8d284c0a8746da2a7209"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:02:38"
+}

@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Intimate"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Nighttime transitions",
+    "Friendship montages",
+    "Atmospheric b-roll"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Bright daytime scenes"
+  ],
+  "vibes": [],
+  "content_description": "Three people walk away from the camera along a park path at night under a bright streetlamp.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial movement with a slight skip from one person, showing the most dynamic action."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.62375,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady walking pace as the group moves consistently down the path."
+    },
+    "Low": {
+      "start": 3.5,
+      "end": 3.62375,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Group walking further away into the distance, resulting in less visual movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:17:36"
+}

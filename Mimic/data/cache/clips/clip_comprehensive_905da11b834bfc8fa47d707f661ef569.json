@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family home video montages",
+    "Candid joyful moments"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A family plays a traditional game involving crawling under a bridge of arms and playful tickling in a living room.",
+  "best_moments": {
+    "High": {
+      "start": 96.5,
+      "end": 99.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and physical play during the tickling part of the game."
+    },
+    "Medium": {
+      "start": 40.5,
+      "end": 44.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The group organizes into a circle to start the game chant."
+    },
+    "Low": {
+      "start": 151.0,
+      "end": 156.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A brief pause in the physical activity as the group resets for another round."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "905da11b834bfc8fa47d707f661ef569"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:27:39"
+}

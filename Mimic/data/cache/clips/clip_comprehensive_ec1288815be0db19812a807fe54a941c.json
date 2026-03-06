@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Nightlife montages",
+    "Travel transitions",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A person stands through a car's sunroof at night while music plays and the vehicle moves through a city.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak expressive movement through the sunroof with clear energy."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 4.233,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Sustained motion as the car continues driving through the night."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup of the scene inside the car before peak action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "ec1288815be0db19812a807fe54a941c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:03:52"
+}

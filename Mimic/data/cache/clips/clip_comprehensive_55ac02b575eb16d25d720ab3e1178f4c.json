@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family home video montages",
+    "Candid childhood moments"
+  ],
+  "avoid_for": [
+    "Professional cinematic trailers",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "Children are sitting in a living room, laughing, clapping, and playing a game together.",
+  "best_moments": {
+    "High": {
+      "start": 16.5,
+      "end": 19.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and energetic clapping from the children."
+    },
+    "Medium": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained clapping and rhythmic interaction."
+    },
+    "Low": {
+      "start": 22.0,
+      "end": 25.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Calmer moment with dialogue and less physical movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "55ac02b575eb16d25d720ab3e1178f4c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:24:01"
+}

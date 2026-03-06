@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Action sequences",
+    "Cinematic intros",
+    "High-energy montages"
+  ],
+  "avoid_for": [
+    "Peaceful scenes",
+    "Slow-paced narratives"
+  ],
+  "vibes": [],
+  "content_description": "Fighter jets perform high-speed maneuvers and fly in formation across diverse landscapes.",
+  "best_moments": {
+    "High": {
+      "start": 7.5,
+      "end": 9.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Iconic shot of pilot in cockpit with wingmen in formation."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady formation flight over the ocean showing scale and power."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Wide shot of jets in the distance setting the scene."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:02:43"
+}

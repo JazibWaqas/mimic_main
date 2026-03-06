@@ -1,0 +1,57 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Group activity transitions",
+    "Urban montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men walking together in an outdoor urban area towards a building.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Initial camera movement and group motion create a sense of activity."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady tracking of the group walking at a consistent pace."
+    },
+    "Low": {
+      "start": 2.0,
+      "end": 4.065104,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The most stable portion of the clip as the group approaches the building."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "3dd506beee63ad577a7a79863fb9c644"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:05:01"
+}

@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Activity-Travel",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Night drive sequences",
+    "Transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "A car drives along a highway at night with palm trees and streetlights passing by.",
+  "best_moments": {
+    "High": {
+      "start": 28.0,
+      "end": 31.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Increased visual speed and frequency of passing streetlights."
+    },
+    "Medium": {
+      "start": 12.0,
+      "end": 15.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady movement through the night environment with clear road visibility."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup of the night drive with lower visual density."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:21:21"
+}

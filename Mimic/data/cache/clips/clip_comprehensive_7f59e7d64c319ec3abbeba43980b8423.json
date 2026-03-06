@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 1,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Transition sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "Three people walk away from the camera down a paved path, with one woman skipping and gesturing.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.2,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Expressive skip and arm gesture at the start of the walk."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 2.992517,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady walking pace with active camera tracking."
+    },
+    "Low": {
+      "start": 2.0,
+      "end": 2.992517,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Consistent movement as the group continues down the path."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:22:55"
+}

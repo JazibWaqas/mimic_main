@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family celebration montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Children perform dances and acrobatic moves for their family in a lively living room setting.",
+  "best_moments": {
+    "High": {
+      "start": 28.5,
+      "end": 32.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and physical interaction as the boy lifts the girl."
+    },
+    "Medium": {
+      "start": 13.0,
+      "end": 16.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained dancing with moderate intensity and family engagement."
+    },
+    "Low": {
+      "start": 51.5,
+      "end": 54.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "A brief pause in the performance with minimal subject movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:13:52"
+}

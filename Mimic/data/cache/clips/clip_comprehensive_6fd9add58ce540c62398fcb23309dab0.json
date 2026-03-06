@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid group moments",
+    "Travel vlogs",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends shares a humorous conversation and loud laughter while driving in a car.",
+  "best_moments": {
+    "High": {
+      "start": 29.5,
+      "end": 33.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and high-energy interaction at the end of the clip."
+    },
+    "Medium": {
+      "start": 12.0,
+      "end": 15.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Engaged conversation with moderate movement and expressive gestures."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup of the scene with relatively lower volume and movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:26:39"
+}

@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy montages",
+    "Friendship highlights",
+    "Travel vlogs"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends runs and plays around a man standing in a grassy field with a scenic mountain backdrop.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 8.0,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Multiple subjects running and jumping across the frame simultaneously."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial subjects begin running past the central figure with moderate speed."
+    },
+    "Low": {
+      "start": 11.5,
+      "end": 15.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The action subsides as subjects slow down and return to a standing position."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c8861ca6925a5ccebc9480fe0d1dba97"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:45"
+}

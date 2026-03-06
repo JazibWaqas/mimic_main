@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Crowd",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Sports montages",
+    "Opening establishing shots"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A montage of Formula 1 scenes featuring team celebrations, pit lane preparations, a strategy meeting, and a pre-race flyover.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Spectacular flyover with colored smoke over a crowded race track."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Active pit lane with crew members preparing cars for the race."
+    },
+    "Low": {
+      "start": 3.5,
+      "end": 5.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Focused team meeting in a modern, quiet indoor environment."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:52:27"
+}

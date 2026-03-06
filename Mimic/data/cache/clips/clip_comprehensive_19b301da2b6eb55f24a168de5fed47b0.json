@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "Candid joyful moments"
+  ],
+  "avoid_for": [
+    "Serious documentaries",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "Three children lying on a carpeted floor, laughing and being playfully arranged by an adult.",
+  "best_moments": {
+    "High": {
+      "start": 6.2,
+      "end": 8.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive joy from the children."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Children interacting and smiling while being positioned on the floor."
+    },
+    "Low": {
+      "start": 33.0,
+      "end": 36.36,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Children lying still and looking towards the camera at the end of the scene."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "19b301da2b6eb55f24a168de5fed47b0"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:24:32"
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid group moments",
+    "Vlog transitions"
+  ],
+  "avoid_for": [
+    "Cinematic landscapes",
+    "Formal interviews"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends laugh in an elevator before navigating a dark building to reach an outdoor terrace.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Expressive laughter and group interaction in the elevator."
+    },
+    "Medium": {
+      "start": 38.0,
+      "end": 41.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Group conversation outdoors using a phone flashlight."
+    },
+    "Low": {
+      "start": 63.5,
+      "end": 67.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Subject standing in a doorway with minimal movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "1ba161c5dbcd42f77b264e47d5eb3d1c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:00:05"
+}

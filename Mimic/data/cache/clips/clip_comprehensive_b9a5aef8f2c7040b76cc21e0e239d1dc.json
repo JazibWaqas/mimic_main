@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Adventure montages",
+    "POV travel sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Steady establishing shots"
+  ],
+  "vibes": [],
+  "content_description": "First-person view of a horseback ride through a forest trail following a guide and another rider.",
+  "best_moments": {
+    "High": {
+      "start": 10.0,
+      "end": 12.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak movement and engagement with the trail as the horse navigates uneven terrain."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady pace following the group through the woods."
+    },
+    "Low": {
+      "start": 14.0,
+      "end": 17.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "A brief pan towards the forest scenery, offering a slightly calmer perspective."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "b9a5aef8f2c7040b76cc21e0e239d1dc"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:41"
+}

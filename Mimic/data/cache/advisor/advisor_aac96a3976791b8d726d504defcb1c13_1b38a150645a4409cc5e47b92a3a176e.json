@@ -1,0 +1,768 @@
+{
+  "text_overlay_intent": "The text demands moments that feel universally aspirational and emotionally resonant—not just documenting events, but elevating them into shared ideals of friendship and adventure.",
+  "dominant_narrative": "This video is fundamentally about the electric, collective joy of friendship forged through shared adventure.",
+  "arc_stage_guidance": {
+    "Intro": {
+      "primary_emotional_carrier": "ADVENTURE",
+      "supporting_material": "High-energy group camaraderie that immediately signals the trip's spirit.",
+      "intent_diluting_material": "Static establishing shots or solo moments that delay the feeling of collective momentum.",
+      "reasoning": "The intro must instantly establish the 'vibrant memories' premise with kinetic energy and a clear sense of shared purpose, hooking the viewer into the adventure's emotional core.",
+      "recommended_clips": [
+        "clip_115.mp4",
+        "clip_110.mp4",
+        "clip_105.mp4",
+        "clip_104.mp4",
+        "clip_131.mp4",
+        "clip_129.mp4",
+        "clip_112.mp4",
+        "clip_105.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Build-up": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Action-oriented travel and candid laughter that builds emotional density and variety.",
+      "intent_diluting_material": "Extended scenic shots without human energy or moments that feel isolated or somber.",
+      "reasoning": "This stage must create a relentless, rhythmic collage of friendship in motion, layering different shades of group joy and activity to build towards the peak's celebratory climax.",
+      "recommended_clips": [
+        "clip104.mp4",
+        "clip108.mp4",
+        "clip112.mp4",
+        "clip125.mp4",
+        "clip148.mp4",
+        "clip151.mp4",
+        "clip154.mp4",
+        "clip155.mp4",
+        "clip156.mp4",
+        "clip159.mp4",
+        "clip_104.mp4",
+        "clip_110.mp4",
+        "clip_115.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Peak": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Iconic celebration moments and the most intense camaraderie shots that serve as emotional anchors.",
+      "intent_diluting_material": "Any clip where energy dips or the group dynamic fragments, breaking the collective euphoria.",
+      "reasoning": "The peak is the densest concentration of the memory reel's thesis—pure, unfiltered celebration of togetherness. Every moment should feel like a highlight, a memory you'd want to make.",
+      "recommended_clips": [
+        "clip103 copy.mp4",
+        "clip107.mp4",
+        "clip124.mp4",
+        "clip127.mp4",
+        "clip128.mp4",
+        "clip130.mp4",
+        "clip131.mp4",
+        "clip132.mp4",
+        "clip133.mp4",
+        "clip134.mp4",
+        "clip140.mp4",
+        "clip141.mp4",
+        "clip151.mp4",
+        "clip157.mp4",
+        "clip165.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Outro": {
+      "primary_emotional_carrier": "ADVENTURE",
+      "supporting_material": "Group reactions and travel-button shots that feel like a satisfying, forward-looking conclusion to the journey.",
+      "intent_diluting_material": "Abrupt endings or clips that feel like the party is over instead of the adventure continuing in memory.",
+      "reasoning": "The outro must land the nostalgic 'memory' feeling—not with calm reflection, but with a sense of vibrant completion and the lingering thrill of the shared experience.",
+      "recommended_clips": [
+        "clip_131.mp4",
+        "clip121.mp4",
+        "clip113.mp4",
+        "clip_112.mp4",
+        "clip161.mp4",
+        "clip163.mp4",
+        "clip_105.mp4",
+        "clip_115.mp4"
+      ],
+      "required_energy": ""
+    }
+  },
+  "library_alignment": {
+    "strengths": [
+      "Abundant high-energy JOY clips centered on People-Group camaraderie perfectly match the core narrative.",
+      "Strong presence of celebration and travel activity clips supports the 'memory reel' density."
+    ],
+    "editorial_tradeoffs": [
+      "Must rely heavily on indoor/urban and vehicle-based clips to convey 'mountain adventure,' using vibe over literal scenery.",
+      "The scarcity of pure scenic Place-Nature shots means adventure is implied through human action and reaction, not panoramic establishes."
+    ],
+    "constraint_gaps": [
+      "Literal 'scenic mountain landscapes' and 'iconic travel landmarks' are scarce; their narrative function is carried by the adventurous vibe of group activity clips.",
+      "POV travel perspectives are limited, reducing opportunities for immersive, first-person adventure moments."
+    ]
+  },
+  "editorial_strategy": "Prioritize clips where the group's collective energy and joy are unmistakable, using motion and emotional release to create a relentless, nostalgic collage that feels more like a feeling than a documentary.",
+  "remake_strategy": "A Director's Cut would integrate more authentic mountain scenery and iconic landmark shots to ground the adventure geographically, plus additional POV perspectives to deepen immersion, all while maintaining the same density of group joy.",
+  "primary_narrative_subject": "People-Group",
+  "allowed_supporting_subjects": [
+    "Place-Nature",
+    "Place-Urban"
+  ],
+  "subject_lock_strength": 0.95,
+  "editorial_motifs": [
+    {
+      "trigger": "Vehicles in motion (cars, buses, horseback)",
+      "desired_continuity": "Motion-Carry",
+      "priority": "High"
+    },
+    {
+      "trigger": "Group laughter or cheering",
+      "desired_continuity": "Emotional-Release",
+      "priority": "High"
+    },
+    {
+      "trigger": "Movement through landscapes (forests, mountains, urban nights)",
+      "desired_continuity": "Semantic-Resonance",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Celebratory physical actions (dancing, hugging, high-fives)",
+      "desired_continuity": "Action-Completion",
+      "priority": "Medium"
+    }
+  ],
+  "segment_moment_plans": {
+    "1": {
+      "segment_id": 1,
+      "moments": [
+        {
+          "clip_filename": "clip107.mp4",
+          "moment_energy_level": "Low",
+          "start": 0.0,
+          "end": 0.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip107.mp4's 'Establishing' role (0.0-3.2s) provides the perfect 0.46s duration match with initial setup energy that aligns with the Intro arc stage, while its 'start of movement' creates an adventurous vibe fitting the segment's action function without overcommitting energy too early.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "2": {
+      "segment_id": 2,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "Medium",
+          "start": 10.0,
+          "end": 10.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.47s segment requires a scenic, high-energy intro with short hold time and dense cut expectation. The medium-energy moment from clip113 (10.0-13.5s) provides a stable, scenic driving shot with consistent wiper movement and clear road view that matches the 'Scenic' vibe while maintaining high visual energy through motion. Its 3.5s duration allows precise 0.47s extraction without quality compromise, and the 'Transition' role fits the intro stage better than climax moments that would be too intense for this early segment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "3": {
+      "segment_id": 3,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.46s moment from clip108's High-energy climax captures peak chaotic jumping and physical interaction, perfectly matching the segment's 'Joyful' vibe and 'High' energy during a 'Build-up' arc stage. The 2.2s start point provides an immediate burst of kinetic energy that flows naturally from the previous clip's visual complexity, creating an exciting contrast while maintaining joyful continuity.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "4": {
+      "segment_id": 4,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 6.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.47s segment from clip108.mp4's 'Build' moment provides sustained rhythmic jumping with consistent energy, perfectly matching the reference segment's 'High energy, Adventurous vibe, Build-up arc stage' requirements while maintaining visual continuity from the previous clip108.mp4 cut.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "5": {
+      "segment_id": 5,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "High",
+          "start": 20.0,
+          "end": 20.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Build' role aligns with the segment's 'Build-up' arc stage, its 'High' energy matches the segment's energy requirement, and the atmospheric visual of heavy rain, fast wipers, and multiple light sources perfectly captures the 'Atmospheric' vibe while providing a stable 0.46s segment from a stable moment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "6": {
+      "segment_id": 6,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.67,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.47s segment from clip108's climax moment captures peak chaotic jumping and physical interaction, perfectly matching the reference segment's high energy, joyful vibe, and build-up arc stage. The intense physical movement provides a strong visual reaction shot that flows well from the previous clip's driving scene while maintaining the required short hold duration.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "7": {
+      "segment_id": 7,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "Medium",
+          "start": 10.0,
+          "end": 10.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip113.mp4 provides a scenic driving view with steady wiper movement that matches the 'Scenic' vibe and 'Build-up' arc stage, while its stable camera and consistent pace align with the short 0.46s duration and visual-origin cut.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "8": {
+      "segment_id": 8,
+      "moments": [
+        {
+          "clip_filename": "clip105.mp4",
+          "moment_energy_level": "Medium",
+          "start": 0.0,
+          "end": 0.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip105.mp4 fits the segment's 0.47s duration perfectly with its 'Build' role matching the 'Build-up' arc stage, 'Adventurous' vibe through driving motion, and 'High' energy level. The initial driving sequence provides visual continuity from the previous clip113.mp4 (driving scene) while escalating energy appropriately.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "9": {
+      "segment_id": 9,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 fits perfectly because it captures peak chaotic jumping and physical interaction with 'High' energy matching the segment's 'Joyful' vibe and 'Build-up' arc stage. The 0.46s duration aligns exactly with the segment timing, and the unstable camera movement works well for this short, dense visual-origin cut.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "10": {
+      "segment_id": 10,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.46s segment from clip108's climax moment (2.2-4.8s) provides peak chaotic jumping and physical interaction that matches the segment's 'High energy, Joyful vibe, Build-up arc stage' requirements perfectly. The 0.46s duration fits within the stable portion of this climax moment, and it continues the narrative flow from the previous clip108 moment with escalating energy appropriate for a build-up segment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "11": {
+      "segment_id": 11,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Low",
+          "start": 9.8,
+          "end": 10.27,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 fits perfectly because it provides a 0.47s slice of the 'Reflection' role with 'Low' energy that matches the segment's 'Reflective' vibe and 'High' energy paradox (suggesting emotional intensity rather than physical), while the group's joyful laughing moment offers visual stability for the short hold and creates natural continuity from the previous clip108.mp4.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "12": {
+      "segment_id": 12,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "High",
+          "start": 20.0,
+          "end": 20.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Peak visual complexity with heavy rain, fast wipers, and multiple light sources' provides the 'Atmospheric' vibe and 'High' energy required for this build-up segment, while its stable nature aligns with the visual-origin cut and the dense cut density expectation allows for precise timing within its 2.5s duration.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "13": {
+      "segment_id": 13,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 4.8,
+          "duration": 2.5999999999999996,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'peak chaotic jumping and physical interaction' perfectly matches the segment's 'Triumphant' vibe and 'Peak' arc stage with high energy, while its 2.6s duration allows for a clean 0.47s extraction from the climax portion. The physical triumph of jumping aligns semantically with the action shot function.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 2.5999999999999996,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "14": {
+      "segment_id": 14,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.46s segment from clip108.mp4's 'Climax' moment captures peak chaotic jumping and physical interaction, perfectly matching the reference segment's High energy, Adventurous vibe, and Peak arc stage. The 0.46s duration fits exactly within the stable region of this climax moment, and it provides strong visual continuity from the previous clip108.mp4 while escalating to the action shot function.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "15": {
+      "segment_id": 15,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "High",
+          "start": 20.0,
+          "end": 22.5,
+          "duration": 2.5,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip113.mp4 best fits the segment's 'Scenic' vibe and 'Peak' arc stage with its heavy rain, fast wipers, and multiple light sources creating high visual energy, while its 2.5-second duration provides a stable hold that can be trimmed to the exact 0.47s needed without compromising the scenic quality.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 2.5,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "16": {
+      "segment_id": 16,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment captures peak chaotic jumping and physical interaction with joyful energy, perfectly matching the segment's 'Peak' arc stage and 'High' energy requirement for a reaction shot, while the 0.46s duration fits precisely within the stable chaotic action.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "17": {
+      "segment_id": 17,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.46s segment from clip108's climax moment perfectly matches the reference segment's high energy, adventurous vibe, and peak arc stage. The chaotic jumping and physical interaction aligns with the action shot function, and the short duration fits within the stable portion of this high-energy moment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "18": {
+      "segment_id": 18,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "High",
+          "start": 20.0,
+          "end": 20.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Peak visual complexity with heavy rain, fast wipers, and multiple light sources' provides the atmospheric, high-energy visual establishment needed for this 0.47s peak segment, with its stable framing allowing for a clean, impactful cut.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "19": {
+      "segment_id": 19,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4's 'Climax' role perfectly matches the segment's 'Peak' arc stage with 'High' energy and 'Joyful' vibe, featuring chaotic jumping and physical interaction that delivers an intense reaction shot within the 0.46s duration. The 2.2s start point provides a stable, dynamic visual that flows naturally from the previous driving scene by shifting from environmental intensity to human emotional peak.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "20": {
+      "segment_id": 20,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "Medium",
+          "start": 10.0,
+          "end": 10.47,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.47s segment requires a scenic, high-energy peak moment with a short hold. The medium-energy moment from clip113.mp4 (10.0-13.5s) provides a stable, visually rich driving shot with consistent wiper movement and clear road view that matches the 'scenic' vibe while maintaining high energy through visual complexity. Its stable nature ensures clean execution for this brief duration without requiring multiple cuts.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "21": {
+      "segment_id": 21,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment fits perfectly because it captures peak chaotic jumping and physical interaction (matching the 'Adventurous' vibe and 'High' energy), aligns with the 'Climax' role for the 'Peak' arc stage, and provides the required 0.46s duration from a stable-enough segment for this short visual-origin cut.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "22": {
+      "segment_id": 22,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Low",
+          "start": 9.8,
+          "end": 10.27,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 fits perfectly because it's a joyful reaction shot (group laughing after jumping) that matches the segment's 'Peak' arc stage and 'Reaction' shot function, while the 0.47s duration aligns exactly with the stable 'Reflection' moment's natural flow from the previous clip108.mp4 content.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "23": {
+      "segment_id": 23,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 fits perfectly because it's a 0.46s slice of the 'peak chaotic jumping and physical interaction' climax moment, matching the segment's high energy, joyful vibe, and peak arc stage while maintaining continuity from the previous clip108.mp4.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "24": {
+      "segment_id": 24,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Low",
+          "start": 9.8,
+          "end": 10.27,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4's 'Reflection' role perfectly matches the segment's 'Reflective' vibe and 'Peak' arc stage, showing the group transitioning from high energy to a joyful, laughing moment - ideal for a short, high-energy reflective beat. It flows naturally from the previous clip108.mp4 by providing the emotional release after physical intensity.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "25": {
+      "segment_id": 25,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "High",
+          "start": 20.0,
+          "end": 22.5,
+          "duration": 2.5,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment's 'Peak visual complexity with heavy rain, fast wipers, and multiple light sources' provides the atmospheric, high-energy visual detail needed for this 0.46s peak segment, with its stable framing allowing for a clean, focused cut that matches the dense cut density expectation.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 2.5,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "26": {
+      "segment_id": 26,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.66,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4's climax captures peak chaotic jumping and physical interaction, perfectly matching the segment's triumphant vibe, high energy, and peak arc stage. The 0.46s duration fits precisely within the stable chaotic action, providing visual intensity without requiring multiple cuts.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "27": {
+      "segment_id": 27,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.67,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.47-second segment requires a high-energy, adventurous action moment for an outro stage with dense cut density expectation. The 'Climax' moment from clip108.mp4 (2.2-4.8s) provides peak chaotic jumping and physical interaction that matches the segment's energy and vibe perfectly. Using the first 0.47 seconds of this moment creates a dynamic, action-packed cut that flows well from the previous clip108.mp4 while respecting the short hold requirement.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "28": {
+      "segment_id": 28,
+      "moments": [
+        {
+          "clip_filename": "clip113.mp4",
+          "moment_energy_level": "Medium",
+          "start": 10.0,
+          "end": 10.46,
+          "duration": 0.46,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip113.mp4 provides a scenic driving shot with steady wiper movement that matches the 'Scenic' vibe and 'High' energy requirement for the outro segment, while its stable nature fits the visual-origin cut with dense CDE expectation.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "29": {
+      "segment_id": 29,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Low",
+          "start": 9.8,
+          "end": 10.27,
+          "duration": 0.47,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 perfectly matches the segment's requirements: it's a 0.47s slice of the 'Reflection' moment where the group stops jumping and shares joyful laughter, aligning with the 'Joyful' vibe, 'High' energy, and 'Outro' arc stage while providing a stable visual for this short reaction shot.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "30": {
+      "segment_id": 30,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.960975,
+          "duration": 0.760975,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4's climax phase provides peak chaotic jumping and physical interaction that matches the segment's 'High energy' and 'Adventurous' vibe requirements for an outro, while maintaining continuity from the previous clip108.mp4 selection with stable visual flow.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.760975,
+      "is_single_moment": true,
+      "chaining_reason": null
+    }
+  },
+  "library_assessment": null,
+  "creative_audit": null,
+  "overall_strategy": "",
+  "required_improvements": [],
+  "cache_version": "4.1",
+  "cached_at": "2026-03-06T11:15:37.925572"
+}

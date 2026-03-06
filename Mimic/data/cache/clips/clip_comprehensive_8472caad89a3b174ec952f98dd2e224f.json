@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family memory montages",
+    "Joyful childhood moments"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "Children play and jump on a bed while interacting with adults in a domestic setting.",
+  "best_moments": {
+    "High": {
+      "start": 50.5,
+      "end": 53.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak physical activity and joyful interaction as the child is lifted."
+    },
+    "Medium": {
+      "start": 13.5,
+      "end": 16.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Child standing and engaging with the camera with moderate movement."
+    },
+    "Low": {
+      "start": 46.0,
+      "end": 49.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calm interaction between adults and child with minimal physical action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "8472caad89a3b174ec952f98dd2e224f"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:27:24"
+}

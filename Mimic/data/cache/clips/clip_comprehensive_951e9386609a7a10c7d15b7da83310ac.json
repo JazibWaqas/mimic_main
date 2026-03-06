@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Celebration montages",
+    "High-energy peaks",
+    "Family event highlights"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Children energetically play musical chairs at an indoor party, running and then scrambling to sit when the music stops.",
+  "best_moments": {
+    "High": {
+      "start": 20.5,
+      "end": 23.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak scramble as the music stops and children rush to sit down."
+    },
+    "Medium": {
+      "start": 13.0,
+      "end": 16.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady, rhythmic running around the chairs during the game."
+    },
+    "Low": {
+      "start": 37.0,
+      "end": 40.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A calmer close-up of a child after the intense activity."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:17:22"
+}

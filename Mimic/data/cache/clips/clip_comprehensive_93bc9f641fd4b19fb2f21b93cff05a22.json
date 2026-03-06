@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy adventure sequences",
+    "Travel montages",
+    "Action-oriented transitions"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A sailboat glides across the water followed by a motorcycle speeding through a desert landscape.",
+  "best_moments": {
+    "High": {
+      "start": 5.0,
+      "end": 7.442,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Fast-paced motorcycle action with significant motion blur and speed."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady tracking shot of the motorcycle moving through the desert."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively calmer wide shot of a sailboat on open water."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:56:50"
+}

@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Action sequences",
+    "High-energy peaks",
+    "Cinematic establishing shots"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A fighter jet performs a sharp banking maneuver while flying over a vast, snow-covered mountain range and lake.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 3.088,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The jet performs a dynamic roll and bank maneuver at high speed."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial approach and start of the turn with sustained motion."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The earliest part of the shot before the most intense maneuvering begins."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:57:45"
+}

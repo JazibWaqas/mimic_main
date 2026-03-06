@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Family leisure montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Children and adults enjoy a rotating multi-person seesaw at a park.",
+  "best_moments": {
+    "High": {
+      "start": 18.2,
+      "end": 21.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Fastest rotation with clear joyful expressions and peak activity."
+    },
+    "Medium": {
+      "start": 6.0,
+      "end": 9.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent circular motion and interaction between the participants."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial movement setting the scene and introducing the subjects."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "22e9bd75fbf9d4e4f03e7572db8af134"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:23:58"
+}

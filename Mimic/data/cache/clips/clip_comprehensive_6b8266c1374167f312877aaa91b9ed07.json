@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel vlogs",
+    "High-energy montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends enjoys a lively trip inside a moving van, singing and dancing along to music.",
+  "best_moments": {
+    "High": {
+      "start": 10.5,
+      "end": 13.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Expressive dancing and hand gestures to the music."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Active conversation and interaction between the group members."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial scene setting inside the vehicle with minimal movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "6b8266c1374167f312877aaa91b9ed07"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:47"
+}

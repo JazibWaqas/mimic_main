@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Youth-oriented montages",
+    "High-energy transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Formal presentations"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends playfully interacts at night, culminating in one person jumping over a railing.",
+  "best_moments": {
+    "High": {
+      "start": 10.5,
+      "end": 12.8,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak action of jumping over the railing with high physical energy."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Playful interaction and movement with the scarf leading up to the main action."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup of the scene with relatively lower physical activity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c7552587c39f397bee6ec4205223b78f"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:07:52"
+}

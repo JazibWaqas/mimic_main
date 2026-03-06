@@ -1,0 +1,55 @@
+{
+  "energy": "Medium",
+  "motion": "Still",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Reflection",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Intimate",
+    "Nostalgic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Romantic climaxes",
+    "Cinematic montages",
+    "Lifestyle storytelling"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Fast-paced transitions"
+  ],
+  "vibes": [],
+  "content_description": "A man and woman stand by a classic silver Porsche at sunset and share a romantic kiss.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak emotional moment of the kiss and embrace."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The movement as the couple leans in toward each other."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The initial calm pose before the kiss begins."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:58:09"
+}

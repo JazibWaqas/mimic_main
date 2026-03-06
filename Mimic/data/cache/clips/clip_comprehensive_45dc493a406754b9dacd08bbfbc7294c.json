@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid group moments",
+    "Laughter montages",
+    "Social gathering highlights"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends laughs and plays cards on a balcony at night.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive subject movement."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Camera pans away from the main action with moderate energy."
+    },
+    "Low": {
+      "start": 5.5,
+      "end": 7.642396,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Focus shifts to the dark balcony environment with minimal subject action."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:18:14"
+}

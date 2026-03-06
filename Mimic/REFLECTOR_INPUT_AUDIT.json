@@ -1,0 +1,241 @@
+{
+  "input_audit_title": "Editor Knowledge vs Reflector Input - Field-by-Field Analysis",
+  "audit_summary": "This audit compares the complete knowledge available to the Editor during decision-making with the limited data actually received by the Reflector for post-render analysis.",
+  
+  "editor_knowledge_sources": {
+    "blueprint": {
+      "field_count": 40,
+      "data_richness": "Complete editorial DNA with deep semantic context",
+      "access_level": "Full access to all segment attributes"
+    },
+    "clip_index": {
+      "field_count": 15,
+      "data_richness": "Comprehensive clip analysis with emotional and semantic metadata",
+      "access_level": "Full access to all clip attributes"
+    },
+    "advisor_hints": {
+      "field_count": 12,
+      "data_richness": "Strategic guidance with narrative intent and constraints",
+      "access_level": "Full access to all strategic guidance"
+    },
+    "internal_state": {
+      "field_count": 8,
+      "data_richness": "Real-time decision context, scoring, and continuity tracking",
+      "access_level": "Complete internal algorithmic state"
+    }
+  },
+  
+  "reflector_input_sources": {
+    "blueprint": {
+      "field_count": 8,
+      "data_richness": "Summary fields only, deep context lost",
+      "access_level": "Limited to top-level summary fields"
+    },
+    "edl": {
+      "field_count": 6,
+      "data_richness": "Execution output only, all reasoning lost",
+      "access_level": "Final decisions without context"
+    },
+    "advisor": {
+      "field_count": 5,
+      "data_richness": "High-level strategy only, detailed guidance lost",
+      "access_level": "Summarized guidance, no detailed reasoning"
+    },
+    "critique": {
+      "field_count": 6,
+      "data_richness": "Placeholder values, no actual analysis",
+      "access_level": "Archived/placeholder data only"
+    }
+  },
+
+  "field_by_field_comparison": {
+    "segment_intelligence": {
+      "editor_knows": {
+        "segment.id": "Available",
+        "segment.start/end/duration": "Available",
+        "segment.energy": "Available",
+        "segment.motion": "Available", 
+        "segment.vibe": "Available",
+        "segment.arc_stage": "Available",
+        "segment.shot_scale": "Available",
+        "segment.shot_function": "Available",
+        "segment.expected_hold": "Available",
+        "segment.cut_origin": "Available",
+        "segment.cde": "Available",
+        "segment.temporal_weight": "Available",
+        "segment.emotional_anchor": "Available",
+        "segment.audio_driver": "Available",
+        "segment.camera_movement": "Available",
+        "segment.transition_intent": "Available",
+        "segment.continuity_hook": "Available",
+        "segment.emotional_guidance": "Available",
+        "segment.media_type": "Available",
+        "segment.shot_scale_role": "Available",
+        "segment.audio_priority": "Available",
+        "segment.cut_motivation": "Available"
+      },
+      "reflector_receives": {
+        "segment_summary": "Flattened to basic timing and energy only",
+        "arc_stage_distribution": "Statistical summary only",
+        "vibe_distribution": "Statistical summary only",
+        "editing_style": "High-level label only"
+      },
+      "information_loss": "95% of segment intelligence lost"
+    },
+
+    "clip_intelligence": {
+      "editor_knows": {
+        "clip.filename": "Available",
+        "clip.duration": "Available",
+        "clip.energy": "Available",
+        "clip.motion": "Available",
+        "clip.intensity": "Available",
+        "clip.primary_subject": "Available",
+        "clip.narrative_utility": "Available",
+        "clip.emotional_tone": "Available",
+        "clip.clip_quality": "Available",
+        "clip.best_for": "Available",
+        "clip.avoid_for": "Available",
+        "clip.vibes": "Available",
+        "clip.content_description": "Available",
+        "clip.best_moments": "Available"
+      },
+      "reflector_receives": {
+        "clip_usage_counts": "Statistical summary only",
+        "clip_quality_assessment": "Placeholder values only"
+      },
+      "information_loss": "90% of clip intelligence lost"
+    },
+
+    "decision_context": {
+      "editor_knows": {
+        "complete_scoring_breakdown": "Available (energy, vibe, semantic, musical, continuity)",
+        "rejected_alternatives": "Available with detailed reasoning",
+        "advisor_bias_application": "Available with weighting details",
+        "cde_calculations": "Available with subdivision logic",
+        "subject_lock_enforcement": "Available with strength values",
+        "moment_selection_tradeoffs": "Available with detailed reasoning",
+        "temporal_decisions": "Available with beat snap and jitter",
+        "usage_tracking_state": "Available with cooldown and novelty",
+        "novelty_calculations": "Available with bonus/penalty details"
+      },
+      "reflector_receives": {
+        "final_decisions_only": "EDL with 6 basic fields",
+        "compressed_reasoning": "1-sentence summary per decision",
+        "binary_vibe_match": "True/False flag only"
+      },
+      "information_loss": "98% of decision context lost"
+    },
+
+    "strategic_guidance": {
+      "editor_knows": {
+        "text_overlay_intent": "Available (highest authority)",
+        "dominant_narrative": "Available",
+        "arc_stage_guidance": "Available (detailed per stage)",
+        "library_alignment": "Available (strengths, gaps, tradeoffs)",
+        "editorial_strategy": "Available",
+        "primary_narrative_subject": "Available",
+        "subject_lock_strength": "Available",
+        "segment_moment_plans": "Available (v14.0 contextual selection)"
+      },
+      "reflector_receives": {
+        "library_alignment_summary": "High-level summary only",
+        "editorial_strategy_label": "Text label only"
+      },
+      "information_loss": "85% of strategic guidance lost"
+    }
+  },
+
+  "critical_missing_signals": {
+    "scoring_transparency": {
+      "editor_has": "Complete multi-dimensional scoring for all candidates",
+      "reflector_gets": "None - cannot evaluate decision quality",
+      "impact": "Cannot distinguish good vs bad decisions"
+    },
+    
+    "alternative_analysis": {
+      "editor_has": "Detailed evaluation of all rejected options",
+      "reflector_gets": "None - cannot assess trade-offs",
+      "impact": "Cannot understand why chosen option was best"
+    },
+    
+    "constraint_reasoning": {
+      "editor_has": "Detailed logic for all constraint applications",
+      "reflector_gets": "None - cannot understand limitations",
+      "impact": "Cannot distinguish system vs material limitations"
+    },
+    
+    "temporal_intelligence": {
+      "editor_has": "CDE, beat alignment, subdivision decisions",
+      "reflector_gets": "None - cannot assess rhythmic intelligence",
+      "impact": "Cannot evaluate pacing or timing decisions"
+    },
+    
+    "continuity_tracking": {
+      "editor_has": "Narrative flow, subject consistency, scale progression",
+      "reflector_gets": "None - cannot assess editorial intelligence",
+      "impact": "Cannot evaluate story construction quality"
+    }
+  },
+
+  "data_flow_analysis": {
+    "editor_to_edl": {
+      "input_fields": 75,
+      "output_fields": 6,
+      "compression_ratio": "92.5% data loss",
+      "critical_lost_fields": [
+        "scoring_breakdown",
+        "rejected_alternatives", 
+        "constraint_reasoning",
+        "temporal_decisions",
+        "continuity_tracking"
+      ]
+    },
+    
+    "edl_to_reflector": {
+      "input_fields": 6,
+      "output_fields": 4,
+      "compression_ratio": "33% additional loss",
+      "critical_lost_fields": [
+        "decision_context",
+        "alternative_considerations",
+        "quality_assessment"
+      ]
+    },
+    
+    "total_pipeline_loss": {
+      "editor_knowledge": "75 fields",
+      "reflector_input": "4 fields",
+      "total_compression": "94.7% data loss",
+      "remaining_signal": "Basic execution trace only"
+    }
+  },
+
+  "root_cause_analysis": {
+    "architectural_issue": "EDL treated as complete intelligence artifact",
+    "design_flaw": "No preservation of decision context",
+    "consequence": "Reflector operates on execution output, not intelligence process",
+    "missing_feedback_loop": "No mechanism for Reflector to access decision rationale"
+  },
+
+  "impact_assessment": {
+    "reflector_capabilities": {
+      "can_assess": ["Basic execution completeness", "Timeline accuracy"],
+      "cannot_assess": [
+        "Decision quality",
+        "Alternative trade-offs", 
+        "Constraint handling",
+        "Strategic intelligence",
+        "Editorial judgment",
+        "Material vs system limitations"
+      ]
+    },
+    
+    "vault_report_limitations": {
+      "content": "Generic summaries without causal reasoning",
+      "blame_assignment": "Defaults to library limitations",
+      "actionability": "Limited to generic advice",
+      "intelligence_value": "5% of potential"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social media montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men playfully act out a dramatic scene around a car on a bridge at night.",
+  "best_moments": {
+    "High": {
+      "start": 5.2,
+      "end": 7.8,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak shouting and physical action as the man runs alongside the car."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Expressive shouting from the sunroof building tension and engagement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial scene setup with relatively lower intensity before the main action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "62bf406faabd42166949485a97c8026a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:27"
+}

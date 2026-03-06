@@ -1,0 +1,58 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Activity-Travel",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Establishing travel context",
+    "Calm reflective moments"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "View of an airplane wing and engine from a window seat during flight.",
+  "best_moments": {
+    "High": {
+      "start": 5.0,
+      "end": 6.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Slightest increase in camera vibration toward the end of the clip."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained view with minor handheld drift."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Most stable and calm portion of the flight view."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "72dbaa326d0a4503cd2373c84fd3b0b0"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:52:59"
+}

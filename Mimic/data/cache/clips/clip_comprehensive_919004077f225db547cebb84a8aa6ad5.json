@@ -1,0 +1,52 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Dramatic montages",
+    "Sports training sequences",
+    "Character introductions"
+  ],
+  "avoid_for": [
+    "Joyful celebrations",
+    "Peaceful nature scenes"
+  ],
+  "vibes": [],
+  "content_description": "A cinematic montage of a man reflecting and training for boxing.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 3.096,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Fast-paced boxing training with high physical intensity and rapid cuts."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 2.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Walking sequence with steady camera tracking and moderate movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Initial contemplative close-up with minimal subject movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:50:55"
+}

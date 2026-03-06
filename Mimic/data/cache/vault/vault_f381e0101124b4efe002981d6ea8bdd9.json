@@ -1,0 +1,357 @@
+{
+  "header": "This edit aimed to craft a 14-second narrative within a memory reel framework, prioritizing a balance of adventurous, scenic, and joyful moments. The goal was to maintain a relentless pace while ensuring narrative coherence.",
+  "advisor": {
+    "hero": "The library's limitations significantly influenced the edit's narrative and emotional arcs, with compromises made to maintain pacing and coherence.",
+    "body": "The absence of specific motifs and the overuse of certain clips highlighted the need for a more diverse library. Decisions were often dictated by what was available rather than the ideal choice, leading to a mix of confident selections and forced compromises. The technical discipline of maintaining a vibrant tone and tight sync was crucial in mitigating these issues."
+  },
+  "decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "Achieve an adventurous tone",
+      "decision": "Used clip_013.mp4 because no better alternative was available in the library",
+      "what_if": "No stronger alternative existed",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "Create a scenic atmosphere",
+      "decision": "Settled for clip_007.mp4 due to the library gap",
+      "what_if": "Replacing with an adventure clip could have enhanced the narrative",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "forced_compromise"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "Convey a joyful emotion",
+      "decision": "Selected clip_009.mp4 out of necessity",
+      "what_if": "No viable upgrade was available for this slot",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "Maintain an adventurous vibe",
+      "decision": "Locked in clip_018.mp4 due to library constraints",
+      "what_if": "No better option was available to preserve the narrative",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 5,
+      "what_i_tried": "Enhance the atmospheric feel",
+      "decision": "Deployed clip_036.mp4 as a structural anchor",
+      "what_if": "This choice was necessary to maintain pacing",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 6,
+      "what_i_tried": "Sustain a joyful atmosphere",
+      "decision": "Used clip_011.mp4 due to the lack of a better alternative",
+      "what_if": "No stronger alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 7,
+      "what_i_tried": "Capture a scenic view",
+      "decision": "Selected clip_029.mp4 out of necessity",
+      "what_if": "No upgrade was available for this slot",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 8,
+      "what_i_tried": "Continue the adventurous narrative",
+      "decision": "Locked in clip_031.mp4 due to library gaps",
+      "what_if": "No better option was available to maintain the story",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 9,
+      "what_i_tried": "Convey joyfulness",
+      "decision": "Used clip_012.mp4 because it was the best available choice",
+      "what_if": "No viable alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 10,
+      "what_i_tried": "Sustain the joyful atmosphere",
+      "decision": "Selected clip_014.mp4 due to the absence of a better option",
+      "what_if": "This choice was made to preserve momentum",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 11,
+      "what_i_tried": "Induce a reflective mood",
+      "decision": "Deployed clip_040.mp4 as it was the most suitable choice",
+      "what_if": "No stronger alternative was available for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 12,
+      "what_i_tried": "Enhance the atmospheric feel",
+      "decision": "Used clip_021.mp4 due to library constraints",
+      "what_if": "No better option was available to maintain the narrative",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 13,
+      "what_i_tried": "Convey a triumphant emotion",
+      "decision": "Deployed clip_015.mp4 out of structural necessity",
+      "what_if": "Replacing with a joy clip could have enhanced the narrative",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 14,
+      "what_i_tried": "Continue the adventurous story",
+      "decision": "Selected clip_037.mp4 due to the lack of a better alternative",
+      "what_if": "No stronger alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 15,
+      "what_i_tried": "Capture a scenic view",
+      "decision": "Used clip_039.mp4 because it was the most available choice",
+      "what_if": "No viable upgrade was available for this slot",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 16,
+      "what_i_tried": "Convey joyfulness",
+      "decision": "Locked in clip_016.mp4 due to library gaps",
+      "what_if": "No better option was available to maintain the story",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 17,
+      "what_i_tried": "Maintain an adventurous vibe",
+      "decision": "Selected clip_035.mp4 out of necessity",
+      "what_if": "No stronger alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 18,
+      "what_i_tried": "Enhance the atmospheric feel",
+      "decision": "Used clip_022.mp4 due to the absence of a better option",
+      "what_if": "This choice was necessary to preserve pacing",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 19,
+      "what_i_tried": "Convey joyfulness",
+      "decision": "Deployed clip_019.mp4 as it was the best available choice",
+      "what_if": "No viable alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 20,
+      "what_i_tried": "Capture a scenic view",
+      "decision": "Selected clip_020.mp4 due to library constraints",
+      "what_if": "No better option was available to maintain the narrative",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 21,
+      "what_i_tried": "Continue the adventurous story",
+      "decision": "Used clip_033.mp4 because it was the most suitable choice",
+      "what_if": "No stronger alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 22,
+      "what_i_tried": "Convey joyfulness",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative",
+      "what_if": "No viable upgrade was available for this slot",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 23,
+      "what_i_tried": "Sustain the joyful atmosphere",
+      "decision": "Selected clip_024.mp4 out of necessity",
+      "what_if": "No better option was available to maintain the story",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 24,
+      "what_i_tried": "Induce a reflective mood",
+      "decision": "Used clip_007.mp4 because it was the best available choice",
+      "what_if": "No stronger alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 25,
+      "what_i_tried": "Enhance the atmospheric feel",
+      "decision": "Deployed clip_030.mp4 due to library gaps",
+      "what_if": "No better option was available to maintain the narrative",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 26,
+      "what_i_tried": "Convey a triumphant emotion",
+      "decision": "Deployed clip_001.mp4 out of structural necessity",
+      "what_if": "Replacing with a joy clip could have enhanced the narrative",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 27,
+      "what_i_tried": "Continue the adventurous story",
+      "decision": "Selected clip_040.mp4 due to the absence of a better option",
+      "what_if": "No stronger alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 28,
+      "what_i_tried": "Capture a scenic view",
+      "decision": "Used clip_038.mp4 because it was the most available choice",
+      "what_if": "No viable upgrade was available for this slot",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 29,
+      "what_i_tried": "Convey joyfulness",
+      "decision": "Locked in clip_032.mp4 due to library constraints",
+      "what_if": "No better option was available to maintain the story",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 30,
+      "what_i_tried": "Maintain an adventurous vibe",
+      "decision": "Selected clip_005.mp4 out of necessity",
+      "what_if": "No stronger alternative existed for this segment",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    }
+  ],
+  "executive_summary": [
+    "The library presented gaps in ideal motifs, particularly for 'literal' and 'pov' shots, necessitating compromises.",
+    "Pacing priority was key, with decisions made to preserve the edit's momentum over adding new energy.",
+    "The absence of 'adventure' and 'joy' motifs in certain segments forced the use of available alternatives, impacting narrative sacrifice.",
+    "Technical discipline focused on maintaining a vibrant tone and tight sync, despite library limitations.",
+    "The edit's reliance on the library for vibe and emotion led to a mix of confident decisions and forced compromises."
+  ],
+  "key_decision_stream": [
+    {
+      "segment_id": 2,
+      "what_i_tried": "Create a scenic atmosphere",
+      "decision": "Settled for clip_007.mp4 due to the library gap",
+      "what_if": "Replacing with an adventure clip could have enhanced the narrative",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "forced_compromise"
+      ]
+    },
+    {
+      "segment_id": 13,
+      "what_i_tried": "Convey a triumphant emotion",
+      "decision": "Deployed clip_015.mp4 out of structural necessity",
+      "what_if": "Replacing with a joy clip could have enhanced the narrative",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 26,
+      "what_i_tried": "Convey a triumphant emotion",
+      "decision": "Deployed clip_001.mp4 out of structural necessity",
+      "what_if": "Replacing with a joy clip could have enhanced the narrative",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    }
+  ],
+  "friction_log": [
+    "At the start, confidence was high due to the clear narrative direction, but library gaps soon presented challenges.",
+    "In the middle, compromises were made to maintain pacing, leading to a mix of confident decisions and forced compromises.",
+    "By the end, the edit had successfully balanced narrative coherence with the relentless pace, despite the library's limitations."
+  ],
+  "post_mortem": {
+    "worked": "The technical discipline of maintaining a vibrant tone and tight sync was successful, and key segments like 13 and 26 effectively conveyed their intended emotions.",
+    "didnt": "The absence of 'literal' and 'pov' motifs, along with the overuse of certain clips, highlighted library limitations and the need for more diverse content.",
+    "responsibility": {
+      "vibe": "library",
+      "emotion": "library"
+    }
+  },
+  "next_steps": [
+    "Enhance the library with more diverse motifs to reduce the need for compromises.",
+    "Focus on acquiring clips that can provide a stronger narrative and emotional impact.",
+    "Review and refine the technical discipline to better adapt to library constraints and narrative needs."
+  ],
+  "clip_suggestions": [
+    "Adding more 'adventure' and 'joy' motifs could enhance narrative and emotional impact.",
+    "Acquiring substitutes for overused clips like clip_007.mp4 and clip_040.mp4 would reduce repetition.",
+    "Including 'literal' and 'pov' shots could provide more depth to the narrative.",
+    "Diversifying the library with more atmospheric and reflective clips could enrich the edit's emotional landscape.",
+    "Incorporating clips that can seamlessly transition between different emotions and narratives would improve pacing and coherence."
+  ],
+  "technical": [
+    "Maintaining a 'tone_vibrant' discipline helped to keep the edit engaging despite library limitations.",
+    "The 'pacing_relentless' approach ensured the narrative moved forward with energy, even when compromises were made.",
+    "Achieving 'sync_tightly_synced' was crucial for the edit's overall coherence and emotional impact."
+  ]
+}

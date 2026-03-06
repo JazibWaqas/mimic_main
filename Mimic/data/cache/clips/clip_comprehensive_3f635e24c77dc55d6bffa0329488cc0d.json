@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid childhood moments",
+    "Outdoor activity montages"
+  ],
+  "avoid_for": [
+    "Formal presentations",
+    "Static background loops"
+  ],
+  "vibes": [],
+  "content_description": "A young boy enthusiastically digs a hole in the dirt with a small trowel while smiling.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.2,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak engagement with laughter and vigorous digging action."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent digging activity with moderate pacing and clear subject focus."
+    },
+    "Low": {
+      "start": 14.5,
+      "end": 17.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "More methodical digging with slightly reduced camera movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "3f635e24c77dc55d6bffa0329488cc0d"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:24:53"
+}

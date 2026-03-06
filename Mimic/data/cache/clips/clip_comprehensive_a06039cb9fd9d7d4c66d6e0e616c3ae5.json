@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Peaceful scenes"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men singing along loudly to music inside a car with a sunroof.",
+  "best_moments": {
+    "High": {
+      "start": 11.5,
+      "end": 14.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak vocal intensity and expressive hand gestures from the group."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained group singing with moderate movement and engagement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The start of the clip where the energy is building up from a lower baseline."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:25:58"
+}

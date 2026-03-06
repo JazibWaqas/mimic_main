@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid family montages",
+    "Childhood joy sequences"
+  ],
+  "avoid_for": [
+    "Formal presentations",
+    "Calm reflective intros"
+  ],
+  "vibes": [],
+  "content_description": "A young boy in a denim shirt laughs and gestures excitedly while talking to someone off-camera.",
+  "best_moments": {
+    "High": {
+      "start": 9.0,
+      "end": 11.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive hand gestures from the child."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Engaged talking and smiling with moderate physical movement."
+    },
+    "Low": {
+      "start": 14.0,
+      "end": 17.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A calmer moment of the boy speaking with less intense movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "2e21f4650aed409638138cb214be7985"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:26:30"
+}

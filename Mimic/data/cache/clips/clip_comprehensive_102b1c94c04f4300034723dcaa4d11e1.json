@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Intimate",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Childhood memory montages",
+    "Gardening or DIY sequences"
+  ],
+  "avoid_for": [
+    "High-end cinematic productions",
+    "Fast-paced action sequences"
+  ],
+  "vibes": [],
+  "content_description": "A young boy is seen digging a hole in the ground with a small trowel while people watch in the background.",
+  "best_moments": {
+    "High": {
+      "start": 9.5,
+      "end": 12.5,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Sudden change in posture and camera tracking as the boy stands up."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent digging action with moderate intensity and engagement."
+    },
+    "Low": {
+      "start": 14.5,
+      "end": 17.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Slower, more focused activity towards the end of the clip."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:16:16"
+}

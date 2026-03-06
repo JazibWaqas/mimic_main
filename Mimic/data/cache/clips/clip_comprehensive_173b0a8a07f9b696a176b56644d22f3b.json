@@ -1,0 +1,59 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Nature transitions",
+    "Winter setting establishment"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Three people walk along a snowy mountain path lined with pine trees before the camera pans up to the sky.",
+  "best_moments": {
+    "High": {
+      "start": 4.5,
+      "end": 6.5,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Dynamic camera pan from the subjects up toward the trees."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Steady tracking of the group walking along the snowy path."
+    },
+    "Low": {
+      "start": 6.5,
+      "end": 7.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calm view of the treetops and sky at the end of the pan."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "173b0a8a07f9b696a176b56644d22f3b"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:49:58"
+}

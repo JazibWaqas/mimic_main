@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Animal",
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel vlogs",
+    "Funny animal moments"
+  ],
+  "avoid_for": [
+    "Serious documentaries",
+    "Calm reflective scenes"
+  ],
+  "vibes": [],
+  "content_description": "Monkeys eating food on a stone ledge while a group of people watches and laughs.",
+  "best_moments": {
+    "High": {
+      "start": 11.5,
+      "end": 13.5,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Fast camera pan showing the group's reaction and laughter."
+    },
+    "Medium": {
+      "start": 18.5,
+      "end": 21.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Monkey actively eating with moderate camera movement and background chatter."
+    },
+    "Low": {
+      "start": 1.0,
+      "end": 5.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively steady shot establishing the monkeys on the ledge."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "d96094313698b5e41f47477c74ec088d"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:00:19"
+}

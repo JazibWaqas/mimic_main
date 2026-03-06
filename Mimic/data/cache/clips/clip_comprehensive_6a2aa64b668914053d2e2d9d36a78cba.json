@@ -1,0 +1,55 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Cinematic openings",
+    "Dramatic builds",
+    "Aviation-themed montages"
+  ],
+  "avoid_for": [
+    "High-speed action sequences",
+    "Casual lifestyle content"
+  ],
+  "vibes": [],
+  "content_description": "A person walks down the center of a runway lined with fighter jets under a hazy, sepia-toned sky.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The camera zoom is most pronounced, increasing the visual focus on the subject."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady walking pace and consistent camera movement maintain engagement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The initial wide framing establishes the massive scale of the environment."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:57:54"
+}

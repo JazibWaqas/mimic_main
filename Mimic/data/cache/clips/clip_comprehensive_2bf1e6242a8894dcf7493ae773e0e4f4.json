@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Crowd",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy sports promos",
+    "Event highlight reels",
+    "Fast-paced action montages"
+  ],
+  "avoid_for": [
+    "Calm reflective scenes",
+    "Slow-paced storytelling"
+  ],
+  "vibes": [],
+  "content_description": "A dynamic montage featuring a crowded nightclub, a podium celebration with confetti, and high-speed racing cars on a track with fireworks.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Intense racing action with sparks and fireworks creating peak visual energy."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Celebratory confetti scene with clear subject motion and high engagement."
+    },
+    "Low": {
+      "start": 13.5,
+      "end": 15.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Relatively static shot of the trackside fence providing a brief visual pause."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:53:01"
+}

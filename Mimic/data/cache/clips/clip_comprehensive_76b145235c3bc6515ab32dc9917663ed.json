@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Social media montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men in traditional attire laugh and pose playfully for a handheld camera during a celebration.",
+  "best_moments": {
+    "High": {
+      "start": 15.5,
+      "end": 18.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and rapid, chaotic camera movement."
+    },
+    "Medium": {
+      "start": 6.0,
+      "end": 8.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Clear group interaction with moderate expressive movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial group pose with relatively minimal camera motion."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "76b145235c3bc6515ab32dc9917663ed"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:03:19"
+}

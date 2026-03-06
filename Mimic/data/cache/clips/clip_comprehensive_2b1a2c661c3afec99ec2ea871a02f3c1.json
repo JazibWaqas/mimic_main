@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Reaction shots",
+    "High-energy peaks",
+    "Social media montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men react with excitement and frustration while watching a screen indoors.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 4.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Rapid camera pan and peak vocal reaction from the group."
+    },
+    "Medium": {
+      "start": 4.5,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained expressive reaction following the initial peak."
+    },
+    "Low": {
+      "start": 7.5,
+      "end": 8.455417,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Camera settles on a single subject's face, reducing visual chaos."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "2b1a2c661c3afec99ec2ea871a02f3c1"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:07:10"
+}

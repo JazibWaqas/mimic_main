@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Animal",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel vlogs",
+    "Cultural transitions",
+    "Beach montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A camel walks along a sunny beach while people swim in the ocean in the background.",
+  "best_moments": {
+    "High": {
+      "start": 3.0,
+      "end": 4.5,
+      "moment_role": "Peak",
+      "stable_moment": false,
+      "reason": "Rapid camera pan to reveal the camel creates a burst of visual energy."
+    },
+    "Medium": {
+      "start": 4.5,
+      "end": 6.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady movement of the camel across the frame with moderate activity."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm opening shot of the ocean and beach with gentle camera movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "bad966edf1b7cb3f8e3a96154843f9d8"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:02:48"
+}

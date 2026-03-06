@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Reveal sequences",
+    "Action builds"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Nature documentaries"
+  ],
+  "vibes": [],
+  "content_description": "A man in a garage pulls a tarp off a vintage motorcycle to reveal it.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 4.47,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak action of pulling the tarp and revealing the motorcycle."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The man approaches the bike and prepares to reveal it, creating anticipation."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup showing the covered bike in the garage before the main action starts."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:56:49"
+}

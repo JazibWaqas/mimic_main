@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Home video montages",
+    "Practice and progress sequences",
+    "Youth activity highlights"
+  ],
+  "avoid_for": [
+    "Professional sports documentaries",
+    "Cinematic dramatic narratives"
+  ],
+  "vibes": [],
+  "content_description": "A young boy practices handstands in a living room while being filmed and encouraged by someone off-camera.",
+  "best_moments": {
+    "High": {
+      "start": 26.8,
+      "end": 29.3,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The most successful and energetic handstand attempt in the clip."
+    },
+    "Medium": {
+      "start": 18.5,
+      "end": 21.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The boy moves into position and prepares for another attempt, maintaining steady activity."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The boy stands still at the beginning, setting the scene before the activity starts."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "a7690fa7c64b8c5eecc5cbc956560706"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:26:21"
+}

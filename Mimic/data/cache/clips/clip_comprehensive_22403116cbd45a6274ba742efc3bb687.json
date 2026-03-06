@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Comedy montages",
+    "High-energy peaks",
+    "Prank videos"
+  ],
+  "avoid_for": [
+    "Calm reflective intros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends play a prank by locking one person outside on a balcony while laughing hysterically.",
+  "best_moments": {
+    "High": {
+      "start": 3.2,
+      "end": 5.8,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Chaotic physical comedy as the person falls and friends laugh."
+    },
+    "Medium": {
+      "start": 51.5,
+      "end": 55.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Interaction through the glass with moderate movement and laughter."
+    },
+    "Low": {
+      "start": 57.5,
+      "end": 61.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The person outside gives up and stands still, looking defeated."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "22403116cbd45a6274ba742efc3bb687"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:52:58"
+}

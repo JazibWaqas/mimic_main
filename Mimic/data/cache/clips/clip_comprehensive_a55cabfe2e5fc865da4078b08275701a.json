@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social media lifestyle content",
+    "Casual food montages"
+  ],
+  "avoid_for": [
+    "Professional culinary ads",
+    "Serious dramatic narratives"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends shares a laugh while eating french fries at a wooden table.",
+  "best_moments": {
+    "High": {
+      "start": 5.8,
+      "end": 8.3,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive hand movement during the joke."
+    },
+    "Medium": {
+      "start": 3.2,
+      "end": 5.7,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Action of picking up a fry and starting the interaction."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial shot of the food before the main interaction begins."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "a55cabfe2e5fc865da4078b08275701a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:01:40"
+}

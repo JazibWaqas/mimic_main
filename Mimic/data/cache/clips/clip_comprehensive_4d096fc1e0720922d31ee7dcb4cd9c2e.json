@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social media montages",
+    "Humorous interludes",
+    "Group interaction highlights"
+  ],
+  "avoid_for": [
+    "Professional corporate presentations",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "Two young men lie on a wooden floor laughing while a third person interacts with them.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 5.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and physical interaction between the subjects"
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Initial conversation and setup for the humorous moment"
+    },
+    "Low": {
+      "start": 6.5,
+      "end": 10.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Subjects settling down after the laughter with less camera movement"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "4d096fc1e0720922d31ee7dcb4cd9c2e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:56"
+}

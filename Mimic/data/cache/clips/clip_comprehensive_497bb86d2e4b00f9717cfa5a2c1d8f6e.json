@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 1,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Street food vlogs",
+    "Friendship highlight reels"
+  ],
+  "avoid_for": [
+    "Formal news reporting",
+    "Slow-paced cinematic intros"
+  ],
+  "vibes": [],
+  "content_description": "Friends laughing and sharing fries at a night food stall.",
+  "best_moments": {
+    "High": {
+      "start": 4.5,
+      "end": 6.5,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Expressive laughter and active eating create a high-energy social peak."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Casual conversation and interaction provide a steady medium-energy build."
+    },
+    "Low": {
+      "start": 8.0,
+      "end": 9.599854,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Close-up of the food with less human interaction, though camera motion remains active."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "497bb86d2e4b00f9717cfa5a2c1d8f6e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:53:06"
+}

@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Transitions",
+    "Atmospheric sequences"
+  ],
+  "avoid_for": [
+    "Static interviews",
+    "Stable landscape shots"
+  ],
+  "vibes": [],
+  "content_description": "A vibrant sunset captured from a moving vehicle, showing trees and road barriers passing by.",
+  "best_moments": {
+    "High": {
+      "start": 7.0,
+      "end": 10.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Fast-paced visual movement of trees against the sunset sky."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Moderate camera movement transitioning the view and perspective."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial framed shot of the sunset with lower relative motion."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:11:27"
+}

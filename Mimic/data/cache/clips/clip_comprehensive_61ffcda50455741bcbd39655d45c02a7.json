@@ -1,0 +1,58 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Transition sequences"
+  ],
+  "avoid_for": [
+    "High-energy action scenes",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "Two people walk away from the camera along a tiled balcony overlooking a city.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 2.7,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Peak of the walking motion and camera tracking."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 3.436553,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Consistent walking pace and framing."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.436553,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The overall steady pace serves as a calm transition."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "61ffcda50455741bcbd39655d45c02a7"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:02:45"
+}

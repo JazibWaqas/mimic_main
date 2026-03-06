@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "High-energy peaks",
+    "Leisure activity segments"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional sports analysis"
+  ],
+  "vibes": [],
+  "content_description": "Two young boys jumping and playing on a large outdoor trampoline.",
+  "best_moments": {
+    "High": {
+      "start": 14.5,
+      "end": 17.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak action where one boy falls while the other continues to jump energetically."
+    },
+    "Medium": {
+      "start": 6.0,
+      "end": 9.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent jumping and movement from both boys with moderate intensity."
+    },
+    "Low": {
+      "start": 28.5,
+      "end": 31.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A calmer moment where the boys are standing still on the trampoline."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "f3c2cbc2784bbd2306755724b69f5870"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:24:33"
+}

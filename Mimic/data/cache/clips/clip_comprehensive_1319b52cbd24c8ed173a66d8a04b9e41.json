@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid joy montages",
+    "Reaction shots",
+    "Music-themed content"
+  ],
+  "avoid_for": [
+    "Serious dramatic scenes",
+    "Slow-paced intros"
+  ],
+  "vibes": [],
+  "content_description": "A man and a woman share a moment of intense laughter while he sits at a piano.",
+  "best_moments": {
+    "High": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive physical movement from both subjects."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The initial burst of laughter as the scene develops."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The full duration provides the necessary context for the candid interaction."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "1319b52cbd24c8ed173a66d8a04b9e41"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:08:48"
+}

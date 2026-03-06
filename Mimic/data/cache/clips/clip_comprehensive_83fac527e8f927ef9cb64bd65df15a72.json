@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Still",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Racing start sequences",
+    "Anticipation builds",
+    "High-stakes transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate scenes"
+  ],
+  "vibes": [],
+  "content_description": "A sequence of red racing start lights illuminating one by one to build anticipation for a race start.",
+  "best_moments": {
+    "High": {
+      "start": 2.986417,
+      "end": 3.086417,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "All five sets of lights are illuminated, representing peak tension and anticipation."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The lights are mid-sequence, showing clear progression and increasing visual weight."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The start of the sequence with fewer lights on, setting the initial context."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:53:36"
+}

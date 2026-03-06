@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Cinematic trailers",
+    "Action-oriented montages",
+    "High-stakes storytelling"
+  ],
+  "avoid_for": [
+    "Slow-paced domestic scenes",
+    "Corporate instructional videos"
+  ],
+  "vibes": [],
+  "content_description": "A cinematic montage featuring a couple on a motorcycle at sunset, a pilot in a cockpit, and a jet contrail seen from space.",
+  "best_moments": {
+    "High": {
+      "start": 6.0,
+      "end": 9.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Dramatic and high-scale visual of a jet contrail against the Earth's curvature."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Dynamic motorcycle shot with scenic background and moderate subject motion."
+    },
+    "Low": {
+      "start": 3.0,
+      "end": 5.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Intense, relatively static close-up focusing on the pilot's expression."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:00:10"
+}

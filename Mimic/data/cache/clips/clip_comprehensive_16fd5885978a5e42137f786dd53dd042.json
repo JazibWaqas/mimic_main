@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Playful home videos",
+    "Childhood activity montages"
+  ],
+  "avoid_for": [
+    "Professional cinematic transitions",
+    "Calm reflective scenes"
+  ],
+  "vibes": [],
+  "content_description": "A young boy playfully climbs and braces himself against the sides of a doorframe while being filmed.",
+  "best_moments": {
+    "High": {
+      "start": 4.5,
+      "end": 7.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak physical activity with the boy moving his limbs to maintain his position."
+    },
+    "Medium": {
+      "start": 14.0,
+      "end": 17.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained effort with moderate movement as the boy holds his pose."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial setup and entry into the frame with relatively lower intensity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "16fd5885978a5e42137f786dd53dd042"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:24:41"
+}

@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Candid family moments",
+    "Expressive character shots"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A young boy in overalls laughs, sings, and dances energetically while being interviewed off-camera.",
+  "best_moments": {
+    "High": {
+      "start": 14.5,
+      "end": 17.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak expressive movement and joyful shouting."
+    },
+    "Medium": {
+      "start": 80.06,
+      "end": 80.16,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Rhythmic movement and singing with moderate intensity."
+    },
+    "Low": {
+      "start": 80.06,
+      "end": 80.16,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A quieter moment of the child listening and responding calmly."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "436f7fc58968e5e3849c3c74d3f4a017"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:25:26"
+}

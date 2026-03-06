@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Activity highlights",
+    "Family montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional sports analysis"
+  ],
+  "vibes": [],
+  "content_description": "A young boy in a yellow striped shirt performs martial arts kicks and jumps in a living room.",
+  "best_moments": {
+    "High": {
+      "start": 20.5,
+      "end": 22.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Strongest kick and jump sequence with peak physical movement."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained balance on one leg showing controlled preparation for action."
+    },
+    "Low": {
+      "start": 17.0,
+      "end": 20.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A still moment of focus and minimal movement before the final kick."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "e6188031ecb80b4efd45eb0d17ffd9f4"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 03:38:53"
+}

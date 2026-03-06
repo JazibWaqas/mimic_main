@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Joyful montages",
+    "Family memories"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A young boy laughs and jumps energetically on a small chair in a bedroom while interacting with someone off-camera.",
+  "best_moments": {
+    "High": {
+      "start": 76.0,
+      "end": 78.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and energetic jumping on the chair."
+    },
+    "Medium": {
+      "start": 20.0,
+      "end": 23.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Boy sitting and talking clearly to the camera."
+    },
+    "Low": {
+      "start": 72.5,
+      "end": 75.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A brief moment of relative stillness as the boy leans on the bed."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "9e585a743cdcde79283eefb6ae455f17"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:26:17"
+}

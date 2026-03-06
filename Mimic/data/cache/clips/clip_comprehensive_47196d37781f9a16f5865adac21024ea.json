@@ -1,0 +1,58 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social interaction montages",
+    "Casual lifestyle clips"
+  ],
+  "avoid_for": [
+    "High-speed action",
+    "Still landscapes"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends are talking and eating at a table while the camera pans across them.",
+  "best_moments": {
+    "High": {
+      "start": 0.8,
+      "end": 2.3,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Active camera pan across the group showing interaction"
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Standard pacing of a social interaction"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Contextual setup of the group gathering"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "47196d37781f9a16f5865adac21024ea"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:08:37"
+}

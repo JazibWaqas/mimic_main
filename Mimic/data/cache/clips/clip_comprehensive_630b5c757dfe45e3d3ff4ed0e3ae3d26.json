@@ -1,0 +1,59 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Place-Nature",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Dramatic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Establishing shots",
+    "Atmospheric transitions",
+    "Nature montages"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A vertical pan from a lit coastal building across rocky shores to a grey, expansive sea under a cloudy sky.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial camera movement and focus on the lit building."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady upward pan across the rocky shoreline."
+    },
+    "Low": {
+      "start": 3.2,
+      "end": 6.2,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calm, lingering view of the sea and horizon."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "630b5c757dfe45e3d3ff4ed0e3ae3d26"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:05:53"
+}

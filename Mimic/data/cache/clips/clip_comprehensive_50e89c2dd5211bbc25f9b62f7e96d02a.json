@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Gentle",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Reflection",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Nostalgic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Dramatic trailers",
+    "Emotional montages",
+    "Character-driven builds"
+  ],
+  "avoid_for": [
+    "Joyful celebrations",
+    "Casual vlogs"
+  ],
+  "vibes": [],
+  "content_description": "A pilot in a cockpit is intercut with a flag being draped over a casket.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.8,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense close-up of the pilot's focused expression with high visual weight."
+    },
+    "Medium": {
+      "start": 3.6,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Return to the pilot's face, maintaining tension after the emotional cut."
+    },
+    "Low": {
+      "start": 1.9,
+      "end": 3.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Solemn shot of a flag being placed on a casket, providing emotional pause."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:00:30"
+}

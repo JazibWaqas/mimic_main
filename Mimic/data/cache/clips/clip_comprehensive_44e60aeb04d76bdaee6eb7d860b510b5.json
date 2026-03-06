@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Casual interaction scenes",
+    "Vlog-style transitions"
+  ],
+  "avoid_for": [
+    "Formal interviews",
+    "Calm reflective moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men are looking at and discussing a grey hoodie at an outdoor night market.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 4.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and expressive interaction with rapid camera movement."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained conversation and interaction with moderate camera movement."
+    },
+    "Low": {
+      "start": 13.0,
+      "end": 15.779722,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "A calmer moment as the focus shifts toward the clothing rack."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "44e60aeb04d76bdaee6eb7d860b510b5"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:59:10"
+}

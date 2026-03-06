@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Family leisure montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of children and adults enjoy a rotating seesaw ride in a park.",
+  "best_moments": {
+    "High": {
+      "start": 19.2,
+      "end": 22.2,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak spinning speed and visible excitement from the children."
+    },
+    "Medium": {
+      "start": 10.5,
+      "end": 13.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady rotation with clear focus on the participants."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup and slower movement at the start of the clip."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:35:39"
+}

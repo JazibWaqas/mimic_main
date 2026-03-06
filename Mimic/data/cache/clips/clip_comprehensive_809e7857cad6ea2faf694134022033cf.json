@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Energetic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Opening establishing shots",
+    "Dramatic sports trailers",
+    "Cinematic montages"
+  ],
+  "avoid_for": [
+    "Casual home videos",
+    "Low-budget aesthetic"
+  ],
+  "vibes": [],
+  "content_description": "Aerial night view of a lit-up Formula 1 track followed by Brad Pitt examining the track surface.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "High-energy aerial shot with vibrant lights and scale."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Focused interaction with the track surface providing narrative build."
+    },
+    "Low": {
+      "start": 3.5,
+      "end": 6.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Quiet, contemplative close-up with minimal movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:06:44"
+}

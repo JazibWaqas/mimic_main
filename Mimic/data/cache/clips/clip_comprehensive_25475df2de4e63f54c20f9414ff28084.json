@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Nostalgic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Opening establishing shots",
+    "Patriotic montages",
+    "Cinematic transitions"
+  ],
+  "avoid_for": [
+    "High-energy action sequences",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Military personnel stand in a hangar before a large American flag, followed by a helicopter flying at sunset.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The helicopter flying across the sun provides the peak visual movement and cinematic intensity."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The transition to the sunset silhouette introduces controlled motion and a change in lighting."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "A static, low-energy shot establishing the military setting and patriotic theme."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:58:21"
+}

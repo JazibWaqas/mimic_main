@@ -1,0 +1,53 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel transitions",
+    "Atmospheric establishing shots"
+  ],
+  "avoid_for": [
+    "High-energy action scenes",
+    "Bright joyful montages"
+  ],
+  "vibes": [],
+  "content_description": "A person with a backpack walks through a dimly lit, arched stone tunnel.",
+  "best_moments": {
+    "High": {
+      "start": 9.0,
+      "end": 12.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Increased visual complexity with more lights and movement towards the tunnel's end."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Steady walking shot establishing the environment and the subject's journey."
+    },
+    "Low": {
+      "start": 4.5,
+      "end": 7.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Darker segment with minimal visual detail and a slower, more contemplative feel."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:24:12"
+}

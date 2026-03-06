@@ -1,0 +1,58 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Peaceful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Winter transitions"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "A group of men explore a snowy forest landscape near a mountain lodge.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Subject walking towards camera creates the most dynamic visual change in the clip."
+    },
+    "Medium": {
+      "start": 17.5,
+      "end": 20.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Subject walking away into the forest at a steady, moderate pace."
+    },
+    "Low": {
+      "start": 8.0,
+      "end": 12.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Slow pan across the snowy road and lodge with minimal subject movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "a5c40c99018e12af8ff740e959440b19"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:51"
+}

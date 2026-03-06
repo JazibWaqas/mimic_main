@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Funny reveals",
+    "Vlog highlights",
+    "High-energy transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Two friends laugh and joke in a bathroom filled with thick steam.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and the visual reveal of the steam-filled room."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained interaction and movement as the subjects adjust to the environment."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial setup of opening the door, though it quickly transitions to high energy."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "7fb6c5a0f7ed9f9d6de9f0b7ae6d6099"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:41"
+}

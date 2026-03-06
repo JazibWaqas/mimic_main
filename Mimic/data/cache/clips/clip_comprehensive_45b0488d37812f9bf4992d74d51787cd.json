@@ -1,0 +1,53 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Opening establishing shots",
+    "Build-up to action"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "Two fighter jets on an elevator platform rise to the flight deck of an aircraft carrier at sea.",
+  "best_moments": {
+    "High": {
+      "start": 8.0,
+      "end": 10.138,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The jets reach the deck level with peak visual scale and dramatic lighting."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady upward movement of the elevator platform showing the jets and ocean."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial silhouettes and the beginning of the mechanical ascent."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:55:43"
+}

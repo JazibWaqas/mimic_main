@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Vlog-style transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends play-fighting and laughing in an indoor arena with colorful obstacles.",
+  "best_moments": {
+    "High": {
+      "start": 8.5,
+      "end": 11.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Intense physical interaction and laughter among friends."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady camera movement walking towards the group."
+    },
+    "Low": {
+      "start": 18.0,
+      "end": 21.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Group standing and talking after the main action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "64f28f44e34821f60d2e684acaa37e5b"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:12:38"
+}

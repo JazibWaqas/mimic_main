@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Crowd",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Event promos",
+    "Action transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A fast-paced racing sequence transitions to a large crowd cheering in an auditorium.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Kinetic racing POV provides peak visual intensity and rapid movement."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained crowd reaction with expressive but controlled movement."
+    },
+    "Low": {
+      "start": 5.5,
+      "end": 6.472,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The final moments of the crowd shot where the camera and movement stabilize."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:50:50"
+}

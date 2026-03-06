@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "High-energy peaks",
+    "Home video montages"
+  ],
+  "avoid_for": [
+    "Professional cinematic projects",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A young boy laughs and screams joyfully while being playfully moved around by an adult indoors.",
+  "best_moments": {
+    "High": {
+      "start": 51.5,
+      "end": 53.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and intense movement from the child."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Expressive interaction and smiling with moderate camera movement."
+    },
+    "Low": {
+      "start": 43.0,
+      "end": 46.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "A relatively calm moment where the child is thinking and responding."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "ac3e8b8b01ed3b2b0a4910cde2ca1e19"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:26:26"
+}

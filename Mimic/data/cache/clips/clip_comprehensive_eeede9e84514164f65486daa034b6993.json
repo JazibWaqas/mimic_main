@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Celebration montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men in traditional attire clap and celebrate together at an indoor event.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Initial clapping and energetic camera movement capturing the peak celebration."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady pan across smiling faces with consistent clapping motion."
+    },
+    "Low": {
+      "start": 4.0,
+      "end": 6.899063,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Slightly more stable framing on individuals at the end of the sequence."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "eeede9e84514164f65486daa034b6993"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:05:04"
+}

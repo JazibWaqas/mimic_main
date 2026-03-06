@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Two men celebrate and shout while leaning out of a moving car's sunroof at night.",
+  "best_moments": {
+    "High": {
+      "start": 10.5,
+      "end": 13.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak shouting and laughter with high kinetic energy."
+    },
+    "Medium": {
+      "start": 4.5,
+      "end": 7.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady movement and anticipation before the peak celebration."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup showing the subjects in the car before the high-energy action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "e09d0803e95603dac35fd1ec29cf3372"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:24"
+}

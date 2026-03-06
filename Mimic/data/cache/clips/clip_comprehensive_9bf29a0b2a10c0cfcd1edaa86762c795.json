@@ -1,0 +1,55 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Nostalgic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Cinematic openings",
+    "Character introductions",
+    "Military montages"
+  ],
+  "avoid_for": [
+    "Fast-paced action sequences",
+    "Casual vlog content"
+  ],
+  "vibes": [],
+  "content_description": "Cinematic sequence featuring an aircraft carrier at sea, a pilot, a stealth jet, and personal flight gear.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Dynamic aerial shot of an aircraft carrier with significant visual scale and movement."
+    },
+    "Medium": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Controlled subject movement as the pilot interacts with his locker and gear."
+    },
+    "Low": {
+      "start": 10.5,
+      "end": 14.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Slow, contemplative pan over a commemorative plaque and personal items."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:56:00"
+}

@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Sports montages",
+    "Fast-paced transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A montage of high-speed racing cars, including GT and Formula 1, performing maneuvers on various tracks.",
+  "best_moments": {
+    "High": {
+      "start": 15.0,
+      "end": 18.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak visual intensity with tire smoke and aggressive drifting maneuvers."
+    },
+    "Medium": {
+      "start": 8.5,
+      "end": 11.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Fast-paced racing action with multiple cars in frame and steady tracking."
+    },
+    "Low": {
+      "start": 3.5,
+      "end": 5.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Wide establishing shot of the track with minimal subject movement compared to other scenes."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:49:51"
+}

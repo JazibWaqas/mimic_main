@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Action sequences",
+    "Cinematic trailers",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Fighter jets perform high-speed maneuvers over mountains and fly in formation over the ocean.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense banking maneuvers with rapid visual changes and high-speed action."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained high-speed flight over desert terrain with consistent tracking motion."
+    },
+    "Low": {
+      "start": 2.5,
+      "end": 4.463,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively stable formation flight over the ocean, serving as a cinematic establishing shot."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:02:42"
+}

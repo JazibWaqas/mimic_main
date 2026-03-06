@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Humorous montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Serious documentaries"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends playfully carries one person before running away together in a courtyard.",
+  "best_moments": {
+    "High": {
+      "start": 21.5,
+      "end": 24.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak movement as the group runs away together."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained group interaction and laughter while holding the friend."
+    },
+    "Low": {
+      "start": 16.5,
+      "end": 19.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "A brief pause in the main action as a passerby walks through the frame."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "0e3c3e5a68db4ffbddee6c620362620a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:03:18"
+}

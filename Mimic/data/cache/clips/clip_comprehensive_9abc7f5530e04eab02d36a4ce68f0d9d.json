@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Activity-Travel",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Night-out sequences",
+    "Fast-paced transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A POV shot from inside a car driving fast on a highway at night with loud music and singing.",
+  "best_moments": {
+    "High": {
+      "start": 28.5,
+      "end": 31.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak speed shown on the speedometer combined with high-intensity singing and music."
+    },
+    "Medium": {
+      "start": 12.0,
+      "end": 15.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady forward motion through highway lights with consistent vocal energy."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The start of the drive, setting the scene before the peak speed and vocal intensity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "9abc7f5530e04eab02d36a4ce68f0d9d"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:02:34"
+}

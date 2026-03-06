@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Candid social montages",
+    "High-energy transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective scenes",
+    "Professional settings"
+  ],
+  "vibes": [],
+  "content_description": "Friends laughing hysterically while playing cards on a balcony at night.",
+  "best_moments": {
+    "High": {
+      "start": 3.2,
+      "end": 5.8,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and expressive physical reactions from the group."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.8,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Initial interaction and card game setup before the intense laughter."
+    },
+    "Low": {
+      "start": 5.0,
+      "end": 7.642396,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Camera pans away from the subjects toward the dark night background."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c61e3c6428183d7cbef9979ba3acf231"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:00:06"
+}

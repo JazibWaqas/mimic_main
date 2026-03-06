@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Celebration montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Establishing shots"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men dance and celebrate together at an indoor event.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak movement with dancing and hand-clapping interaction."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Camera pans across the group showing various participants."
+    },
+    "Low": {
+      "start": 4.5,
+      "end": 6.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Relatively stable shot of individuals at the end of the sequence."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:33:05"
+}

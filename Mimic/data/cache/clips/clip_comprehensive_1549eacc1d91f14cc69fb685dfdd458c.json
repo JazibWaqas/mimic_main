@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Still",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Intimate"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Establishing shots",
+    "Travel montages",
+    "Nightlife sequences"
+  ],
+  "avoid_for": [
+    "High-action sequences",
+    "Fast-paced transitions"
+  ],
+  "vibes": [],
+  "content_description": "Two women stand on a high-rise balcony overlooking the Las Vegas Strip at night.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 4.433,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Vibrant city lights and traffic movement provide the most visual activity."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Balanced composition showing both the subjects and the iconic skyline."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Initial static frame providing a calm introduction to the scene."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:51:14"
+}

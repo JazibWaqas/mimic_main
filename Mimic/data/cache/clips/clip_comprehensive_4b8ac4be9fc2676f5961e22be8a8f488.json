@@ -1,0 +1,58 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Nature montages",
+    "Travel transitions",
+    "Establishing forest settings"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "High-action climaxes"
+  ],
+  "vibes": [],
+  "content_description": "A low-angle POV shot looking up at tall pine trees against a cloudy sky while moving through a forest.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Most dynamic camera rotation and movement at the start of the clip."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 5.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Steady, continuous movement providing a clear view of the forest canopy."
+    },
+    "Low": {
+      "start": 5.0,
+      "end": 8.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Slightly more consistent framing and pacing towards the end of the sequence."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "4b8ac4be9fc2676f5961e22be8a8f488"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:55:22"
+}

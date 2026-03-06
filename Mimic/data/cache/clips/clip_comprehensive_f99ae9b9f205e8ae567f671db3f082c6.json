@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Celebration montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of people in black outfits engage in a lively water gun fight at night.",
+  "best_moments": {
+    "High": {
+      "start": 38.5,
+      "end": 41.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak water gun action and group movement with high visual intensity."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady movement and initial engagement as the water fight begins."
+    },
+    "Low": {
+      "start": 10.5,
+      "end": 14.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "A brief moment of lower intensity as subjects reposition and pause action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "f99ae9b9f205e8ae567f671db3f082c6"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:06:12"
+}

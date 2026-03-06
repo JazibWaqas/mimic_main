@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Opening establishing shots",
+    "Action transitions",
+    "Sci-fi montages"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A high-speed craft streaks across a vast aerial landscape of mountains and clouds, leaving a long contrail.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 3.061,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak speed and visual impact as the craft traverses the center of the frame."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The craft enters and establishes its trajectory across the landscape."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial entry into the frame, setting the scale of the environment."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:57:54"
+}

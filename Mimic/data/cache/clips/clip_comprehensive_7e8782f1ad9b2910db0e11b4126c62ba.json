@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Persistence montages",
+    "Family home videos",
+    "Practice sequences"
+  ],
+  "avoid_for": [
+    "Professional gymnastics tutorials",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A young boy repeatedly attempts handstands in a living room while being filmed.",
+  "best_moments": {
+    "High": {
+      "start": 26.5,
+      "end": 29.5,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "The boy's most successful and sustained handstand attempt in the clip."
+    },
+    "Medium": {
+      "start": 6.0,
+      "end": 9.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The boy walking and repositioning himself, showing moderate activity between attempts."
+    },
+    "Low": {
+      "start": 74.31200000000001,
+      "end": 74.412,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A slower moment where the camera pans across the room with minimal subject action."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:17:31"
+}

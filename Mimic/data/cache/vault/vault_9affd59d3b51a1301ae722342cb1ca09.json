@@ -1,0 +1,387 @@
+{
+  "header": "This report summarizes the editing process for a 32.57-second nostalgic documentary-style video, focusing on emotional resonance over technical precision.",
+  "advisor": {
+    "hero": "The library's constraints significantly influenced the edit, but the system successfully adapted to maintain narrative coherence and emotional resonance.",
+    "body": "Technical discipline, such as maintaining a warm tone and breathable pacing, was crucial in supporting the edit's goals. The system's decisions, though sometimes compromised by library gaps, ensured the narrative remained engaging and emotionally resonant."
+  },
+  "decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey warmth, peace, and innocence.",
+      "decision": "Selected clip_010.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey warmth, peace, and innocence.",
+      "decision": "Selected clip_010.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey warmth, peace, and innocence.",
+      "decision": "Selected clip_010.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed to capture joy, playfulness, and laughter.",
+      "decision": "Used clip_001.mp4 because it was the best available option despite the library gap.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed to capture joy, playfulness, and laughter.",
+      "decision": "Used clip_001.mp4 because it was the best available option despite the library gap.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed to capture joy, playfulness, and laughter.",
+      "decision": "Used clip_001.mp4 because it was the best available option despite the library gap.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to portray intimacy, love, and reflection.",
+      "decision": "Selected clip_008.mp4 because it was the most suitable choice given the library's limitations.",
+      "what_if": "This choice maintained narrative coherence.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to portray intimacy, love, and reflection.",
+      "decision": "Selected clip_008.mp4 because it was the most suitable choice given the library's limitations.",
+      "what_if": "This choice maintained narrative coherence.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to portray intimacy, love, and reflection.",
+      "decision": "Selected clip_008.mp4 because it was the most suitable choice given the library's limitations.",
+      "what_if": "This choice maintained narrative coherence.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    }
+  ],
+  "executive_summary": [
+    "The library's limitations drove several decisions, prioritizing narrative coherence over ideal motifs.",
+    "A warm tone was maintained throughout, aligning with the intended emotional resonance.",
+    "The system effectively managed pacing, ensuring the edit's momentum was preserved.",
+    "No major technical issues were encountered, with sync fidelity reported as nominal.",
+    "The responsibility for the edit's vibe and emotion was assigned to the system."
+  ],
+  "key_decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey warmth, peace, and innocence.",
+      "decision": "Selected clip_010.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey warmth, peace, and innocence.",
+      "decision": "Selected clip_010.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey warmth, peace, and innocence.",
+      "decision": "Selected clip_010.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey celebration, movement, and energy.",
+      "decision": "Locked in clip_023.mp4 due to the lack of a better alternative in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "library_gap"
+      ]
+    }
+  ],
+  "friction_log": [
+    "Initial confidence was high due to the clear narrative goals.",
+    "Middle stages saw adjustments due to library gaps, but the system adapted.",
+    "Final confidence remained high, with the edit meeting its emotional resonance goals."
+  ],
+  "post_mortem": {
+    "worked": "The system's ability to adapt to library limitations and maintain narrative coherence was successful, as seen in Segment 1 with clip_010.mp4 and Segment 3 with clip_023.mp4.",
+    "didnt": "The library's lack of ideal motifs sometimes forced compromises, but these did not significantly detract from the edit's overall impact.",
+    "responsibility": {
+      "vibe": "system",
+      "emotion": "system"
+    }
+  },
+  "next_steps": [
+    "Review and expand the library to reduce gaps and improve future edit flexibility.",
+    "Consider adding more diverse clips to enhance narrative options.",
+    "Refine the system's ability to predict and adapt to library limitations proactively."
+  ],
+  "clip_suggestions": [
+    "Adding more clips with a warm tone would help maintain consistency throughout the edit.",
+    "Including a variety of celebration and movement clips could enhance energy levels in relevant segments.",
+    "Acquiring more intimate and reflective clips would support deeper emotional resonance in segments like Segment 4.",
+    "Substituting overused clips with similar but distinct alternatives could reduce repetition and improve engagement."
+  ],
+  "technical": [
+    "Maintaining a consistent tone, such as the warm tone used throughout, was crucial for emotional resonance.",
+    "The system's technical discipline in pacing and sync fidelity ensured the edit's coherence and engagement.",
+    "Future technical improvements could focus on enhancing the system's predictive capabilities regarding library gaps and ideal motif availability."
+  ]
+}

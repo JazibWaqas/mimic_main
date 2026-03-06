@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Nighttime adventure sequences",
+    "Found-footage style thrillers"
+  ],
+  "avoid_for": [
+    "Calm reflective scenes",
+    "Clear product showcases"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends walks and runs through a dark outdoor area at night, shouting and using flashlights.",
+  "best_moments": {
+    "High": {
+      "start": 18.5,
+      "end": 21.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak shouting and chaotic camera movement during a sudden run."
+    },
+    "Medium": {
+      "start": 7.5,
+      "end": 10.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady walking and conversation among the group with moderate camera motion."
+    },
+    "Low": {
+      "start": 3.0,
+      "end": 6.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Quiet, dark moment with minimal visual activity and camera movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "eae0dca6cb220d2b4e463676361d6cd1"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:50:53"
+}

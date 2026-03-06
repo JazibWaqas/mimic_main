@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Action sequences",
+    "Leisure activity montages",
+    "Travel vlogs"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A man aims and fires a rifle at a board of balloons in an outdoor setting while another man assists him.",
+  "best_moments": {
+    "High": {
+      "start": 4.0,
+      "end": 5.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The moment the rifle is fired and the balloons pop, representing peak action."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The subject takes the rifle and carefully aims at the target, building anticipation."
+    },
+    "Low": {
+      "start": 5.8,
+      "end": 7.874688,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The aftermath of the shot where the subject lowers the rifle and observes the result."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "a60332bd2df2263e5bb1a53d103eea9c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:49:44"
+}

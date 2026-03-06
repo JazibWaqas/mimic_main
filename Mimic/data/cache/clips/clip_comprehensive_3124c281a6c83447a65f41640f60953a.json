@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Intimate"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Birthday celebration montages",
+    "Family home videos"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Calm nature documentaries"
+  ],
+  "vibes": [],
+  "content_description": "A family gathers around a table, clapping and singing 'Happy Birthday' to a young girl.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak celebration with enthusiastic clapping and singing at the start of the song."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent rhythmic clapping and singing as the celebration continues."
+    },
+    "Low": {
+      "start": 7.5,
+      "end": 9.264867,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The song ends and the group transitions to the next activity around the table."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:34:30"
+}

@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Reflection",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Action sequences",
+    "Nostalgic montages",
+    "Transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A slow pan over nostalgic military photographs followed by a close-up of a jet engine igniting.",
+  "best_moments": {
+    "High": {
+      "start": 8.5,
+      "end": 11.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense visual of jet engine ignition with high energy"
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady pan across multiple photographs showing character history"
+    },
+    "Low": {
+      "start": 0.5,
+      "end": 3.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Slow, contemplative pan over a single nostalgic photograph"
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:01:30"
+}

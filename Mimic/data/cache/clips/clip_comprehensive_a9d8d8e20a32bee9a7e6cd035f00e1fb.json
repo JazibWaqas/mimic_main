@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Music montages",
+    "Night-time urban scenes",
+    "Joyful performance clips"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional studio-quality music videos"
+  ],
+  "vibes": [],
+  "content_description": "A young man plays guitar and sings on a bridge at night under streetlights.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak expressive singing and energetic guitar strumming."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 4.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent performance with moderate movement and engagement."
+    },
+    "Low": {
+      "start": 14.0,
+      "end": 17.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A slightly more restrained moment in the performance with steadier framing."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "a9d8d8e20a32bee9a7e6cd035f00e1fb"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:07:55"
+}

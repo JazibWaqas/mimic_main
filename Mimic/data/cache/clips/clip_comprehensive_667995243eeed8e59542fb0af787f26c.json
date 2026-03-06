@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Celebration montages",
+    "High-energy peaks",
+    "Candid family moments"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate settings"
+  ],
+  "vibes": [],
+  "content_description": "Children enthusiastically play musical chairs at an indoor celebration while adults watch and cheer.",
+  "best_moments": {
+    "High": {
+      "start": 21.5,
+      "end": 24.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "The peak moment when the music stops and the children scramble to find a seat."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Sustained movement as the children circle the chairs during the game."
+    },
+    "Low": {
+      "start": 37.0,
+      "end": 41.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A relatively still moment focusing on a boy's face after the round ends."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "667995243eeed8e59542fb0af787f26c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:27:44"
+}

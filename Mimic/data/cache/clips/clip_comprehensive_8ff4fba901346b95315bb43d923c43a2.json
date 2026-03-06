@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Two young men celebrate and shout while riding in the back of a moving vehicle at night.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak shouting and expressive celebration with high visual motion."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial movement and transition from subjects to the road view."
+    },
+    "Low": {
+      "start": 5.0,
+      "end": 6.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Relative calm at the end of the clip focusing on the receding road lights."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "8ff4fba901346b95315bb43d923c43a2"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:07:13"
+}

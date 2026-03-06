@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Energetic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Cinematic trailers",
+    "Narrative montages",
+    "Atmospheric transitions"
+  ],
+  "avoid_for": [
+    "Casual vlogs",
+    "Instructional content"
+  ],
+  "vibes": [],
+  "content_description": "A cinematic montage featuring urban landscapes, a man in a training mask, racing technology, and fireworks over a track.",
+  "best_moments": {
+    "High": {
+      "start": 22.5,
+      "end": 25.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Vibrant fireworks display over a crowded racing circuit providing a peak emotional moment."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Intense close-up of a man in a training mask, creating narrative tension and focus."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "A calm, beautifully composed sunset shot over a mosque and city skyline."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:51:53"
+}

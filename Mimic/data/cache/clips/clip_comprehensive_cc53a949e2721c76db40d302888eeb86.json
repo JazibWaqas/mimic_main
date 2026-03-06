@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Prank compilations",
+    "High-energy social media content"
+  ],
+  "avoid_for": [
+    "Serious documentaries",
+    "Calm reflective scenes"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends laughs hysterically while pranking one of their members by locking him out on a balcony.",
+  "best_moments": {
+    "High": {
+      "start": 3.5,
+      "end": 6.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and physical reaction as the prank begins."
+    },
+    "Medium": {
+      "start": 30.0,
+      "end": 33.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained laughter and interaction through the glass door."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup showing the subject on the balcony before the action."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "cc53a949e2721c76db40d302888eeb86"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:52:19"
+}

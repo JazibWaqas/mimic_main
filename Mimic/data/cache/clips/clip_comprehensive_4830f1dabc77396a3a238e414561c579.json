@@ -1,0 +1,61 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 2,
+  "best_for": [
+    "Vlogs",
+    "Chaotic montages",
+    "Behind-the-scenes content"
+  ],
+  "avoid_for": [
+    "Professional commercials",
+    "Cinematic establishing shots",
+    "Calm reflective scenes"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends laughing in an elevator and exploring a dark building at night before reaching a terrace.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Peak",
+      "stable_moment": false,
+      "reason": "Intense laughter and expressive group interaction in the elevator."
+    },
+    "Medium": {
+      "start": 52.0,
+      "end": 55.0,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Walking out onto the terrace with active conversation and movement."
+    },
+    "Low": {
+      "start": 68.63433300000001,
+      "end": 68.734333,
+      "moment_role": "Reflection",
+      "stable_moment": false,
+      "reason": "The group stands relatively still on the terrace at the end of the clip."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "4830f1dabc77396a3a238e414561c579"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:53:58"
+}

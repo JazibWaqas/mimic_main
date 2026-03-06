@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Solo",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Action sequences",
+    "High-energy montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "A man performs intense racket swings in a backyard at night.",
+  "best_moments": {
+    "High": {
+      "start": 9.5,
+      "end": 11.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak intensity during the final series of rapid racket swings."
+    },
+    "Medium": {
+      "start": 4.5,
+      "end": 7.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial movement and first set of swings with moderate intensity."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Subject walking into the frame and preparing for the activity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "0386c6c437b7d9ba2fd49038694790d9"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:05:38"
+}

@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Adventure sequences",
+    "Fast-paced transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men riding a fast-moving motorboat on a lake during the day.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 1.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak visual energy from the boat's speed and wind effect on the subjects."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent travel motion throughout the short duration."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Provides context of the location and activity despite the high speed."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "c5977f67481d532b008000e0af492b2e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:00"
+}

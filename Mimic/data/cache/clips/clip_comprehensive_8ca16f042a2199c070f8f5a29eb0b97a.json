@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Action sequences",
+    "Dramatic climaxes"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Fighter jets engage in a high-speed dogfight over snowy mountains, resulting in a massive mid-air explosion.",
+  "best_moments": {
+    "High": {
+      "start": 3.2,
+      "end": 5.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "The peak of the action featuring a massive mid-air explosion and flying debris."
+    },
+    "Medium": {
+      "start": 1.0,
+      "end": 3.2,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Intense maneuvering with multiple missile trails filling the frame before the impact."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The initial shot of jets against the clouds before the most chaotic action begins."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:03:56"
+}

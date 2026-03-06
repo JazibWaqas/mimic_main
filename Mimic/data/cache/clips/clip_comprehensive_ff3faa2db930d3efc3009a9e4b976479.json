@@ -1,0 +1,58 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel montages",
+    "Establishing shots"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "View of an airplane wing and the sky from a passenger window during flight.",
+  "best_moments": {
+    "High": {
+      "start": 5.0,
+      "end": 6.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Shortest segment with slight camera drift"
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 5.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Consistent motion suitable for a travel transition"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 5.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm, steady view of the wing"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "ff3faa2db930d3efc3009a9e4b976479"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:50"
+}

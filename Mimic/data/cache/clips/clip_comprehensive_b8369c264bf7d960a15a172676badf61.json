@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Friendship montages",
+    "Social media stories",
+    "Lighting transitions"
+  ],
+  "avoid_for": [
+    "Professional documentaries",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A group of four friends takes a mirror selfie video, laughing and adjusting the room's lighting.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive group interaction at the start."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 6.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained interaction while adjusting positions and talking."
+    },
+    "Low": {
+      "start": 8.0,
+      "end": 12.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calmer posing after the room lights are dimmed."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "b8369c264bf7d960a15a172676badf61"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:38"
+}

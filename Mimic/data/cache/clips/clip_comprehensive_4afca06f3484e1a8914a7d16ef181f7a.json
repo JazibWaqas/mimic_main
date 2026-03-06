@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Nightlife highlights",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men laughing and shouting while riding in a decorated vehicle at night through a busy street.",
+  "best_moments": {
+    "High": {
+      "start": 9.0,
+      "end": 11.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak shouting and excitement during the ride."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Laughter and conversation while moving through traffic."
+    },
+    "Low": {
+      "start": 23.0,
+      "end": 26.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Slightly calmer interaction towards the end of the clip."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "4afca06f3484e1a8914a7d16ef181f7a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:03:18"
+}

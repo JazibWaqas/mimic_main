@@ -1,0 +1,54 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "People-Crowd"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Establishing shots",
+    "Sports montages",
+    "Building tension"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "Formula 1 drivers and actors stand on the starting grid during a pre-race ceremony as the camera pans across them.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 8.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The reveal of Brad Pitt provides the peak narrative interest and star power in the shot."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady camera movement focusing on key figures like Max Verstappen and Damson Idris."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial pan across the grid setting the scene and atmosphere."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:51:49"
+}

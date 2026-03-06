@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Cinematic montages",
+    "Action sequences",
+    "Brand storytelling"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A cinematic montage featuring crashing ocean waves, a sunset, a high-performance racing car, and a luxury convertible arriving at a laundromat.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 8.5,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Dynamic aerial tracking shot of a racing car navigating a track curve."
+    },
+    "Medium": {
+      "start": 8.5,
+      "end": 11.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Smooth lateral movement of a luxury car pulling into a street scene."
+    },
+    "Low": {
+      "start": 2.5,
+      "end": 4.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Calm, contemplative shot of a bird silhouetted against a sunset."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:08:09"
+}

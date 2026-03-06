@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Fail compilations",
+    "Gym humor",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Professional fitness tutorials",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A man falls while attempting a gymnastic move on a pull-up bar in a gym, leading to laughter from his friends.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 4.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak action of the flip and the subsequent fall."
+    },
+    "Medium": {
+      "start": 5.0,
+      "end": 8.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Friends reacting and laughing after the fall."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The initial setup and hang before the attempt."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "1e2bbd58cef05207e4f3524740b942ec"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:07:49"
+}

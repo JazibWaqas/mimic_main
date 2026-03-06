@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages",
+    "Celebration sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Serious documentary segments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young friends cheering, laughing, and high-fiving while traveling on a bus.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak cheering, clapping, and high-fiving with maximum group energy."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Initial laughter and interaction leading up to the main celebration."
+    },
+    "Low": {
+      "start": 13.5,
+      "end": 15.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The energy settles slightly into shared laughter at the end of the clip."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "e090c59f6232f9ee79826c7446f446b1"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:06:08"
+}

@@ -1,0 +1,53 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "People-Group"
+  ],
+  "narrative_utility": [
+    "Reflection",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Intimate"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Nostalgic reflections",
+    "Character backstory"
+  ],
+  "avoid_for": [
+    "High-action sequences",
+    "Fast-paced montages"
+  ],
+  "vibes": [],
+  "content_description": "A man looks at a wall of old photographs, focusing on a picture of two pilots laughing.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Zoom into the most emotionally expressive and high-energy photo of laughter."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 6.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Panning across multiple photos, increasing visual complexity and narrative depth."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Static close-up of a character's contemplative and quiet expression."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:01:23"
+}

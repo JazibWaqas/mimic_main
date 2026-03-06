@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Family montages",
+    "Candid childhood moments"
+  ],
+  "avoid_for": [
+    "Professional corporate videos",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A family gathers in a bedroom, playing with a toddler and making expressive faces at the camera.",
+  "best_moments": {
+    "High": {
+      "start": 58.5,
+      "end": 61.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak expressive action and playful energy from the child."
+    },
+    "Medium": {
+      "start": 6.5,
+      "end": 9.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained interaction between the children with moderate intensity."
+    },
+    "Low": {
+      "start": 30.0,
+      "end": 33.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm moment with the toddler sitting on the bed during a lull in activity."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:16:37"
+}

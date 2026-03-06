@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy travel montages",
+    "Chaotic fun sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective scenes",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends shouting and laughing while driving in a car at night.",
+  "best_moments": {
+    "High": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak shouting and rapid camera panning between passengers"
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": false,
+      "reason": "Initial driving motion and moderate excitement levels"
+    },
+    "Low": {
+      "start": 9.0,
+      "end": 12.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Slightly calmer dialogue and more stable camera framing at the end"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "b62e1afee32b73ca18beb587156d0542"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:01:39"
+}

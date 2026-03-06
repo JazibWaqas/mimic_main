@@ -1,0 +1,521 @@
+{
+  "text_overlay_intent": "The text demands moments of authentic human connection that transcend location—intimate, unguarded interactions where joy emerges from togetherness rather than setting. It privileges emotional truth over scenic beauty.",
+  "dominant_narrative": "This video is fundamentally about the warmth of friendship—how shared laughter and physical closeness create memories that outshine any backdrop.",
+  "arc_stage_guidance": {
+    "Intro": {
+      "primary_emotional_carrier": "PEACE",
+      "supporting_material": "Subtle physical contact, low-light intimacy, quiet laughter, and establishing shots that feel like a memory being recalled.",
+      "intent_diluting_material": "High-energy celebration, fast motion, or shots where the environment dominates the people.",
+      "reasoning": "The intro must establish the nostalgic, memory-reel tone—it’s the quiet before the joy erupts, grounding the viewer in intimacy before momentum builds.",
+      "recommended_clips": [
+        "clip153.mp4",
+        "clip135.mp4",
+        "clip166.mp4",
+        "clip116.mp4",
+        "clip121.mp4",
+        "clip142.mp4",
+        "clip111.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Build-up": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Group laughter, playful physicality (piggybacks, playful fights), transit moments (car interiors, walking), and candid interactions that feel spontaneous.",
+      "intent_diluting_material": "Solo performances, overly staged poses, or scenes where the activity overshadows the interpersonal connection.",
+      "reasoning": "This stage escalates from intimacy to shared energy—each segment should feel like a memory gaining momentum, where the joy is infectious but still grounded in genuine interaction.",
+      "recommended_clips": [
+        "clip104.mp4",
+        "clip106.mp4",
+        "clip108.mp4",
+        "clip112.mp4",
+        "clip117.mp4",
+        "clip125.mp4",
+        "clip147.mp4",
+        "clip149.mp4",
+        "clip152.mp4",
+        "clip155.mp4",
+        "clip156.mp4",
+        "clip159.mp4",
+        "clip165.mp4",
+        "clip167.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Peak": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "High-energy group celebrations, singing/dancing in transit, physical carrying (shoulders, hugs), and fast-paced movement that feels euphoric, not chaotic.",
+      "intent_diluting_material": "Solo shots, static environments, or any moment where the energy feels isolated rather than shared.",
+      "reasoning": "The peak is the emotional crescendo—where the joy becomes collective and rhythmic, embodying the text’s message that people, not place, create happiness. It should feel like a memory at its most vivid.",
+      "recommended_clips": [
+        "clip103 copy.mp4",
+        "clip105.mp4",
+        "clip107.mp4",
+        "clip109.mp4",
+        "clip110.mp4",
+        "clip115.mp4",
+        "clip122.mp4",
+        "clip124.mp4",
+        "clip127.mp4",
+        "clip128.mp4",
+        "clip130.mp4",
+        "clip131.mp4",
+        "clip132.mp4",
+        "clip134.mp4",
+        "clip140.mp4",
+        "clip148.mp4",
+        "clip151.mp4",
+        "clip154.mp4",
+        "clip161.mp4",
+        "clip162.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Outro": {
+      "primary_emotional_carrier": "PEACE",
+      "supporting_material": "Quiet group moments, reflective transit (night driving), or intimate contact that returns to the nostalgic warmth of the intro.",
+      "intent_diluting_material": "High-energy action, loud celebrations, or any shot that disrupts the reflective resolution.",
+      "reasoning": "The outro is the memory settling—a return to intimacy that reinforces the text’s message. It’s the quiet after the joy, leaving the viewer with a sense of nostalgic warmth.",
+      "recommended_clips": [
+        "clip113.mp4",
+        "clip114.mp4",
+        "clip153.mp4",
+        "clip135.mp4",
+        "clip116.mp4",
+        "clip121.mp4"
+      ],
+      "required_energy": ""
+    }
+  },
+  "library_alignment": {
+    "strengths": [
+      "Abundant high-energy JOY clips perfect for peak and build stages",
+      "Strong coverage of group interactions and candid moments",
+      "Good alignment with night-time and low-light settings"
+    ],
+    "editorial_tradeoffs": [
+      "Limited quiet, intimate PEACE clips for intro/outro may require using high-energy clips with softer vibes",
+      "Scarce urban/vehicle establishing shots means transit continuity will rely on interior moments",
+      "Very few water-based or mirror selfie shots as specified in should-haves"
+    ],
+    "constraint_gaps": [
+      "No bright daylight scenes to avoid (strength)",
+      "Minimal solo shots without social context (strength)",
+      "Scarcity of medium/low-energy clips requires careful vibe selection over energy matching"
+    ]
+  },
+  "editorial_strategy": "Prioritize emotional resonance over energy labels—use high-energy clips with intimate vibes for intro/outro if needed, and maintain people-centric framing throughout to honor the text’s intent.",
+  "remake_strategy": "Add more intimate low-energy moments (quiet conversations, reflective close-ups) to strengthen intro/outro, include water-based activities and mirror selfies for variety, and capture more urban transit exteriors to enhance motion continuity.",
+  "primary_narrative_subject": "People-Group",
+  "allowed_supporting_subjects": [
+    "Place-Urban"
+  ],
+  "subject_lock_strength": 0.9,
+  "editorial_motifs": [
+    {
+      "trigger": "Physical contact (hugs, piggybacks, carrying)",
+      "desired_continuity": "Emotional-Release",
+      "priority": "High"
+    },
+    {
+      "trigger": "Transit moments (car interiors, walking, riding)",
+      "desired_continuity": "Motion-Carry",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Group laughter or celebration",
+      "desired_continuity": "Semantic-Resonance",
+      "priority": "High"
+    },
+    {
+      "trigger": "Low-light or night-time settings",
+      "desired_continuity": "Graphic-Match",
+      "priority": "Medium"
+    }
+  ],
+  "segment_moment_plans": {
+    "1": {
+      "segment_id": 1,
+      "moments": [
+        {
+          "clip_filename": "clip106.mp4",
+          "moment_energy_level": "Low",
+          "start": 0.0,
+          "end": 0.88,
+          "duration": 0.88,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This establishing moment with food fits the Intro arc stage and Celebration vibe by showing a joyful setting, while its stable framing and Low energy match the Medium energy requirement and Short expected hold for a visual-origin segment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.88,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "2": {
+      "segment_id": 2,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 7.33,
+          "duration": 1.33,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 fits the segment's 'Freedom' vibe and 'Build-up' arc stage with sustained rhythmic jumping at medium energy, matching the 1.33s duration requirement while providing visual continuity from the previous clip's action-oriented content.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 1.33,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "3": {
+      "segment_id": 3,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 7.32,
+          "duration": 1.32,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 (6.0-8.5s) provides sustained rhythmic jumping with consistent medium energy, perfectly matching the segment's 'Joy' vibe and 'Build-up' arc stage. The 1.32s duration fits exactly within this stable moment, and it continues the narrative flow from the previous clip108.mp4 with appropriate escalation.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 1.32,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "4": {
+      "segment_id": 4,
+      "moments": [
+        {
+          "clip_filename": "clip106.mp4",
+          "moment_energy_level": "Medium",
+          "start": 3.2,
+          "end": 4.08,
+          "duration": 0.88,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment fits the segment's 'Friendship' vibe and 'Build-up' arc stage with its group interaction involving picking up a fry, has Medium energy matching the reference, provides a stable 0.88s duration from a stable moment, and offers natural visual continuity as a detail shot following the previous clip.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.88,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "5": {
+      "segment_id": 5,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 7.77,
+          "duration": 1.77,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 provides sustained rhythmic jumping with consistent energy (2.5s duration), allowing me to extract exactly 1.77s from its stable portion. The 'Build' role aligns perfectly with the segment's 'Build-up' arc stage, and the high energy matches the 'Thrill' vibe while maintaining visual stability for the moderate CDE.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 1.77,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "6": {
+      "segment_id": 6,
+      "moments": [
+        {
+          "clip_filename": "clip106.mp4",
+          "moment_energy_level": "High",
+          "start": 5.8,
+          "end": 6.68,
+          "duration": 0.88,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip106.mp4 perfectly matches the segment's requirements: it has 'High' energy aligning with the segment's energy, the 'Peak' role with 'Peak laughter and expressive hand movement during the joke' directly matches the 'Laughter' vibe and 'Build-up' arc stage, and the 2.5s duration allows for a clean 0.88s extraction. The stable moment quality ensures visual coherence for this short visual-origin segment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.88,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "7": {
+      "segment_id": 7,
+      "moments": [
+        {
+          "clip_filename": "clip103 copy.mp4",
+          "moment_energy_level": "Medium",
+          "start": 7.0,
+          "end": 7.44,
+          "duration": 0.44,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment fits the segment's playful vibe and medium energy perfectly, with group interaction and waving that matches the build-up arc stage. The 0.44s duration can be extracted from the stable 3.0s build moment without requiring multiple cuts, adhering to the restraint rule.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "8": {
+      "segment_id": 8,
+      "moments": [
+        {
+          "clip_filename": "clip103 copy.mp4",
+          "moment_energy_level": "Medium",
+          "start": 7.0,
+          "end": 7.44,
+          "duration": 0.44,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from the same clip provides perfect continuity with the previous cut while matching the segment's 'Casual' vibe and 'Medium' energy during the 'Build-up' arc stage. The group interaction with waving and singing at a consistent pace fits the 0.44s duration without requiring multiple cuts, respecting the Restraint Rule.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "9": {
+      "segment_id": 9,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 8.5,
+          "duration": 2.5,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment fits the segment's 0.44s duration perfectly within its stable 2.5s duration, matches the 'Party' vibe with rhythmic jumping, aligns with the 'Build-up' arc stage as a 'Build' moment, and maintains high energy while flowing naturally from the previous clip's unspecified role.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 2.5,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "10": {
+      "segment_id": 10,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 6.44,
+          "duration": 0.44,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 fits perfectly because it has Medium energy matching the segment's requirement, a 'Build' role aligning with the arc_stage 'Build-up', and stable framing suitable for the visual-origin cut. The 0.44s duration can be extracted from the 2.5s stable moment without compromising quality.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "11": {
+      "segment_id": 11,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 6.44,
+          "duration": 0.44,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.44s segment requires a high-energy 'Splash' moment during a build-up stage with short expected hold. The Medium-energy moment from clip108.mp4 (6.0-8.5s) provides sustained rhythmic jumping with consistent energy that perfectly matches the 'Build' role needed for this build-up segment. The visual continuity from the previous clip108.mp4 moment creates a smooth narrative flow while maintaining the required high energy level.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "12": {
+      "segment_id": 12,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Medium",
+          "start": 6.0,
+          "end": 6.45,
+          "duration": 0.45,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4's 'Build' role (6.0-8.5s) perfectly matches the segment's 'Build-up' arc stage and 'Medium' energy requirement. The 'sustained rhythmic jumping with consistent energy' provides the aesthetic visual detail needed for this 0.45s visual-origin segment, while maintaining narrative continuity from the previous clip108.mp4.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.45,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "13": {
+      "segment_id": 13,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 3.08,
+          "duration": 0.88,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4's 'Climax' role (2.2-4.8s) provides peak chaotic jumping and physical interaction that perfectly matches the segment's 'Hype' vibe, 'High' energy, and 'Peak' arc stage. The 0.88s duration fits within the stable portion of this high-energy moment, creating a powerful visual peak that aligns with the dense cut density expectation.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.88,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "14": {
+      "segment_id": 14,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.64,
+          "duration": 0.44,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 provides the exact 0.44s duration needed with peak chaotic jumping and physical interaction that matches the segment's 'Hype' vibe and 'Peak' arc stage, while maintaining continuity from the previous clip (clip108.mp4) and fitting the dense cut density expectation.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "15": {
+      "segment_id": 15,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.64,
+          "duration": 0.44,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.44s segment requires a high-energy, hype moment at the narrative peak with visual-origin cutting. The 'Climax' moment from clip108.mp4 (2.2-4.8s) perfectly matches the required energy and vibe, featuring chaotic jumping and physical interaction that delivers immediate visual impact. Since the previous clip was also clip108.mp4, this maintains continuity while escalating to the peak action moment within the same scene.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "16": {
+      "segment_id": 16,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 3.08,
+          "duration": 0.88,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 provides peak chaotic jumping and physical interaction that matches the segment's 'Hype' vibe and 'Peak' arc stage, with high energy and visual action fitting the 0.88s duration perfectly from the climax moment's stable region.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.88,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "17": {
+      "segment_id": 17,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "High",
+          "start": 2.2,
+          "end": 2.64,
+          "duration": 0.44,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This 0.44s segment requires a high-energy, hype moment at the narrative peak with short expected hold and dense cut density expectation. The 'Climax' moment from clip108.mp4 (2.2-4.8s) perfectly matches the segment's energy, vibe, and arc stage, and its unstable nature aligns with the dense CDE requirement. Using the first 0.44s of this climax moment provides the intense physical interaction needed while maintaining continuity from the previous clip108.mp4.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": null
+    },
+    "18": {
+      "segment_id": 18,
+      "moments": [
+        {
+          "clip_filename": "clip108.mp4",
+          "moment_energy_level": "Low",
+          "start": 9.8,
+          "end": 11.101655,
+          "duration": 1.301655,
+          "moment_role": "",
+          "stable_moment": true,
+          "reason": "This moment from clip108.mp4 perfectly matches the segment's 'Finality' vibe and 'Outro' arc stage with its joyful, laughing conclusion after intense activity, while maintaining low energy and stable framing required for this visual-origin segment.",
+          "semantic_score": 0.0,
+          "musical_alignment": 0.0,
+          "narrative_continuity": 0.0
+        }
+      ],
+      "total_duration": 1.301655,
+      "is_single_moment": true,
+      "chaining_reason": null
+    }
+  },
+  "library_assessment": null,
+  "creative_audit": null,
+  "overall_strategy": "",
+  "required_improvements": [],
+  "cache_version": "4.1",
+  "cached_at": "2026-03-05T09:39:03.436067"
+}

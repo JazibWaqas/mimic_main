@@ -1,0 +1,58 @@
+{
+  "energy": "Medium",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social media vlogs",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Formal documentaries",
+    "Calm reflective intros"
+  ],
+  "vibes": [],
+  "content_description": "A young man records a selfie video while his friends stand near a decorative wooden door frame outdoors.",
+  "best_moments": {
+    "High": {
+      "start": 5.5,
+      "end": 7.0,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Increased camera movement and subject interaction at the end of the shot."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Camera pans to show the group and the environment with steady motion."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Clear view of the main subject with minimal camera shake."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "cb164bd81c9c2eccc21dccaf065896c4"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:54:07"
+}

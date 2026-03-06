@@ -1,0 +1,54 @@
+{
+  "energy": "Low",
+  "motion": "GENTLE",
+  "intensity": 1,
+  "primary_subject": [
+    "Place-Nature",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Dramatic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Establishing shots",
+    "Travel montages",
+    "Atmospheric transitions"
+  ],
+  "avoid_for": [
+    "High-energy peaks",
+    "Action sequences"
+  ],
+  "vibes": [],
+  "content_description": "A slow pan across a calm sea and cloudy sky from a rocky shoreline with a building in the distance.",
+  "best_moments": {
+    "High": {
+      "start": 4.5,
+      "end": 6.8,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "Most active camera movement within the clip as it pans toward the horizon."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 4.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady camera drift providing a sense of scale and movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial calm view of the shoreline and distant structure."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:14:24"
+}

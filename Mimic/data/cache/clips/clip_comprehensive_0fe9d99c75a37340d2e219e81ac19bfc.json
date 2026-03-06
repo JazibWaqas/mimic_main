@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Fun group montages",
+    "Outdoor activity sequences",
+    "Candid social media clips"
+  ],
+  "avoid_for": [
+    "Serious dramatic scenes",
+    "Formal presentations"
+  ],
+  "vibes": [],
+  "content_description": "A man lip-syncs to a song while his friends run and play around him on a grassy hill under a clear sky.",
+  "best_moments": {
+    "High": {
+      "start": 6.5,
+      "end": 9.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak group interaction with multiple people running and visible laughter."
+    },
+    "Medium": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial background movement as friends start running past the main subject."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm introduction of the main subject and the scenic outdoor setting."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "0fe9d99c75a37340d2e219e81ac19bfc"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:51:55"
+}

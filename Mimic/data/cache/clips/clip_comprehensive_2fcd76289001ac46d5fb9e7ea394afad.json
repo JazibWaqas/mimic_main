@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Cinematic trailers",
+    "Narrative builds",
+    "Aviation-themed montages"
+  ],
+  "avoid_for": [
+    "Casual vlogs",
+    "Low-budget home videos"
+  ],
+  "vibes": [],
+  "content_description": "A man enters a naval air force facility, revealing a futuristic jet and a flight jacket with various patches.",
+  "best_moments": {
+    "High": {
+      "start": 8.5,
+      "end": 11.0,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Dramatic reveal of a futuristic jet with intense lighting and atmospheric smoke."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 6.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady tracking shot of the subject walking through a military hallway."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm establishing shot of an airfield with silhouettes and distant aircraft."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:55:28"
+}

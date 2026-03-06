@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Friendship montages",
+    "Travel vlogs"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends laughing and talking inside a car with a sunroof.",
+  "best_moments": {
+    "High": {
+      "start": 29.0,
+      "end": 31.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive group interaction."
+    },
+    "Medium": {
+      "start": 12.0,
+      "end": 15.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Engaging conversation with moderate physical movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 4.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial conversation setup with lower physical intensity."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "95bc614a5e9c19beafb124c5b72ed67a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:02:40"
+}

@@ -1,0 +1,59 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Intimate"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Lifestyle montages",
+    "Food and drink transitions",
+    "Casual travel vlogs"
+  ],
+  "avoid_for": [
+    "High-action sequences",
+    "Professional cinematic landscapes"
+  ],
+  "vibes": [],
+  "content_description": "A person pours a beverage into a cup held by another person at an outdoor table.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial pouring action with the most visual movement."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 4.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Steady pouring of the beverage into the cup."
+    },
+    "Low": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Action concludes as the pour finishes and movement slows."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "2a4b76f1994b10c1c20e0f4e854ebe2e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:21"
+}

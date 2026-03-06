@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Adventurous"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "Action sequences",
+    "High-energy peaks",
+    "Cinematic transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective intros",
+    "Intimate moments"
+  ],
+  "vibes": [],
+  "content_description": "A fighter jet performs a high-speed, low-altitude flyover across a desert, kicking up large dust clouds.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak action during the low-altitude pass and dust cloud formation."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 4.482,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Jet recedes into the distance with consistent motion."
+    },
+    "Low": {
+      "start": 3.5,
+      "end": 4.482,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Jet is distant, visual intensity decreases as it moves away."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:02:06"
+}

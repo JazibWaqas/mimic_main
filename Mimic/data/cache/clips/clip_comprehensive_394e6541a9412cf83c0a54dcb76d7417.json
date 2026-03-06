@@ -1,0 +1,54 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Action sequences",
+    "Adventure montages",
+    "Establishing shots"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A sailboat with a large blue spinnaker sail speeds across choppy water with a mountainous coastline in the background.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 3.1,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak spray and boat speed as it cuts through the waves."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained motion and consistent sailing action."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 1.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial framing of the boat before the most intense spray."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 03:00:06"
+}

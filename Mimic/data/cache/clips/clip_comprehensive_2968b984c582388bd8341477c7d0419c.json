@@ -1,0 +1,54 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 1,
+  "primary_subject": [
+    "Place-Nature",
+    "Place-Urban"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Reflection"
+  ],
+  "emotional_tone": [
+    "Peaceful",
+    "Adventurous"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Opening establishing shots",
+    "Travel montages",
+    "Peaceful transitions"
+  ],
+  "avoid_for": [
+    "High-energy peaks",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A slow vertical pan across a vast mountain range with scattered houses and evergreen trees.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 4.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Most active camera movement during the pan across the landscape."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 4.295692,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady movement revealing more of the valley and distant structures."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm start of the pan setting the scene."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:23:34"
+}

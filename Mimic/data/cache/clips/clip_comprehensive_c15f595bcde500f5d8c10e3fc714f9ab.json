@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "School event highlights",
+    "Joyful montages"
+  ],
+  "avoid_for": [
+    "Serious dramatic scenes",
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "Children wearing animal-themed headbands and costumes bow and cheer during a school performance in a hallway.",
+  "best_moments": {
+    "High": {
+      "start": 21.0,
+      "end": 24.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Children bow together while the audience cheers."
+    },
+    "Medium": {
+      "start": 12.0,
+      "end": 15.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Teacher organizes children into lines for the performance."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial shot of children in costumes waiting in the hallway."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-03 23:16:09"
+}

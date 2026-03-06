@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "Place-Nature",
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Transition",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Adventurous"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Dramatic transitions",
+    "Sci-fi or nature montages",
+    "Establishing shots"
+  ],
+  "avoid_for": [
+    "Intimate close-up moments",
+    "Casual human interactions"
+  ],
+  "vibes": [],
+  "content_description": "A plane flies through a bright sky followed by a bright streak across a twilight landscape.",
+  "best_moments": {
+    "High": {
+      "start": 2.0,
+      "end": 3.727,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Dramatic visual of a bright streak moving rapidly across the twilight sky."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady shot of a plane flying through a bright, hazy sky."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The calmest portion of the clip, setting the scene with minimal subject movement."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:59:36"
+}

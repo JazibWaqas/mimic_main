@@ -1,0 +1,256 @@
+{
+  "editor_knowledge_map": {
+    "description": "Complete knowledge available to Editor at decision time for each segment",
+    "knowledge_sources": [
+      "Blueprint (40+ fields per segment)",
+      "ClipIndex (15+ fields per clip)",
+      "AdvisorHints (strategic guidance)",
+      "Beat Grid (musical timing)",
+      "CDE calculations (subdivision bias)",
+      "Internal state (continuity, usage tracking)"
+    ],
+    "per_segment_knowledge": {
+      "segment_context": {
+        "available_data": [
+          "segment.id",
+          "segment.start/end/duration",
+          "segment.energy",
+          "segment.motion",
+          "segment.vibe",
+          "segment.arc_stage",
+          "segment.shot_scale",
+          "segment.shot_function",
+          "segment.expected_hold",
+          "segment.cut_origin",
+          "segment.cde",
+          "segment.temporal_weight",
+          "segment.emotional_anchor",
+          "segment.audio_driver",
+          "segment.camera_movement"
+        ],
+        "missing": false
+      },
+      "available_clips": {
+        "available_data": [
+          "clip.filename",
+          "clip.filepath",
+          "clip.duration",
+          "clip.energy",
+          "clip.motion",
+          "clip.intensity",
+          "clip.primary_subject",
+          "clip.narrative_utility",
+          "clip.emotional_tone",
+          "clip.clip_quality",
+          "clip.best_for",
+          "clip.avoid_for",
+          "clip.vibes",
+          "clip.content_description",
+          "clip.best_moments"
+        ],
+        "missing": false
+      },
+      "advisor_guidance": {
+        "available_data": [
+          "advisor.text_overlay_intent",
+          "advisor.dominant_narrative",
+          "advisor.arc_stage_guidance",
+          "advisor.library_alignment",
+          "advisor.editorial_strategy",
+          "advisor.primary_narrative_subject",
+          "advisor.allowed_supporting_subjects",
+          "advisor.subject_lock_strength",
+          "advisor.segment_moment_plans"
+        ],
+        "missing": false
+      },
+      "scoring_components": {
+        "energy_match": {
+          "description": "Energy level compatibility check",
+          "calculation": "clip.energy == segment.energy ? +20 : -10",
+          "available": true,
+          "missing": false
+        },
+        "vibe_match": {
+          "description": "Semantic compatibility using SEMANTIC_MAP",
+          "calculation": "Direct match: +40, Semantic bridge: +30, No match: 0",
+          "available": true,
+          "missing": false
+        },
+        "narrative_anchor": {
+          "description": "Primary subject alignment with text overlay intent",
+          "calculation": "People-Group lock: +50 if matched, -50 if diluted",
+          "available": true,
+          "missing": false
+        },
+        "advisor_primary_carrier": {
+          "description": "Bonus for clips in advisor.recommended_clips",
+          "calculation": "+60 if clip in recommended_clips",
+          "available": true,
+          "missing": false
+        },
+        "shot_function_match": {
+          "description": "Editorial role compatibility",
+          "calculation": "Establish->Establishing: +25, Action->Action: +25",
+          "available": true,
+          "missing": false
+        },
+        "subject_consistency": {
+          "description": "Subject category continuity",
+          "calculation": "Friends->People-Group: +20, Nature->Place-Nature: +20",
+          "available": true,
+          "missing": false
+        },
+        "scale_continuity": {
+          "description": "Shot scale progression logic",
+          "calculation": "Wide->Establishing: +15, CU->Detail: +15",
+          "available": true,
+          "missing": false
+        },
+        "emotional_tone_bridge": {
+          "description": "Emotional tone to vibe mapping",
+          "calculation": "Nostalgic->memories: +12, Joyful->celebration: +12",
+          "available": true,
+          "missing": false
+        },
+        "arc_stage_affinity": {
+          "description": "Tone preference by story stage",
+          "calculation": "Outro+nostalgic: +8, Peak+energetic: +8",
+          "available": true,
+          "missing": false
+        },
+        "musical_alignment": {
+          "description": "Beat and phrase alignment scoring",
+          "calculation": "0-1 float based on proximity to beats/phrases",
+          "available": true,
+          "missing": false
+        },
+        "narrative_continuity": {
+          "description": "Flow from previous segment decisions",
+          "calculation": "0-1 float based on clip and shot relationships",
+          "available": true,
+          "missing": false
+        },
+        "cde_bias": {
+          "description": "Cut Density Expectation influence on subdivision",
+          "calculation": "Sparse: resist subdivision, Dense: encourage subdivision",
+          "available": true,
+          "missing": false
+        }
+      },
+      "rejected_alternatives": {
+        "description": "Complete scoring for all non-selected clips",
+        "available_data": [
+          "All scoring components for each rejected clip",
+          "Reason codes for rejection (energy, vibe, subject, quality)",
+          "Ranking position in candidate pool"
+        ],
+        "missing": false
+      },
+      "moment_selection_context": {
+        "description": "v14.0 contextual moment selection data",
+        "available_data": [
+          "All moment candidates from all clips",
+          "Advisor's moment selection reasoning",
+          "Musical alignment scores for each candidate",
+          "Narrative continuity assessments",
+          "Chaining decisions and rationale"
+        ],
+        "missing": false
+      },
+      "usage_tracking": {
+        "description": "Clip usage history and diversity management",
+        "available_data": [
+          "Clip usage counts",
+          "Cooldown timers",
+          "Novelty bonuses",
+          "Overuse penalties"
+        ],
+        "missing": false
+      },
+      "temporal_decisions": {
+        "description": "Timing and subdivision logic",
+        "available_data": [
+          "Segment duration calculations",
+          "Subdivision decisions based on CDE",
+          "Beat snapping logic",
+          "Human jitter application (±10%)",
+          "Sacred cut protection"
+        ],
+        "missing": false
+      }
+    },
+    "decision_output": {
+      "edl_fields": {
+        "segment_id": "Preserved",
+        "clip_path": "Preserved",
+        "clip_start": "Preserved",
+        "clip_end": "Preserved",
+        "timeline_start": "Preserved",
+        "timeline_end": "Preserved",
+        "reasoning": "Preserved (compressed)",
+        "vibe_match": "Preserved"
+      },
+      "lost_knowledge": {
+        "complete_scoring_breakdown": "IRRETRIEVABLY LOST",
+        "rejected_alternatives_detail": "IRRETRIEVABLY LOST",
+        "cde_calculation_details": "IRRETRIEVABLY LOST",
+        "advisor_bias_application": "IRRETRIEVABLY LOST",
+        "moment_selection_tradeoffs": "IRRETRIEVABLY LOST",
+        "temporal_continuity_reasoning": "IRRETRIEVABLY LOST",
+        "subject_lock_enforcement": "IRRETRIEVABLY LOST",
+        "usage_tracking_state": "IRRETRIEVABLY LOST",
+        "novelty_calculations": "IRRETRIEVABLY LOST"
+      }
+    }
+  },
+  "example_segment_decision": {
+    "segment_id": 7,
+    "segment_context": {
+      "energy": "High",
+      "vibe": "celebration",
+      "arc_stage": "Peak",
+      "duration": 2.3,
+      "cut_origin": "visual",
+      "cde": "Dense",
+      "expected_hold": "Short"
+    },
+    "selected_clip": {
+      "filename": "party_dance.mp4",
+      "final_score": 127,
+      "score_breakdown": {
+        "energy_match": 20,
+        "vibe_match": 40,
+        "narrative_anchor": 50,
+        "advisor_primary_carrier": 60,
+        "shot_function_match": 25,
+        "subject_consistency": 20,
+        "scale_continuity": 15,
+        "emotional_tone_bridge": 12,
+        "arc_stage_affinity": 8,
+        "musical_alignment": 0.8,
+        "narrative_continuity": 0.7,
+        "novelty_bonus": 40,
+        "usage_penalty": 0
+      }
+    },
+    "rejected_alternatives": [
+      {
+        "filename": "sunset_beach.mp4",
+        "final_score": 85,
+        "rejection_reasons": ["Low energy mismatch", "Weak semantic bridge", "No advisor carrier bonus"]
+      },
+      {
+        "filename": "city_night.mp4", 
+        "final_score": 72,
+        "rejection_reasons": ["Vibe mismatch", "Subject dilution", "Low musical alignment"]
+      }
+    ],
+    "temporal_decisions": {
+      "subdivision_allowed": true,
+      "cde_influence": "Dense - encourage subdivision",
+      "beat_snap_applied": true,
+      "human_jitter": "+8%"
+    }
+  }
+}

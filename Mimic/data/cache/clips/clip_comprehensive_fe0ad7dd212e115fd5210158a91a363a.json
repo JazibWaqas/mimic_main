@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Youth-oriented montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men are laughing and celebrating inside a car with a sunroof.",
+  "best_moments": {
+    "High": {
+      "start": 7.2,
+      "end": 9.2,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak shouting and expressive celebration"
+    },
+    "Medium": {
+      "start": 12.5,
+      "end": 15.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained laughter and group interaction"
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup with relatively lower movement"
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "fe0ad7dd212e115fd5210158a91a363a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:03:36"
+}

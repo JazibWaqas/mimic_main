@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "School event montages",
+    "Celebration sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Children wearing animal-themed headbands participate in a school performance and take bows for the audience.",
+  "best_moments": {
+    "High": {
+      "start": 23.2,
+      "end": 25.8,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak action as children take a bow and receive applause."
+    },
+    "Medium": {
+      "start": 13.5,
+      "end": 16.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Children moving into position and adjusting their costumes."
+    },
+    "Low": {
+      "start": 19.0,
+      "end": 22.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "A relatively still moment focusing on a group of children waiting."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "94d206407b208c626a4c52a21658e9db"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 03:26:44"
+}

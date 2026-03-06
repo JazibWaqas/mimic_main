@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Solo"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Reflection",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Dramatic",
+    "Energetic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Action sequences",
+    "Dramatic storytelling"
+  ],
+  "avoid_for": [
+    "Calm reflective intros",
+    "Peaceful nature scenes"
+  ],
+  "vibes": [],
+  "content_description": "A professional race car crashes into a track wall at high speed followed by a close-up of the driver's reaction.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "High-speed impact with debris and smoke creating peak visual intensity."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 5.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The car comes to a stop and the camera tracks into the cockpit."
+    },
+    "Low": {
+      "start": 6.0,
+      "end": 8.185,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Close-up of the driver's face with minimal movement, conveying a moment of shock or relief."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:52:55"
+}

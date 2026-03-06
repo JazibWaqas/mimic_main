@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "People-Crowd"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy sports montages",
+    "Action-oriented transitions",
+    "Commercial promos"
+  ],
+  "avoid_for": [
+    "Calm reflective scenes",
+    "Slow-paced narratives"
+  ],
+  "vibes": [],
+  "content_description": "A fast-paced montage of Formula 1 and GT racing cars competing on various tracks during day and night.",
+  "best_moments": {
+    "High": {
+      "start": 10.5,
+      "end": 13.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense wheel-to-wheel racing action with dynamic tracking shots."
+    },
+    "Medium": {
+      "start": 2.0,
+      "end": 5.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Wide overhead shot of the race track and crowd providing context."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Close-up of a spinning tire, focusing on a single detail before the action escalates."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:49:53"
+}

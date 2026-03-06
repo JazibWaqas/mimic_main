@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Celebration montages"
+  ],
+  "avoid_for": [
+    "Calm reflective intros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men in white shirts are laughing and hugging during a celebration indoors.",
+  "best_moments": {
+    "High": {
+      "start": 0.2,
+      "end": 2.2,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak physical interaction and celebration energy."
+    },
+    "Medium": {
+      "start": 2.2,
+      "end": 4.2,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained laughter and group engagement."
+    },
+    "Low": {
+      "start": 3.5,
+      "end": 6.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The least active segment where the group is mostly standing and smiling."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "9b0d99d66eb8d426b4b99c88ae9faf55"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:00"
+}

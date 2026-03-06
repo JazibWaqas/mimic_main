@@ -1,0 +1,58 @@
+{
+  "energy": "Medium",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel transitions",
+    "Casual walking sequences"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Intimate close-ups"
+  ],
+  "vibes": [],
+  "content_description": "Three friends walk away from the camera down a paved walkway alongside a tall yellow wall.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 2.992517,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Slightly more expressive movement and hand gestures while walking."
+    },
+    "Medium": {
+      "start": 0.5,
+      "end": 2.992517,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Consistent walking pace and steady camera following."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.992517,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The full duration provides a steady, continuous shot of the group's movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "e4032c3076db68d591844dfdfdc83312"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:01:40"
+}

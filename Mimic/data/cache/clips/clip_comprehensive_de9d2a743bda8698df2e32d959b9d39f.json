@@ -1,0 +1,53 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Dramatic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Sports highlight reels",
+    "Fast-paced transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective intros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Formula 1 cars racing at high speed on a track, including an onboard camera perspective.",
+  "best_moments": {
+    "High": {
+      "start": 1.5,
+      "end": 4.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Intense onboard footage following multiple cars at high speed."
+    },
+    "Medium": {
+      "start": 0.8,
+      "end": 2.8,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Side-view of multiple cars racing for position on the track."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Establishing",
+      "stable_moment": false,
+      "reason": "Initial fast pass and transition into the main racing group."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:50:12"
+}

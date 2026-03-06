@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Travel"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages"
+  ],
+  "avoid_for": [
+    "Calm reflective moments"
+  ],
+  "vibes": [],
+  "content_description": "Two young men singing and recording themselves while driving in a car.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Maximum vocal expression and physical movement during the song's peak."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent singing with moderate movement and steady camera framing."
+    },
+    "Low": {
+      "start": 7.5,
+      "end": 10.0,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Slight decrease in intensity as the musical phrase concludes."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "a5544c02ee18806de0189e591bab4f4e"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:01:32"
+}

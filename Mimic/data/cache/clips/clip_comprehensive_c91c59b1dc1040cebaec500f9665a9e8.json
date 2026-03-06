@@ -1,0 +1,55 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "Object-Vehicle",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Adventurous",
+    "Dramatic"
+  ],
+  "clip_quality": 5,
+  "best_for": [
+    "High-energy peaks",
+    "Adventure sequences",
+    "Cinematic transitions"
+  ],
+  "avoid_for": [
+    "Quiet dialogue scenes",
+    "Static backgrounds"
+  ],
+  "vibes": [],
+  "content_description": "An airplane performs a barrel roll against a vibrant sunset over a silhouette of mountains.",
+  "best_moments": {
+    "High": {
+      "start": 0.8,
+      "end": 3.8,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "The peak of the aerobatic roll directly centered against the sun."
+    },
+    "Medium": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The plane enters the frame and initiates the rotation maneuver."
+    },
+    "Low": {
+      "start": 2.0,
+      "end": 4.018,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "The plane completes the maneuver and levels out as it flies away."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:58:58"
+}

@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Nature"
+  ],
+  "narrative_utility": [
+    "Establishing",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Travel vlogs",
+    "Friendship montages",
+    "Social media stories"
+  ],
+  "avoid_for": [
+    "Corporate presentations",
+    "Serious documentaries"
+  ],
+  "vibes": [],
+  "content_description": "Friends play cards and laugh together by a scenic riverbed in a mountainous region.",
+  "best_moments": {
+    "High": {
+      "start": 8.5,
+      "end": 11.0,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and expressive close-up shot of a friend."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Candid interaction between friends playing cards at the table."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Wide establishing shot of the river landscape and surroundings."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "518b2657a3ad01897772e3a9fad1078b"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:48:45"
+}

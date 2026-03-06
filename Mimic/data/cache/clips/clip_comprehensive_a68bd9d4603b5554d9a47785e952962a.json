@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Travel montages",
+    "Celebration sequences"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Serious dramatic scenes"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men energetically singing and dancing along to music inside a car at night.",
+  "best_moments": {
+    "High": {
+      "start": 26.5,
+      "end": 29.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak dancing and singing during the most energetic part of the song."
+    },
+    "Medium": {
+      "start": 11.5,
+      "end": 14.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Consistent rhythmic movement and singing with moderate intensity."
+    },
+    "Low": {
+      "start": 35.5,
+      "end": 38.3296,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The energy winds down as the subjects wave at the camera."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "a68bd9d4603b5554d9a47785e952962a"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-07 05:04:01"
+}

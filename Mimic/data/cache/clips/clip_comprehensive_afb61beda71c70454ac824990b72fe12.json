@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Reaction shots",
+    "Comedy or prank montages",
+    "High-energy peaks"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate presentations"
+  ],
+  "vibes": [],
+  "content_description": "A man performs a card trick for a friend who reacts with intense laughter and physical excitement in a bedroom.",
+  "best_moments": {
+    "High": {
+      "start": 4.2,
+      "end": 6.8,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and physical reaction immediately following the trick's reveal."
+    },
+    "Medium": {
+      "start": 8.5,
+      "end": 11.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained laughter and interaction after the initial shock."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "The relatively calm setup of the card trick before the reaction."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "afb61beda71c70454ac824990b72fe12"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-06 02:47:50"
+}

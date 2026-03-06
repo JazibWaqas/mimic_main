@@ -1,0 +1,54 @@
+{
+  "energy": "Low",
+  "motion": "Gentle",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Solo",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Reflection",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Nostalgic",
+    "Intimate"
+  ],
+  "clip_quality": 4,
+  "best_for": [
+    "Nostalgic montages",
+    "Character backstories",
+    "Reflective moments"
+  ],
+  "avoid_for": [
+    "High-energy action",
+    "Fast-paced transitions"
+  ],
+  "vibes": [],
+  "content_description": "A hand places a gold naval aviator insignia on a surface, followed by a man looking at a wall of old photographs.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.0,
+      "moment_role": "Transition",
+      "stable_moment": false,
+      "reason": "The movement of the hand and the cut between shots represent the highest visual change."
+    },
+    "Medium": {
+      "start": 1.5,
+      "end": 3.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "The reveal of the photo wall and the man's presence creates moderate engagement."
+    },
+    "Low": {
+      "start": 2.5,
+      "end": 4.5,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "A quiet, steady shot of the man looking at the photos, emphasizing nostalgia."
+    }
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-02-04 02:55:18"
+}
