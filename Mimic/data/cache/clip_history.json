@@ -1,290 +1,168 @@
 {
-  "clip88.mp4": [
+  "clip87.mp4": [
     {
-      "start": 0.0,
-      "end": 1.1,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 280.3333,
-      "end": 280.4333,
-      "run_id": "text_prompt_text_music_8_v2"
+      "start": 18.2,
+      "end": 20.2,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
-  "clip98.mp4": [
+  "clip82.mp4": [
     {
-      "start": 0.0,
-      "end": 1.1333,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 26.8,
-      "end": 28.8,
-      "run_id": "text_prompt_text_music_8_v2"
+      "start": 44.2,
+      "end": 46.0667,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
   "clip85.mp4": [
     {
-      "start": 26.0,
-      "end": 27.2333,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
       "start": 38.2,
-      "end": 38.7,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip97.mp4": [
-    {
-      "start": 20.0,
-      "end": 21.1667,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 76.0,
-      "end": 78.0,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip95.mp4": [
-    {
-      "start": 1.0,
-      "end": 2.1333,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 4.5,
-      "end": 5.3333,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip93.mp4": [
-    {
-      "start": 4.0,
-      "end": 5.0,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 9.0,
-      "end": 11.0,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip92 (2).mp4": [
-    {
-      "start": 14.5,
-      "end": 15.7,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 0.0,
-      "end": 0.8,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip96.mp4": [
-    {
-      "start": 2.0,
-      "end": 3.1333,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 20.5,
-      "end": 22.5,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip94.mp4": [
-    {
-      "start": 13.5,
-      "end": 14.6,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 50.5,
-      "end": 51.2667,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip91.mp4": [
-    {
-      "start": 14.5,
-      "end": 15.7333,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 0.0,
-      "end": 2.0,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip79.mp4": [
-    {
-      "start": 151.0,
-      "end": 152.1333,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 96.5,
-      "end": 98.3667,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip86.mp4": [
-    {
-      "start": 6.0,
-      "end": 7.1667,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 14.5,
-      "end": 15.2333,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip102.mp4": [
-    {
-      "start": 43.0,
-      "end": 44.2,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 51.5,
-      "end": 52.3,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip103.mp4": [
-    {
-      "start": 27.5,
-      "end": 28.5,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 15.0,
-      "end": 15.6667,
-      "run_id": "text_prompt_text_music_8_v2"
+      "end": 40.2,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
   "clip80.mp4": [
     {
-      "start": 17.5,
-      "end": 19.4,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
       "start": 10.2,
       "end": 10.7,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip89.mp4": [
-    {
-      "start": 19.0,
-      "end": 20.6667,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 13.5,
-      "end": 16.5,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip81.mp4": [
-    {
-      "start": 33.0,
-      "end": 34.7667,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 6.2,
-      "end": 8.2,
-      "run_id": "text_prompt_text_music_8_v2"
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
   "clip83.mp4": [
     {
       "start": 0.0,
-      "end": 1.8,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 0.0,
-      "end": 1.9333,
-      "run_id": "text_prompt_text_music_8_v2"
+      "end": 2.0,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
-  "clip82.mp4": [
+  "clip91.mp4": [
     {
-      "start": 23.5,
-      "end": 24.3333,
-      "run_id": "text_prompt_text_music_8_v1"
+      "start": 0.0,
+      "end": 2.0,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip79.mp4": [
+    {
+      "start": 96.5,
+      "end": 98.5,
+      "run_id": "text_prompt_text_music_8_v3"
     },
     {
-      "start": 44.2,
-      "end": 44.7,
-      "run_id": "text_prompt_text_music_8_v2"
+      "start": 40.5,
+      "end": 41.1,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip81.mp4": [
+    {
+      "start": 6.2,
+      "end": 6.7,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip93.mp4": [
+    {
+      "start": 9.0,
+      "end": 11.0,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip86.mp4": [
+    {
+      "start": 14.5,
+      "end": 16.4333,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip88.mp4": [
+    {
+      "start": 280.3333,
+      "end": 280.4333,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip95.mp4": [
+    {
+      "start": 4.5,
+      "end": 6.5,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip92 (2).mp4": [
+    {
+      "start": 0.0,
+      "end": 0.5,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip96.mp4": [
+    {
+      "start": 20.5,
+      "end": 21.4,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip89.mp4": [
+    {
+      "start": 23.2,
+      "end": 23.9,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip97.mp4": [
+    {
+      "start": 76.0,
+      "end": 76.7,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip94.mp4": [
+    {
+      "start": 50.5,
+      "end": 51.3333,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip98.mp4": [
+    {
+      "start": 26.8,
+      "end": 27.6,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
   "clip99.mp4": [
     {
-      "start": 37.0,
-      "end": 38.7,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 2.0,
-      "end": 5.0,
-      "run_id": "text_prompt_text_music_8_v2"
+      "start": 21.5,
+      "end": 22.1667,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
   "clip100.mp4": [
     {
-      "start": 22.0,
-      "end": 23.8667,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
       "start": 16.5,
-      "end": 17.1667,
-      "run_id": "text_prompt_text_music_8_v2"
+      "end": 17.3,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
   "clip101.mp4": [
     {
       "start": 14.5,
-      "end": 15.0,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 14.5,
-      "end": 16.5,
-      "run_id": "text_prompt_text_music_8_v2"
-    }
-  ],
-  "clip87.mp4": [
-    {
-      "start": 6.0,
-      "end": 9.0,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
-    {
-      "start": 18.2,
-      "end": 19.0333,
-      "run_id": "text_prompt_text_music_8_v2"
+      "end": 15.2,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ],
   "clip84.mp4": [
     {
       "start": 4.0,
-      "end": 4.9,
-      "run_id": "text_prompt_text_music_8_v1"
-    },
+      "end": 7.0,
+      "run_id": "text_prompt_text_music_8_v3"
+    }
+  ],
+  "clip102.mp4": [
     {
-      "start": 4.0,
-      "end": 4.6,
-      "run_id": "text_prompt_text_music_8_v2"
+      "start": 5.0,
+      "end": 8.0,
+      "run_id": "text_prompt_text_music_8_v3"
     }
   ]
 }

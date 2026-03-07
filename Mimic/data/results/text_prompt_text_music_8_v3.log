@@ -1,0 +1,581 @@
+================================================================================
+PIPELINE RUN: TEXT_PROMPT
+================================================================================
+Session ID: text_music_80b207b048f62412fe4db08eaa13ef40
+Reference: None (Creator Mode)
+Clips: 23
+Timestamp: 2026-03-07 20:50:25
+
+[PROGRESS] Step 1/5: Validating inputs...
+
+[1/5] Validating inputs...
+[WS] Connection attempt for session: text_music_80b207b048f62412fe4db08eaa13ef40
+[WS] Origin: http://localhost:3000
+[WS] Connection accepted for session: text_music_80b207b048f62412fe4db08eaa13ef40
+[WS] Session found: text_music_80b207b048f62412fe4db08eaa13ef40
+[PROGRESS] Step 2/5: Synthesizing Blueprint from text prompt...
+
+[2/5] Synthesizing Blueprint from text prompt...
+  [MUSIC] Analyzing audio source: Meri kahani.mp4
+  [MUSIC] Detected duration: 31.87s. Overriding target_duration.
+  [FIX] Patched scipy.signal.hann for librosa compatibility.
+  [MUSIC] Analyzing: music_analysis.wav...
+  [OK] BPM: 143.55
+  [OK] Found 99 musical onsets
+  [OK] Energy curve: 31s, peak at 27s
+  [MUSIC] Detected BPM: 143.55
+
+  [LIBRARY SCAN] Pre-analyzing 23 clips before blueprint synthesis...
+
+============================================================
+[BRAIN] PARALLEL ANALYSIS: 23 clips
+[BRAIN] Model: gemini-3-flash-preview
+============================================================
+
+[API KEY MANAGER] Loaded 36 API key(s)[API KEY MANAGER] Loaded 36 API key(s)[API KEY MANAGER] Loaded 36 API key(s)[API KEY MANAGER] Loaded 36 API key(s)
+
+
+[API KEY MANAGER] Key rotation system active.
+
+[API KEY MANAGER] Key rotation system active.[API KEY MANAGER] Key rotation system active.[API KEY MANAGER] Key rotation system active.
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip79.mp4...  Analyzing comprehensively: clip87.mp4...
+
+  Analyzing comprehensively: clip82.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip83.mp4...
+  Analyzing comprehensively: clip81.mp4...
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip80.mp4...    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+
+    [CACHE] Subject: People-Group, Activity-Celebration    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Subject: People-Group, Activity-Leisure  Analyzing comprehensively: clip85.mp4...    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+
+
+
+    [CACHE] Derived vibes: Group, Celebration
+    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Subject: People-Group, Place-Indoor
+    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Derived vibes: Group, Leisure
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Derived vibes: Group, Leisure    [CACHE] Derived vibes: Group, Leisure    [CACHE] Derived vibes: Group, Indoor
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip86.mp4...  Analyzing comprehensively: clip84.mp4...
+
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Subject: People-Group, Activity-Leisure
+
+    [CACHE] Derived vibes: Group, Leisure    [CACHE] Derived vibes: Group, Leisure
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip88.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+    [CACHE] Derived vibes: Group, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip89.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Celebration
+    [CACHE] Derived vibes: Group, Celebration
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip97.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Derived vibes: Solo, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip96.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Derived vibes: Solo, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip95.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group
+    [CACHE] Derived vibes: Group
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip92 (2).mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip93.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Derived vibes: Group, Leisure
+
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Derived vibes: Solo, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip94.mp4...[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip98.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Derived vibes: Group, Leisure    [CACHE] Derived vibes: Solo, Indoor
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip99.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Celebration
+    [CACHE] Derived vibes: Group, Celebration
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip91.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Activity-Leisure
+    [CACHE] Derived vibes: Solo, Leisure
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip100.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+    [CACHE] Derived vibes: Group, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip102.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Derived vibes: Solo, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip101.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo
+    [CACHE] Derived vibes: Solo
+
+[OK] All 23 clips analyzed in parallel
+  [LIBRARY SCAN] Done. Dominant vibes: ['group', 'leisure', 'indoor', 'solo'] | Subjects: ['people-group', 'activity-leisure', 'place-indoor']
+
+[GENERATOR] Synthesizing Blueprint from prompt: 'Make a joyful childhood memory video that feels li...'
+  🎵 Music-aware mode: 143.6 BPM
+  [CACHE] Hit! Reusing synthesized blueprint: blueprint_5c0f61eab99e.json
+[OK] Gemini successfully synthesized blueprint from text: 5 segments.
+[PROGRESS] Step 3/5: Analyzing user clips with Gemini AI...
+
+[3/5] Analyzing user clips with Gemini AI...
+  [SKIP] Clips already analyzed in library scan. Reusing results.
+[OK] Gemini successfully analyzed 23 clips (using originals for cache).
+  ✅ Library Health: 79.1% readiness
+  [CACHE] Hit! Using persistent standardized clip: clip79.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip80.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip81.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip82.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip83.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip84.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip85.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip86.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip87.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip88.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip89.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip91.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip92 (2).mp4
+  [CACHE] Hit! Using persistent standardized clip: clip93.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip94.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip95.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip96.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip97.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip98.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip99.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip100.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip101.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip102.mp4
+[OK] All clips standardized (cached or new) and ready for render.
+[PROGRESS] Step 4/5: Creating edit sequence...
+
+[4/5] Creating edit sequence...
+
+============================================================
+[EDITOR] MATCHING CLIPS TO BLUEPRINT (PROMPT MODE)
+============================================================
+  🎨 PROMPT MODE: Creative invention allowed
+  Segments: 5
+  Clips: 23
+  Clips with pre-computed best moments: 23/23
+
+============================================================
+[CREATIVE DIRECTOR] Planning full edit (31.9s, 23 clips)
+============================================================
+  🎬 Creative Director: Calling DeepSeek (attempt 1)...
+  🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.08s). Index: 221 clips, 14 results, 22 refs.
+  ✅ Creative Director planned 13 cuts
+  📝 Arc: I'm creating a joyful childhood memory montage that bursts with energy from the first frame, using quick cuts to musical
+     @ 0.00s → clip83.mp4 [0.00-3.00] (3.00s) | Immediate energy - clapping and singing celebration sets joy
+     @ 3.00s → clip92 (2).mp4 [0.00-2.50] (2.50s) | Playful movement - boy pushing motorcycle with girl steering
+     @ 5.50s → clip81.mp4 [6.20-8.50] (2.30s) | Peak laughter and expressive joy from children
+     @ 7.80s → clip86.mp4 [14.50-17.00] (2.50s) | Energetic trampoline action with one boy falling, other jump
+     @ 10.30s → clip80.mp4 [10.20-13.00] (2.80s) | Chaotic indoor movement with visible laughter
+     @ 13.10s → clip87.mp4 [18.20-21.00] (2.80s) | Fast rotation with joyful expressions and peak activity
+     @ 15.90s → clip82.mp4 [44.20-46.80] (2.60s) | Athletic movement - boy performing handstand and flip
+     @ 18.50s → clip95.mp4 [4.50-7.00] (2.50s) | Peak laughter and physical interaction between children
+     @ 21.00s → clip84.mp4 [8.50-11.00] (2.50s) | Shouting and expressive arm movements from child
+     @ 23.50s → clip79.mp4 [96.50-99.00] (2.50s) | Peak laughter and physical play during tickling game
+     @ 26.00s → clip100.mp4 [16.50-19.00] (2.50s) | Peak laughter and energetic clapping from children
+     @ 28.50s → clip94.mp4 [50.50-53.00] (2.50s) | Child being lifted with joyful interaction
+     @ 31.00s → clip89.mp4 [23.20-25.80] (2.60s) | Children taking a bow - warm, wholesome moment to linger
+  [DIRECTOR] Cached to director_4f5ac847f3924f.json
+  ✅ Creative Director active: 13 planned cuts across 5 segments
+  ✅ Advisor enabled: Strategic guidance active
+  🎵 Beat grid generated: 77 beats at 143.55 BPM (mode: PROMPT)
+  🎯 Onset grid active: 99 musical hits (priority over BPM grid)
+  ✅ Active snap grid: 99 points (onset)
+
+
+📊 CLIP DEMAND ANALYSIS:
+   Mode: PROMPT — energy labels are advisory only. All 23 clips eligible.
+   Music (onset grid + pacing cadence) determines the emotional feel of each segment.
+
+
+Segment 1: 0.000000s-6.366667s (6.366667s, High/Dynamic)
+    🎨 PROMPT MODE: CDE=Moderate, hold=Normal, vibe=playful, energetic, joyful
+    💭 Emotional guidance: Immediate immersion in childhood joy and energy
+  🧠 AI: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'playful, energetic, joyful' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip87.mp4 (Score: 347.4)
+    ✂️ Cut 1: clip87.mp4 [18.20s-20.20s] (2.00s) → timeline [0.000000s-2.000000s]
+    🔗 Backfilling: clip82.mp4 (Remaining: 4.37s, Fill: 0.00s)
+    ✂️ Cut 2: clip82.mp4 [44.20s-46.07s] (1.87s) → timeline [2.000000s-3.866667s]
+    🔗 Backfilling: clip85.mp4 (Remaining: 2.50s, Fill: 0.00s)
+    ✂️ Cut 3: clip85.mp4 [38.20s-40.20s] (2.00s) → timeline [3.866667s-5.866667s]
+    🔗 Backfilling: clip80.mp4 (Remaining: 0.50s, Fill: 0.00s)
+    ✂️ Cut 4: clip80.mp4 [10.20s-10.70s] (0.50s) → timeline [5.866667s-6.366667s]
+[SEGMENT 1 LOG] Ref: 6.37s | Rendered: 6.37s | Cuts: 4 | Mode: PROMPT
+
+Segment 2: 6.366667s-12.733333s (6.366667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎨 PROMPT MODE: CDE=Moderate, hold=Normal, vibe=lively, interactive, fun
+    💭 Emotional guidance: Building connection through shared joyful experiences
+  🧠 AI: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'lively, interactive, fun' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip83.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip83.mp4 [0.00s-2.00s] (2.00s) → timeline [6.366667s-8.366667s]
+    🔗 Backfilling: clip91.mp4 (Remaining: 4.37s, Fill: 0.00s)
+    ✂️ Cut 2: clip91.mp4 [0.00s-2.00s] (2.00s) → timeline [8.366667s-10.366667s]
+    🔗 Backfilling: clip79.mp4 (Remaining: 2.37s, Fill: 0.00s)
+    ✂️ Cut 3: clip79.mp4 [96.50s-98.50s] (2.00s) → timeline [10.366667s-12.366667s]
+    🔗 Backfilling: clip81.mp4 (Remaining: 0.37s, Fill: 0.00s)
+    ✂️ Cut 4: clip81.mp4 [6.20s-6.70s] (0.50s) → timeline [12.366667s-12.866667s]
+[SEGMENT 2 LOG] Ref: 6.37s | Rendered: 6.50s | Cuts: 4 | Mode: PROMPT
+    ❌ TIME DRIFT DETECTED: 0.133s
+
+Segment 3: 12.733333s-19.133333s (6.400000s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+[WARN] Timeline drift: 12.867 vs segment.start 12.733, continuing from previous end.
+    🎨 PROMPT MODE: CDE=Moderate, hold=Normal, vibe=celebration, excitement, happi
+    💭 Emotional guidance: Flood of happy memories and pure childhood excitement
+  🧠 AI: 🌟 Serving as a strategic 'Reaction' shot within this sequence. The visual content captures the 'celebration, excitement, happiness' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip93.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip93.mp4 [9.00s-11.00s] (2.00s) → timeline [12.866667s-14.866667s]
+    🔗 Backfilling: clip86.mp4 (Remaining: 4.27s, Fill: 0.00s)
+    ✂️ Cut 2: clip86.mp4 [14.50s-16.43s] (1.93s) → timeline [14.866667s-16.800000s]
+    🔗 Backfilling: clip88.mp4 (Remaining: 2.33s, Fill: 0.00s)
+    ✂️ Cut 3: clip88.mp4 [280.33s-280.43s] (0.10s) → timeline [16.800000s-16.900000s]
+    🔗 Backfilling: clip95.mp4 (Remaining: 2.23s, Fill: 0.00s)
+    ✂️ Cut 4: clip95.mp4 [4.50s-6.50s] (2.00s) → timeline [16.900000s-18.900000s]
+    🔗 Backfilling: clip92 (2).mp4 (Remaining: 0.23s, Fill: 0.00s)
+    ✂️ Cut 5: clip92 (2).mp4 [0.00s-0.50s] (0.50s) → timeline [18.900000s-19.400000s]
+[SEGMENT 3 LOG] Ref: 6.40s | Rendered: 6.53s | Cuts: 5 | Mode: PROMPT
+    ❌ TIME DRIFT DETECTED: 0.133s
+
+Segment 4: 19.133333s-25.500000s (6.366667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+[WARN] Timeline drift: 19.400 vs segment.start 19.133, continuing from previous end.
+    🎨 PROMPT MODE: CDE=Moderate, hold=Short, vibe=peak joy, celebration, climax
+    💭 Emotional guidance: Climactic celebration of childhood's purest joyful moments
+  🧠 AI: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'peak joy, celebration, climax' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip96.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip96.mp4 [20.50s-21.40s] (0.90s) → timeline [19.400000s-20.300000s]
+    🔗 Backfilling: clip89.mp4 (Remaining: 5.20s, Fill: 0.00s)
+    ✂️ Cut 2: clip89.mp4 [23.20s-23.90s] (0.70s) → timeline [20.300000s-21.000000s]
+    🔗 Backfilling: clip97.mp4 (Remaining: 4.50s, Fill: 0.00s)
+    ✂️ Cut 3: clip97.mp4 [76.00s-76.70s] (0.70s) → timeline [21.000000s-21.700000s]
+    🔗 Backfilling: clip94.mp4 (Remaining: 3.80s, Fill: 0.00s)
+    ✂️ Cut 4: clip94.mp4 [50.50s-51.33s] (0.83s) → timeline [21.700000s-22.533333s]
+    🔗 Backfilling: clip98.mp4 (Remaining: 2.97s, Fill: 0.00s)
+    ✂️ Cut 5: clip98.mp4 [26.80s-27.60s] (0.80s) → timeline [22.533333s-23.333333s]
+    🔗 Backfilling: clip99.mp4 (Remaining: 2.17s, Fill: 0.00s)
+    ✂️ Cut 6: clip99.mp4 [21.50s-22.17s] (0.67s) → timeline [23.333333s-24.000000s]
+    🔗 Backfilling: clip100.mp4 (Remaining: 1.50s, Fill: 0.00s)
+    ✂️ Cut 7: clip100.mp4 [16.50s-17.30s] (0.80s) → timeline [24.000000s-24.800000s]
+    🔗 Backfilling: clip101.mp4 (Remaining: 0.70s, Fill: 0.00s)
+    ✂️ Cut 8: clip101.mp4 [14.50s-15.20s] (0.70s) → timeline [24.800000s-25.500000s]
+[SEGMENT 4 LOG] Ref: 6.37s | Rendered: 6.10s | Cuts: 8 | Mode: PROMPT
+    ❌ TIME DRIFT DETECTED: -0.267s
+
+Segment 5: 25.500000s-31.866667s (6.366667s, Medium/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎨 PROMPT MODE: CDE=Sparse, hold=Long, vibe=warm, wholesome, nostalgic
+    💭 Emotional guidance: Warm reflection on the beauty of childhood innocence
+  🧠 AI: 🌟 Maintains visual freshness, lighting consistency.
+  📎 Selected: clip84.mp4 (Score: 201.4)
+    ✂️ Cut 1: clip84.mp4 [4.00s-7.00s] (3.00s) → timeline [25.500000s-28.500000s]
+    🔗 Backfilling: clip102.mp4 (Remaining: 3.37s, Fill: 0.00s)
+    ✂️ Cut 2: clip102.mp4 [5.00s-8.00s] (3.00s) → timeline [28.500000s-31.500000s]
+    ⚠️ CRITICAL: No clips match duration (0.27s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+    🔗 Backfilling: clip79.mp4 (Remaining: 0.37s, Fill: 0.00s)
+    ✂️ Cut 3: clip79.mp4 [40.50s-41.10s] (0.60s) → timeline [31.500000s-32.100000s]
+[SEGMENT 5 LOG] Ref: 6.37s | Rendered: 6.60s | Cuts: 3 | Mode: PROMPT
+    ❌ TIME DRIFT DETECTED: 0.233s
+
+============================================================
+[OK] Matching complete: 24 edit decisions
+[OK] Total timeline duration: 31.87s (target: 31.87s)
+
+📊 DIVERSITY REPORT:
+   Unique clips used: 23/23
+   ✅ PERFECT! Every clip in your library was used.
+
+   ⚠️ CLIPS REPEATED:
+      clip_001.mp4: 2x
+
+📋 ENERGY COMPROMISES: 3
+   (Used adjacent energy when exact wasn't available)
+      Medium→High: 3 times
+
+💡 RECOMMENDATIONS TO IMPROVE THIS EDIT:
+
+   [Quality Improvements]
+============================================================
+
+  📚 Global history updated → clip_history.json
+
+🔬 X-RAY diagnostic report exported: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\text_prompt_text_music_8_v3_XRAY.txt
+  ✅ EDL validated: timeline integrity confirmed
+
+============================================================
+[EDL] EDIT DECISION LIST SUMMARY
+============================================================
+
+Total decisions: 24
+Total segments: 5
+Available clips: 23
+
+Clip usage distribution:
+  clip_001.mp4: 2 times
+  clip_009.mp4: 1 times
+  clip_004.mp4: 1 times
+  clip_007.mp4: 1 times
+  clip_002.mp4: 1 times
+  clip_005.mp4: 1 times
+  clip_012.mp4: 1 times
+  clip_003.mp4: 1 times
+  clip_014.mp4: 1 times
+  clip_008.mp4: 1 times
+  clip_010.mp4: 1 times
+  clip_016.mp4: 1 times
+  clip_013.mp4: 1 times
+  clip_017.mp4: 1 times
+  clip_011.mp4: 1 times
+  clip_018.mp4: 1 times
+  clip_015.mp4: 1 times
+  clip_019.mp4: 1 times
+  clip_020.mp4: 1 times
+  clip_021.mp4: 1 times
+  clip_022.mp4: 1 times
+  clip_006.mp4: 1 times
+  clip_023.mp4: 1 times
+
+🧠 INTELLIGENCE AUDIT (Narrative Compliance):
+   Vibe Accuracy: 87.5% matching suggested vibes
+
+   Shot Function Breakdown:
+      Action      : 16 cuts
+      Reaction    : 5 cuts
+      Release     : 3 cuts
+
+   Arc Stage Fidelity:
+      Intro       : 100.0% intent alignment
+      Build-up    : 100.0% intent alignment
+      Peak        : 100.0% intent alignment
+      Outro       : 0.0% intent alignment
+
+[PROGRESS] Step 5/5: Rendering final video...
+
+[5/5] Rendering final video...
+    [OK] Segment extracted: 18.20s + 2.00s -> 2.00s
+    [OK] Segment extracted: 44.20s + 1.87s -> 1.87s
+    [OK] Segment extracted: 38.20s + 2.00s -> 2.00s
+    [OK] Segment extracted: 10.20s + 0.50s -> 0.50s
+    [OK] Segment extracted: 0.00s + 2.00s -> 2.00s
+    [OK] Segment extracted: 0.00s + 2.00s -> 2.00s
+    [OK] Segment extracted: 96.50s + 2.00s -> 2.00s
+    [OK] Segment extracted: 6.20s + 0.50s -> 0.50s
+    [OK] Segment extracted: 9.00s + 2.00s -> 2.00s
+    [OK] Segment extracted: 14.50s + 1.93s -> 1.93s
+    [OK] Segment extracted: 280.33s + 0.10s -> 0.10s
+    [OK] Segment extracted: 4.50s + 2.00s -> 2.00s
+    [OK] Segment extracted: 0.00s + 0.50s -> 0.50s
+    [OK] Segment extracted: 20.50s + 0.90s -> 0.90s
+    [OK] Segment extracted: 23.20s + 0.70s -> 0.70s
+    [OK] Segment extracted: 76.00s + 0.70s -> 0.70s
+    [OK] Segment extracted: 50.50s + 0.83s -> 0.83s
+    [OK] Segment extracted: 26.80s + 0.80s -> 0.80s
+    [OK] Segment extracted: 21.50s + 0.67s -> 0.67s
+    [OK] Segment extracted: 16.50s + 0.80s -> 0.80s
+    [OK] Segment extracted: 14.50s + 0.70s -> 0.70s
+    [OK] Segment extracted: 4.00s + 3.00s -> 3.00s
+    [OK] Segment extracted: 5.00s + 3.00s -> 3.00s
+    [OK] Segment extracted: 40.50s + 0.37s -> 0.37s
+  [OK] Concatenated 24 segments (frame-perfect)
+  [WARN] Concat duration 32.40s differs from blueprint 31.87s (drift: +0.53s)
+  ✂️ Duration trimmed: 32.40s → 31.87s
+[STYLIST] Applying visual styling (v14.9 Style Control)...
+  [STYLIST] Applying v14.9 Style (Preset: warm): 3 filters
+  [WARN] Stylist failed (likely FFmpeg syntax/missing font), falling back to unstylized: Command '['ffmpeg', '-y', '-i', 'C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\text_music_80b207b048f62412fe4db08eaa13ef40\\temp_video_trimmed.mp4', '-vf', "eq=saturation=1.1:brightness=0.02,colorbalance=rh=0.08:gh=0.04:bh=-0.04,drawtext=text='Oh to be this young again.':x=(w-text_w)/2:y=(h*0.8 - (1 * 63.0/2)) + 0.0:fontsize=42:fontcolor=0xFFFFFF:fontfile='C:/Windows/Fonts/arial.ttf':shadowcolor=black@0.6:shadowx=2:shadowy=2", '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '23', '-c:a', 'copy', 'C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\text_music_80b207b048f62412fe4db08eaa13ef40\\temp_video_styled.mp4']' returned non-zero exit status 4294967274.
+  [OK] Audio extracted: ref_audio.aac
+  [OK] Audio merged onto video (optimized)
+
+================================================================================
+✅ SUCCESS!
+================================================================================
+
+📊 Basic Results:
+   Output: text_prompt_text_music_8_v3.mp4
+   Duration: 31.87s (ref: 31.87s)
+   Difference: 0.00s
+   Processing time: 83.5s
+
+================================================================================
+🧠 COMPREHENSIVE SYSTEM ANALYSIS
+================================================================================
+
+📹 Reference Analysis:
+   Editing Style: Nostalgia-first, memory-driven editing with intentional rhythm that prioritizes emotional resonance over technical precision. Quick cuts that maintain clarity, guided by music energy to create a joyful, playful narrative.
+   Emotional Intent: Evoke the pure joy and innocence of childhood through a lively, energetic sequence of happy moments that feels like flipping through cherished memories, ending with a warm, wholesome smile.
+   Arc Description: Energy starts high with immediate playful moments, maintains lively pacing through varied joyful int...
+   Total Segments: 5
+
+📑 BLUEPRINT FULL SEGMENT LIST:
+   01:  0.00- 6.37s | High   | Vibe: playful, energetic, joyful | Intro
+   02:  6.37-12.73s | High   | Vibe: lively, interactive, fun | Build-up
+   03: 12.73-19.13s | High   | Vibe: celebration, excitement, happiness | Build-up
+   04: 19.13-25.50s | High   | Vibe: peak joy, celebration, climax | Peak
+   05: 25.50-31.87s | Medium | Vibe: warm, wholesome, nostalgic | Outro
+
+📈 Arc Stage Distribution:
+   Build-up: 2 segments (40.0%)
+   Intro: 1 segments (20.0%)
+   Peak: 1 segments (20.0%)
+   Outro: 1 segments (20.0%)
+
+🎨 Vibe Distribution:
+   playful, energetic, joyful: 1 segments (20.0%)
+   lively, interactive, fun: 1 segments (20.0%)
+   celebration, excitement, happiness: 1 segments (20.0%)
+   peak joy, celebration, climax: 1 segments (20.0%)
+   warm, wholesome, nostalgic: 1 segments (20.0%)
+
+📎 Clip Usage Analysis:
+   Unique clips used: 23/23
+   Most used clips:
+     clip_001.mp4: 2 times (8.3%)
+     clip_009.mp4: 1 times (4.2%)
+     clip_004.mp4: 1 times (4.2%)
+     clip_007.mp4: 1 times (4.2%)
+     clip_002.mp4: 1 times (4.2%)
+
+🧠 AI Reasoning Breakdown:
+   ✨ Smart Match: 0 (0.0%)
+   🎯 Good Fit: 0 (0.0%)
+   ⚙️ Constraint Relaxation: 0 (0.0%)
+
+🎨 Vibe Matching:
+   Matches: 21/24 (87.5%)
+
+📏 Cut Statistics by Arc Stage:
+   Intro: 4 cuts, avg 1.59s
+   Build-up: 9 cuts, avg 1.45s
+   Peak: 8 cuts, avg 0.76s
+   Outro: 3 cuts, avg 2.12s
+
+📏 Overall Cut Statistics:
+   Total cuts: 24
+   Average cut: 1.33s
+   Shortest cut: 0.10s
+   Longest cut: 3.00s
+
+💭 Sample AI Reasoning (first 5 decisions):
+   1. clip_009.mp4: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content ...
+   2. clip_004.mp4: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content ...
+   3. clip_007.mp4: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content ...
+   4. clip_002.mp4: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content ...
+   5. clip_005.mp4: 🌟 Serving as a strategic 'Action' shot within this sequence. The visual content ...
+
+📦 CLIP REGISTRY (23 total):
+   01: clip100.mp4     | High   |  38.7s | Vibes: Group, Indoor
+   02: clip101.mp4     | High   |  80.2s | Vibes: Solo
+   03: clip102.mp4     | High   |  58.8s | Vibes: Solo, Indoor
+   04: clip79.mp4      | High   | 193.0s | Vibes: Group, Leisure
+   05: clip80.mp4      | High   |  29.9s | Vibes: Group, Indoor
+   06: clip81.mp4      | High   |  36.4s | Vibes: Group, Leisure
+   07: clip82.mp4      | High   |  70.2s | Vibes: Group, Leisure
+   08: clip83.mp4      | High   |   9.3s | Vibes: Group, Celebration
+   09: clip84.mp4      | High   |  28.4s | Vibes: Group, Leisure
+   10: clip85.mp4      | High   |  43.0s | Vibes: Group, Leisure
+   11: clip86.mp4      | High   |  32.0s | Vibes: Group, Leisure
+   12: clip87.mp4      | High   |  22.3s | Vibes: Group, Leisure
+   13: clip88.mp4      | High   | 280.4s | Vibes: Group, Indoor
+   14: clip89.mp4      | High   |  30.2s | Vibes: Group, Celebration
+   15: clip91.mp4      | High   |  18.0s | Vibes: Solo, Leisure
+   16: clip92 (2).mp4  | High   |  18.1s | Vibes: Group, Leisure
+   17: clip93.mp4      | High   |  19.1s | Vibes: Solo, Indoor
+   18: clip94.mp4      | High   |  62.6s | Vibes: Group, Leisure
+   19: clip95.mp4      | High   |  21.2s | Vibes: Group
+   20: clip96.mp4      | High   |  23.8s | Vibes: Solo, Indoor
+   21: clip97.mp4      | High   |  85.2s | Vibes: Solo, Indoor
+   22: clip98.mp4      | High   |  74.4s | Vibes: Solo, Indoor
+   23: clip99.mp4      | High   |  49.2s | Vibes: Group, Celebration
+
+📋 Metadata Coverage:
+   Best Moments: 23/23
+   Vibes: 23/23
+
+🔍 Temporal Precision Check:
+   ✅ TIMELINE INTEGRITY: No gaps or overlaps detected (all within 0.001s tolerance)
+
+📦 Material Efficiency:
+   Total source duration available: 1324.46s
+   Total duration used in edit: 32.10s
+   Unique clip segments used: 24
+   Utilization Ratio: 2.4%
+   💡 Note: Low utilization suggests clips may not match reference vibes well
+
+================================================================================
+💡 POST-EDIT CREATIVE REVIEW (ADVISOR CRITIQUE)
+================================================================================
+
+🎨 THE EDITORIAL DEBRIEF:
+
+🧠 EDITORIAL STRATEGY:
+   Creative Director: full holistic plan active
+
+================================================================================
+
+
+================================================================================
+🎉 Watch the result: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\text_prompt_text_music_8_v3.mp4
+================================================================================
+
+[PROGRESS] Step 6/6: Generating Vault intelligence report...
+
+[6/6] Generating Vault intelligence report...
+[VAULT] Translating reasoning into human report via Groq (Llama 3.3 70B)...
+[BRAIN] Calling Groq (llama-3.3-70b-versatile)...
+  ✅ Vault Report generated.
+[PROCESS] Exporting master intelligence report...
+   (Intelligence data confirmed: 44 chars)
+[OK] Intelligence report saved: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\text_prompt_text_music_8_v3.json (91062 bytes)

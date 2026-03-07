@@ -1,0 +1,109 @@
+{
+  "arc_summary": "I'm creating a joyful childhood memory montage that bursts with energy from the first frame, using quick cuts to musical onsets to create a lively, playful rhythm. The edit builds through diverse moments of laughter, movement, and interaction, peaking around 27 seconds with the most energetic clips, then resolves into a warm, wholesome final moment that lingers with the text overlay 'Oh, to be this young again.'",
+  "cuts": [
+    {
+      "clip_filename": "clip83.mp4",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "music_position": 0.0,
+      "purpose": "Immediate energy - clapping and singing celebration sets joyful tone",
+      "arc_stage": "Intro"
+    },
+    {
+      "clip_filename": "clip92 (2).mp4",
+      "clip_start": 0.0,
+      "clip_end": 2.5,
+      "music_position": 3.0,
+      "purpose": "Playful movement - boy pushing motorcycle with girl steering",
+      "arc_stage": "Intro"
+    },
+    {
+      "clip_filename": "clip81.mp4",
+      "clip_start": 6.2,
+      "clip_end": 8.5,
+      "music_position": 5.5,
+      "purpose": "Peak laughter and expressive joy from children",
+      "arc_stage": "Intro"
+    },
+    {
+      "clip_filename": "clip86.mp4",
+      "clip_start": 14.5,
+      "clip_end": 17.0,
+      "music_position": 7.8,
+      "purpose": "Energetic trampoline action with one boy falling, other jumping",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip80.mp4",
+      "clip_start": 10.2,
+      "clip_end": 13.0,
+      "music_position": 10.3,
+      "purpose": "Chaotic indoor movement with visible laughter",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip87.mp4",
+      "clip_start": 18.2,
+      "clip_end": 21.0,
+      "music_position": 13.100000000000001,
+      "purpose": "Fast rotation with joyful expressions and peak activity",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip82.mp4",
+      "clip_start": 44.2,
+      "clip_end": 46.8,
+      "music_position": 15.900000000000002,
+      "purpose": "Athletic movement - boy performing handstand and flip",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip95.mp4",
+      "clip_start": 4.5,
+      "clip_end": 7.0,
+      "music_position": 18.499999999999996,
+      "purpose": "Peak laughter and physical interaction between children",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip84.mp4",
+      "clip_start": 8.5,
+      "clip_end": 11.0,
+      "music_position": 20.999999999999996,
+      "purpose": "Shouting and expressive arm movements from child",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip79.mp4",
+      "clip_start": 96.5,
+      "clip_end": 99.0,
+      "music_position": 23.499999999999996,
+      "purpose": "Peak laughter and physical play during tickling game",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip100.mp4",
+      "clip_start": 16.5,
+      "clip_end": 19.0,
+      "music_position": 25.999999999999996,
+      "purpose": "Peak laughter and energetic clapping from children",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip94.mp4",
+      "clip_start": 50.5,
+      "clip_end": 53.0,
+      "music_position": 28.499999999999996,
+      "purpose": "Child being lifted with joyful interaction",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip89.mp4",
+      "clip_start": 23.2,
+      "clip_end": 25.8,
+      "music_position": 30.999999999999996,
+      "purpose": "Children taking a bow - warm, wholesome moment to linger",
+      "arc_stage": "Outro"
+    }
+  ]
+}

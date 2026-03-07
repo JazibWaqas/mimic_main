@@ -1218,6 +1218,7 @@ def match_clips_to_blueprint(
     # v14.7: SYNC LOCK (Phase 2) - Frame boundary constants
     SNAP_FPS = 30.0
     FRAME_DUR = 1.0 / SNAP_FPS
+    MIN_SHOT_DURATION = 0.6
 
     def snap(d):
         return round(d / FRAME_DUR) * FRAME_DUR
@@ -1827,7 +1828,11 @@ def match_clips_to_blueprint(
             # Final Safety Snapping (Applies to both paths)
             use_duration = snap(use_duration)
             if use_duration < FRAME_DUR: use_duration = FRAME_DUR
-            
+
+            use_duration = max(use_duration, min(MIN_SHOT_DURATION, segment_remaining))
+            use_duration = snap(use_duration)
+            if use_duration < FRAME_DUR: use_duration = FRAME_DUR
+
             # v13.2: USABLE WINDOW - Derived from BestMoment, conditioned on segment contract
             # This replaces hard best_moment boundaries with extension capability for sacred cuts
             window_start = 0.0

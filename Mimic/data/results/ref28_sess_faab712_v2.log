@@ -1,0 +1,329 @@
+================================================================================
+PIPELINE RUN: REF28.MP4
+================================================================================
+Session ID: sess_faab712bf635def50cb31eb3c5388d91
+Reference: ref28.mp4
+Clips: 56
+Timestamp: 2026-03-07 21:21:12
+
+[PROGRESS] Step 1/5: Validating inputs...
+
+[1/5] Validating inputs...
+[WS] Connection attempt for session: sess_faab712bf635def50cb31eb3c5388d91
+[WS] Origin: http://localhost:3000
+[WS] Connection accepted for session: sess_faab712bf635def50cb31eb3c5388d91
+[WS] Session found: sess_faab712bf635def50cb31eb3c5388d91
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.17s). Index: 228 clips, 15 results, 22 refs.
+[PROGRESS] Step 2/5: Detecting visual cuts and analyzing reference structure...
+
+[2/5] Detecting visual cuts and analyzing reference structure...
+  [DIAGNOSTIC] Detecting visual scene changes (threshold=0.12)...
+  [DIAGNOSTIC] Detecting visual scene changes (threshold=0.12)...
+  [OK] Detected 39 visual cuts.
+  [MUSIC] Analyzing: ref_analysis_audio.wav...
+  [OK] BPM: 66.26
+  [OK] Found 66 musical onsets
+  [OK] Energy curve: 20s, peak at 2s
+  [HYBRID] Visual cuts: 39, Beat-enhanced: 38
+
+============================================================
+[BRAIN] ANALYZING REFERENCE VIDEO: ref28.mp4
+[BRAIN] Using 38 visual scene anchors.
+============================================================
+
+[CACHE] Loaded Hybrid Rhythmic analysis: ref_61471c13a92faa6a49159ce128516b57_v12.1_he5c26cfe.json
+[OK] Loaded from cache: 39 segments (preserved original rhythm)
+[OK] Gemini successfully analyzed reference: 39 segments found.
+[PROGRESS] Step 3/5: Analyzing user clips with Gemini AI...
+
+[3/5] Analyzing user clips with Gemini AI...
+
+============================================================
+[BRAIN] PARALLEL ANALYSIS: 56 clips
+[BRAIN] Model: gemini-3-flash-preview
+============================================================
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip103 copy.mp4...  Analyzing comprehensively: clip104.mp4...
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+
+  Analyzing comprehensively: clip105.mp4...    [CACHE] Subject: People-Group, Activity-Celebration  Analyzing comprehensively: clip107.mp4...
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Derived vibes: Group, Celebration
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments  Analyzing comprehensively: clip108.mp4...
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+
+    [CACHE] Subject: People-Group, Activity-Travel
+    [CACHE] Derived vibes: Group, Travel
+
+  Analyzing comprehensively: clip109.mp4...
+
+    [CACHE] Subject: People-Group, Activity-Celebration  Analyzing comprehensively: clip111.mp4...
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Derived vibes: Group, Celebration
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Celebration
+
+    [CACHE] Derived vibes: Group, Celebration
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Subject: People-Group, Activity-Leisure
+
+    [CACHE] Derived vibes: Group, Leisure[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Derived vibes: Group, Leisure
+  Analyzing comprehensively: clip122.mp4...
+
+
+  Analyzing comprehensively: clip112.mp4...  Analyzing comprehensively: clip124.mp4...
+
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Leisure
+
+
+    [CACHE] Derived vibes: Group, Leisure[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Subject: People-Group, Activity-Leisure
+
+    [CACHE] Subject: People-Group, Activity-Celebration[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+  Analyzing comprehensively: clip128.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Derived vibes: Group, Celebration  Analyzing comprehensively: clip126.mp4...
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+  Analyzing comprehensively: clip125.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+
+  Analyzing comprehensively: clip127.mp4...
+    [CACHE] Subject: People-Group, Activity-Celebration
+
+    [CACHE] Subject: People-Group, Object-Landmark
+    [CACHE] Derived vibes: Group, Celebration    [CACHE] Derived vibes: Group, Landmark
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+    [CACHE] Subject: People-Group, Activity-Celebration
+    [CACHE] Derived vibes: Group, Celebration
+  Analyzing comprehensively: clip129.mp4...
+
+    [CACHE] Subject: People-Group
+    [CACHE] Derived vibes: Group
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip131.mp4...
+  Analyzing comprehensively: clip132.mp4...
+    [CACHE] Subject: People-Group, Activity-Leisure
+
+  Analyzing comprehensively: clip130.mp4...
+    [CACHE] Derived vibes: Group, Leisure
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip134.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+    [CACHE] Subject: People-Group, Activity-Celebration    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Subject: People-Group, Activity-Celebration
+
+
+    [CACHE] Derived vibes: Group, Celebration    [CACHE] Subject: People-Crowd, Activity-Celebration
+    [CACHE] Derived vibes: Group, Celebration
+    [CACHE] Derived vibes: Crowd, Celebration
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip139.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+    [CACHE] Subject: People-Group, Activity-Travel  Analyzing comprehensively: clip133.mp4...
+
+    [CACHE] Derived vibes: Group, Travel
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Derived vibes: Group, Indoor  Analyzing comprehensively: clip141.mp4...  Analyzing comprehensively: clip140.mp4...
+
+
+
+    [CACHE] Subject: People-Group, Object-Vehicle
+    [CACHE] Derived vibes: Group, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments  Analyzing comprehensively: clip148.mp4...
+
+
+    [CACHE] Subject: People-Group, Activity-Celebration    [CACHE] Subject: People-Group, Activity-Leisure
+
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Derived vibes: Group, Celebration
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+[OK] Using Gemini 3 model: gemini-3-flash-preview  Analyzing comprehensively: clip155.mp4...  Analyzing comprehensively: clip157.mp4...    [CACHE] Derived vibes: Group, Leisure
+
+
+
+  Analyzing comprehensively: clip154.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+
+
+    [CACHE] Derived vibes: Group, Indoor  Analyzing comprehensively: clip156.mp4...    [CACHE] Subject: People-Group, Activity-Leisure
+
+  Analyzing comprehensively: clip158.mp4...
+    [CACHE] Derived vibes: Group, Leisure
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+  Analyzing comprehensively: clip159.mp4...
+
+    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Subject: People-Group, Place-Indoor
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Derived vibes: Group, Leisure    [CACHE] Subject: People-Group, Activity-Leisure
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Derived vibes: Group, Indoor
+  Analyzing comprehensively: clip161.mp4...
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Derived vibes: Group, Leisure
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip162.mp4...  Analyzing comprehensively: clip163.mp4...
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments  Analyzing comprehensively: clip164.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments  Analyzing comprehensively: clip165.mp4...    [CACHE] Subject: People-Group, Activity-Travel
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Derived vibes: Group, Travel
+
+    [CACHE] Subject: People-Group, Activity-Travel
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Derived vibes: Group, Leisure  Analyzing comprehensively: clip167.mp4...
+    [CACHE] Subject: People-Solo, Activity-Leisure    [CACHE] Derived vibes: Group, Travel
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+    [CACHE] Derived vibes: Solo, Leisure  Analyzing comprehensively: clip169.mp4...[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments  Analyzing comprehensively: clip171.mp4...
+
+
+
+
+
+  Analyzing comprehensively: clip168.mp4...    [CACHE] Subject: People-Group, Activity-Leisure  Analyzing comprehensively: clip170.mp4...
+Uploading clip169.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip173.mp4...    [CACHE] Derived vibes: Group, Leisure[OK] Using Gemini 3 model: gemini-3-flash-preview
+Uploading clip171.mp4...
+Uploading clip168.mp4...
+
+
+Uploading clip173.mp4...
+
+Uploading clip170.mp4...  Analyzing comprehensively: clip172.mp4...
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview  Analyzing comprehensively: clip174.mp4...
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_104.mp4...
+  Analyzing comprehensively: clip_110.mp4...
+Uploading clip172.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Leisure
+Uploading clip174.mp4...    [CACHE] Derived vibes: Group, Leisure
+
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Travel
+    [CACHE] Derived vibes: Group, Travel
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_112.mp4...
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Activity-Travel
+    [CACHE] Derived vibes: Solo, Travel
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_129.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_124.mp4...    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+    [CACHE] Subject: People-Group, Activity-Travel
+    [CACHE] Derived vibes: Group, Travel    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+
+    [CACHE] Derived vibes: Group, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_132.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Place-Urban
+    [CACHE] Derived vibes: Solo, Urban
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_133.mp4...[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip_134.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+
+    [CACHE] Subject: People-Group, Activity-Travel    [CACHE] Subject: People-Group, Place-Indoor
+
+    [CACHE] Derived vibes: Group, Indoor    [CACHE] Derived vibes: Group, Travel
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_135.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+    [CACHE] Derived vibes: Group, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_136.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+    [CACHE] Subject: People-Group, Place-Indoor  Analyzing comprehensively: clip_137.mp4...
+    [CACHE] Derived vibes: Group, Indoor
+
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Derived vibes: Group, Leisure
+  Analyzing comprehensively: clip_145.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+    [CACHE] Derived vibes: Group, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_154.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Place-Indoor
+    [CACHE] Derived vibes: Group, Indoor
+Waiting for video processing (state: PROCESSING)...
+Waiting for video processing (state: PROCESSING)...
+Waiting for video processing (state: PROCESSING)...
+Waiting for video processing (state: PROCESSING)...
+Waiting for video processing (state: PROCESSING)...
+Waiting for video processing (state: PROCESSING)...
+Waiting for video processing (state: PROCESSING)...
+Upload complete: https://generativelanguage.googleapis.com/v1beta/files/03vrk5zx6g2e
+    Requesting comprehensive analysis (attempt 1)...
+Upload complete: https://generativelanguage.googleapis.com/v1beta/files/5giegn5t34yd
+    Requesting comprehensive analysis (attempt 1)...
+Upload complete: https://generativelanguage.googleapis.com/v1beta/files/olixhd8gl1lh
+    Requesting comprehensive analysis (attempt 1)...
+Upload complete: https://generativelanguage.googleapis.com/v1beta/files/fgup36fgebmz
+    Requesting comprehensive analysis (attempt 1)...
+Upload complete: https://generativelanguage.googleapis.com/v1beta/files/ei2ajovyhqy3
+    Requesting comprehensive analysis (attempt 1)...
