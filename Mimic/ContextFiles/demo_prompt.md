@@ -1,9 +1,20 @@
 Prompt 1:
-A joyful childhood memory — playful, chaotic, and full of innocent happiness. It should feel like looking back at all the adorable, carefree moments of being a kid: laughter, silly chaos, and pure joy.
+A joyful childhood memory — playful, chaotic, and full of innocent happiness.
 
-Use as many different moments as possible so it feels like a flood of happy memories, moving through lots of clips while keeping each moment clear and readable.
+Favourite clips — must use: clip101 and clip102. These are my best moments; feature them clearly. Use the rest of the library for variety — draw from as many different clips as possible so the edit feels like a full sweep of memories, not the same few repeated.
 
-End on a warm, wholesome moment that lingers and leaves the viewer smiling.
+Jump straight into the memories and move through lots of different joyful moments — laughter, silly chaos, kids just enjoying life. It should feel like flipping quickly through a flood of happy childhood memories. Use fast cuts in the middle — around 1 to 1.5 seconds per shot in the peak so it actually feels like a rapid montage. Only the very end can slow down and linger.
+
+Keep the pacing lively and energetic from the beginning so many different moments appear, but each moment should still be clear and readable.
+
+End on a warm wholesome moment that lingers.
+
+Text overlay: “Oh, to be this young again.”
+
+
+Ideal prompt (variable pacing, fast cuts, full library):
+
+Make a childhood memory video that feels alive and musical. Pacing should be variable — quick cuts and short holds, never slow or draggy. Most shots should be 1 to 1.5 seconds so we cycle through the whole library and see lots of different moments; occasionally a shot can breathe up to 3 seconds if it really lands, but nothing longer. Cuts should hit the beat and feel intentional, not random. Use as many different clips as possible — the edit should feel like a full pass through the material, not the same few clips on repeat. Keep energy up from the start, peak with the music, then end on one short warm moment that lingers. Overall: snappy, beat-driven, high variety, no long holds.
 
 Text overlay: “Oh, to be this young again.”
 

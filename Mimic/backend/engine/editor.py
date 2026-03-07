@@ -1259,9 +1259,15 @@ def match_clips_to_blueprint(
         if abs(segment.start - orig_start) > 0.001:
             print(f"    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.")
 
-        if timeline_position > segment.start + 0.05:
-            print(f"[WARN] Timeline drift: {timeline_position:.3f} vs segment.start {segment.start:.3f}, snapping.")
+        if decisions:
+            timeline_position = decisions[-1].timeline_end
+        else:
             timeline_position = segment.start
+        if timeline_position < segment.start - 0.05:
+            print(f"[WARN] Timeline underfill: {timeline_position:.3f} vs segment.start {segment.start:.3f}, aligning.")
+            timeline_position = segment.start
+        elif timeline_position > segment.start + 0.05:
+            print(f"[WARN] Timeline drift: {timeline_position:.3f} vs segment.start {segment.start:.3f}, continuing from previous end.")
 
         segment_remaining = segment.duration
         segment_start_time = timeline_position
@@ -2090,9 +2096,9 @@ def match_clips_to_blueprint(
             else:
                 # PROMPT MODE: Allow gap filling (legacy behavior)
                 print(f"    🔗 Filling gap in segment {segment.id} ({gap:.4f}s remaining)")
-                timeline_position = segment.end
                 if decisions:
-                    decisions[-1].timeline_end = segment.end
+                    decisions[-1].timeline_end = snap(segment.end)
+                timeline_position = snap(segment.end) if decisions else segment.end
 
         # === SEGMENT LOGGING (Directive 8) ===
         seg_decisions = [d for d in decisions if d.segment_id == segment.id]
@@ -2117,7 +2123,18 @@ def match_clips_to_blueprint(
         last.hold_end_seconds = (last.hold_end_seconds or 0) + snap(shortfall)
         timeline_position = last.timeline_end
         print(f"    🔧 Demo reconciliation: last decision extended by {shortfall:.2f}s so total = {blueprint.total_duration:.2f}s")
-        
+
+    cursor = decisions[0].timeline_start
+    for d in decisions:
+        dur = d.timeline_end - d.timeline_start
+        d.timeline_start = cursor
+        d.timeline_end = cursor + dur
+        cursor = d.timeline_end
+    if decisions and abs(cursor - blueprint.total_duration) > 0.01:
+        decisions[-1].timeline_end = snap(blueprint.total_duration)
+        cursor = decisions[-1].timeline_end
+    timeline_position = cursor
+
     edl = EDL(decisions=decisions)
     unique_clips_used = len(set(d.clip_path for d in decisions))
     total_clips = len(clip_index.clips)
