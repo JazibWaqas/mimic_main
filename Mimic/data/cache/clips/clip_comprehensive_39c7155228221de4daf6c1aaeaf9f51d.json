@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Event highlights",
+    "Celebration montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Intimate close-up moments"
+  ],
+  "vibes": [],
+  "content_description": "Young people dancing and laughing on a stage during a performance or event.",
+  "best_moments": {
+    "High": {
+      "start": 1.0,
+      "end": 3.0,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak dance movement and expressive energy from the primary subject."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Interaction between performers with moderate movement and laughter."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 0.8,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup and minimal motion before the dance sequence begins."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "39c7155228221de4daf6c1aaeaf9f51d"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-03-07 21:33:33"
+}

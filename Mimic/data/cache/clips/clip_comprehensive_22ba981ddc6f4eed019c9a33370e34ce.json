@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Fun group montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends playing a game and laughing on a sandy surface.",
+  "best_moments": {
+    "High": {
+      "start": 8.0,
+      "end": 10.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak laughter and expressive physical interaction between friends."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Active engagement in the game with moderate movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup of the scene with minimal movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "22ba981ddc6f4eed019c9a33370e34ce"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-03-07 21:22:58"
+}

@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Friendship montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends laughing as one man picks up another in a piggyback style outdoors.",
+  "best_moments": {
+    "High": {
+      "start": 4.0,
+      "end": 6.5,
+      "moment_role": "Climax",
+      "stable_moment": true,
+      "reason": "Peak physical interaction and laughter."
+    },
+    "Medium": {
+      "start": 7.5,
+      "end": 9.606889,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Post-climax laughter and movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Initial setup and interaction before the lift."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "8a80ff48ff02c7ada487452534880bea"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-03-07 21:23:27"
+}

@@ -1,0 +1,762 @@
+{
+  "header": "The goal was to create a 21-second music video edit with 39 segments, prioritizing pacing and narrative coherence. Given the library constraints, the edit aimed to balance energy and vibe.",
+  "advisor": {
+    "hero": "The library's limitations significantly impacted the edit, forcing strategic compromises to maintain pacing and narrative coherence.",
+    "body": "The scarcity of high-energy clips and the absence of 'joy' motifs necessitated careful segment decisions, prioritizing pacing over ideal motif matches. This led to a reliance on available clips, which, while coherent, may lack the desired emotional depth due to overuse."
+  },
+  "decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to evoke chaotic joy in this segment.",
+      "decision": "I selected clip_042.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed for this intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed for an intimate feel.",
+      "decision": "I deployed clip_007.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought a playful vibe.",
+      "decision": "I used clip_015.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to convey happiness.",
+      "decision": "I deployed clip_022.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 5,
+      "what_i_tried": "I aimed for an atmospheric feel.",
+      "decision": "I selected clip_046.mp4 due to the lack of better alternatives in the library.",
+      "what_if": "No stronger alternative existed for this intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 6,
+      "what_i_tried": "I sought an energetic vibe.",
+      "decision": "I used clip_027.mp4 because of the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 7,
+      "what_i_tried": "I wanted to evoke sweetness.",
+      "decision": "I deployed clip_008.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 8,
+      "what_i_tried": "I aimed for a social feel.",
+      "decision": "I used clip_044.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 9,
+      "what_i_tried": "I wanted to convey joyful feelings.",
+      "decision": "I deployed clip_054.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 10,
+      "what_i_tried": "I sought a joyful vibe.",
+      "decision": "I deployed clip_006.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 11,
+      "what_i_tried": "I wanted to evoke friendliness.",
+      "decision": "I deployed clip_034.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 12,
+      "what_i_tried": "I aimed for a friendly feel.",
+      "decision": "I deployed clip_026.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 13,
+      "what_i_tried": "I sought an adventurous vibe.",
+      "decision": "I used clip_019.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 14,
+      "what_i_tried": "I wanted to convey adventurous feelings.",
+      "decision": "I used clip_020.mp4 because of the library gap.",
+      "what_if": "No stronger alternative existed for this intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 15,
+      "what_i_tried": "I aimed for happiness.",
+      "decision": "I deployed clip_001.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 16,
+      "what_i_tried": "I sought a happy vibe.",
+      "decision": "I deployed clip_045.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 17,
+      "what_i_tried": "I wanted to evoke social feelings.",
+      "decision": "I used clip_029.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 18,
+      "what_i_tried": "I aimed for a social feel.",
+      "decision": "I used clip_037.mp4 because of the library gap.",
+      "what_if": "No stronger alternative existed for this intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 19,
+      "what_i_tried": "I wanted to convey excitement.",
+      "decision": "I deployed clip_004.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 20,
+      "what_i_tried": "I sought an excited vibe.",
+      "decision": "I deployed clip_010.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 21,
+      "what_i_tried": "I aimed for excitement.",
+      "decision": "I deployed clip_012.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 22,
+      "what_i_tried": "I wanted to evoke a cool feel.",
+      "decision": "I used clip_013.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 23,
+      "what_i_tried": "I sought a cool vibe.",
+      "decision": "I used clip_014.mp4 because of the library gap.",
+      "what_if": "No stronger alternative existed for this intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 24,
+      "what_i_tried": "I wanted to convey vibrancy.",
+      "decision": "I used clip_038.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 25,
+      "what_i_tried": "I aimed for a social feel.",
+      "decision": "I deployed clip_040.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 26,
+      "what_i_tried": "I sought a social vibe.",
+      "decision": "I deployed clip_028.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 27,
+      "what_i_tried": "I wanted to evoke friendliness.",
+      "decision": "I deployed clip_039.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 28,
+      "what_i_tried": "I aimed for relaxation.",
+      "decision": "I used clip_018.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 29,
+      "what_i_tried": "I sought a relaxed vibe.",
+      "decision": "I used clip_043.mp4 because of the library gap.",
+      "what_if": "No stronger alternative existed for this intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 30,
+      "what_i_tried": "I wanted to evoke friendliness.",
+      "decision": "I deployed clip_023.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 31,
+      "what_i_tried": "I sought a friendly vibe.",
+      "decision": "I deployed clip_031.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 32,
+      "what_i_tried": "I wanted to convey playfulness.",
+      "decision": "I used clip_017.mp4 due to the library gap.",
+      "what_if": "No alternative was available to better match the intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 33,
+      "what_i_tried": "I sought a playful vibe.",
+      "decision": "I used clip_025.mp4 because of the library gap.",
+      "what_if": "No stronger alternative existed for this intent.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 34,
+      "what_i_tried": "I wanted to evoke happiness.",
+      "decision": "I deployed clip_003.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 35,
+      "what_i_tried": "I sought a happy vibe.",
+      "decision": "I deployed clip_002.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 36,
+      "what_i_tried": "I aimed for happiness.",
+      "decision": "I deployed clip_005.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 37,
+      "what_i_tried": "I wanted to evoke a vlogging feel.",
+      "decision": "I deployed clip_035.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 38,
+      "what_i_tried": "I sought a vlogging vibe.",
+      "decision": "I deployed clip_021.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 39,
+      "what_i_tried": "I aimed for a vlogging feel.",
+      "decision": "I deployed clip_055.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    }
+  ],
+  "executive_summary": [
+    "The library's scarcity of high-energy clips forced compromises in segment choices.",
+    "Pacing priority was the primary causality for most segment decisions, preserving the edit's momentum.",
+    "Despite missing ideal motifs, the edit maintained narrative coherence through strategic clip selections.",
+    "The lack of 'joy' motifs led to repeated use of available clips, risking overuse and diminishing the edit's overall impact.",
+    "Tone adjustments were limited due to the absence of applied styling, focusing on warm and cool tones to enhance the narrative."
+  ],
+  "key_decision_stream": [
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed for an intimate feel.",
+      "decision": "I deployed clip_007.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to convey happiness.",
+      "decision": "I deployed clip_022.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 7,
+      "what_i_tried": "I wanted to evoke sweetness.",
+      "decision": "I deployed clip_008.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 9,
+      "what_i_tried": "I wanted to convey joyful feelings.",
+      "decision": "I deployed clip_054.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 10,
+      "what_i_tried": "I sought a joyful vibe.",
+      "decision": "I deployed clip_006.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 11,
+      "what_i_tried": "I wanted to evoke friendliness.",
+      "decision": "I deployed clip_034.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 12,
+      "what_i_tried": "I aimed for a friendly feel.",
+      "decision": "I deployed clip_026.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 15,
+      "what_i_tried": "I aimed for happiness.",
+      "decision": "I deployed clip_001.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 16,
+      "what_i_tried": "I sought a happy vibe.",
+      "decision": "I deployed clip_045.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 19,
+      "what_i_tried": "I wanted to convey excitement.",
+      "decision": "I deployed clip_004.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 20,
+      "what_i_tried": "I sought an excited vibe.",
+      "decision": "I deployed clip_010.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 21,
+      "what_i_tried": "I aimed for excitement.",
+      "decision": "I deployed clip_012.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 25,
+      "what_i_tried": "I aimed for a social feel.",
+      "decision": "I deployed clip_040.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 26,
+      "what_i_tried": "I sought a social vibe.",
+      "decision": "I deployed clip_028.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 27,
+      "what_i_tried": "I wanted to evoke friendliness.",
+      "decision": "I deployed clip_039.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 30,
+      "what_i_tried": "I wanted to evoke friendliness.",
+      "decision": "I deployed clip_023.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 31,
+      "what_i_tried": "I sought a friendly vibe.",
+      "decision": "I deployed clip_031.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 34,
+      "what_i_tried": "I wanted to evoke happiness.",
+      "decision": "I deployed clip_003.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 35,
+      "what_i_tried": "I sought a happy vibe.",
+      "decision": "I deployed clip_002.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 36,
+      "what_i_tried": "I aimed for happiness.",
+      "decision": "I deployed clip_005.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 37,
+      "what_i_tried": "I wanted to evoke a vlogging feel.",
+      "decision": "I deployed clip_035.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 38,
+      "what_i_tried": "I sought a vlogging vibe.",
+      "decision": "I deployed clip_021.mp4 as a structural anchor to preserve the edit's pacing.",
+      "what_if": "Replacing with a joy motif would have enhanced the segment, but it was missing from the library.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 39,
+      "what_i_tried": "I aimed for a vlogging feel.",
+      "decision": "I deployed clip_055.mp4 to maintain the edit's momentum, despite the missing joy motif.",
+      "what_if": "A joy motif would have been ideal but was not available.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "pacing_priority",
+        "structural_necessity"
+      ]
+    }
+  ],
+  "friction_log": [
+    "At the start, the library's scarcity of high-energy clips posed a significant challenge.",
+    "In the middle, the repeated use of available clips due to the lack of 'joy' motifs became a concern, risking overuse and diminishing the edit's impact.",
+    "By the end, despite these challenges, the edit maintained its pacing and narrative coherence through strategic clip selections."
+  ],
+  "post_mortem": {
+    "worked": "The edit successfully preserved its momentum and narrative coherence despite library constraints.",
+    "didnt": "The lack of 'joy' motifs and high-energy clips forced compromises, leading to potential overuse of certain clips.",
+    "responsibility": {
+      "vibe": "library",
+      "emotion": "library"
+    }
+  },
+  "next_steps": [],
+  "clip_suggestions": [],
+  "technical": []
+}

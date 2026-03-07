@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Build",
+    "Peak"
+  ],
+  "emotional_tone": [
+    "Energetic",
+    "Joyful"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social gathering montages",
+    "Food preparation sequences",
+    "High-energy transitions"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Clean product shots"
+  ],
+  "vibes": [],
+  "content_description": "A group of men are grilling meat on skewers over hot coals, fanning the smoke at night.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Peak",
+      "stable_moment": true,
+      "reason": "Intense fanning action and thick smoke create a high-energy visual."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady camera movement showing the group interaction around the grill."
+    },
+    "Low": {
+      "start": 7.0,
+      "end": 9.095767,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Focus shifts to the skewers with less aggressive movement from the subjects."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "0adfa50969c82d000959279d5250a91d"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-03-07 21:24:25"
+}

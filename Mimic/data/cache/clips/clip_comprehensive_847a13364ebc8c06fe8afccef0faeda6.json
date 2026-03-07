@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Transition"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Social media montages",
+    "High-energy transitions",
+    "Youth-oriented content"
+  ],
+  "avoid_for": [
+    "Calm reflective moments",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Friends laugh and interact while lounging on a large safety net suspended from a building.",
+  "best_moments": {
+    "High": {
+      "start": 18.8,
+      "end": 20.8,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Rapid camera movement and expressive laughter create a high-energy peak."
+    },
+    "Medium": {
+      "start": 11.0,
+      "end": 14.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Group interaction and conversation on the net with moderate movement."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup showing the person on the net with relatively stable framing."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "847a13364ebc8c06fe8afccef0faeda6"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-03-07 21:21:57"
+}

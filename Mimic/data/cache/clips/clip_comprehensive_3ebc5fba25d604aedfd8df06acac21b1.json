@@ -1,0 +1,60 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Celebration"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build",
+    "Establishing"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Celebration montages",
+    "High-energy social media content",
+    "Youth-oriented lifestyle videos"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate presentations"
+  ],
+  "vibes": [],
+  "content_description": "A group of friends celebrates a birthday by spraying foam on a young man in an outdoor corridor.",
+  "best_moments": {
+    "High": {
+      "start": 25.8,
+      "end": 28.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak celebration with intense foam spraying and high-energy reactions."
+    },
+    "Medium": {
+      "start": 21.5,
+      "end": 24.5,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Steady approach towards the subject, building anticipation for the surprise."
+    },
+    "Low": {
+      "start": 9.0,
+      "end": 13.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Calm architectural shot of the building and plants providing location context."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "3ebc5fba25d604aedfd8df06acac21b1"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-03-07 21:22:04"
+}

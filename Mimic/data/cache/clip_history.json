@@ -164,5 +164,278 @@
       "end": 8.0,
       "run_id": "text_prompt_text_music_8_v3"
     }
+  ],
+  "clip173.mp4": [
+    {
+      "start": 25.8,
+      "end": 26.7,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip111.mp4": [
+    {
+      "start": 1.5,
+      "end": 1.8333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip129.mp4": [
+    {
+      "start": 1.5,
+      "end": 2.0667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip140.mp4": [
+    {
+      "start": 11.2,
+      "end": 11.6,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip_112.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.2667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip156.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.6,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip112.mp4": [
+    {
+      "start": 3.2,
+      "end": 3.7667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip_104.mp4": [
+    {
+      "start": 5.5,
+      "end": 6.0667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip_137.mp4": [
+    {
+      "start": 3.2,
+      "end": 3.5333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip109.mp4": [
+    {
+      "start": 3.2,
+      "end": 4.1,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip164.mp4": [
+    {
+      "start": 6.5,
+      "end": 6.9667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip155.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.4333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip133.mp4": [
+    {
+      "start": 5.2,
+      "end": 5.6667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip134.mp4": [
+    {
+      "start": 10.5,
+      "end": 11.2,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip103 copy.mp4": [
+    {
+      "start": 1.5,
+      "end": 2.1333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip_110.mp4": [
+    {
+      "start": 10.0,
+      "end": 10.4,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip158.mp4": [
+    {
+      "start": 2.0,
+      "end": 2.5333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip168.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.3333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip107.mp4": [
+    {
+      "start": 4.0,
+      "end": 4.5667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip124.mp4": [
+    {
+      "start": 15.5,
+      "end": 15.9667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip126.mp4": [
+    {
+      "start": 6.5,
+      "end": 6.9333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip127.mp4": [
+    {
+      "start": 7.2,
+      "end": 8.1,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip128.mp4": [
+    {
+      "start": 0.2,
+      "end": 0.4667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip169.mp4": [
+    {
+      "start": 18.8,
+      "end": 19.4333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip171.mp4": [
+    {
+      "start": 1.0,
+      "end": 1.6333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip157.mp4": [
+    {
+      "start": 1.5,
+      "end": 1.7667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip170.mp4": [
+    {
+      "start": 8.0,
+      "end": 8.9333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip132.mp4": [
+    {
+      "start": 0.5,
+      "end": 1.1333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip174.mp4": [
+    {
+      "start": 7.0,
+      "end": 7.2667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip141.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.9,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip161.mp4": [
+    {
+      "start": 2.5,
+      "end": 2.7667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip131.mp4": [
+    {
+      "start": 26.5,
+      "end": 27.1333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip154.mp4": [
+    {
+      "start": 12.2,
+      "end": 12.7333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip105.mp4": [
+    {
+      "start": 2.5,
+      "end": 3.3667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip104.mp4": [
+    {
+      "start": 8.5,
+      "end": 8.9333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip108.mp4": [
+    {
+      "start": 2.2,
+      "end": 2.6333,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip165.mp4": [
+    {
+      "start": 0.5,
+      "end": 0.9667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip139.mp4": [
+    {
+      "start": 3.5,
+      "end": 3.9,
+      "run_id": "ref28_sess_faab712_v2"
+    }
+  ],
+  "clip_145.mp4": [
+    {
+      "start": 4.2,
+      "end": 4.8667,
+      "run_id": "ref28_sess_faab712_v2"
+    }
   ]
 }

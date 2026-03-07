@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Comedy montages",
+    "High-energy peaks",
+    "Social media trends"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "A group of young men perform a physical balancing stunt in a hallway while laughing and reacting energetically.",
+  "best_moments": {
+    "High": {
+      "start": 7.0,
+      "end": 9.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and chaotic physical movement during the stunt attempt."
+    },
+    "Medium": {
+      "start": 3.0,
+      "end": 6.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained effort and movement as they establish the balancing pose."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Initial setup and positioning with the least amount of chaotic movement."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "403566531da8fab8d314af8ff204b6ad"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-03-07 21:22:05"
+}

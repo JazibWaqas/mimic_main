@@ -1,0 +1,1873 @@
+{
+  "text_overlay_intent": "The text overlays demand moments of collective euphoria and intoxicating joy—each phrase should be matched with visuals that feel like spontaneous bursts of shared celebration, where the energy is infectious and the connection between friends is palpable.",
+  "dominant_narrative": "This video is fundamentally about the intoxicating joy of friendship and living fully in the present moment.",
+  "arc_stage_guidance": {
+    "Intro": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Direct eye contact with camera, handheld vlog-style shots that establish the group's energy and camaraderie",
+      "intent_diluting_material": "Static establishing shots, slow pans, or any visual that delays the immediate immersion into the group's energy",
+      "reasoning": "The intro must immediately establish the JOY vibe—this isn't about setting a scene but about plunging the viewer directly into the infectious energy of friendship. The first 4 seconds should feel like being welcomed into the party.",
+      "recommended_clips": [
+        "clip111.mp4",
+        "clip129.mp4",
+        "clip_132.mp4",
+        "clip_134.mp4",
+        "clip_135.mp4",
+        "clip_136.mp4",
+        "clip_137.mp4",
+        "clip_154.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Build-up": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Close-ups of expressive faces during laughter, dynamic movement sequences (dancing, riding), and text overlay placements that reinforce the growing euphoria",
+      "intent_diluting_material": "Extended single shots without energy variation, overly composed frames that feel staged rather than spontaneous",
+      "reasoning": "This stage should escalate the JOY through accumulation—each clip should feel like another layer of shared memory being added to the collective experience. The energy should build through repetition with variation, not through traditional narrative progression.",
+      "recommended_clips": [
+        "clip104.mp4",
+        "clip108.mp4",
+        "clip122.mp4",
+        "clip125.mp4",
+        "clip148.mp4",
+        "clip155.mp4",
+        "clip156.mp4",
+        "clip158.mp4",
+        "clip159.mp4",
+        "clip167.mp4",
+        "clip168.mp4",
+        "clip172.mp4",
+        "clip_104.mp4",
+        "clip_124.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Peak": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Group celebrations with maximum physical expression (dancing, hugging, shouting), night-time party settings with vibrant lighting, and text overlays that land on the most explosive moments",
+      "intent_diluting_material": "Any shot where individuals appear isolated or disconnected from the group energy, moments that feel performative rather than authentic",
+      "reasoning": "The peak must deliver on the promise of collective euphoria—this is where the JOY becomes almost tangible. Every frame should feel like the climax of a shared experience, where individual identities dissolve into group celebration.",
+      "recommended_clips": [
+        "clip103 copy.mp4",
+        "clip107.mp4",
+        "clip109.mp4",
+        "clip112.mp4",
+        "clip124.mp4",
+        "clip126.mp4",
+        "clip127.mp4",
+        "clip128.mp4",
+        "clip130.mp4",
+        "clip131.mp4",
+        "clip132.mp4",
+        "clip133.mp4",
+        "clip134.mp4",
+        "clip140.mp4",
+        "clip141.mp4",
+        "clip154.mp4",
+        "clip157.mp4",
+        "clip161.mp4",
+        "clip162.mp4",
+        "clip163.mp4",
+        "clip169.mp4",
+        "clip170.mp4",
+        "clip171.mp4",
+        "clip173.mp4",
+        "clip174.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Outro": {
+      "primary_emotional_carrier": "JOY",
+      "supporting_material": "Moments of shared exhaustion that still contain smiles, group shots where the energy has settled but the connection remains, and text that reinforces the lasting memory rather than the immediate high",
+      "intent_diluting_material": "Abrupt endings, shots that feel like they belong in the peak, or any visual that suggests the joy was temporary rather than transformative",
+      "reasoning": "The outro should preserve the JOY vibe while transitioning from explosive celebration to satisfied memory—this isn't a comedown but a crystallization of the experience. The energy should feel sustained rather than diminished.",
+      "recommended_clips": [
+        "clip139.mp4",
+        "clip164.mp4",
+        "clip165.mp4",
+        "clip_110.mp4",
+        "clip_112.mp4",
+        "clip_129.mp4",
+        "clip_133.mp4",
+        "clip_145.mp4"
+      ],
+      "required_energy": ""
+    }
+  },
+  "library_alignment": {
+    "strengths": [
+      "Abundant High-energy JOY clips perfectly match the relentless pacing requirement",
+      "Strong alignment with people-centric visual balance through abundant People-Group content",
+      "Excellent coverage of night-time and party settings that support the vibrant celebration narrative"
+    ],
+    "editorial_tradeoffs": [
+      "Must use Medium-energy clips for Outro despite scarcity, relying on vibe matching over strict energy alignment",
+      "Limited scenic or landmark shots require focusing exclusively on people interactions for context establishment",
+      "Solo person shots are scarce but can be used strategically for contrast within group sequences"
+    ],
+    "constraint_gaps": [
+      "Very scarce Low-energy clips mean the Outro must maintain medium-high energy while shifting emotional quality",
+      "Limited object and place diversity requires the edit to derive all visual interest from human interaction and movement",
+      "No truly calm reflective moments available, requiring the edit to create satisfaction through energy modulation rather than contrast"
+    ]
+  },
+  "editorial_strategy": "Prioritize emotional authenticity over technical perfection—select clips where the JOY feels genuine and infectious, using text overlays as emotional accents rather than informational labels, and maintain relentless pacing through rapid-fire editing that mimics the breathless quality of shared euphoria.",
+  "remake_strategy": "Add more intimate close-ups that capture the quiet moments between explosions of energy, include establishing shots of locations that become characters in the friendship story, and incorporate more varied lighting conditions to create visual texture within the night-time palette.",
+  "primary_narrative_subject": "People-Group",
+  "allowed_supporting_subjects": [
+    "People-Solo",
+    "Place-Urban"
+  ],
+  "subject_lock_strength": 0.9,
+  "editorial_motifs": [
+    {
+      "trigger": "Text phrases about intoxication and magic ('Nasheela', 'Jaadu')",
+      "desired_continuity": "Semantic-Resonance",
+      "priority": "High"
+    },
+    {
+      "trigger": "Laughter as emotional release",
+      "desired_continuity": "Emotional-Release",
+      "priority": "High"
+    },
+    {
+      "trigger": "Movement through vehicles (cars with sunroofs)",
+      "desired_continuity": "Motion-Carry",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Night-time lighting transitions",
+      "desired_continuity": "Graphic-Match",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Direct eye contact with camera",
+      "desired_continuity": "Narrative-Contrast",
+      "priority": "Low"
+    }
+  ],
+  "segment_moment_plans": {
+    "1": {
+      "segment_id": 1,
+      "moments": [],
+      "total_duration": 0.91,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the joyful group dynamic with location context, then escalate energy with new activities while maintaining chaotic joy vibe.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip173.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Architectural establishing shot provides location context while maintaining joyful vibe for intro.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Bubble soccer scene introduces new activity with higher energy while keeping joyful group dynamic.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip129.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Car sunroof scene maintains adventurous night energy with different setting from other clips.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip133.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Dramatic play-acting on bridge offers different emotional tone while keeping group energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Grilling scene provides different activity focus (food preparation) while maintaining group joy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "2": {
+      "segment_id": 2,
+      "moments": [],
+      "total_duration": 0.32,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse group celebration scenes while maintaining high energy and intimate vibe for the intro.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip111.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Walking/running scene maintains intimate, energetic vibe while introducing movement for the intro stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip129.mp4",
+          "energy_level": "Low",
+          "transition_type": "escalate",
+          "reason": "Person through sunroof adds adventurous action while keeping intimate group energy for the intro.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip133.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Dramatic scene around car provides visual contrast while maintaining group celebration energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Grilling scene offers different activity (leisure vs celebration) while keeping joyful energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip165.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Intimate laughter moment maintains joyful energy with different subject composition (man and woman).",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "3": {
+      "segment_id": 3,
+      "moments": [],
+      "total_duration": 0.58,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse group activities with playful energy while building toward more intense action sequences.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip111.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Walking/running scene maintains playful energy while introducing movement for the intro stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip129.mp4",
+          "energy_level": "Low",
+          "transition_type": "escalate",
+          "reason": "Person in car sunroof adds adventurous energy while keeping playful vibe for action function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip133.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Dramatic scene around car provides visual variety while maintaining group energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip159.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Lawn scene offers fresh outdoor setting while continuing joyful group interaction.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Grilling scene introduces different activity while maintaining energetic group dynamic.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "4": {
+      "segment_id": 4,
+      "moments": [],
+      "total_duration": 0.39,
+      "is_single_moment": true,
+      "chaining_reason": "Establish group dynamics with fresh activities while maintaining happy medium energy for Intro stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip140.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Establishing shot introduces group dynamic naturally after no previous picks, fitting Intro stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Friends laughing during card game maintains happy vibe while offering fresh leisure activity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor arena preparation provides visual contrast while keeping joyful group energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Night driving scene continues travel theme with natural reaction shot flow.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip157.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor screen watching offers different setting while maintaining group reaction function.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "5": {
+      "segment_id": 5,
+      "moments": [],
+      "total_duration": 0.27,
+      "is_single_moment": true,
+      "chaining_reason": "Establish atmospheric foundation with visual diversity while maintaining joyful energy for the build-up stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Solo traveler in atmospheric tunnel provides visual contrast to group scenes while matching the segment's atmospheric vibe.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Solo musician on bridge maintains atmospheric vibe while introducing fresh subject type for diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Bubble soccer preparation escalates energy while keeping group leisure activity for narrative continuity.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Forest path walk with synchronized kick maintains joyful energy while offering outdoor setting diversity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip173.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Birthday celebration with foam spraying continues joyful group energy with fresh celebration context.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "6": {
+      "segment_id": 6,
+      "moments": [],
+      "total_duration": 0.6,
+      "is_single_moment": true,
+      "chaining_reason": "Establish energetic foundation with varied group activities while maintaining high energy for build-up stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Bubble soccer action matches segment's high energy and build-up stage with fresh group activity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_137.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night market discussion maintains energetic vibe while introducing new leisure setting.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip134.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Car sunroof celebration provides kinetic action fitting dense cut expectation.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip122.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Vehicle ride shouting maintains joyful energy with different travel context.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip130.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Crowd celebration peaks energy while introducing larger group scale.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "7": {
+      "segment_id": 7,
+      "moments": [],
+      "total_duration": 0.55,
+      "is_single_moment": true,
+      "chaining_reason": "Establish sweet, joyful group interactions with reaction shots to build energy gradually.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Friends laughing during card game maintains sweet vibe and reaction function naturally.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip165.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Man and woman sharing laughter at piano provides intimate sweet reaction moment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_154.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Two men laughing on bed offers indoor reaction with joyful energy for build-up.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Solo musician on bridge provides visual contrast while maintaining sweet joyful tone.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Group preparing for bubble soccer offers fresh leisure activity with joyful energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "8": {
+      "segment_id": 8,
+      "moments": [],
+      "total_duration": 0.58,
+      "is_single_moment": true,
+      "chaining_reason": "Establish social group energy with varied leisure activities to build foundation for escalation.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Card game setup with laughter matches social vibe and builds naturally from no previous picks.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Synchronized kick action fits shot function while maintaining joyful group energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Gear-up preparation provides fresh leisure activity while matching build-up stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Solo musician offers subject diversity while maintaining joyful energy for breath.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car travel scene maintains social energy with different setting from other clips.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "9": {
+      "segment_id": 9,
+      "moments": [],
+      "total_duration": 0.33,
+      "is_single_moment": true,
+      "chaining_reason": "Establish joyful group dynamics with escalating energy while introducing diverse activities and settings for long-term editorial variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Bubble soccer's dynamic movement and group energy perfectly match the build-up stage and joyful reaction shot function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_137.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night market group interaction maintains joyful energy while introducing a fresh leisure activity setting.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip172.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Piggyback scene offers physical comedy contrast while keeping joyful group energy for editorial breath.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Gym failure provides indoor setting contrast and comedic reaction while maintaining joyful energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Car night scene maintains joyful group energy with travel activity variation for narrative diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "10": {
+      "segment_id": 10,
+      "moments": [],
+      "total_duration": 0.9,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy joyful action sequences with diverse activities while maintaining build-up momentum.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Bubble soccer action matches segment's high energy and joyful vibe for build-up.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_137.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night market discussion maintains joyful energy with fresh outdoor setting.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak celebration dancing provides strong escalation for build-up stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip134.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Car sunroof shouting maintains high energy with travel activity diversity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip130.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Crowd celebration provides bigger scale escalation from individual groups.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "11": {
+      "segment_id": 11,
+      "moments": [],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the friendly, joyful tone with varied group activities while building energy for later segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Card game setup with friendly laughter matches the segment's friendly vibe and build-up stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Synchronized kick in forest provides visual action while maintaining friendly energy for build-up.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Solo musician on bridge offers visual contrast from group shots while keeping joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Group preparing for bubble soccer maintains friendly build-up with fresh leisure activity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_154.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Indoor laughter moment continues friendly vibe while introducing new indoor setting.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "12": {
+      "segment_id": 12,
+      "moments": [],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the friendly, joyful group dynamic with varied activities to build energy gradually.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Friendly card game laughter establishes the joyful group dynamic perfectly for this first segment.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Synchronized kick in nature provides friendly action with visual movement that matches the beat density.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Solo musician on bridge offers subject diversity while maintaining friendly, joyful energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Group preparing for bubble soccer provides fresh leisure activity with friendly interaction.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_154.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Indoor laughter moment offers location diversity while maintaining the friendly build-up energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "13": {
+      "segment_id": 13,
+      "moments": [],
+      "total_duration": 0.46,
+      "is_single_moment": true,
+      "chaining_reason": "Establish adventurous, high-energy tone with fresh group activities to start the edit strong.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Bubble soccer action matches adventurous vibe and builds energy for this first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip129.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Car sunroof scene establishes adventurous night energy while keeping momentum.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip133.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Dramatic car scene on bridge maintains adventurous tone with fresh location.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip111.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Nighttime walking/running maintains energy while introducing new activity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip126.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Friends under landmark provides visual interest while keeping joyful energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "14": {
+      "segment_id": 14,
+      "moments": [],
+      "total_duration": 0.7,
+      "is_single_moment": true,
+      "chaining_reason": "Establish adventurous group energy with fresh content to build momentum for the edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Bubble soccer action matches segment's adventurous vibe and builds energy for first shot.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip129.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Car sunroof scene establishes adventurous travel theme with fresh content.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip134.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Car sunroof shouting provides high-energy action while maintaining travel theme.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip133.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Dramatic car scene offers different emotional tone while keeping group energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip111.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Night walking scene maintains adventurous vibe with fresh outdoor setting.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "15": {
+      "segment_id": 15,
+      "moments": [],
+      "total_duration": 0.65,
+      "is_single_moment": true,
+      "chaining_reason": "Establish joyful group dynamics with medium energy, then build toward diverse peak moments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy matches segment, reaction shot function fits, fresh start with card game laughter.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip103 copy.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Car celebration escalates energy while maintaining happy vibe, fresh and fits peak arc stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician provides subject contrast while maintaining joyful energy, fresh diversity.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Gym fail reaction shot fits function, high energy escalates while staying fresh.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding offers adventurous contrast to urban scenes, fresh activity diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "16": {
+      "segment_id": 16,
+      "moments": [],
+      "total_duration": 0.38,
+      "is_single_moment": true,
+      "chaining_reason": "Establish joyful group dynamics with medium energy, then escalate to diverse peak moments while maintaining happy vibe.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy matches segment's happy vibe and reaction function while starting narrative fresh.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-energy celebration escalates to peak arc stage with fresh visual diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician provides subject contrast while maintaining joyful energy for peak.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Adventurous horseback riding offers location and activity contrast to group celebrations.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Gym failure with laughter continues joyful energy with indoor setting diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "17": {
+      "segment_id": 17,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy social action while introducing diverse settings and subjects for editorial variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak dancing celebration establishes high-energy social action for the first segment.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Physical action with laughter maintains high energy while introducing indoor setting diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician provides subject contrast while maintaining high energy and social vibe.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "First-person horseback riding offers adventurous contrast to urban celebration scenes.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling scene maintains high energy while introducing leisure activity diversity.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "18": {
+      "segment_id": 18,
+      "moments": [],
+      "total_duration": 0.34,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy social celebration with visual diversity across settings and activities for strong opening sequence.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak dancing celebration provides strong visual escalation for first segment with high energy and social vibe.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action with gymnastic fall creates dynamic movement and maintains high energy while introducing indoor setting.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician on bridge offers visual contrast from group scenes while maintaining high energy and joyful tone.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "First-person horseback ride provides adventurous contrast with different activity and setting while keeping energy high.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling scene continues social group energy with unique visual of smoke and fire for nighttime atmosphere.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "19": {
+      "segment_id": 19,
+      "moments": [],
+      "total_duration": 0.56,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy opening with diverse peak moments to build excitement.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak dancing celebration introduces high visual energy for first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action with gymnastic fall adds kinetic variety while maintaining high energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Solo musical performance provides different subject while keeping joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "First-person horseback ride offers adventurous contrast to group celebrations.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling scene maintains high energy with different leisure activity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "20": {
+      "segment_id": 20,
+      "moments": [],
+      "total_duration": 0.47,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy celebration vibe while introducing diverse subjects and settings for editorial variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak dancing and celebration with floral garland creates strong visual escalation for first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Gymnastic fail with laughter maintains high energy while introducing indoor physical action.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding through forest provides adventurous contrast to urban celebration scenes.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Solo guitar performance on bridge offers musical energy with different subject focus.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling with smoke creates high-energy leisure activity with strong visual texture.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "21": {
+      "segment_id": 21,
+      "moments": [],
+      "total_duration": 0.44,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy peak with diverse action types while prioritizing fresh clips for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Dancing celebration provides visual escalation from no previous shot while establishing high-energy peak.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action with gymnastic fall adds kinetic energy and humor for peak segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician on bridge creates visual contrast from group scenes while maintaining high energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding offers adventurous outdoor contrast to urban celebration scenes.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling scene maintains high energy with different activity type for diversity.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "22": {
+      "segment_id": 22,
+      "moments": [],
+      "total_duration": 0.9,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy peak with diverse visual subjects and settings to build momentum for the edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action with gymnastic move provides fresh visual escalation for peak segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "First-person horseback ride offers different subject and setting while maintaining high energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Solo musical performance provides emotional continuity with joyful energy but different subject.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Grilling scene with smoke offers different activity and visual texture for diversity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Synchronized kick in forest provides group energy with different location from typical indoor/vehicle scenes.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "23": {
+      "segment_id": 23,
+      "moments": [],
+      "total_duration": 0.26,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse high-energy action foundation while prioritizing fresh subjects and settings for the edit's opening peak.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action (gymnastic fall) provides fresh visual variety while maintaining high energy for peak segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician creates subject contrast from group shots while maintaining energetic vibe.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "First-person horseback ride offers adventurous action and fresh setting for peak energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Synchronized kick in forest provides choreographed action that continues high-energy momentum.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Grilling scene offers different activity (cooking) while maintaining joyful energy for diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "24": {
+      "segment_id": 24,
+      "moments": [],
+      "total_duration": 0.65,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the peak energy with diverse high-energy activities to build visual variety from the start.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip173.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Intense foam spraying creates a strong visual peak for this establishing segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dancing with floral garland maintains vibrant energy while introducing new visual elements.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician on bridge provides visual contrast while maintaining high energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding offers completely different activity while matching adventurous energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip156.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Bubble soccer preparation maintains group energy with fresh leisure activity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "25": {
+      "segment_id": 25,
+      "moments": [],
+      "total_duration": 0.62,
+      "is_single_moment": true,
+      "chaining_reason": "Establish social group energy with medium clip, then escalate to high-energy celebration moments while introducing visual variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy matches segment's energy level while establishing social vibe naturally as first clip.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High energy celebration escalates from initial interaction while maintaining social group focus.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo performer provides visual contrast to group shots while maintaining joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action fits peak arc stage with humorous failure adding narrative interest.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Adventurous outdoor activity provides fresh subject matter while maintaining energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "26": {
+      "segment_id": 26,
+      "moments": [],
+      "total_duration": 0.28,
+      "is_single_moment": true,
+      "chaining_reason": "Establish social interaction foundation with medium energy, then escalate to peak celebration moments while introducing visual diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy matches segment's energy level while establishing social interaction naturally as first clip.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-energy celebration escalates from initial interaction while maintaining social vibe.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo performer provides visual contrast to group shots while maintaining joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action in gym setting offers different environment while maintaining peak energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Adventurous horseback riding provides strong visual contrast to urban/social settings.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "27": {
+      "segment_id": 27,
+      "moments": [],
+      "total_duration": 0.91,
+      "is_single_moment": true,
+      "chaining_reason": "Establish friendly group energy with medium action, then escalate to high-energy celebration while introducing subject and location diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy matches segment's friendly vibe while card game setup provides natural action flow for first pick.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Dancing celebration escalates energy for peak arc stage while maintaining joyful group dynamic.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician provides subject contrast while maintaining high energy for dense musical alignment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Gym fall action maintains energetic group dynamic with physical comedy fitting friendly vibe.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding provides location and activity contrast while maintaining adventurous energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "28": {
+      "segment_id": 28,
+      "moments": [],
+      "total_duration": 0.64,
+      "is_single_moment": true,
+      "chaining_reason": "Establish energetic foundation with action-oriented clips while introducing subject and setting diversity for the edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action (gymnastic fall) fits the 'Action' shot function and escalates from no previous picks.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician provides subject diversity while maintaining joyful energy for the Peak arc stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding offers different activity and setting while keeping adventurous energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling scene maintains group energy with different visual activity for diversity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Synchronized kick provides action in natural setting, offering location variety.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "29": {
+      "segment_id": 29,
+      "moments": [],
+      "total_duration": 0.26,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse high-energy action clips to build momentum for the edit's first segment at the peak arc stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Solo musician provides fresh subject diversity while maintaining joyful energy for the peak arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding offers adventurous contrast to indoor/urban clips while fitting action function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Gym setting provides indoor action with physical comedy that continues joyful group energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Nighttime grilling scene offers different activity and visual texture while maintaining energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_104.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Forest setting and synchronized movement provide fresh outdoor action for the peak segment.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "30": {
+      "segment_id": 30,
+      "moments": [],
+      "total_duration": 0.91,
+      "is_single_moment": true,
+      "chaining_reason": "Start with medium energy to establish friendly vibe, then escalate to peak celebration while maintaining visual diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy matches segment's friendly vibe and action function while starting fresh.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-energy celebration escalates to peak arc stage with fresh group activity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo subject with musical performance provides visual contrast while maintaining joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action in gym setting offers fresh indoor contrast to outdoor scenes.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Adventurous horseback riding provides completely different activity and setting diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "31": {
+      "segment_id": 31,
+      "moments": [],
+      "total_duration": 0.27,
+      "is_single_moment": true,
+      "chaining_reason": "Establish friendly group dynamics with medium energy, then escalate to peak celebration moments with diverse settings.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy matches segment's friendly vibe while card game setup provides fresh content for the edit.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak dancing celebration escalates energy for arc stage peak while maintaining joyful tone.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo subject singing provides visual contrast from group shots while maintaining high energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Physical action with gymnastic fall serves action shot function with fresh indoor setting.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Horseback riding provides adventurous contrast to urban celebration scenes while maintaining energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "32": {
+      "segment_id": 32,
+      "moments": [],
+      "total_duration": 0.64,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse high-energy visuals early to build a rich, varied edit foundation.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Dancing celebration introduces fresh visual variety while matching the playful peak energy.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Physical action with laughter maintains high energy while offering indoor setting diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musical performance provides subject contrast while keeping joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "First-person horseback adventure offers completely different activity and setting.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling scene maintains group energy with unique visual smoke element.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "33": {
+      "segment_id": 33,
+      "moments": [],
+      "total_duration": 0.52,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse high-energy playful moments while introducing varied settings and activities for the edit's foundation.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip109.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Dancing celebration introduces fresh visual variety while maintaining high playful energy for the peak segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip158.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Physical action with laughter maintains playful vibe while introducing indoor gym setting for diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip164.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Solo musician on bridge provides visual contrast to group shots while keeping high energy for peak stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_110.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "First-person horseback ride offers adventurous contrast to celebration scenes while matching action function.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip168.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Grilling scene maintains group energy with different leisure activity for visual diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "34": {
+      "segment_id": 34,
+      "moments": [],
+      "total_duration": 0.87,
+      "is_single_moment": true,
+      "chaining_reason": "Establish joyful group dynamics with fresh activities while maintaining medium energy appropriate for the outro stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Friends laughing during card game establishes joyful group dynamic naturally for the first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip140.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car singing scene maintains happy vibe while introducing different leisure activity for diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Group gearing up for bubble soccer provides fresh activity while keeping medium energy for outro stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip157.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor screen reaction offers different emotional tone (dramatic) while maintaining energy for editorial variety.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Night driving scene maintains group celebration energy with travel activity for fresh content.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "35": {
+      "segment_id": 35,
+      "moments": [],
+      "total_duration": 0.42,
+      "is_single_moment": true,
+      "chaining_reason": "Establish joyful group dynamics with visual diversity to build foundation for the edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Friends laughing while playing cards establishes joyful group dynamic for the opening segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip140.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Group singing in car continues happy vibe with fresh location and activity variation.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor arena preparation offers visual contrast while maintaining energetic group interaction.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Night driving scene maintains energy while introducing travel movement for visual diversity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip132.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Blue-lit structure dancing provides fresh visual environment while keeping celebration energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "36": {
+      "segment_id": 36,
+      "moments": [],
+      "total_duration": 0.45,
+      "is_single_moment": true,
+      "chaining_reason": "Establish happy group dynamics with medium energy while introducing diverse activities for editorial variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Card game laughter establishes happy group dynamic naturally for the first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Gearing up for bubble soccer maintains medium energy while introducing fresh activity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip140.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car singing establishes group dynamic with good musical alignment for dense cutting.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip157.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor screen reaction provides subtle contrast while maintaining energy for outro build.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Night driving maintains happy vibe while introducing travel activity diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "37": {
+      "segment_id": 37,
+      "moments": [],
+      "total_duration": 0.45,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the vlogging outro with joyful group activities while preserving diverse content options for later segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Friends laughing during card game maintains joyful vlogging vibe for the first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Group preparing for bubble soccer continues the energetic group activity theme with fresh content.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip157.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor screen watching provides different activity while maintaining group energy for diversity.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip140.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car singing establishes group dynamic with similar energy but different setting.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip103 copy.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car dancing maintains celebration energy but should be lower priority to avoid car repetition.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "38": {
+      "segment_id": 38,
+      "moments": [],
+      "total_duration": 0.41,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the vlogging tone with joyful group activities while preserving diversity for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Friends laughing while playing cards establishes a natural vlogging vibe for the first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip140.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car singing scene maintains joyful energy while introducing a fresh location and activity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor arena preparation offers visual contrast while keeping the group dynamic and joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Night driving scene continues the travel theme with natural vlogging energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip157.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor screen watching provides a different emotional tone while maintaining group energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "39": {
+      "segment_id": 39,
+      "moments": [],
+      "total_duration": 0.657982,
+      "is_single_moment": true,
+      "chaining_reason": "Establish vlogging energy with fresh group activities to start the edit strong.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip112.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Card game laughter establishes vlogging energy naturally for the first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip140.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car singing introduces group dynamic with fresh setting for vlogging outro.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip155.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor arena gearing up provides visual contrast while maintaining joyful energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip103 copy.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Car celebration maintains vlogging energy with different activity from other clips.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip105.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Night driving offers travel theme variation while fitting vlogging outro energy.",
+          "confidence": 0.65
+        }
+      ]
+    }
+  },
+  "library_assessment": null,
+  "creative_audit": null,
+  "overall_strategy": "",
+  "required_improvements": [],
+  "cache_version": "4.2",
+  "cached_at": "2026-03-07T16:35:13.798046"
+}
