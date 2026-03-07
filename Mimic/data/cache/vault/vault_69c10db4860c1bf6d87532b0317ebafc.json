@@ -1,0 +1,273 @@
+{
+  "header": "This report summarizes the edit of a 14.1-second memory reel, consisting of 18 segments, with the goal of maintaining narrative coherence and pacing.",
+  "advisor": {
+    "hero": "The library's limitations significantly impacted the edit, forcing compromises on ideal motifs to maintain pacing and narrative coherence.",
+    "body": "The edit's technical discipline and decision-making process were constrained by the library's gaps and missing motifs, particularly in payoff shots. This led to a reliance on confident filler segments to support primary choices."
+  },
+  "decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey a celebration vibe in this segment.",
+      "decision": "I deployed clip_017.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing it with a peace motif could have altered the narrative flow.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed for a freedom vibe in this segment.",
+      "decision": "I used clip_003.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed for this slot.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to convey joy in this segment.",
+      "decision": "I selected clip_029.mp4 as it fit the library gap, maintaining narrative coherence.",
+      "what_if": "No viable upgrade was available for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to show friendship in this segment.",
+      "decision": "I chose clip_025.mp4 due to the lack of better options in the library.",
+      "what_if": "This choice was necessary due to library limitations.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 5,
+      "what_i_tried": "I aimed for a thrill vibe in this segment.",
+      "decision": "I used clip_006.mp4 as it was the best available option in the library.",
+      "what_if": "No stronger alternative was available for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 6,
+      "what_i_tried": "I sought to convey laughter in this segment.",
+      "decision": "I selected clip_015.mp4 to fill the library gap and maintain pacing.",
+      "what_if": "This choice was made due to the absence of better alternatives.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 7,
+      "what_i_tried": "I wanted to show a playful vibe in this segment.",
+      "decision": "I used clip_024.mp4 as it was the most suitable option available.",
+      "what_if": "No stronger alternative existed for this slot.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 8,
+      "what_i_tried": "I aimed for a casual vibe in this segment.",
+      "decision": "I chose clip_028.mp4 due to its availability and fit within the library gap.",
+      "what_if": "This choice was necessary given the library's limitations.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 9,
+      "what_i_tried": "I sought to convey a party vibe in this segment.",
+      "decision": "I selected clip_012.mp4 as it was the best option to maintain narrative coherence.",
+      "what_if": "No viable upgrade was available for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 10,
+      "what_i_tried": "I wanted to show a cool vibe in this segment.",
+      "decision": "I used clip_032.mp4 as it fit the available options in the library.",
+      "what_if": "This choice was made due to the absence of stronger alternatives.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 11,
+      "what_i_tried": "I aimed for a splash vibe in this segment.",
+      "decision": "I chose clip_023.mp4 to fill the library gap and support the narrative.",
+      "what_if": "No stronger alternative was available for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 12,
+      "what_i_tried": "I sought to convey an aesthetic vibe in this segment.",
+      "decision": "I selected clip_005.mp4 as it was the most suitable option in the library.",
+      "what_if": "This choice was necessary given the library's limitations.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 13,
+      "what_i_tried": "I wanted to convey hype in this segment.",
+      "decision": "I deployed clip_001.mp4 as a structural anchor to preserve the edit's rhythmic soul.",
+      "what_if": "Replacing it with a joy motif could have altered the narrative flow.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    },
+    {
+      "segment_id": 14,
+      "what_i_tried": "I aimed for a hype vibe in this segment.",
+      "decision": "I used clip_016.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed for this slot.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 15,
+      "what_i_tried": "I sought to convey hype in this segment.",
+      "decision": "I selected clip_031.mp4 as it fit the library gap, maintaining narrative coherence.",
+      "what_if": "No viable upgrade was available for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 16,
+      "what_i_tried": "I wanted to show hype in this segment.",
+      "decision": "I chose clip_020.mp4 due to the lack of better options in the library.",
+      "what_if": "This choice was necessary due to library limitations.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 17,
+      "what_i_tried": "I aimed for a hype vibe in this segment.",
+      "decision": "I used clip_009.mp4 as it was the best available option in the library.",
+      "what_if": "No stronger alternative was available for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 18,
+      "what_i_tried": "I sought to convey finality in this segment.",
+      "decision": "I selected clip_010.mp4 to fill the library gap and support the narrative conclusion.",
+      "what_if": "This choice was made due to the absence of better alternatives.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    }
+  ],
+  "executive_summary": [
+    "The edit prioritized pacing and narrative coherence over ideal motif matches due to library gaps.",
+    "Key segments were chosen based on structural necessity and confidence in the decision.",
+    "The library's health was aligned, but missing motifs and bottlenecks in payoff shots affected the edit.",
+    "Tone adjustments were considered to enhance the overall vibe without applying specific styling.",
+    "The technical discipline focused on a warm tone, syncopated pacing, and tightly synced elements."
+  ],
+  "key_decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to convey a celebration vibe in this segment.",
+      "decision": "I deployed clip_017.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing it with a peace motif could have altered the narrative flow.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    },
+    {
+      "segment_id": 13,
+      "what_i_tried": "I wanted to convey hype in this segment.",
+      "decision": "I deployed clip_001.mp4 as a structural anchor to preserve the edit's rhythmic soul.",
+      "what_if": "Replacing it with a joy motif could have altered the narrative flow.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity",
+        "pacing_priority"
+      ]
+    }
+  ],
+  "friction_log": [
+    "The edit started with high confidence in the library's ability to provide ideal motifs.",
+    "As the edit progressed, the lack of payoff shots and specific motifs became a significant constraint.",
+    "By the end, the edit relied heavily on filler segments to maintain pacing and narrative coherence."
+  ],
+  "post_mortem": {
+    "worked": "The edit maintained its pacing and narrative coherence despite library gaps.",
+    "didnt": "The lack of ideal motifs and payoff shots limited the edit's potential.",
+    "responsibility": {
+      "vibe": "library",
+      "emotion": "library"
+    }
+  },
+  "next_steps": [
+    "Acquire more diverse and specific motifs to fill library gaps.",
+    "Develop strategies to prioritize pacing and narrative coherence when ideal motifs are missing.",
+    "Consider adding more payoff shots to enhance the edit's emotional impact."
+  ],
+  "clip_suggestions": [
+    "Adding clips with a 'peace' motif could enhance the celebration segments.",
+    "Incorporating more 'joy' motifs could improve the hype segments.",
+    "Acquiring clips with a 'thrill' vibe could add variety to the edit.",
+    "Including more 'aesthetic' motifs could enhance the visual appeal of certain segments.",
+    "Developing a library of 'payoff shots' could significantly improve the edit's emotional impact.",
+    "Creating alternatives to overused clips could reduce repetition and improve the edit's overall freshness."
+  ],
+  "technical": [
+    "The edit relied on a warm tone to create a welcoming atmosphere.",
+    "Syncopated pacing was used to maintain the edit's rhythmic soul and engagement.",
+    "Tightly synced elements ensured that the narrative remained coherent and immersive."
+  ]
+}

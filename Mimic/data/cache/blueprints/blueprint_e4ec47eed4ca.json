@@ -1,0 +1,160 @@
+{
+  "total_duration": 28.202653,
+  "editing_style": "Nostalgic memory flood with intentional rhythm",
+  "emotional_intent": "Evoke the pure, chaotic joy of childhood through a cascade of happy memories that build to a warm, lingering conclusion",
+  "plan_summary": "A 5-segment arc that opens with peaceful establishment, builds through playful chaos, peaks with celebratory energy, then resolves into a warm, wholesome moment that lingers",
+  "style_config": {
+    "text": {
+      "font": "Inter",
+      "weight": 600,
+      "color": "#FFFFFF",
+      "shadow": true,
+      "position": "bottom",
+      "animation": "fade"
+    },
+    "color": {
+      "preset": "warm"
+    },
+    "texture": {
+      "grain": true
+    }
+  },
+  "arc_description": "Begins with calm establishment of childhood joy, escalates through playful chaos and celebration, peaks with the loudest musical moment at 23s, then resolves into a warm, lingering moment that leaves the viewer smiling",
+  "text_overlay": "Oh, to be this young again.",
+  "text_style": {
+    "font_style": "Sans-serif",
+    "animation": "Fade",
+    "placement": "Bottom-third",
+    "color_effects": "Warm"
+  },
+  "color_grading": {
+    "tone": "Warm",
+    "contrast": "Medium",
+    "specific_look": "Vintage Film"
+  },
+  "visual_effects": [
+    "film grain",
+    "subtle light leaks"
+  ],
+  "narrative_message": "A joyful journey through childhood memories - from peaceful beginnings to chaotic play, culminating in pure, innocent happiness",
+  "intent_clarity": "Clear",
+  "assumed_material": [
+    "group activities",
+    "leisure moments",
+    "indoor scenes",
+    "solo moments",
+    "celebrations"
+  ],
+  "must_have_content": [
+    "group interactions",
+    "playful activities",
+    "joyful expressions"
+  ],
+  "should_have_content": [
+    "indoor leisure scenes",
+    "celebration moments",
+    "solo joyful moments"
+  ],
+  "avoid_content": [
+    "fast-paced action",
+    "dark or serious content",
+    "adult-oriented scenes"
+  ],
+  "pacing_feel": "Breathable with intentional rhythm",
+  "visual_balance": "People-centric with leisure activities",
+  "peak_density": "Moderate",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.9406,
+      "duration": 5.9406,
+      "energy": "Low",
+      "motion": "Static",
+      "vibe": "peaceful, nostalgic, anticipation",
+      "reasoning": "Establish the emotional tone with a calm, warm opening that sets up childhood joy. Music energy is low (0.33), so use long holds to let the feeling settle.",
+      "arc_stage": "Intro",
+      "shot_scale": "Wide",
+      "shot_function": "Establish",
+      "expected_hold": "Long",
+      "cut_origin": "visual",
+      "cde": "Sparse",
+      "emotional_guidance": "Peaceful reflection on childhood beginnings"
+    },
+    {
+      "id": 2,
+      "start": 5.9406,
+      "end": 12.8318,
+      "duration": 6.8912,
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "playful, chaotic, joyful",
+      "reasoning": "Begin the memory flood with playful group activities and leisure moments. Music energy rises to moderate (0.64), allowing for natural pacing with 1-2 cuts to show different joyful moments.",
+      "arc_stage": "Build-up",
+      "shot_scale": "Medium",
+      "shot_function": "Action",
+      "expected_hold": "Normal",
+      "cut_origin": "visual",
+      "cde": "Moderate",
+      "emotional_guidance": "Innocent chaos and growing happiness"
+    },
+    {
+      "id": 3,
+      "start": 12.8318,
+      "end": 19.723,
+      "duration": 6.8912,
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "celebration, group, pure joy",
+      "reasoning": "Continue building energy with celebration moments and group interactions. Music energy remains moderate, maintaining steady pacing as we approach the peak.",
+      "arc_stage": "Build-up",
+      "shot_scale": "Close",
+      "shot_function": "Reaction",
+      "expected_hold": "Normal",
+      "cut_origin": "visual",
+      "cde": "Moderate",
+      "emotional_guidance": "Pure, unadulterated childhood joy"
+    },
+    {
+      "id": 4,
+      "start": 19.723,
+      "end": 23.0,
+      "duration": 3.277,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "peak, celebration, happiness",
+      "reasoning": "Emotional climax aligned with the loudest musical moment at 23s. Use the highest energy clips of celebration and pure joy, with slightly shorter holds to match the musical intensity.",
+      "arc_stage": "Peak",
+      "shot_scale": "Close",
+      "shot_function": "Celebration",
+      "expected_hold": "Short",
+      "cut_origin": "beat",
+      "cde": "Moderate",
+      "emotional_guidance": "The height of childhood happiness and celebration"
+    },
+    {
+      "id": 5,
+      "start": 23.0,
+      "end": 28.202653,
+      "duration": 5.202653,
+      "energy": "Low",
+      "motion": "Static",
+      "vibe": "warm, wholesome, lingering",
+      "reasoning": "Soft landing with a warm, wholesome moment that lingers. Music energy is strong (0.78) but resolving, so use a long hold on a particularly touching solo or group moment that leaves the viewer smiling.",
+      "arc_stage": "Outro",
+      "shot_scale": "Medium",
+      "shot_function": "Release",
+      "expected_hold": "Long",
+      "cut_origin": "visual",
+      "cde": "Sparse",
+      "emotional_guidance": "Warm reflection and lingering happiness"
+    }
+  ],
+  "text_prompt": "A joyful childhood memory \u2014 playful, chaotic, and full of innocent happiness. It should feel like looking back at all the adorable, carefree moments of being a kid: laughter, silly chaos, and pure joy.\n\nUse as many different moments as possible so it feels like a flood of happy memories, moving through lots of clips while keeping each moment clear and readable.\n\nEnd on a warm, wholesome moment that lingers and leaves the viewer smiling.\n\nText overlay: \u201cOh, to be this young again.\u201d",
+  "contract": {
+    "type": "blueprint",
+    "version": "12.1",
+    "source": "text_prompt_gemini",
+    "timestamp": "2026-03-07 17:49:19"
+  }
+}

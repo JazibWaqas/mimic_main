@@ -1,0 +1,1140 @@
+================================================================================
+PIPELINE RUN: REF22.MP4
+================================================================================
+Session ID: sess_c4d540b5c05f15dc86ee75d4495a4d21
+Reference: ref22.mp4
+Clips: 48
+Timestamp: 2026-03-07 02:53:20
+
+[PROGRESS] Step 1/5: Validating inputs...
+
+[1/5] Validating inputs...
+[WS] Connection attempt for session: sess_c4d540b5c05f15dc86ee75d4495a4d21
+[WS] Origin: http://localhost:3000
+[WS] Connection accepted for session: sess_c4d540b5c05f15dc86ee75d4495a4d21
+[WS] Session found: sess_c4d540b5c05f15dc86ee75d4495a4d21
+[PROGRESS] Step 2/5: Detecting visual cuts and analyzing reference structure...
+
+[2/5] Detecting visual cuts and analyzing reference structure...
+  [DIAGNOSTIC] Detecting visual scene changes (threshold=0.12)...
+  [DIAGNOSTIC] Detecting visual scene changes (threshold=0.12)...
+  [OK] Detected 18 visual cuts.
+  [FIX] Patched scipy.signal.hann for librosa compatibility.
+  [MUSIC] Analyzing: ref_analysis_audio.wav...
+  [OK] BPM: 117.45
+  [OK] Found 50 musical onsets
+  [OK] Energy curve: 20s, peak at 13s
+  [HYBRID] Visual cuts: 18, Beat-enhanced: 16
+
+============================================================
+[BRAIN] ANALYZING REFERENCE VIDEO: ref22.mp4
+[BRAIN] Using 16 visual scene anchors.
+============================================================
+
+[CACHE] Loaded Hybrid Rhythmic analysis: ref_86a859f6fe72f4a145f3a8a1886cdf14_v12.1_he83508f6.json
+[OK] Loaded from cache: 17 segments (preserved original rhythm)
+[OK] Gemini successfully analyzed reference: 17 segments found.
+[PROGRESS] Step 3/5: Analyzing user clips with Gemini AI...
+
+[3/5] Analyzing user clips with Gemini AI...
+
+============================================================
+[BRAIN] PARALLEL ANALYSIS: 48 clips
+[BRAIN] Model: gemini-3-flash-preview
+============================================================
+
+[API KEY MANAGER] Loaded 36 API key(s)
+[API KEY MANAGER] Loaded 36 API key(s)[API KEY MANAGER] Loaded 36 API key(s)[API KEY MANAGER] Loaded 36 API key(s)[API KEY MANAGER] Key rotation system active.
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview[API KEY MANAGER] Key rotation system active.
+[API KEY MANAGER] Key rotation system active.
+
+
+[API KEY MANAGER] Key rotation system active.[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_002.mp4...
+
+  Analyzing comprehensively: clip_004.mp4...  Analyzing comprehensively: clip_003.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_006.mp4...
+
+
+  Analyzing comprehensively: clip_001.mp4...
+    [CACHE] Loaded: Low/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments    [CACHE] Derived vibes: Solo, Indoor    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments    [CACHE] Loaded: Low/Static/intensity=2 with 3 best moments
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, People-Solo
+
+
+    [CACHE] Subject: People-Group
+    [CACHE] Derived vibes: Group
+
+    [CACHE] Derived vibes: Vehicle, Solo    [CACHE] Subject: People-Group, Object-Vehicle    [CACHE] Subject: Object-Vehicle, People-Group
+
+
+    [CACHE] Derived vibes: Vehicle, Group    [CACHE] Derived vibes: Group, Vehicle
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_005.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_007.mp4...
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_009.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_010.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Loaded: Low/Dynamic/intensity=2 with 3 best moments  Analyzing comprehensively: clip_008.mp4...
+
+    [CACHE] Subject: Object-Vehicle
+    [CACHE] Derived vibes: Vehicle
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_013.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_014.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_015.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: Place-Nature, Object-Vehicle
+    [CACHE] Derived vibes: Nature, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_012.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_017.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Object-Vehicle
+    [CACHE] Derived vibes: Group, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_016.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_011.mp4...
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Derived vibes: Solo, Vehicle
+    [CACHE] Subject: Object-Vehicle, Activity-Travel
+    [CACHE] Derived vibes: Vehicle, Travel
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_020.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_019.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Derived vibes: Solo, Indoor
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_018.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_022.mp4...
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Group, Object-Vehicle
+    [CACHE] Derived vibes: Group, Vehicle
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_023.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_025.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: Place-Nature, Object-Vehicle
+    [CACHE] Derived vibes: Nature, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_024.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_021.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, People-Group
+    [CACHE] Derived vibes: Solo, Group
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_027.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo
+    [CACHE] Derived vibes: Solo
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_026.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_028.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_029.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_031.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_030.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Celebration
+    [CACHE] Derived vibes: Group, Celebration
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip_034.mp4...
+  Analyzing comprehensively: clip_035.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: Low/Dynamic/intensity=2 with 3 best moments
+
+    [CACHE] Subject: People-Solo, People-Group    [CACHE] Subject: People-Group, Object-Vehicle
+    [CACHE] Derived vibes: Group, Vehicle
+
+    [CACHE] Derived vibes: Solo, Group
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_037.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_036.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Activity-Travel
+    [CACHE] Derived vibes: Solo, Travel
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_032.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle
+    [CACHE] Derived vibes: Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_038.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle
+    [CACHE] Derived vibes: Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_039.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_040.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, People-Solo
+    [CACHE] Derived vibes: Vehicle, Solo
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_033.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo, Object-Vehicle
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_041.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle
+    [CACHE] Derived vibes: Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_044.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, People-Solo
+    [CACHE] Derived vibes: Vehicle, Solo
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_042.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_045.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, People-Solo
+    [CACHE] Derived vibes: Vehicle, Solo
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_046.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle
+    [CACHE] Derived vibes: Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_043.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, People-Solo
+    [CACHE] Derived vibes: Vehicle, Solo
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_047.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip_048.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, Place-Nature
+    [CACHE] Derived vibes: Vehicle, Nature
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, People-Solo
+    [CACHE] Derived vibes: Vehicle, Solo
+
+[OK] All 48 clips analyzed in parallel
+[OK] Gemini successfully analyzed 48 clips (using originals for cache).
+  ✅ Library Health: 95.8% readiness
+  [NEW] Standardizing clip 1/48: clip_001.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_001.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 2/48: clip_002.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_002.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 3/48: clip_003.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_003.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 4/48: clip_004.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_004.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 5/48: clip_005.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_005.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 6/48: clip_006.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_006.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 7/48: clip_007.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_007.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 8/48: clip_008.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.14s). Index: 220 clips, 9 results, 21 refs.
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_008.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 9/48: clip_009.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_009.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 10/48: clip_010.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_010.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 11/48: clip_011.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_011.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 12/48: clip_012.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_012.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 13/48: clip_013.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_013.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 14/48: clip_014.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_014.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 15/48: clip_015.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_015.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 16/48: clip_016.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_016.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 17/48: clip_017.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_017.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 18/48: clip_018.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_018.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 19/48: clip_019.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_019.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 20/48: clip_020.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_020.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 21/48: clip_021.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_021.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 22/48: clip_022.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_022.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 23/48: clip_023.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_023.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 24/48: clip_024.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_024.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 25/48: clip_025.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_025.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 26/48: clip_026.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_026.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 27/48: clip_027.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_027.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 28/48: clip_028.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_028.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 29/48: clip_029.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_029.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 30/48: clip_030.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_030.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 31/48: clip_031.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_031.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 32/48: clip_032.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_032.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 33/48: clip_033.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_033.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 34/48: clip_034.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_034.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 35/48: clip_035.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_035.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 36/48: clip_036.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_036.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 37/48: clip_037.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_037.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 38/48: clip_038.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_038.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 39/48: clip_039.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_039.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 40/48: clip_040.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.08s). Index: 220 clips, 9 results, 21 refs.
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_040.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 41/48: clip_041.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_041.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 42/48: clip_042.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_042.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 43/48: clip_043.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_043.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 44/48: clip_044.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_044.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 45/48: clip_045.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_045.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 46/48: clip_046.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_046.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 47/48: clip_047.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_047.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+  [NEW] Standardizing clip 48/48: clip_048.mp4 (first-time processing)...
+  [GEOMETRY] Mode: premium_nostalgia_letterbox (clean + sharp + preserve context)
+  [GEOMETRY] Standardizing with Intel QSV (GPU acceleration)...
+  [OK] Standardized (QSV, premium_nostalgia_letterbox): clip_048.mp4
+  [CACHE] Saved standardized clip to persistent storage.
+[OK] All clips standardized (cached or new) and ready for render.
+[PROGRESS] Step 4/5: Creating edit sequence...
+
+[4/5] Creating edit sequence...
+
+============================================================
+[EDITOR] MATCHING CLIPS TO BLUEPRINT (REFERENCE MODE)
+============================================================
+  🔒 REFERENCE MODE: Structure is sacred, no looping, no lying EDL
+  Segments: 17
+  Clips: 48
+  Clips with pre-computed best moments: 48/48
+
+============================================================
+[ADVISOR] GENERATING STRATEGIC GUIDANCE
+============================================================
+  🤝 Authority Confirmed: v12.1 Director-Soul Intelligence active.
+  🎵 Beat grid for advisor: 40 beats at 117.5 BPM
+  🧠 Calling DeepSeek for strategic guidance...
+  🧠 Calling DeepSeek (Chat V3) with Context Caching...
+
+  🎯 V14.0: Generating contextual moment plans...
+     Processing 17 segment(s) with V14.0
+     Segment 1: Building candidates... ✓ 144 candidates
+     Segment 1: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.07s). Index: 220 clips, 9 results, 21 refs.
+✓ Top pick: clip_006.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 2: Building candidates... ✓ 144 candidates
+     Segment 2: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_002.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 3: Building candidates... ✓ 144 candidates
+     Segment 3: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_008.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 4: Building candidates... ✓ 144 candidates
+     Segment 4: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_027.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 5: Building candidates... ✓ 144 candidates
+     Segment 5: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_008.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 6: Building candidates... ✓ 144 candidates
+     Segment 6: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_008.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 7: Building candidates... ✓ 144 candidates
+     Segment 7: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.05s). Index: 220 clips, 9 results, 21 refs.
+✓ Top pick: clip_002.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 8: Building candidates... ✓ 144 candidates
+     Segment 8: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_008.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 9: Building candidates... ✓ 144 candidates
+     Segment 9: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_002.mp4 [Low] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 10: Building candidates... ✓ 144 candidates
+     Segment 10: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_004.mp4 [High] (contrast)
+     ✓ Plan stored with 5 alternatives
+     Segment 11: Building candidates... ✓ 144 candidates
+     Segment 11: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_002.mp4 [Low] (contrast)
+     ✓ Plan stored with 5 alternatives
+     Segment 12: Building candidates... ✓ 144 candidates
+     Segment 12: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_008.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 13: Building candidates... ✓ 144 candidates
+     Segment 13: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.07s). Index: 220 clips, 9 results, 21 refs.
+✓ Top pick: clip_008.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 14: Building candidates... ✓ 144 candidates
+     Segment 14: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_030.mp4 [Medium] (release)
+     ✓ Plan stored with 5 alternatives
+     Segment 15: Building candidates... ✓ 144 candidates
+     Segment 15: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_009.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 16: Building candidates... ✓ 144 candidates
+     Segment 16: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_002.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 17: Building candidates... ✓ 144 candidates
+     Segment 17: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip_002.mp4 [Low] (release)
+     ✓ Plan stored with 5 alternatives
+  ✅ V14.0: 17 segment(s) with contextual moment plans
+  ✅ Advisor hints generated and cached
+  💡 Text Overlay Intent: The text 'TOP GUN MAVERICK' demands iconic, legacy-defining moments that establish mythic status—this isn't just about aviation, it's about the legend itself, requiring shots that feel timeless, heroic, and larger-than-life.
+  📖 Dominant Narrative: This video is fundamentally about the weight of legacy—how extreme skill and camaraderie forge something that outlasts any single mission.
+  🎯 Editorial Strategy: Prioritize human moments within action—every jet shot should connect to a person, every spectacle should serve the legacy narrative. Use golden hour as emotional punctuation, not just visual polish.
+  ✅ Advisor enabled: Strategic guidance active
+  🎵 Beat grid generated: 40 beats at 117.45 BPM (mode: REFERENCE)
+  🎹 Extracted 9 manual accent moments (Super Beats)
+  🎯 Onset grid active: 50 musical hits (priority over BPM grid)
+  ✅ Active snap grid: 50 points (onset)
+
+  📚 Global history loaded: 36 clips tracked across past edits
+
+📊 CLIP DEMAND ANALYSIS:
+   Reference needs: High=6, Medium=8, Low=3
+   You have:        High=38, Medium=6, Low=4
+   ⚠️ DEFICIT: Need 2 more Medium-energy clips
+
+
+Segment 1: 0.000000s-4.600000s (4.600000s, High/Dynamic)
+    🎵 CDE: Sparse (beats: 13, density: 2.83/s, hold: Long, origin: visual)
+    📐 max_cuts: 1
+    🎯 Advisor committed: clip_006.mp4 [High] (escalate) — Dynamic aerial shot with high energy perfectly establishes t
+    🧩 Advisor selected clip: clip_006.mp4 (Editor controls timing)
+    📐 UsableWindow extended: 0.00s-4.60s (stable moment)
+    ✂️ Cut 1: clip_006.mp4 [0.00s-4.60s] (4.60s) → timeline [0.000000s-4.600000s]
+[SEGMENT 1 LOG] Ref: 4.60s | Rendered: 4.60s | Cuts: 1 | Mode: REFERENCE
+
+Segment 2: 4.600000s-5.633333s (1.033333s, Medium/Static)
+    🎵 CDE: Moderate (beats: 3, density: 2.90/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip_002.mp4 [Medium] (continue) — Nostalgic, intimate tone establishes emotional foundation fo
+    🧩 Advisor selected clip: clip_002.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_002.mp4 [1.50s-2.53s] (1.03s) → timeline [4.600000s-5.633333s]
+[SEGMENT 2 LOG] Ref: 1.03s | Rendered: 1.03s | Cuts: 1 | Mode: REFERENCE
+
+Segment 3: 5.633333s-6.633333s (1.000000s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 2, density: 2.00/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip_008.mp4 [High] (escalate) — Catapult launch provides intense action that escalates from 
+    🧩 Advisor selected clip: clip_008.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_008.mp4 [1.50s-2.50s] (1.00s) → timeline [5.633333s-6.633333s]
+[SEGMENT 3 LOG] Ref: 1.00s | Rendered: 1.00s | Cuts: 1 | Mode: REFERENCE
+
+Segment 4: 6.633333s-7.133333s (0.500000s, Medium/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 2, density: 4.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip_027.mp4 [Medium] (continue) — Transition moment with silhouette to cockpit cut fits build-
+    🧩 Advisor selected clip: clip_027.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_027.mp4 [1.20s-1.70s] (0.50s) → timeline [6.633333s-7.133333s]
+[SEGMENT 4 LOG] Ref: 0.50s | Rendered: 0.50s | Cuts: 1 | Mode: REFERENCE
+
+Segment 5: 7.133333s-7.666667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 2, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_008.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_014.mp4 [High] (continue) — Jet banking maneuver maintains high energy and power vibe wi
+    🧩 Advisor selected clip: clip_014.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_014.mp4 [1.00s-1.53s] (0.53s) → timeline [7.133333s-7.666667s]
+[SEGMENT 5 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 6: 7.666667s-8.166667s (0.500000s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 2.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_008.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_014.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_015.mp4 [High] (escalate) — High-speed craft with contrail creates visual spectacle that
+    🧩 Advisor selected clip: clip_015.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_015.mp4 [1.50s-2.00s] (0.50s) → timeline [7.666667s-8.166667s]
+[SEGMENT 6 LOG] Ref: 0.50s | Rendered: 0.50s | Cuts: 1 | Mode: REFERENCE
+
+Segment 7: 8.166667s-11.233333s (3.066667s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Sparse (beats: 6, density: 1.96/s, hold: Long, origin: visual)
+    📐 max_cuts: 1
+    ⏭️ Advisor skip 'clip_002.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_010.mp4 [Medium] (contrast) — Vehicle close-up introduces new subject while maintaining me
+    🧩 Advisor selected clip: clip_010.mp4 (Editor controls timing)
+    📐 UsableWindow extended: 0.50s-3.05s (stable moment)
+    ⚠️ UNDERFILL (2.53s < 3.07s) - Accepting honestly (no loop)
+    ✂️ Cut 1: clip_010.mp4 [0.50s-3.03s] (2.53s) → timeline [8.166667s-10.700000s]
+    ⚠️ Max cuts reached (1) but gap persists. Forcing backfill.
+    🔗 Backfilling: clip_020.mp4 (Remaining: 0.53s, Fill: 0.00s)
+    ✂️ Cut 2: clip_020.mp4 [0.00s-0.53s] (0.53s) → timeline [10.700000s-11.233333s]
+[SEGMENT 7 LOG] Ref: 3.07s | Rendered: 3.07s | Cuts: 2 | Mode: REFERENCE
+
+Segment 8: 11.233333s-12.266667s (1.033333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 3, density: 2.90/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_008.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_039.mp4 [High] (continue) — Low-altitude desert flyover maintains high energy while intr
+    🧩 Advisor selected clip: clip_039.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_039.mp4 [0.00s-1.03s] (1.03s) → timeline [11.233333s-12.266667s]
+[SEGMENT 8 LOG] Ref: 1.03s | Rendered: 1.03s | Cuts: 1 | Mode: REFERENCE
+
+Segment 9: 12.266667s-12.766667s (0.500000s, Low/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_002.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_004.mp4 [Low] (continue) — Intimate, contemplative moment maintains the grief tone whil
+    🧩 Advisor selected clip: clip_004.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_004.mp4 [0.00s-0.50s] (0.50s) → timeline [12.266667s-12.766667s]
+[SEGMENT 9 LOG] Ref: 0.50s | Rendered: 0.50s | Cuts: 1 | Mode: REFERENCE
+
+Segment 10: 12.766667s-13.800000s (1.033333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 3, density: 2.90/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_004.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_017.mp4 [High] (contrast) — Romantic kiss offers strong emotional contrast to action-ori
+    🧩 Advisor selected clip: clip_017.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_017.mp4 [0.50s-1.53s] (1.03s) → timeline [12.766667s-13.800000s]
+[SEGMENT 10 LOG] Ref: 1.03s | Rendered: 1.03s | Cuts: 1 | Mode: REFERENCE
+
+Segment 11: 13.800000s-14.800000s (1.000000s, Low/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 1, density: 1.00/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_002.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_004.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_007.mp4 [Low] (continue) — Pilot walking to jet maintains duty vibe with adventurous to
+    🧩 Advisor selected clip: clip_007.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_007.mp4 [0.00s-1.00s] (1.00s) → timeline [13.800000s-14.800000s]
+[SEGMENT 11 LOG] Ref: 1.00s | Rendered: 1.00s | Cuts: 1 | Mode: REFERENCE
+
+Segment 12: 14.800000s-15.333333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 2, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_008.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_039.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_029.mp4 [High] (contrast) — Sailboat action provides water-based contrast to aircraft wh
+    🧩 Advisor selected clip: clip_029.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_029.mp4 [1.00s-1.53s] (0.53s) → timeline [14.800000s-15.333333s]
+[SEGMENT 12 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 13: 15.333333s-16.366667s (1.033333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 2, density: 1.94/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_008.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_017.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_029.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_009.mp4 [Medium] (contrast) — Garage reveal provides grounded contrast to aerial action wh
+    🧩 Advisor selected clip: clip_009.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_009.mp4 [0.50s-1.53s] (1.03s) → timeline [15.333333s-16.366667s]
+[SEGMENT 13 LOG] Ref: 1.03s | Rendered: 1.03s | Cuts: 1 | Mode: REFERENCE
+
+Segment 14: 16.366667s-17.366667s (1.000000s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 1, density: 1.00/s, hold: Long, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip_030.mp4 [Medium] (release) — Intimate hug and beach celebration provide emotional release
+    🧩 Advisor selected clip: clip_030.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_030.mp4 [2.00s-3.00s] (1.00s) → timeline [16.366667s-17.366667s]
+[SEGMENT 14 LOG] Ref: 1.00s | Rendered: 1.00s | Cuts: 1 | Mode: REFERENCE
+
+Segment 15: 17.366667s-17.866667s (0.500000s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 2.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_009.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_011.mp4 [Medium] (continue) — Motorcycle traveling through desert maintains purposeful act
+    🧩 Advisor selected clip: clip_011.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_011.mp4 [5.00s-5.50s] (0.50s) → timeline [17.366667s-17.866667s]
+[SEGMENT 15 LOG] Ref: 0.50s | Rendered: 0.50s | Cuts: 1 | Mode: REFERENCE
+
+Segment 16: 17.866667s-18.400000s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 2, density: 3.75/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_002.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_004.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_009.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_016.mp4 [Medium] (continue) — Dramatic runway walk with fighter jets maintains Legacy them
+    🧩 Advisor selected clip: clip_016.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_016.mp4 [2.50s-3.03s] (0.53s) → timeline [17.866667s-18.400000s]
+[SEGMENT 16 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 17: 18.400000s-20.400000s (2.000000s, Low/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 3, density: 1.50/s, hold: Normal, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip_002.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_004.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip_017.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip_001.mp4 [Low] (release) — Contemplative ocean silhouette creates a peaceful, resolving
+    🧩 Advisor selected clip: clip_001.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip_001.mp4 [0.00s-2.00s] (2.00s) → timeline [18.400000s-20.400000s]
+[SEGMENT 17 LOG] Ref: 2.00s | Rendered: 2.00s | Cuts: 1 | Mode: REFERENCE
+
+============================================================
+[OK] Matching complete: 18 edit decisions
+[OK] Total timeline duration: 20.40s (target: 20.40s)
+
+📊 DIVERSITY REPORT:
+   Unique clips used: 18/48
+   ⚠️ 30 clips were not used.
+
+   ✅ NO CLIPS REPEATED! Perfect diversity achieved.
+
+📋 ENERGY COMPROMISES: 1
+   (Used adjacent energy when exact wasn't available)
+      Medium→High: 1 times
+
+💡 RECOMMENDATIONS TO IMPROVE THIS EDIT:
+   [Inventory Gaps]
+   → Add 2 more MEDIUM-ENERGY clips (walking, social, casual movement, city life)
+
+   [Quality Improvements]
+============================================================
+
+  📚 Global history updated → clip_history.json
+
+🔬 X-RAY diagnostic report exported: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\ref22_sess_c4d540b_v1_XRAY.txt
+  ✅ EDL validated: timeline integrity confirmed
+
+============================================================
+[EDL] EDIT DECISION LIST SUMMARY
+============================================================
+
+Total decisions: 18
+Total segments: 17
+Available clips: 48
+
+Clip usage distribution:
+  clip_006.mp4: 1 times
+  clip_002.mp4: 1 times
+  clip_008.mp4: 1 times
+  clip_027.mp4: 1 times
+  clip_014.mp4: 1 times
+  clip_015.mp4: 1 times
+  clip_010.mp4: 1 times
+  clip_020.mp4: 1 times
+  clip_039.mp4: 1 times
+  clip_004.mp4: 1 times
+  clip_017.mp4: 1 times
+  clip_007.mp4: 1 times
+  clip_029.mp4: 1 times
+  clip_009.mp4: 1 times
+  clip_030.mp4: 1 times
+  clip_011.mp4: 1 times
+  clip_016.mp4: 1 times
+  clip_001.mp4: 1 times
+
+🧠 INTELLIGENCE AUDIT (Narrative Compliance):
+   Vibe Accuracy: 94.4% matching suggested vibes
+
+   Shot Function Breakdown:
+      Action      : 7 cuts
+      Establish   : 3 cuts
+      Reaction    : 3 cuts
+      Detail      : 2 cuts
+      Button      : 2 cuts
+      Release     : 1 cuts
+
+   Arc Stage Fidelity:
+      Intro       : 100.0% intent alignment
+      Build-up    : 85.7% intent alignment
+      Peak        : 100.0% intent alignment
+      Outro       : 100.0% intent alignment
+
+[PROGRESS] Step 5/5: Rendering final video...
+
+[5/5] Rendering final video...
+    [OK] Segment extracted: 0.00s + 4.60s -> 4.60s
+    [OK] Segment extracted: 1.50s + 1.03s -> 1.03s
+    [OK] Segment extracted: 1.50s + 1.00s -> 1.00s
+    [OK] Segment extracted: 1.20s + 0.50s -> 0.50s
+    [OK] Segment extracted: 1.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 1.50s + 0.50s -> 0.50s
+    [OK] Segment extracted: 0.50s + 2.53s -> 2.53s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 1.03s -> 1.03s
+    [OK] Segment extracted: 0.00s + 0.50s -> 0.50s
+    [OK] Segment extracted: 0.50s + 1.03s -> 1.03s
+    [OK] Segment extracted: 0.00s + 1.00s -> 1.00s
+    [OK] Segment extracted: 1.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.50s + 1.03s -> 1.03s
+    [OK] Segment extracted: 2.00s + 1.00s -> 1.00s
+    [OK] Segment extracted: 5.00s + 0.50s -> 0.50s
+    [OK] Segment extracted: 2.50s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 2.00s -> 2.00s
+  [OK] Concatenated 18 segments (frame-perfect)
+  [WARN] Concat duration 20.80s differs from blueprint 20.40s (drift: +0.40s)
+  ✂️ Duration trimmed: 20.80s → 20.40s
+[STYLIST] Applying visual styling (v14.9 Style Control)...
+  [STYLIST] Applying v14.9 Style (Preset: warm): 3 filters
+  [WARN] Stylist failed (likely FFmpeg syntax/missing font), falling back to unstylized: Command '['ffmpeg', '-y', '-i', 'C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\temp_video_trimmed.mp4', '-vf', "eq=saturation=1.1:brightness=0.02,colorbalance=rh=0.08:gh=0.04:bh=-0.04,drawtext=text='TOP GUN MAVERICK':x=(w-text_w)/2:y=((h - (1 * 63.0))/2) + 0.0:fontsize=42:fontcolor=white:fontfile='C:/Windows/Fonts/arial.ttf':shadowcolor=black@0.6:shadowx=2:shadowy=2", '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '23', '-c:a', 'copy', 'C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\temp_video_styled.mp4']' returned non-zero exit status 4294967274.
+  [OK] Audio extracted: ref_audio.aac
+  [OK] Audio merged onto video (optimized)
+
+================================================================================
+✅ SUCCESS!
+================================================================================
+
+📊 Basic Results:
+   Output: ref22_sess_c4d540b_v1.mp4
+   Duration: 20.41s (ref: 20.40s)
+   Difference: 0.01s
+   Processing time: 325.2s
+
+================================================================================
+🧠 COMPREHENSIVE SYSTEM ANALYSIS
+================================================================================
+
+📹 Reference Analysis:
+   Editing Style: Cinematic montage
+   Emotional Intent: Triumphant
+   Arc Description: The edit opens with pure adrenaline, builds tension through intense character focus, transitions int...
+   Total Segments: 17
+
+📑 BLUEPRINT FULL SEGMENT LIST:
+   01:  0.00- 4.60s | High   | Vibe: Adrenaline | Intro
+   02:  4.60- 5.63s | Medium | Vibe: Focus      | Build-up
+   03:  5.63- 6.63s | High   | Vibe: Action     | Build-up
+   04:  6.63- 7.13s | Medium | Vibe: Intensity  | Build-up
+   05:  7.13- 7.67s | High   | Vibe: Power      | Build-up
+   06:  7.67- 8.17s | High   | Vibe: Impact     | Build-up
+   07:  8.17-11.23s | Medium | Vibe: Scale      | Build-up
+   08: 11.23-12.27s | High   | Vibe: Speed      | Peak
+   09: 12.27-12.77s | Low    | Vibe: Grief      | Peak
+   10: 12.77-13.80s | Medium | Vibe: Solemn     | Peak
+   11: 13.80-14.80s | Low    | Vibe: Duty       | Peak
+   12: 14.80-15.33s | High   | Vibe: Thrill     | Peak
+   13: 15.33-16.37s | Medium | Vibe: Unity      | Peak
+   14: 16.37-17.37s | Medium | Vibe: Freedom    | Peak
+   15: 17.37-17.87s | Medium | Vibe: Purpose    | Outro
+   16: 17.87-18.40s | Medium | Vibe: Legacy     | Outro
+   17: 18.40-20.40s | Low    | Vibe: Resolution | Outro
+
+📈 Arc Stage Distribution:
+   Peak: 7 segments (41.2%)
+   Build-up: 6 segments (35.3%)
+   Outro: 3 segments (17.6%)
+   Intro: 1 segments (5.9%)
+
+🎨 Vibe Distribution:
+   Adrenaline: 1 segments (5.9%)
+   Focus: 1 segments (5.9%)
+   Action: 1 segments (5.9%)
+   Intensity: 1 segments (5.9%)
+   Power: 1 segments (5.9%)
+   Impact: 1 segments (5.9%)
+   Scale: 1 segments (5.9%)
+   Speed: 1 segments (5.9%)
+   Grief: 1 segments (5.9%)
+   Solemn: 1 segments (5.9%)
+   Duty: 1 segments (5.9%)
+   Thrill: 1 segments (5.9%)
+   Unity: 1 segments (5.9%)
+   Freedom: 1 segments (5.9%)
+   Purpose: 1 segments (5.9%)
+   Legacy: 1 segments (5.9%)
+   Resolution: 1 segments (5.9%)
+
+📎 Clip Usage Analysis:
+   Unique clips used: 18/48
+   Most used clips:
+     clip_006.mp4: 1 times (5.6%)
+     clip_002.mp4: 1 times (5.6%)
+     clip_008.mp4: 1 times (5.6%)
+     clip_027.mp4: 1 times (5.6%)
+     clip_014.mp4: 1 times (5.6%)
+
+🧠 AI Reasoning Breakdown:
+   ✨ Smart Match: 0 (0.0%)
+   🎯 Good Fit: 0 (0.0%)
+   ⚙️ Constraint Relaxation: 0 (0.0%)
+
+🎨 Vibe Matching:
+   Matches: 17/18 (94.4%)
+
+📏 Cut Statistics by Arc Stage:
+   Intro: 1 cuts, avg 4.60s
+   Build-up: 7 cuts, avg 0.95s
+   Peak: 7 cuts, avg 0.88s
+   Outro: 3 cuts, avg 1.01s
+
+📏 Overall Cut Statistics:
+   Total cuts: 18
+   Average cut: 1.13s
+   Shortest cut: 0.50s
+   Longest cut: 4.60s
+
+💭 Sample AI Reasoning (first 5 decisions):
+   1. clip_006.mp4: Advisor-selected clip: Dynamic aerial shot with high energy perfectly establishe...
+   2. clip_002.mp4: Advisor-selected clip: Nostalgic, intimate tone establishes emotional foundation...
+   3. clip_008.mp4: Advisor-selected clip: Catapult launch provides intense action that escalates fr...
+   4. clip_027.mp4: Advisor-selected clip: Transition moment with silhouette to cockpit cut fits bui...
+   5. clip_014.mp4: Advisor-selected clip: Jet banking maneuver maintains high energy and power vibe...
+
+📦 CLIP REGISTRY (48 total):
+   01: clip_001.mp4    | High   |   8.5s | Vibes: Group, Vehicle
+   02: clip_002.mp4    | Low    |   4.8s | Vibes: Solo, Indoor
+   03: clip_003.mp4    | Medium |  10.1s | Vibes: Vehicle, Group
+   04: clip_004.mp4    | Low    |   3.7s | Vibes: Group
+   05: clip_005.mp4    | High   |  16.0s | Vibes: Solo, Vehicle
+   06: clip_006.mp4    | Medium |  14.4s | Vibes: Vehicle, Solo
+   07: clip_007.mp4    | Medium |   3.3s | Vibes: Solo, Vehicle
+   08: clip_008.mp4    | High   |   8.8s | Vibes: Solo, Vehicle
+   09: clip_009.mp4    | High   |   4.5s | Vibes: Solo, Vehicle
+   10: clip_010.mp4    | Low    |   3.0s | Vibes: Vehicle
+   11: clip_011.mp4    | High   |   7.4s | Vibes: Vehicle, Travel
+   12: clip_012.mp4    | High   |   6.6s | Vibes: Solo, Vehicle
+   13: clip_013.mp4    | High   |   5.4s | Vibes: Vehicle, Nature
+   14: clip_014.mp4    | High   |   3.1s | Vibes: Vehicle, Nature
+   15: clip_015.mp4    | High   |   3.1s | Vibes: Nature, Vehicle
+   16: clip_016.mp4    | Medium |   4.7s | Vibes: Solo, Vehicle
+   17: clip_017.mp4    | Medium |   3.7s | Vibes: Group, Vehicle
+   18: clip_018.mp4    | Medium |   7.1s | Vibes: Group, Vehicle
+   19: clip_019.mp4    | High   |   3.6s | Vibes: Solo, Indoor
+   20: clip_020.mp4    | High   |  10.4s | Vibes: Solo, Vehicle
+   21: clip_021.mp4    | High   |   7.4s | Vibes: Vehicle, Nature
+   22: clip_022.mp4    | High   |   3.1s | Vibes: Solo, Vehicle
+   23: clip_023.mp4    | High   |   4.0s | Vibes: Vehicle, Nature
+   24: clip_024.mp4    | High   |   7.0s | Vibes: Solo, Group
+   25: clip_025.mp4    | High   |   3.7s | Vibes: Nature, Vehicle
+   26: clip_026.mp4    | High   |   4.9s | Vibes: Solo, Vehicle
+   27: clip_027.mp4    | High   |   3.3s | Vibes: Solo
+   28: clip_028.mp4    | High   |   9.4s | Vibes: Solo, Vehicle
+   29: clip_029.mp4    | High   |   3.8s | Vibes: Vehicle, Nature
+   30: clip_030.mp4    | High   |   6.3s | Vibes: Group, Celebration
+   31: clip_031.mp4    | High   |  10.5s | Vibes: Solo, Vehicle
+   32: clip_032.mp4    | High   |   3.5s | Vibes: Vehicle
+   33: clip_033.mp4    | High   |  15.2s | Vibes: Solo, Vehicle
+   34: clip_034.mp4    | Low    |   9.6s | Vibes: Solo, Group
+   35: clip_035.mp4    | High   |  12.5s | Vibes: Group, Vehicle
+   36: clip_036.mp4    | High   |   3.7s | Vibes: Solo, Travel
+   37: clip_037.mp4    | High   |   5.2s | Vibes: Vehicle, Nature
+   38: clip_038.mp4    | High   |   4.0s | Vibes: Vehicle
+   39: clip_039.mp4    | High   |   4.5s | Vibes: Vehicle, Nature
+   40: clip_040.mp4    | High   |  12.5s | Vibes: Vehicle, Solo
+   41: clip_041.mp4    | High   |   4.0s | Vibes: Vehicle
+   42: clip_042.mp4    | High   |   4.5s | Vibes: Vehicle, Nature
+   43: clip_043.mp4    | High   |   5.3s | Vibes: Vehicle, Solo
+   44: clip_044.mp4    | High   |   9.9s | Vibes: Vehicle, Solo
+   45: clip_045.mp4    | High   |   4.4s | Vibes: Vehicle, Solo
+   46: clip_046.mp4    | High   |   3.2s | Vibes: Vehicle
+   47: clip_047.mp4    | High   |   5.8s | Vibes: Vehicle, Nature
+   48: clip_048.mp4    | High   |  23.5s | Vibes: Vehicle, Solo
+
+📋 Metadata Coverage:
+   Best Moments: 48/48
+   Vibes: 48/48
+
+🔍 Temporal Precision Check:
+   ✅ TIMELINE INTEGRITY: No gaps or overlaps detected (all within 0.001s tolerance)
+
+📦 Material Efficiency:
+   Total source duration available: 327.02s
+   Total duration used in edit: 20.40s
+   Unique clip segments used: 18
+   Utilization Ratio: 6.2%
+   💡 Note: Low utilization suggests clips may not match reference vibes well
+
+================================================================================
+💡 POST-EDIT CREATIVE REVIEW (ADVISOR CRITIQUE)
+================================================================================
+
+🎨 THE EDITORIAL DEBRIEF:
+   ✅ STRENGTHS:
+      - Abundant high-energy action sequences perfectly match the triumphant intent
+      - Strong collection of solo pilot moments supports the people-focused narrative
+      - Excellent vehicle footage provides the necessary spectacle and scale
+
+   ⚠️ EDITORIAL TRADEOFFS:
+      - Must use high-energy clips for medium/low segments when vibe matches—energy classification becomes secondary to emotional resonance
+      - Scarcity of pure camaraderie moments requires using celebration/group shots for emotional weight
+
+   🔍 CONSTRAINT GAPS:
+      - Limited indoor/reflective moments mean the solemn duty aspect must be conveyed through outdoor/action contexts
+      - Scarce medium-energy clips require careful pacing to avoid constant intensity fatigue
+
+🧠 EDITORIAL STRATEGY:
+   Prioritize human moments within action—every jet shot should connect to a person, every spectacle should serve the legacy narrative. Use golden hour as emotional punctuation, not just visual polish.
+
+🚀 REMAKE STRATEGY (HOW TO REACH DIRECTOR'S CUT):
+   Add more intimate, dialogue-free character moments that show the cost of duty—silent exchanges between pilots, hands on controls with visible tension, and legacy objects being passed or contemplated. The Director's Cut would deepen the human stakes without slowing the momentum.
+
+================================================================================
+
+
+================================================================================
+🎉 Watch the result: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\ref22_sess_c4d540b_v1.mp4
+================================================================================
+
+[PROGRESS] Step 6/6: Generating Vault intelligence report...
+
+[6/6] Generating Vault intelligence report...
+[VAULT] Translating reasoning into human report via Groq (Llama 3.3 70B)...
+[BRAIN] Calling Groq (llama-3.3-70b-versatile)...
+  ✅ Vault Report generated.
+[PROCESS] Exporting master intelligence report...
+   (Intelligence data confirmed: 198 chars)
+[OK] Intelligence report saved: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\ref22_sess_c4d540b_v1.json (181246 bytes)

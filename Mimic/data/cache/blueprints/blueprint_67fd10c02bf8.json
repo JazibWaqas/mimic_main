@@ -1,0 +1,158 @@
+{
+  "total_duration": 31.872018,
+  "editing_style": "Nostalgic, memory-driven edit with intentional rhythm that prioritizes emotional resonance over technical precision",
+  "emotional_intent": "Evoke the pure, carefree joy of childhood through playful chaos and innocent happiness, culminating in a warm, lingering moment of reflection",
+  "plan_summary": "A 5-segment emotional journey from gentle introduction through escalating playfulness to a joyful peak, resolving into a soft, reflective outro with text overlay",
+  "style_config": {
+    "text": {
+      "font": "Inter",
+      "weight": 600,
+      "color": "#FFFFFF",
+      "shadow": true,
+      "position": "bottom",
+      "animation": "fade"
+    },
+    "color": {
+      "preset": "warm"
+    },
+    "texture": {
+      "grain": true
+    }
+  },
+  "arc_description": "Begins with gentle establishment of childhood innocence, builds through playful group activities and solo moments, peaks with celebratory chaos, then resolves into a warm, reflective conclusion",
+  "text_overlay": "Oh, to be this young again.",
+  "text_style": {
+    "font_style": "Sans-serif",
+    "animation": "Fade",
+    "placement": "Bottom-third",
+    "color_effects": "Warm"
+  },
+  "color_grading": {
+    "tone": "Warm",
+    "contrast": "Medium",
+    "specific_look": "Vintage Film"
+  },
+  "visual_effects": [
+    "film grain",
+    "subtle light leaks"
+  ],
+  "narrative_message": "A celebration of childhood's pure joy and innocent chaos, inviting viewers to remember and smile at their own carefree memories",
+  "intent_clarity": "Clear",
+  "assumed_material": [
+    "group play activities",
+    "indoor leisure scenes",
+    "solo childhood moments",
+    "celebratory gatherings"
+  ],
+  "must_have_content": [
+    "group interactions showing joy",
+    "solo moments of childhood wonder"
+  ],
+  "should_have_content": [
+    "indoor play scenes",
+    "leisure activities",
+    "celebratory moments"
+  ],
+  "avoid_content": [
+    "fast-paced action sequences",
+    "dark or serious tones",
+    "adult-focused content"
+  ],
+  "pacing_feel": "Breathable",
+  "visual_balance": "People-centric",
+  "peak_density": "Moderate",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.9680045,
+      "duration": 7.9680045,
+      "energy": "Low",
+      "motion": "Static",
+      "vibe": "innocence, warmth",
+      "reasoning": "Establish the nostalgic tone with a gentle, establishing shot that captures childhood purity",
+      "arc_stage": "Intro",
+      "shot_scale": "Wide",
+      "shot_function": "Establish",
+      "expected_hold": "Long",
+      "cut_origin": "visual",
+      "cde": "Sparse",
+      "emotional_guidance": "Peaceful reflection on childhood beginnings"
+    },
+    {
+      "id": 2,
+      "start": 7.9680045,
+      "end": 15.936009,
+      "duration": 7.9680045,
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "playful, group",
+      "reasoning": "Introduce the joyful chaos of childhood through group activities and leisure scenes",
+      "arc_stage": "Build-up",
+      "shot_scale": "Medium",
+      "shot_function": "Action",
+      "expected_hold": "Normal",
+      "cut_origin": "visual",
+      "cde": "Moderate",
+      "emotional_guidance": "Growing sense of carefree playfulness and connection"
+    },
+    {
+      "id": 3,
+      "start": 15.936009,
+      "end": 23.9040135,
+      "duration": 7.9680045,
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "solo, wonder",
+      "reasoning": "Show individual moments of childhood wonder and innocent happiness",
+      "arc_stage": "Build-up",
+      "shot_scale": "Close",
+      "shot_function": "Reaction",
+      "expected_hold": "Normal",
+      "cut_origin": "visual",
+      "cde": "Moderate",
+      "emotional_guidance": "Intimate connection with childhood innocence and discovery"
+    },
+    {
+      "id": 4,
+      "start": 23.9040135,
+      "end": 27.872018,
+      "duration": 3.9680045,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "celebration, joy",
+      "reasoning": "Peak at the loudest musical moment with celebratory, high-energy clips showing pure childhood happiness",
+      "arc_stage": "Peak",
+      "shot_scale": "Medium",
+      "shot_function": "Celebration",
+      "expected_hold": "Short",
+      "cut_origin": "beat",
+      "cde": "Moderate",
+      "emotional_guidance": "Pure, unadulterated joy and laughter"
+    },
+    {
+      "id": 5,
+      "start": 27.872018,
+      "end": 31.872018,
+      "duration": 4.0,
+      "energy": "Low",
+      "motion": "Static",
+      "vibe": "warmth, reflection",
+      "reasoning": "Soft landing with a lingering moment that invites reflection, featuring text overlay",
+      "arc_stage": "Outro",
+      "shot_scale": "Close",
+      "shot_function": "Release",
+      "expected_hold": "Long",
+      "cut_origin": "visual",
+      "cde": "Sparse",
+      "emotional_guidance": "Warm, nostalgic reflection on the beauty of childhood"
+    }
+  ],
+  "text_prompt": "A joyful childhood memory \u2014 playful, chaotic, and full of innocent happiness. \nIt should feel like looking back at how pure and carefree being a kid was, \nwith lots of laughter, adorable chaos, and moments that make you smile. \nEnd on a warm, wholesome moment that lingers.\n\nText overlay: \u201cOh, to be this young again.\u201d\n",
+  "contract": {
+    "type": "blueprint",
+    "version": "12.1",
+    "source": "text_prompt_gemini",
+    "timestamp": "2026-03-07 17:40:30"
+  }
+}

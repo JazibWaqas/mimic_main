@@ -1,0 +1,5239 @@
+{
+  "success": true,
+  "output_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\data\\results\\ref22_sess_c4d540b_v1.mp4",
+  "blueprint": {
+    "total_duration": 20.4,
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 4.6,
+        "duration": 4.6,
+        "energy": "High",
+        "motion": "Dynamic",
+        "vibe": "Adrenaline",
+        "reasoning": "",
+        "arc_stage": "Intro",
+        "shot_scale": "Wide",
+        "shot_function": "Establish",
+        "relation_to_previous": "None",
+        "expected_hold": "Long",
+        "camera_movement": "Smooth pan",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "World-Building",
+        "temporal_weight": "Breath",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "Directional motion",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "Physical-Action",
+          "resolves": "None",
+          "type": "Motion-Direction"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 2,
+        "start": 4.6,
+        "end": 5.633333333333333,
+        "duration": 1.0333333333333332,
+        "energy": "Medium",
+        "motion": "Static",
+        "vibe": "Focus",
+        "reasoning": "",
+        "arc_stage": "Build-up",
+        "shot_scale": "CU",
+        "shot_function": "Detail",
+        "relation_to_previous": "Setup",
+        "expected_hold": "Normal",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Intimacy-Focus",
+        "temporal_weight": "Push",
+        "emotional_anchor": true,
+        "audio_driver": "Sound-Event",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "Physical-Action",
+          "type": "Gaze"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 3,
+        "start": 5.633333333333333,
+        "end": 6.633333333333333,
+        "duration": 1.0,
+        "energy": "High",
+        "motion": "Dynamic",
+        "vibe": "Action",
+        "reasoning": "",
+        "arc_stage": "Build-up",
+        "shot_scale": "Medium",
+        "shot_function": "Action",
+        "relation_to_previous": "Continuation",
+        "expected_hold": "Normal",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Action-Link",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "Spatial-Movement",
+          "resolves": "None",
+          "type": "Spatial-Movement"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 4,
+        "start": 6.633333333333333,
+        "end": 7.133333333333333,
+        "duration": 0.5,
+        "energy": "Medium",
+        "motion": "Static",
+        "vibe": "Intensity",
+        "reasoning": "",
+        "arc_stage": "Build-up",
+        "shot_scale": "CU",
+        "shot_function": "Detail",
+        "relation_to_previous": "Contrast",
+        "expected_hold": "Short",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Intimacy-Focus",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "None",
+          "type": "Gaze"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 5,
+        "start": 7.133333333333333,
+        "end": 7.666666666666667,
+        "duration": 0.5333333333333341,
+        "energy": "High",
+        "motion": "Dynamic",
+        "vibe": "Power",
+        "reasoning": "",
+        "arc_stage": "Build-up",
+        "shot_scale": "Wide",
+        "shot_function": "Action",
+        "relation_to_previous": "Payoff",
+        "expected_hold": "Short",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Action-Link",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Sound-Event",
+        "audio_priority": "SFX > Music",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "Directional motion",
+          "strength": "Aggressive"
+        },
+        "continuity_hook": {
+          "opens": "Physical-Action",
+          "resolves": "None",
+          "type": "Motion-Direction"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 6,
+        "start": 7.666666666666667,
+        "end": 8.166666666666666,
+        "duration": 0.4999999999999991,
+        "energy": "High",
+        "motion": "Dynamic",
+        "vibe": "Impact",
+        "reasoning": "",
+        "arc_stage": "Build-up",
+        "shot_scale": "Wide",
+        "shot_function": "Reaction",
+        "relation_to_previous": "Continuation",
+        "expected_hold": "Short",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Action-Link",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Sound-Event",
+        "audio_priority": "SFX > Music",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "Physical-Action",
+          "type": "Physical-Action"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 7,
+        "start": 8.166666666666666,
+        "end": 11.233333333333333,
+        "duration": 3.0666666666666664,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "vibe": "Scale",
+        "reasoning": "",
+        "arc_stage": "Build-up",
+        "shot_scale": "Wide",
+        "shot_function": "Establish",
+        "relation_to_previous": "None",
+        "expected_hold": "Long",
+        "camera_movement": "Smooth pan",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "World-Building",
+        "temporal_weight": "Breath",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Narrative-Shift",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "Spatial-Movement",
+          "resolves": "None",
+          "type": "Spatial-Movement"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 8,
+        "start": 11.233333333333333,
+        "end": 12.266666666666666,
+        "duration": 1.0333333333333332,
+        "energy": "High",
+        "motion": "Dynamic",
+        "vibe": "Speed",
+        "reasoning": "",
+        "arc_stage": "Peak",
+        "shot_scale": "Wide",
+        "shot_function": "Action",
+        "relation_to_previous": "Continuation",
+        "expected_hold": "Normal",
+        "camera_movement": "Smooth pan",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Action-Link",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "Directional motion",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "None",
+          "type": "Motion-Direction"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 9,
+        "start": 12.266666666666666,
+        "end": 12.766666666666666,
+        "duration": 0.5,
+        "energy": "Low",
+        "motion": "Static",
+        "vibe": "Grief",
+        "reasoning": "",
+        "arc_stage": "Peak",
+        "shot_scale": "CU",
+        "shot_function": "Reaction",
+        "relation_to_previous": "Contrast",
+        "expected_hold": "Short",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Intimacy-Focus",
+        "temporal_weight": "Push",
+        "emotional_anchor": true,
+        "audio_driver": "Emotional-Silence",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Narrative-Shift",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "Gaze",
+          "resolves": "None",
+          "type": "Gaze"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 10,
+        "start": 12.766666666666666,
+        "end": 13.799999999999999,
+        "duration": 1.0333333333333332,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "vibe": "Solemn",
+        "reasoning": "",
+        "arc_stage": "Peak",
+        "shot_scale": "Wide",
+        "shot_function": "Action",
+        "relation_to_previous": "Payoff",
+        "expected_hold": "Normal",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "World-Building",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "Gaze",
+          "type": "Spatial-Movement"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 11,
+        "start": 13.799999999999999,
+        "end": 14.799999999999999,
+        "duration": 1.0,
+        "energy": "Low",
+        "motion": "Static",
+        "vibe": "Duty",
+        "reasoning": "",
+        "arc_stage": "Peak",
+        "shot_scale": "CU",
+        "shot_function": "Reaction",
+        "relation_to_previous": "Continuation",
+        "expected_hold": "Normal",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Intimacy-Focus",
+        "temporal_weight": "Push",
+        "emotional_anchor": true,
+        "audio_driver": "Emotional-Silence",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "None",
+          "type": "Gaze"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 12,
+        "start": 14.799999999999999,
+        "end": 15.333333333333334,
+        "duration": 0.533333333333335,
+        "energy": "High",
+        "motion": "Dynamic",
+        "vibe": "Thrill",
+        "reasoning": "",
+        "arc_stage": "Peak",
+        "shot_scale": "Wide",
+        "shot_function": "Action",
+        "relation_to_previous": "Contrast",
+        "expected_hold": "Short",
+        "camera_movement": "Smooth pan",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Action-Link",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "Directional motion",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "Spatial-Movement",
+          "resolves": "None",
+          "type": "Motion-Direction"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 13,
+        "start": 15.333333333333334,
+        "end": 16.366666666666667,
+        "duration": 1.0333333333333332,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "vibe": "Unity",
+        "reasoning": "",
+        "arc_stage": "Peak",
+        "shot_scale": "Wide",
+        "shot_function": "Action",
+        "relation_to_previous": "Continuation",
+        "expected_hold": "Normal",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Action-Link",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "None",
+          "type": "Spatial-Movement"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 14,
+        "start": 16.366666666666667,
+        "end": 17.366666666666667,
+        "duration": 1.0,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "vibe": "Freedom",
+        "reasoning": "",
+        "arc_stage": "Peak",
+        "shot_scale": "Wide",
+        "shot_function": "Release",
+        "relation_to_previous": "Contrast",
+        "expected_hold": "Long",
+        "camera_movement": "Smooth pan",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "World-Building",
+        "temporal_weight": "Breath",
+        "emotional_anchor": true,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Narrative-Shift",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "Physical-Action",
+          "resolves": "None",
+          "type": "Physical-Action"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 15,
+        "start": 17.366666666666667,
+        "end": 17.866666666666667,
+        "duration": 0.5,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "vibe": "Purpose",
+        "reasoning": "",
+        "arc_stage": "Outro",
+        "shot_scale": "Medium",
+        "shot_function": "Action",
+        "relation_to_previous": "Setup",
+        "expected_hold": "Short",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "Action-Link",
+        "temporal_weight": "Push",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "Physical-Action",
+          "type": "Spatial-Movement"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 16,
+        "start": 17.866666666666667,
+        "end": 18.4,
+        "duration": 0.5333333333333314,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "vibe": "Legacy",
+        "reasoning": "",
+        "arc_stage": "Outro",
+        "shot_scale": "Wide",
+        "shot_function": "Button",
+        "relation_to_previous": "Payoff",
+        "expected_hold": "Normal",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "World-Building",
+        "temporal_weight": "Breath",
+        "emotional_anchor": false,
+        "audio_driver": "Music-Rhythm",
+        "audio_priority": "Music > SFX",
+        "cut_motivation": "Rhythmic-Snap",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "None",
+          "type": "Spatial-Movement"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      },
+      {
+        "id": 17,
+        "start": 18.4,
+        "end": 20.4,
+        "duration": 2.0,
+        "energy": "Low",
+        "motion": "Static",
+        "vibe": "Resolution",
+        "reasoning": "",
+        "arc_stage": "Outro",
+        "shot_scale": "Wide",
+        "shot_function": "Button",
+        "relation_to_previous": "None",
+        "expected_hold": "Normal",
+        "camera_movement": "Locked",
+        "emotional_guidance": "",
+        "media_type": "Video",
+        "shot_scale_role": "World-Building",
+        "temporal_weight": "Breath",
+        "emotional_anchor": false,
+        "audio_driver": "Emotional-Silence",
+        "audio_priority": "Silence > All",
+        "cut_motivation": "Narrative-Shift",
+        "transition_intent": {
+          "type": "Hard",
+          "mechanism": "None",
+          "strength": "Normal"
+        },
+        "continuity_hook": {
+          "opens": "None",
+          "resolves": "None",
+          "type": "None"
+        },
+        "cut_origin": "visual",
+        "cde": "Moderate"
+      }
+    ],
+    "phrases": [],
+    "text_prompt": null,
+    "plan_summary": "",
+    "assumed_material": [],
+    "editing_style": "Cinematic montage",
+    "emotional_intent": "Triumphant",
+    "arc_description": "The edit opens with pure adrenaline, builds tension through intense character focus, transitions into a solemn reflection on legacy, and concludes with a sense of collective purpose.",
+    "text_overlay": "TOP GUN MAVERICK",
+    "narrative_message": "A high-octane tribute to the legacy of naval aviation, balancing extreme speed with the weight of duty and camaraderie.",
+    "intent_clarity": "Clear",
+    "text_events": [],
+    "must_have_content": [
+      "High-speed vehicle tracking shots",
+      "Intense close-ups of pilot eyes/faces",
+      "Aerial formations in vast landscapes",
+      "Moments of camaraderie or solemn duty"
+    ],
+    "should_have_content": [
+      "Golden hour lighting",
+      "Military hardware details",
+      "Environmental reactions to speed (dust, water spray)"
+    ],
+    "avoid_content": [
+      "Static dialogue scenes",
+      "Low-contrast lighting",
+      "Handheld shaky cam"
+    ],
+    "pacing_feel": "Syncopated",
+    "visual_balance": "Action-focused",
+    "color_grading": {
+      "tone": "Warm",
+      "contrast": "High",
+      "specific_look": "Teal-Orange cinematic grade with heavy golden hour influence"
+    },
+    "aspect_ratio": "21:9",
+    "visual_effects": [
+      "Slow motion",
+      "Motion blur",
+      "Lens flare",
+      "Heat haze"
+    ],
+    "shot_variety": {
+      "dominant_scale": "Wide",
+      "variety_level": "High variety"
+    },
+    "stylistic_invariants": [
+      "Hard cuts only",
+      "Center-weighted action",
+      "Symmetry in formation shots",
+      "High-speed tracking shots"
+    ],
+    "peak_density": "Dense",
+    "cut_style": "Hard cuts",
+    "transition_effects": [],
+    "reference_audio": "original",
+    "audio_confidence": "Observed",
+    "music_sync": "Tightly synced",
+    "audio_style": {
+      "genre": "Cinematic Rock / Orchestral",
+      "vocal_presence": "Mixed",
+      "energy": "High"
+    },
+    "music_structure": {
+      "phrases": "Intro (0-4.6), Build (4.6-11.24), Peak Anthem (11.24-18.39), Resolve (18.39-end)",
+      "accent_moments": "4.6 (Beat drop), 8.17 (Transition to carrier), 16.35 (Shift to beach run)",
+      "ending_type": "Hard stop"
+    },
+    "text_style": {
+      "font_style": "Bold Stencil Sans-serif",
+      "animation": "Fade-on",
+      "placement": "Center-left",
+      "color_effects": "Silver with metallic sheen"
+    },
+    "text_behavior": {
+      "appearance_logic": "Intro-only",
+      "entry_moment": "First-push",
+      "exit_rule": "Cut-with-shot",
+      "priority": "Branding"
+    },
+    "text_cadence": "Static",
+    "style_config": null,
+    "overall_reasoning": "The edit follows a classic cinematic trailer structure: an establishing high-energy hook, a rapid-fire rhythmic build-up using character close-ups and kinetic action, a mid-point shift to wider world-building, and a final peak that blends action with emotional release. The use of hard cuts synced to a driving beat creates a sense of precision and military discipline. The color palette is consistently warm and high-contrast, reinforcing the 'Golden Hour' aesthetic associated with the source material.",
+    "ideal_material_suggestions": [
+      "High-speed racing or flight footage with clear directional motion.",
+      "Close-up shots of eyes or faces showing intense concentration or emotion.",
+      "Wide landscape shots with subjects moving through the frame at high speed.",
+      "Group activities at sunset to mirror the beach camaraderie scene.",
+      "Formal or uniform-based shots to maintain the sense of duty and legacy."
+    ],
+    "contract": {
+      "type": "reference",
+      "version": "12.1",
+      "source_hash": "86a859f6fe72f4a145f3a8a1886cdf14",
+      "fingerprint": "he83508f6"
+    }
+  },
+  "clip_index": {
+    "clips": [
+      {
+        "filename": "clip_001.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_001.mp4",
+        "duration": 8.481,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Group",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Energetic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Action montages",
+          "Cinematic trailers"
+        ],
+        "avoid_for": [
+          "Calm reflective outros"
+        ],
+        "vibes": [
+          "Group",
+          "Vehicle"
+        ],
+        "content_description": "A sequence featuring a silhouette by the sea, a pilot helmet, and beach football.",
+        "best_moments": {
+          "High": {
+            "start": 6.0,
+            "end": 8.481,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Energetic beach football action with clear movement"
+          },
+          "Medium": {
+            "start": 3.5,
+            "end": 6.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Slow reveal of the Maverick helmet with steady camera movement"
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 3.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Contemplative silhouette against the ocean with minimal motion"
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "463e25c78fd652446616b65e9b2c0153"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_002.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_002.mp4",
+        "duration": 4.814,
+        "energy": "Low",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "Place-Indoor"
+        ],
+        "narrative_utility": [
+          "Reflection",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Nostalgic",
+          "Intimate"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Nostalgic montages",
+          "Character backstories",
+          "Reflective moments"
+        ],
+        "avoid_for": [
+          "High-energy action",
+          "Fast-paced transitions"
+        ],
+        "vibes": [
+          "Solo",
+          "Indoor"
+        ],
+        "content_description": "A hand places a gold naval aviator insignia on a surface, followed by a man looking at a wall of old photographs.",
+        "best_moments": {
+          "High": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Transition",
+            "stable_moment": false,
+            "reason": "The movement of the hand and the cut between shots represent the highest visual change."
+          },
+          "Medium": {
+            "start": 1.5,
+            "end": 3.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The reveal of the photo wall and the man's presence creates moderate engagement."
+          },
+          "Low": {
+            "start": 2.5,
+            "end": 4.5,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "A quiet, steady shot of the man looking at the photos, emphasizing nostalgia."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "8841767651a886271b07421987ea695c"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_003.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_003.mp4",
+        "duration": 10.138,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "Object-Vehicle",
+          "People-Group"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Adventurous"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Opening establishing shots",
+          "Build-up to action"
+        ],
+        "avoid_for": [
+          "Intimate close-up moments",
+          "Calm reflective outros"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Group"
+        ],
+        "content_description": "Two fighter jets on an elevator platform rise to the flight deck of an aircraft carrier at sea.",
+        "best_moments": {
+          "High": {
+            "start": 8.0,
+            "end": 10.138,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The jets reach the deck level with peak visual scale and dramatic lighting."
+          },
+          "Medium": {
+            "start": 4.0,
+            "end": 7.0,
+            "moment_role": "Transition",
+            "stable_moment": true,
+            "reason": "Steady upward movement of the elevator platform showing the jets and ocean."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 3.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial silhouettes and the beginning of the mechanical ascent."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "45b0488d37812f9bf4992d74d51787cd"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_004.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_004.mp4",
+        "duration": 3.723,
+        "energy": "Low",
+        "motion": "Static",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Group"
+        ],
+        "narrative_utility": [
+          "Reflection",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Intimate",
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Closing shots",
+          "Reflective montages",
+          "Dramatic pauses"
+        ],
+        "avoid_for": [
+          "Action sequences",
+          "High-energy transitions"
+        ],
+        "vibes": [
+          "Group"
+        ],
+        "content_description": "A man in a white naval uniform and a woman stand side-by-side, viewed from behind, looking into a dark space.",
+        "best_moments": {
+          "High": {
+            "start": 0.0,
+            "end": 3.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The peak emotional weight of the sustained, dramatic still shot."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 3.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Sustained presence that builds tension through stillness."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 3.0,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "A calm, contemplative moment suitable for a quiet pause or ending."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "028f12e0bc57dbc4a92c32c49a6cdfff"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_005.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_005.mp4",
+        "duration": 16.031,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Cinematic trailers",
+          "Narrative builds",
+          "Aviation-themed montages"
+        ],
+        "avoid_for": [
+          "Casual vlogs",
+          "Low-budget home videos"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A man enters a naval air force facility, revealing a futuristic jet and a flight jacket with various patches.",
+        "best_moments": {
+          "High": {
+            "start": 8.5,
+            "end": 11.0,
+            "moment_role": "Peak",
+            "stable_moment": true,
+            "reason": "Dramatic reveal of a futuristic jet with intense lighting and atmospheric smoke."
+          },
+          "Medium": {
+            "start": 3.0,
+            "end": 6.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady tracking shot of the subject walking through a military hallway."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Calm establishing shot of an airfield with silhouettes and distant aircraft."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "2fcd76289001ac46d5fb9e7ea394afad"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_006.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_006.mp4",
+        "duration": 14.435,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "Object-Vehicle",
+          "People-Solo"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Reflection"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Nostalgic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Cinematic openings",
+          "Character introductions",
+          "Military montages"
+        ],
+        "avoid_for": [
+          "Fast-paced action sequences",
+          "Casual vlog content"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Solo"
+        ],
+        "content_description": "Cinematic sequence featuring an aircraft carrier at sea, a pilot, a stealth jet, and personal flight gear.",
+        "best_moments": {
+          "High": {
+            "start": 0.0,
+            "end": 3.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Dynamic aerial shot of an aircraft carrier with significant visual scale and movement."
+          },
+          "Medium": {
+            "start": 6.5,
+            "end": 9.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Controlled subject movement as the pilot interacts with his locker and gear."
+          },
+          "Low": {
+            "start": 10.5,
+            "end": 14.0,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Slow, contemplative pan over a commemorative plaque and personal items."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "9bf29a0b2a10c0cfcd1edaa86762c795"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_007.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_007.mp4",
+        "duration": 3.263,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Opening establishing shots",
+          "Build-up sequences"
+        ],
+        "avoid_for": [
+          "Fast-paced action cuts",
+          "Intimate dialogue"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A pilot walks across an aircraft carrier deck toward a fighter jet during golden hour.",
+        "best_moments": {
+          "High": {
+            "start": 1.5,
+            "end": 3.263,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Pilot approaches the jet, increasing visual scale and anticipation."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 3.263,
+            "moment_role": "Transition",
+            "stable_moment": true,
+            "reason": "Consistent walking motion across the deck."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial framing of the pilot and the aircraft carrier environment."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "d140761c214307df7ed67e45c11cf5dc"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_008.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_008.mp4",
+        "duration": 8.81,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Energetic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Action sequences",
+          "High-energy builds",
+          "Opening sequences"
+        ],
+        "avoid_for": [
+          "Calm reflective moments",
+          "Intimate dialogue"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A deck crew member signals a thumbs up before a fighter jet launches from an aircraft carrier deck.",
+        "best_moments": {
+          "High": {
+            "start": 1.5,
+            "end": 4.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The peak G-force moment of the catapult launch with intense camera vibration."
+          },
+          "Medium": {
+            "start": 5.5,
+            "end": 8.5,
+            "moment_role": "Transition",
+            "stable_moment": true,
+            "reason": "Sustained high-speed flight over the ocean after the initial launch jolt."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.2,
+            "moment_role": "Establishing",
+            "stable_moment": false,
+            "reason": "The pre-launch signal from the deck crew, providing the lowest relative energy."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "7b3032c7c3738e7a272899255aaa2c4f"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_009.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_009.mp4",
+        "duration": 4.47,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Nostalgic",
+          "Adventurous"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Reveal sequences",
+          "Action builds"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Nature documentaries"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A man in a garage pulls a tarp off a vintage motorcycle to reveal it.",
+        "best_moments": {
+          "High": {
+            "start": 1.5,
+            "end": 4.47,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The peak action of pulling the tarp and revealing the motorcycle."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 2.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The man approaches the bike and prepares to reveal it, creating anticipation."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial setup showing the covered bike in the garage before the main action starts."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "5f4b069c3de8c040c2c4aed56c4578fa"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_010.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_010.mp4",
+        "duration": 3.047,
+        "energy": "Low",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Transition"
+        ],
+        "emotional_tone": [
+          "Nostalgic",
+          "Adventurous"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Opening establishing shots",
+          "Vehicle-focused montages",
+          "Nostalgic transitions"
+        ],
+        "avoid_for": [
+          "High-energy action scenes",
+          "Intimate human moments"
+        ],
+        "vibes": [
+          "Vehicle"
+        ],
+        "content_description": "A close-up shot of the rear of a red Kawasaki motorcycle as its brake lights illuminate.",
+        "best_moments": {
+          "High": {
+            "start": 1.1,
+            "end": 3.047,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The moment the brake lights are fully illuminated, providing the most visual impact."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 2.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Captures the transition from lights off to lights on, creating a sense of activation."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "The initial static shot of the motorcycle rear before the lights are activated."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "a074808b29713ef2f9c3d8fcfe24947b"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_011.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_011.mp4",
+        "duration": 7.442,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Activity-Travel"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Energetic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "High-energy adventure sequences",
+          "Travel montages",
+          "Action-oriented transitions"
+        ],
+        "avoid_for": [
+          "Intimate close-up moments",
+          "Calm reflective outros"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Travel"
+        ],
+        "content_description": "A sailboat glides across the water followed by a motorcycle speeding through a desert landscape.",
+        "best_moments": {
+          "High": {
+            "start": 5.0,
+            "end": 7.442,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Fast-paced motorcycle action with significant motion blur and speed."
+          },
+          "Medium": {
+            "start": 2.5,
+            "end": 4.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady tracking shot of the motorcycle moving through the desert."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Relatively calmer wide shot of a sailboat on open water."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "93bc9f641fd4b19fb2f21b93cff05a22"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_012.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_012.mp4",
+        "duration": 6.598,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Action sequences",
+          "High-energy peaks",
+          "Opening establishing shots"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A pilot in a cockpit prepares for takeoff as a sleek jet accelerates down a runway with glowing afterburners.",
+        "best_moments": {
+          "High": {
+            "start": 3.0,
+            "end": 6.0,
+            "moment_role": "Peak",
+            "stable_moment": true,
+            "reason": "Powerful visual of the jet accelerating with afterburners and high-speed motion."
+          },
+          "Medium": {
+            "start": 1.5,
+            "end": 3.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Close-up of the throttle being engaged, signaling the transition to high action."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Close-up of the pilot's face in the cockpit setting the scene with minimal motion."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "cd3a9eab5fd8fb2cce60f7d52d480837"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_013.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_013.mp4",
+        "duration": 5.388,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Build",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Action sequences",
+          "Cinematic intros"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "A fighter jet ignites its engines and launches from an aircraft carrier deck into the open sea.",
+        "best_moments": {
+          "High": {
+            "start": 3.0,
+            "end": 5.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Dynamic POV shot of the jet launching off the carrier deck at high speed."
+          },
+          "Medium": {
+            "start": 1.0,
+            "end": 3.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Side view of the jet accelerating across the carrier deck with visible steam."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Close-up of the engine nozzle, providing a detailed look at the machinery before takeoff."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "2c47af0e4dac5b69e6d034e3eb1a8ae4"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_014.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_014.mp4",
+        "duration": 3.088,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Peak",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Action sequences",
+          "High-energy peaks",
+          "Cinematic establishing shots"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "A fighter jet performs a sharp banking maneuver while flying over a vast, snow-covered mountain range and lake.",
+        "best_moments": {
+          "High": {
+            "start": 1.0,
+            "end": 3.088,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The jet performs a dynamic roll and bank maneuver at high speed."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Initial approach and start of the turn with sustained motion."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "The earliest part of the shot before the most intense maneuvering begins."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "6bb45a623a6a83c482c0e0ce13d701af"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_015.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_015.mp4",
+        "duration": 3.061,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "Place-Nature",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Transition",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Opening establishing shots",
+          "Action transitions",
+          "Sci-fi montages"
+        ],
+        "avoid_for": [
+          "Intimate close-up moments",
+          "Calm reflective outros"
+        ],
+        "vibes": [
+          "Nature",
+          "Vehicle"
+        ],
+        "content_description": "A high-speed craft streaks across a vast aerial landscape of mountains and clouds, leaving a long contrail.",
+        "best_moments": {
+          "High": {
+            "start": 1.5,
+            "end": 3.061,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Peak speed and visual impact as the craft traverses the center of the frame."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 2.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The craft enters and establishes its trajectory across the landscape."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial entry into the frame, setting the scale of the environment."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "9eaf293fc84e31ad8b5a4b0463e699a4"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_016.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_016.mp4",
+        "duration": 4.717,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Reflection"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Cinematic openings",
+          "Dramatic builds",
+          "Aviation-themed montages"
+        ],
+        "avoid_for": [
+          "High-speed action sequences",
+          "Casual lifestyle content"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A person walks down the center of a runway lined with fighter jets under a hazy, sepia-toned sky.",
+        "best_moments": {
+          "High": {
+            "start": 2.5,
+            "end": 4.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The camera zoom is most pronounced, increasing the visual focus on the subject."
+          },
+          "Medium": {
+            "start": 1.0,
+            "end": 3.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady walking pace and consistent camera movement maintain engagement."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "The initial wide framing establishes the massive scale of the environment."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "6a2aa64b668914053d2e2d9d36a78cba"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_017.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_017.mp4",
+        "duration": 3.724,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Group",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Reflection",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Intimate",
+          "Nostalgic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Romantic climaxes",
+          "Cinematic montages",
+          "Lifestyle storytelling"
+        ],
+        "avoid_for": [
+          "High-energy action sequences",
+          "Fast-paced transitions"
+        ],
+        "vibes": [
+          "Group",
+          "Vehicle"
+        ],
+        "content_description": "A man and woman stand by a classic silver Porsche at sunset and share a romantic kiss.",
+        "best_moments": {
+          "High": {
+            "start": 1.0,
+            "end": 3.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The peak emotional moment of the kiss and embrace."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 2.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The movement as the couple leans in toward each other."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "The initial calm pose before the kiss begins."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "14f08b3713222fa952002e3f7587c494"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_018.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_018.mp4",
+        "duration": 7.092,
+        "energy": "Medium",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Group",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Reflection"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Nostalgic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Opening establishing shots",
+          "Patriotic montages",
+          "Cinematic transitions"
+        ],
+        "avoid_for": [
+          "High-energy action sequences",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Group",
+          "Vehicle"
+        ],
+        "content_description": "Military personnel stand in a hangar before a large American flag, followed by a helicopter flying at sunset.",
+        "best_moments": {
+          "High": {
+            "start": 3.5,
+            "end": 6.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The helicopter flying across the sun provides the peak visual movement and cinematic intensity."
+          },
+          "Medium": {
+            "start": 2.5,
+            "end": 5.0,
+            "moment_role": "Transition",
+            "stable_moment": true,
+            "reason": "The transition to the sunset silhouette introduces controlled motion and a change in lighting."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "A static, low-energy shot establishing the military setting and patriotic theme."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "25475df2de4e63f54c20f9414ff28084"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_019.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_019.mp4",
+        "duration": 3.561,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "Place-Indoor"
+        ],
+        "narrative_utility": [
+          "Build",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Energetic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Training montages",
+          "Dramatic builds",
+          "Fitness or sports sequences"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Lighthearted comedy"
+        ],
+        "vibes": [
+          "Solo",
+          "Indoor"
+        ],
+        "content_description": "A man wearing a breathing mask and sensors runs on a treadmill in a dimly lit indoor facility.",
+        "best_moments": {
+          "High": {
+            "start": 1.2,
+            "end": 3.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Close-up shot emphasizing physical exertion and intensity."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 1.2,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady running in a wide shot showing the full environment."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 0.6,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial frames setting the scene before the focus on intensity."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "cc80c8a5f04a8f7770b0e0f8271d8d56"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_020.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_020.mp4",
+        "duration": 10.436,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Reflection",
+          "Transition"
+        ],
+        "emotional_tone": [
+          "Nostalgic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Action montages",
+          "Character-driven narratives",
+          "Cinematic transitions"
+        ],
+        "avoid_for": [
+          "Static corporate presentations",
+          "Calm nature documentaries"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "Cinematic sequence featuring a fighter pilot in a cockpit, a jet flying over desert terrain, and a man looking at a nostalgic photograph.",
+        "best_moments": {
+          "High": {
+            "start": 2.5,
+            "end": 5.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Dynamic shot of the fighter jet in motion with high visual energy."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Clear shot of the pilot in the cockpit providing context and character introduction."
+          },
+          "Low": {
+            "start": 7.5,
+            "end": 10.0,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "A still, emotional shot of a photograph, perfect for a narrative pause."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "0ffdfe02122d7dcebe99c5c48d9dbbaa"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_021.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_021.mp4",
+        "duration": 7.429,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Build",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Action sequences",
+          "Cinematic transitions"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "Four fighter jets fly at high speed low over a snowy mountain lake, creating vapor cones.",
+        "best_moments": {
+          "High": {
+            "start": 4.5,
+            "end": 7.429,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Peak action with jets flying past and visible vapor cones."
+          },
+          "Medium": {
+            "start": 2.0,
+            "end": 4.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Jets approaching at speed, increasing visual scale."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial wide shot of the landscape as jets appear in the distance."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "563bbdaca9daa8719b3294e0c840acb9"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_022.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_022.mp4",
+        "duration": 3.105,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Action sequences",
+          "Sci-fi or aviation montages",
+          "Dramatic builds"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Casual lifestyle content"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A pilot in a high-tech cockpit looks out as the vehicle moves through a dark, atmospheric environment with dramatic lighting.",
+        "best_moments": {
+          "High": {
+            "start": 1.5,
+            "end": 3.0,
+            "moment_role": "Peak",
+            "stable_moment": true,
+            "reason": "Maximum visual intensity and dramatic lighting shifts."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 2.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady progression of the shot with increasing visual interest."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial frame setting the scene before the peak intensity."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "8e658b063c05753216dc5543b0275ab2"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_023.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_023.mp4",
+        "duration": 4.018,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Transition",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Adventure sequences",
+          "Cinematic transitions"
+        ],
+        "avoid_for": [
+          "Quiet dialogue scenes",
+          "Static backgrounds"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "An airplane performs a barrel roll against a vibrant sunset over a silhouette of mountains.",
+        "best_moments": {
+          "High": {
+            "start": 0.8,
+            "end": 3.8,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "The peak of the aerobatic roll directly centered against the sun."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The plane enters the frame and initiates the rotation maneuver."
+          },
+          "Low": {
+            "start": 2.0,
+            "end": 4.018,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "The plane completes the maneuver and levels out as it flies away."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "c91c59b1dc1040cebaec500f9665a9e8"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_024.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_024.mp4",
+        "duration": 7.014,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "People-Group"
+        ],
+        "narrative_utility": [
+          "Reflection",
+          "Establishing",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Joyful"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Emotional storytelling",
+          "Celebration sequences",
+          "Character arcs"
+        ],
+        "avoid_for": [
+          "Fast-paced sports edits",
+          "Abstract visuals"
+        ],
+        "vibes": [
+          "Solo",
+          "Group"
+        ],
+        "content_description": "A naval officer reflects before joining a joyful celebration with friends on a beach.",
+        "best_moments": {
+          "High": {
+            "start": 6.0,
+            "end": 7.014,
+            "moment_role": "Peak",
+            "stable_moment": true,
+            "reason": "High-energy group celebration and cheering with expressive movement."
+          },
+          "Medium": {
+            "start": 3.2,
+            "end": 5.8,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Steady shot of characters in a beach setting with moderate visual interest."
+          },
+          "Low": {
+            "start": 0.2,
+            "end": 2.8,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Intimate close-up with minimal movement, focusing on character emotion."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "b42b187432961d8049f28458e59e3b8a"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_025.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_025.mp4",
+        "duration": 3.727,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "Place-Nature",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Transition",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Adventurous"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Dramatic transitions",
+          "Sci-fi or nature montages",
+          "Establishing shots"
+        ],
+        "avoid_for": [
+          "Intimate close-up moments",
+          "Casual human interactions"
+        ],
+        "vibes": [
+          "Nature",
+          "Vehicle"
+        ],
+        "content_description": "A plane flies through a bright sky followed by a bright streak across a twilight landscape.",
+        "best_moments": {
+          "High": {
+            "start": 2.0,
+            "end": 3.727,
+            "moment_role": "Peak",
+            "stable_moment": true,
+            "reason": "Dramatic visual of a bright streak moving rapidly across the twilight sky."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady shot of a plane flying through a bright, hazy sky."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "The calmest portion of the clip, setting the scene with minimal subject movement."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "1217e3663875af5f88acd9e5db9e8601"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_026.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_026.mp4",
+        "duration": 4.855,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Build",
+          "Reflection",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Nostalgic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Dramatic trailers",
+          "Emotional montages",
+          "Character-driven builds"
+        ],
+        "avoid_for": [
+          "Joyful celebrations",
+          "Casual vlogs"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A pilot in a cockpit is intercut with a flag being draped over a casket.",
+        "best_moments": {
+          "High": {
+            "start": 0.0,
+            "end": 1.8,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Intense close-up of the pilot's focused expression with high visual weight."
+          },
+          "Medium": {
+            "start": 3.6,
+            "end": 4.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Return to the pilot's face, maintaining tension after the emotional cut."
+          },
+          "Low": {
+            "start": 1.9,
+            "end": 3.5,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Solemn shot of a flag being placed on a casket, providing emotional pause."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "50e89c2dd5211bbc25f9b62f7e96d02a"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_027.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_027.mp4",
+        "duration": 3.257,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo"
+        ],
+        "narrative_utility": [
+          "Transition",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Dramatic transitions",
+          "Action trailers",
+          "Cinematic montages"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Long continuous scenes"
+        ],
+        "vibes": [
+          "Solo"
+        ],
+        "content_description": "A silhouette of a man tossing a football at sunset cuts to an intense close-up of a pilot in a cockpit.",
+        "best_moments": {
+          "High": {
+            "start": 1.2,
+            "end": 3.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Intense close-up of the pilot with high emotional stakes and visual impact."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 1.5,
+            "moment_role": "Transition",
+            "stable_moment": false,
+            "reason": "The movement of the football toss leading into the sharp cut between scenes."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Calm, atmospheric silhouette shot setting a nostalgic or peaceful tone."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "b7e5a50d3259d97490acfa261552c311"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_028.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_028.mp4",
+        "duration": 9.385,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Peak",
+          "Transition"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Cinematic trailers",
+          "Action-oriented montages",
+          "High-stakes storytelling"
+        ],
+        "avoid_for": [
+          "Slow-paced domestic scenes",
+          "Corporate instructional videos"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A cinematic montage featuring a couple on a motorcycle at sunset, a pilot in a cockpit, and a jet contrail seen from space.",
+        "best_moments": {
+          "High": {
+            "start": 6.0,
+            "end": 9.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Dramatic and high-scale visual of a jet contrail against the Earth's curvature."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Dynamic motorcycle shot with scenic background and moderate subject motion."
+          },
+          "Low": {
+            "start": 3.0,
+            "end": 5.0,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Intense, relatively static close-up focusing on the pilot's expression."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "90b397e0eeff31d5ab5816e6994278f8"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_029.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_029.mp4",
+        "duration": 3.84,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Energetic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Action sequences",
+          "Adventure montages",
+          "Establishing shots"
+        ],
+        "avoid_for": [
+          "Calm reflective moments",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "A sailboat with a large blue spinnaker sail speeds across choppy water with a mountainous coastline in the background.",
+        "best_moments": {
+          "High": {
+            "start": 1.0,
+            "end": 3.1,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Peak spray and boat speed as it cuts through the waves."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 2.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Sustained motion and consistent sailing action."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial framing of the boat before the most intense spray."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "394e6541a9412cf83c0a54dcb76d7417"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_030.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_030.mp4",
+        "duration": 6.262,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Group",
+          "Activity-Celebration"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Reflection",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Joyful",
+          "Intimate"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Emotional montages",
+          "Celebration sequences"
+        ],
+        "avoid_for": [
+          "Calm reflective intros",
+          "Static background shots"
+        ],
+        "vibes": [
+          "Group",
+          "Celebration"
+        ],
+        "content_description": "A man and woman hug intimately before cutting to men celebrating and dancing on a beach.",
+        "best_moments": {
+          "High": {
+            "start": 3.5,
+            "end": 6.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Peak energy with expressive dancing and high visual activity."
+          },
+          "Medium": {
+            "start": 2.0,
+            "end": 4.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Transition into active beach movement and initial celebration."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Quiet, intimate moment with minimal subject and camera motion."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "6d78411513fbd62139d06ee939baebdb"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_031.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_031.mp4",
+        "duration": 10.486,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Peak",
+          "Reflection"
+        ],
+        "emotional_tone": [
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Dramatic trailers",
+          "Narrative storytelling",
+          "Cinematic transitions"
+        ],
+        "avoid_for": [
+          "Joyful celebrations",
+          "Upbeat commercials"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A vehicle arrives at a desert checkpoint followed by a large dust cloud, then cuts to a man sitting alone in a dark room.",
+        "best_moments": {
+          "High": {
+            "start": 1.2,
+            "end": 3.8,
+            "moment_role": "Peak",
+            "stable_moment": true,
+            "reason": "Intense visual impact from the sudden dust cloud and explosion-like effect."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 1.2,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Controlled movement of the vehicle and personnel at the checkpoint."
+          },
+          "Low": {
+            "start": 4.5,
+            "end": 7.5,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "A still, contemplative silhouette of a man in a dark room overlooking a city."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "c8095e919c75a3a8bb9f5d6e0865c48d"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_032.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_032.mp4",
+        "duration": 3.477,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Transition",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Action sequences",
+          "High-energy peaks",
+          "Transitions"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle"
+        ],
+        "content_description": "A fighter jet flies away from the camera with glowing afterburners against a golden sky.",
+        "best_moments": {
+          "High": {
+            "start": 0.5,
+            "end": 3.3,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Peak visual intensity with glowing afterburners and rapid ascent."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Initial climb and acceleration phase of the jet."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "The earliest part of the shot before the full intensity of the climb."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "e923b1b62f5e82d9966a6b4e0c0c6736"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_033.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_033.mp4",
+        "duration": 15.156,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Reflection",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Hero sequences",
+          "Cinematic montages"
+        ],
+        "avoid_for": [
+          "Intimate dialogue",
+          "Minimalist scenes"
+        ],
+        "vibes": [
+          "Solo",
+          "Vehicle"
+        ],
+        "content_description": "A cinematic montage featuring a man on a motorcycle racing a jet, a military funeral flyover, and people running on a beach at sunset.",
+        "best_moments": {
+          "High": {
+            "start": 0.0,
+            "end": 3.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Intense high-speed motorcycle action synchronized with a jet takeoff."
+          },
+          "Medium": {
+            "start": 12.5,
+            "end": 15.156,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Sustained group motion during a beach run with cinematic lighting."
+          },
+          "Low": {
+            "start": 10.5,
+            "end": 12.5,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "A solemn, still moment featuring a military salute."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "ded5d5fac656d22ff23cdc09c0e44ec7"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_034.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_034.mp4",
+        "duration": 9.556,
+        "energy": "Low",
+        "motion": "Dynamic",
+        "intensity": 2,
+        "primary_subject": [
+          "People-Solo",
+          "People-Group"
+        ],
+        "narrative_utility": [
+          "Reflection",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Nostalgic",
+          "Intimate"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Nostalgic reflections",
+          "Character backstory"
+        ],
+        "avoid_for": [
+          "High-action sequences",
+          "Fast-paced montages"
+        ],
+        "vibes": [
+          "Solo",
+          "Group"
+        ],
+        "content_description": "A man looks at a wall of old photographs, focusing on a picture of two pilots laughing.",
+        "best_moments": {
+          "High": {
+            "start": 6.5,
+            "end": 9.0,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Zoom into the most emotionally expressive and high-energy photo of laughter."
+          },
+          "Medium": {
+            "start": 3.0,
+            "end": 6.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Panning across multiple photos, increasing visual complexity and narrative depth."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Static close-up of a character's contemplative and quiet expression."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "e05b416773a174ce12b166c6bd6f09bf"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_035.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_035.mp4",
+        "duration": 12.484,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Group",
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Reflection",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Nostalgic",
+          "Energetic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Action sequences",
+          "Nostalgic montages",
+          "Transitions"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Group",
+          "Vehicle"
+        ],
+        "content_description": "A slow pan over nostalgic military photographs followed by a close-up of a jet engine igniting.",
+        "best_moments": {
+          "High": {
+            "start": 8.5,
+            "end": 11.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Intense visual of jet engine ignition with high energy"
+          },
+          "Medium": {
+            "start": 4.0,
+            "end": 6.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady pan across multiple photographs showing character history"
+          },
+          "Low": {
+            "start": 0.5,
+            "end": 3.5,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Slow, contemplative pan over a single nostalgic photograph"
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "64b6bbb3762c4081ebb8aeb33ed4debc"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_036.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_036.mp4",
+        "duration": 3.714,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "People-Solo",
+          "Activity-Travel"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Dramatic builds",
+          "Action sequences",
+          "Opening establishing shots"
+        ],
+        "avoid_for": [
+          "Peaceful reflections",
+          "Casual dialogue"
+        ],
+        "vibes": [
+          "Solo",
+          "Travel"
+        ],
+        "content_description": "A runway at dusk followed by a pilot in a cockpit adjusting his flight helmet visor.",
+        "best_moments": {
+          "High": {
+            "start": 1.0,
+            "end": 3.0,
+            "moment_role": "Peak",
+            "stable_moment": true,
+            "reason": "Intense close-up of the pilot with expressive movement and high visual impact."
+          },
+          "Medium": {
+            "start": 0.5,
+            "end": 1.5,
+            "moment_role": "Build",
+            "stable_moment": false,
+            "reason": "The transition from the wide runway shot to the intense cockpit close-up."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 0.8,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Calm, wide shot of the runway setting the scene before the action."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "b6bd51c16297e687830fd7f232d006e4"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_037.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_037.mp4",
+        "duration": 5.221,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Dramatic",
+          "Adventurous"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Action sequences",
+          "High-energy peaks",
+          "Aviation montages"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "A fighter jet performs a sharp banking maneuver over a desert mountain landscape.",
+        "best_moments": {
+          "High": {
+            "start": 3.8,
+            "end": 5.2,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Intense banking maneuver with rapid visual change and high kinetic energy."
+          },
+          "Medium": {
+            "start": 2.8,
+            "end": 3.8,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "The jet enters the frame and begins its descent, transitioning into high action."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Distant shot of a streak in the sky with minimal camera movement."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "f84848380953f2845a94d7becd781bcb"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_038.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_038.mp4",
+        "duration": 4.048,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "High-energy peaks",
+          "Action sequences",
+          "Fast-paced transitions"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle"
+        ],
+        "content_description": "A fighter jet takes off and performs a high-speed low-altitude flight over a desert landscape.",
+        "best_moments": {
+          "High": {
+            "start": 2.2,
+            "end": 4.048,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Fast-paced low-altitude flight with significant ground rush and dynamic motion."
+          },
+          "Medium": {
+            "start": 1.0,
+            "end": 2.2,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Side profile of the jet accelerating, showing clear movement and increasing speed."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Initial close-up of the engine exhaust with relatively less frame-wide motion compared to flight."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "72b0661fc779f74c493f98c5be03155b"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_039.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_039.mp4",
+        "duration": 4.482,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Transition",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Action sequences",
+          "High-energy peaks",
+          "Cinematic transitions"
+        ],
+        "avoid_for": [
+          "Calm reflective intros",
+          "Intimate moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "A fighter jet performs a high-speed, low-altitude flyover across a desert, kicking up large dust clouds.",
+        "best_moments": {
+          "High": {
+            "start": 0.0,
+            "end": 2.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Peak action during the low-altitude pass and dust cloud formation."
+          },
+          "Medium": {
+            "start": 2.5,
+            "end": 4.482,
+            "moment_role": "Transition",
+            "stable_moment": true,
+            "reason": "Jet recedes into the distance with consistent motion."
+          },
+          "Low": {
+            "start": 3.5,
+            "end": 4.482,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "Jet is distant, visual intensity decreases as it moves away."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "fd605cda57d6934e4fe77569d4fab98d"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_040.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_040.mp4",
+        "duration": 12.519,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "People-Solo"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy action sequences",
+          "Cinematic montages",
+          "Adventure-themed intros"
+        ],
+        "avoid_for": [
+          "Peaceful transitions",
+          "Slow-paced narratives"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Solo"
+        ],
+        "content_description": "Fighter jets perform high-speed maneuvers through a mountain range and above the clouds, featuring a pilot in the cockpit.",
+        "best_moments": {
+          "High": {
+            "start": 6.5,
+            "end": 9.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Intense pilot reaction and rapid maneuvering during high-speed flight."
+          },
+          "Medium": {
+            "start": 3.2,
+            "end": 6.2,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Sustained high-speed flight through a canyon with clear subject tracking."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 3.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Relatively stable wide shot of jets above the clouds setting the scene."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "99e1bd837f3c6923517eb727e91916b8"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_041.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_041.mp4",
+        "duration": 4.007,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Transition",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Action sequences",
+          "Cinematic trailers"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle"
+        ],
+        "content_description": "Fighter jets performing high-speed maneuvers at dusk and flying in formation during the day.",
+        "best_moments": {
+          "High": {
+            "start": 0.5,
+            "end": 2.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Rapid ascent with visible engine glow and dynamic camera tracking."
+          },
+          "Medium": {
+            "start": 2.5,
+            "end": 4.0,
+            "moment_role": "Transition",
+            "stable_moment": true,
+            "reason": "Steady formation flight with consistent tracking motion and clear subject visibility."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Distant subject at the start of the shot with the least relative visual change."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "792810620c126d9ca3f0ca38a11f03f6"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_042.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_042.mp4",
+        "duration": 4.463,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Establishing",
+          "Transition"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Action sequences",
+          "Cinematic trailers",
+          "High-energy peaks"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "Fighter jets perform high-speed maneuvers over mountains and fly in formation over the ocean.",
+        "best_moments": {
+          "High": {
+            "start": 0.0,
+            "end": 1.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Intense banking maneuvers with rapid visual changes and high-speed action."
+          },
+          "Medium": {
+            "start": 1.5,
+            "end": 3.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Sustained high-speed flight over desert terrain with consistent tracking motion."
+          },
+          "Low": {
+            "start": 2.5,
+            "end": 4.463,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Relatively stable formation flight over the ocean, serving as a cinematic establishing shot."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "9c4ead57fcd0d598159d3ff36535c4b7"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_043.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_043.mp4",
+        "duration": 5.34,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "People-Solo"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Build",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy action sequences",
+          "Cinematic trailers",
+          "Fast-paced montages"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Solo"
+        ],
+        "content_description": "Fighter jets flying in formation and performing high-speed maneuvers above clouds and mountains.",
+        "best_moments": {
+          "High": {
+            "start": 3.2,
+            "end": 5.0,
+            "moment_role": "Climax",
+            "stable_moment": false,
+            "reason": "Intense cockpit view with a jet flying rapidly overhead and pilot reaction."
+          },
+          "Medium": {
+            "start": 1.8,
+            "end": 3.2,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Transition from formation flight to internal cockpit action."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.8,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Relatively stable wide shot of jets flying in formation above clouds."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "09e92a5e5e5f4cf8fe74dc220d0e44fa"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_044.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_044.mp4",
+        "duration": 9.941,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "People-Solo"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build",
+          "Peak"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "Action sequences",
+          "Cinematic intros",
+          "High-energy montages"
+        ],
+        "avoid_for": [
+          "Peaceful scenes",
+          "Slow-paced narratives"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Solo"
+        ],
+        "content_description": "Fighter jets perform high-speed maneuvers and fly in formation across diverse landscapes.",
+        "best_moments": {
+          "High": {
+            "start": 7.5,
+            "end": 9.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Iconic shot of pilot in cockpit with wingmen in formation."
+          },
+          "Medium": {
+            "start": 3.5,
+            "end": 5.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Steady formation flight over the ocean showing scale and power."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Wide shot of jets in the distance setting the scene."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "139af0af76b0f100c9d66ce01c98c9f9"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_045.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_045.mp4",
+        "duration": 4.435,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "People-Solo"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Transition",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Action montages",
+          "Cinematic trailers"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Solo"
+        ],
+        "content_description": "Fighter jets performing high-speed maneuvers through mountains and under a bridge.",
+        "best_moments": {
+          "High": {
+            "start": 2.8,
+            "end": 4.0,
+            "moment_role": "Climax",
+            "stable_moment": false,
+            "reason": "Peak kinetic energy as the jet flies under a bridge structure."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 1.5,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Sustained high-speed chase perspective over mountain terrain."
+          },
+          "Low": {
+            "start": 1.5,
+            "end": 2.5,
+            "moment_role": "Transition",
+            "stable_moment": true,
+            "reason": "Relatively stable shot of the pilot in the cockpit providing a brief narrative focus."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "d5d7715286aa3ed03425cba9c8bf5550"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_046.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_046.mp4",
+        "duration": 3.174,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle"
+        ],
+        "narrative_utility": [
+          "Establishing",
+          "Build"
+        ],
+        "emotional_tone": [
+          "Adventurous",
+          "Dramatic"
+        ],
+        "clip_quality": 4,
+        "best_for": [
+          "Action sequences",
+          "Opening establishing shots",
+          "High-energy montages"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle"
+        ],
+        "content_description": "A fighter jet flies at high speed low over the ocean towards a misty coastline.",
+        "best_moments": {
+          "High": {
+            "start": 1.0,
+            "end": 3.174,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Peak sense of speed and proximity to the water and coastline."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Sustained forward motion establishing the flight path."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "The initial frame setting the scene before the full sense of speed takes over."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "4eb72d2da6d838218921ae985aa4f610"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_047.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_047.mp4",
+        "duration": 5.844,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "Place-Nature"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Build",
+          "Transition"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Dramatic"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Action sequences",
+          "Dramatic climaxes"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate close-up moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Nature"
+        ],
+        "content_description": "Fighter jets engage in a high-speed dogfight over snowy mountains, resulting in a massive mid-air explosion.",
+        "best_moments": {
+          "High": {
+            "start": 3.2,
+            "end": 5.5,
+            "moment_role": "Climax",
+            "stable_moment": false,
+            "reason": "The peak of the action featuring a massive mid-air explosion and flying debris."
+          },
+          "Medium": {
+            "start": 1.0,
+            "end": 3.2,
+            "moment_role": "Build",
+            "stable_moment": true,
+            "reason": "Intense maneuvering with multiple missile trails filling the frame before the impact."
+          },
+          "Low": {
+            "start": 0.0,
+            "end": 1.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "The initial shot of jets against the clouds before the most chaotic action begins."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "8ca16f042a2199c070f8f5a29eb0b97a"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      },
+      {
+        "filename": "clip_048.mp4",
+        "filepath": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_048.mp4",
+        "duration": 23.465,
+        "energy": "High",
+        "motion": "Dynamic",
+        "intensity": 3,
+        "primary_subject": [
+          "Object-Vehicle",
+          "People-Solo"
+        ],
+        "narrative_utility": [
+          "Peak",
+          "Establishing"
+        ],
+        "emotional_tone": [
+          "Energetic",
+          "Adventurous"
+        ],
+        "clip_quality": 5,
+        "best_for": [
+          "High-energy peaks",
+          "Action montages",
+          "Iconic cinematic intros"
+        ],
+        "avoid_for": [
+          "Calm reflective outros",
+          "Intimate quiet moments"
+        ],
+        "vibes": [
+          "Vehicle",
+          "Solo"
+        ],
+        "content_description": "A fighter jet launches from an aircraft carrier at sunset followed by an intense close-up of a pilot.",
+        "best_moments": {
+          "High": {
+            "start": 1.5,
+            "end": 3.5,
+            "moment_role": "Climax",
+            "stable_moment": true,
+            "reason": "Iconic high-intensity close-up of the pilot with peak musical energy."
+          },
+          "Medium": {
+            "start": 0.0,
+            "end": 2.0,
+            "moment_role": "Establishing",
+            "stable_moment": true,
+            "reason": "Dynamic shot of a jet taking off, setting the scene with moderate action."
+          },
+          "Low": {
+            "start": 4.0,
+            "end": 7.0,
+            "moment_role": "Reflection",
+            "stable_moment": true,
+            "reason": "The fade to black provides a necessary low-energy pause after the intense opening."
+          }
+        },
+        "contract": {
+          "type": "clip",
+          "version": "7.0",
+          "source_hash": "1c517ba44e071971f6a1b7ce5246d1bf"
+        },
+        "best_moment_start": null,
+        "best_moment_end": null
+      }
+    ]
+  },
+  "edl": {
+    "decisions": [
+      {
+        "segment_id": 1,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_006.mp4",
+        "clip_start": 0.0,
+        "clip_end": 4.6,
+        "timeline_start": 0.0,
+        "timeline_end": 4.6,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Dynamic aerial shot with high energy perfectly establishes the adrenaline vibe for the intro segment.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 2,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_002.mp4",
+        "clip_start": 1.5,
+        "clip_end": 2.533333333333333,
+        "timeline_start": 4.6,
+        "timeline_end": 5.633333333333333,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Nostalgic, intimate tone establishes emotional foundation for the build-up arc stage.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 3,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_008.mp4",
+        "clip_start": 1.5,
+        "clip_end": 2.5,
+        "timeline_start": 5.633333333333333,
+        "timeline_end": 6.633333333333333,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Catapult launch provides intense action that escalates from the establishing mood while fitting the build-up arc.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 4,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_027.mp4",
+        "clip_start": 1.2,
+        "clip_end": 1.7,
+        "timeline_start": 6.633333333333333,
+        "timeline_end": 7.133333333333333,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Transition moment with silhouette to cockpit cut fits build-up stage and creates visual continuity.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 5,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_014.mp4",
+        "clip_start": 1.0,
+        "clip_end": 1.5333333333333332,
+        "timeline_start": 7.133333333333333,
+        "timeline_end": 7.666666666666667,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Jet banking maneuver maintains high energy and power vibe with fresh aerial action.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 6,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_015.mp4",
+        "clip_start": 1.5,
+        "clip_end": 2.0,
+        "timeline_start": 7.666666666666667,
+        "timeline_end": 8.166666666666666,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: High-speed craft with contrail creates visual spectacle that builds momentum for the reaction shot function.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 7,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_010.mp4",
+        "clip_start": 0.5,
+        "clip_end": 3.033333333333333,
+        "timeline_start": 8.166666666666666,
+        "timeline_end": 10.7,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Vehicle close-up introduces new subject while maintaining medium energy for build-up.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 7,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_020.mp4",
+        "clip_start": 0.0,
+        "clip_end": 0.5333333333333333,
+        "timeline_start": 10.7,
+        "timeline_end": 11.233333333333333,
+        "hold_end_seconds": null,
+        "reasoning": "🌟 Prioritizing narrative continuity by anchoring on 'People-Solo' as requested by the text intent. Acting as the primary emotional carrier for the Build-up stage. Maintains visual freshness, lighting consistency.",
+        "vibe_match": false
+      },
+      {
+        "segment_id": 8,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_039.mp4",
+        "clip_start": 0.0,
+        "clip_end": 1.0333333333333332,
+        "timeline_start": 11.233333333333333,
+        "timeline_end": 12.266666666666666,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Low-altitude desert flyover maintains high energy while introducing new desert environment for diversity.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 9,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_004.mp4",
+        "clip_start": 0.0,
+        "clip_end": 0.5,
+        "timeline_start": 12.266666666666666,
+        "timeline_end": 12.766666666666666,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Intimate, contemplative moment maintains the grief tone while providing fresh visual content.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 10,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_017.mp4",
+        "clip_start": 0.5,
+        "clip_end": 1.5333333333333332,
+        "timeline_start": 12.766666666666666,
+        "timeline_end": 13.799999999999999,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Romantic kiss offers strong emotional contrast to action-oriented clips while maintaining high energy.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 11,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_007.mp4",
+        "clip_start": 0.0,
+        "clip_end": 1.0,
+        "timeline_start": 13.799999999999999,
+        "timeline_end": 14.799999999999999,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Pilot walking to jet maintains duty vibe with adventurous tone while keeping energy appropriate for segment.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 12,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_029.mp4",
+        "clip_start": 1.0,
+        "clip_end": 1.5333333333333332,
+        "timeline_start": 14.799999999999999,
+        "timeline_end": 15.333333333333334,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Sailboat action provides water-based contrast to aircraft while maintaining adventurous energy.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 13,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_009.mp4",
+        "clip_start": 0.5,
+        "clip_end": 1.5333333333333332,
+        "timeline_start": 15.333333333333334,
+        "timeline_end": 16.366666666666667,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Garage reveal provides grounded contrast to aerial action while building narrative.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 14,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_030.mp4",
+        "clip_start": 2.0,
+        "clip_end": 3.0,
+        "timeline_start": 16.366666666666667,
+        "timeline_end": 17.366666666666667,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Intimate hug and beach celebration provide emotional release fitting the segment's 'Freedom' vibe and 'Release' function.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 15,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_011.mp4",
+        "clip_start": 5.0,
+        "clip_end": 5.5,
+        "timeline_start": 17.366666666666667,
+        "timeline_end": 17.866666666666667,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Motorcycle traveling through desert maintains purposeful action with fresh vehicle subject.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 16,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_016.mp4",
+        "clip_start": 2.5,
+        "clip_end": 3.033333333333333,
+        "timeline_start": 17.866666666666667,
+        "timeline_end": 18.4,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Dramatic runway walk with fighter jets maintains Legacy theme with different composition.",
+        "vibe_match": true
+      },
+      {
+        "segment_id": 17,
+        "clip_path": "C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_c4d540b5c05f15dc86ee75d4495a4d21\\standardized\\clip_001.mp4",
+        "clip_start": 0.0,
+        "clip_end": 2.0,
+        "timeline_start": 18.4,
+        "timeline_end": 20.4,
+        "hold_end_seconds": null,
+        "reasoning": "Advisor-selected clip: Contemplative ocean silhouette creates a peaceful, resolving visual that fits the outro energy.",
+        "vibe_match": true
+      }
+    ]
+  },
+  "advisor": {
+    "text_overlay_intent": "The text 'TOP GUN MAVERICK' demands iconic, legacy-defining moments that establish mythic status—this isn't just about aviation, it's about the legend itself, requiring shots that feel timeless, heroic, and larger-than-life.",
+    "dominant_narrative": "This video is fundamentally about the weight of legacy—how extreme skill and camaraderie forge something that outlasts any single mission.",
+    "arc_stage_guidance": {
+      "Intro": {
+        "primary_emotional_carrier": "ACTION",
+        "supporting_material": "Iconic silhouettes, golden hour lighting, and mythic establishing shots that feel like legend being born.",
+        "intent_diluting_material": "Static or overly detailed shots that explain rather than awe—this stage should feel like a statement, not an introduction.",
+        "reasoning": "The opening must establish the mythic scale immediately—this isn't just action, it's legacy in motion. The text overlay demands we start with iconic, almost archetypal imagery that feels instantly recognizable as 'Top Gun'.",
+        "recommended_clips": [
+          "clip_003.mp4",
+          "clip_005.mp4",
+          "clip_006.mp4",
+          "clip_007.mp4",
+          "clip_012.mp4",
+          "clip_013.mp4",
+          "clip_015.mp4",
+          "clip_016.mp4",
+          "clip_027.mp4",
+          "clip_036.mp4",
+          "clip_046.mp4"
+        ],
+        "required_energy": ""
+      },
+      "Build-up": {
+        "primary_emotional_carrier": "INTENSITY",
+        "supporting_material": "Close-ups of focus, mechanical precision, and the physical/emotional preparation for what's coming—this is where duty becomes tangible.",
+        "intent_diluting_material": "Pure spectacle without human connection—jets flying are just machines unless we see the people who command them.",
+        "reasoning": "This stage transforms adrenaline into purpose—we're building the human stakes behind the machinery. The intensity comes from focus, not just speed; we need to feel the weight of what these pilots carry.",
+        "recommended_clips": [
+          "clip_001.mp4",
+          "clip_008.mp4",
+          "clip_011.mp4",
+          "clip_019.mp4",
+          "clip_020.mp4",
+          "clip_022.mp4",
+          "clip_026.mp4",
+          "clip_031.mp4",
+          "clip_033.mp4",
+          "clip_035.mp4",
+          "clip_038.mp4",
+          "clip_040.mp4"
+        ],
+        "required_energy": ""
+      },
+      "Peak": {
+        "primary_emotional_carrier": "ACTION",
+        "supporting_material": "Formation flying that shows unity, environmental reactions that ground the spectacle, and brief human moments that remind us what's at stake.",
+        "intent_diluting_material": "Isolated action without context—pure dogfights feel empty unless we remember these are people, not just pixels.",
+        "reasoning": "The peak must deliver on both spectacle and meaning—this is where legacy is tested. The action should feel collective, purposeful, and earned, not just chaotic.",
+        "recommended_clips": [
+          "clip_013.mp4",
+          "clip_014.mp4",
+          "clip_021.mp4",
+          "clip_023.mp4",
+          "clip_032.mp4",
+          "clip_037.mp4",
+          "clip_039.mp4",
+          "clip_041.mp4",
+          "clip_042.mp4",
+          "clip_043.mp4",
+          "clip_044.mp4",
+          "clip_045.mp4",
+          "clip_047.mp4",
+          "clip_048.mp4"
+        ],
+        "required_energy": ""
+      },
+      "Outro": {
+        "primary_emotional_carrier": "PEACE",
+        "supporting_material": "Golden hour camaraderie, reflective moments that show the cost, and imagery that suggests continuity—the legacy lives on.",
+        "intent_diluting_material": "Abrupt endings or pure celebration without weight—this needs to feel earned, not just concluded.",
+        "reasoning": "The outro transforms triumph into legacy—this is where we see what all that action was for. The peace comes from resolution, not relaxation; we need to feel that something meaningful has been preserved.",
+        "recommended_clips": [
+          "clip_002.mp4",
+          "clip_004.mp4",
+          "clip_017.mp4",
+          "clip_018.mp4",
+          "clip_024.mp4",
+          "clip_030.mp4",
+          "clip_034.mp4"
+        ],
+        "required_energy": ""
+      }
+    },
+    "library_alignment": {
+      "strengths": [
+        "Abundant high-energy action sequences perfectly match the triumphant intent",
+        "Strong collection of solo pilot moments supports the people-focused narrative",
+        "Excellent vehicle footage provides the necessary spectacle and scale"
+      ],
+      "editorial_tradeoffs": [
+        "Must use high-energy clips for medium/low segments when vibe matches—energy classification becomes secondary to emotional resonance",
+        "Scarcity of pure camaraderie moments requires using celebration/group shots for emotional weight"
+      ],
+      "constraint_gaps": [
+        "Limited indoor/reflective moments mean the solemn duty aspect must be conveyed through outdoor/action contexts",
+        "Scarce medium-energy clips require careful pacing to avoid constant intensity fatigue"
+      ]
+    },
+    "editorial_strategy": "Prioritize human moments within action—every jet shot should connect to a person, every spectacle should serve the legacy narrative. Use golden hour as emotional punctuation, not just visual polish.",
+    "remake_strategy": "Add more intimate, dialogue-free character moments that show the cost of duty—silent exchanges between pilots, hands on controls with visible tension, and legacy objects being passed or contemplated. The Director's Cut would deepen the human stakes without slowing the momentum.",
+    "primary_narrative_subject": "People-Solo",
+    "allowed_supporting_subjects": [
+      "People-Group",
+      "Place-Nature"
+    ],
+    "subject_lock_strength": 0.9,
+    "editorial_motifs": [
+      {
+        "trigger": "Golden hour lighting",
+        "desired_continuity": "Emotional-Release",
+        "priority": "High"
+      },
+      {
+        "trigger": "Pilot eye/face close-ups",
+        "desired_continuity": "Semantic-Resonance",
+        "priority": "High"
+      },
+      {
+        "trigger": "Formation flying",
+        "desired_continuity": "Motion-Carry",
+        "priority": "Medium"
+      },
+      {
+        "trigger": "Legacy objects (photos, insignia)",
+        "desired_continuity": "Narrative-Contrast",
+        "priority": "Medium"
+      }
+    ],
+    "segment_moment_plans": {
+      "1": {
+        "segment_id": 1,
+        "moments": [],
+        "total_duration": 4.6,
+        "is_single_moment": true,
+        "chaining_reason": "Establish high-energy adventure theme with escalating visuals while introducing diverse subjects and settings for editorial variety.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_006.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Dynamic aerial shot with high energy perfectly establishes the adrenaline vibe for the intro segment.",
+            "confidence": 0.95
+          },
+          {
+            "clip_filename": "clip_021.mp4",
+            "energy_level": "Low",
+            "transition_type": "continue",
+            "reason": "Fighter jets over snowy mountains maintains adventurous tone while introducing fresh nature setting.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_029.mp4",
+            "energy_level": "Low",
+            "transition_type": "contrast",
+            "reason": "Sailboat introduces water-based adventure for visual diversity while keeping adventurous spirit.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_019.mp4",
+            "energy_level": "Low",
+            "transition_type": "contrast",
+            "reason": "Indoor training scene provides human-focused contrast to vehicle-heavy clips while maintaining dramatic tone.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_010.mp4",
+            "energy_level": "Low",
+            "transition_type": "contrast",
+            "reason": "Motorcycle close-up offers ground-level contrast to aerial shots while keeping adventurous energy.",
+            "confidence": 0.7
+          }
+        ]
+      },
+      "2": {
+        "segment_id": 2,
+        "moments": [],
+        "total_duration": 1.02,
+        "is_single_moment": true,
+        "chaining_reason": "Establish emotional foundation with nostalgic tone before escalating to vehicle action sequences.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Nostalgic, intimate tone establishes emotional foundation for the build-up arc stage.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Medium",
+            "transition_type": "escalate",
+            "reason": "Revealing the motorcycle builds anticipation while maintaining focus on detail.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_010.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Brake lights illuminating provides visual detail that continues the vehicle theme.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_027.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Football toss to cockpit transition offers visual contrast while maintaining dramatic tone.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Indoor, intimate group shot provides thematic contrast to vehicle-focused clips.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "3": {
+        "segment_id": 3,
+        "moments": [],
+        "total_duration": 1.02,
+        "is_single_moment": true,
+        "chaining_reason": "Establish high-energy action foundation with diverse vehicle and setting introductions for the build-up phase.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_008.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Catapult launch provides intense action that escalates from the establishing mood while fitting the build-up arc.",
+            "confidence": 0.9
+          },
+          {
+            "clip_filename": "clip_014.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Jet banking maneuver maintains high action energy with fresh aerial perspective for this early segment.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_015.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "High-speed craft contrail continues action vibe with different vehicle type for diversity.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_006.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Aircraft carrier cinematic shot maintains action energy while introducing naval setting.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_016.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Person walking runway provides human-scale contrast to vehicle action while keeping adventurous tone.",
+            "confidence": 0.7
+          }
+        ]
+      },
+      "4": {
+        "segment_id": 4,
+        "moments": [],
+        "total_duration": 0.51,
+        "is_single_moment": true,
+        "chaining_reason": "Establish visual storytelling foundation with varied subjects while maintaining build-up energy for the first segment.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_027.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Transition moment with silhouette to cockpit cut fits build-up stage and creates visual continuity.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Nostalgic indoor scene provides thematic contrast while maintaining medium energy for build-up.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Man revealing motorcycle creates anticipation that aligns with build-up stage and detail function.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_010.mp4",
+            "energy_level": "Medium",
+            "transition_type": "escalate",
+            "reason": "Brake lights illuminating provides visual escalation while maintaining medium energy for build-up.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Intimate group scene offers human contrast to vehicle-focused clips while fitting build-up energy.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "5": {
+        "segment_id": 5,
+        "moments": [],
+        "total_duration": 0.51,
+        "is_single_moment": true,
+        "chaining_reason": "Establish high-energy action foundation with escalating power visuals for the opening segment.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_008.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Catapult launch provides intense action that escalates energy for the build-up stage.",
+            "confidence": 0.9
+          },
+          {
+            "clip_filename": "clip_014.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Jet banking maneuver maintains high energy and power vibe with fresh aerial action.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_015.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "High-speed craft contrail continues the power theme with different visual subject.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_006.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Aircraft carrier cinematic shot maintains energy while introducing naval scale.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_016.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Runway walk provides human-scale contrast to vehicle action while keeping high energy.",
+            "confidence": 0.7
+          }
+        ]
+      },
+      "6": {
+        "segment_id": 6,
+        "moments": [],
+        "total_duration": 0.51,
+        "is_single_moment": true,
+        "chaining_reason": "Establish high-energy aviation action sequences to build momentum for the reaction-focused segment.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_008.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Catapult launch provides intense visual impact matching the segment's high energy and build-up stage.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_014.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Jet banking maneuver offers dynamic action that escalates energy while introducing aerial combat visuals.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_015.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "High-speed craft with contrail creates visual spectacle that builds momentum for the reaction shot function.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_016.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Person walking among fighter jets maintains high energy while introducing a human element to the aviation theme.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_006.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Aircraft carrier sequence provides scale and movement that continues the naval aviation narrative thread.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "7": {
+        "segment_id": 7,
+        "moments": [],
+        "total_duration": 3.07,
+        "is_single_moment": true,
+        "chaining_reason": "Establish diverse visual themes while maintaining medium energy for the build-up stage.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Nostalgic indoor scene establishes scale and intimacy for the build-up stage.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_010.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Vehicle close-up introduces new subject while maintaining medium energy for build-up.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_017.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Intimate couple moment continues emotional thread with fresh subject matter.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_036.mp4",
+            "energy_level": "Medium",
+            "transition_type": "escalate",
+            "reason": "Pilot preparation introduces travel theme while escalating toward adventure.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_029.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Sailboat provides natural scenery contrast while maintaining build-up energy.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "8": {
+        "segment_id": 8,
+        "moments": [],
+        "total_duration": 1.02,
+        "is_single_moment": true,
+        "chaining_reason": "Establish high-energy action foundation with diverse vehicle types and environments for editorial variety.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_008.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Catapult launch provides intense action peak fitting the arc stage with fresh aircraft carrier content.",
+            "confidence": 0.9
+          },
+          {
+            "clip_filename": "clip_039.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Low-altitude desert flyover maintains high energy while introducing new desert environment for diversity.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_029.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Sailboat action provides high energy with contrasting water environment and different vehicle type.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_017.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Romantic kiss offers dramatic emotional contrast while maintaining high energy for peak segment.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_036.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Pilot close-up maintains action focus with human element while being fresh and visually intense.",
+            "confidence": 0.7
+          }
+        ]
+      },
+      "9": {
+        "segment_id": 9,
+        "moments": [],
+        "total_duration": 0.51,
+        "is_single_moment": true,
+        "chaining_reason": "Continue the grief emotion with intimate, contemplative shots that serve as reaction moments at this peak stage.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Low",
+            "transition_type": "continue",
+            "reason": "Quiet nostalgia matches the grief vibe and reaction shot function for this peak emotional moment.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "Low",
+            "transition_type": "continue",
+            "reason": "Intimate, contemplative moment maintains the grief tone while providing fresh visual content.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_001.mp4",
+            "energy_level": "Low",
+            "transition_type": "continue",
+            "reason": "Contemplative silhouette against ocean creates appropriate emotional resonance for grief peak.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_005.mp4",
+            "energy_level": "Low",
+            "transition_type": "contrast",
+            "reason": "Calm establishing shot provides visual contrast while maintaining appropriate low energy for grief.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Low",
+            "transition_type": "contrast",
+            "reason": "Nostalgic garage scene offers thematic contrast while keeping energy appropriate for grief reaction.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "10": {
+        "segment_id": 10,
+        "moments": [],
+        "total_duration": 1.02,
+        "is_single_moment": true,
+        "chaining_reason": "Establish emotional depth and visual diversity early in the edit while maintaining solemn tone.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Intimate dramatic moment provides emotional contrast to expected action while fitting solemn vibe.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_017.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Romantic kiss offers strong emotional contrast to action-oriented clips while maintaining high energy.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Nostalgic motorcycle reveal continues solemn vibe with medium energy appropriate for segment.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_006.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Aircraft carrier establishing shot maintains adventurous tone while introducing new visual scale.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_012.mp4",
+            "energy_level": "Medium",
+            "transition_type": "escalate",
+            "reason": "Pilot preparing for takeoff builds action from medium to high energy for peak arc stage.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "11": {
+        "segment_id": 11,
+        "moments": [],
+        "total_duration": 1.02,
+        "is_single_moment": true,
+        "chaining_reason": "Establish the duty/naval theme with appropriate low-energy reaction shots while saving high-energy climax moments for later segments.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Low",
+            "transition_type": "contrast",
+            "reason": "Nostalgic indoor moment provides editorial breath after establishing shots and fits the 'Duty' vibe with reflection.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "Low",
+            "transition_type": "continue",
+            "reason": "Contemplative naval uniform scene continues the duty theme with intimate emotional tone for reaction shot.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_007.mp4",
+            "energy_level": "Low",
+            "transition_type": "continue",
+            "reason": "Pilot walking to jet maintains duty vibe with adventurous tone while keeping energy appropriate for segment.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_005.mp4",
+            "energy_level": "Low",
+            "transition_type": "continue",
+            "reason": "Airfield establishing shot with naval facility continues the military/duty theme with appropriate energy.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Low",
+            "transition_type": "contrast",
+            "reason": "Garage motorcycle reveal provides thematic contrast while maintaining nostalgic tone for editorial variety.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "12": {
+        "segment_id": 12,
+        "moments": [],
+        "total_duration": 0.52,
+        "is_single_moment": true,
+        "chaining_reason": "Establish high-energy action foundation with diverse vehicle subjects while maintaining thrill vibe for the peak arc stage.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_008.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Catapult launch provides intense action start for the peak segment with fresh aircraft carrier content.",
+            "confidence": 0.9
+          },
+          {
+            "clip_filename": "clip_039.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Low-altitude desert flyover maintains high thrill energy with different visual environment.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_029.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Sailboat action provides water-based contrast to aircraft while maintaining adventurous energy.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_022.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Cockpit intensity maintains dramatic action with fresh pilot perspective.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_033.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Motorcycle vs jet montage escalates with multi-vehicle action for peak segment.",
+            "confidence": 0.7
+          }
+        ]
+      },
+      "13": {
+        "segment_id": 13,
+        "moments": [],
+        "total_duration": 1.02,
+        "is_single_moment": true,
+        "chaining_reason": "Establish diverse action foundation with varied subjects and emotional tones for whole edit.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_008.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Catapult launch provides strong action start with fresh aircraft carrier setting.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_017.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Romantic kiss offers emotional contrast while maintaining high energy for peak stage.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_029.mp4",
+            "energy_level": "High",
+            "transition_type": "continue",
+            "reason": "Sailboat action continues adventurous tone with fresh water-based vehicle.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Garage reveal provides grounded contrast to aerial action while building narrative.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "High",
+            "transition_type": "contrast",
+            "reason": "Intimate dramatic moment offers emotional depth contrast to action sequences.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "14": {
+        "segment_id": 14,
+        "moments": [],
+        "total_duration": 1.02,
+        "is_single_moment": true,
+        "chaining_reason": "Establish emotional release and visual freedom while introducing diverse subjects and settings for the edit's opening.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_030.mp4",
+            "energy_level": "Medium",
+            "transition_type": "release",
+            "reason": "Intimate hug and beach celebration provide emotional release fitting the segment's 'Freedom' vibe and 'Release' function.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_006.mp4",
+            "energy_level": "High",
+            "transition_type": "escalate",
+            "reason": "Aerial carrier shot offers visual scale and adventure that escalates energy while maintaining narrative freshness.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Indoor nostalgic moment creates contrast with outdoor adventure clips while serving the 'Peak' arc stage.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_016.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Runway walk maintains dramatic adventurous tone while providing steady pacing for sparse cut density.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_020.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Pilot cockpit shot continues aviation theme with character introduction for narrative development.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "15": {
+        "segment_id": 15,
+        "moments": [],
+        "total_duration": 0.51,
+        "is_single_moment": true,
+        "chaining_reason": "Establish purposeful action with fresh subjects while maintaining adventurous tone for the outro segment.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Man revealing motorcycle creates purposeful action with nostalgic tone fitting the outro stage.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_011.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Motorcycle traveling through desert maintains purposeful action with fresh vehicle subject.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_016.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Person walking down runway provides purposeful movement with dramatic tone for outro.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_017.mp4",
+            "energy_level": "Medium",
+            "transition_type": "contrast",
+            "reason": "Couple by Porsche offers intimate contrast to action-heavy clips while maintaining vehicle theme.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_022.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Pilot in cockpit provides purposeful character moment with adventurous tone.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "16": {
+        "segment_id": 16,
+        "moments": [],
+        "total_duration": 0.51,
+        "is_single_moment": true,
+        "chaining_reason": "Establish the Legacy theme with nostalgic, intimate moments that set up the emotional core of the edit.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Nostalgic tone and intimate subject matter perfectly match the Legacy vibe and Outro stage.",
+            "confidence": 0.9
+          },
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Dramatic, intimate group shot maintains Legacy feeling while introducing new subject type.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Nostalgic reveal of vintage motorcycle fits Legacy vibe and provides fresh vehicle subject.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_016.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Dramatic runway walk with fighter jets maintains Legacy theme with different composition.",
+            "confidence": 0.7
+          },
+          {
+            "clip_filename": "clip_020.mp4",
+            "energy_level": "Medium",
+            "transition_type": "continue",
+            "reason": "Pilot cockpit shot provides character context while matching segment energy and vibe.",
+            "confidence": 0.65
+          }
+        ]
+      },
+      "17": {
+        "segment_id": 17,
+        "moments": [],
+        "total_duration": 2.017483,
+        "is_single_moment": true,
+        "chaining_reason": "Provide resolution and closure with intimate, nostalgic moments that serve as a button for the outro segment.",
+        "advisor_alternatives": [
+          {
+            "clip_filename": "clip_002.mp4",
+            "energy_level": "Low",
+            "transition_type": "release",
+            "reason": "Nostalgic, intimate moment perfectly serves the resolution vibe and button function for the outro.",
+            "confidence": 0.9
+          },
+          {
+            "clip_filename": "clip_004.mp4",
+            "energy_level": "Low",
+            "transition_type": "release",
+            "reason": "Calm, contemplative group shot provides resolution and closure fitting for the outro stage.",
+            "confidence": 0.85
+          },
+          {
+            "clip_filename": "clip_017.mp4",
+            "energy_level": "Low",
+            "transition_type": "release",
+            "reason": "Intimate, nostalgic kiss scene offers emotional resolution and serves as a strong button moment.",
+            "confidence": 0.8
+          },
+          {
+            "clip_filename": "clip_001.mp4",
+            "energy_level": "Low",
+            "transition_type": "release",
+            "reason": "Contemplative ocean silhouette creates a peaceful, resolving visual that fits the outro energy.",
+            "confidence": 0.75
+          },
+          {
+            "clip_filename": "clip_009.mp4",
+            "energy_level": "Low",
+            "transition_type": "release",
+            "reason": "Nostalgic reveal of vintage motorcycle provides a satisfying, resolved moment for the outro.",
+            "confidence": 0.7
+          }
+        ]
+      }
+    },
+    "library_assessment": null,
+    "creative_audit": null,
+    "overall_strategy": "",
+    "required_improvements": [],
+    "cache_version": "4.2",
+    "cached_at": "2026-03-06T21:55:54.315772"
+  },
+  "critique": {
+    "overall_score": 8.0,
+    "monologue": "Legacy reflector archived. See Vault report.",
+    "star_performers": [],
+    "dead_weight": [],
+    "missing_ingredients": [],
+    "remake_actions": [],
+    "technical_fidelity": "System active."
+  },
+  "library_health": {
+    "asset_count": 48,
+    "avg_quality": 4.583333333333333,
+    "energy_distribution": {
+      "High": 38,
+      "Low": 4,
+      "Medium": 6
+    },
+    "primary_subject_distribution": {
+      "People-Group": 9,
+      "Object-Vehicle": 40,
+      "People-Solo": 24,
+      "Place-Indoor": 2,
+      "Activity-Travel": 2,
+      "Place-Nature": 11,
+      "Activity-Celebration": 1
+    },
+    "confidence_score": 95.83333333333333
+  },
+  "style_config": null,
+  "iteration": 1,
+  "error": null,
+  "processing_time_seconds": 325.15597200393677,
+  "contract": {
+    "type": "result",
+    "version": "12.1",
+    "session_id": "sess_c4d540b5c05f15dc86ee75d4495a4d21",
+    "timestamp": "2026-03-07 02:58:54"
+  },
+  "vault_report": {
+    "header": "This cinematic montage aims to balance adrenaline, focus, and intensity within a 20.4-second duration, using 17 segments to convey a narrative. The goal is to optimize pacing and emotional resonance while working within the constraints of the available library.",
+    "advisor": {
+      "hero": "The library's limitations significantly impacted the edit, forcing compromises on motif choices and pacing priorities, yet the narrative coherence was maintained through strategic decisions.",
+      "body": "The lack of ideal motifs in the library necessitated the use of available alternatives, which sometimes led to a semantic mismatch but preserved the edit's momentum. The primary segments (2, 9, 11, 14) were chosen to ensure the narrative's core message remained intact, despite the library gaps."
+    },
+    "decision_stream": [
+      {
+        "segment_id": 1,
+        "what_i_tried": "I wanted to create an adrenaline-fueled opening.",
+        "decision": "Used clip_006.mp4 because no better alternative was available in the library.",
+        "what_if": "No stronger alternative existed.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 2,
+        "what_i_tried": "I aimed to focus the narrative.",
+        "decision": "Deployed clip_002.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+        "what_if": "Replacing with intensity could have altered the narrative's flow.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      },
+      {
+        "segment_id": 3,
+        "what_i_tried": "I sought to introduce action.",
+        "decision": "Selected clip_008.mp4 due to the lack of better options in the library.",
+        "what_if": "No viable upgrade was available.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 4,
+        "what_i_tried": "I wanted to amplify intensity.",
+        "decision": "Locked in clip_027.mp4 as it was the best available choice.",
+        "what_if": "No stronger intensity clip was found.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 5,
+        "what_i_tried": "I aimed to convey power.",
+        "decision": "Used clip_014.mp4 because it was the most suitable option in the library.",
+        "what_if": "No better power-themed clip was available.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 6,
+        "what_i_tried": "I sought to create an impact.",
+        "decision": "Selected clip_015.mp4 due to its availability and relevance.",
+        "what_if": "No stronger impact clip existed in the library.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 7,
+        "what_i_tried": "I wanted to show scale.",
+        "decision": "Optimized with clip_010.mp4 to maintain pacing.",
+        "what_if": "Alternative scale clips might have disrupted the pacing.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 7,
+        "what_i_tried": "I wanted to show scale.",
+        "decision": "Optimized with clip_010.mp4 to maintain pacing.",
+        "what_if": "Alternative scale clips might have disrupted the pacing.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 8,
+        "what_i_tried": "I aimed to convey speed.",
+        "decision": "Used clip_039.mp4 as it aligned with the desired speed intent.",
+        "what_if": "No faster-paced clip was available.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 9,
+        "what_i_tried": "I sought to evoke grief.",
+        "decision": "Deployed clip_004.mp4 to prioritize the pacing priority and maintain narrative coherence.",
+        "what_if": "Replacing with action could have enhanced the emotional impact.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      },
+      {
+        "segment_id": 10,
+        "what_i_tried": "I wanted to create a solemn mood.",
+        "decision": "Selected clip_017.mp4 for its solemn tone.",
+        "what_if": "No more solemn clip was available to enhance the mood.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 11,
+        "what_i_tried": "I aimed to convey duty.",
+        "decision": "Used clip_007.mp4 as a structural necessity to preserve the edit's momentum.",
+        "what_if": "Replacing with action might have increased the narrative's intensity.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      },
+      {
+        "segment_id": 12,
+        "what_i_tried": "I sought to create thrill.",
+        "decision": "Locked in clip_029.mp4 due to its relevance and availability.",
+        "what_if": "No stronger thrill clip was found in the library.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 13,
+        "what_i_tried": "I wanted to show unity.",
+        "decision": "Selected clip_009.mp4 as it was the best available choice for unity.",
+        "what_if": "No better unity-themed clip existed.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 14,
+        "what_i_tried": "I aimed to convey freedom.",
+        "decision": "Deployed clip_030.mp4 to maintain the pacing priority and narrative flow.",
+        "what_if": "Replacing with action might have enhanced the freedom theme.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      },
+      {
+        "segment_id": 15,
+        "what_i_tried": "I sought to create a sense of purpose.",
+        "decision": "Used clip_011.mp4 due to its purposeful tone and availability.",
+        "what_if": "No stronger purpose clip was available.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 16,
+        "what_i_tried": "I wanted to evoke legacy.",
+        "decision": "Selected clip_016.mp4 as it aligned with the legacy intent.",
+        "what_if": "No better legacy-themed clip was found.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      },
+      {
+        "segment_id": 17,
+        "what_i_tried": "I aimed to create resolution.",
+        "decision": "Locked in clip_001.mp4 to conclude the narrative coherently.",
+        "what_if": "No stronger resolution clip existed in the library.",
+        "is_key": false,
+        "importance": "all",
+        "tags": []
+      }
+    ],
+    "executive_summary": [
+      "The edit prioritized pacing and narrative coherence over ideal motif matches due to library gaps.",
+      "Segments 2, 9, 11, and 14 were chosen as key candidates due to their primary decision weight and medium confidence level.",
+      "The library's limitations led to compromises, particularly in segments where the desired motifs were missing or scarce.",
+      "Despite these challenges, the edit maintained its rhythmic soul and momentum.",
+      "The technical discipline focused on warm tones, syncopated pacing, and tightly synced beats to enhance the narrative's emotional impact."
+    ],
+    "key_decision_stream": [
+      {
+        "segment_id": 2,
+        "what_i_tried": "I aimed to focus the narrative.",
+        "decision": "Deployed clip_002.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+        "what_if": "Replacing with intensity could have altered the narrative's flow.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      },
+      {
+        "segment_id": 9,
+        "what_i_tried": "I sought to evoke grief.",
+        "decision": "Deployed clip_004.mp4 to prioritize the pacing priority and maintain narrative coherence.",
+        "what_if": "Replacing with action could have enhanced the emotional impact.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      },
+      {
+        "segment_id": 11,
+        "what_i_tried": "I aimed to convey duty.",
+        "decision": "Used clip_007.mp4 as a structural necessity to preserve the edit's momentum.",
+        "what_if": "Replacing with action might have increased the narrative's intensity.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      },
+      {
+        "segment_id": 14,
+        "what_i_tried": "I aimed to convey freedom.",
+        "decision": "Deployed clip_030.mp4 to maintain the pacing priority and narrative flow.",
+        "what_if": "Replacing with action might have enhanced the freedom theme.",
+        "is_key": true,
+        "importance": "key",
+        "tags": [
+          "structural_necessity"
+        ]
+      }
+    ],
+    "friction_log": [
+      "At the start, the biggest challenge was the library's lack of ideal motifs, which forced early compromises.",
+      "In the middle, pacing became a critical factor, requiring strategic decisions to maintain the edit's momentum.",
+      "Towards the end, ensuring narrative coherence and emotional resonance was the main focus, despite the library's limitations."
+    ],
+    "post_mortem": {
+      "worked": "The strategic deployment of clips as structural anchors preserved the narrative's coherence and maintained the edit's momentum.",
+      "didnt": "The lack of ideal motifs in the library led to compromises on the desired intensity and action themes in several segments.",
+      "responsibility": {
+        "vibe": "library",
+        "emotion": "library"
+      }
+    },
+    "next_steps": [
+      "Enhance the library with more diverse and intense motifs to reduce future compromises.",
+      "Develop a pre-editing phase to identify and address potential library gaps and motif shortages.",
+      "Implement a more dynamic clip selection process that adapts to the evolving narrative and pacing needs."
+    ],
+    "clip_suggestions": [
+      "Adding more action-oriented clips could enhance the narrative's intensity and emotional impact.",
+      "Including a broader range of motifs, especially for themes like freedom and legacy, could reduce the need for compromises.",
+      "Acquiring clips with a stronger focus on the desired emotions (e.g., grief, duty) could improve the edit's emotional resonance.",
+      "Substitutes for overused clips, if any, should be added to reduce repetition and increase the edit's freshness.",
+      "Clips that can serve as versatile structural anchors, applicable to multiple themes, would be highly beneficial.",
+      "Enhancing the library with clips that have a clear, recognizable narrative function (e.g., resolution, purpose) could simplify the editing process."
+    ],
+    "technical": [
+      "The warm tone and syncopated pacing contributed to the edit's engaging and dynamic feel.",
+      "The tightly synced beats played a crucial role in maintaining the narrative's momentum and emotional impact.",
+      "Future edits could benefit from exploring different technical disciplines, such as experimenting with cool tones or varying the pacing to create a unique narrative atmosphere."
+    ]
+  }
+}

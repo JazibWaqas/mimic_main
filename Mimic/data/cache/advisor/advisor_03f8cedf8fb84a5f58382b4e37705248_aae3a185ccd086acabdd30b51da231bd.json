@@ -1,0 +1,887 @@
+{
+  "text_overlay_intent": "The text 'TOP GUN MAVERICK' demands iconic, legacy-defining moments that establish mythic status—this isn't just about aviation, it's about the legend itself, requiring shots that feel timeless, heroic, and larger-than-life.",
+  "dominant_narrative": "This video is fundamentally about the weight of legacy—how extreme skill and camaraderie forge something that outlasts any single mission.",
+  "arc_stage_guidance": {
+    "Intro": {
+      "primary_emotional_carrier": "ACTION",
+      "supporting_material": "Iconic silhouettes, golden hour lighting, and mythic establishing shots that feel like legend being born.",
+      "intent_diluting_material": "Static or overly detailed shots that explain rather than awe—this stage should feel like a statement, not an introduction.",
+      "reasoning": "The opening must establish the mythic scale immediately—this isn't just action, it's legacy in motion. The text overlay demands we start with iconic, almost archetypal imagery that feels instantly recognizable as 'Top Gun'.",
+      "recommended_clips": [
+        "clip_003.mp4",
+        "clip_005.mp4",
+        "clip_006.mp4",
+        "clip_007.mp4",
+        "clip_012.mp4",
+        "clip_013.mp4",
+        "clip_015.mp4",
+        "clip_016.mp4",
+        "clip_027.mp4",
+        "clip_036.mp4",
+        "clip_046.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Build-up": {
+      "primary_emotional_carrier": "INTENSITY",
+      "supporting_material": "Close-ups of focus, mechanical precision, and the physical/emotional preparation for what's coming—this is where duty becomes tangible.",
+      "intent_diluting_material": "Pure spectacle without human connection—jets flying are just machines unless we see the people who command them.",
+      "reasoning": "This stage transforms adrenaline into purpose—we're building the human stakes behind the machinery. The intensity comes from focus, not just speed; we need to feel the weight of what these pilots carry.",
+      "recommended_clips": [
+        "clip_001.mp4",
+        "clip_008.mp4",
+        "clip_011.mp4",
+        "clip_019.mp4",
+        "clip_020.mp4",
+        "clip_022.mp4",
+        "clip_026.mp4",
+        "clip_031.mp4",
+        "clip_033.mp4",
+        "clip_035.mp4",
+        "clip_038.mp4",
+        "clip_040.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Peak": {
+      "primary_emotional_carrier": "ACTION",
+      "supporting_material": "Formation flying that shows unity, environmental reactions that ground the spectacle, and brief human moments that remind us what's at stake.",
+      "intent_diluting_material": "Isolated action without context—pure dogfights feel empty unless we remember these are people, not just pixels.",
+      "reasoning": "The peak must deliver on both spectacle and meaning—this is where legacy is tested. The action should feel collective, purposeful, and earned, not just chaotic.",
+      "recommended_clips": [
+        "clip_013.mp4",
+        "clip_014.mp4",
+        "clip_021.mp4",
+        "clip_023.mp4",
+        "clip_032.mp4",
+        "clip_037.mp4",
+        "clip_039.mp4",
+        "clip_041.mp4",
+        "clip_042.mp4",
+        "clip_043.mp4",
+        "clip_044.mp4",
+        "clip_045.mp4",
+        "clip_047.mp4",
+        "clip_048.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Outro": {
+      "primary_emotional_carrier": "PEACE",
+      "supporting_material": "Golden hour camaraderie, reflective moments that show the cost, and imagery that suggests continuity—the legacy lives on.",
+      "intent_diluting_material": "Abrupt endings or pure celebration without weight—this needs to feel earned, not just concluded.",
+      "reasoning": "The outro transforms triumph into legacy—this is where we see what all that action was for. The peace comes from resolution, not relaxation; we need to feel that something meaningful has been preserved.",
+      "recommended_clips": [
+        "clip_002.mp4",
+        "clip_004.mp4",
+        "clip_017.mp4",
+        "clip_018.mp4",
+        "clip_024.mp4",
+        "clip_030.mp4",
+        "clip_034.mp4"
+      ],
+      "required_energy": ""
+    }
+  },
+  "library_alignment": {
+    "strengths": [
+      "Abundant high-energy action sequences perfectly match the triumphant intent",
+      "Strong collection of solo pilot moments supports the people-focused narrative",
+      "Excellent vehicle footage provides the necessary spectacle and scale"
+    ],
+    "editorial_tradeoffs": [
+      "Must use high-energy clips for medium/low segments when vibe matches—energy classification becomes secondary to emotional resonance",
+      "Scarcity of pure camaraderie moments requires using celebration/group shots for emotional weight"
+    ],
+    "constraint_gaps": [
+      "Limited indoor/reflective moments mean the solemn duty aspect must be conveyed through outdoor/action contexts",
+      "Scarce medium-energy clips require careful pacing to avoid constant intensity fatigue"
+    ]
+  },
+  "editorial_strategy": "Prioritize human moments within action—every jet shot should connect to a person, every spectacle should serve the legacy narrative. Use golden hour as emotional punctuation, not just visual polish.",
+  "remake_strategy": "Add more intimate, dialogue-free character moments that show the cost of duty—silent exchanges between pilots, hands on controls with visible tension, and legacy objects being passed or contemplated. The Director's Cut would deepen the human stakes without slowing the momentum.",
+  "primary_narrative_subject": "People-Solo",
+  "allowed_supporting_subjects": [
+    "People-Group",
+    "Place-Nature"
+  ],
+  "subject_lock_strength": 0.9,
+  "editorial_motifs": [
+    {
+      "trigger": "Golden hour lighting",
+      "desired_continuity": "Emotional-Release",
+      "priority": "High"
+    },
+    {
+      "trigger": "Pilot eye/face close-ups",
+      "desired_continuity": "Semantic-Resonance",
+      "priority": "High"
+    },
+    {
+      "trigger": "Formation flying",
+      "desired_continuity": "Motion-Carry",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Legacy objects (photos, insignia)",
+      "desired_continuity": "Narrative-Contrast",
+      "priority": "Medium"
+    }
+  ],
+  "segment_moment_plans": {
+    "1": {
+      "segment_id": 1,
+      "moments": [],
+      "total_duration": 4.6,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy adventure theme with escalating visuals while introducing diverse subjects and settings for editorial variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_006.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Dynamic aerial shot with high energy perfectly establishes the adrenaline vibe for the intro segment.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip_021.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Fighter jets over snowy mountains maintains adventurous tone while introducing fresh nature setting.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_029.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Sailboat introduces water-based adventure for visual diversity while keeping adventurous spirit.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_019.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Indoor training scene provides human-focused contrast to vehicle-heavy clips while maintaining dramatic tone.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_010.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Motorcycle close-up offers ground-level contrast to aerial shots while keeping adventurous energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "2": {
+      "segment_id": 2,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish emotional foundation with nostalgic tone before escalating to vehicle action sequences.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Nostalgic, intimate tone establishes emotional foundation for the build-up arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Revealing the motorcycle builds anticipation while maintaining focus on detail.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_010.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Brake lights illuminating provides visual detail that continues the vehicle theme.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_027.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Football toss to cockpit transition offers visual contrast while maintaining dramatic tone.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor, intimate group shot provides thematic contrast to vehicle-focused clips.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "3": {
+      "segment_id": 3,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with diverse vehicle and setting introductions for the build-up phase.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_008.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Catapult launch provides intense action that escalates from the establishing mood while fitting the build-up arc.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip_014.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Jet banking maneuver maintains high action energy with fresh aerial perspective for this early segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_015.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed craft contrail continues action vibe with different vehicle type for diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_006.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aircraft carrier cinematic shot maintains action energy while introducing naval setting.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_016.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Person walking runway provides human-scale contrast to vehicle action while keeping adventurous tone.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "4": {
+      "segment_id": 4,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish visual storytelling foundation with varied subjects while maintaining build-up energy for the first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_027.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Transition moment with silhouette to cockpit cut fits build-up stage and creates visual continuity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Nostalgic indoor scene provides thematic contrast while maintaining medium energy for build-up.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Man revealing motorcycle creates anticipation that aligns with build-up stage and detail function.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_010.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Brake lights illuminating provides visual escalation while maintaining medium energy for build-up.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Intimate group scene offers human contrast to vehicle-focused clips while fitting build-up energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "5": {
+      "segment_id": 5,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with escalating power visuals for the opening segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_008.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Catapult launch provides intense action that escalates energy for the build-up stage.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip_014.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Jet banking maneuver maintains high energy and power vibe with fresh aerial action.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_015.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed craft contrail continues the power theme with different visual subject.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_006.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aircraft carrier cinematic shot maintains energy while introducing naval scale.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_016.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Runway walk provides human-scale contrast to vehicle action while keeping high energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "6": {
+      "segment_id": 6,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy aviation action sequences to build momentum for the reaction-focused segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_008.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Catapult launch provides intense visual impact matching the segment's high energy and build-up stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_014.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Jet banking maneuver offers dynamic action that escalates energy while introducing aerial combat visuals.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_015.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed craft with contrail creates visual spectacle that builds momentum for the reaction shot function.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_016.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Person walking among fighter jets maintains high energy while introducing a human element to the aviation theme.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_006.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aircraft carrier sequence provides scale and movement that continues the naval aviation narrative thread.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "7": {
+      "segment_id": 7,
+      "moments": [],
+      "total_duration": 3.07,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse visual themes while maintaining medium energy for the build-up stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Nostalgic indoor scene establishes scale and intimacy for the build-up stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_010.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Vehicle close-up introduces new subject while maintaining medium energy for build-up.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_017.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Intimate couple moment continues emotional thread with fresh subject matter.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_036.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Pilot preparation introduces travel theme while escalating toward adventure.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_029.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Sailboat provides natural scenery contrast while maintaining build-up energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "8": {
+      "segment_id": 8,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with diverse vehicle types and environments for editorial variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_008.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Catapult launch provides intense action peak fitting the arc stage with fresh aircraft carrier content.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip_039.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Low-altitude desert flyover maintains high energy while introducing new desert environment for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_029.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Sailboat action provides high energy with contrasting water environment and different vehicle type.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_017.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Romantic kiss offers dramatic emotional contrast while maintaining high energy for peak segment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_036.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Pilot close-up maintains action focus with human element while being fresh and visually intense.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "9": {
+      "segment_id": 9,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Continue the grief emotion with intimate, contemplative shots that serve as reaction moments at this peak stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Quiet nostalgia matches the grief vibe and reaction shot function for this peak emotional moment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Intimate, contemplative moment maintains the grief tone while providing fresh visual content.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_001.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative silhouette against ocean creates appropriate emotional resonance for grief peak.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_005.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Calm establishing shot provides visual contrast while maintaining appropriate low energy for grief.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Nostalgic garage scene offers thematic contrast while keeping energy appropriate for grief reaction.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "10": {
+      "segment_id": 10,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish emotional depth and visual diversity early in the edit while maintaining solemn tone.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dramatic moment provides emotional contrast to expected action while fitting solemn vibe.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_017.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Romantic kiss offers strong emotional contrast to action-oriented clips while maintaining high energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Nostalgic motorcycle reveal continues solemn vibe with medium energy appropriate for segment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_006.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aircraft carrier establishing shot maintains adventurous tone while introducing new visual scale.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_012.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Pilot preparing for takeoff builds action from medium to high energy for peak arc stage.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "11": {
+      "segment_id": 11,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the duty/naval theme with appropriate low-energy reaction shots while saving high-energy climax moments for later segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Nostalgic indoor moment provides editorial breath after establishing shots and fits the 'Duty' vibe with reflection.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative naval uniform scene continues the duty theme with intimate emotional tone for reaction shot.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_007.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Pilot walking to jet maintains duty vibe with adventurous tone while keeping energy appropriate for segment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_005.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Airfield establishing shot with naval facility continues the military/duty theme with appropriate energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Garage motorcycle reveal provides thematic contrast while maintaining nostalgic tone for editorial variety.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "12": {
+      "segment_id": 12,
+      "moments": [],
+      "total_duration": 0.52,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with diverse vehicle subjects while maintaining thrill vibe for the peak arc stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_008.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Catapult launch provides intense action start for the peak segment with fresh aircraft carrier content.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip_039.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Low-altitude desert flyover maintains high thrill energy with different visual environment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_029.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Sailboat action provides water-based contrast to aircraft while maintaining adventurous energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_022.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Cockpit intensity maintains dramatic action with fresh pilot perspective.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_033.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Motorcycle vs jet montage escalates with multi-vehicle action for peak segment.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "13": {
+      "segment_id": 13,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish diverse action foundation with varied subjects and emotional tones for whole edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_008.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Catapult launch provides strong action start with fresh aircraft carrier setting.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_017.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Romantic kiss offers emotional contrast while maintaining high energy for peak stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_029.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Sailboat action continues adventurous tone with fresh water-based vehicle.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Garage reveal provides grounded contrast to aerial action while building narrative.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dramatic moment offers emotional depth contrast to action sequences.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "14": {
+      "segment_id": 14,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish emotional release and visual freedom while introducing diverse subjects and settings for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_030.mp4",
+          "energy_level": "Medium",
+          "transition_type": "release",
+          "reason": "Intimate hug and beach celebration provide emotional release fitting the segment's 'Freedom' vibe and 'Release' function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_006.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial carrier shot offers visual scale and adventure that escalates energy while maintaining narrative freshness.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor nostalgic moment creates contrast with outdoor adventure clips while serving the 'Peak' arc stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_016.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Runway walk maintains dramatic adventurous tone while providing steady pacing for sparse cut density.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_020.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Pilot cockpit shot continues aviation theme with character introduction for narrative development.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "15": {
+      "segment_id": 15,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish purposeful action with fresh subjects while maintaining adventurous tone for the outro segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Man revealing motorcycle creates purposeful action with nostalgic tone fitting the outro stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_011.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Motorcycle traveling through desert maintains purposeful action with fresh vehicle subject.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_016.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Person walking down runway provides purposeful movement with dramatic tone for outro.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_017.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Couple by Porsche offers intimate contrast to action-heavy clips while maintaining vehicle theme.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_022.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Pilot in cockpit provides purposeful character moment with adventurous tone.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "16": {
+      "segment_id": 16,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the Legacy theme with nostalgic, intimate moments that set up the emotional core of the edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Nostalgic tone and intimate subject matter perfectly match the Legacy vibe and Outro stage.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Dramatic, intimate group shot maintains Legacy feeling while introducing new subject type.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Nostalgic reveal of vintage motorcycle fits Legacy vibe and provides fresh vehicle subject.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_016.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Dramatic runway walk with fighter jets maintains Legacy theme with different composition.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip_020.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Pilot cockpit shot provides character context while matching segment energy and vibe.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "17": {
+      "segment_id": 17,
+      "moments": [],
+      "total_duration": 2.017483,
+      "is_single_moment": true,
+      "chaining_reason": "Provide resolution and closure with intimate, nostalgic moments that serve as a button for the outro segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip_002.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Nostalgic, intimate moment perfectly serves the resolution vibe and button function for the outro.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip_004.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Calm, contemplative group shot provides resolution and closure fitting for the outro stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip_017.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Intimate, nostalgic kiss scene offers emotional resolution and serves as a strong button moment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip_001.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Contemplative ocean silhouette creates a peaceful, resolving visual that fits the outro energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip_009.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Nostalgic reveal of vintage motorcycle provides a satisfying, resolved moment for the outro.",
+          "confidence": 0.7
+        }
+      ]
+    }
+  },
+  "library_assessment": null,
+  "creative_audit": null,
+  "overall_strategy": "",
+  "required_improvements": [],
+  "cache_version": "4.2",
+  "cached_at": "2026-03-06T21:55:54.315772"
+}
