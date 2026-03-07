@@ -85,6 +85,30 @@ type IntelligenceViewModel = {
 
 type AssetWithPath = { path?: string; filepath?: string; url?: string };
 
+const VAULT_VISUAL_STORAGE_KEY = "mimic_vault_visual_styles";
+
+function loadVaultVisualStore(): Map<string, TextStyle> {
+    if (typeof window === "undefined") return new Map();
+    try {
+        const raw = localStorage.getItem(VAULT_VISUAL_STORAGE_KEY);
+        if (!raw) return new Map();
+        const obj = JSON.parse(raw) as Record<string, TextStyle>;
+        return new Map(Object.entries(obj));
+    } catch {
+        return new Map();
+    }
+}
+
+function saveVaultVisualStore(store: Map<string, TextStyle>) {
+    if (typeof window === "undefined") return;
+    try {
+        const obj = Object.fromEntries(store);
+        localStorage.setItem(VAULT_VISUAL_STORAGE_KEY, JSON.stringify(obj));
+    } catch {
+        // ignore
+    }
+}
+
 export default function VaultPage() {
     const searchParams = useSearchParams();
 
@@ -129,6 +153,11 @@ export default function VaultPage() {
     const [vaultCaptionSizeDraft, setVaultCaptionSizeDraft] = useState<number>(22);
 
     const vaultTextStoreRef = useRef(new Map<string, TextStyle>());
+
+    useEffect(() => {
+        const loaded = loadVaultVisualStore();
+        loaded.forEach((val, key) => vaultTextStoreRef.current.set(key, val));
+    }, []);
 
     const videoRef = useRef<HTMLVideoElement>(null);
     const decisionListRef = useRef<HTMLDivElement>(null);
@@ -250,7 +279,7 @@ export default function VaultPage() {
         return `${API_BASE}${fullPath}?v=${Date.now()}`;
     }, [selectedItem]);
 
-    const selectedKey = selectedItem?.filename || "";
+    const selectedKey = selectedItem?.filename ? `${viewMode}:${selectedItem.filename}` : "";
     const blueprintOverlay = (intelligence as any)?.blueprint?.text_overlay || "";
     const blueprintSource = (intelligence as any)?.blueprint?.contract?.source || "";
     const isPromptModeResult = Boolean((intelligence as any)?.blueprint?.text_prompt) || blueprintSource === "text_prompt";
@@ -986,6 +1015,7 @@ export default function VaultPage() {
                     try {
                         if (selectedKey) {
                             vaultTextStoreRef.current.set(selectedKey, payload);
+                            saveVaultVisualStore(vaultTextStoreRef.current);
                         }
                         setVaultCaptionPreview(payload.caption);
                         setVaultCaptionPosition(payload.position);
