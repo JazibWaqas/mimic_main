@@ -1,0 +1,170 @@
+================================================================================
+PIPELINE RUN: TEXT_PROMPT
+================================================================================
+Session ID: text_music_80b207b048f62412fe4db08eaa13ef40
+Reference: None (Creator Mode)
+Clips: 24
+Timestamp: 2026-03-07 20:12:48
+
+[PROGRESS] Step 1/5: Validating inputs...
+
+[1/5] Validating inputs...
+[WS] Connection attempt for session: text_music_80b207b048f62412fe4db08eaa13ef40
+[WS] Origin: http://localhost:3000
+[WS] Connection accepted for session: text_music_80b207b048f62412fe4db08eaa13ef40
+[WS] Session found: text_music_80b207b048f62412fe4db08eaa13ef40
+[PROGRESS] Step 2/5: Synthesizing Blueprint from text prompt...
+
+[2/5] Synthesizing Blueprint from text prompt...
+  [MUSIC] Analyzing audio source: Meri kahani.mp4
+  [MUSIC] Detected duration: 31.87s. Overriding target_duration.
+  [FIX] Patched scipy.signal.hann for librosa compatibility.
+  [MUSIC] Analyzing: music_analysis.wav...
+  [OK] BPM: 143.55
+  [OK] Found 99 musical onsets
+  [OK] Energy curve: 31s, peak at 27s
+  [MUSIC] Detected BPM: 143.55
+
+  [LIBRARY SCAN] Pre-analyzing 24 clips before blueprint synthesis...
+
+============================================================
+[BRAIN] PARALLEL ANALYSIS: 24 clips
+[BRAIN] Model: gemini-3-flash-preview
+============================================================
+
+[API KEY MANAGER] Loaded 36 API key(s)
+[API KEY MANAGER] Key rotation system active.[API KEY MANAGER] Loaded 36 API key(s)[API KEY MANAGER] Loaded 36 API key(s)
+[API KEY MANAGER] Loaded 36 API key(s)[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+
+  Analyzing comprehensively: clip79.mp4...
+[API KEY MANAGER] Key rotation system active.[API KEY MANAGER] Key rotation system active.[API KEY MANAGER] Key rotation system active.
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip83.mp4...  Analyzing comprehensively: clip80.mp4...[OK] Using Gemini 3 model: gemini-3-flash-preview  Analyzing comprehensively: clip84.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+  Analyzing comprehensively: clip85.mp4...    [CACHE] Subject: People-Group, Activity-Leisure[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+  Analyzing comprehensively: clip81.mp4...    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip87.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments  Analyzing comprehensively: clip82.mp4...
+
+    [CACHE] Subject: People-Group, Place-Indoor
+
+
+
+    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+  Analyzing comprehensively: clip88.mp4...  Analyzing comprehensively: clip86.mp4...    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Derived vibes: Group, Indoor
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Activity-Leisure
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Subject: People-Group, Activity-Celebration    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+
+    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Derived vibes: Group, Leisure
+    [CACHE] Derived vibes: Group, Leisure    [CACHE] Subject: People-Group, Place-Indoor    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Derived vibes: Group, Celebration
+
+
+    [CACHE] Derived vibes: Group, Leisure
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+
+
+
+    [CACHE] Derived vibes: Group, Indoor    [CACHE] Derived vibes: Group, Leisure    [CACHE] Derived vibes: Group, Leisure
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip89.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip91.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip95.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Subject: People-Solo, Activity-Leisure
+  Analyzing comprehensively: clip93.mp4...
+
+
+    [CACHE] Subject: People-Group, Activity-Celebration  Analyzing comprehensively: clip96.mp4...
+
+  Analyzing comprehensively: clip94.mp4...    [CACHE] Subject: People-Group
+
+
+
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Derived vibes: Solo, Leisure    [CACHE] Derived vibes: Group, Celebration
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Derived vibes: Group    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Subject: People-Solo, Place-Indoor
+
+
+
+
+
+
+    [CACHE] Subject: People-Solo, Place-Indoor[OK] Using Gemini 3 model: gemini-3-flash-preview  Analyzing comprehensively: clip97.mp4...    [CACHE] Subject: People-Group, Activity-Leisure    [CACHE] Derived vibes: Solo, Indoor  Analyzing comprehensively: clip92 (2).mp4...
+
+
+
+    [CACHE] Derived vibes: Solo, Indoor
+
+    [CACHE] Derived vibes: Group, Leisure
+
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+  Analyzing comprehensively: clip99.mp4...    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Derived vibes: Group, Leisure
+
+    [CACHE] Derived vibes: Solo, Indoor    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview  Analyzing comprehensively: clip98.mp4...
+
+    [CACHE] Subject: People-Group, Activity-Celebration
+    [CACHE] Derived vibes: Group, Celebration  Analyzing comprehensively: clip100.mp4...
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+    [CACHE] Subject: People-Solo, Place-Indoor    [CACHE] Subject: People-Group, Place-Indoor  Analyzing comprehensively: clip101.mp4...
+
+
+    [CACHE] Derived vibes: Solo, Indoor    [CACHE] Derived vibes: Group, Indoor
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Solo
+    [CACHE] Derived vibes: Solo
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview  Analyzing comprehensively: clip102.mp4...
+
+  Analyzing comprehensively: clip103.mp4...    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+    [CACHE] Subject: People-Solo, Place-Indoor
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Derived vibes: Solo, Indoor
+
+    [CACHE] Subject: People-Group, Activity-Leisure
+    [CACHE] Derived vibes: Group, Leisure
+
+[OK] All 24 clips analyzed in parallel
+  [LIBRARY SCAN] Done. Dominant vibes: ['group', 'leisure', 'indoor', 'solo'] | Subjects: ['people-group', 'activity-leisure', 'place-indoor']
+
+[GENERATOR] Synthesizing Blueprint from prompt: 'Make a joyful childhood memory video that feels li...'
+  🎵 Music-aware mode: 143.6 BPM
+  [GENERATOR] Calling DeepSeek V3 for creative blueprint synthesis (attempt 1)...
+  🧠 Calling DeepSeek (Chat V3) with Context Caching...

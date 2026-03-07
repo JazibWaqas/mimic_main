@@ -1,0 +1,117 @@
+{
+  "arc_summary": "A vibrant childhood memory montage that pulses with musical energy, cycling through diverse indoor group moments with snappy, beat-driven cuts. The edit builds from joyful group interactions through leisure activities to a celebratory peak, then resolves with a warm solo reflection that lands the text overlay's nostalgic sentiment.",
+  "cuts": [
+    {
+      "clip_filename": "clip83.mp4",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "music_position": 0.0,
+      "purpose": "Strong opening with group celebration clapping - immediate energy hit",
+      "arc_stage": "Intro"
+    },
+    {
+      "clip_filename": "clip80.mp4",
+      "clip_start": 10.2,
+      "clip_end": 13.0,
+      "music_position": 3.0,
+      "purpose": "Chaotic indoor group laughter - maintains high energy",
+      "arc_stage": "Intro"
+    },
+    {
+      "clip_filename": "clip81.mp4",
+      "clip_start": 6.2,
+      "clip_end": 8.5,
+      "music_position": 5.800000000000001,
+      "purpose": "Peak laughter and expressive joy - quick emotional hit",
+      "arc_stage": "Intro"
+    },
+    {
+      "clip_filename": "clip79.mp4",
+      "clip_start": 96.5,
+      "clip_end": 99.0,
+      "music_position": 8.100000000000001,
+      "purpose": "Tickling game climax - physical play energy",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip84.mp4",
+      "clip_start": 8.5,
+      "clip_end": 11.0,
+      "music_position": 10.600000000000001,
+      "purpose": "Child shouting with arm movements - expressive leisure activity",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip85.mp4",
+      "clip_start": 38.2,
+      "clip_end": 40.8,
+      "music_position": 13.100000000000001,
+      "purpose": "Peak laughter facial expressions - indoor group moment",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip86.mp4",
+      "clip_start": 14.5,
+      "clip_end": 17.0,
+      "music_position": 15.699999999999996,
+      "purpose": "Trampoline fall and jump - physical leisure energy",
+      "arc_stage": "Build-up"
+    },
+    {
+      "clip_filename": "clip87.mp4",
+      "clip_start": 18.2,
+      "clip_end": 21.0,
+      "music_position": 18.199999999999996,
+      "purpose": "Fast rotation with joy - group leisure activity",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip88.mp4",
+      "clip_start": 280.34,
+      "clip_end": 280.44,
+      "music_position": 20.999999999999996,
+      "purpose": "Children falling together - indoor group climax",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip89.mp4",
+      "clip_start": 23.2,
+      "clip_end": 25.8,
+      "music_position": 21.10000000000002,
+      "purpose": "Bow and applause - celebration energy",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip92 (2).mp4",
+      "clip_start": 0.0,
+      "clip_end": 2.5,
+      "music_position": 23.70000000000002,
+      "purpose": "Motorcycle push and steer - leisure activity at loudest peak",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip94.mp4",
+      "clip_start": 50.5,
+      "clip_end": 53.0,
+      "music_position": 26.20000000000002,
+      "purpose": "Child being lifted - peak physical joy",
+      "arc_stage": "Peak"
+    },
+    {
+      "clip_filename": "clip95.mp4",
+      "clip_start": 4.5,
+      "clip_end": 7.0,
+      "music_position": 28.70000000000002,
+      "purpose": "Hug and laughter - warm group interaction to transition",
+      "arc_stage": "Outro"
+    },
+    {
+      "clip_filename": "clip97.mp4",
+      "clip_start": 76.0,
+      "clip_end": 78.5,
+      "music_position": 31.20000000000002,
+      "purpose": "Boy jumping on chair - solo indoor warmth that lingers",
+      "arc_stage": "Outro"
+    }
+  ]
+}

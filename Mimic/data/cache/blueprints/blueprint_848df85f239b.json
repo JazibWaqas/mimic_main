@@ -1,0 +1,156 @@
+{
+  "total_duration": 31.872018,
+  "editing_style": "Beat-driven, high-variety, nostalgic musical montage",
+  "emotional_intent": "Evoke joyful childhood memories through rhythmic editing that feels alive and celebratory",
+  "plan_summary": "A 31.8-second musical journey through childhood memories with variable pacing (1-1.5s shots, occasional 3s holds), beat-synced cuts, high clip variety, and an emotional arc that builds energy to a peak at 27s before landing on a warm final moment.",
+  "style_config": {
+    "text": {
+      "font": "Inter",
+      "weight": 600,
+      "color": "#FFFFFF",
+      "shadow": true,
+      "position": "bottom",
+      "animation": "fade"
+    },
+    "color": {
+      "preset": "warm"
+    },
+    "texture": {
+      "grain": false
+    }
+  },
+  "arc_description": "Starts with energetic group moments, builds through leisure activities and celebrations, peaks with the loudest musical moment at 27s, then resolves with a warm solo moment that lingers briefly.",
+  "text_overlay": "Oh, to be this young again.",
+  "text_style": {
+    "font_style": "Sans-serif",
+    "animation": "Fade",
+    "placement": "Bottom-third",
+    "color_effects": "White with warm glow"
+  },
+  "color_grading": {
+    "tone": "Warm",
+    "contrast": "Medium",
+    "specific_look": "Modern Clean with nostalgic warmth"
+  },
+  "visual_effects": [],
+  "narrative_message": "A celebration of childhood joy through shared moments, activities, and personal memories",
+  "intent_clarity": "Clear",
+  "assumed_material": [
+    "group gatherings",
+    "leisure activities",
+    "indoor scenes",
+    "solo moments",
+    "celebrations"
+  ],
+  "must_have_content": [
+    "group interactions",
+    "leisure activities",
+    "indoor settings"
+  ],
+  "should_have_content": [
+    "solo moments",
+    "celebration scenes"
+  ],
+  "avoid_content": [
+    "outdoor landscapes",
+    "intimate close-ups",
+    "action sequences"
+  ],
+  "pacing_feel": "Rhythmic, intentional, never draggy",
+  "visual_balance": "People-centric with indoor settings",
+  "peak_density": "Moderate",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.9680045,
+      "duration": 7.9680045,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "joy, group, celebration",
+      "reasoning": "Start with high energy to match the strong musical opening (0.78/1.0) and establish the lively, musical tone requested by the user.",
+      "arc_stage": "Intro",
+      "shot_scale": "Medium",
+      "shot_function": "Establish",
+      "expected_hold": "Short",
+      "cut_origin": "beat",
+      "cde": "Dense",
+      "emotional_guidance": "Immediate immersion in joyful group memories"
+    },
+    {
+      "id": 2,
+      "start": 7.9680045,
+      "end": 15.936009,
+      "duration": 7.9680045,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "leisure, indoor, activity",
+      "reasoning": "Continue the high energy (0.80/1.0 music) while transitioning to leisure activities, maintaining the snappy pacing with 1-1.5s shots.",
+      "arc_stage": "Build-up",
+      "shot_scale": "Medium",
+      "shot_function": "Action",
+      "expected_hold": "Short",
+      "cut_origin": "beat",
+      "cde": "Dense",
+      "emotional_guidance": "Energetic exploration of childhood activities and play"
+    },
+    {
+      "id": 3,
+      "start": 15.936009,
+      "end": 23.9040135,
+      "duration": 7.9680045,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "celebration, group, joy",
+      "reasoning": "Build toward the musical peak with celebration moments, using the strongest music energy (0.87/1.0) to drive emotional intensity.",
+      "arc_stage": "Peak",
+      "shot_scale": "Close",
+      "shot_function": "Reaction",
+      "expected_hold": "Normal",
+      "cut_origin": "beat",
+      "cde": "Moderate",
+      "emotional_guidance": "Climactic celebration of shared joy and connection"
+    },
+    {
+      "id": 4,
+      "start": 23.9040135,
+      "end": 27.872018,
+      "duration": 3.9680045,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "celebration, peak, energy",
+      "reasoning": "Hit the loudest musical moment at 27s with the most impactful celebration clips, using slightly longer holds (up to 3s) for moments that really land.",
+      "arc_stage": "Peak",
+      "shot_scale": "Medium",
+      "shot_function": "Action",
+      "expected_hold": "Normal",
+      "cut_origin": "beat",
+      "cde": "Moderate",
+      "emotional_guidance": "Emotional climax of childhood exuberance"
+    },
+    {
+      "id": 5,
+      "start": 27.872018,
+      "end": 31.872018,
+      "duration": 4.0,
+      "energy": "Medium",
+      "motion": "Static",
+      "vibe": "solo, warmth, reflection",
+      "reasoning": "Resolve the energy with one short warm moment that lingers, providing emotional closure while maintaining the requested pacing (short hold, not slow).",
+      "arc_stage": "Outro",
+      "shot_scale": "Close",
+      "shot_function": "Release",
+      "expected_hold": "Normal",
+      "cut_origin": "visual",
+      "cde": "Sparse",
+      "emotional_guidance": "Gentle reflection on personal childhood memories"
+    }
+  ],
+  "text_prompt": "Make a childhood memory video that feels alive and musical. Pacing should be variable \u2014 quick cuts and short holds, never slow or draggy. Most shots should be 1 to 1.5 seconds so we cycle through the whole library and see lots of different moments; occasionally a shot can breathe up to 3 seconds if it really lands, but nothing longer. Cuts should hit the beat and feel intentional, not random. Use as many different clips as possible \u2014 the edit should feel like a full pass through the material, not the same few clips on repeat. Keep energy up from the start, peak with the music, then end on one short warm moment that lingers. Overall: snappy, beat-driven, high variety, no long holds.\n\nText overlay: \u201cOh, to be this young again.\u201d",
+  "contract": {
+    "type": "blueprint",
+    "version": "12.1",
+    "source": "text_prompt_gemini",
+    "timestamp": "2026-03-07 18:27:52"
+  }
+}

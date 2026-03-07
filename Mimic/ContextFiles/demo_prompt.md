@@ -1,13 +1,8 @@
 Prompt 1:
-A joyful childhood memory — playful, chaotic, and full of innocent happiness.
-
-Favourite clips — must use: clip101 and clip102. These are my best moments; feature them clearly. Use the rest of the library for variety — draw from as many different clips as possible so the edit feels like a full sweep of memories, not the same few repeated.
-
-Jump straight into the memories and move through lots of different joyful moments — laughter, silly chaos, kids just enjoying life. It should feel like flipping quickly through a flood of happy childhood memories. Use fast cuts in the middle — around 1 to 1.5 seconds per shot in the peak so it actually feels like a rapid montage. Only the very end can slow down and linger.
-
-Keep the pacing lively and energetic from the beginning so many different moments appear, but each moment should still be clear and readable.
-
-End on a warm wholesome moment that lingers.
+Make a joyful childhood memory video that feels lively, playful, and full of life. Start immediately with fun, energetic moments — kids playing, laughing,
+running around, and enjoying themselves. There should be no slow intro; the edit should feel alive from the very first shot.Move through many different happy moments so it feels like flipping through a flood of childhood memories. Cuts should be quick enough to show lots of clips, but not so fast that moments become hard to see. Each shot should stay long enough for the action and joy to be clearly
+visible. Prioritize moments that show movement, laughter, playfulness, and interaction between people — the kinds of moments that capture the fun and innocence of childhood. Let the music guide the rhythm of the edit as it builds. Keep the
+energy high throughout, then end on a warm, wholesome moment that lingers and leaves the viewer smiling.
 
 Text overlay: “Oh, to be this young again.”
 

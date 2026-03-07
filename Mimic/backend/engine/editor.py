@@ -1835,18 +1835,34 @@ def match_clips_to_blueprint(
             
             if selected_clip.best_moments:
                 if mode == "PROMPT":
-                    # PROMPT MODE: Pick the LONGEST available moment window, not energy-matched.
-                    # In PROMPT mode, energy labels are unreliable (all clips tend to be High).
-                    # Longest window = most compositional freedom for the editor.
+                    # PROMPT MODE: Prefer segment-energy-matched moment so we get the right
+                    # content (e.g. celebration action not a passive wave). Fall back to
+                    # longest window only when no match or that interval was already used.
                     all_windows = [
                         (k, v.start, v.end)
                         for k, v in selected_clip.best_moments.items()
                         if hasattr(v, 'start') and hasattr(v, 'end') and v.end > v.start
                     ]
                     if all_windows:
-                        # Sort by duration descending, pick longest
-                        all_windows.sort(key=lambda x: x[2] - x[1], reverse=True)
-                        _, window_start, window_end = all_windows[0]
+                        energy_key = segment.energy.value
+                        if energy_key in selected_clip.best_moments:
+                            m = selected_clip.best_moments[energy_key]
+                            if hasattr(m, 'start') and hasattr(m, 'end') and m.end > m.start:
+                                already_used = any(
+                                    abs(u_s - m.start) < 0.1 and abs(u_e - m.end) < 0.1
+                                    for u_s, u_e in clip_used_intervals.get(selected_clip.filename, [])
+                                )
+                                if not already_used:
+                                    window_start, window_end = m.start, m.end
+                                else:
+                                    all_windows.sort(key=lambda x: x[2] - x[1], reverse=True)
+                                    _, window_start, window_end = all_windows[0]
+                            else:
+                                all_windows.sort(key=lambda x: x[2] - x[1], reverse=True)
+                                _, window_start, window_end = all_windows[0]
+                        else:
+                            all_windows.sort(key=lambda x: x[2] - x[1], reverse=True)
+                            _, window_start, window_end = all_windows[0]
                     else:
                         best_moment_data = selected_clip.get_best_moment_for_energy(segment.energy)
                         if best_moment_data:
