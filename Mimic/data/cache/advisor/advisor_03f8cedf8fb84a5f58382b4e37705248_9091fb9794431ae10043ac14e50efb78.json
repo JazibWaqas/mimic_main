@@ -1,0 +1,901 @@
+{
+  "text_overlay_intent": "The 'TOP GUN MAVERICK' text demands moments of iconic, legacy-defining power - this isn't just about speed, it's about becoming legend. Every shot must feel like it's being etched into cinematic history.",
+  "dominant_narrative": "This video is fundamentally about the transformation of individual speed into collective legacy.",
+  "arc_stage_guidance": {
+    "Intro": {
+      "primary_emotional_carrier": "ACTION",
+      "supporting_material": "Establishing shots of vehicles or landscapes that suggest scale and speed without human presence",
+      "intent_diluting_material": "Static shots, dialogue moments, or anything that feels like setup rather than immersion",
+      "reasoning": "The opening must hit like a supersonic punch - we're not introducing a story, we're dropping the audience into a world already at maximum velocity. This establishes the physical reality before we reveal the human cost.",
+      "recommended_clips": [
+        "clip49.mp4",
+        "clip51.mp4",
+        "clip52.mp4",
+        "clip53.mp4",
+        "clip54.mp4",
+        "clip55.mp4",
+        "clip56.mp4",
+        "clip57.mp4",
+        "clip58.mp4",
+        "clip59.mp4",
+        "clip66.mp4",
+        "clip71.mp4",
+        "clip74.mp4",
+        "clip76.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Build-up": {
+      "primary_emotional_carrier": "INTENSITY",
+      "supporting_material": "Technical details, preparation sequences, moments of focused concentration that show the machinery of excellence",
+      "intent_diluting_material": "Celebratory or victorious moments that would undermine the tension we're building",
+      "reasoning": "This is where speed becomes sacrifice - we transition from external velocity to internal pressure. The audience must feel the weight building behind the eyes, the cost of operating at these extremes. Every shot should tighten the emotional vise.",
+      "recommended_clips": [
+        "clip50.mp4",
+        "clip52.mp4",
+        "clip62.mp4",
+        "clip63.mp4",
+        "clip65.mp4",
+        "clip67.mp4",
+        "clip68.mp4",
+        "clip69.mp4",
+        "clip72.mp4",
+        "clip73.mp4",
+        "clip75.mp4",
+        "clip77.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Peak": {
+      "primary_emotional_carrier": "ACTION",
+      "supporting_material": "Crowd reactions, environmental consequences of speed, moments where individual action creates collective response",
+      "intent_diluting_material": "Solo reflective moments that break the collective energy, or any shot that feels like aftermath rather than climax",
+      "reasoning": "The peak isn't about higher speed - it's about speed becoming shared experience. This is where individual excellence transforms into collective witness. The energy must feel contagious, like the entire world is holding its breath with these machines.",
+      "recommended_clips": [
+        "clip54.mp4",
+        "clip55.mp4",
+        "clip56.mp4",
+        "clip57.mp4",
+        "clip58.mp4",
+        "clip59.mp4",
+        "clip60.mp4",
+        "clip66.mp4",
+        "clip67.mp4",
+        "clip69.mp4",
+        "clip70.mp4",
+        "clip71.mp4",
+        "clip72.mp4",
+        "clip76.mp4",
+        "clip77.mp4",
+        "clip78.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Outro": {
+      "primary_emotional_carrier": "INTENSITY",
+      "supporting_material": "Legacy shots - trophies, quiet moments after victory, the machinery at rest",
+      "intent_diluting_material": "Pure celebration without weight, or any return to pure action that would undermine the earned reflection",
+      "reasoning": "The outro must feel like coming down from altitude - not a drop, but a controlled descent into meaning. This is where we show what all that speed was for: not just to win, but to become part of something larger. The energy transforms from kinetic to gravitational.",
+      "recommended_clips": [
+        "clip50.mp4",
+        "clip61.mp4",
+        "clip64.mp4",
+        "clip65.mp4",
+        "clip68.mp4",
+        "clip70.mp4",
+        "clip77.mp4",
+        "clip78.mp4"
+      ],
+      "required_energy": ""
+    }
+  },
+  "library_alignment": {
+    "strengths": [
+      "Abundant high-energy vehicle action perfectly matches the adrenaline requirements",
+      "Strong cinematic quality across most clips supports the cinematic montage style",
+      "Multiple clips with pilot/driver focus provide the necessary human intensity"
+    ],
+    "editorial_tradeoffs": [
+      "Must use urban environments to stand in for naval/military settings due to Place-Nature scarcity",
+      "Will need to imply camaraderie through shared intensity rather than explicit military brotherhood scenes",
+      "Golden hour lighting will be suggested through color grading rather than abundant golden hour footage"
+    ],
+    "constraint_gaps": [
+      "Severe scarcity of Medium and Low energy clips forces creative use of High energy material for reflective moments",
+      "Lack of explicit military hardware requires Formula 1 vehicles to metaphorically represent naval aviation",
+      "Minimal natural environments mean urban landscapes must carry the weight of vastness"
+    ]
+  },
+  "editorial_strategy": "We will treat Formula 1 as the cinematic metaphor for naval aviation - the precision, the speed, the human cost. Every shot of a racing car is really about a fighter jet; every pit crew is really a carrier deck crew. The scarcity of Medium/Low energy clips becomes an editorial strength: even our reflective moments will thrum with residual velocity.",
+  "remake_strategy": "Add explicit military aviation footage - actual fighter jets, carrier operations, pilot camaraderie moments. Include more natural vastness: ocean horizons, desert landscapes that echo the Top Gun aesthetic. Most crucially, add medium-energy transitional shots that show the human cost more explicitly: exhausted pilots, quiet moments of preparation, the weight of the helmet.",
+  "primary_narrative_subject": "People-Solo",
+  "allowed_supporting_subjects": [
+    "People-Group",
+    "Place-Urban",
+    "Place-Nature"
+  ],
+  "subject_lock_strength": 0.9,
+  "editorial_motifs": [
+    {
+      "trigger": "Pilot/driver eyes or focused concentration",
+      "desired_continuity": "Emotional-Release",
+      "priority": "High"
+    },
+    {
+      "trigger": "Vehicle acceleration or high-speed movement",
+      "desired_continuity": "Motion-Carry",
+      "priority": "High"
+    },
+    {
+      "trigger": "Golden hour lighting or warm cinematic tones",
+      "desired_continuity": "Semantic-Resonance",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Crowd reactions or group witnessing",
+      "desired_continuity": "Narrative-Contrast",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Mechanical details or technical preparation",
+      "desired_continuity": "Action-Completion",
+      "priority": "Low"
+    }
+  ],
+  "segment_moment_plans": {
+    "1": {
+      "segment_id": 1,
+      "moments": [],
+      "total_duration": 4.6,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the adrenaline-fueled world of Formula 1 with high-energy, visually striking shots that set the tone for the entire edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial night shot with vibrant lights establishes scale and adrenaline vibe for the intro segment.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Fast tracking shot of racing car maintains high energy while establishing the core subject matter.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Expressive human gesture provides character contrast while maintaining energy for the intro.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Camera flashes create visual energy and anticipation fitting the adrenaline vibe.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip58.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Wide race start shot provides establishing context with stable composition for the intro.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "2": {
+      "segment_id": 2,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish visual detail and focused energy to build narrative momentum from the opening segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Focused interaction with track surface matches segment's Detail function and Focus vibe for narrative build-up.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Walking sequence with steady tracking provides visual detail while maintaining medium energy for build-up stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip74.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Racing lights progression offers clear visual detail with increasing anticipation for the build-up arc.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip67.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Focused physical training shows steady effort detail that supports the build-up narrative stage.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip69.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Active pit lane preparation provides technical detail while maintaining medium energy for build-up.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "3": {
+      "segment_id": 3,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with diverse racing perspectives before introducing human elements.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip55.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Intense tunnel racing provides peak action energy for this build-up segment.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Chaotic race start maintains high energy while introducing fresh racing content.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Fast tracking shot escalates visual intensity with fresh vehicle-focused action.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Boxing training provides contrasting human action while maintaining high energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip60.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Kinetic POV maintains action vibe while introducing crowd energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "4": {
+      "segment_id": 4,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Continue the racing theme with detail shots that build intensity while establishing visual diversity for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip74.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Start light progression matches the build-up arc stage and detail shot function with visual intensity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Focused track interaction provides narrative build with appropriate medium energy for this segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Car launch transition adds movement escalation while maintaining medium energy for build-up stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip69.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Pit lane activity continues the racing theme with appropriate detail and medium energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Boxing training provides subject contrast while maintaining medium energy for visual diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "5": {
+      "segment_id": 5,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with intense racing visuals for the build-up stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak chaotic racing start provides intense action that builds from nothing as first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip55.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed tunnel racing offers visual intensity and rapid movement for build-up stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak acceleration with tire smoke creates powerful visual impact for action function.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip59.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Intense onboard footage provides kinetic energy and rapid movement for dense cut expectation.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Fast tracking shot of racing car delivers high energy and visual power for this segment.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "6": {
+      "segment_id": 6,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy visual impact with diverse subjects while maintaining build-up momentum.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip60.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Kinetic POV racing provides intense visual impact matching the build-up arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Expressive arm gesture offers human reaction contrast to vehicle-focused clips.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Boxing training introduces different sport while maintaining high energy for reaction shot.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Camera flashes create visual impact that continues the high-energy vibe.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial night shot provides scale escalation while fitting the reaction function.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "7": {
+      "segment_id": 7,
+      "moments": [],
+      "total_duration": 3.07,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the Formula 1 racing world with scale and atmosphere while maintaining medium energy for the build-up stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Establishing shot of Las Vegas skyline fits the 'Scale' vibe and 'Establish' function for this first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Aerial track view establishes scale and location while maintaining medium energy for the build-up stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip69.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Pit lane activity establishes racing environment with appropriate energy for the build-up arc.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Indoor intimate scene provides narrative contrast while maintaining medium energy for establishment.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip74.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Starting lights sequence visually establishes anticipation with appropriate medium energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "8": {
+      "segment_id": 8,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action while introducing visual and subject diversity for the edit's opening peak.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed crash creates peak visual intensity for this action segment while introducing dramatic variety.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Celebration with crowd energy provides subject contrast while maintaining high energy for the peak stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip75.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Intense onboard shot with driver focus maintains racing action energy while adding human element.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Peak acceleration with tire smoke provides strong action content fitting the speed vibe.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Boxing training introduces different sport subject while maintaining high physical intensity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "9": {
+      "segment_id": 9,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Continue the grief emotion with low-energy reaction shots that serve the peak arc stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative close-up with dramatic tone matches the grief vibe and reaction shot function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Intimate dramatic tone with indoor setting supports the grief emotion at the peak arc stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip52.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Calm focused driver shot provides human element while maintaining low energy for grief.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip56.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Close-up detail shot offers visual contrast while keeping energy low for the segment's needs.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Expressive gesture provides emotional contrast to grief while maintaining narrative relevance.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "10": {
+      "segment_id": 10,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the edit's dramatic racing theme with peak action while prioritizing visual and subject diversity from the start.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Crash creates dramatic peak action fitting the arc stage while introducing fresh high-stakes content.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Celebration provides emotional contrast to racing action while maintaining energy for the peak segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Boxing training offers subject diversity while matching the segment's action function and solemn vibe.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Camera flashes create visual intensity that continues the dramatic energy with fresh human subjects.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip74.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Start lights build tension fitting the peak arc stage while introducing anticipatory visual variety.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "11": {
+      "segment_id": 11,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish human reaction and duty focus at peak stage with low energy clips that build narrative foundation.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip52.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Low energy driver focus matches segment's duty vibe and reaction function while establishing human element.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Static trophy focus provides thematic context with appropriate low energy for duty vibe at peak stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative close-up offers reaction moment with dramatic tone fitting duty vibe.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip56.mp4",
+          "energy_level": "Low",
+          "transition_type": "escalate",
+          "reason": "Close-up tire detail builds from low energy while maintaining visual interest for moderate cut density.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip58.mp4",
+          "energy_level": "Low",
+          "transition_type": "escalate",
+          "reason": "Wide race start provides context escalation while keeping energy appropriate for segment timing.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "12": {
+      "segment_id": 12,
+      "moments": [],
+      "total_duration": 0.52,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with escalating intensity and visual variety for the first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed crash creates peak visual intensity and dramatic escalation for this action segment.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Peak acceleration with tire smoke maintains high energy and thrill vibe for action sequence.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Celebration with crowd energy provides contrast while maintaining high energy for peak arc stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip60.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Kinetic racing POV maintains rapid movement and visual intensity for dense cut expectation.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Boxing training introduces different subject while maintaining high physical intensity for thrill.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "13": {
+      "segment_id": 13,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation while introducing diverse subjects for long-term edit variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed crash creates peak visual intensity fitting the arc stage and action function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Celebration with confetti maintains high energy while introducing crowd diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip60.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Racing POV provides kinetic energy while transitioning to crowd scenes for variety.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Boxing training offers subject contrast while maintaining high energy for action function.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Camera flashes create visual contrast with racing while fitting the peak energy requirement.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "14": {
+      "segment_id": 14,
+      "moments": [],
+      "total_duration": 1.02,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the freedom vibe with fresh character and setting moments before building toward racing climax.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Balanced urban scene with adventurous tone matches the freedom vibe and medium energy for a fresh start.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Expressive gesture with adventurous tone provides visual energy while introducing character moments.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Focused track interaction maintains dramatic energy while establishing setting for the peak stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Walking sequence offers different subject and pace while maintaining dramatic tone for editorial breath.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip67.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Physical training shows steady effort with energetic tone that supports the release function.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "15": {
+      "segment_id": 15,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the narrative with people-focused shots that match the purpose vibe, then gradually introduce vehicle and solo elements for editorial diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Establishing shot with people-group fits the purpose vibe and action function for the first segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "People-group with urban setting maintains purpose vibe while introducing fresh visual diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial shot with solo person escalates energy while maintaining dramatic tone for the outro stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Solo person training provides contrast to group shots while keeping medium energy for editorial balance.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip55.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Vehicle-focused shot continues dramatic energy while introducing object diversity for the whole edit.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "16": {
+      "segment_id": 16,
+      "moments": [],
+      "total_duration": 0.51,
+      "is_single_moment": true,
+      "chaining_reason": "Establish fresh subjects and visual variety while maintaining medium energy appropriate for legacy outro button moment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Balanced urban scene with legacy vibe fits the outro's button function and establishes fresh subject matter.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Solo subject and different activity provides editorial breath while maintaining medium energy for the segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip74.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Racing lights build anticipation appropriate for legacy outro while introducing fresh visual element.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Brad Pitt interaction provides narrative continuity with appropriate energy for button moment.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Car launch offers slight escalation while maintaining segment energy and introducing vehicle subject.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "17": {
+      "segment_id": 17,
+      "moments": [],
+      "total_duration": 2.017483,
+      "is_single_moment": true,
+      "chaining_reason": "Provide resolution and contrast with fresh, low-energy shots that establish thematic closure while avoiding repetitive racing visuals.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Calm sunset bird silhouette provides resolution and contrast to racing themes, serving as a fresh button shot.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Static balcony scene offers intimate contrast to racing energy while maintaining low energy for outro resolution.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative boxing close-up continues low energy resolution with fresh human subject matter.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Trophy focus provides thematic resolution contrast to racing while establishing success narrative.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip52.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Driver close-up maintains racing theme with calm human element suitable for resolution stage.",
+          "confidence": 0.65
+        }
+      ]
+    }
+  },
+  "library_assessment": null,
+  "creative_audit": null,
+  "overall_strategy": "",
+  "required_improvements": [],
+  "cache_version": "4.2",
+  "cached_at": "2026-03-07T21:04:18.889665"
+}

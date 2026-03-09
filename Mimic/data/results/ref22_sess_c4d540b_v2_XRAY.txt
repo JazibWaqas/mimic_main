@@ -1,0 +1,399 @@
+================================================================================
+X-RAY DIAGNOSTIC REPORT - REFERENCE MODE
+================================================================================
+Reference/Prompt: ref22
+Total Segments: 17
+Total Clips: 30
+Total Decisions: 17
+================================================================================
+
+📑 BLUEPRINT SEGMENTS:
+------------------------------------------------------------
+  Seg 01:  0.00s- 4.60s | High   | Intro      | CDE=Moderate | Hold=Long   | Origin=visual
+           Vibe: Adrenaline
+  Seg 02:  4.60s- 5.63s | Medium | Build-up   | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Focus
+  Seg 03:  5.63s- 6.63s | High   | Build-up   | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Action
+  Seg 04:  6.63s- 7.13s | Medium | Build-up   | CDE=Moderate | Hold=Short  | Origin=visual
+           Vibe: Intensity
+  Seg 05:  7.13s- 7.67s | High   | Build-up   | CDE=Moderate | Hold=Short  | Origin=visual
+           Vibe: Power
+  Seg 06:  7.67s- 8.17s | High   | Build-up   | CDE=Moderate | Hold=Short  | Origin=visual
+           Vibe: Impact
+  Seg 07:  8.17s-11.23s | Medium | Build-up   | CDE=Moderate | Hold=Long   | Origin=visual
+           Vibe: Scale
+  Seg 08: 11.23s-12.27s | High   | Peak       | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Speed
+  Seg 09: 12.27s-12.77s | Low    | Peak       | CDE=Moderate | Hold=Short  | Origin=visual
+           Vibe: Grief
+  Seg 10: 12.77s-13.80s | Medium | Peak       | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Solemn
+  Seg 11: 13.80s-14.80s | Low    | Peak       | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Duty
+  Seg 12: 14.80s-15.33s | High   | Peak       | CDE=Moderate | Hold=Short  | Origin=visual
+           Vibe: Thrill
+  Seg 13: 15.33s-16.37s | Medium | Peak       | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Unity
+  Seg 14: 16.37s-17.37s | Medium | Peak       | CDE=Moderate | Hold=Long   | Origin=visual
+           Vibe: Freedom
+  Seg 15: 17.37s-17.87s | Medium | Outro      | CDE=Moderate | Hold=Short  | Origin=visual
+           Vibe: Purpose
+  Seg 16: 17.87s-18.40s | Medium | Outro      | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Legacy
+  Seg 17: 18.40s-20.40s | Low    | Outro      | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: Resolution
+
+📊 CLIP USAGE ANALYSIS:
+------------------------------------------------------------
+
+  ✅ USED  clip49.mp4
+       Usage: 1x | Energy: High | Duration: 15.9s
+       Vibes: Vehicle, Nature | Subjects: Object-Vehicle, Place-Nature
+       Moments used:
+         [1] 2.50s - 4.50s (2.00s)
+
+  ✅ USED  clip50.mp4
+       Usage: 1x | Energy: Low | Duration: 8.8s
+       Vibes: Group, Indoor | Subjects: People-Group, Place-Indoor
+       Moments used:
+         [1] 5.50s - 6.00s (0.50s)
+
+  ✅ USED  clip51.mp4
+       Usage: 1x | Energy: High | Duration: 6.5s
+       Vibes: Solo, Urban | Subjects: People-Solo, Place-Urban
+       Moments used:
+         [1] 0.00s - 4.60s (4.60s)
+
+  ✅ USED  clip52.mp4
+       Usage: 1x | Energy: High | Duration: 13.6s
+       Vibes: Solo, Vehicle | Subjects: People-Solo, Object-Vehicle
+       Moments used:
+         [1] 0.00s - 1.00s (1.00s)
+
+  ✅ USED  clip55.mp4
+       Usage: 1x | Energy: High | Duration: 4.5s
+       Vibes: Vehicle | Subjects: Object-Vehicle
+       Moments used:
+         [1] 0.00s - 1.00s (1.00s)
+
+  ✅ USED  clip57.mp4
+       Usage: 1x | Energy: High | Duration: 9.8s
+       Vibes: Vehicle, Travel | Subjects: Object-Vehicle, Activity-Travel
+       Moments used:
+         [1] 0.00s - 0.53s (0.53s)
+
+  ✅ USED  clip60.mp4
+       Usage: 1x | Energy: High | Duration: 6.5s
+       Vibes: Crowd, Vehicle | Subjects: People-Crowd, Object-Vehicle
+       Moments used:
+         [1] 0.00s - 0.50s (0.50s)
+
+  ✅ USED  clip61.mp4
+       Usage: 1x | Energy: Medium | Duration: 4.2s
+       Vibes: Group, Urban | Subjects: People-Group, Place-Urban
+       Moments used:
+         [1] 3.00s - 4.00s (1.00s)
+
+  ✅ USED  clip62.mp4
+       Usage: 1x | Energy: High | Duration: 3.1s
+       Vibes: Solo | Subjects: People-Solo
+       Moments used:
+         [1] 1.00s - 2.03s (1.03s)
+
+  ✅ USED  clip64.mp4
+       Usage: 1x | Energy: Medium | Duration: 4.4s
+       Vibes: Group, Urban | Subjects: People-Group, Place-Urban
+       Moments used:
+         [1] 0.50s - 3.50s (3.00s)
+
+  ✅ USED  clip65.mp4
+       Usage: 1x | Energy: High | Duration: 31.8s
+       Vibes: Solo, Urban | Subjects: People-Solo, Place-Urban
+       Moments used:
+         [1] 22.50s - 23.00s (0.50s)
+
+  ✅ USED  clip66.mp4
+       Usage: 1x | Energy: High | Duration: 3.0s
+       Vibes: Vehicle, Crowd | Subjects: Object-Vehicle, People-Crowd
+       Moments used:
+         [1] 1.00s - 1.53s (0.53s)
+
+  ✅ USED  clip72.mp4
+       Usage: 1x | Energy: High | Duration: 8.2s
+       Vibes: Vehicle, Solo | Subjects: Object-Vehicle, People-Solo
+       Moments used:
+         [1] 0.00s - 1.03s (1.03s)
+
+  ✅ USED  clip73.mp4
+       Usage: 1x | Energy: High | Duration: 3.0s
+       Vibes: Group | Subjects: People-Group
+       Moments used:
+         [1] 0.50s - 1.53s (1.03s)
+
+  ✅ USED  clip74.mp4
+       Usage: 1x | Energy: High | Duration: 3.1s
+       Vibes: Vehicle | Subjects: Object-Vehicle
+       Moments used:
+         [1] 0.00s - 0.50s (0.50s)
+
+  ✅ USED  clip77.mp4
+       Usage: 1x | Energy: High | Duration: 11.3s
+       Vibes: Crowd, Vehicle | Subjects: People-Crowd, Object-Vehicle
+       Moments used:
+         [1] 2.80s - 3.83s (1.03s)
+
+  ✅ USED  clip78.mp4
+       Usage: 1x | Energy: High | Duration: 48.1s
+       Vibes: Group, Vehicle | Subjects: People-Group, Object-Vehicle
+       Moments used:
+         [1] 7.50s - 8.03s (0.53s)
+
+  ❌ UNUSED  clip53.mp4
+       Usage: 0x | Energy: High | Duration: 10.4s
+       Vibes: Vehicle, Solo | Subjects: Object-Vehicle, People-Solo
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip54.mp4
+       Usage: 0x | Energy: High | Duration: 18.8s
+       Vibes: Vehicle | Subjects: Object-Vehicle
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip56.mp4
+       Usage: 0x | Energy: High | Duration: 17.0s
+       Vibes: Vehicle, Crowd | Subjects: Object-Vehicle, People-Crowd
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip58.mp4
+       Usage: 0x | Energy: High | Duration: 16.9s
+       Vibes: Vehicle, Crowd | Subjects: Object-Vehicle, People-Crowd
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip59.mp4
+       Usage: 0x | Energy: High | Duration: 4.9s
+       Vibes: Vehicle | Subjects: Object-Vehicle
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip63.mp4
+       Usage: 0x | Energy: Medium | Duration: 8.7s
+       Vibes: Group, Crowd | Subjects: People-Group, People-Crowd
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip67.mp4
+       Usage: 0x | Energy: High | Duration: 13.9s
+       Vibes: Solo, Celebration | Subjects: People-Solo, Activity-Celebration
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip68.mp4
+       Usage: 0x | Energy: High | Duration: 17.2s
+       Vibes: Vehicle, Urban | Subjects: Object-Vehicle, Place-Urban
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip69.mp4
+       Usage: 0x | Energy: High | Duration: 10.7s
+       Vibes: Crowd, Vehicle | Subjects: People-Crowd, Object-Vehicle
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip70.mp4
+       Usage: 0x | Energy: High | Duration: 15.9s
+       Vibes: Crowd, Vehicle | Subjects: People-Crowd, Object-Vehicle
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip71.mp4
+       Usage: 0x | Energy: High | Duration: 4.0s
+       Vibes: Vehicle, Urban | Subjects: Object-Vehicle, Place-Urban
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip75.mp4
+       Usage: 0x | Energy: High | Duration: 4.9s
+       Vibes: Solo, Vehicle | Subjects: People-Solo, Object-Vehicle
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  ❌ UNUSED  clip76.mp4
+       Usage: 0x | Energy: High | Duration: 18.7s
+       Vibes: Vehicle, Crowd | Subjects: Object-Vehicle, People-Crowd
+       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+🚫 UNUSED CLIPS (Potential Issues):
+------------------------------------------------------------
+  ❌ clip53.mp4 | High | Vibes: Vehicle, Solo
+  ❌ clip54.mp4 | High | Vibes: Vehicle
+  ❌ clip56.mp4 | High | Vibes: Vehicle, Crowd
+  ❌ clip58.mp4 | High | Vibes: Vehicle, Crowd
+  ❌ clip59.mp4 | High | Vibes: Vehicle
+  ❌ clip63.mp4 | Medium | Vibes: Group, Crowd
+  ❌ clip67.mp4 | High | Vibes: Solo, Celebration
+  ❌ clip68.mp4 | High | Vibes: Vehicle, Urban
+  ❌ clip69.mp4 | High | Vibes: Crowd, Vehicle
+  ❌ clip70.mp4 | High | Vibes: Crowd, Vehicle
+  ❌ clip71.mp4 | High | Vibes: Vehicle, Urban
+  ❌ clip75.mp4 | High | Vibes: Solo, Vehicle
+  ❌ clip76.mp4 | High | Vibes: Vehicle, Crowd
+
+  Total unused: 13/30 (43%)
+
+🎬 EDIT DECISION FLOW:
+------------------------------------------------------------
+  [01]   0.00s-  4.60s (4.60s) | clip_003.mp4         [ 0.00s- 4.60s]
+        Vibe Match: ✅ | Advisor-selected clip: Aerial night shot with vibrant lights...
+  [02]   4.60s-  5.63s (1.03s) | clip_014.mp4         [ 1.00s- 2.03s]
+        Vibe Match: ✅ | Advisor-selected clip: Walking sequence with steady tracking...
+  [03]   5.63s-  6.63s (1.00s) | clip_007.mp4         [ 0.00s- 1.00s]
+        Vibe Match: ✅ | Advisor-selected clip: Intense tunnel racing provides peak a...
+  [04]   6.63s-  7.13s (0.50s) | clip_026.mp4         [ 0.00s- 0.50s]
+        Vibe Match: ✅ | Advisor-selected clip: Start light progression matches the b...
+  [05]   7.13s-  7.67s (0.53s) | clip_009.mp4         [ 0.00s- 0.53s]
+        Vibe Match: ✅ | Advisor-selected clip: Peak chaotic racing start provides in...
+  [06]   7.67s-  8.17s (0.50s) | clip_012.mp4         [ 0.00s- 0.50s]
+        Vibe Match: ✅ | Advisor-selected clip: Kinetic POV racing provides intense v...
+  [07]   8.17s- 11.23s (3.07s) | clip_016.mp4         [ 0.50s- 3.57s]
+        Vibe Match: ✅ | Advisor-selected clip: Establishing shot of Las Vegas skylin...
+  [08]  11.23s- 12.27s (1.03s) | clip_024.mp4         [ 0.00s- 1.03s]
+        Vibe Match: ✅ | Advisor-selected clip: High-speed crash creates peak visual ...
+  [09]  12.27s- 12.77s (0.50s) | clip_002.mp4         [ 5.50s- 6.00s]
+        Vibe Match: ✅ | Advisor-selected clip: Intimate dramatic tone with indoor se...
+  [10]  12.77s- 13.80s (1.03s) | clip_029.mp4         [ 2.80s- 3.83s]
+        Vibe Match: ✅ | Advisor-selected clip: Celebration provides emotional contra...
+  [11]  13.80s- 14.80s (1.00s) | clip_004.mp4         [ 0.00s- 1.00s]
+        Vibe Match: ✅ | Advisor-selected clip: Low energy driver focus matches segme...
+  [12]  14.80s- 15.33s (0.53s) | clip_018.mp4         [ 1.00s- 1.53s]
+        Vibe Match: ✅ | Advisor-selected clip: Peak acceleration with tire smoke mai...
+  [13]  15.33s- 16.37s (1.03s) | clip_025.mp4         [ 0.50s- 1.53s]
+        Vibe Match: ✅ | Advisor-selected clip: Camera flashes create visual contrast...
+  [14]  16.37s- 17.37s (1.00s) | clip_013.mp4         [ 3.00s- 4.00s]
+        Vibe Match: ✅ | Advisor-selected clip: Expressive gesture with adventurous t...
+  [15]  17.37s- 17.87s (0.50s) | clip_017.mp4         [22.50s-23.00s]
+        Vibe Match: ❌ | 🌟 Prioritizing narrative continuity by anchoring on 'People-...
+  [16]  17.87s- 18.40s (0.53s) | clip_030.mp4         [ 7.50s- 8.03s]
+        Vibe Match: ❌ | 🌟 Acting as the primary emotional carrier for the Outro stag...
+  [17]  18.40s- 20.40s (2.00s) | clip_001.mp4         [ 2.50s- 4.50s]
+        Vibe Match: ✅ | Advisor-selected clip: Calm sunset bird silhouette provides ...
+
+🔬 SEGMENT SCORING X-RAY:
+------------------------------------------------------------
+
+================================================================================
+SEGMENT 15 X-RAY | 17.37s-17.87s | Outro | Vibe: Purpose
+================================================================================
+
+📋 ADVISOR INPUT:
+   Primary Subject: People-Solo
+   Text Intent: The 'TOP GUN MAVERICK' text demands moments of iconic, legacy-defining power - t...
+   Dominant Narrative: This video is fundamentally about the transformation of individual speed into co...
+
+🔬 TOP 5 CANDIDATES:
+
+🏆 WINNER | clip65.mp4 | SCORE: 350.0
+   Vibes: Solo, Urban
+   Subjects: People-Solo, Place-Urban
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Prioritizing narrative continuity by anchoring on 'People-Solo' as requested by the text intent. Acting as the primary e
+
+   #2 | clip78.mp4 | SCORE: 350.0
+   Vibes: Group, Vehicle
+   Subjects: People-Group, Object-Vehicle
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Acting as the primary emotional carrier for the Outro stage. Maintains visual freshness, lighting consistency.
+   Delta from winner: -0.0 points
+
+   #3 | clip70.mp4 | SCORE: 349.9
+   Vibes: Crowd, Vehicle
+   Subjects: People-Crowd, Object-Vehicle
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Acting as the pr
+   Delta from winner: -0.1 points
+
+   #4 | clip53.mp4 | SCORE: 334.1
+   Vibes: Vehicle, Solo
+   Subjects: Object-Vehicle, People-Solo
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Prioritizing narrative continuity by anchoring on 'People-Solo' as requested by the text intent. Serving as a strategic 
+   Delta from winner: -15.9 points
+
+   #5 | clip75.mp4 | SCORE: 330.0
+   Vibes: Solo, Vehicle
+   Subjects: People-Solo, Object-Vehicle
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Prioritizing narrative continuity by anchoring on 'People-Solo' as requested by the text intent. Serving as a strategic 
+   Delta from winner: -20.0 points
+
+🎯 SELECTION DECISION:
+   Winner: clip65.mp4
+   Final Score: 350.0
+   Vibe Match: ❌ NO
+   Subject Override: ⚠️ YES
+   Vibe Override: ✅ NO
+
+================================================================================
+SEGMENT 16 X-RAY | 17.87s-18.40s | Outro | Vibe: Legacy
+================================================================================
+
+📋 ADVISOR INPUT:
+   Primary Subject: People-Solo
+   Text Intent: The 'TOP GUN MAVERICK' text demands moments of iconic, legacy-defining power - t...
+   Dominant Narrative: This video is fundamentally about the transformation of individual speed into co...
+
+🔬 TOP 5 CANDIDATES:
+
+🏆 WINNER | clip78.mp4 | SCORE: 341.1
+   Vibes: Group, Vehicle
+   Subjects: People-Group, Object-Vehicle
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Acting as the primary emotional carrier for the Outro stage. Maintains visual freshness, lighting consistency.
+
+   #2 | clip68.mp4 | SCORE: 337.3
+   Vibes: Vehicle, Urban
+   Subjects: Object-Vehicle, Place-Urban
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Acting as the primary emotional carrier for the Outro stage. Maintains visual freshness.
+   Delta from winner: -3.8 points
+
+   #3 | clip70.mp4 | SCORE: 329.3
+   Vibes: Crowd, Vehicle
+   Subjects: People-Crowd, Object-Vehicle
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Acting as the pr
+   Delta from winner: -11.8 points
+
+   #4 | clip49.mp4 | SCORE: 326.7
+   Vibes: Vehicle, Nature
+   Subjects: Object-Vehicle, Place-Nature
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Serving as a strategic 'Button' shot within this sequence. Maintains visual freshness, lighting consistency.
+   Delta from winner: -14.4 points
+
+   #5 | clip71.mp4 | SCORE: 319.2
+   Vibes: Vehicle, Urban
+   Subjects: Object-Vehicle, Place-Urban
+   Energy: High | Usage: 0x
+   Vibe Match: ❌ NO
+   Reasoning: Serving as a strategic 'Button' shot within this sequence. Maintains visual freshness.
+   Delta from winner: -21.9 points
+
+🎯 SELECTION DECISION:
+   Winner: clip78.mp4
+   Final Score: 341.1
+   Vibe Match: ❌ NO
+   Subject Override: ✅ NO
+   Vibe Override: ✅ NO
+
+================================================================================
+💡 CLIP CURATION RECOMMENDATIONS:
+================================================================================
+
+📥 ADD clips with vibes: legacy, purpose
+
+🗑️ CONSIDER REMOVING (never used): clip53.mp4, clip54.mp4, clip56.mp4, clip58.mp4, clip59.mp4
+
+================================================================================
+END OF X-RAY REPORT
+================================================================================

@@ -1,0 +1,3119 @@
+{
+  "text_overlay_intent": "The text overlay demands a relentless, high-stakes world where elite brands and Formula 1 exist at the pinnacle of performance and prestige—every moment must feel like it belongs to this exclusive, high-octane ecosystem.",
+  "dominant_narrative": "This video is fundamentally about the razor-thin margin between human excellence and catastrophic failure in Formula 1's pressure-cooker environment.",
+  "arc_stage_guidance": {
+    "Intro": {
+      "primary_emotional_carrier": "INTENSITY",
+      "supporting_material": "Atmospheric establishing shots that hint at scale and stakes—night tracks, urban backdrops, mechanical details—without slowing momentum.",
+      "intent_diluting_material": "Leisurely scenic beauty or static character introductions that lack immediate tension.",
+      "reasoning": "The intro must establish the world as already in motion—this isn't a calm before the storm, it's the first moments of a storm already raging. We need to feel the weight of expectation and the precision required, not just see pretty cars.",
+      "recommended_clips": [
+        "clip51.mp4",
+        "clip52.mp4",
+        "clip63.mp4",
+        "clip65.mp4",
+        "clip74.mp4",
+        "clip61.mp4",
+        "clip68.mp4",
+        "clip76.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Build-up": {
+      "primary_emotional_carrier": "ACTION",
+      "supporting_material": "Driver focus moments, team interactions, and mechanical preparation shots that humanize the impending speed.",
+      "intent_diluting_material": "Extended crowd shots or celebratory sequences that diffuse the building tension.",
+      "reasoning": "This stage is about converting the established intensity into kinetic, visceral motion—the transition from potential energy to explosive action. Every clip should feel like it's tightening a spring.",
+      "recommended_clips": [
+        "clip53.mp4",
+        "clip55.mp4",
+        "clip57.mp4",
+        "clip66.mp4",
+        "clip67.mp4",
+        "clip75.mp4",
+        "clip72.mp4",
+        "clip69.mp4",
+        "clip70.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Peak": {
+      "primary_emotional_carrier": "INTENSITY",
+      "supporting_material": "High-speed racing, crashes, extreme driver reactions, and crowd chaos that amplify the stakes.",
+      "intent_diluting_material": "Any clip that feels like a lull or a break in the relentless pressure—even 'High energy' clips that lack emotional or narrative consequence.",
+      "reasoning": "The peak isn't just about speed; it's about consequence. This is where the human and mechanical elements collide under maximum stress. The emotional carrier must be the dramatic weight of victory versus disaster, not just motion for motion's sake.",
+      "recommended_clips": [
+        "clip54.mp4",
+        "clip56.mp4",
+        "clip58.mp4",
+        "clip59.mp4",
+        "clip60.mp4",
+        "clip71.mp4",
+        "clip72.mp4",
+        "clip76.mp4",
+        "clip77.mp4",
+        "clip78.mp4",
+        "clip70.mp4",
+        "clip69.mp4"
+      ],
+      "required_energy": ""
+    },
+    "Outro": {
+      "primary_emotional_carrier": "INTENSITY",
+      "supporting_material": "Iconic logo resolution, lingering shots of aftermath (smoke, quiet pits, solitary figures) that carry the emotional residue of the peak.",
+      "intent_diluting_material": "Triumphant celebration montages that fully release the tension, breaking the filmic spell.",
+      "reasoning": "The outro should feel like the echo of the peak—not a release, but a resonance. The intensity transforms from explosive to iconic, leaving the viewer with the lasting impression of the world they've just witnessed, not a clean emotional reset.",
+      "recommended_clips": [
+        "clip78.mp4",
+        "clip77.mp4",
+        "clip70.mp4",
+        "clip65.mp4",
+        "clip61.mp4"
+      ],
+      "required_energy": ""
+    }
+  },
+  "library_alignment": {
+    "strengths": [
+      "Abundant high-energy racing and vehicle action perfectly matches the relentless pacing and 'Must-Have' high-speed content.",
+      "Strong coverage of night racing and crowd atmosphere aligns with 'Should-Have' elements.",
+      "Multiple clips contain crucial driver intimacy and mechanical details, supporting the primary human narrative."
+    ],
+    "editorial_tradeoffs": [
+      "Must carefully curate 'People-Solo' moments from within broader montage clips (e.g., clip52, clip72) to maintain subject lock, as pure solo-focused clips are limited.",
+      "Will need to use 'High energy' clips judiciously in the Outro to achieve the required low-energy 'resonance' vibe, focusing on the aftermath portions of celebratory clips."
+    ],
+    "constraint_gaps": [
+      "Scarcity of pure 'Low' and 'Medium' energy clips means the Intro and Outro will likely be built from the bookends or calmer segments of 'High' energy clips, requiring precise internal clip selection.",
+      "Virtually no 'Place-Nature' or 'Place-Indoor' shots—the world is almost exclusively urban/racetrack, which is a rational compromise that focuses the narrative but limits scenic variety."
+    ]
+  },
+  "editorial_strategy": "Prioritize clips where the human element (driver focus, reaction, exertion) is palpable, even within high-speed montages, to anchor the 'personal stakes' narrative; use the abundant action as the relentless engine, but let the human moments be the steering.",
+  "remake_strategy": "Add more isolated, raw driver emotion shots—close-ups of fear, determination, exhaustion—and specific mechanical detail inserts (hands on wheels, foot on pedal) to deepen the intimate, high-stakes human narrative within the kinetic spectacle.",
+  "primary_narrative_subject": "People-Solo",
+  "allowed_supporting_subjects": [
+    "Place-Urban",
+    "Object-Detail"
+  ],
+  "subject_lock_strength": 0.8,
+  "editorial_motifs": [
+    {
+      "trigger": "Mechanical details (pedals, wheels, start lights)",
+      "desired_continuity": "Semantic-Resonance",
+      "priority": "High"
+    },
+    {
+      "trigger": "Driver's eyes or focused expression",
+      "desired_continuity": "Emotional-Release",
+      "priority": "High"
+    },
+    {
+      "trigger": "High-speed racing POV or onboard shots",
+      "desired_continuity": "Motion-Carry",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Crashes or high-impact moments",
+      "desired_continuity": "Narrative-Contrast",
+      "priority": "Medium"
+    },
+    {
+      "trigger": "Night racing or urban lights",
+      "desired_continuity": "Graphic-Match",
+      "priority": "Low"
+    }
+  ],
+  "segment_moment_plans": {
+    "1": {
+      "segment_id": 1,
+      "moments": [],
+      "total_duration": 0.2,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the scene with low-energy anticipation shots that set up the racing world before escalating.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Wide aerial establishing shot perfectly matches the Intro stage and Establish function with low energy anticipation.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip74.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Start lights sequence builds anticipation while maintaining low energy for the intro segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip52.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Calm focused driver shot establishes human element while keeping energy low for anticipation.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Pan across grid sets scene and atmosphere fitting the establish function with appropriate energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Beautiful sunset shot provides visual contrast while maintaining low energy for the intro segment.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "2": {
+      "segment_id": 2,
+      "moments": [],
+      "total_duration": 0.33,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the preparation theme with medium-energy shots that introduce key elements before escalating to racing action.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Establishing shot of racing gear preparation matches the Intro arc stage and Preparation vibe.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady tracking of racing team walking through pits continues the preparation theme with appropriate energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Walking sequence provides editorial breath and introduces human element before racing action.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Balanced composition with urban skyline offers visual variety while maintaining medium energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth lateral movement of luxury car maintains preparation vibe with cinematic quality.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "3": {
+      "segment_id": 3,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy power vibe with intense racing action to kick off the edit's build-up phase.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash matches segment's high energy and power vibe for a strong opening.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing fresh nature element.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak drifting intensity serves build-up stage with fresh vehicle action.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip55.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Intense tunnel racing provides high-speed action fitting dense cut expectation.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Chaotic race start offers peak action for build-up with fresh onboard perspective.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "4": {
+      "segment_id": 4,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy danger with escalating visual intensity for the build-up arc stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash matches segment's danger vibe and builds intensity for the arc stage.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed impact with debris serves the detail shot function with fresh visual intensity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Tire smoke and drifting maneuvers provide dangerous detail while introducing new vehicle action.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip55.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed tunnel racing offers fresh visual perspective while maintaining danger energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Camera flashes create visual contrast with racing while maintaining high energy for build-up.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "5": {
+      "segment_id": 5,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish human presence and reaction shots to build narrative foundation before escalating to pure racing action.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Expressive arm gesture provides visual energy for reaction shot while introducing human subjects.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Intense close-up creates focus and tension fitting the build-up stage and reaction function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Camera flashes create visual energy and anticipation while introducing fresh group subject.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Walking sequence provides editorial breath with different subject while maintaining medium energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial tracking shot offers visual variety with nature setting and strong musical alignment.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "6": {
+      "segment_id": 6,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-intensity racing action with visual variety while maintaining peak energy for this first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and high-energy speed vibe.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak intensity with tire smoke and drifting provides strong action function for this dense cut segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Close-quarters racing chaos maintains speed vibe while offering fresh onboard perspective.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast to vehicle-focused clips while maintaining high energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "7": {
+      "segment_id": 7,
+      "moments": [],
+      "total_duration": 0.26,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action with visual intensity while introducing subject diversity for the edit's opening peak.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches segment's peak action and speed vibe.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining dramatic energy for peak stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed impact with driver reaction adds human element to racing action.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night racing with dynamic tracking maintains speed vibe while offering urban setting variation.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "8": {
+      "segment_id": 8,
+      "moments": [],
+      "total_duration": 0.27,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-intensity racing action at the peak arc stage while introducing diverse subjects and settings for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and high-energy speed vibe.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Peak visual intensity with tire smoke serves the action function while keeping energy high.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak chaotic motion during race start escalates intensity with close-quarters racing action.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for the peak stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "9": {
+      "segment_id": 9,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish visual scale and narrative foundation while introducing diverse subjects for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial night view establishes scale for the peak arc stage with fresh visual perspective.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Balanced balcony composition provides editorial breath and contrast to racing action.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dialogue scene creates narrative contrast while maintaining dramatic tone.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth luxury car movement continues dramatic adventurous tone with natural flow.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady pit tracking maintains energy while establishing racing team context.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "10": {
+      "segment_id": 10,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish atmospheric foundation with diverse visual approaches before escalating to racing climaxes.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial establishing shot with vibrant lights fits the arc stage and shot function while introducing fresh visual scale.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Balanced urban composition provides atmospheric contrast to racing action while establishing location.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate indoor dialogue creates narrative contrast and introduces character dimension early in edit.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady pit tracking maintains racing theme with medium energy appropriate for establishing segment.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth luxury car movement continues vehicle theme with atmospheric quality fitting the segment vibe.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "11": {
+      "segment_id": 11,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish visual diversity early by contrasting racing intensity with human-scale movement.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Steady walking provides visual contrast to racing chaos while maintaining narrative thread.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth luxury car movement maintains abstract vibe with fresh subject matter.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Fast-paced racing with steady tracking fits detail function while avoiding climax overuse.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Daytime racing provides clean visual detail without repeating crash content.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip60.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Kinetic POV offers energy escalation while transitioning to crowd subject.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "12": {
+      "segment_id": 12,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the edit's energy with joyful, celebratory moments while introducing human subjects early for narrative diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip78.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Joyful celebration with fireworks perfectly matches the segment's Peak arc stage and Joy vibe.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power and human focus as a contrast to vehicle-heavy clips.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial racing shot maintains energy while introducing nature setting for visual diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dialogue scene creates narrative contrast while maintaining dramatic tone.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "release",
+          "reason": "Pit walk provides calmer human moment while still fitting the racing theme.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "13": {
+      "segment_id": 13,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy visual intensity with diverse subjects while maintaining dramatic momentum for the first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash provides peak visual intensity matching arc stage and dense cut expectation.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal shifts focus to people while maintaining dramatic energy for editorial variety.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Celebration with confetti maintains energy while introducing crowd subject for narrative breadth.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Tire smoke and drifting provide visual detail matching segment function with fresh vehicle action.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "14": {
+      "segment_id": 14,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy night racing action with visual diversity for the edit's opening peak.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash matches night-speed vibe and peak arc stage with fresh visual chaos.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night racing with dynamic tracking perfectly fits segment's night-speed action requirements.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Night fireworks and racing provide climactic energy while introducing crowd element.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal offers star power contrast while maintaining dramatic energy for peak stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "15": {
+      "segment_id": 15,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy Night-Speed action foundation with visual intensity while preserving diverse clip options for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the Night-Speed vibe and Peak arc stage.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing fresh nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed night racing with dynamic tracking aligns with segment's Night-Speed vibe and Action function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Climactic night racing with fireworks provides peak visual energy while keeping Night-Speed theme.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal offers star power contrast while maintaining high energy for editorial variety.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "16": {
+      "segment_id": 16,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish intimate reaction moments while introducing diverse subjects for editorial variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Low energy contemplative close-up matches segment's intimacy vibe and reaction function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "People posing with flashes maintains intimacy while introducing group dynamics.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip55.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Vehicle establishing shot provides visual contrast while keeping energy low.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Stationary vehicle shot offers subject contrast while maintaining low energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip75.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Grid establishing shot provides vehicle contrast with potential driver reaction.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "17": {
+      "segment_id": 17,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the racing theme with skill-focused detail shots while introducing human elements early for narrative diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Expressive human gesture provides fresh subject diversity while matching the segment's skill vibe and peak arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth luxury car movement offers visual continuity with racing theme while providing medium energy for detail shot function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human subjects as contrast to vehicle-focused clips, creating editorial breath.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Fast-paced racing with multiple cars provides steady skill-focused action that serves the detail shot function well.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Daytime racing with smooth tracking offers reliable racing content but is lower priority due to similarity to other vehicle clips.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "18": {
+      "segment_id": 18,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing theme with visual impact while introducing diverse subjects and settings for long-term edit variety.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash provides immediate high-energy peak for first segment with strong musical alignment.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal adds star power and human element contrasting with vehicle-focused clips.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Celebration with confetti maintains energy while introducing crowd element for narrative variety.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Onboard racing footage provides immersive POV while keeping energy high for peak arc stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "19": {
+      "segment_id": 19,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy competition visuals with escalating action while introducing diverse subjects and settings for the edit's foundation.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with high visual chaos perfectly matches peak competition energy and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Close-quarters racing start provides intense competition action with fresh onboard perspective.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking maintains energy while offering urban nighttime variety.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining dramatic energy for narrative interest.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "20": {
+      "segment_id": 20,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-intensity reaction shots with narrative diversity for the first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Brad Pitt reveal provides star power and narrative interest for the peak arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with high visual chaos creates intense reaction moment for peak stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dialogue scene provides narrative contrast while maintaining dramatic tone.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Fireworks display maintains intensity while offering visual variety from vehicle shots.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial night shot with Brad Pitt maintains energy while establishing scale.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "21": {
+      "segment_id": 21,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action foundation while introducing diverse subjects and settings for the edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches segment's peak action and high energy requirements.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains speed vibe while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for peak segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking serves action function while introducing urban night setting.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Climactic racing with fireworks escalates visual intensity while maintaining speed vibe.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "22": {
+      "segment_id": 22,
+      "moments": [],
+      "total_duration": 0.25,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with diverse racing perspectives while maintaining peak intensity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains high energy while introducing fresh nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking maintains action function while offering urban night setting.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for peak stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Peak chaotic racing start maintains action function with fresh onboard perspective.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "23": {
+      "segment_id": 23,
+      "moments": [],
+      "total_duration": 0.28,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action with visual intensity while introducing diverse subjects and perspectives for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Tire smoke and drifting maneuvers provide high-speed action fitting the segment's vibe.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Close-quarters racing chaos escalates intensity while introducing onboard perspective.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human element contrasting with pure vehicle action.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "24": {
+      "segment_id": 24,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the celebration peak with diverse subjects (crowds, solo humans, fireworks) while maintaining high energy for this first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip78.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak emotional intensity with screaming celebration and fireworks perfectly matches the celebration vibe and arc stage.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Intense celebration with confetti and crowd energy continues the celebration vibe while introducing fresh crowd content.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip67.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Vibrant fireworks display provides peak visual energy for celebration while introducing solo human subject diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power and human focus contrast to vehicle-heavy clips while maintaining celebration energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate character dialogue creates strong contrast to racing action while maintaining dramatic energy for narrative depth.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "25": {
+      "segment_id": 25,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with racing intensity while seeding diverse subjects for future segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the segment's peak action and high energy requirements.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking provides strong action continuity for this peak segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Climactic racing with fireworks adds celebratory energy while maintaining the power vibe.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human element while maintaining high energy for diversity.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "26": {
+      "segment_id": 26,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish intense racing action with visual impact while introducing diverse subjects and settings for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy and speed vibe while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak chaotic racing start provides intense action with close-quarters competition for maximum energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "High-speed impact with driver reaction adds human element contrast to pure vehicle action.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power and human focus contrast to racing action while maintaining energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "27": {
+      "segment_id": 27,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with explosive racing visuals while introducing diverse subjects and settings for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking serves the action function while adding urban variety.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining dramatic energy for the peak.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Sparks and fireworks create peak visual energy escalation with crowd elements for diversity.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "28": {
+      "segment_id": 28,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Introduce human element and narrative stakes to escalate conflict while establishing visual diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Brad Pitt reveal provides star power and narrative interest for conflict peak.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dialogue creates contrast to racing action while maintaining dramatic tone.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash delivers intense visual chaos fitting conflict peak.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial tracking shot maintains energy with natural scenery contrast.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial night view establishes scale while maintaining dramatic energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "29": {
+      "segment_id": 29,
+      "moments": [],
+      "total_duration": 0.28,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy crash/action sequence at the peak arc stage while introducing visual variety for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash matches the 'Crash' vibe and 'Peak' arc stage with fresh high-energy action.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed impact with debris continues the crash theme while introducing driver reaction for narrative depth.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Aerial tracking shot provides visual contrast from crashes while maintaining high energy for the peak segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking maintains action energy while offering urban setting variety.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Climactic racing with fireworks escalates visual spectacle while keeping energy high for the peak.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "30": {
+      "segment_id": 30,
+      "moments": [],
+      "total_duration": 0.26,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy crash sequence with escalating visual intensity while introducing diverse subjects.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash matches segment's 'Crash' vibe and peak arc stage with fresh visual chaos.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed impact with debris continues crash theme while introducing driver reaction for narrative depth.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Sparks and fireworks add celebratory energy to crash aftermath while maintaining visual intensity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast to vehicle-focused crashes while maintaining high energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Aerial nature shot offers visual contrast to urban crashes while maintaining dramatic racing energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "31": {
+      "segment_id": 31,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the cinematic scale and racing world with escalating energy while introducing diverse visual subjects.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial night shot with scale establishes the setting while matching peak energy and musical density.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Balanced urban composition provides visual contrast while maintaining scale and establishing function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth luxury car movement continues the scale vibe with fresh subject matter for this first segment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady pit tracking shot establishes racing environment with appropriate energy for the segment.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Walking subjects in urban setting provides human contrast to vehicle-heavy options while establishing scale.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "32": {
+      "segment_id": 32,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish powerful opening with high-energy action while seeding diverse subjects for later segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense chaos perfectly matches peak arc stage and action function.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking maintains high energy while introducing fresh nature setting.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining dramatic energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Sparks and fireworks create visual intensity fitting the dense cut expectation.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Celebration with confetti offers human-focused contrast to vehicle-heavy clips.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "33": {
+      "segment_id": 33,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action foundation while introducing diverse subjects and perspectives for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak chaotic racing start provides intense action with fresh onboard perspective.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "High-speed crash with driver reaction adds emotional contrast while maintaining energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces human star power contrast to vehicle-focused clips.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "34": {
+      "segment_id": 34,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with explosive racing visuals while preserving diverse subjects for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches peak arc stage and action function.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Tire smoke and aggressive drifting provide peak visual intensity for this action segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Close-quarters racing chaos maintains speed vibe while offering fresh onboard perspective.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for peak stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "35": {
+      "segment_id": 35,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with explosive racing visuals while seeding diverse subjects for future segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking maintains speed vibe while adding urban night setting.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Climactic racing with fireworks maintains peak energy while introducing stadium atmosphere.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for peak stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "36": {
+      "segment_id": 36,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy opening with diverse subjects while maintaining dramatic intensity for the peak stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Brad Pitt reveal provides star power and narrative interest for the first segment's peak stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial racing shot with nature setting offers visual diversity while maintaining intensity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Indoor dialogue scene creates narrative contrast while maintaining dramatic tone.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Fireworks over urban track maintains energy with different visual subject matter.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial night view establishes setting while keeping energy high for opening.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "37": {
+      "segment_id": 37,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Provide resolution and closure with reflective, low-energy shots that contrast with expected racing content.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Nostalgic walking away from billboard provides resolution and closure for outro segment.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Intimate balcony scene offers calm reflection and visual contrast to racing content.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Static trophy focus creates thematic resolution and human connection after racing action.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative boxing training maintains low energy while introducing new subject matter.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip52.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Calm driver focus maintains racing theme while serving as button moment.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "38": {
+      "segment_id": 38,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish preparation energy with medium-paced action shots that introduce subjects and setting.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "People posing for photos matches the Preparation vibe and Intro stage with Action function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Racing team walking through pits continues Preparation vibe with Action function for Intro stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Car beginning launch escalates from preparation to initial action while maintaining medium energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Luxury car pulling into scene maintains Preparation vibe with smooth visual transition.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Boxing training provides subject contrast while matching energy and Preparation vibe.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "39": {
+      "segment_id": 39,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with racing intensity while preserving diversity for future segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash provides immediate high-energy action fitting the build-up stage and power vibe.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing fresh nature elements.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak drifting intensity with tire smoke escalates visual drama for the action function.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Chaotic race start provides high-energy action with fresh onboard perspective.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Fast-paced boxing training offers thematic contrast while maintaining required high energy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "40": {
+      "segment_id": 40,
+      "moments": [],
+      "total_duration": 0.81,
+      "is_single_moment": true,
+      "chaining_reason": "Establish immediate danger and intensity with fresh, diverse clips that serve the build-up stage while maintaining visual interest for dense cutting.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed crash with debris creates immediate danger and intensity fitting the build-up stage.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Tire smoke and aggressive drifting maintain danger vibe while providing fresh vehicle action.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Camera flashes on people create visual contrast while maintaining high energy for detail shot.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Expressive arm gesture introduces human element while keeping energy high for dense cutting.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip56.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Spinning tire detail provides visual contrast while serving the detail shot function.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "41": {
+      "segment_id": 41,
+      "moments": [],
+      "total_duration": 0.26,
+      "is_single_moment": true,
+      "chaining_reason": "Establish focused, medium-energy human and technical elements to build narrative tension before escalating to high-energy racing action.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Intense close-up creates focus and narrative tension fitting the build-up stage and reaction function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady walking provides consistent movement and clear framing that maintains focus while introducing people.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Walking sequence with steady tracking maintains focus while introducing a solo human subject for diversity.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady tracking shot of racing team provides professional focus that fits the build-up stage.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip75.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Tense pit lane shot creates anticipation while maintaining focus energy for the build-up.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "42": {
+      "segment_id": 42,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with explosive racing visuals while introducing diverse subjects for future segments.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the segment's peak energy and action function.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining dramatic energy for the peak stage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed impact with driver reaction adds human element while maintaining intense visual energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Racing with sparks and fireworks maintains peak energy while introducing crowd celebration elements.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "43": {
+      "segment_id": 43,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action with visual intensity while introducing subject diversity for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking maintains action function while offering urban variety.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "High-speed impact with driver reaction adds human element to the racing action.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for peak stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "44": {
+      "segment_id": 44,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action with visual intensity while introducing diverse subjects and settings for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the segment's peak action stage and high energy.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Chaotic race start with close-quarters action escalates intensity while keeping vehicle focus.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human subjects while maintaining dramatic energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Racing with sparks and fireworks maintains visual intensity with crowd energy for variety.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "45": {
+      "segment_id": 45,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish scale and energy for the peak while introducing diverse subjects and environments for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial night view establishes scale and energy for the peak arc stage with fresh subject matter.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Balanced balcony composition provides visual contrast and breath while maintaining urban theme.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate indoor dialogue creates narrative contrast and introduces human element early.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth luxury car movement continues scale vibe with natural transition energy.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady pit walk builds energy while establishing team environment for future sequences.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "46": {
+      "segment_id": 46,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the cinematic scale and character presence for the peak arc stage while maintaining atmospheric diversity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial establishing shot with Brad Pitt provides star power and scale for the peak arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Balanced urban composition offers atmospheric contrast from racing action while maintaining drama.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate indoor dialogue creates narrative contrast and character focus for establishing function.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady pit walk maintains racing atmosphere with controlled energy for short hold.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Urban walking shot provides atmospheric movement and narrative progression.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "47": {
+      "segment_id": 47,
+      "moments": [],
+      "total_duration": 0.27,
+      "is_single_moment": true,
+      "chaining_reason": "Establish visual diversity early by introducing human elements and abstract spectacle while maintaining dramatic energy for the peak arc stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Expressive human gesture provides fresh subject diversity while matching abstract vibe and peak arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Brad Pitt reveal offers star power and human element while maintaining dramatic energy for peak segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Fireworks provide abstract visual spectacle that fits detail function and dense cut expectation.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth luxury car movement offers medium energy contrast while maintaining dramatic tone for transition.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Fast-paced racing with clear focus provides reliable energy flow for this first segment.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "48": {
+      "segment_id": 48,
+      "moments": [],
+      "total_duration": 0.26,
+      "is_single_moment": true,
+      "chaining_reason": "Establish joyful peak energy with diverse subjects while serving reaction function for this first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip78.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Joyful emotional tone with fireworks matches peak arc stage and reaction function while introducing celebration.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "People-focused subject provides fresh contrast to vehicle-heavy clips while maintaining dramatic energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Nature setting offers visual diversity while maintaining dramatic adventurous tone for peak segment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate indoor dialogue creates strong contrast to racing action while serving reaction function.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Medium energy with people focus provides balanced reaction shot while maintaining narrative flow.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "49": {
+      "segment_id": 49,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy visual intensity with racing themes while introducing subject diversity for the full edit.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash provides peak visual intensity matching arc stage and dense cut expectation.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Brad Pitt reveal offers star power and dramatic energy while introducing human subjects.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Celebration with confetti maintains high energy while shifting to crowd focus.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial racing shot maintains vehicle focus with strong musical alignment.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Contemplative close-up creates editorial breath and introduces boxing subject diversity.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "50": {
+      "segment_id": 50,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy Night-Speed action with visual intensity for the first segment's Peak arc stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the Night-Speed vibe and Peak arc stage.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing at night maintains the Night-Speed vibe while introducing fresh urban setting.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Aerial tracking shot provides visual contrast with nature setting while maintaining high energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human element while maintaining dramatic energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night racing with fireworks maintains Night-Speed vibe with celebratory energy for Peak stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "51": {
+      "segment_id": 51,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy night racing action with visual intensity for the opening segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches night-speed vibe and peak arc stage.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed night racing with dynamic tracking aligns with segment's night-speed action function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night racing with fireworks provides peak visual energy while keeping night-time consistency.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human element while maintaining dramatic energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "52": {
+      "segment_id": 52,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish intimate, low-energy reaction shots with diverse subjects to build foundation before escalating energy.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative close-up with dramatic tone matches the intimacy vibe and reaction shot function.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip73.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Group posing with camera flashes maintains intimacy while introducing people subjects for diversity.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip55.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Low-energy establishing shot of vehicles contrasts with people-focused clips while keeping energy appropriate.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip66.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Stationary frame with crowd maintains low energy while introducing crowd element for future diversity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip75.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Static framing of car tires provides vehicle subject while keeping energy low for intimacy.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "53": {
+      "segment_id": 53,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish skill-focused visual language with medium energy, then escalate toward more dynamic racing action.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady walking provides consistent movement matching the segment's medium energy and skill vibe.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth lateral movement of luxury car fits the skill vibe and detail shot function with fresh content.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Fast-paced racing action escalates energy while maintaining skill focus for the peak arc stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "Medium",
+          "transition_type": "escalate",
+          "reason": "Fast-paced daytime racing provides visual escalation while keeping energy appropriate for the segment.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "54": {
+      "segment_id": 54,
+      "moments": [],
+      "total_duration": 0.27,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy visual intensity with racing action while introducing diverse subjects and settings for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash provides peak visual intensity matching the segment's high energy and climax role.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while offering fresh nature setting diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal adds star power and human focus while maintaining energy for narrative contrast.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Celebration with confetti maintains high energy while introducing crowd subject diversity.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Close-quarters racing start provides chaotic motion escalation for the peak arc stage.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "55": {
+      "segment_id": 55,
+      "moments": [],
+      "total_duration": 0.8,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy competition visuals while introducing diverse subjects and settings for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking maintains competition vibe while offering urban setting variation.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for the peak segment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night racing with fireworks maintains energy while introducing celebratory elements for narrative depth.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "56": {
+      "segment_id": 56,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-intensity visual language with diverse subjects while maintaining dramatic energy for the peak arc stage.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Brad Pitt reveal provides star power and narrative interest for the peak arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate character dialogue creates contrast while maintaining dramatic tone for reaction shot.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Fireworks over track maintains intensity while introducing fresh visual element.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial night view establishes scale and maintains dramatic energy for peak segment.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains intensity with strong musical alignment.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "57": {
+      "segment_id": 57,
+      "moments": [],
+      "total_duration": 0.26,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action with visual variety while maintaining speed and drama for the edit's opening peak.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches segment's high energy, speed vibe, and peak arc stage.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed night racing with dynamic tracking maintains energy while offering urban nighttime contrast.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human element while maintaining dramatic energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Sparks and fireworks add celebratory visual intensity to the racing action.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "58": {
+      "segment_id": 58,
+      "moments": [],
+      "total_duration": 0.27,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with racing visuals while introducing subject diversity for the edit's opening.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the segment's high energy, speed vibe, and peak arc stage.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains high energy while introducing nature setting for visual diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak visual intensity with tire smoke and drifting provides escalating action for this peak segment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic camera tracking maintains energy while introducing urban setting variation.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining high energy for peak segment.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "59": {
+      "segment_id": 59,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with diverse racing perspectives while maintaining peak intensity.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches peak arc stage and dense cut expectation.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking maintains action function while offering urban variety.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip76.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Night racing with fireworks provides peak energy while introducing crowd elements for future diversity.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Tire smoke and drifting maneuvers maintain speed vibe while offering different racing perspective.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "60": {
+      "segment_id": 60,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish the celebration peak with fresh, diverse reaction shots that escalate energy while maintaining the celebratory vibe.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip78.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Peak emotional intensity with screaming celebration and fireworks perfectly matches the celebration vibe and arc stage.",
+          "confidence": 0.9
+        },
+        {
+          "clip_filename": "clip67.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Vibrant fireworks display over racetrack provides celebration energy with fresh subject diversity (people-solo).",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip77.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Intense celebration with confetti and crowd energy serves the reaction shot function with fresh crowd focus.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power and narrative interest as a contrasting but celebratory reaction moment.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dialogue scene creates strong contrast while maintaining high energy for editorial diversity.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "61": {
+      "segment_id": 61,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with explosive racing visuals for the first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the peak arc stage and action function.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Tire smoke and aggressive drifting maintain high energy while introducing fresh vehicle action.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial tracking shot provides dynamic racing energy with strong musical alignment.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal introduces star power and human element while maintaining dramatic energy.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip65.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Fireworks over track provides celebratory peak energy with urban setting diversity.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "62": {
+      "segment_id": 62,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy racing action with visual intensity for the opening peak segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the segment's peak energy and action function.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial racing shot maintains high energy while introducing nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed night racing with dynamic tracking maintains energy while offering urban setting variation.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining dramatic energy for peak stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Racing with sparks and fireworks maintains energy while adding celebration elements.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "63": {
+      "segment_id": 63,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy action foundation with diverse visual subjects while maintaining dramatic intensity for the edit's opening peak.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the segment's peak energy and speed vibe.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Dynamic aerial tracking shot maintains high energy while introducing fresh nature setting for diversity.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic camera tracking sustains action while offering urban setting variety.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal provides star power contrast while maintaining dramatic energy for narrative interest.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip70.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Sparks and fireworks create peak visual energy escalation with fresh crowd and vehicle combination.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "64": {
+      "segment_id": 64,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Escalate conflict energy with fresh subjects while maintaining dramatic tension for the peak reaction shot.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Reveal of Brad Pitt provides star power and narrative interest for the peak conflict stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Intimate dialogue creates contrast to racing action while maintaining dramatic tension for reaction shot.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with high visual chaos escalates conflict energy for the peak arc stage.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Aerial tracking shot continues dramatic racing energy with fresh nature setting diversity.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Steady pit walk provides contrast to high-speed action while maintaining conflict vibe.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "65": {
+      "segment_id": 65,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-energy crash action while introducing visual diversity for the edit's opening peak.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches segment's crash vibe and peak arc stage.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed impact with debris maintains crash energy while offering fresh crash perspective.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Aerial racing shot provides dynamic action contrast from crash debris while maintaining high energy.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip68.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed racing with dynamic tracking continues action energy with fresh urban setting.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip63.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Brad Pitt reveal offers star power contrast from vehicle-focused action while maintaining drama.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "66": {
+      "segment_id": 66,
+      "moments": [],
+      "total_duration": 0.53,
+      "is_single_moment": true,
+      "chaining_reason": "Establish high-intensity crash sequence with escalating visual impact while maintaining narrative coherence.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip71.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Explosive crash with intense visual chaos perfectly matches the 'Crash' vibe and 'Peak' arc stage.",
+          "confidence": 0.95
+        },
+        {
+          "clip_filename": "clip72.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "High-speed impact with debris maintains the crash energy while introducing a driver reaction for narrative depth.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip54.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Tire smoke and aggressive drifting provide high visual intensity that fits the action shot function.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip57.mp4",
+          "energy_level": "High",
+          "transition_type": "continue",
+          "reason": "Chaotic close-quarters racing maintains high energy while offering fresh onboard perspective.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "High",
+          "transition_type": "contrast",
+          "reason": "Aerial tracking shot provides visual contrast with different perspective while maintaining high energy.",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "67": {
+      "segment_id": 67,
+      "moments": [],
+      "total_duration": 0.54,
+      "is_single_moment": true,
+      "chaining_reason": "Establish scale and location while maintaining medium energy for this first segment.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip51.mp4",
+          "energy_level": "High",
+          "transition_type": "escalate",
+          "reason": "Aerial establishing shot with scale matches segment's 'Establish' function and 'Peak' arc stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Balanced urban establishing shot provides visual contrast while maintaining narrative scale.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip49.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Smooth vehicle movement continues the scale theme with natural flow.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip53.mp4",
+          "energy_level": "Medium",
+          "transition_type": "continue",
+          "reason": "Steady tracking shot maintains energy while establishing racing environment.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Medium",
+          "transition_type": "contrast",
+          "reason": "Walking shot provides human scale contrast to vehicle-focused options.",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "68": {
+      "segment_id": 68,
+      "moments": [],
+      "total_duration": 2.804354,
+      "is_single_moment": true,
+      "chaining_reason": "Provide resolution and closure with reflective, human-focused moments that contrast with high-energy racing while serving as an outro button.",
+      "advisor_alternatives": [
+        {
+          "clip_filename": "clip61.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Nostalgic walking away from billboard provides resolution and closure fitting the outro stage.",
+          "confidence": 0.85
+        },
+        {
+          "clip_filename": "clip64.mp4",
+          "energy_level": "Low",
+          "transition_type": "release",
+          "reason": "Intimate balcony scene offers calm reflection and visual contrast to racing footage.",
+          "confidence": 0.8
+        },
+        {
+          "clip_filename": "clip62.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Contemplative boxing training maintains low energy while introducing human solo subject.",
+          "confidence": 0.75
+        },
+        {
+          "clip_filename": "clip50.mp4",
+          "energy_level": "Low",
+          "transition_type": "contrast",
+          "reason": "Indoor trophy scene provides thematic resolution and shifts from outdoor racing environments.",
+          "confidence": 0.7
+        },
+        {
+          "clip_filename": "clip52.mp4",
+          "energy_level": "Low",
+          "transition_type": "continue",
+          "reason": "Driver in wind tunnel maintains racing theme with focused human element for button moment.",
+          "confidence": 0.65
+        }
+      ]
+    }
+  },
+  "library_assessment": null,
+  "creative_audit": null,
+  "overall_strategy": "",
+  "required_improvements": [],
+  "cache_version": "4.2",
+  "cached_at": "2026-03-07T21:15:37.872009"
+}

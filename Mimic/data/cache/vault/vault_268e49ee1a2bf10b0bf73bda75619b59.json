@@ -1,0 +1,839 @@
+{
+  "header": "The cinematic montage edit was crafted with a focus on relentless pacing and tight sync, aiming to deliver a vibrant tone. The goal was to maintain narrative coherence despite library gaps and missing motifs.",
+  "advisor": {
+    "hero": "The library's limitations significantly impacted the edit, but strategic decisions and compromises ensured the narrative remained coherent and engaging.",
+    "body": "The lack of ideal motifs, such as intensity and action, forced the use of available clips, which sometimes resulted in overuse. However, the relentless pacing and tight sync helped maintain the edit's momentum and emotional impact."
+  },
+  "decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to create anticipation in this segment.",
+      "decision": "I used clip_005.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed to convey preparation in this segment.",
+      "decision": "I locked in clip_025.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I wanted to showcase power in this segment.",
+      "decision": "I selected clip_023.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I aimed to create danger in this segment.",
+      "decision": "I used clip_024.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 5,
+      "what_i_tried": "I wanted to focus on the subject in this segment.",
+      "decision": "I deployed clip_013.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an action motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 6,
+      "what_i_tried": "I aimed to convey speed in this segment.",
+      "decision": "I used clip_001.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 7,
+      "what_i_tried": "I wanted to maintain speed in this segment.",
+      "decision": "I selected clip_015.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 8,
+      "what_i_tried": "I aimed to continue the speed in this segment.",
+      "decision": "I used clip_006.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 9,
+      "what_i_tried": "I wanted to showcase scale in this segment.",
+      "decision": "I selected clip_003.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 10,
+      "what_i_tried": "I aimed to create atmosphere in this segment.",
+      "decision": "I used clip_016.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 11,
+      "what_i_tried": "I wanted to convey an abstract concept in this segment.",
+      "decision": "I selected clip_012.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 12,
+      "what_i_tried": "I aimed to evoke joy in this segment.",
+      "decision": "I deployed clip_030.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 13,
+      "what_i_tried": "I wanted to focus on detail in this segment.",
+      "decision": "I used clip_029.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 14,
+      "what_i_tried": "I aimed to convey night-speed in this segment.",
+      "decision": "I selected clip_020.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 15,
+      "what_i_tried": "I wanted to maintain night-speed in this segment.",
+      "decision": "I used clip_028.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 16,
+      "what_i_tried": "I aimed to create intimacy in this segment.",
+      "decision": "I deployed clip_014.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 17,
+      "what_i_tried": "I wanted to showcase skill in this segment.",
+      "decision": "I selected clip_010.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 18,
+      "what_i_tried": "I aimed to convey control in this segment.",
+      "decision": "I used clip_009.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 19,
+      "what_i_tried": "I wanted to create competition in this segment.",
+      "decision": "I selected clip_008.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 20,
+      "what_i_tried": "I aimed to evoke intensity in this segment.",
+      "decision": "I deployed clip_002.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 21,
+      "what_i_tried": "I wanted to maintain speed in this segment.",
+      "decision": "I used clip_004.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 22,
+      "what_i_tried": "I aimed to continue the speed in this segment.",
+      "decision": "I selected clip_007.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 23,
+      "what_i_tried": "I wanted to maintain speed in this segment.",
+      "decision": "I used clip_011.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 24,
+      "what_i_tried": "I aimed to create celebration in this segment.",
+      "decision": "I deployed clip_019.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 25,
+      "what_i_tried": "I wanted to showcase power in this segment.",
+      "decision": "I selected clip_017.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 26,
+      "what_i_tried": "I aimed to convey speed in this segment.",
+      "decision": "I used clip_018.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 27,
+      "what_i_tried": "I wanted to maintain speed in this segment.",
+      "decision": "I selected clip_022.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 28,
+      "what_i_tried": "I aimed to create conflict in this segment.",
+      "decision": "I deployed clip_021.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 29,
+      "what_i_tried": "I wanted to convey crash in this segment.",
+      "decision": "I used clip_027.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 30,
+      "what_i_tried": "I aimed to maintain crash in this segment.",
+      "decision": "I selected clip_026.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 31,
+      "what_i_tried": "I wanted to showcase scale in this segment.",
+      "decision": "I used clip_001.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 32,
+      "what_i_tried": "I aimed to convey power in this segment.",
+      "decision": "I selected clip_002.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 33,
+      "what_i_tried": "I wanted to maintain speed in this segment.",
+      "decision": "I used clip_003.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 34,
+      "what_i_tried": "I aimed to continue the speed in this segment.",
+      "decision": "I selected clip_004.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 35,
+      "what_i_tried": "I wanted to maintain speed in this segment.",
+      "decision": "I used clip_005.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 36,
+      "what_i_tried": "I aimed to evoke intensity in this segment.",
+      "decision": "I deployed clip_006.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 37,
+      "what_i_tried": "I wanted to convey resolution in this segment.",
+      "decision": "I used clip_007.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 38,
+      "what_i_tried": "I aimed to prepare the subject in this segment.",
+      "decision": "I selected clip_008.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 39,
+      "what_i_tried": "I wanted to showcase power in this segment.",
+      "decision": "I used clip_009.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 40,
+      "what_i_tried": "I aimed to create danger in this segment.",
+      "decision": "I selected clip_010.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 41,
+      "what_i_tried": "I wanted to focus on the subject in this segment.",
+      "decision": "I deployed clip_011.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an action motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 42,
+      "what_i_tried": "I aimed to convey speed in this segment.",
+      "decision": "I used clip_012.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 43,
+      "what_i_tried": "I wanted to maintain speed in this segment.",
+      "decision": "I selected clip_013.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 44,
+      "what_i_tried": "I aimed to continue the speed in this segment.",
+      "decision": "I used clip_014.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 45,
+      "what_i_tried": "I wanted to showcase scale in this segment.",
+      "decision": "I selected clip_015.mp4 due to the library gap.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 46,
+      "what_i_tried": "I aimed to create atmosphere in this segment.",
+      "decision": "I used clip_016.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": []
+    },
+    {
+      "segment_id": 47,
+      "what_i_tried": "Target abstract.",
+      "decision": "Used clip_017.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 48,
+      "what_i_tried": "Target joy.",
+      "decision": "Used clip_018.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 49,
+      "what_i_tried": "Target detail.",
+      "decision": "Used clip_019.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 50,
+      "what_i_tried": "Target night-speed.",
+      "decision": "Used clip_020.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 51,
+      "what_i_tried": "Target night-speed.",
+      "decision": "Used clip_021.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 52,
+      "what_i_tried": "Target intimacy.",
+      "decision": "Used clip_022.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 53,
+      "what_i_tried": "Target skill.",
+      "decision": "Used clip_023.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 54,
+      "what_i_tried": "Target control.",
+      "decision": "Used clip_024.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 55,
+      "what_i_tried": "Target competition.",
+      "decision": "Used clip_025.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 56,
+      "what_i_tried": "Target intensity.",
+      "decision": "Used clip_026.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 57,
+      "what_i_tried": "Target speed.",
+      "decision": "Used clip_027.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 58,
+      "what_i_tried": "Target speed.",
+      "decision": "Used clip_028.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 59,
+      "what_i_tried": "Target speed.",
+      "decision": "Used clip_029.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 60,
+      "what_i_tried": "Target celebration.",
+      "decision": "Used clip_030.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 61,
+      "what_i_tried": "Target power.",
+      "decision": "Used clip_001.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 62,
+      "what_i_tried": "Target speed.",
+      "decision": "Used clip_002.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 63,
+      "what_i_tried": "Target speed.",
+      "decision": "Used clip_003.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 64,
+      "what_i_tried": "Target conflict.",
+      "decision": "Used clip_004.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 65,
+      "what_i_tried": "Target crash.",
+      "decision": "Used clip_005.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 66,
+      "what_i_tried": "Target crash.",
+      "decision": "Used clip_006.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 67,
+      "what_i_tried": "Target scale.",
+      "decision": "Used clip_007.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    },
+    {
+      "segment_id": 68,
+      "what_i_tried": "Target resolution.",
+      "decision": "Used clip_008.mp4 (confident).",
+      "what_if": "No stronger alternative existed.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "confident"
+      ]
+    }
+  ],
+  "executive_summary": [
+    "The edit prioritized pacing over raw energy levels, leading to a relentless and tightly synced narrative.",
+    "Library gaps forced compromises, particularly in segments requiring intensity or action motifs.",
+    "Despite these challenges, the edit preserved momentum and maintained narrative coherence.",
+    "Some clips were overused, potentially reducing the edit's overall impact.",
+    "The library's limitations led to strategic decisions, such as deploying clips as structural anchors.",
+    "The technical discipline of tone, pacing, and sync was upheld throughout the edit."
+  ],
+  "key_decision_stream": [
+    {
+      "segment_id": 5,
+      "what_i_tried": "I wanted to focus on the subject in this segment.",
+      "decision": "I deployed clip_013.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an action motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 12,
+      "what_i_tried": "I aimed to evoke joy in this segment.",
+      "decision": "I deployed clip_030.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 16,
+      "what_i_tried": "I aimed to create intimacy in this segment.",
+      "decision": "I deployed clip_014.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 20,
+      "what_i_tried": "I aimed to evoke intensity in this segment.",
+      "decision": "I deployed clip_002.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 24,
+      "what_i_tried": "I aimed to create celebration in this segment.",
+      "decision": "I deployed clip_019.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 28,
+      "what_i_tried": "I aimed to create conflict in this segment.",
+      "decision": "I deployed clip_021.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 36,
+      "what_i_tried": "I aimed to evoke intensity in this segment.",
+      "decision": "I deployed clip_006.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an intensity motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 41,
+      "what_i_tried": "I wanted to focus on the subject in this segment.",
+      "decision": "I deployed clip_011.mp4 as a structural anchor to preserve the rhythmic soul of the edit.",
+      "what_if": "Replacing with an action motif could have enhanced the segment.",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 48,
+      "what_i_tried": "Target joy.",
+      "decision": "Used clip_018.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 52,
+      "what_i_tried": "Target intimacy.",
+      "decision": "Used clip_022.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 56,
+      "what_i_tried": "Target intensity.",
+      "decision": "Used clip_026.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 60,
+      "what_i_tried": "Target celebration.",
+      "decision": "Used clip_030.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    },
+    {
+      "segment_id": 64,
+      "what_i_tried": "Target conflict.",
+      "decision": "Used clip_004.mp4 (structural necessity).",
+      "what_if": "replace with intensity",
+      "is_key": true,
+      "importance": "key",
+      "tags": [
+        "structural_necessity"
+      ]
+    }
+  ],
+  "friction_log": [],
+  "post_mortem": {},
+  "next_steps": [],
+  "clip_suggestions": [],
+  "technical": []
+}

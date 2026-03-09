@@ -1,0 +1,2065 @@
+================================================================================
+PIPELINE RUN: REF26.MP4
+================================================================================
+Session ID: sess_3d5c2ddcbb641b1879f096b668cc3f04
+Reference: ref26.mp4
+Clips: 30
+Timestamp: 2026-03-08 02:14:33
+
+[PROGRESS] Step 1/5: Validating inputs...
+
+[1/5] Validating inputs...
+[WS] Connection attempt for session: sess_3d5c2ddcbb641b1879f096b668cc3f04
+[WS] Origin: http://localhost:3000
+[WS] Connection accepted for session: sess_3d5c2ddcbb641b1879f096b668cc3f04
+[WS] Session found: sess_3d5c2ddcbb641b1879f096b668cc3f04
+[PROGRESS] Step 2/5: Detecting visual cuts and analyzing reference structure...
+
+[2/5] Detecting visual cuts and analyzing reference structure...
+  [DIAGNOSTIC] Detecting visual scene changes (threshold=0.12)...
+  [DIAGNOSTIC] Detecting visual scene changes (threshold=0.12)...
+  [OK] Detected 120 visual cuts.
+  [MUSIC] Analyzing: ref_analysis_audio.wav...
+  [OK] BPM: 112.35
+  [OK] Found 136 musical onsets
+  [OK] Energy curve: 35s, peak at 2s
+[INDEX] Global Refresh Started...
+  [HYBRID] Visual cuts: 120, Beat-enhanced: 67
+
+============================================================
+[BRAIN] ANALYZING REFERENCE VIDEO: ref26.mp4
+[BRAIN] Using 67 visual scene anchors.
+============================================================
+
+[CACHE] Loaded Hybrid Rhythmic analysis: ref_9a166479e2b09a72862573a3976431fb_v12.1_h09848871.json
+[OK] Loaded from cache: 68 segments (preserved original rhythm)
+[OK] Gemini successfully analyzed reference: 68 segments found.
+[PROGRESS] Step 3/5: Analyzing user clips with Gemini AI...
+
+[3/5] Analyzing user clips with Gemini AI...
+
+============================================================
+[BRAIN] PARALLEL ANALYSIS: 30 clips
+[BRAIN] Model: gemini-3-flash-preview
+============================================================
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip49.mp4...
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip52.mp4...
+  Analyzing comprehensively: clip50.mp4...    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments  Analyzing comprehensively: clip55.mp4...[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+    [CACHE] Loaded: Low/Dynamic/intensity=1 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip51.mp4...
+    [CACHE] Subject: People-Solo, Object-Vehicle  Analyzing comprehensively: clip53.mp4...    [CACHE] Subject: Object-Vehicle, Place-Nature
+
+
+    [CACHE] Subject: Object-Vehicle
+  Analyzing comprehensively: clip56.mp4...
+
+    [CACHE] Subject: People-Group, Place-Indoor  Analyzing comprehensively: clip54.mp4...    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments
+
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Derived vibes: Vehicle
+
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Subject: People-Solo, Place-Urban    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Derived vibes: Vehicle, Nature    [CACHE] Derived vibes: Group, Indoor
+
+    [CACHE] Subject: Object-Vehicle, People-Solo
+
+
+  Analyzing comprehensively: clip58.mp4...
+
+    [CACHE] Subject: Object-Vehicle, People-Crowd
+    [CACHE] Derived vibes: Vehicle, Crowd
+
+
+
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Derived vibes: Solo, Urban  Analyzing comprehensively: clip57.mp4...
+    [CACHE] Subject: Object-Vehicle, People-Crowd
+    [CACHE] Derived vibes: Vehicle, Crowd[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Subject: Object-Vehicle[INDEX] Refresh Complete (1.65s). Index: 228 clips, 17 results, 22 refs.
+
+
+
+
+
+    [CACHE] Derived vibes: Vehicle, Solo  Analyzing comprehensively: clip60.mp4...    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments  Analyzing comprehensively: clip59.mp4...[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Derived vibes: Vehicle  Analyzing comprehensively: clip61.mp4...
+    [CACHE] Subject: Object-Vehicle  Analyzing comprehensively: clip62.mp4...
+
+
+
+
+    [CACHE] Subject: Object-Vehicle, Activity-Travel
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+  Analyzing comprehensively: clip63.mp4...    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+    [CACHE] Derived vibes: Vehicle
+    [CACHE] Subject: People-Crowd, Object-Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Derived vibes: Vehicle, Travel
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Derived vibes: Crowd, Vehicle
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Subject: People-Group, Place-Urban
+  Analyzing comprehensively: clip64.mp4...
+
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments
+  Analyzing comprehensively: clip65.mp4...
+
+    [CACHE] Derived vibes: Group, Urban
+    [CACHE] Subject: People-Solo
+    [CACHE] Derived vibes: Solo
+    [CACHE] Subject: People-Group, People-Crowd
+
+    [CACHE] Loaded: Medium/Dynamic/intensity=2 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments  Analyzing comprehensively: clip66.mp4...    [CACHE] Derived vibes: Group, Crowd
+
+
+    [CACHE] Subject: People-Group, Place-Urban
+    [CACHE] Derived vibes: Group, Urban    [CACHE] Subject: People-Solo, Place-Urban
+
+
+    [CACHE] Derived vibes: Solo, Urban[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview    [CACHE] Subject: Object-Vehicle, People-Crowd  Analyzing comprehensively: clip67.mp4...  Analyzing comprehensively: clip70.mp4...[OK] Using Gemini 3 model: gemini-3-flash-preview
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+
+  Analyzing comprehensively: clip69.mp4...
+
+  Analyzing comprehensively: clip68.mp4...
+
+  Analyzing comprehensively: clip71.mp4...
+    [CACHE] Derived vibes: Vehicle, Crowd  Analyzing comprehensively: clip72.mp4...    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+  Analyzing comprehensively: clip73.mp4...
+
+
+    [CACHE] Subject: People-Crowd, Object-Vehicle
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Derived vibes: Crowd, Vehicle
+
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments  Analyzing comprehensively: clip74.mp4...
+
+    [CACHE] Subject: Object-Vehicle, Place-Urban    [CACHE] Subject: People-Solo, Activity-Celebration    [CACHE] Subject: Object-Vehicle, Place-Urban
+
+
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Loaded: High/Dynamic/intensity=2 with 3 best moments    [CACHE] Derived vibes: Solo, Celebration    [CACHE] Derived vibes: Vehicle, Urban    [CACHE] Derived vibes: Vehicle, Urban    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+
+
+    [CACHE] Subject: People-Crowd, Object-Vehicle
+    [CACHE] Derived vibes: Crowd, Vehicle    [CACHE] Subject: Object-Vehicle, People-Solo
+
+
+
+
+    [CACHE] Subject: People-Group    [CACHE] Derived vibes: Vehicle, Solo
+
+    [CACHE] Derived vibes: Group
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip75.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle
+
+    [CACHE] Subject: People-Solo, Object-Vehicle    [CACHE] Derived vibes: Vehicle
+
+    [CACHE] Derived vibes: Solo, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip76.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: Object-Vehicle, People-Crowd
+    [CACHE] Derived vibes: Vehicle, Crowd[OK] Using Gemini 3 model: gemini-3-flash-preview
+
+  Analyzing comprehensively: clip77.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Crowd, Object-Vehicle
+    [CACHE] Derived vibes: Crowd, Vehicle
+[OK] Using Gemini 3 model: gemini-3-flash-preview
+  Analyzing comprehensively: clip78.mp4...
+    [CACHE] Loaded: High/Dynamic/intensity=3 with 3 best moments
+    [CACHE] Subject: People-Group, Object-Vehicle
+    [CACHE] Derived vibes: Group, Vehicle
+
+[OK] All 30 clips analyzed in parallel
+[OK] Gemini successfully analyzed 30 clips (using originals for cache).
+  ✅ Library Health: 94.3% readiness
+  [CACHE] Hit! Using persistent standardized clip: clip49.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip50.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip51.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip52.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip53.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip54.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip55.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip56.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip57.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip58.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip59.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip60.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip61.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip62.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip63.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip64.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip65.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip66.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip67.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip68.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip69.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip70.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip71.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip72.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip73.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip74.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip75.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip76.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip77.mp4
+  [CACHE] Hit! Using persistent standardized clip: clip78.mp4
+[OK] All clips standardized (cached or new) and ready for render.
+[PROGRESS] Step 4/5: Creating edit sequence...
+
+[4/5] Creating edit sequence...
+
+============================================================
+[EDITOR] MATCHING CLIPS TO BLUEPRINT (REFERENCE MODE)
+============================================================
+  🔒 REFERENCE MODE: Structure is sacred, no looping, no lying EDL
+  Segments: 68
+  Clips: 30
+  Clips with pre-computed best moments: 30/30
+
+============================================================
+[ADVISOR] GENERATING STRATEGIC GUIDANCE
+============================================================
+  🤝 Authority Confirmed: v12.1 Director-Soul Intelligence active.
+  🎵 Beat grid for advisor: 67 beats at 112.3 BPM
+  🧠 Calling DeepSeek for strategic guidance...
+  🧠 Calling DeepSeek (Chat V3) with Context Caching...
+
+  🎯 V14.0: Generating contextual moment plans...
+     Processing 68 segment(s) with V14.0
+     Segment 1: Building candidates... ✓ 90 candidates
+     Segment 1: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.16s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip53.mp4 [Low] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 2: Building candidates... ✓ 90 candidates
+     Segment 2: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip73.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 3: Building candidates... ✓ 90 candidates
+     Segment 3: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 4: Building candidates... ✓ 90 candidates
+     Segment 4: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 5: Building candidates... ✓ 90 candidates
+     Segment 5: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip61.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 6: Building candidates... ✓ 90 candidates
+     Segment 6: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.16s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 7: Building candidates... ✓ 90 candidates
+     Segment 7: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 8: Building candidates... ✓ 90 candidates
+     Segment 8: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 9: Building candidates... ✓ 90 candidates
+     Segment 9: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip51.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 10: Building candidates... ✓ 90 candidates
+     Segment 10: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip51.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 11: Building candidates... ✓ 90 candidates
+     Segment 11: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.15s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip61.mp4 [Medium] (contrast)
+     ✓ Plan stored with 5 alternatives
+     Segment 12: Building candidates... ✓ 90 candidates
+     Segment 12: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip78.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 13: Building candidates... ✓ 90 candidates
+     Segment 13: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 14: Building candidates... ✓ 90 candidates
+     Segment 14: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 15: Building candidates... ✓ 90 candidates
+     Segment 15: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 16: Building candidates... ✓ 90 candidates
+     Segment 16: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.15s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip62.mp4 [Low] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 17: Building candidates... ✓ 90 candidates
+     Segment 17: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip61.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 18: Building candidates... ✓ 90 candidates
+     Segment 18: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 19: Building candidates... ✓ 90 candidates
+     Segment 19: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 20: Building candidates... ✓ 90 candidates
+     Segment 20: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip63.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 21: Building candidates... ✓ 90 candidates
+     Segment 21: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.15s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 22: Building candidates... ✓ 90 candidates
+     Segment 22: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 23: Building candidates... ✓ 90 candidates
+     Segment 23: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 24: Building candidates... ✓ 90 candidates
+     Segment 24: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip78.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 25: Building candidates... ✓ 90 candidates
+     Segment 25: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 26: Building candidates... ✓ 90 candidates
+     Segment 26: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.15s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 27: Building candidates... ✓ 90 candidates
+     Segment 27: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 28: Building candidates... ✓ 90 candidates
+     Segment 28: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip63.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 29: Building candidates... ✓ 90 candidates
+     Segment 29: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 30: Building candidates... ✓ 90 candidates
+     Segment 30: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 31: Building candidates... ✓ 90 candidates
+     Segment 31: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.14s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip51.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 32: Building candidates... ✓ 90 candidates
+     Segment 32: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 33: Building candidates... ✓ 90 candidates
+     Segment 33: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 34: Building candidates... ✓ 90 candidates
+     Segment 34: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 35: Building candidates... ✓ 90 candidates
+     Segment 35: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 36: Building candidates... ✓ 90 candidates
+     Segment 36: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.16s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip63.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 37: Building candidates... ✓ 90 candidates
+     Segment 37: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip61.mp4 [Low] (release)
+     ✓ Plan stored with 5 alternatives
+     Segment 38: Building candidates... ✓ 90 candidates
+     Segment 38: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip73.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 39: Building candidates... ✓ 90 candidates
+     Segment 39: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 40: Building candidates... ✓ 90 candidates
+     Segment 40: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip72.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 41: Building candidates... ✓ 90 candidates
+     Segment 41: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.15s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip65.mp4 [Medium] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 42: Building candidates... ✓ 90 candidates
+     Segment 42: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 43: Building candidates... ✓ 90 candidates
+     Segment 43: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 44: Building candidates... ✓ 90 candidates
+     Segment 44: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 45: Building candidates... ✓ 90 candidates
+     Segment 45: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip51.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 46: Building candidates... ✓ 90 candidates
+     Segment 46: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.15s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip51.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 47: Building candidates... ✓ 90 candidates
+     Segment 47: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip61.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 48: Building candidates... ✓ 90 candidates
+     Segment 48: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip78.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 49: Building candidates... ✓ 90 candidates
+     Segment 49: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 50: Building candidates... ✓ 90 candidates
+     Segment 50: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 51: Building candidates... ✓ 90 candidates
+     Segment 51: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.18s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 52: Building candidates... ✓ 90 candidates
+     Segment 52: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip62.mp4 [Low] (continue)
+     ✓ Plan stored with 5 alternatives
+     Segment 53: Building candidates... ✓ 90 candidates
+     Segment 53: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip61.mp4 [Medium] (continue)
+     ✓ Plan stored with 4 alternatives
+     Segment 54: Building candidates... ✓ 90 candidates
+     Segment 54: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 55: Building candidates... ✓ 90 candidates
+     Segment 55: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 56: Building candidates... ✓ 90 candidates
+     Segment 56: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.16s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip63.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 57: Building candidates... ✓ 90 candidates
+     Segment 57: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 58: Building candidates... ✓ 90 candidates
+     Segment 58: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 59: Building candidates... ✓ 90 candidates
+     Segment 59: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 60: Building candidates... ✓ 90 candidates
+     Segment 60: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip78.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 61: Building candidates... ✓ 90 candidates
+     Segment 61: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.15s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 62: Building candidates... ✓ 90 candidates
+     Segment 62: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 63: Building candidates... ✓ 90 candidates
+     Segment 63: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 64: Building candidates... ✓ 90 candidates
+     Segment 64: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip63.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 65: Building candidates... ✓ 90 candidates
+     Segment 65: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 66: Building candidates... ✓ 90 candidates
+     Segment 66: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip71.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 67: Building candidates... ✓ 90 candidates
+     Segment 67: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.22s). Index: 228 clips, 17 results, 22 refs.
+✓ Top pick: clip51.mp4 [High] (escalate)
+     ✓ Plan stored with 5 alternatives
+     Segment 68: Building candidates... ✓ 90 candidates
+     Segment 68: Calling Advisor...   🧠 Calling DeepSeek (Chat V3) with Context Caching...
+✓ Top pick: clip61.mp4 [Low] (release)
+     ✓ Plan stored with 5 alternatives
+  ✅ V14.0: 68 segment(s) with contextual moment plans
+  ✅ Advisor hints generated and cached
+  💡 Text Overlay Intent: The text overlay demands a relentless, high-stakes world where elite brands and Formula 1 exist at the pinnacle of performance and prestige—every moment must feel like it belongs to this exclusive, high-octane ecosystem.
+  📖 Dominant Narrative: This video is fundamentally about the razor-thin margin between human excellence and catastrophic failure in Formula 1's pressure-cooker environment.
+  🎯 Editorial Strategy: Prioritize clips where the human element (driver focus, reaction, exertion) is palpable, even within high-speed montages, to anchor the 'personal stakes' narrative; use the abundant action as the relentless engine, but let the human moments be the steering.
+  ✅ Advisor enabled: Strategic guidance active
+  🎵 Beat grid generated: 67 beats at 112.35 BPM (mode: REFERENCE)
+  🎯 Onset grid active: 136 musical hits (priority over BPM grid)
+  ✅ Active snap grid: 136 points (onset)
+
+  📚 Global history loaded: 79 clips tracked across past edits
+
+📊 CLIP DEMAND ANALYSIS:
+   Reference needs: High=40, Medium=23, Low=5
+   You have:        High=26, Medium=3, Low=1
+   ⚠️ DEFICIT: Need 14 more High-energy clips
+   ⚠️ DEFICIT: Need 20 more Medium-energy clips
+   ⚠️ DEFICIT: Need 4 more Low-energy clips
+
+
+Segment 1: 0.000000s-0.200000s (0.200000s, Low/Static)
+    🎵 CDE: Dense (beats: 1, density: 5.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip53.mp4 [Low] (continue) — Wide aerial establishing shot perfectly matches the Intro st
+    🧩 Advisor selected clip: clip53.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip53.mp4 [1.50s-1.70s] (0.20s) → timeline [0.000000s-0.200000s]
+[SEGMENT 1 LOG] Ref: 0.20s | Rendered: 0.20s | Cuts: 1 | Mode: REFERENCE
+
+Segment 2: 0.200000s-0.533333s (0.333333s, Medium/Dynamic)
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip73.mp4 [Medium] (continue) — Establishing shot of racing gear preparation matches the Int
+    🧩 Advisor selected clip: clip73.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip73.mp4 [1.00s-1.33s] (0.33s) → timeline [0.200000s-0.533333s]
+[SEGMENT 2 LOG] Ref: 0.33s | Rendered: 0.33s | Cuts: 1 | Mode: REFERENCE
+
+Segment 3: 0.533333s-1.066667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip71.mp4 [High] (escalate) — Explosive crash matches segment's high energy and power vibe
+    🧩 Advisor selected clip: clip71.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip71.mp4 [0.00s-0.53s] (0.53s) → timeline [0.533333s-1.066667s]
+[SEGMENT 3 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 4: 1.066667s-1.600000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip72.mp4 [High] (escalate) — High-speed impact with debris serves the detail shot functio
+    🧩 Advisor selected clip: clip72.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip72.mp4 [0.00s-0.53s] (0.53s) → timeline [1.066667s-1.600000s]
+[SEGMENT 4 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 5: 1.600000s-2.133333s (0.533333s, Medium/Static)
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip61.mp4 [High] (escalate) — Expressive arm gesture provides visual energy for reaction s
+    🧩 Advisor selected clip: clip61.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip61.mp4 [0.00s-0.53s] (0.53s) → timeline [1.600000s-2.133333s]
+[SEGMENT 5 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 6: 2.133333s-2.666667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip49.mp4 [High] (continue) — Dynamic aerial tracking shot maintains high energy while int
+    🧩 Advisor selected clip: clip49.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip49.mp4 [6.50s-7.03s] (0.53s) → timeline [2.133333s-2.666667s]
+[SEGMENT 6 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 7: 2.666667s-2.933333s (0.266667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip63.mp4 [High] (contrast) — Brad Pitt reveal provides star power contrast while maintain
+    🧩 Advisor selected clip: clip63.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip63.mp4 [5.50s-5.77s] (0.27s) → timeline [2.666667s-2.933333s]
+[SEGMENT 7 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 8: 2.933333s-3.200000s (0.266667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip54.mp4 [High] (continue) — Peak visual intensity with tire smoke serves the action func
+    🧩 Advisor selected clip: clip54.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip54.mp4 [15.00s-15.27s] (0.27s) → timeline [2.933333s-3.200000s]
+[SEGMENT 8 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 9: 3.200000s-3.733333s (0.533333s, Medium/Dynamic)
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip51.mp4 [High] (escalate) — Aerial night view establishes scale for the peak arc stage w
+    🧩 Advisor selected clip: clip51.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip51.mp4 [0.00s-0.53s] (0.53s) → timeline [3.200000s-3.733333s]
+[SEGMENT 9 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 10: 3.733333s-4.266667s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip51.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip64.mp4 [Medium] (contrast) — Balanced urban composition provides atmospheric contrast to 
+    🧩 Advisor selected clip: clip64.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip64.mp4 [2.00s-2.53s] (0.53s) → timeline [3.733333s-4.266667s]
+[SEGMENT 10 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 11: 4.266667s-4.800000s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip61.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip60.mp4 [High] (escalate) — Kinetic POV offers energy escalation while transitioning to 
+    🧩 Advisor selected clip: clip60.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip60.mp4 [0.00s-0.53s] (0.53s) → timeline [4.266667s-4.800000s]
+[SEGMENT 11 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 12: 4.800000s-5.333333s (0.533333s, Medium/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip78.mp4 [High] (escalate) — Joyful celebration with fireworks perfectly matches the segm
+    🧩 Advisor selected clip: clip78.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip78.mp4 [7.50s-8.03s] (0.53s) → timeline [4.800000s-5.333333s]
+[SEGMENT 12 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 13: 5.333333s-5.866667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip77.mp4 [High] (continue) — Celebration with confetti maintains energy while introducing
+    🧩 Advisor selected clip: clip77.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip77.mp4 [0.00s-0.53s] (0.53s) → timeline [5.333333s-5.866667s]
+[SEGMENT 13 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 14: 5.866667s-6.400000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip68.mp4 [High] (continue) — Night racing with dynamic tracking perfectly fits segment's 
+    🧩 Advisor selected clip: clip68.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip68.mp4 [4.00s-4.53s] (0.53s) → timeline [5.866667s-6.400000s]
+[SEGMENT 14 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 15: 6.400000s-6.933333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip76.mp4 [High] (continue) — Climactic night racing with fireworks provides peak visual e
+    🧩 Advisor selected clip: clip76.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip76.mp4 [12.00s-12.53s] (0.53s) → timeline [6.400000s-6.933333s]
+[SEGMENT 15 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 16: 6.933333s-7.466667s (0.533333s, Low/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    🎯 Advisor committed: clip62.mp4 [Low] (continue) — Low energy contemplative close-up matches segment's intimacy
+    🧩 Advisor selected clip: clip62.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip62.mp4 [2.50s-3.03s] (0.53s) → timeline [6.933333s-7.466667s]
+[SEGMENT 16 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 17: 7.466667s-8.000000s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip61.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Acting as the primary emotional carrier for the Peak stage. Maintains visual freshness.
+  📎 Selected: clip58.mp4 (Score: 326.3)
+    ✂️ Cut 1: clip58.mp4 [3.50s-4.03s] (0.53s) → timeline [7.466667s-8.000000s]
+[SEGMENT 17 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 18: 8.000000s-8.533333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip77.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip57.mp4 [High] (continue) — Onboard racing footage provides immersive POV while keeping 
+    🧩 Advisor selected clip: clip57.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip57.mp4 [0.00s-0.53s] (0.53s) → timeline [8.000000s-8.533333s]
+[SEGMENT 18 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 19: 8.533333s-9.066667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Acting as the primary emotional carrier for the Peak stage. Maintains visual freshness.
+  📎 Selected: clip56.mp4 (Score: 348.4)
+    ✂️ Cut 1: clip56.mp4 [10.50s-11.03s] (0.53s) → timeline [8.533333s-9.066667s]
+[SEGMENT 19 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 20: 9.066667s-9.600000s (0.533333s, Medium/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip50.mp4 [High] (contrast) — Intimate dialogue scene provides narrative contrast while ma
+    🧩 Advisor selected clip: clip50.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip50.mp4 [5.50s-6.03s] (0.53s) → timeline [9.066667s-9.600000s]
+[SEGMENT 20 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 21: 9.600000s-10.133333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Prioritizing narrative continuity by anchoring on 'People-Solo' as requested by the text intent. Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'Speed' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip52.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip52.mp4 [10.00s-10.53s] (0.53s) → timeline [9.600000s-10.133333s]
+[SEGMENT 21 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 22: 10.133333s-10.400000s (0.266667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'Speed' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip55.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip55.mp4 [0.00s-0.27s] (0.27s) → timeline [10.133333s-10.400000s]
+[SEGMENT 22 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 23: 10.400000s-10.666667s (0.266667s, High/Dynamic)
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Acting as the primary emotional carrier for the Peak stage. The visual content captures the 'Speed' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip59.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip59.mp4 [1.50s-1.77s] (0.27s) → timeline [10.400000s-10.666667s]
+[SEGMENT 23 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 24: 10.666667s-11.233333s (0.566667s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 2, density: 3.53/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip78.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip77.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip67.mp4 [High] (escalate) — Vibrant fireworks display provides peak visual energy for ce
+    🧩 Advisor selected clip: clip67.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip67.mp4 [5.50s-6.07s] (0.57s) → timeline [10.666667s-11.233333s]
+[SEGMENT 24 LOG] Ref: 0.57s | Rendered: 0.57s | Cuts: 1 | Mode: REFERENCE
+
+Segment 25: 11.233333s-11.733333s (0.500000s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Prioritizing narrative continuity by anchoring on 'People-Solo' as requested by the text intent. Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'Power' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip65.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip65.mp4 [22.50s-23.00s] (0.50s) → timeline [11.233333s-11.733333s]
+[SEGMENT 25 LOG] Ref: 0.50s | Rendered: 0.50s | Cuts: 1 | Mode: REFERENCE
+
+Segment 26: 11.733333s-12.266667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'Speed' atmosphere perfectly. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip66.mp4 (Score: 350.0)
+    ✂️ Cut 1: clip66.mp4 [1.00s-1.53s] (0.53s) → timeline [11.733333s-12.266667s]
+[SEGMENT 26 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 27: 12.266667s-12.833333s (0.566667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 2, density: 3.53/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    🎯 Advisor committed: clip70.mp4 [High] (escalate) — Sparks and fireworks create peak visual energy escalation wi
+    🧩 Advisor selected clip: clip70.mp4 (Editor controls timing)
+    ✂️ Cut 1: clip70.mp4 [6.50s-7.07s] (0.57s) → timeline [12.266667s-12.833333s]
+[SEGMENT 27 LOG] Ref: 0.57s | Rendered: 0.57s | Cuts: 1 | Mode: REFERENCE
+
+Segment 28: 12.833333s-13.333333s (0.500000s, Medium/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip51.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Acting as the primary emotional carrier for the Peak stage. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip69.mp4 (Score: 334.3)
+    ✂️ Cut 1: clip69.mp4 [6.50s-7.00s] (0.50s) → timeline [12.833333s-13.333333s]
+[SEGMENT 28 LOG] Ref: 0.50s | Rendered: 0.50s | Cuts: 1 | Mode: REFERENCE
+
+Segment 29: 13.333333s-13.633333s (0.300000s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 3.33/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Prioritizing narrative continuity by anchoring on 'People-Solo' as requested by the text intent. Serving as a strategic 'Action' shot within this sequence. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip75.mp4 (Score: 300.1)
+    ✂️ Cut 1: clip75.mp4 [1.50s-1.80s] (0.30s) → timeline [13.333333s-13.633333s]
+[SEGMENT 29 LOG] Ref: 0.30s | Rendered: 0.30s | Cuts: 1 | Mode: REFERENCE
+
+Segment 30: 13.633333s-13.900000s (0.266667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip70.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+  🧠 AI: 🌟 Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor. Serving as a strategic 'Action' shot within this sequence. Maintains visual freshness, lighting consistency.
+  📎 Selected: clip74.mp4 (Score: 298.2)
+    🔄 Switched to Medium moment: 1.50s-3.00s (1.50s, role: Build)
+    ✂️ Cut 1: clip74.mp4 [1.50s-1.77s] (0.27s) → timeline [13.633333s-13.900000s]
+[SEGMENT 30 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 31: 13.900000s-14.433333s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip51.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip64.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip61.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip49.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip49.mp4 [7.03s-7.57s] (0.53s) → timeline [13.900000s-14.433333s]
+[SEGMENT 31 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 32: 14.433333s-14.933333s (0.500000s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip70.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip77.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.40s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip50.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip50.mp4 [6.03s-6.53s] (0.50s) → timeline [14.433333s-14.933333s]
+[SEGMENT 32 LOG] Ref: 0.50s | Rendered: 0.50s | Cuts: 1 | Mode: REFERENCE
+
+Segment 33: 14.933333s-15.500000s (0.566667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 2, density: 3.53/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.47s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip51.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip51.mp4 [0.53s-1.10s] (0.57s) → timeline [14.933333s-15.500000s]
+[SEGMENT 33 LOG] Ref: 0.57s | Rendered: 0.57s | Cuts: 1 | Mode: REFERENCE
+
+Segment 34: 15.500000s-16.033333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip52.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip52.mp4 [10.53s-11.07s] (0.53s) → timeline [15.500000s-16.033333s]
+[SEGMENT 34 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 35: 16.033333s-16.566667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip53.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip53.mp4 [1.70s-2.23s] (0.53s) → timeline [16.033333s-16.566667s]
+[SEGMENT 35 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 36: 16.566667s-17.100000s (0.533333s, Medium/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip65.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip51.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip54.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip54.mp4 [15.27s-15.80s] (0.53s) → timeline [16.566667s-17.100000s]
+[SEGMENT 36 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 37: 17.100000s-17.633333s (0.533333s, Low/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip61.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip64.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip62.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip52.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip55.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip55.mp4 [0.27s-0.80s] (0.53s) → timeline [17.100000s-17.633333s]
+[SEGMENT 37 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 38: 17.633333s-18.166667s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip73.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip66.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip62.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip56.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip56.mp4 [11.03s-11.57s] (0.53s) → timeline [17.633333s-18.166667s]
+[SEGMENT 38 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 39: 18.166667s-18.700000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip62.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip57.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip57.mp4 [0.53s-1.07s] (0.53s) → timeline [18.166667s-18.700000s]
+[SEGMENT 39 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 40: 18.700000s-19.500000s (0.800000s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Moderate (beats: 1, density: 1.25/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip72.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip73.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip61.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip56.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.70s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip58.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip58.mp4 [4.03s-4.83s] (0.80s) → timeline [18.700000s-19.500000s]
+[SEGMENT 40 LOG] Ref: 0.80s | Rendered: 0.80s | Cuts: 1 | Mode: REFERENCE
+
+Segment 41: 19.500000s-19.766667s (0.266667s, Medium/Static)
+    🎵 CDE: Dense (beats: 1, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip65.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip61.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip62.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip75.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.17s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip59.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip59.mp4 [1.77s-2.03s] (0.27s) → timeline [19.500000s-19.766667s]
+[SEGMENT 41 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 42: 19.766667s-20.300000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip70.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip60.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip60.mp4 [0.53s-1.07s] (0.53s) → timeline [19.766667s-20.300000s]
+[SEGMENT 42 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 43: 20.300000s-20.833333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip61.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip61.mp4 [0.53s-1.07s] (0.53s) → timeline [20.300000s-20.833333s]
+[SEGMENT 43 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 44: 20.833333s-21.366667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip70.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip62.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip62.mp4 [1.00s-1.53s] (0.53s) → timeline [20.833333s-21.366667s]
+[SEGMENT 44 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 45: 21.366667s-21.900000s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip51.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip64.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip63.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip63.mp4 [5.77s-6.30s] (0.53s) → timeline [21.366667s-21.900000s]
+[SEGMENT 45 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 46: 21.900000s-22.433333s (0.533333s, Medium/Dynamic)
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip51.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip64.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip61.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip64.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip64.mp4 [2.53s-3.07s] (0.53s) → timeline [21.900000s-22.433333s]
+[SEGMENT 46 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 47: 22.433333s-22.700000s (0.266667s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip61.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip65.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.17s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip65.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip65.mp4 [23.00s-23.27s] (0.27s) → timeline [22.433333s-22.700000s]
+[SEGMENT 47 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 48: 22.700000s-22.966667s (0.266667s, Medium/Static)
+    🎵 CDE: Dense (beats: 1, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip78.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.17s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip66.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip66.mp4 [1.53s-1.80s] (0.27s) → timeline [22.700000s-22.966667s]
+[SEGMENT 48 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 49: 22.966667s-23.500000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip77.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip62.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip67.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip67.mp4 [6.07s-6.60s] (0.53s) → timeline [22.966667s-23.500000s]
+[SEGMENT 49 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 50: 23.500000s-24.033333s (0.533333s, High/Dynamic)
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip68.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip68.mp4 [4.53s-5.07s] (0.53s) → timeline [23.500000s-24.033333s]
+[SEGMENT 50 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 51: 24.033333s-24.566667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip69.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip69.mp4 [7.00s-7.53s] (0.53s) → timeline [24.033333s-24.566667s]
+[SEGMENT 51 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 52: 24.566667s-25.100000s (0.533333s, Low/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip62.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip73.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip55.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip66.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip75.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip70.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip70.mp4 [7.07s-7.60s] (0.53s) → timeline [24.566667s-25.100000s]
+[SEGMENT 52 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 53: 25.100000s-25.633333s (0.533333s, Medium/Dynamic)
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip61.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip71.mp4' (used 1x, limit 1)
+    ⚙️ All 4 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip71.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip71.mp4 [0.53s-1.07s] (0.53s) → timeline [25.100000s-25.633333s]
+[SEGMENT 53 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 54: 25.633333s-25.900000s (0.266667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip77.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.17s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip72.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip72.mp4 [0.53s-0.80s] (0.27s) → timeline [25.633333s-25.900000s]
+[SEGMENT 54 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 55: 25.900000s-26.700000s (0.800000s, High/Dynamic)
+    🎵 CDE: Dense (beats: 1, density: 1.25/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 1x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.70s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip73.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip73.mp4 [1.33s-2.13s] (0.80s) → timeline [25.900000s-26.700000s]
+[SEGMENT 55 LOG] Ref: 0.80s | Rendered: 0.80s | Cuts: 1 | Mode: REFERENCE
+
+Segment 56: 26.700000s-27.233333s (0.533333s, Medium/Static)
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip65.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip51.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip74.mp4 (Score: 100.0)
+    🔄 Switched to Low moment: 0.00s-1.50s (1.50s, role: Establishing)
+    ✂️ Cut 1: clip74.mp4 [0.00s-0.53s] (0.53s) → timeline [26.700000s-27.233333s]
+[SEGMENT 56 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 57: 27.233333s-27.500000s (0.266667s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 3.75/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip70.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.17s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip75.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip75.mp4 [1.80s-2.07s] (0.27s) → timeline [27.233333s-27.500000s]
+[SEGMENT 57 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 58: 27.500000s-27.766667s (0.266667s, High/Dynamic)
+    🎵 CDE: Dense (beats: 0, density: 0.00/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.17s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip76.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip76.mp4 [12.53s-12.80s] (0.27s) → timeline [27.500000s-27.766667s]
+[SEGMENT 58 LOG] Ref: 0.27s | Rendered: 0.27s | Cuts: 1 | Mode: REFERENCE
+
+Segment 59: 27.766667s-28.300000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip76.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip77.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip77.mp4 [0.53s-1.07s] (0.53s) → timeline [27.766667s-28.300000s]
+[SEGMENT 59 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 60: 28.300000s-28.833333s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip78.mp4' (used 1x, limit 1)
+    ⏭️ Advisor skip 'clip67.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip77.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip78.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip78.mp4 [8.03s-8.57s] (0.53s) → timeline [28.300000s-28.833333s]
+[SEGMENT 60 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 61: 28.833333s-29.366667s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip65.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip49.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip49.mp4 [7.57s-8.10s] (0.53s) → timeline [28.833333s-29.366667s]
+[SEGMENT 61 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 62: 29.366667s-29.900000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip70.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip50.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip50.mp4 [6.53s-7.07s] (0.53s) → timeline [29.366667s-29.900000s]
+[SEGMENT 62 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 63: 29.900000s-30.433333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip70.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip51.mp4 (Score: 100.0)
+    ⚠️ UNDERFILL (0.40s < 0.53s) - Accepting honestly (no loop)
+    ✂️ Cut 1: clip51.mp4 [1.10s-1.50s] (0.40s) → timeline [29.900000s-30.300000s]
+    🔧 v15.1 Micro-Gap Extension: Filled 0.13s by extending clip_003.mp4
+[SEGMENT 63 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 64: 30.433333s-30.966667s (0.533333s, Medium/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip52.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip52.mp4 [11.07s-11.60s] (0.53s) → timeline [30.433333s-30.966667s]
+[SEGMENT 64 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 65: 30.966667s-31.500000s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.87/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip68.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip63.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip53.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip53.mp4 [2.23s-2.77s] (0.53s) → timeline [30.966667s-31.500000s]
+[SEGMENT 65 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 66: 31.500000s-32.033333s (0.533333s, High/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip71.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip72.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip54.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip57.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 3x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip54.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip54.mp4 [15.80s-16.33s] (0.53s) → timeline [31.500000s-32.033333s]
+[SEGMENT 66 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 67: 32.033333s-32.566667s (0.533333s, Medium/Dynamic)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Dense (beats: 1, density: 1.88/s, hold: Short, origin: visual)
+    📐 max_cuts: 2
+    ⏭️ Advisor skip 'clip51.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip64.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip49.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip53.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip61.mp4' (used 2x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (0.43s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip55.mp4 (Score: 100.0)
+    ✂️ Cut 1: clip55.mp4 [0.80s-1.33s] (0.53s) → timeline [32.033333s-32.566667s]
+[SEGMENT 67 LOG] Ref: 0.53s | Rendered: 0.53s | Cuts: 1 | Mode: REFERENCE
+
+Segment 68: 32.566667s-35.400000s (2.833333s, Low/Static)
+    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.
+    🎵 CDE: Sparse (beats: 6, density: 2.12/s, hold: Long, origin: visual)
+    📐 max_cuts: 1
+    ⏭️ Advisor skip 'clip61.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip64.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip62.mp4' (used 2x, limit 1)
+    ⏭️ Advisor skip 'clip50.mp4' (used 3x, limit 1)
+    ⏭️ Advisor skip 'clip52.mp4' (used 3x, limit 1)
+    ⚙️ All 5 Advisor alternatives exhausted — mechanical backfill
+      ⚠️ No clips match energy. Relaxing constraints...
+    ⚠️ CRITICAL: No clips match duration (2.73s) for sacred cut! Reference authority compromised.
+    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.
+    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.
+  🧠 AI: 🌟 Emergency pick
+  📎 Selected: clip56.mp4 (Score: 100.0)
+    📐 UsableWindow extended: 0.00s-2.83s (stable moment)
+    ✂️ Cut 1: clip56.mp4 [0.00s-2.83s] (2.83s) → timeline [32.566667s-35.400000s]
+[SEGMENT 68 LOG] Ref: 2.83s | Rendered: 2.83s | Cuts: 1 | Mode: REFERENCE
+
+============================================================
+[OK] Matching complete: 68 edit decisions
+[OK] Total timeline duration: 35.40s (target: 35.40s)
+
+📊 DIVERSITY REPORT:
+   Unique clips used: 30/30
+   ✅ PERFECT! Every clip in your library was used.
+
+   ⚠️ CLIPS REPEATED:
+      clip_005.mp4: 3x
+      clip_001.mp4: 3x
+      clip_006.mp4: 3x
+      clip_003.mp4: 3x
+      clip_008.mp4: 3x
+
+📋 ENERGY COMPROMISES: 19
+   (Used adjacent energy when exact wasn't available)
+      Medium→High: 13 times
+      Low→High: 3 times
+      High→Low: 2 times
+      High→Medium: 1 times
+
+💡 RECOMMENDATIONS TO IMPROVE THIS EDIT:
+   [Inventory Gaps]
+   → Add 14 more HIGH-ENERGY clips (dancing, sports, action, fast movement)
+   → Add 20 more MEDIUM-ENERGY clips (walking, social, casual movement, city life)
+   → Add 4 more LOW-ENERGY clips (scenic, calm, establishing shots, landscapes)
+
+   [Quality Improvements]
+   → 3 segments wanted 'High' energy but used 'Medium'.
+     Add high-intensity clips with 'Urban' or 'Nightlife' vibes to fix this.
+   → 3 segments wanted 'Low' energy but used 'Medium'.
+     Add more 'Nature' or 'Calm' clips to reduce jitter here.
+============================================================
+
+  📚 Global history updated → clip_history.json
+
+🔬 X-RAY diagnostic report exported: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\ref26_sess_3d5c2dd_v1_XRAY.txt
+  ✅ EDL validated: timeline integrity confirmed
+
+============================================================
+[EDL] EDIT DECISION LIST SUMMARY
+============================================================
+
+Total decisions: 68
+Total segments: 68
+Available clips: 30
+
+Clip usage distribution:
+  clip_005.mp4: 3 times
+  clip_001.mp4: 3 times
+  clip_006.mp4: 3 times
+  clip_003.mp4: 3 times
+  clip_008.mp4: 3 times
+  clip_002.mp4: 3 times
+  clip_004.mp4: 3 times
+  clip_007.mp4: 3 times
+  clip_025.mp4: 2 times
+  clip_023.mp4: 2 times
+  clip_024.mp4: 2 times
+  clip_013.mp4: 2 times
+  clip_015.mp4: 2 times
+  clip_016.mp4: 2 times
+  clip_012.mp4: 2 times
+  clip_030.mp4: 2 times
+  clip_029.mp4: 2 times
+  clip_020.mp4: 2 times
+  clip_028.mp4: 2 times
+  clip_014.mp4: 2 times
+  clip_010.mp4: 2 times
+  clip_009.mp4: 2 times
+  clip_011.mp4: 2 times
+  clip_019.mp4: 2 times
+  clip_017.mp4: 2 times
+  clip_018.mp4: 2 times
+  clip_022.mp4: 2 times
+  clip_021.mp4: 2 times
+  clip_027.mp4: 2 times
+  clip_026.mp4: 2 times
+
+🧠 INTELLIGENCE AUDIT (Narrative Compliance):
+   Vibe Accuracy: 36.8% matching suggested vibes
+
+   Shot Function Breakdown:
+      Action      : 36 cuts
+      Reaction    : 13 cuts
+      Detail      : 10 cuts
+      Establish   : 7 cuts
+      Button      : 2 cuts
+
+   Arc Stage Fidelity:
+      Intro       : 66.7% intent alignment
+      Build-up    : 50.0% intent alignment
+      Peak        : 35.1% intent alignment
+      Outro       : 0.0% intent alignment
+
+[PROGRESS] Step 5/5: Rendering final video...
+
+[5/5] Rendering final video...
+    [OK] Segment extracted: 1.50s + 0.20s -> 0.20s
+    [OK] Segment extracted: 1.00s + 0.33s -> 0.33s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 6.50s + 0.53s -> 0.53s
+    [OK] Segment extracted: 5.50s + 0.27s -> 0.27s
+    [OK] Segment extracted: 15.00s + 0.27s -> 0.27s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 2.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 7.50s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 4.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 12.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 2.50s + 0.53s -> 0.53s
+    [OK] Segment extracted: 3.50s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 10.50s + 0.53s -> 0.53s
+    [OK] Segment extracted: 5.50s + 0.53s -> 0.53s
+    [OK] Segment extracted: 10.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 0.27s -> 0.27s
+    [OK] Segment extracted: 1.50s + 0.27s -> 0.27s
+    [OK] Segment extracted: 5.50s + 0.57s -> 0.57s
+    [OK] Segment extracted: 22.50s + 0.50s -> 0.50s
+    [OK] Segment extracted: 1.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 6.50s + 0.57s -> 0.57s
+    [OK] Segment extracted: 6.50s + 0.50s -> 0.50s
+    [OK] Segment extracted: 1.50s + 0.30s -> 0.30s
+    [OK] Segment extracted: 1.50s + 0.27s -> 0.27s
+    [OK] Segment extracted: 7.03s + 0.53s -> 0.53s
+    [OK] Segment extracted: 6.03s + 0.50s -> 0.50s
+    [OK] Segment extracted: 0.53s + 0.57s -> 0.57s
+    [OK] Segment extracted: 10.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 1.70s + 0.53s -> 0.53s
+    [OK] Segment extracted: 15.27s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.27s + 0.53s -> 0.53s
+    [OK] Segment extracted: 11.03s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 4.03s + 0.80s -> 0.80s
+    [OK] Segment extracted: 1.77s + 0.27s -> 0.27s
+    [OK] Segment extracted: 0.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 1.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 5.77s + 0.53s -> 0.53s
+    [OK] Segment extracted: 2.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 23.00s + 0.27s -> 0.27s
+    [OK] Segment extracted: 1.53s + 0.27s -> 0.27s
+    [OK] Segment extracted: 6.07s + 0.53s -> 0.53s
+    [OK] Segment extracted: 4.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 7.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 7.07s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.53s + 0.27s -> 0.27s
+    [OK] Segment extracted: 1.33s + 0.80s -> 0.80s
+    [OK] Segment extracted: 0.00s + 0.53s -> 0.53s
+    [OK] Segment extracted: 1.80s + 0.27s -> 0.27s
+    [OK] Segment extracted: 12.53s + 0.27s -> 0.27s
+    [OK] Segment extracted: 0.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 8.03s + 0.53s -> 0.53s
+    [OK] Segment extracted: 7.57s + 0.53s -> 0.53s
+    [OK] Segment extracted: 6.53s + 0.53s -> 0.53s
+    [OK] Segment extracted: 1.10s + 0.53s -> 0.53s
+    [OK] Segment extracted: 11.07s + 0.53s -> 0.53s
+    [OK] Segment extracted: 2.23s + 0.53s -> 0.53s
+    [OK] Segment extracted: 15.80s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.80s + 0.53s -> 0.53s
+    [OK] Segment extracted: 0.00s + 2.83s -> 2.83s
+  [OK] Concatenated 68 segments (frame-perfect)
+  [WARN] Concat duration 36.87s differs from blueprint 35.40s (drift: +1.47s)
+  ✂️ Duration trimmed: 36.87s → 35.40s
+[STYLIST] Applying visual styling (v14.9 Style Control)...
+  [STYLIST] Applying v14.9 Style (Preset: high_contrast): 3 filters
+  [WARN] Stylist failed (likely FFmpeg syntax/missing font), falling back to unstylized: Command '['ffmpeg', '-y', '-i', 'C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_3d5c2ddcbb641b1879f096b668cc3f04\\temp_video_trimmed.mp4', '-vf', "eq=contrast=1.2:saturation=1.15,drawtext=text='F1':enable='between(t,17.09,17.62)':x=(w-text_w)/2:y=h-(h/5):fontsize=48:fontcolor=white:fontfile='C:/Windows/Fonts/arial.ttf':shadowcolor=black@0.6:shadowx=2:shadowy=2,drawtext=text='F1':enable='between(t,32.58,35.38)':x=(w-text_w)/2:y=h-(h/5):fontsize=48:fontcolor=white:fontfile='C:/Windows/Fonts/arial.ttf':shadowcolor=black@0.6:shadowx=2:shadowy=2", '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '23', '-c:a', 'copy', 'C:\\Users\\OMNIBOOK\\Documents\\GitHub\\mimic_main\\Mimic\\temp\\sess_3d5c2ddcbb641b1879f096b668cc3f04\\temp_video_styled.mp4']' returned non-zero exit status 4294967274.
+[INDEX] Global Refresh Started...
+[INDEX] Refresh Complete (0.13s). Index: 228 clips, 17 results, 22 refs.
+  [OK] Audio extracted: ref_audio.aac
+  [OK] Audio merged onto video (optimized)
+
+================================================================================
+✅ SUCCESS!
+================================================================================
+
+📊 Basic Results:
+   Output: ref26_sess_3d5c2dd_v1.mp4
+   Duration: 35.40s (ref: 35.40s)
+   Difference: 0.00s
+   Processing time: 916.2s
+
+================================================================================
+🧠 COMPREHENSIVE SYSTEM ANALYSIS
+================================================================================
+
+📹 Reference Analysis:
+   Editing Style: Cinematic montage
+   Emotional Intent: Energetic
+   Arc Description: The edit rapidly cycles through moments of intense preparation, high-speed racing, and emotional sta...
+   Total Segments: 68
+
+📑 BLUEPRINT FULL SEGMENT LIST:
+   01:  0.00- 0.20s | Low    | Vibe: Anticipation | Intro
+   02:  0.20- 0.53s | Medium | Vibe: Preparation | Intro
+   03:  0.53- 1.07s | High   | Vibe: Power      | Build-up
+   04:  1.07- 1.60s | High   | Vibe: Danger     | Build-up
+   05:  1.60- 2.13s | Medium | Vibe: Focus      | Build-up
+   06:  2.13- 2.67s | High   | Vibe: Speed      | Peak
+   07:  2.67- 2.93s | High   | Vibe: Speed      | Peak
+   08:  2.93- 3.20s | High   | Vibe: Speed      | Peak
+   09:  3.20- 3.73s | Medium | Vibe: Scale      | Peak
+   10:  3.73- 4.27s | Medium | Vibe: Atmosphere | Peak
+   11:  4.27- 4.80s | Medium | Vibe: Abstract   | Peak
+   12:  4.80- 5.33s | Medium | Vibe: Joy        | Peak
+   13:  5.33- 5.87s | High   | Vibe: Detail     | Peak
+   14:  5.87- 6.40s | High   | Vibe: Night-Speed | Peak
+   15:  6.40- 6.93s | High   | Vibe: Night-Speed | Peak
+   16:  6.93- 7.47s | Low    | Vibe: Intimacy   | Peak
+   17:  7.47- 8.00s | Medium | Vibe: Skill      | Peak
+   18:  8.00- 8.53s | High   | Vibe: Control    | Peak
+   19:  8.53- 9.07s | High   | Vibe: Competition | Peak
+   20:  9.07- 9.60s | Medium | Vibe: Intensity  | Peak
+   21:  9.60-10.13s | High   | Vibe: Speed      | Peak
+   22: 10.13-10.40s | High   | Vibe: Speed      | Peak
+   23: 10.40-10.67s | High   | Vibe: Speed      | Peak
+   24: 10.67-11.23s | Medium | Vibe: Celebration | Peak
+   25: 11.23-11.73s | High   | Vibe: Power      | Peak
+   26: 11.73-12.27s | High   | Vibe: Speed      | Peak
+   27: 12.27-12.83s | High   | Vibe: Speed      | Peak
+   28: 12.83-13.33s | Medium | Vibe: Conflict   | Peak
+   29: 13.33-13.63s | High   | Vibe: Crash      | Peak
+   30: 13.63-13.90s | High   | Vibe: Crash      | Peak
+   31: 13.90-14.43s | Medium | Vibe: Scale      | Peak
+   32: 14.43-14.93s | High   | Vibe: Power      | Peak
+   33: 14.93-15.50s | High   | Vibe: Speed      | Peak
+   34: 15.50-16.03s | High   | Vibe: Speed      | Peak
+   35: 16.03-16.57s | High   | Vibe: Speed      | Peak
+   36: 16.57-17.10s | Medium | Vibe: Intensity  | Peak
+   37: 17.10-17.63s | Low    | Vibe: Resolution | Outro
+   38: 17.63-18.17s | Medium | Vibe: Preparation | Intro
+   39: 18.17-18.70s | High   | Vibe: Power      | Build-up
+   40: 18.70-19.50s | High   | Vibe: Danger     | Build-up
+   41: 19.50-19.77s | Medium | Vibe: Focus      | Build-up
+   42: 19.77-20.30s | High   | Vibe: Speed      | Peak
+   43: 20.30-20.83s | High   | Vibe: Speed      | Peak
+   44: 20.83-21.37s | High   | Vibe: Speed      | Peak
+   45: 21.37-21.90s | Medium | Vibe: Scale      | Peak
+   46: 21.90-22.43s | Medium | Vibe: Atmosphere | Peak
+   47: 22.43-22.70s | Medium | Vibe: Abstract   | Peak
+   48: 22.70-22.97s | Medium | Vibe: Joy        | Peak
+   49: 22.97-23.50s | High   | Vibe: Detail     | Peak
+   50: 23.50-24.03s | High   | Vibe: Night-Speed | Peak
+   51: 24.03-24.57s | High   | Vibe: Night-Speed | Peak
+   52: 24.57-25.10s | Low    | Vibe: Intimacy   | Peak
+   53: 25.10-25.63s | Medium | Vibe: Skill      | Peak
+   54: 25.63-25.90s | High   | Vibe: Control    | Peak
+   55: 25.90-26.70s | High   | Vibe: Competition | Peak
+   56: 26.70-27.23s | Medium | Vibe: Intensity  | Peak
+   57: 27.23-27.50s | High   | Vibe: Speed      | Peak
+   58: 27.50-27.77s | High   | Vibe: Speed      | Peak
+   59: 27.77-28.30s | High   | Vibe: Speed      | Peak
+   60: 28.30-28.83s | Medium | Vibe: Celebration | Peak
+   61: 28.83-29.37s | High   | Vibe: Power      | Peak
+   62: 29.37-29.90s | High   | Vibe: Speed      | Peak
+   63: 29.90-30.43s | High   | Vibe: Speed      | Peak
+   64: 30.43-30.97s | Medium | Vibe: Conflict   | Peak
+   65: 30.97-31.50s | High   | Vibe: Crash      | Peak
+   66: 31.50-32.03s | High   | Vibe: Crash      | Peak
+   67: 32.03-32.57s | Medium | Vibe: Scale      | Peak
+   68: 32.57-35.40s | Low    | Vibe: Resolution | Outro
+
+📈 Arc Stage Distribution:
+   Peak: 57 segments (83.8%)
+   Build-up: 6 segments (8.8%)
+   Intro: 3 segments (4.4%)
+   Outro: 2 segments (2.9%)
+
+🎨 Vibe Distribution:
+   Speed: 19 segments (27.9%)
+   Power: 5 segments (7.4%)
+   Scale: 4 segments (5.9%)
+   Night-Speed: 4 segments (5.9%)
+   Crash: 4 segments (5.9%)
+   Intensity: 3 segments (4.4%)
+   Preparation: 2 segments (2.9%)
+   Danger: 2 segments (2.9%)
+   Focus: 2 segments (2.9%)
+   Atmosphere: 2 segments (2.9%)
+   Abstract: 2 segments (2.9%)
+   Joy: 2 segments (2.9%)
+   Detail: 2 segments (2.9%)
+   Intimacy: 2 segments (2.9%)
+   Skill: 2 segments (2.9%)
+   Control: 2 segments (2.9%)
+   Competition: 2 segments (2.9%)
+   Celebration: 2 segments (2.9%)
+   Conflict: 2 segments (2.9%)
+   Resolution: 2 segments (2.9%)
+   Anticipation: 1 segments (1.5%)
+
+📎 Clip Usage Analysis:
+   Unique clips used: 30/30
+   Most used clips:
+     clip_005.mp4: 3 times (4.4%)
+     clip_001.mp4: 3 times (4.4%)
+     clip_006.mp4: 3 times (4.4%)
+     clip_003.mp4: 3 times (4.4%)
+     clip_008.mp4: 3 times (4.4%)
+
+🧠 AI Reasoning Breakdown:
+   ✨ Smart Match: 0 (0.0%)
+   🎯 Good Fit: 0 (0.0%)
+   ⚙️ Constraint Relaxation: 0 (0.0%)
+
+🎨 Vibe Matching:
+   Matches: 25/68 (36.8%)
+
+📏 Cut Statistics by Arc Stage:
+   Intro: 3 cuts, avg 0.36s
+   Build-up: 6 cuts, avg 0.53s
+   Peak: 57 cuts, avg 0.49s
+   Outro: 2 cuts, avg 1.68s
+
+📏 Overall Cut Statistics:
+   Total cuts: 68
+   Average cut: 0.52s
+   Shortest cut: 0.20s
+   Longest cut: 2.83s
+
+💭 Sample AI Reasoning (first 5 decisions):
+   1. clip_005.mp4: Advisor-selected clip: Wide aerial establishing shot perfectly matches the Intro...
+   2. clip_025.mp4: Advisor-selected clip: Establishing shot of racing gear preparation matches the ...
+   3. clip_023.mp4: Advisor-selected clip: Explosive crash matches segment's high energy and power v...
+   4. clip_024.mp4: Advisor-selected clip: High-speed impact with debris serves the detail shot func...
+   5. clip_013.mp4: Advisor-selected clip: Expressive arm gesture provides visual energy for reactio...
+
+📦 CLIP REGISTRY (30 total):
+   01: clip49.mp4      | High   |  15.9s | Vibes: Vehicle, Nature
+   02: clip50.mp4      | Low    |   8.8s | Vibes: Group, Indoor
+   03: clip51.mp4      | High   |   6.5s | Vibes: Solo, Urban
+   04: clip52.mp4      | High   |  13.6s | Vibes: Solo, Vehicle
+   05: clip53.mp4      | High   |  10.4s | Vibes: Vehicle, Solo
+   06: clip54.mp4      | High   |  18.8s | Vibes: Vehicle
+   07: clip55.mp4      | High   |   4.5s | Vibes: Vehicle
+   08: clip56.mp4      | High   |  17.0s | Vibes: Vehicle, Crowd
+   09: clip57.mp4      | High   |   9.8s | Vibes: Vehicle, Travel
+   10: clip58.mp4      | High   |  16.9s | Vibes: Vehicle, Crowd
+   11: clip59.mp4      | High   |   4.9s | Vibes: Vehicle
+   12: clip60.mp4      | High   |   6.5s | Vibes: Crowd, Vehicle
+   13: clip61.mp4      | Medium |   4.2s | Vibes: Group, Urban
+   14: clip62.mp4      | High   |   3.1s | Vibes: Solo
+   15: clip63.mp4      | Medium |   8.7s | Vibes: Group, Crowd
+   16: clip64.mp4      | Medium |   4.4s | Vibes: Group, Urban
+   17: clip65.mp4      | High   |  31.8s | Vibes: Solo, Urban
+   18: clip66.mp4      | High   |   3.0s | Vibes: Vehicle, Crowd
+   19: clip67.mp4      | High   |  13.9s | Vibes: Solo, Celebration
+   20: clip68.mp4      | High   |  17.2s | Vibes: Vehicle, Urban
+   21: clip69.mp4      | High   |  10.7s | Vibes: Crowd, Vehicle
+   22: clip70.mp4      | High   |  15.9s | Vibes: Crowd, Vehicle
+   23: clip71.mp4      | High   |   4.0s | Vibes: Vehicle, Urban
+   24: clip72.mp4      | High   |   8.2s | Vibes: Vehicle, Solo
+   25: clip73.mp4      | High   |   3.0s | Vibes: Group
+   26: clip74.mp4      | High   |   3.1s | Vibes: Vehicle
+   27: clip75.mp4      | High   |   4.9s | Vibes: Solo, Vehicle
+   28: clip76.mp4      | High   |  18.7s | Vibes: Vehicle, Crowd
+   29: clip77.mp4      | High   |  11.3s | Vibes: Crowd, Vehicle
+   30: clip78.mp4      | High   |  48.1s | Vibes: Group, Vehicle
+
+📋 Metadata Coverage:
+   Best Moments: 30/30
+   Vibes: 30/30
+
+🔍 Temporal Precision Check:
+   ✅ TIMELINE INTEGRITY: No gaps or overlaps detected (all within 0.001s tolerance)
+
+📦 Material Efficiency:
+   Total source duration available: 347.92s
+   Total duration used in edit: 35.40s
+   Unique clip segments used: 68
+   Utilization Ratio: 10.2%
+
+================================================================================
+💡 POST-EDIT CREATIVE REVIEW (ADVISOR CRITIQUE)
+================================================================================
+
+🎨 THE EDITORIAL DEBRIEF:
+   ✅ STRENGTHS:
+      - Abundant high-energy racing and vehicle action perfectly matches the relentless pacing and 'Must-Have' high-speed content.
+      - Strong coverage of night racing and crowd atmosphere aligns with 'Should-Have' elements.
+      - Multiple clips contain crucial driver intimacy and mechanical details, supporting the primary human narrative.
+
+   ⚠️ EDITORIAL TRADEOFFS:
+      - Must carefully curate 'People-Solo' moments from within broader montage clips (e.g., clip52, clip72) to maintain subject lock, as pure solo-focused clips are limited.
+      - Will need to use 'High energy' clips judiciously in the Outro to achieve the required low-energy 'resonance' vibe, focusing on the aftermath portions of celebratory clips.
+
+   🔍 CONSTRAINT GAPS:
+      - Scarcity of pure 'Low' and 'Medium' energy clips means the Intro and Outro will likely be built from the bookends or calmer segments of 'High' energy clips, requiring precise internal clip selection.
+      - Virtually no 'Place-Nature' or 'Place-Indoor' shots—the world is almost exclusively urban/racetrack, which is a rational compromise that focuses the narrative but limits scenic variety.
+
+🧠 EDITORIAL STRATEGY:
+   Prioritize clips where the human element (driver focus, reaction, exertion) is palpable, even within high-speed montages, to anchor the 'personal stakes' narrative; use the abundant action as the relentless engine, but let the human moments be the steering.
+
+🚀 REMAKE STRATEGY (HOW TO REACH DIRECTOR'S CUT):
+   Add more isolated, raw driver emotion shots—close-ups of fear, determination, exhaustion—and specific mechanical detail inserts (hands on wheels, foot on pedal) to deepen the intimate, high-stakes human narrative within the kinetic spectacle.
+
+================================================================================
+
+
+================================================================================
+🎉 Watch the result: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\ref26_sess_3d5c2dd_v1.mp4
+================================================================================
+
+[PROGRESS] Step 6/6: Generating Vault intelligence report...
+
+[6/6] Generating Vault intelligence report...
+[VAULT] Translating reasoning into human report via Groq (Llama 3.3 70B)...
+[BRAIN] Calling Groq (llama-3.3-70b-versatile)...
+  ✅ Vault Report generated.
+[PROCESS] Exporting master intelligence report...
+   (Intelligence data confirmed: 257 chars)
+[OK] Intelligence report saved: C:\Users\OMNIBOOK\Documents\GitHub\mimic_main\Mimic\data\results\ref26_sess_3d5c2dd_v1.json (335671 bytes)

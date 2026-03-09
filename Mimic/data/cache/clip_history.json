@@ -437,5 +437,490 @@
       "end": 4.8667,
       "run_id": "ref28_sess_faab712_v2"
     }
+  ],
+  "clip51.mp4": [
+    {
+      "start": 0.0,
+      "end": 4.6,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.5333,
+      "end": 1.1,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 1.1,
+      "end": 1.5,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip62.mp4": [
+    {
+      "start": 1.0,
+      "end": 2.0333,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 2.5,
+      "end": 3.0333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 1.0,
+      "end": 1.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip55.mp4": [
+    {
+      "start": 0.0,
+      "end": 1.0,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 0.0,
+      "end": 0.2667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.2667,
+      "end": 0.8,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.8,
+      "end": 1.3333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip74.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.5,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 1.5,
+      "end": 1.7667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip57.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.5333,
+      "end": 1.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip60.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.5,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.5333,
+      "end": 1.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip64.mp4": [
+    {
+      "start": 0.5,
+      "end": 3.5,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 2.0,
+      "end": 2.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 2.5333,
+      "end": 3.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip72.mp4": [
+    {
+      "start": 0.0,
+      "end": 1.0333,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.5333,
+      "end": 0.8,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip50.mp4": [
+    {
+      "start": 5.5,
+      "end": 6.0,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 5.5,
+      "end": 6.0333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 6.0333,
+      "end": 6.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 6.5333,
+      "end": 7.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip77.mp4": [
+    {
+      "start": 2.8,
+      "end": 3.8333,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.5333,
+      "end": 1.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip52.mp4": [
+    {
+      "start": 0.0,
+      "end": 1.0,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 10.0,
+      "end": 10.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 10.5333,
+      "end": 11.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 11.0667,
+      "end": 11.6,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip66.mp4": [
+    {
+      "start": 1.0,
+      "end": 1.5333,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 1.0,
+      "end": 1.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 1.5333,
+      "end": 1.8,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip73.mp4": [
+    {
+      "start": 0.5,
+      "end": 1.5333,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 1.0,
+      "end": 1.3333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 1.3333,
+      "end": 2.1333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip61.mp4": [
+    {
+      "start": 3.0,
+      "end": 4.0,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.5333,
+      "end": 1.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip65.mp4": [
+    {
+      "start": 22.5,
+      "end": 23.0,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 22.5,
+      "end": 23.0,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 23.0,
+      "end": 23.2667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip78.mp4": [
+    {
+      "start": 7.5,
+      "end": 8.0333,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 7.5,
+      "end": 8.0333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 8.0333,
+      "end": 8.5667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip49.mp4": [
+    {
+      "start": 2.5,
+      "end": 4.5,
+      "run_id": "ref22_sess_c4d540b_v2"
+    },
+    {
+      "start": 6.5,
+      "end": 7.0333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 7.0333,
+      "end": 7.5667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 7.5667,
+      "end": 8.1,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip53.mp4": [
+    {
+      "start": 1.5,
+      "end": 1.7,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 1.7,
+      "end": 2.2333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 2.2333,
+      "end": 2.7667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip71.mp4": [
+    {
+      "start": 0.0,
+      "end": 0.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.5333,
+      "end": 1.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip63.mp4": [
+    {
+      "start": 5.5,
+      "end": 5.7667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 5.7667,
+      "end": 6.3,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip54.mp4": [
+    {
+      "start": 15.0,
+      "end": 15.2667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 15.2667,
+      "end": 15.8,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 15.8,
+      "end": 16.3333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip68.mp4": [
+    {
+      "start": 4.0,
+      "end": 4.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 4.5333,
+      "end": 5.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip76.mp4": [
+    {
+      "start": 12.0,
+      "end": 12.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 12.5333,
+      "end": 12.8,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip58.mp4": [
+    {
+      "start": 3.5,
+      "end": 4.0333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 4.0333,
+      "end": 4.8333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip56.mp4": [
+    {
+      "start": 10.5,
+      "end": 11.0333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 11.0333,
+      "end": 11.5667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 0.0,
+      "end": 2.8333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip59.mp4": [
+    {
+      "start": 1.5,
+      "end": 1.7667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 1.7667,
+      "end": 2.0333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip67.mp4": [
+    {
+      "start": 5.5,
+      "end": 6.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 6.0667,
+      "end": 6.6,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip70.mp4": [
+    {
+      "start": 6.5,
+      "end": 7.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 7.0667,
+      "end": 7.6,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip69.mp4": [
+    {
+      "start": 6.5,
+      "end": 7.0,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 7.0,
+      "end": 7.5333,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
+  ],
+  "clip75.mp4": [
+    {
+      "start": 1.5,
+      "end": 1.8,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    },
+    {
+      "start": 1.8,
+      "end": 2.0667,
+      "run_id": "ref26_sess_3d5c2dd_v1"
+    }
   ]
 }
