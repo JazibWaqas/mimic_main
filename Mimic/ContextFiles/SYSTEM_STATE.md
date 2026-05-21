@@ -38,9 +38,10 @@ MIMIC was originally built as a hackathon submission for the Google Gemini API D
 | V15.0 Duration Trim Guard | ✅ Implemented | Trims >0.1s drift in final concat |
 | V14.7.2 Clock-Lock (30fps CFR) | ✅ Implemented | vsync cfr, AAC 48kHz |
 | V14.0 Contextual moment selection | ✅ Implemented | Full segment whitelist enabled |
+| Moment-level reuse penalty | ✅ Implemented | Exact (>80% = -999.0) or partial (>30% = -200/-100) overlap |
 | Sacred Visual Cuts | ✅ Implemented | Visual origin = no subdivision |
 | Hash-based caching (all stages) | ✅ Implemented | Persistent across sessions |
-| Smart Micro-Cut moments (<1.0s) | ✅ Implemented | High-energy windows prioritized |
+| Smart Micro-Cut moments (<1.0s) | ✅ Implemented | High-energy windows prioritized; duplicate if start/end overlap < 0.1s |
 | Pre-scan clips before blueprint | ✅ Implemented | Prompt Mode only |
 | Hard clip reuse (no repeat per edit) | ✅ Implemented | March 2026: skip if usage >= 1 |
 | Advisor returns alternatives only (no fake memory) | ✅ Implemented | March 2026: editor is source of truth |
@@ -77,7 +78,7 @@ Edits were getting the same clips repeatedly across different runs because the "
 **4. Smart Moment Selection for Micro-Cuts**
 - For Reference Mode segments with duration < 1.0 seconds:
   1. Editor actively searches for the highest-energy window in the clip.
-  2. Refuses to reuse windows that overlap (within 0.1s) with previously committed clip intervals.
+  2. Refuses to reuse windows where start and end are both within 0.1s of a committed interval (exact duplicate prevention).
   3. Falls back to energy-ranked windows if all high-energy windows are claimed.
 - Result: Fast-cut sequences look kinetic and alive rather than static screencaps.
 

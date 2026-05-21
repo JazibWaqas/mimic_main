@@ -41,6 +41,10 @@ MIMIC uses a *best model for the job* architecture. NOT Gemini-only.
 | **Director's Critique (Reflect)** | `Llama 3.3 70B` via Groq | `reflector.py` | Same — nuanced critical narrative intelligence |
 | **Editing Engine** | Python (deterministic) | `editor.py` | AI never controls timestamps. Pure math, score-based matching |
 
+> [!WARNING]
+> **HACKATHON MODEL CONSTRAINTS:**
+> In `brain.py`, the config strictly specifies `MODEL_NAME = "gemini-3-flash-preview"` and `PRO_MODEL = "gemini-3-pro-preview"`. To prevent false positive blocks, safety filters are overridden globally: `SAFETY_SETTINGS` is set to `BLOCK_NONE` for all categories. If these models are swapped with standard API endpoints (e.g. `gemini-2.0-flash`), the initialization settings will fail unless standard configurations are provided. Keep these models hardcoded during evaluation.
+
 ### Key Principle: Gemini Never Owns the Timeline
 Gemini provides *semantic understanding* only. All timing, duration, and frame-level decisions are made by deterministic Python code in `editor.py` and `processors.py`. Timeline is sacred. AI is an advisor.
 
@@ -223,6 +227,38 @@ For Reference Mode segments under 1.0 seconds:
 
 ---
 
+## VI.B Contextual Moments: Overlap Penalties and Chaining Mechanics
+
+Moment selection and timing are governed by exact mathematical penalties and fallback loops to maximize variety while maintaining timeline integrity.
+
+### 1. Moment-Level Overlap Penalty Math
+When evaluating a clip candidate for a segment, the editor compares the candidate's planned window $[S_{plan}, E_{plan}]$ against all already committed actual intervals $[S_{used}, E_{used}]$ for that clip. It computes the **Overlap Ratio** ($R_{overlap}$):
+
+$$S_{overlap} = \max(S_{plan}, S_{used})$$
+$$E_{overlap} = \min(E_{plan}, E_{used})$$
+$$D_{overlap} = \max(0, E_{overlap} - S_{overlap})$$
+$$R_{overlap} = \frac{D_{overlap}}{E_{plan} - S_{plan}}$$
+
+The system applies the following hard/soft penalties:
+*   **$R_{overlap} > 80\%$ (Exact Overlap):** Returns `-999.0` (Hard forbidden, tagged as `🚫SAME_MOMENT`).
+*   **$R_{overlap} > 30\%$ (Partial Overlap):** Returns `-200.0` in `REFERENCE` mode or `-100.0` in `PROMPT` mode (tagged as `⚠️OVERLAP_{ratio}%`).
+*   **$R_{overlap} \le 30\%$ (Safe Cut):** `0.0` penalty.
+
+### 2. Candidate Pre-filtering and Sorting Math
+Before passing segment candidates to the Advisor, `moment_selector.py` normalizes candidates (max 2 per unique clip), ranks them using a combined scoring system, and truncates the list to fit within token thresholds:
+
+$$\text{Combined Score} = (\text{Semantic Score} \times 0.7) + (\text{Musical Alignment} \times 0.3)$$
+
+Only the **Top 20** sorted candidates are passed to the Advisor. Enriched candidate payloads sent to the prompt include `content_description`, `emotional_tone`, and `primary_subject` for sequential continuity.
+
+### 3. Moment Chaining Clip-Switch Rule
+If a selected clip's best moment duration is shorter than the segment's required duration ($D_{segment}$), the engine loops to chain consecutive moments until the remaining gap is filled (within a $0.05$s tolerance).
+*   To prevent endless looping and guarantee visual variety, the engine tracks `same_clip_count`.
+*   If the primary clip is selected $\ge 2$ times within the loop, the system forces `force_different_clip = True`.
+*   This triggers a fallback search that excludes the current clip and chains a moment from a different clip entirely.
+
+---
+
 ## VII. Pacing Authority and Sacred Cuts
 
 ### Sacred Visual Cuts
@@ -237,11 +273,69 @@ Beat snapping is optional and secondary. Duration comes from narrative intent fi
 2. Optionally snap this duration to the nearest beat (only if `audio_confidence == "Observed"`).
 3. Beats are ornament. Narrative duration is law.
 
-### CDE (Cut Density Expectation)
-Derived per-segment, no AI calls:
-- **Sparse** → `expected_hold == Long` OR `beat_density < 0.08/s` → prefer single clip, resist cuts
-- **Moderate** → normal hold + moderate beats → allow 1-2 cuts
-- **Dense** → `expected_hold == Short` OR `beat_density > 0.20/s` → encourage sub-segmentation
+### CDE (Cut Density Expectation) Voting Engine
+Derived per-segment with **no AI calls**. In `PROMPT` mode, the CDE is read directly from the blueprint, defaulting to `Moderate`. In `REFERENCE` mode, it is calculated deterministically via a weighted voting engine:
+
+#### 1. Input Signals and Biases
+*   **Cut Origin:** If `cut_origin == 'beat'` $\rightarrow$ `origin_bias = "Dense"`. Else `origin_bias = "Moderate"`.
+*   **Expected Hold:**
+    *   `Long` $\rightarrow$ `hold_bias = "Sparse"`
+    *   `Normal` $\rightarrow$ `hold_bias = "Moderate"`
+    *   `Short` $\rightarrow$ `hold_bias = "Dense"`
+*   **Local Beat Density ($D_{beat}$):** Measured as $D_{beat} = \text{beats\_in\_segment} / \text{duration}$.
+    *   $D_{beat} < 0.5$ beats/sec $\rightarrow$ `beat_bias = "Sparse"`
+    *   $D_{beat} < 1.5$ beats/sec $\rightarrow$ `beat_bias = "Moderate"`
+    *   $D_{beat} \ge 1.5$ beats/sec $\rightarrow$ `beat_bias = "Dense"`
+*   **Global Peak Context:**
+    *   If `arc_stage == 'Peak'` and global `peak_density == 'Dense'` $\rightarrow$ `peak_bias = "Dense"`
+    *   If `arc_stage == 'Intro'` and global `peak_density == 'Sparse'` $\rightarrow$ `peak_bias = "Sparse"`
+    *   Else $\rightarrow$ `peak_bias = "Moderate"`
+
+#### 2. Weighted Voting Equation
+The system instantiates a tally `votes = {"Sparse": 0, "Moderate": 0, "Dense": 0}` and evaluates:
+
+$$\text{votes}[\text{hold\_bias}] \leftarrow \text{votes}[\text{hold\_bias}] + 3$$
+$$\text{votes}[\text{beat\_bias}] \leftarrow \text{votes}[\text{beat\_bias}] + 2$$
+$$\text{votes}[\text{origin\_bias}] \leftarrow \text{votes}[\text{origin\_bias}] + 1$$
+$$\text{votes}[\text{peak\_bias}] \leftarrow \text{votes}[\text{peak\_bias}] + 1$$
+
+#### 3. Overrides & Resolving Ties
+*   **Sub-Second Segment Override:** If segment duration $< 1.0\text{s}$, Sparse is forbidden. If Sparse has the most votes, the engine injects a boost: $\text{votes}[\text{Moderate}] \leftarrow \text{votes}[\text{Moderate}] + 2$ to force at least Moderate pacing.
+*   **Long Phrase Boost:** If segment duration $> 3.0\text{s}$, `cut_origin == 'beat'`, and the segment contains $> 3$ beats, the engine adds a boost: $\text{votes}[\text{Dense}] \leftarrow \text{votes}[\text{Dense}] + 1$ to honor musical sync.
+*   **Ties:** Resolved by static priority hierarchy: `Moderate` > `Sparse` > `Dense`.
+
+---
+
+## VII.B Timeline Mechanics: Snapping, Gaps & Grids
+
+To guarantee frame-level temporal accuracy and emotional resonance, visual edits are merged with beat structures using strict threshold boundaries.
+
+### 1. Hybrid Scene-Beat Snapping Math
+Visual cuts from the reference video are loaded and snapped to the nearest audio beat in `orchestrator.py` only if they fall within a tight temporal window:
+
+$$\text{Nearest Beat} = \text{argmin}_{b \in \text{beat\_grid}} | b - T_{scene} |$$
+
+The cut is snapped if and only if:
+
+$$| \text{Nearest Beat} - T_{scene} | < 0.25\text{s} \quad \text{and} \quad \text{Nearest Beat} > 0.1\text{s}$$
+
+*   **If snapped:** The timestamp is set to `Nearest Beat` and tagged `"visual"`.
+*   **If not snapped:** The timestamp remains exactly at $T_{scene}$ and is tagged `"visual"`.
+
+### 2. Midpoint Beat Insertion for Stagnant Gaps
+To prevent a mechanical metronome look while avoiding static, lifeless edits, the system scans all adjacent scene cut timestamps.
+*   If any visual hold gap exceeds $8.0$ seconds (`max_gap`), the system inserts **exactly one** beat-aligned cut in the middle.
+*   It calculates $\text{midpoint} = T_{start} + (\text{gap} / 2)$ and identifies the nearest beat `nearest_mid_beat`.
+*   If $T_{start} < \text{nearest\_mid\_beat} < T_{end}$, it splits the stagnant segment by adding a new cut at `nearest_mid_beat` with origin `"beat"`.
+
+### 3. Precision Beat Snapping Tolerances and Offset
+For sub-segmentation within `editor.py`, cuts are snapped to audio grids with different priorities and boundaries:
+*   **Beat Phase Offset:** The engine applies `BEAT_PHASE_OFFSET = -0.08` seconds. Edits are cut $80$ms *before* the physical beat to align with professional human anticipation.
+*   **Allow Snapping Rule:** Beat snapping is only allowed if `cuts_in_segment > 0` (disabled on first cut to let drops breathe), `not is_last_cut_of_segment`, and `mode != "REFERENCE"` (reference mode holds are sacred and must not snap).
+*   **Snapping Hierarchy:**
+    1.  **Onset Grid (Musical Hits):** Snap to nearest onset with a tight tolerance of **$0.08$ seconds**.
+    2.  **BPM Grid (Tempo Beats):** Fall back to nearest BPM beat with a tolerance of **$0.12$ seconds**.
+*   **Safety Timing Guard:** Any snapped cut must remain inside the segment boundaries with at least **$100$ms** of breathing room from both segment edges and the current timeline cursor.
 
 ---
 
