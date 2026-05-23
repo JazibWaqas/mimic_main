@@ -3,7 +3,7 @@ Editor module: Clip-to-segment matching algorithm (v13.2 Semantic Intelligence).
 
 v13.2 SEMANTIC INTELLIGENCE ENHANCEMENTS:
 - Expanded SEMANTIC_MAP for nostalgia, celebration, intimate, childhood, cinematic reels
-- Emotional Tone → Vibe Bridge: Nostalgic clips match "memories" vibes
+- Emotional Tone -> Vibe Bridge: Nostalgic clips match "memories" vibes
 - Arc-Stage Tone Affinity: Outro prefers nostalgic/peaceful tones
 - Reel-type coverage: Friends trips, My Year, Travel, Nostalgia, Cinematic
 
@@ -50,6 +50,7 @@ from engine.moment_selector import (
     select_moment_with_advisor,
     plan_segment_moments
 )
+from engine.text_safety import sanitize_plain_text
 
 
 # ============================================================================
@@ -230,6 +231,7 @@ def match_clips_to_blueprint(
     bpm: float = 120.0,
     onset_times: Optional[List[float]] = None,  # Real musical hit points from analyze_music()
     energy_curve: Optional[List[float]] = None,  # Per-second RMS energy from analyze_music()
+    music_profile: Optional[dict] = None,
     use_advisor: bool = True,
     mode: str = "REFERENCE",  # REFERENCE = strict structure | PROMPT = creative invention
     run_id: Optional[str] = None
@@ -266,9 +268,9 @@ def match_clips_to_blueprint(
     
     # MODE ENFORCEMENT (v13.1 Reference Authority)
     if mode == "REFERENCE":
-        print(f"  🔒 REFERENCE MODE: Structure is sacred, no looping, no lying EDL")
+        print(f"  [LOCK] REFERENCE MODE: Structure is sacred, no looping, no lying EDL")
     else:
-        print(f"  🎨 PROMPT MODE: Creative invention allowed")
+        print(f"  [PROMPT] PROMPT MODE: Creative invention allowed")
     print(f"  Segments: {len(blueprint.segments)}")
     print(f"  Clips: {len(clip_index.clips)}")
     
@@ -282,7 +284,7 @@ def match_clips_to_blueprint(
     if use_advisor:
         if mode == "PROMPT":
             # ── PROMPT MODE: Creative Director ───────────────────────────
-            # One holistic call: music + all clips → complete ordered cut list.
+            # One holistic call: music + all clips -> complete ordered cut list.
             # Falls back to regular Advisor if the call fails.
             try:
                 from engine.creative_director import run_creative_director
@@ -294,6 +296,7 @@ def match_clips_to_blueprint(
                     bpm=bpm,
                     onset_timestamps=onset_times or [],
                     energy_curve=energy_curve or [],
+                    music_profile=music_profile,
                     api_key=None
                 )
                 if director_plans:
@@ -306,11 +309,11 @@ def match_clips_to_blueprint(
                         segment_moment_plans=director_plans,
                         cache_version="5.0"
                     )
-                    print(f"  ✅ Creative Director active: {sum(len(p.moments) for p in director_plans.values())} planned cuts across {len(director_plans)} segments")
+                    print(f"  [OK] Creative Director active: {sum(len(p.moments) for p in director_plans.values())} planned cuts across {len(director_plans)} segments")
                 else:
                     raise RuntimeError("Creative Director returned None")
             except Exception as cd_err:
-                print(f"  ⚠️ Creative Director failed ({cd_err}), falling back to Advisor+Scoring")
+                print(f"  [WARN] Creative Director failed ({cd_err}), falling back to Advisor+Scoring")
                 # Fall back to regular per-segment Advisor
                 scarcity_report = {"energy_model": "soft_signal_only_music_drives_feel"}
                 subject_counts = Counter()
@@ -345,11 +348,11 @@ def match_clips_to_blueprint(
             advisor_hints = get_advisor_suggestions(blueprint, clip_index, scarcity_report=scarcity_report, bpm=bpm)
 
         if advisor_hints:
-            print(f"  ✅ Advisor enabled: Strategic guidance active")
+            print(f"  [OK] Advisor enabled: Strategic guidance active")
         else:
-            print(f"  ⚙️ Advisor disabled: Using base matcher only")
+            print(f"  [FALLBACK] Advisor disabled: Using base matcher only")
     else:
-        print(f"  ⚙️ Advisor disabled by config")
+        print(f"  [FALLBACK] Advisor disabled by config")
     
     # PHASE 2: Generate beat grid for audio sync
     # FIX: Beat grid was only built when reference_path existed, meaning
@@ -381,7 +384,7 @@ def match_clips_to_blueprint(
 
     # Build combined snap grid: Onsets (real musical hits) take priority,
     # then fall back to BPM beat grid. Onsets snap within 0.1s, BPM within 0.15s.
-    # Real editors cut on hits, not math — this is the difference.
+    # Real editors cut on hits, not math - this is the difference.
     onset_grid = sorted(list(set(onset_times or [])))
     if onset_grid:
         print(f"  \U0001f3af Onset grid active: {len(onset_grid)} musical hits (priority over BPM grid)")
@@ -398,14 +401,14 @@ def match_clips_to_blueprint(
     # Track usage: how many times each clip has been used
     clip_usage_count = {clip.filename: 0 for clip in clip_index.clips}
 
-    # v15.0: GLOBAL HISTORY — soft diversity nudge across edits (scoring penalty only, never disqualify)
+    # v15.0: GLOBAL HISTORY - soft diversity nudge across edits (scoring penalty only, never disqualify)
     _HISTORY_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "cache" / "clip_history.json"
     _global_history: dict = {}  # {filename: [{"start": float, "end": float, "run_id": str}, ...]}
     try:
         if _HISTORY_PATH.exists():
             import json as _json
             _global_history = _json.loads(_HISTORY_PATH.read_text(encoding='utf-8'))
-            print(f"  📚 Global history loaded: {len(_global_history)} clips tracked across past edits")
+            print(f"  [HISTORY] Global history loaded: {len(_global_history)} clips tracked across past edits")
     except Exception as _he:
         print(f"  [WARN] Could not load clip history: {_he}")
     
@@ -500,13 +503,13 @@ def match_clips_to_blueprint(
               "Medium": len(energy_pools.get(EnergyLevel.MEDIUM, [])),
               "Low": len(energy_pools.get(EnergyLevel.LOW, []))}
     
-    print(f"\n📊 CLIP DEMAND ANALYSIS:")
+    print(f"\n[REPORT] CLIP DEMAND ANALYSIS:")
     
     if mode == "PROMPT":
         # In PROMPT mode, energy labels on clips are soft scoring signals only.
-        # All clips are eligible regardless of energy level — the music drives feel, not labels.
+        # All clips are eligible regardless of energy level - the music drives feel, not labels.
         # Suppress deficit warnings that would mislead the Advisor into thinking the library is inadequate.
-        print(f"   Mode: PROMPT — energy labels are advisory only. All {len(clip_index.clips)} clips eligible.")
+        print(f"   Mode: PROMPT - energy labels are advisory only. All {len(clip_index.clips)} clips eligible.")
         print(f"   Music (onset grid + pacing cadence) determines the emotional feel of each segment.")
         deficits = {}
     else:
@@ -517,10 +520,10 @@ def match_clips_to_blueprint(
         for energy in ["High", "Medium", "Low"]:
             if demand[energy] > supply[energy]:
                 deficits[energy] = demand[energy] - supply[energy]
-                print(f"   ⚠️ DEFICIT: Need {deficits[energy]} more {energy}-energy clips")
+                print(f"   [WARN] DEFICIT: Need {deficits[energy]} more {energy}-energy clips")
         
         if not deficits:
-            print(f"   ✅ You have enough clips for a perfect edit!")
+            print(f"   [OK] You have enough clips for a perfect edit!")
     print()
     
     # === COMPROMISE TRACKER ===
@@ -538,10 +541,10 @@ def match_clips_to_blueprint(
     # === ENERGY ELIGIBILITY HELPER ===
 
     # === P0 FIX #1: VIBE SEMANTIC BRIDGE ===
-    # Maps clip-level descriptive tags (nouns) → editorial intent vibes (abstractions)
+    # Maps clip-level descriptive tags (nouns) -> editorial intent vibes (abstractions)
     # This solves the 0% vibe matching issue by bridging semantic spaces.
     VIBE_SEMANTIC_BRIDGE = {
-        # Vehicle-related clips → Speed/Power/Adrenaline vibes
+        # Vehicle-related clips -> Speed/Power/Adrenaline vibes
         "vehicle": ["speed", "power", "adrenaline", "launch", "precision", "freedom"],
         "solo": ["heroic", "focus", "determination", "struggle", "intense"],
         "group": ["unity", "heroic", "celebration", "camaraderie"],
@@ -650,10 +653,10 @@ def match_clips_to_blueprint(
 
         # Apply penalties
         if max_overlap_ratio > 0.8:
-            return -999.0, "🚫SAME_MOMENT"
+            return -999.0, "[BLOCK]SAME_MOMENT"
         elif max_overlap_ratio > 0.3:
             penalty = -200.0 if mode == "REFERENCE" else -100.0
-            return penalty, f"⚠️OVERLAP_{int(max_overlap_ratio*100)}%"
+            return penalty, f"[WARN]OVERLAP_{int(max_overlap_ratio*100)}%"
         else:
             return 0.0, ""
 
@@ -686,27 +689,27 @@ def match_clips_to_blueprint(
             if continuity_type == "Scale-Escalation" and ctx.last_scale:
                 if ctx.last_scale == "Wide" and cand_scale in ["Medium", "Close"]:
                     bonus += (20.0 * weight)
-                    reasons.append("📈Escalation")
+                    reasons.append("[RISE]Escalation")
                 elif ctx.last_scale == "Medium" and cand_scale == "Close":
                     bonus += (25.0 * weight)
-                    reasons.append("📈Intimacy")
+                    reasons.append("[RISE]Intimacy")
 
             # 2. Motion-Carry (Match physical direction or energy flow)
             if continuity_type == "Motion-Carry" and ctx.last_motion:
                 if candidate.motion == ctx.last_motion:
                     bonus += (15.0 * weight)
-                    reasons.append("➡️Flow")
+                    reasons.append("->Flow")
 
             # 3. ACTION-COMPLETION / GRAPHIC-MATCH (Advanced: Requires duration)
             if continuity_type in ["Action-Completion", "Graphic-Match"]:
                 phrase_dur = seg_phrase_duration.get(segment.id, 0.0)
                 if phrase_dur >= 1.2:
                     bonus += (30.0 * weight)
-                    reasons.append(f"🔄{continuity_type[:4]}")
+                    reasons.append(f"[FLOW]{continuity_type[:4]}")
                 else:
                     # Observability Gap Closed (v12.1 Final):
                     # Explicitly log that the motif was considered but rejected for feasibility.
-                    reasons.append(f"⚠️{continuity_type[:3]}_SKIP")
+                    reasons.append(f"[WARN]{continuity_type[:3]}_SKIP")
 
             # 4. Semantic-Resonance (Lyrics/Text triggers)
             if continuity_type == "Semantic-Resonance" and trigger:
@@ -714,7 +717,7 @@ def match_clips_to_blueprint(
                 clip_text = " ".join((candidate.primary_subject or []) + (candidate.vibes or [])).lower()
                 if trigger in clip_text or trigger in cand_content:
                     bonus += (40.0 * weight)
-                    reasons.append(f"🔗{trigger[:5]}")
+                    reasons.append(f"[LINK]{trigger[:5]}")
 
         return bonus, reasons
 
@@ -762,7 +765,7 @@ def match_clips_to_blueprint(
                 usage = clip_usage_count[clip.filename]
                 bonus = 8.0 if usage == 0 else 3.0
                 score += bonus
-                reasons.append("⚓ANCHOR" if usage == 0 else "⚓RECAP")
+                reasons.append("[ANCHOR]ANCHOR" if usage == 0 else "[ANCHOR]RECAP")
             else:
                 # v15.0: Context-aware penalty: only penalise if narrative strongly disagrees
                 clip_has_people = any('People' in s for s in clip_primary_subjects)
@@ -782,7 +785,7 @@ def match_clips_to_blueprint(
                     else:
                         penalty = 3.0  # Almost no penalty when narrative is ambiguous
                     score -= penalty
-                    reasons.append(f"🚫Filler")
+                    reasons.append(f"[BLOCK]Filler")
 
         # CRITICAL OVERRIDE RULE (v9.2):
         # If Advisor explicitly recommends this clip as PRIMARY EMOTIONAL CARRIER
@@ -803,7 +806,7 @@ def match_clips_to_blueprint(
                     advisor_primary_carrier = True
                     # P0 FIX #2: INCREASED from 40 to ensure Advisor guidance wins
                     score += 60.0
-                    reasons.append(f"🎯PRIMARY")
+                    reasons.append(f"[MATCH]PRIMARY")
         
         # Standard Advisor bonus (for non-primary recommendations)
         if advisor and not advisor_primary_carrier:
@@ -811,9 +814,9 @@ def match_clips_to_blueprint(
             if advisor_bonus != 0:
                 score += advisor_bonus
                 if advisor_bonus > 0:
-                    reasons.append(f"🧠+{advisor_bonus}")
+                    reasons.append(f"[AI]+{advisor_bonus}")
                 else:
-                    reasons.append(f"🚫{advisor_bonus}")
+                    reasons.append(f"[BLOCK]{advisor_bonus}")
 
         # === NARRATIVE LAYER: Canonical Vibe Matching (v14.1) ===
         
@@ -929,7 +932,7 @@ def match_clips_to_blueprint(
             seg_vibe_lower = (segment.vibe or "").lower()
             seg_intent = getattr(blueprint, 'emotional_intent', '').lower()
             
-            # v13.2: Emotional Tone → Vibe/Intent Bridge
+            # v13.2: Emotional Tone -> Vibe/Intent Bridge
             # This enables "Nostalgic" clips to match "memories" vibes, etc.
             EMOTIONAL_TONE_BRIDGE = {
                 # Nostalgia & Memory Reels
@@ -955,14 +958,14 @@ def match_clips_to_blueprint(
                 reasons.append("Tone")
                 tone_matched = True
             
-            # 5b. Tone→Vibe bridge match (+12 points) - NEW
+            # 5b. Tone->Vibe bridge match (+12 points) - NEW
             if not tone_matched:
                 for tone in clip_tones:
                     if tone in EMOTIONAL_TONE_BRIDGE:
                         bridge_vibes = EMOTIONAL_TONE_BRIDGE[tone]
                         if any(v in seg_vibe_lower for v in bridge_vibes) or seg_vibe_lower in bridge_vibes:
                             score += 12.0
-                            reasons.append(f"ToneBridge:{tone[:4]}→{seg_vibe_lower[:4]}")
+                            reasons.append(f"ToneBridge:{tone[:4]}->{seg_vibe_lower[:4]}")
                             tone_matched = True
                             break
             
@@ -1008,7 +1011,7 @@ def match_clips_to_blueprint(
         usage = clip_usage_count[clip.filename]
         if usage == 0:
             score += 20.0  # Fresh clip bonus
-            reasons.append("✨New")
+            reasons.append("New")
         else:
             # v14.7: PROMPT mode allows softer reuse penalties
             # Creative mode values emotional continuity over strict diversity
@@ -1079,7 +1082,7 @@ def match_clips_to_blueprint(
             # Use EnergyLevel from global scope (models)
             try:
                 target_energy = EnergyLevel[required_energy_override.upper()]
-                reasons.append(f"🎯{required_energy_override}")
+                reasons.append(f"[MATCH]{required_energy_override}")
             except (ValueError, KeyError, TypeError):
                 pass
         
@@ -1117,20 +1120,20 @@ def match_clips_to_blueprint(
             # v14.8: Emotion-driven segment allows adjacent energy with small bonus
             # Medium can fill Low, High can fill Medium (but not Low ↔ High)
             score += 8.0  # Reduced bonus vs perfect match, but still positive
-            reasons.append(f"~{clip.energy.value}✨")  # ✨ indicates vibe-gated relaxation
+            reasons.append(f"~{clip.energy.value}")  #  indicates vibe-gated relaxation
         elif not advisor_primary_carrier:
             # Standard energy mismatch penalty
             # NARRATIVE SOFTENING (v9.5): Minor penalty if subject matches
             penalty = 5.0
             if narrative_subject_match:
                 penalty = 1.0
-                reasons.append("⚡Match")
+                reasons.append("[ENERGY]Match")
                 
             score -= penalty
             reasons.append(f"~{clip.energy.value}")
         else:
             # Advisor override: energy mismatch is irrelevant
-            reasons.append(f"⚡{clip.energy.value}")
+            reasons.append(f"[ENERGY]{clip.energy.value}")
         
         # 3. Lighting Continuity (+10 points)
         content = (clip.content_description or "").lower()
@@ -1153,7 +1156,7 @@ def match_clips_to_blueprint(
         if narrative_subject_match:
             target_sub = advisor.primary_narrative_subject.value if advisor and advisor.primary_narrative_subject else "Subject"
             narrative_parts.append(f"Prioritizing narrative continuity by anchoring on '{target_sub}' as requested by the text intent.")
-        elif "🚫Filler" in str(reasons):
+        elif "[BLOCK]Filler" in str(reasons):
             narrative_parts.append("Maintaining sequence flow with supporting material, though it drifts from the primary narrative anchor.")
         
         # 2. Shot Function & Strategy
@@ -1174,8 +1177,8 @@ def match_clips_to_blueprint(
         
         # 5. Technical Flow
         tech_notes = []
-        if "🛡️Subject" in reasons: tech_notes.append("narrative-safe reuse")
-        elif "✨New" in reasons: tech_notes.append("visual freshness")
+        if "[SAFE]Subject" in reasons: tech_notes.append("narrative-safe reuse")
+        elif "New" in reasons: tech_notes.append("visual freshness")
         if "Flow" in reasons: tech_notes.append("motion continuity")
         if "Light" in reasons: tech_notes.append("lighting consistency")
         
@@ -1193,9 +1196,9 @@ def match_clips_to_blueprint(
     def get_eligible_clips(segment_energy: EnergyLevel, all_clips: List[ClipMetadata]) -> List[ClipMetadata]:
         """
         Return clips that are ALLOWED for this segment's energy.
-        High segment → High + Medium (never Low)
-        Low segment → Low + Medium (never High)
-        Medium → Any
+        High segment -> High + Medium (never Low)
+        Low segment -> Low + Medium (never High)
+        Medium -> Any
         """
         eligible = []
         for clip in all_clips:
@@ -1258,7 +1261,7 @@ def match_clips_to_blueprint(
         print(f"\nSegment {segment.id}: {segment.start:.6f}s-{segment.end:.6f}s "
               f"({segment.duration:.6f}s, {segment.energy.value}/{segment.motion.value})")
         if abs(segment.start - orig_start) > 0.001:
-            print(f"    📐 v14.7 Frame-Snap: Boundary adjusted for 30fps sync.")
+            print(f"    [SNAP] v14.7 Frame-Snap: Boundary adjusted for 30fps sync.")
 
         if decisions:
             timeline_position = decisions[-1].timeline_end
@@ -1299,19 +1302,19 @@ def match_clips_to_blueprint(
         if mode == "REFERENCE":
             segment_beats = [b for b in beat_grid if segment.start <= b < segment.end]
             beat_density = len(segment_beats) / segment.duration if segment.duration > 0 else 0
-            print(f"    🎵 CDE: {cde} (beats: {len(segment_beats)}, density: {beat_density:.2f}/s, hold: {getattr(segment, 'expected_hold', 'Normal')}, origin: {cut_origin})")
-            print(f"    📐 max_cuts: {max_cuts_per_segment}")
+            print(f"    [MUSIC] CDE: {cde} (beats: {len(segment_beats)}, density: {beat_density:.2f}/s, hold: {getattr(segment, 'expected_hold', 'Normal')}, origin: {cut_origin})")
+            print(f"    [SNAP] max_cuts: {max_cuts_per_segment}")
         else:
             # v14.7: PROMPT mode observability
             emotional_guidance = getattr(segment, 'emotional_guidance', '')
-            print(f"    🎨 PROMPT MODE: CDE={cde}, hold={getattr(segment, 'expected_hold', 'Normal')}, vibe={segment.vibe[:30] if segment.vibe else 'N/A'}")
+            print(f"    [PROMPT] PROMPT MODE: CDE={cde}, hold={getattr(segment, 'expected_hold', 'Normal')}, vibe={segment.vibe[:30] if segment.vibe else 'N/A'}")
             if emotional_guidance:
-                print(f"    💭 Emotional guidance: {emotional_guidance}")
+                print(f"    [NOTE] Emotional guidance: {emotional_guidance}")
         
         # ADVISOR ALTERNATIVES WATERFALL (v15.0)
         # Walk ranked alternatives in order. Commit first clip that passes reuse check.
-        # Reuse rule (REFERENCE): clip_usage_count >= 1 → skip
-        # Reuse rule (PROMPT): clip_usage_count >= 2 → skip
+        # Reuse rule (REFERENCE): clip_usage_count >= 1 -> skip
+        # Reuse rule (PROMPT): clip_usage_count >= 2 -> skip
         # Fallback: if all 5 fail, mechanical backfill uses full clip_index.clips pool.
         advisor_moment_plan = None
         if advisor_hints and hasattr(advisor_hints, 'segment_moment_plans'):
@@ -1321,19 +1324,52 @@ def match_clips_to_blueprint(
         
         advisor_moments_queue = []
         if advisor_moment_plan is not None:
+            # PROMPT mode Creative Director returns a full ordered cut list in
+            # SegmentMomentPlan.moments. Execute those moments directly before
+            # falling back to per-segment Advisor alternatives.
+            planned_moments = advisor_moment_plan.moments or []
+            if mode == "PROMPT" and planned_moments:
+                for moment in planned_moments:
+                    clip_meta = next((c for c in clip_index.clips if c.filename == moment.clip_filename), None)
+                    if not clip_meta:
+                        print(f"    [WARN] Director planned clip '{moment.clip_filename}' not found in index")
+                        continue
+
+                    start = snap(max(0.0, min(moment.start, clip_meta.duration)))
+                    end = snap(max(start + MIN_SHOT_DURATION, min(moment.end, clip_meta.duration)))
+                    if end > clip_meta.duration:
+                        end = snap(clip_meta.duration)
+                    if end - start < MIN_SHOT_DURATION:
+                        print(f"    [WARN] Director moment too short after clamp: {moment.clip_filename}")
+                        continue
+
+                    advisor_moments_queue.append(MomentCandidate(
+                        clip_filename=moment.clip_filename,
+                        moment_energy_level=moment.moment_energy_level,
+                        start=start,
+                        end=end,
+                        duration=end - start,
+                        moment_role=moment.moment_role,
+                        stable_moment=moment.stable_moment,
+                        reason=moment.reason or "Creative Director planned cut"
+                    ))
+
+                if advisor_moments_queue:
+                    print(f"    [DIRECTOR] Director plan queued: {len(advisor_moments_queue)} planned cut(s)")
+
             alternatives = advisor_moment_plan.advisor_alternatives or []
-            if alternatives:
+            if not advisor_moments_queue and alternatives:
                 max_reuse = 1
                 for alt in alternatives:
                     usage = clip_usage_count.get(alt.clip_filename, 0)
                     if usage >= max_reuse:
-                        print(f"    ⏭️ Advisor skip '{alt.clip_filename}' (used {usage}x, limit {max_reuse})")
+                        print(f"    [SKIP] Advisor skip '{alt.clip_filename}' (used {usage}x, limit {max_reuse})")
                         continue
                     
                     # Resolve timestamps from pre-computed best_moments
                     clip_meta = next((c for c in clip_index.clips if c.filename == alt.clip_filename), None)
                     if not clip_meta:
-                        print(f"    ⚠️ Advisor clip '{alt.clip_filename}' not found in index")
+                        print(f"    [WARN] Advisor clip '{alt.clip_filename}' not found in index")
                         continue
                     
                     # Map energy_level to pre-computed moment; fall back across energy levels
@@ -1345,7 +1381,7 @@ def match_clips_to_blueprint(
                             if moment_ts:
                                 break
                     if not moment_ts:
-                        print(f"    ⚠️ Advisor clip '{alt.clip_filename}' has no best_moments, skipping")
+                        print(f"    [WARN] Advisor clip '{alt.clip_filename}' has no best_moments, skipping")
                         continue
                     
                     m_start, m_end = moment_ts
@@ -1360,18 +1396,18 @@ def match_clips_to_blueprint(
                         reason=alt.reason
                     )
                     advisor_moments_queue.append(committed)
-                    print(f"    🎯 Advisor committed: {alt.clip_filename} [{alt.energy_level}] ({alt.transition_type}) — {alt.reason[:60]}")
+                    print(f"    [MATCH] Advisor committed: {alt.clip_filename} [{alt.energy_level}] ({alt.transition_type}) - {alt.reason[:60]}")
                     break  # Only commit one per segment; editor handles the rest mechanically
                 
                 if not advisor_moments_queue:
-                    print(f"    ⚙️ All {len(alternatives)} Advisor alternatives exhausted — mechanical backfill")
+                    print(f"    [FALLBACK] All {len(alternatives)} Advisor alternatives exhausted - mechanical backfill")
 
         
         _loop_iterations = 0  # Hard ceiling: segment loop must terminate
         while segment_remaining > 0.05:
             _loop_iterations += 1
-            if _loop_iterations > 50:  # Absolute backstop — no segment needs more than 50 cuts
-                print(f"    🚨 INFINITE LOOP GUARD: Segment {segment.id} hit 50 iterations. Forcing segment end.")
+            if _loop_iterations > 50:  # Absolute backstop - no segment needs more than 50 cuts
+                print(f"    [GUARD] INFINITE LOOP GUARD: Segment {segment.id} hit 50 iterations. Forcing segment end.")
                 timeline_position = segment.end
                 if decisions and decisions[-1].segment_id == segment.id:
                     decisions[-1].timeline_end = snap(segment.end)
@@ -1405,7 +1441,7 @@ def match_clips_to_blueprint(
                         prev_decision.timeline_end = snap(segment.end)
                         timeline_position = prev_decision.timeline_end
                         segment_remaining = 0.0
-                        print(f"    🔧 v15.1 Micro-Gap Extension: Filled {extension:.2f}s by extending {Path(prev_clip.filepath).name}")
+                        print(f"    [FIX] v15.1 Micro-Gap Extension: Filled {extension:.2f}s by extending {Path(prev_clip.filepath).name}")
                         break
 
             # --- Source Selection Priority ---
@@ -1430,7 +1466,7 @@ def match_clips_to_blueprint(
                         abs(used_s - moment.start) < 0.5 for used_s, used_e in used_intervals
                     )
                     if moment_already_used:
-                        print(f"    ⚠️ Advisor clip '{selected_clip.filename}' moment already used. Skipping to backfill.")
+                        print(f"    [WARN] Advisor clip '{selected_clip.filename}' moment already used. Skipping to backfill.")
                         selected_clip = None  # Force fallback to mechanical matcher
                     else:
                         # DIRECTOR-FIRST TIMING: use the Director's planned duration.
@@ -1441,19 +1477,19 @@ def match_clips_to_blueprint(
                             use_duration = snap(min(moment.duration, segment_remaining))
                             director_set_duration = True  # Guard: skip downstream overwrites
                             thinking = "Advisor-selected clip (Director duration): " + (moment.reason or "Emotional fit")
-                            print(f"    🧩 Advisor selected clip: {selected_clip.filename} (Director duration: {use_duration:.2f}s)")
+                            print(f"    [PLAN] Advisor selected clip: {selected_clip.filename} (Director duration: {use_duration:.2f}s)")
                         else:
                             clip_start = None  # Editor picks timing
                             director_set_duration = False
                             thinking = "Advisor-selected clip: " + (moment.reason or "Emotional fit")
-                            print(f"    🧩 Advisor selected clip: {selected_clip.filename} (Editor controls timing)")
+                            print(f"    [PLAN] Advisor selected clip: {selected_clip.filename} (Editor controls timing)")
                         vibe_matched = True
                         advisor_match_found = True
             
             if not advisor_match_found:
                 # TIER 2: Mechanical Backfill 
                 if cuts_in_segment >= max_cuts_per_segment:
-                    print(f"    ⚠️ Max cuts reached ({max_cuts_per_segment}) but gap persists. Forcing backfill.")
+                    print(f"    [WARN] Max cuts reached ({max_cuts_per_segment}) but gap persists. Forcing backfill.")
                 
                 # === TIERED ELIGIBILITY SELECTION ===
                 # Advisor Energy Override (v9.5):
@@ -1481,7 +1517,7 @@ def match_clips_to_blueprint(
                         if guidance and guidance.required_energy:
                             try:
                                 active_energy_requirement = EnergyLevel[guidance.required_energy.upper()]
-                                print(f"      ⚡ADVISOR OVERRIDE: Using {active_energy_requirement.value} energy for {segment.arc_stage}")
+                                print(f"      [ENERGY]ADVISOR OVERRIDE: Using {active_energy_requirement.value} energy for {segment.arc_stage}")
                             except (ValueError, KeyError):
                                 pass
                     eligible_clips = [
@@ -1489,7 +1525,7 @@ def match_clips_to_blueprint(
                         if clip_usage_count.get(c.filename, 0) == 0
                     ]
                     if not eligible_clips:
-                        print(f"      ⚠️ No clips match energy. Relaxing constraints...")
+                        print(f"      [WARN] No clips match energy. Relaxing constraints...")
                         eligible_clips = [c for c in clip_index.clips if clip_usage_count.get(c.filename, 0) == 0]
                 
                 # ENHANCED LOGGING: Eligibility breakdown
@@ -1544,8 +1580,8 @@ def match_clips_to_blueprint(
 
                 # FALLBACK: If strict filter eliminated ALL clips (Emergency Mode)
                 if not valid_candidates_found:
-                    print(f"    ⚠️ CRITICAL: No clips match duration ({min_required:.2f}s) for sacred cut! Reference authority compromised.")
-                    print(f"    ⚠️ Fallback: Selecting longest available clips to minimize fragmentation.")
+                    print(f"    [WARN] CRITICAL: No clips match duration ({min_required:.2f}s) for sacred cut! Reference authority compromised.")
+                    print(f"    [WARN] Fallback: Selecting longest available clips to minimize fragmentation.")
                     
                     # Re-score ALL clips, but prioritize DURATION over everything else
                     scored_clips = []
@@ -1555,7 +1591,7 @@ def match_clips_to_blueprint(
                         # Massive bonus for duration to get as close as possible
                         duration_score = c.duration * 50.0 
                         total_score += duration_score
-                        reasoning = f"⚠️Rescue (len={c.duration:.1f}s)"
+                        reasoning = f"[WARN]Rescue (len={c.duration:.1f}s)"
                         
                         scored_clips.append((c, total_score, reasoning, vibe_matched))
 
@@ -1563,7 +1599,7 @@ def match_clips_to_blueprint(
                 scored_clips.sort(key=lambda x: (x[1], x[3], -clip_usage_count[x[0].filename]), reverse=True)
 
                 if not scored_clips:
-                    print(f"    ⚠️ No candidates after fallback (all clips excluded or none match duration). Using emergency pool.")
+                    print(f"    [WARN] No candidates after fallback (all clips excluded or none match duration). Using emergency pool.")
                     pool = eligible_clips if eligible_clips else list(clip_index.clips)
                     scored_clips = [(c, 100.0, "Emergency pick", False) for c in pool]
 
@@ -1587,22 +1623,22 @@ def match_clips_to_blueprint(
                     
                     # 1. Advisor Input
                     if advisor_hints:
-                        xray_log.append(f"\n📋 ADVISOR INPUT:")
+                        xray_log.append(f"\n[LIST] ADVISOR INPUT:")
                         xray_log.append(f"   Primary Subject: {advisor_hints.primary_narrative_subject.value if advisor_hints.primary_narrative_subject else 'None'}")
                         xray_log.append(f"   Text Intent: {advisor_hints.text_overlay_intent[:80]}..." if advisor_hints.text_overlay_intent else "   Text Intent: None")
                         xray_log.append(f"   Dominant Narrative: {advisor_hints.dominant_narrative[:80]}..." if advisor_hints.dominant_narrative else "   Dominant Narrative: None")
                     
                     # 2. Top 5 Candidate Scoring Breakdown
-                    xray_log.append(f"\n🔬 TOP 5 CANDIDATES:")
+                    xray_log.append(f"\n[XRAY] TOP 5 CANDIDATES:")
                     top_5 = scored_clips[:5]
                     for idx, (c, score, reason, vm) in enumerate(top_5):
                         usage = clip_usage_count[c.filename]
-                        winner_mark = "🏆 WINNER" if idx == 0 else f"   #{idx+1}"
+                        winner_mark = "[WINNER] WINNER" if idx == 0 else f"   #{idx+1}"
                         xray_log.append(f"\n{winner_mark} | {c.filename} | SCORE: {score:.1f}")
                         xray_log.append(f"   Vibes: {', '.join(c.vibes[:3]) if c.vibes else 'None'}")
                         xray_log.append(f"   Subjects: {', '.join(c.primary_subject[:2]) if c.primary_subject else 'None'}")
                         xray_log.append(f"   Energy: {c.energy.value} | Usage: {usage}x")
-                        xray_log.append(f"   Vibe Match: {'✅ YES' if vm else '❌ NO'}")
+                        xray_log.append(f"   Vibe Match: {'[OK] YES' if vm else 'NO NO'}")
                         h_count = len(_global_history.get(c.filename, []))
                         if h_count > 0:
                             xray_log.append(f"   History: {h_count} past uses, penalty -{5 * min(h_count, 3):.0f}")
@@ -1614,10 +1650,10 @@ def match_clips_to_blueprint(
                             xray_log.append(f"   Delta from winner: -{delta:.1f} points")
                     
                     # 3. Selection Decision Analysis
-                    xray_log.append(f"\n🎯 SELECTION DECISION:")
+                    xray_log.append(f"\n[MATCH] SELECTION DECISION:")
                     xray_log.append(f"   Winner: {selected_clip.filename}")
                     xray_log.append(f"   Final Score: {selected_score:.1f}")
-                    xray_log.append(f"   Vibe Match: {'✅ YES' if vibe_matched else '❌ NO'}")
+                    xray_log.append(f"   Vibe Match: {'[OK] YES' if vibe_matched else 'NO NO'}")
                     
                     # Check for overrides
                     subject_override = False
@@ -1632,12 +1668,12 @@ def match_clips_to_blueprint(
                         if runner_up[3] and not vibe_matched:  # Runner-up had vibe match, winner didn't
                             vibe_override = True
                     
-                    xray_log.append(f"   Subject Override: {'⚠️ YES' if subject_override and not vibe_matched else '✅ NO'}")
-                    xray_log.append(f"   Vibe Override: {'⚠️ YES' if vibe_override else '✅ NO'}")
+                    xray_log.append(f"   Subject Override: {'[WARN] YES' if subject_override and not vibe_matched else '[OK] NO'}")
+                    xray_log.append(f"   Vibe Override: {'[WARN] YES' if vibe_override else '[OK] NO'}")
                     
                     # 4. Diversity Analysis
                     if usage > 0:
-                        xray_log.append(f"\n⚠️ DIVERSITY WARNING:")
+                        xray_log.append(f"\n[WARN] DIVERSITY WARNING:")
                         xray_log.append(f"   Clip reused {usage}x (penalty: -{100 * (3 ** (usage-1)):.0f} points)")
                         xray_log.append(f"   Still won despite penalty - strong match")
                     
@@ -1671,21 +1707,21 @@ def match_clips_to_blueprint(
                     })
                 
                 thinking = selected_reasoning
-                if selected_score > 60: thinking = "🌟 " + thinking
-                elif selected_score > 30: thinking = "🎯 " + thinking
-                else: thinking = "⚙️ " + thinking
+                if selected_score > 60: thinking = "[BEST] " + thinking
+                elif selected_score > 30: thinking = "[MATCH] " + thinking
+                else: thinking = "[FALLBACK] " + thinking
 
                 if cuts_in_segment == 0:
-                    print(f"  🧠 AI: {thinking}")
-                    print(f"  📎 Selected: {selected_clip.filename} (Score: {selected_score:.1f})")
+                    print(f"  [AI] AI: {thinking}")
+                    print(f"  [CLIP] Selected: {selected_clip.filename} (Score: {selected_score:.1f})")
                 else:
-                    print(f"    🔗 Backfilling: {selected_clip.filename} (Remaining: {segment_remaining:.2f}s, Fill: {use_duration:.2f}s)")
+                    print(f"    [LINK] Backfilling: {selected_clip.filename} (Remaining: {segment_remaining:.2f}s, Fill: {use_duration:.2f}s)")
 
                 # Rule #3: Deterministic Backfill Target Duration
                 # CRASH FIX: Always clamp against segment_remaining FIRST before energy cap.
                 # This prevents overshoot when only a tiny gap remains (e.g. 0.23s)
                 # but the energy cap would assign a longer cut (e.g. 4.5s for LOW).
-                if not director_set_duration:  # Director already owns use_duration — skip
+                if not director_set_duration:  # Director already owns use_duration - skip
                     if mode == "PROMPT":
                         if segment.energy == EnergyLevel.HIGH: max_c = 2.0
                         elif segment.energy == EnergyLevel.MEDIUM: max_c = 3.0
@@ -1770,7 +1806,7 @@ def match_clips_to_blueprint(
                 else:  # LOW
                     MIN_CUT, MAX_CUT = 0.8, 4.5
                 use_duration = max(MIN_CUT, min(MAX_CUT, use_duration))
-            # else: REFERENCE mode or Director-set duration — no clamping
+            # else: REFERENCE mode or Director-set duration - no clamping
 
             # ======================================================================
             # PHASE 2: Beat Alignment (Snapping)
@@ -1784,7 +1820,7 @@ def match_clips_to_blueprint(
             
             # PRECISION TIMING FIXES (v12.6):
             # FIX #2: Beat Phase Offset (-80ms for human anticipation)
-            # FIX #3: Tighter tolerance (0.15s → 0.10s)
+            # FIX #3: Tighter tolerance (0.15s -> 0.10s)
             # FIX #4: Never snap first cut after beat drop/energy transition
             BEAT_PHASE_OFFSET = -0.08  # Editors cut BEFORE the beat, not on it
             
@@ -1794,7 +1830,7 @@ def match_clips_to_blueprint(
             
             if combined_snap_grid and not is_last_cut_of_segment and allow_beat_snapping:
                 target_end = timeline_position + use_duration + BEAT_PHASE_OFFSET  # Apply phase offset
-                # Try onset grid first (tight tolerance — real musical hits)
+                # Try onset grid first (tight tolerance - real musical hits)
                 if onset_grid:
                     aligned_end = align_to_nearest_beat(target_end, onset_grid, tolerance=0.08)
                     snap_source = "onset"
@@ -1942,7 +1978,7 @@ def match_clips_to_blueprint(
                                 # Extension is possible - expand the usable window
                                 window_end = max_possible_end
                                 can_extend = True
-                                print(f"    📐 UsableWindow extended: {window_start:.2f}s-{window_end:.2f}s (stable moment)")
+                                print(f"    [SNAP] UsableWindow extended: {window_start:.2f}s-{window_end:.2f}s (stable moment)")
                             else:
                                 # Extension NOT possible - check if other moments in same clip can satisfy
                                 # Look for compatible moments (similar moment_role, stable, sufficient duration)
@@ -1969,7 +2005,7 @@ def match_clips_to_blueprint(
                                     alt_level, alt_moment = best_alternative
                                     window_start, window_end = alt_moment.start, alt_moment.end
                                     switched_moment = True
-                                    print(f"    🔄 Switched to {alt_level} moment: {window_start:.2f}s-{window_end:.2f}s "
+                                    print(f"    [FLOW] Switched to {alt_level} moment: {window_start:.2f}s-{window_end:.2f}s "
                                           f"({window_end-window_start:.2f}s, role: {alt_moment.moment_role})")
                     
                 current_pos = clip_current_position[selected_clip.filename]
@@ -2004,7 +2040,7 @@ def match_clips_to_blueprint(
                 # re-hit the exact same state. Without this, a broken clip causes forever-loop.
                 emergency_advance = max(FRAME_DUR, min(segment_remaining, 0.1))
                 print(f"    [SKIP] Invalid clip state: clip_end={clip_end:.2f}, clip_start={clip_start:.2f}, "
-                      f"duration={selected_clip.duration:.2f} — advancing {emergency_advance:.3f}s")
+                      f"duration={selected_clip.duration:.2f} - advancing {emergency_advance:.3f}s")
                 timeline_position = snap(timeline_position + emergency_advance)
                 clip_current_position[selected_clip.filename] = min(
                     clip_current_position[selected_clip.filename] + emergency_advance,
@@ -2029,12 +2065,12 @@ def match_clips_to_blueprint(
             remaining_dur = segment.end - timeline_position
             if mode == "REFERENCE" and is_sacred_cut and actual_duration < (remaining_dur - 0.05):
                 # Accept underfill for sacred cuts - honesty over hacks
-                print(f"    ⚠️ UNDERFILL ({actual_duration:.2f}s < {remaining_dur:.2f}s) - Accepting honestly (no loop)")
+                print(f"    [WARN] UNDERFILL ({actual_duration:.2f}s < {remaining_dur:.2f}s) - Accepting honestly (no loop)")
 
             
             # SAFETY: Final boundary check (belt-and-suspenders after snap)
             if clip_end <= clip_start or clip_end <= 0:
-                print(f"    [SKIP] Invalid clip boundaries ({clip_start:.2f}s-{clip_end:.2f}s) after snap — advancing")
+                print(f"    [SKIP] Invalid clip boundaries ({clip_start:.2f}s-{clip_end:.2f}s) after snap - advancing")
                 timeline_position = snap(timeline_position + FRAME_DUR)
                 cuts_in_segment += 1
                 continue
@@ -2057,7 +2093,7 @@ def match_clips_to_blueprint(
                 clip_end=clip_end,
                 timeline_start=decision_start,
                 timeline_end=decision_end,
-                reasoning=thinking,
+                reasoning=sanitize_plain_text(thinking, max_length=500),
                 vibe_match=vibe_matched
             )
             decisions.append(decision)
@@ -2080,9 +2116,9 @@ def match_clips_to_blueprint(
             last_used_clip = selected_clip.filename
             cuts_in_segment += 1
             
-            print(f"    ✂️ Cut {cuts_in_segment}: {selected_clip.filename} "
+            print(f"    [TRIM] Cut {cuts_in_segment}: {selected_clip.filename} "
                   f"[{clip_start:.2f}s-{clip_end:.2f}s] ({actual_duration:.2f}s) "
-                  f"→ timeline [{decision.timeline_start:.6f}s-{decision.timeline_end:.6f}s]")
+                  f"-> timeline [{decision.timeline_start:.6f}s-{decision.timeline_end:.6f}s]")
 
         # v13.1: HONEST GAP HANDLING (No Lying EDL)
         # In REFERENCE mode: NEVER stretch timeline_end beyond actual frames
@@ -2091,7 +2127,7 @@ def match_clips_to_blueprint(
         if gap > 0.001:
             if mode == "REFERENCE":
                 # REFERENCE MODE: Accept gap honestly, log it
-                print(f"    ⚠️ GAP in segment {segment.id} ({gap:.4f}s) - Checking for extension safety...")
+                print(f"    [WARN] GAP in segment {segment.id} ({gap:.4f}s) - Checking for extension safety...")
                 # v14.7 FIX: Only extend timeline if we can consistently extend the clip
                 if decisions and decisions[-1].segment_id == segment.id:
                     # Find the clip to check duration
@@ -2104,19 +2140,19 @@ def match_clips_to_blueprint(
                         decisions[-1].clip_end = snap(decisions[-1].clip_end + extra)
                         decisions[-1].timeline_end = snap(segment.end)
                         timeline_position = decisions[-1].timeline_end
-                        print(f"    🔧 Extended decision {len(decisions)} and clip to segment end: {segment.end:.4f}s")
+                        print(f"    [FIX] Extended decision {len(decisions)} and clip to segment end: {segment.end:.4f}s")
                     else:
-                        print(f"    ⚠️ GAP PERMANENT: Last clip {Path(clip_path).name} hits duration limit.")
+                        print(f"    [WARN] GAP PERMANENT: Last clip {Path(clip_path).name} hits duration limit.")
                         hold_secs = segment.end - decisions[-1].timeline_end
                         decisions[-1].timeline_end = snap(segment.end)
                         decisions[-1].hold_end_seconds = snap(hold_secs) if hold_secs > 0.02 else None
                         timeline_position = decisions[-1].timeline_end
-                        print(f"    🔧 Demo fill: holding last frame {hold_secs:.2f}s so timeline reaches segment end")
+                        print(f"    [FIX] Demo fill: holding last frame {hold_secs:.2f}s so timeline reaches segment end")
                 else:
                     timeline_position = decisions[-1].timeline_end if decisions else segment.end
             else:
                 # PROMPT MODE: Allow gap filling (legacy behavior)
-                print(f"    🔗 Filling gap in segment {segment.id} ({gap:.4f}s remaining)")
+                print(f"    [LINK] Filling gap in segment {segment.id} ({gap:.4f}s remaining)")
                 if decisions:
                     decisions[-1].timeline_end = snap(segment.end)
                 timeline_position = snap(segment.end) if decisions else segment.end
@@ -2130,7 +2166,7 @@ def match_clips_to_blueprint(
         # v13.1: Updated logging (no loop status in REFERENCE mode)       
         print(f"[SEGMENT {segment.id} LOG] Ref: {ref_dur:.2f}s | Rendered: {rendered_dur:.2f}s | Cuts: {cuts_used} | Mode: {mode}")
         if abs(rendered_dur - ref_dur) > 0.05:
-            print(f"    ❌ TIME DRIFT DETECTED: {rendered_dur - ref_dur:.3f}s")
+            print(f"    NO TIME DRIFT DETECTED: {rendered_dur - ref_dur:.3f}s")
 
     
     # v14.7: Finalize blueprint duration to match snapped segments
@@ -2143,7 +2179,7 @@ def match_clips_to_blueprint(
         last.timeline_end = snap(blueprint.total_duration)
         last.hold_end_seconds = (last.hold_end_seconds or 0) + snap(shortfall)
         timeline_position = last.timeline_end
-        print(f"    🔧 Demo reconciliation: last decision extended by {shortfall:.2f}s so total = {blueprint.total_duration:.2f}s")
+        print(f"    [FIX] Demo reconciliation: last decision extended by {shortfall:.2f}s so total = {blueprint.total_duration:.2f}s")
 
     cursor = decisions[0].timeline_start
     for d in decisions:
@@ -2163,39 +2199,39 @@ def match_clips_to_blueprint(
     print(f"\n{'='*60}")
     print(f"[OK] Matching complete: {len(decisions)} edit decisions")
     print(f"[OK] Total timeline duration: {timeline_position:.2f}s (target: {blueprint.total_duration:.2f}s)")
-    print(f"\n📊 DIVERSITY REPORT:")
+    print(f"\n[REPORT] DIVERSITY REPORT:")
     print(f"   Unique clips used: {unique_clips_used}/{total_clips}")
     
     if unique_clips_used == total_clips:
-        print(f"   ✅ PERFECT! Every clip in your library was used.")
+        print(f"   [OK] PERFECT! Every clip in your library was used.")
     elif unique_clips_used >= total_clips * 0.9:
-        print(f"   ✅ EXCELLENT variety - {total_clips - unique_clips_used} clips unused.")
+        print(f"   [OK] EXCELLENT variety - {total_clips - unique_clips_used} clips unused.")
     else:
-        print(f"   ⚠️ {total_clips - unique_clips_used} clips were not used.")
+        print(f"   [WARN] {total_clips - unique_clips_used} clips were not used.")
     
     # Check for repeats
     clip_uses = Counter(d.clip_path for d in decisions)
     repeats = [(path.split('\\')[-1], count) for path, count in clip_uses.items() if count > 1]
     
     if repeats:
-        print(f"\n   ⚠️ CLIPS REPEATED:")
+        print(f"\n   [WARN] CLIPS REPEATED:")
         for name, count in sorted(repeats, key=lambda x: -x[1])[:5]:
             print(f"      {name}: {count}x")
     else:
-        print(f"\n   ✅ NO CLIPS REPEATED! Perfect diversity achieved.")
+        print(f"\n   [OK] NO CLIPS REPEATED! Perfect diversity achieved.")
     
     # Compromises
     if compromises:
-        print(f"\n📋 ENERGY COMPROMISES: {len(compromises)}")
+        print(f"\n[LIST] ENERGY COMPROMISES: {len(compromises)}")
         print(f"   (Used adjacent energy when exact wasn't available)")
         # Count by type
-        compromise_summary = Counter(f"{c['wanted']}→{c['got']}" for c in compromises)
+        compromise_summary = Counter(f"{c['wanted']}->{c['got']}" for c in compromises)
         for swap, count in compromise_summary.most_common():
             print(f"      {swap}: {count} times")
     
     # Recommendations
     if deficits or compromises:
-        print(f"\n💡 RECOMMENDATIONS TO IMPROVE THIS EDIT:")
+        print(f"\n[INFO] RECOMMENDATIONS TO IMPROVE THIS EDIT:")
         
         # 1. Direct Capacity Deficits
         if deficits:
@@ -2206,7 +2242,7 @@ def match_clips_to_blueprint(
                     "Medium": "(walking, social, casual movement, city life)",
                     "Low": "(scenic, calm, establishing shots, landscapes)"
                 }.get(energy, "")
-                print(f"   → Add {count} more {energy.upper()}-ENERGY clips {examples}")
+                print(f"   -> Add {count} more {energy.upper()}-ENERGY clips {examples}")
         
         # 2. Quality/Energy Mismatch Recommendations
         if compromises:
@@ -2214,12 +2250,12 @@ def match_clips_to_blueprint(
             # Count specifically what we swapped TO what
             high_compromise = sum(1 for c in compromises if c['wanted'] == "High")
             if high_compromise > 0:
-                print(f"   → {high_compromise} segments wanted 'High' energy but used 'Medium'.")
+                print(f"   -> {high_compromise} segments wanted 'High' energy but used 'Medium'.")
                 print(f"     Add high-intensity clips with 'Urban' or 'Nightlife' vibes to fix this.")
             
             low_compromise = sum(1 for c in compromises if c['wanted'] == "Low")
             if low_compromise > 0:
-                print(f"   → {low_compromise} segments wanted 'Low' energy but used 'Medium'.")
+                print(f"   -> {low_compromise} segments wanted 'Low' energy but used 'Medium'.")
                 print(f"     Add more 'Nature' or 'Calm' clips to reduce jitter here.")
     
     # ENHANCED LOGGING: Unused clips
@@ -2258,7 +2294,7 @@ def match_clips_to_blueprint(
         "unused_clips": unused_data
     }
     
-    # v15.0: WRITE GLOBAL HISTORY — persist used moments so next render gets freshness diversity
+    # v15.0: WRITE GLOBAL HISTORY - persist used moments so next render gets freshness diversity
     try:
         import json as _json
         import uuid as _uuid
@@ -2279,7 +2315,7 @@ def match_clips_to_blueprint(
             # Keep last 20 entries per clip to avoid unbounded growth
             _existing_hist[fname] = entry[-20:]
         _HISTORY_PATH.write_text(_json.dumps(_existing_hist, indent=2), encoding='utf-8')
-        print(f"  📚 Global history updated → {_HISTORY_PATH.name}")
+        print(f"  [HISTORY] Global history updated -> {_HISTORY_PATH.name}")
     except Exception as _we:
         print(f"  [WARN] Could not write clip history: {_we}")
     
@@ -2302,7 +2338,7 @@ def match_clips_to_blueprint(
         f.write("="*80 + "\n\n")
         
         # === BLUEPRINT OVERVIEW ===
-        f.write("📑 BLUEPRINT SEGMENTS:\n")
+        f.write("[PLAN] BLUEPRINT SEGMENTS:\n")
         f.write("-"*60 + "\n")
         for seg in blueprint.segments:
             cde = getattr(seg, 'cde', 'N/A')
@@ -2313,7 +2349,7 @@ def match_clips_to_blueprint(
         f.write("\n")
         
         # === CLIP USAGE BREAKDOWN (Microscopic) ===
-        f.write("📊 CLIP USAGE ANALYSIS:\n")
+        f.write("[REPORT] CLIP USAGE ANALYSIS:\n")
         f.write("-"*60 + "\n")
         
         # Sort by usage count (descending)
@@ -2325,8 +2361,8 @@ def match_clips_to_blueprint(
             vibes = clip.vibes[:3] if clip.vibes else ['N/A']
             subjects = clip.primary_subject[:2] if clip.primary_subject else ['N/A']
             
-            status = "✅ USED" if usage > 0 else "❌ UNUSED"
-            warning = "⚠️ HEAVY" if usage >= 3 else ""
+            status = "[OK] USED" if usage > 0 else "NO UNUSED"
+            warning = "[WARN] HEAVY" if usage >= 3 else ""
             
             f.write(f"\n  {status} {warning} {clip.filename}\n")
             f.write(f"       Usage: {usage}x | Energy: {clip.energy.value} | Duration: {clip.duration:.1f}s\n")
@@ -2339,43 +2375,43 @@ def match_clips_to_blueprint(
             
             # Clip curation suggestion
             if usage == 0:
-                f.write(f"       💡 SUGGESTION: Not used. Consider if vibes/energy match the edit.\n")
+                f.write(f"       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.\n")
             elif usage >= 3:
-                f.write(f"       💡 SUGGESTION: Heavily reused. Add more clips with similar vibes: {', '.join(vibes)}\n")
+                f.write(f"       [INFO] SUGGESTION: Heavily reused. Add more clips with similar vibes: {', '.join(vibes)}\n")
         
         f.write("\n")
         
         # === UNUSED CLIPS SUMMARY ===
         unused = [c for c in clip_index.clips if clip_usage_count[c.filename] == 0]
         if unused:
-            f.write("🚫 UNUSED CLIPS (Potential Issues):\n")
+            f.write("[BLOCK] UNUSED CLIPS (Potential Issues):\n")
             f.write("-"*60 + "\n")
             for clip in unused:
-                f.write(f"  ❌ {clip.filename} | {clip.energy.value} | Vibes: {', '.join(clip.vibes[:2]) if clip.vibes else 'N/A'}\n")
+                f.write(f"  NO {clip.filename} | {clip.energy.value} | Vibes: {', '.join(clip.vibes[:2]) if clip.vibes else 'N/A'}\n")
             f.write(f"\n  Total unused: {len(unused)}/{len(clip_index.clips)} ({100*len(unused)/len(clip_index.clips):.0f}%)\n")
             f.write("\n")
         
         # === DECISION FLOW (Timeline View) ===
-        f.write("🎬 EDIT DECISION FLOW:\n")
+        f.write("[DIRECTOR] EDIT DECISION FLOW:\n")
         f.write("-"*60 + "\n")
         for i, dec in enumerate(edl.decisions):
             clip_name = Path(dec.clip_path).name
             dur = dec.timeline_end - dec.timeline_start
             clip_dur = dec.clip_end - dec.clip_start
             f.write(f"  [{i+1:02d}] {dec.timeline_start:6.2f}s-{dec.timeline_end:6.2f}s ({dur:4.2f}s) | {clip_name:20} [{dec.clip_start:5.2f}s-{dec.clip_end:5.2f}s]\n")
-            f.write(f"        Vibe Match: {'✅' if dec.vibe_match else '❌'} | {dec.reasoning[:60]}...\n")
+            f.write(f"        Vibe Match: {'[OK]' if dec.vibe_match else 'NO'} | {dec.reasoning[:60]}...\n")
         f.write("\n")
         
         # === SEGMENT-LEVEL X-RAY LOGS ===
         if xray_logs:
-            f.write("🔬 SEGMENT SCORING X-RAY:\n")
+            f.write("[XRAY] SEGMENT SCORING X-RAY:\n")
             f.write("-"*60 + "\n")
             f.write('\n'.join(xray_logs))
             f.write("\n\n")
         
         # === CURATION RECOMMENDATIONS ===
         f.write("="*80 + "\n")
-        f.write("💡 CLIP CURATION RECOMMENDATIONS:\n")
+        f.write("[INFO] CLIP CURATION RECOMMENDATIONS:\n")
         f.write("="*80 + "\n")
         
         # Calculate gaps
@@ -2392,20 +2428,20 @@ def match_clips_to_blueprint(
         heavily_used = [c.filename for c in clip_index.clips if clip_usage_count[c.filename] >= 3]
         
         if needed_vibes:
-            f.write(f"\n📥 ADD clips with vibes: {', '.join(sorted(needed_vibes))}\n")
+            f.write(f"\n[ADD] ADD clips with vibes: {', '.join(sorted(needed_vibes))}\n")
         if heavily_used:
-            f.write(f"\n🔄 REPLACE heavily-used clips: {', '.join(heavily_used)}\n")
+            f.write(f"\n[FLOW] REPLACE heavily-used clips: {', '.join(heavily_used)}\n")
             f.write(f"   Add alternative clips with similar content.\n")
         if unused:
             low_value = [c.filename for c in unused if clip_usage_count[c.filename] == 0][:5]
             if low_value:
-                f.write(f"\n🗑️ CONSIDER REMOVING (never used): {', '.join(low_value)}\n")
+                f.write(f"\n[REMOVE] CONSIDER REMOVING (never used): {', '.join(low_value)}\n")
         
         f.write("\n" + "="*80 + "\n")
         f.write("END OF X-RAY REPORT\n")
         f.write("="*80 + "\n")
     
-    print(f"\n🔬 X-RAY diagnostic report exported: {xray_path}")
+    print(f"\n[XRAY] X-RAY diagnostic report exported: {xray_path}")
     
     return edl, advisor_hints
 
@@ -2445,7 +2481,7 @@ def print_edl_summary(edl: EDL, blueprint: StyleBlueprint, clip_index: ClipIndex
     
     # NEW: Intelligence Audit (v8.1)
     # This proves the AI actually followed the narrative intent
-    print(f"\n🧠 INTELLIGENCE AUDIT (Narrative Compliance):")
+    print(f"\n[AI] INTELLIGENCE AUDIT (Narrative Compliance):")
     arc_accuracy = defaultdict(list)
     function_counts = Counter()
     vibe_matches = 0
@@ -2514,3 +2550,50 @@ def validate_edl(edl: EDL, blueprint: StyleBlueprint) -> bool:
             )
     
     return True
+
+
+def audit_edl_quality(edl: EDL, blueprint: StyleBlueprint, music_profile: Optional[dict] = None) -> List[str]:
+    """
+    Lightweight edit-quality audit.
+    This does not block rendering; it surfaces patterns that usually make edits feel weak.
+    """
+    warnings: List[str] = []
+    decisions = edl.decisions or []
+    if not decisions:
+        return ["EDL has no decisions."]
+
+    short_cuts = [
+        d for d in decisions
+        if (d.timeline_end - d.timeline_start) < 0.45
+    ]
+    if short_cuts:
+        warnings.append(f"{len(short_cuts)} cut(s) are under 0.45s; check for jitter unless this is a beat-driven section.")
+
+    back_to_back_repeats = 0
+    for prev, curr in zip(decisions, decisions[1:]):
+        if Path(prev.clip_path).name == Path(curr.clip_path).name:
+            back_to_back_repeats += 1
+    if back_to_back_repeats:
+        warnings.append(f"{back_to_back_repeats} back-to-back repeated clip transition(s); check continuity/repetition.")
+
+    ending_duration = decisions[-1].timeline_end - decisions[-1].timeline_start
+    if blueprint.total_duration >= 8 and ending_duration < 0.8:
+        warnings.append("Final cut is shorter than 0.8s; endings usually need a readable landing.")
+
+    if music_profile:
+        peak_second = float(music_profile.get("peak_second", 0) or 0)
+        if peak_second > 0:
+            peak_decision = next(
+                (d for d in decisions if d.timeline_start <= peak_second < d.timeline_end),
+                None
+            )
+            if not peak_decision:
+                warnings.append("Music peak does not land inside any EDL decision.")
+            else:
+                peak_cut_duration = peak_decision.timeline_end - peak_decision.timeline_start
+                if peak_cut_duration < 0.6:
+                    warnings.append("Music peak lands on a very short cut; consider a stronger hero moment there.")
+
+    return warnings
+
+

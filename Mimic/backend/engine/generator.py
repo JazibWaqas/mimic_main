@@ -18,18 +18,22 @@ import time
 from typing import Optional
 from pathlib import Path
 from models import StyleBlueprint, EnergyLevel, MotionType, Segment
-from engine.brain import call_deepseek_v3, _parse_json_response, REFERENCE_CACHE_VERSION
+from engine.brain import call_deepseek_reasoner, _parse_json_response, REFERENCE_CACHE_VERSION
+from engine.text_safety import sanitize_blueprint_text_fields
+from engine.music_profile import format_music_profile_for_prompt
 
 # ============================================================================
-# PROMPT MODE GENERATOR PROMPT (v14.7 Nostalgia-First Design)
+# PROMPT MODE GENERATOR PROMPT (v14.8 Intent-First Design)
 # ============================================================================
-# This prompt is designed for emotional, memory-driven edits.
-# It produces StyleBlueprints optimized for nostalgia, personal moments, and
-# cinematic storytelling with intentional rhythm (not hyper-fragmentation).
+# This prompt is designed for short-form social edits.
+# It produces StyleBlueprints that follow the user's approved intent while
+# preserving intentional rhythm and avoiding jittery hyper-fragmentation.
 # ============================================================================
+
+GENERATOR_CACHE_VERSION = "14.8-intent-first"
 
 GENERATOR_PROMPT = """
-You are a world-class Creative Director and Edit Producer specializing in EMOTIONAL, MEMORY-DRIVEN video edits.
+You are a world-class Creative Director and Edit Producer specializing in short-form social video edits.
 
 Your task is to generate a 'Style Blueprint' (Editing DNA) based on a user's text description.
 This blueprint will be used by an automated engine to assemble raw clips into a cohesive narrative.
@@ -42,20 +46,20 @@ TARGET DURATION: {target_duration} seconds
 
 ---
 
-## NOSTALGIA-FIRST PHILOSOPHY (CRITICAL)
+## INTENT-FIRST EDITING PHILOSOPHY (CRITICAL)
 
-You are designing an edit for PERSONAL, EMOTIONAL footage. This is NOT a fast-paced commercial or action reel.
+The user's approved intent is the highest creative authority.
+Do not force every edit into the same emotional or nostalgic shape.
 
-NOSTALGIA RULES:
-- FEWER cuts, not more. Let moments breathe.
-- LONGER holds on meaningful content.
-- GENTLE build-up — don't rush to the peak.
-- EMOTIONAL peak near music swell, not arbitrary middle.
-- SOFT landing outro — never abrupt endings.
-- Preference for: Peace, Joy, Reflection, Warmth, Memory.
-- AVOID hyper-fragmentation unless explicitly requested.
+QUALITY RULES:
+- Avoid jittery, random, or hyper-fragmented edits.
+- Use fewer, stronger segments rather than many tiny blueprint segments.
+- Let meaningful moments breathe when the user asks for raw, calm, emotional, documentary, luxury, or nonchalant energy.
+- Use denser cuts only when the user explicitly asks for high energy, speed, action, hype, comedy, or beat-driven impact.
+- Peak near the strongest music or narrative moment, not an arbitrary middle point.
+- Land the ending cleanly; never end abruptly unless the user asks for an abrupt punchline or hard stop.
 
-NOSTALGIA ≠ SLOW. Nostalgia = INTENTIONAL RHYTHM.
+Nostalgia is one possible intent, not the default. Intentional rhythm is always required.
 
 ---
 
@@ -76,14 +80,14 @@ You define EDITORIAL INTENT AND STRUCTURE, not execution guarantees.
 
 ## ARC PLAN REQUIREMENTS
 
-Design a clear 4-stage emotional arc:
+Design a clear 4-stage editorial arc:
 
 | Stage    | Duration  | Purpose                              | Energy   | CDE      |
 |----------|-----------|--------------------------------------|----------|----------|
 | Intro    | 15-25%    | Set the scene, establish tone        | Low      | Sparse   |
-| Build-up | 25-35%    | Escalate anticipation gently         | Medium   | Moderate |
+| Build-up | 25-35%    | Escalate interest                    | Medium   | Moderate |
 | Peak     | 25-35%    | Emotional climax, payoff             | High/Med | Moderate |
-| Outro    | 15-25%    | Resolution, soft landing             | Low      | Sparse   |
+| Outro    | 15-25%    | Resolution or clean final beat       | Low      | Sparse   |
 
 ---
 
@@ -120,10 +124,14 @@ For EACH segment, you MUST specify:
 | Moderate | 1-2 cuts allowed if needed. Natural pacing.      | Build-up, Standard scenes   |
 | Dense    | Multiple quick cuts permitted. Energy-driven.    | Action peaks, celebrations  |
 
-FOR NOSTALGIA EDITS:
+FOR CALM / RAW / NOSTALGIC / DOCUMENTARY EDITS:
 - Default to "Sparse" for Intro and Outro.
 - Use "Moderate" for Build-up.
 - Use "Moderate" (not Dense) even for Peak unless user requests intensity.
+
+FOR HYPE / ACTION / FAST / BEAT-DRIVEN EDITS:
+- Allow "Dense" at the Peak and short beat-driven moments.
+- Keep Intro and Outro readable; do not make the whole edit feel like noise.
 
 ---
 
@@ -131,11 +139,11 @@ FOR NOSTALGIA EDITS:
 
 1. Total duration must be EXACTLY {target_duration} seconds.
 2. Segments must be CONTINUOUS (Segment 2 start = Segment 1 end).
-3. Prefer FEWER segments with LONGER holds over many short cuts.
-4. For a 20-30 second edit, aim for 4-6 segments (not 10+).
+3. Prefer FEWER blueprint segments with intentional holds over many tiny segments.
+4. For a 20-30 second edit, aim for 4-6 blueprint segments (the execution engine may still make multiple cuts inside a segment when appropriate).
 5. Use professional editorial reasoning for every decision.
-6. If user description conflicts with standard pacing, prioritize EMOTIONAL INTENT.
-7. **HARD LIMIT**: If target_duration ≤ 30 seconds, NEVER produce more than 6 segments.
+6. If user description conflicts with standard pacing, prioritize the USER'S APPROVED INTENT.
+7. **HARD LIMIT**: If target_duration <= 30 seconds, NEVER produce more than 6 segments.
 8. **DURATION FIX**: If segment durations don't sum exactly to target_duration, adjust the FINAL segment duration to ensure the total equals target_duration exactly.
 9. **STYLE LOGIC**: Set the `style_config` based on the user's intent:
    - Nostalgic/Warm/Memories -> "warm" or "vintage" preset, Inter font.
@@ -364,7 +372,8 @@ def generate_blueprint_from_text(
     bpm: Optional[float] = None,
     beat_count: Optional[int] = None,
     energy_curve: Optional[list] = None,  # Normalized per-second RMS energy [0.0–1.0]
-    library_snapshot: Optional[dict] = None  # Compact library summary for blueprint calibration
+    library_snapshot: Optional[dict] = None,  # Compact library summary for blueprint calibration
+    music_profile: Optional[dict] = None
 ) -> StyleBlueprint:
     """
     Call Gemini to generate a full StyleBlueprint from a text prompt.
@@ -389,7 +398,7 @@ def generate_blueprint_from_text(
     
     print(f"\n[GENERATOR] Synthesizing Blueprint from prompt: '{user_prompt[:50]}...'")
     if bpm:
-        print(f"  🎵 Music-aware mode: {bpm:.1f} BPM")
+        print(f"  [MUSIC] Music-aware mode: {bpm:.1f} BPM")
     
     # Define cache directory
     BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -406,7 +415,7 @@ def generate_blueprint_from_text(
     lib_fingerprint = "none"
     if library_snapshot:
         lib_fingerprint = "-".join(sorted(library_snapshot.get("dominant_vibes", [])[:4]))
-    cache_key = f"{user_prompt}_{target_duration}_{bpm or 'none'}_{energy_fingerprint}_{lib_fingerprint}"
+    cache_key = f"{GENERATOR_CACHE_VERSION}_{user_prompt}_{target_duration}_{bpm or 'none'}_{energy_fingerprint}_{lib_fingerprint}"
     prompt_hash = hashlib.md5(cache_key.encode()).hexdigest()[:12]
     cache_file = cache_dir / f"blueprint_{prompt_hash}.json"
     
@@ -443,7 +452,7 @@ When designing segments, consider musical phrasing:
 - Align major segment transitions to phrase boundaries when possible
 - Peak should align with a strong downbeat or phrase start
 - Outro should start on a resolving phrase
-- DO NOT force all cuts to beats — vibes matter more than math
+- DO NOT force all cuts to beats - vibes matter more than math
 """
         # Enrich with energy curve data if available
         if energy_curve and len(energy_curve) >= 3:
@@ -456,9 +465,9 @@ When designing segments, consider musical phrasing:
             music_guidance += f"""
 
 MUSIC ENERGY ANALYSIS (from actual audio):
-- Opening energy (0-{third}s): {intro_avg:.2f}/1.0 — {'quiet/delicate' if intro_avg < 0.4 else 'moderate' if intro_avg < 0.7 else 'strong'}
-- Middle energy ({third}-{2*third}s): {mid_avg:.2f}/1.0 — {'quiet/delicate' if mid_avg < 0.4 else 'moderate' if mid_avg < 0.7 else 'strong'}
-- Closing energy ({2*third}-{total_secs}s): {outro_avg:.2f}/1.0 — {'quiet/delicate' if outro_avg < 0.4 else 'moderate' if outro_avg < 0.7 else 'strong'}
+- Opening energy (0-{third}s): {intro_avg:.2f}/1.0 - {'quiet/delicate' if intro_avg < 0.4 else 'moderate' if intro_avg < 0.7 else 'strong'}
+- Middle energy ({third}-{2*third}s): {mid_avg:.2f}/1.0 - {'quiet/delicate' if mid_avg < 0.4 else 'moderate' if mid_avg < 0.7 else 'strong'}
+- Closing energy ({2*third}-{total_secs}s): {outro_avg:.2f}/1.0 - {'quiet/delicate' if outro_avg < 0.4 else 'moderate' if outro_avg < 0.7 else 'strong'}
 - Loudest musical moment: {peak_sec}s into the track
 
 USE THIS to shape segment intensities and cut density:
@@ -468,11 +477,14 @@ USE THIS to shape segment intensities and cut density:
 - The peak at ~{peak_sec}s should coincide with your Peak arc stage
 """
     else:
-        music_context = "(No music information available — design based on narrative pacing)"
+        music_context = "(No music information available - design based on narrative pacing)"
         music_guidance = """
 Design segments based on narrative flow and emotional pacing.
 Since no BPM is provided, focus on visual rhythm and story arc.
 """
+
+    if music_profile:
+        music_guidance += "\n" + format_music_profile_for_prompt(music_profile)
     
     # 3. Build library context (injected only when available)
     library_context = ""
@@ -480,16 +492,19 @@ Since no BPM is provided, focus on visual rhythm and story arc.
         import json as _json
         library_context = f"""
 
-CLIP LIBRARY SNAPSHOT (CRITICAL — design your blueprint around this):
+CLIP LIBRARY SNAPSHOT (CRITICAL - design your blueprint around this):
 {_json.dumps(library_snapshot, indent=2)}
 
 IMPORTANT RULES:
 - The 'dominant_vibes' above are the ACTUAL vibes present in the user's clips.
 - The 'dominant_subjects' are what ACTUALLY appears in these clips.
+- The 'energy_distribution' and 'motion_distribution' show how much fast/slow material exists.
+- The 'strongest_clips' are compact examples of the most usable material.
 - Your segment vibes and emotional_guidance MUST draw from these real vibes.
 - Do NOT ask for intimacy/solo moments if only 'group/leisure' clips exist.
+- Prefer blueprint assumptions that the strongest clips can realistically satisfy.
 - The edit will FAIL if you design segments for content that doesn't exist.
-- These clips are all handpicked and genuinely usable — trust the library.
+- These clips are all handpicked and genuinely usable - trust the library.
 """
 
     # 4. Build final prompt
@@ -502,10 +517,10 @@ IMPORTANT RULES:
     
     for attempt in range(3):
         try:
-            print(f"  [GENERATOR] Calling DeepSeek V3 for creative blueprint synthesis (attempt {attempt + 1})...")
-            data = call_deepseek_v3(
+            print(f"  [GENERATOR] Calling DeepSeek Reasoner for creative blueprint synthesis (attempt {attempt + 1})...")
+            data = call_deepseek_reasoner(
                 prompt=final_prompt,
-                system_prompt="You are a world-class Creative Director and Edit Producer specializing in emotional, memory-driven video edits."
+                system_prompt="You are a world-class Creative Director and Edit Producer specializing in short-form social video edits."
             )
             
             # Ensure total_duration is a float
@@ -513,6 +528,7 @@ IMPORTANT RULES:
             
             # Add the original text prompt to the blueprint
             data["text_prompt"] = user_prompt
+            data = sanitize_blueprint_text_fields(data)
             
             # Ensure segments have required fields for Editor compatibility
             for seg in data.get("segments", []):
@@ -526,7 +542,7 @@ IMPORTANT RULES:
             # Add contract field for Advisor compatibility
             data["contract"] = {
                 "type": "blueprint",
-                "version": REFERENCE_CACHE_VERSION,
+                "version": GENERATOR_CACHE_VERSION,
                 "source": "text_prompt_gemini",
                 "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
             }
@@ -539,18 +555,19 @@ IMPORTANT RULES:
             except Exception as e:
                 print(f"  [WARN] Failed to save blueprint cache: {e}")
             
-            print(f"  ✅ Blueprint successfully synthesized with Gemini 3 Pro (Attempt {attempt + 1})")
+            print(f"  [OK] Blueprint successfully synthesized with Gemini 3 Pro (Attempt {attempt + 1})")
             return StyleBlueprint(**data)
             
         except Exception as e:
-            print(f"  ⚠️ Blueprint Generation attempt {attempt + 1} failed: {e}")
+            print(f"  [WARN] Blueprint Generation attempt {attempt + 1} failed: {e}")
             
             if attempt == 2:
-                print(f"  ❌ Blueprint Generation failed after 3 retries. Using fallback.")
+                print(f"  NO Blueprint Generation failed after 3 retries. Using fallback.")
                 return create_fallback_blueprint(target_duration, user_prompt)
             
             time.sleep(1.0)
     
     # Final fallback (should never reach here, but safety first)
-    print(f"  ❌ Unexpected failure path. Using fallback blueprint.")
+    print(f"  NO Unexpected failure path. Using fallback blueprint.")
     return create_fallback_blueprint(target_duration, user_prompt)
+

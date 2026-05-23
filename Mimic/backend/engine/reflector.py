@@ -282,13 +282,13 @@ def generate_vault_report(
             return report
         except Exception as e:
             last_error = e
-            print(f"  ⚠️ Vault generation attempt {attempt + 1} failed: {e}")
+            print(f"  [WARN] Vault generation attempt {attempt + 1} failed: {e}")
             if attempt < max_attempts - 1:
                 time.sleep(1) # Small cooldown before retry
                 continue
     
     # Final Fallback: All attempts failed, return minimal report to prevent UI crash
-    print(f"  🔴 Vault translation failed after {max_attempts} attempts: {last_error}")
+    print(f"  [ERROR] Vault translation failed after {max_attempts} attempts: {last_error}")
     
     fallback_report = VaultReport(
         header="[System Note] Narrative intelligence report partially unavailable.",
@@ -328,11 +328,11 @@ def reflect_on_edit(
 
     if not force_refresh and cache_file.exists():
         try:
-            print(f"  📦 Loading cached Director's Critique...")
+            print(f"  [CACHE] Loading cached Director's Critique...")
             data = json.loads(cache_file.read_text(encoding='utf-8'))
             return DirectorCritique(**data)
         except Exception as e:
-            print(f"  ⚠️ Critique cache corrupted: {e}")
+            print(f"  [WARN] Critique cache corrupted: {e}")
 
     print(f"\n[REFLECTOR] Generating Director's Critique...")
     
@@ -377,6 +377,7 @@ def reflect_on_edit(
         "strategic_context": strategic_context,
         "edl_summary": edl_summary
     }
+    final_prompt = REFLECTOR_PROMPT.format(**format_vars)
 
     for attempt in range(3):
         try:
@@ -391,15 +392,15 @@ def reflect_on_edit(
             # Save to cache
             try:
                 cache_file.write_text(critique.model_dump_json(indent=2), encoding='utf-8')
-                print(f"  ✅ Critique cached: {cache_file.name}")
+                print(f"  [OK] Critique cached: {cache_file.name}")
             except Exception as e:
-                print(f"  ⚠️ Failed to cache critique: {e}")
+                print(f"  [WARN] Failed to cache critique: {e}")
                 
             return critique
         except Exception as e:
-            print(f"  🔴 Reflector attempt {attempt + 1} failed: {e}")
+            print(f"  [ERROR] Reflector attempt {attempt + 1} failed: {e}")
             if attempt == 2:
-                print(f"  ⚠️ Reflector failed after all retries. Using fallback critique.")
+                print(f"  [WARN] Reflector failed after all retries. Using fallback critique.")
                 return DirectorCritique(
                     overall_score=5.0,
                     monologue="The system completed the edit, but the reflection layer encountered an error. The technical structure is sound, but the narrative nuance requires human review.",
@@ -412,3 +413,4 @@ def reflect_on_edit(
         monologue="The system completed the edit, but the reflection layer encountered an error. The technical structure is sound, but the narrative nuance requires human review.",
         technical_fidelity="Automatic validation passed. Rhythmic alignment confirmed."
     )
+

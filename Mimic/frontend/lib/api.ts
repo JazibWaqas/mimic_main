@@ -12,6 +12,43 @@ const IS_DEMO = process.env.NEXT_PUBLIC_DEMO_MODE === "true";
 
 const intelCache = new Map<string, unknown>();
 
+type RenderEdlDecision = {
+  segment_id: number;
+  clip_path: string;
+  clip_start: number;
+  clip_end: number;
+  timeline_start: number;
+  timeline_end: number;
+  hold_end_seconds?: number | null;
+  reasoning?: string;
+  vibe_match?: boolean;
+};
+
+export type CreativeBrief = {
+  status?: "needs_clarification" | "ready_for_approval";
+  summary: string;
+  assumptions?: string[];
+  resolved_choices?: string[];
+  intake?: Record<string, string>;
+  intake_confidence?: Record<string, "confirmed" | "assumed" | "missing">;
+  vibe: string[];
+  pacing: string;
+  clip_preferences: string[];
+  avoid: string[];
+  text_style: string;
+  music_direction: string;
+  question?: string;
+  questions?: Array<{
+    id: string;
+    field?: string;
+    question: string;
+    options?: string[];
+    impact?: string;
+  }>;
+  clarification_answers?: Record<string, string>;
+  production_prompt: string;
+};
+
 // Helper for fetching demo data
 const fetchDemoIndex = async () => {
   const res = await fetch("/demo/index.json");
@@ -101,6 +138,41 @@ export const api = {
     });
 
     if (!res.ok) throw new Error("Generation failed");
+    return res.json();
+  },
+
+  understandBrief: async (message: string, currentBrief?: CreativeBrief | null): Promise<CreativeBrief> => {
+    if (IS_DEMO) {
+      return {
+        status: "ready_for_approval",
+        summary: message.slice(0, 120) || "A clear social-ready edit.",
+        assumptions: ["MIMIC will use practical defaults for any unclear creative choices."],
+        resolved_choices: [],
+        intake: {},
+        intake_confidence: {},
+        vibe: ["clear", "natural", "social-ready"],
+        pacing: "Start clearly, build energy in the middle, end cleanly.",
+        clip_preferences: ["strong opening shot", "natural movement", "clear subject moments"],
+        avoid: ["random cuts", "forced captions"],
+        text_style: "Short, simple caption that matches the mood.",
+        music_direction: "Cut to the main beats without making it chaotic.",
+        question: "",
+        questions: [],
+        production_prompt: message || "Create a clear social-ready short-form edit."
+      };
+    }
+
+    const res = await fetch(`${API_BASE}/api/brief/understand`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message, current_brief: currentBrief || null }),
+    });
+
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.detail || "Could not build the creative brief");
+    }
+
     return res.json();
   },
 
@@ -194,5 +266,24 @@ export const api = {
     const data: unknown = await res.json();
     if (type !== "results") intelCache.set(cacheKey, data);
     return data;
+  },
+
+  renderEdl: async (filename: string, decisions: RenderEdlDecision[], styleConfig?: StyleConfig, textOverlay?: string) => {
+    if (IS_DEMO) return { success: true, filename };
+    let res: Response;
+    try {
+      res = await fetch(`${API_BASE}/api/pipeline/render_edl`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ filename, decisions, style_config: styleConfig, text_overlay: textOverlay }),
+      });
+    } catch {
+      throw new Error(`Could not reach the renderer at ${API_BASE}. Make sure the backend is running, then try Render Changes again.`);
+    }
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.detail || "EDL rendering failed");
+    }
+    return res.json();
   },
 };

@@ -17,7 +17,8 @@ from pathlib import Path
 from typing import List, Optional, Dict, Any
 
 from models import ClipIndex, StyleBlueprint, SegmentMomentPlan, MomentCandidate
-from engine.brain import call_deepseek_v3, _parse_json_response
+from engine.brain import call_deepseek_reasoner, _parse_json_response
+from engine.music_profile import format_music_profile_for_prompt
 
 
 # ---------------------------------------------------------------------------
@@ -53,7 +54,8 @@ def _build_director_prompt(
     onset_timestamps: List[float],
     energy_curve: List[float],
     clip_index: ClipIndex,
-    blueprint: StyleBlueprint
+    blueprint: StyleBlueprint,
+    music_profile: Optional[Dict[str, Any]] = None,
 ) -> str:
     """Build the Creative Director prompt with all available context."""
 
@@ -71,6 +73,7 @@ def _build_director_prompt(
 
     peak_sec = energy_curve.index(max(energy_curve)) if energy_curve else 0
     onsets_str = ", ".join(f"{o:.2f}" for o in onset_timestamps[:60])  # cap to avoid huge prompt
+    music_profile_context = format_music_profile_for_prompt(music_profile)
 
     # --- Blueprint arc summary ---
     arc_lines = []
@@ -135,6 +138,7 @@ Energy by quarter:
   {total_duration/2:.1f}-{3*total_duration/4:.1f}s : {energy_quarters[2]}/1.0  ({'quiet' if energy_quarters[2]<0.4 else 'moderate' if energy_quarters[2]<0.7 else 'strong'})
   {3*total_duration/4:.1f}-{total_duration:.1f}s : {energy_quarters[3]}/1.0  ({'quiet' if energy_quarters[3]<0.4 else 'moderate' if energy_quarters[3]<0.7 else 'strong'})
 Loudest peak: ~{peak_sec}s
+{music_profile_context}
 
 ═══════════════════════════════════════════════════════════
 EDITORIAL ARC (blueprint guidance - not a hard contract)
@@ -206,14 +210,22 @@ VALIDATION RULES (check before outputting):
 # Cache helpers
 # ---------------------------------------------------------------------------
 def _get_cache_file(text_prompt: str, total_duration: float, bpm: float,
-                    clip_index: ClipIndex) -> Path:
+                    clip_index: ClipIndex,
+                    music_profile: Optional[Dict[str, Any]] = None) -> Path:
     BASE_DIR = Path(__file__).resolve().parent.parent.parent
     cache_dir = BASE_DIR / "data" / "cache" / "creative_director"
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     # Cache key: prompt + duration + bpm + sorted clip filenames
     lib_sig = "-".join(sorted(c.filename for c in clip_index.clips))
-    raw = f"{text_prompt}|{total_duration:.1f}|{bpm:.1f}|{lib_sig}"
+    music_sig = ""
+    if music_profile:
+        music_sig = "|".join([
+            str(music_profile.get("peak_second", "")),
+            str(music_profile.get("onset_count", "")),
+            str(music_profile.get("beat_interval", "")),
+        ])
+    raw = f"{text_prompt}|{total_duration:.1f}|{bpm:.1f}|{lib_sig}|{music_sig}"
     h = hashlib.md5(raw.encode()).hexdigest()[:14]
     return cache_dir / f"director_{h}.json"
 
@@ -285,6 +297,7 @@ def run_creative_director(
     bpm: float,
     onset_timestamps: List[float],
     energy_curve: List[float],
+    music_profile: Optional[Dict[str, Any]] = None,
     api_key: Optional[str] = None,
     force_refresh: bool = False,
 ) -> Optional[Dict[str, SegmentMomentPlan]]:
@@ -294,7 +307,7 @@ def run_creative_director(
     Returns a dict of {segment_id: SegmentMomentPlan} ready for the Editor,
     or None if the call fails (editor falls back to regular scoring).
     """
-    cache_file = _get_cache_file(text_prompt, total_duration, bpm, clip_index)
+    cache_file = _get_cache_file(text_prompt, total_duration, bpm, clip_index, music_profile)
 
     # Try cache first
     if not force_refresh and cache_file.exists():
@@ -317,13 +330,14 @@ def run_creative_director(
         onset_timestamps=onset_timestamps,
         energy_curve=energy_curve,
         clip_index=clip_index,
-        blueprint=blueprint
+        blueprint=blueprint,
+        music_profile=music_profile,
     )
 
     for attempt in range(3):
         try:
-            print(f"  🎬 Creative Director: Calling DeepSeek (attempt {attempt+1})...")
-            raw = call_deepseek_v3(prompt=prompt, system_prompt=(
+            print(f"  [DIRECTOR] Creative Director: Calling DeepSeek Reasoner (attempt {attempt+1})...")
+            raw = call_deepseek_reasoner(prompt=prompt, system_prompt=(
                 "You are a senior human film editor with 20 years of experience. "
                 "You have strong creative taste. You output valid JSON only."
             ))
@@ -401,10 +415,10 @@ def run_creative_director(
                 print(f"  [DIRECTOR] Extended last cut by {gap:.2f}s to fill timeline")
 
             arc_summary = data.get("arc_summary", "")
-            print(f"  ✅ Creative Director planned {len(fixed_cuts)} cuts")
-            print(f"  📝 Arc: {arc_summary[:120]}")
+            print(f"  [OK] Creative Director planned {len(fixed_cuts)} cuts")
+            print(f"  [ARC] {arc_summary[:120]}")
             for cut in fixed_cuts:
-                print(f"     @ {cut.music_position:.2f}s → {cut.clip_filename} "
+                print(f"     @ {cut.music_position:.2f}s -> {cut.clip_filename} "
                       f"[{cut.clip_start:.2f}-{cut.clip_end:.2f}] ({cut.duration:.2f}s) | {cut.purpose[:60]}")
 
             # Cache the result
@@ -428,9 +442,9 @@ def run_creative_director(
             return _cuts_to_segment_moment_plans(fixed_cuts, blueprint)
 
         except Exception as e:
-            print(f"  🔴 Creative Director attempt {attempt+1} failed: {e}")
+            print(f"  [WARN] Creative Director attempt {attempt+1} failed: {e}")
             if attempt == 2:
-                print("  ⚠️ Creative Director failed — falling back to Advisor+Scoring")
+                print("  [WARN] Creative Director failed - falling back to Advisor+Scoring")
                 return None
             time.sleep(1.5)
 

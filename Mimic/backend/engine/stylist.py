@@ -7,6 +7,26 @@ from pathlib import Path
 import subprocess
 from typing import Dict, Any, List
 from models import StyleConfig
+from engine.text_safety import sanitize_ffmpeg_text, sanitize_plain_text, sanitize_text_event
+
+
+def _escape_drawtext_value(value: Any) -> str:
+    """Escape a value for FFmpeg drawtext filter options."""
+    text = sanitize_ffmpeg_text(value)
+    text = text.replace("\\", "\\\\")
+    for char in ("'", ":", ",", "[", "]", ";"):
+        text = text.replace(char, f"\\{char}")
+    return text
+
+
+def _escape_filter_path(path: Path) -> str:
+    """Return a Windows-safe FFmpeg filter path."""
+    text = str(path).replace("\\", "/")
+    text = text.replace("\\", "\\\\")
+    text = text.replace(":", "\\:")
+    text = text.replace("'", "\\'")
+    return text
+
 
 def apply_visual_styling(
     input_video: str,
@@ -25,6 +45,9 @@ def apply_visual_styling(
     # If a v14.9 style_config is provided, it OVERRIDES legacy color_grading/text_style dicts
     # However, text_overlay and text_events (the CONTENT) still come from the blueprint/AI.
     
+    text_overlay = sanitize_plain_text(text_overlay, max_length=160)
+    text_events = [sanitize_text_event(evt) for evt in (text_events or [])]
+
     has_timed_events = bool(text_events and len(text_events) > 0)
     has_global_text = bool(text_overlay and text_overlay.strip())
     
@@ -81,7 +104,7 @@ def apply_visual_styling(
         font_path = Path("C:/Windows/Fonts") / "arial.ttf"
     
     # Pre-calculate string for f-strings (Python 3.10 compat: no backslashes in expression parts)
-    font_path_str = str(font_path).replace("\\", "/")
+    font_path_str = _escape_filter_path(font_path)
 
     # 3. Build Filter Chain
     filters = []
@@ -134,7 +157,7 @@ def apply_visual_styling(
             base_y_expr = f"(h - ({len(lines)} * {line_height}))/2"
             
         for i, line in enumerate(lines):
-            clean_l = _sanitize_text_for_ffmpeg(line)
+            clean_l = _escape_drawtext_value(line)
             y_offset = f"({base_y_expr}) + {i * line_height}"
             
             # Escape color for FFmpeg (needs to be 0xRRGGBB or name)
@@ -157,7 +180,7 @@ def apply_visual_styling(
             end_t = getattr(evt, 'end', evt.get('end', 5) if isinstance(evt, dict) else 5)
             role = getattr(evt, 'role', evt.get('role', 'Decorative') if isinstance(evt, dict) else "").lower()
             
-            clean_content = _sanitize_text_for_ffmpeg(content)
+            clean_content = _escape_drawtext_value(content)
             evt_font_size = 64 if "anchor" in role else 48
             
             # Role-based placement
@@ -212,6 +235,6 @@ def apply_visual_styling(
         shutil.copy2(input_video, output_video)
 
 def _sanitize_text_for_ffmpeg(text: str) -> str:
-    """Helper to strip dangerous characters for Windows FFmpeg."""
-    clean = text.replace(":", "").replace(",", "").replace("'", "").replace('"', "").replace("\\", "")
-    return "".join(c for c in clean if c.isalnum() or c in " .!?#@%&*()-_=+[]{}|;~")
+    """Backward-compatible wrapper for older imports/tests."""
+    return sanitize_ffmpeg_text(text)
+

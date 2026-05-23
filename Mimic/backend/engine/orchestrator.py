@@ -30,7 +30,7 @@ from engine.brain import (
 )
 from engine.generator import generate_blueprint_from_text
 from engine.reflector import generate_vault_report
-from engine.editor import match_clips_to_blueprint, validate_edl, print_edl_summary
+from engine.editor import match_clips_to_blueprint, validate_edl, print_edl_summary, audit_edl_quality
 from engine.processors import (
     standardize_clip,
     extract_audio,
@@ -46,7 +46,7 @@ from engine.processors import (
     get_beat_grid,
     get_video_duration
 )
-from engine.stylist import apply_visual_styling
+from engine.music_profile import build_music_profile
 from utils import ensure_directory, cleanup_session, get_file_hash
 from collections import defaultdict, Counter
 
@@ -140,6 +140,12 @@ def run_mimic_pipeline(
     
     log_path = Path(output_dir) / f"{base_output_name}.log"
     json_report_path = Path(output_dir) / f"{base_output_name}.json"
+    music_profile = build_music_profile(
+        duration=target_duration,
+        bpm=120.0,
+        onset_times=[],
+        energy_curve=[],
+    )
     
     log_file = None
     original_stdout = sys.stdout
@@ -249,6 +255,17 @@ def run_mimic_pipeline(
             else:
                 ref_bpm = 120.0; onset_times = []; energy_curve = []
                 print(f"  [WARN] No audio source provided for text-based edit, using default 120 BPM")
+
+            music_profile = build_music_profile(
+                duration=target_duration,
+                bpm=ref_bpm,
+                onset_times=onset_times,
+                energy_curve=energy_curve,
+            )
+            print(
+                f"  [MUSIC] Profile ready: peak ~{music_profile['peak_second']}s, "
+                f"{music_profile['onset_count']} onsets"
+            )
             
             # ── PROMPT MODE: Analyze clips BEFORE blueprint generation ────
             # The blueprint must know what material it has to work with.
@@ -261,21 +278,41 @@ def run_mimic_pipeline(
                 # Build a compact library snapshot for the blueprint generator
                 _vibe_counts = Counter()
                 _subject_counts = Counter()
+                _energy_counts = Counter()
+                _motion_counts = Counter()
                 for c in _clips:
                     for v in (c.vibes or []):
                         _vibe_counts[v.lower()] += 1
                     for s in (c.primary_subject or []):
                         _subject_counts[s.lower()] += 1
+                    _energy_counts[c.energy.value] += 1
+                    _motion_counts[c.motion.value] += 1
                 
                 _top_vibes = [v for v, _ in _vibe_counts.most_common(8)]
                 _top_subjects = [s for s, _ in _subject_counts.most_common(5)]
                 _total_secs = sum(c.duration for c in _clips)
+                _strongest_clips = []
+                for c in sorted(_clips, key=lambda clip: (clip.clip_quality, clip.duration), reverse=True)[:8]:
+                    _strongest_clips.append({
+                        "filename": c.filename,
+                        "duration": round(c.duration, 1),
+                        "energy": c.energy.value,
+                        "motion": c.motion.value,
+                        "subjects": c.primary_subject[:3],
+                        "vibes": c.vibes[:4],
+                        "best_for": c.best_for[:3],
+                        "avoid_for": c.avoid_for[:2],
+                        "description": (c.content_description or "")[:140]
+                    })
                 
                 library_snapshot = {
                     "clip_count": len(_clips),
                     "total_footage_seconds": round(_total_secs),
                     "dominant_vibes": _top_vibes,
                     "dominant_subjects": _top_subjects,
+                    "energy_distribution": dict(_energy_counts),
+                    "motion_distribution": dict(_motion_counts),
+                    "strongest_clips": _strongest_clips,
                     "note": (
                         "These clips are handpicked by the user and are ALL usable. "
                         "Design the blueprint vibes and arc to match what actually exists in the library. "
@@ -297,7 +334,8 @@ def run_mimic_pipeline(
                 text_prompt, target_duration, api_key,
                 bpm=ref_bpm,
                 energy_curve=energy_curve,
-                library_snapshot=library_snapshot
+                library_snapshot=library_snapshot,
+                music_profile=music_profile
             )
             print(f"[OK] Gemini successfully synthesized blueprint from text: {len(blueprint.segments)} segments.")
         else:
@@ -326,6 +364,12 @@ def run_mimic_pipeline(
                 
                 # 2c. HYBRID DETECTION: Merge visual cuts + beat-aligned subdivision
                 ref_duration = get_video_duration(reference_path)
+                music_profile = build_music_profile(
+                    duration=ref_duration,
+                    bpm=ref_bpm,
+                    onset_times=onset_times,
+                    energy_curve=energy_curve,
+                )
                 beat_grid = get_beat_grid(ref_duration, ref_bpm)
                 combined_hints = _merge_scene_and_beat_timestamps(
                     scene_changes, 
@@ -374,7 +418,7 @@ def run_mimic_pipeline(
         update_progress(3, TOTAL_STEPS, "Analyzing user clips with Gemini AI...")
         
         # 1. Analyze ORIGINAL clips first (allows better caching)
-        # PROMPT MODE: Reuse the pre-scan from Step 2 — clips were already analyzed.
+        # PROMPT MODE: Reuse the pre-scan from Step 2 - clips were already analyzed.
         # REFERENCE MODE: Analyze fresh here as usual.
         try:
             if text_prompt and '_pre_analyzed_clip_index' in locals() and _pre_analyzed_clip_index is not None:
@@ -406,7 +450,7 @@ def run_mimic_pipeline(
                 primary_subject_distribution=dict(subject_dist),
                 confidence_score=base_score + quality_score + diversity_score
             )
-            print(f"  ✅ Library Health: {library_health.confidence_score:.1f}% readiness")
+            print(f"  [OK] Library Health: {library_health.confidence_score:.1f}% readiness")
             
         except Exception as e:
             print(f"[ERROR] Gemini clip analysis failed: {e}")
@@ -478,7 +522,7 @@ def run_mimic_pipeline(
         segment_count = len(blueprint.segments)
         clip_count = len(clip_index.clips)
         if segment_count > 15 and clip_count < 10:
-            print(f"\n   ⚠️  CLIP LIBRARY WARNING:")
+            print(f"\n   [WARN]  CLIP LIBRARY WARNING:")
             print(f"      Reference has {segment_count} segments but only {clip_count} clips available.")
             print(f"      This will cause heavy clip repetition and reduced edit quality.")
             print(f"      Recommendation: Add {segment_count - clip_count}+ more clips for better diversity.")
@@ -496,23 +540,32 @@ def run_mimic_pipeline(
             bpm=ref_bpm,
             onset_times=onset_times,      # Musical hit points for cut snapping
             energy_curve=energy_curve,    # Per-second RMS energy for Creative Director
+            music_profile=music_profile,
             mode=edit_mode,
             run_id=base_output_name
         )
         
-        # Validate EDL — loud on failure but don't crash (allow debug render)
+        # Validate EDL - loud on failure but don't crash (allow debug render)
         try:
             validate_edl(edl, blueprint)
-            print("  ✅ EDL validated: timeline integrity confirmed")
+            print("  [OK] EDL validated: timeline integrity confirmed")
         except ValueError as e:
             print(f"\n{'!'*60}")
-            print(f"  ⚠️  EDL VALIDATION FAILED — timeline integrity problem")
+            print(f"  [WARN] EDL VALIDATION FAILED - timeline integrity problem")
             print(f"  Error: {e}")
             print(f"  Decisions: {len(edl.decisions)} | Blueprint segments: {len(blueprint.segments)}")
             if edl.decisions:
-                print(f"  Timeline: {edl.decisions[0].timeline_start:.3f}s → {edl.decisions[-1].timeline_end:.3f}s (target: {blueprint.total_duration:.3f}s)")
-            print(f"  Continuing render for debug — check the output video carefully")
+                print(f"  Timeline: {edl.decisions[0].timeline_start:.3f}s -> {edl.decisions[-1].timeline_end:.3f}s (target: {blueprint.total_duration:.3f}s)")
+            print(f"  Continuing render for debug - check the output video carefully")
             print(f"{'!'*60}\n")
+
+        quality_warnings = audit_edl_quality(edl, blueprint, music_profile=music_profile)
+        if quality_warnings:
+            print("  [QUALITY] Edit audit warnings:")
+            for warning in quality_warnings:
+                print(f"    - {warning}")
+        else:
+            print("  [QUALITY] Edit audit passed: no obvious timing/repetition issues")
         
         print_edl_summary(edl, blueprint, clip_index)
         
@@ -569,34 +622,15 @@ def run_mimic_pipeline(
             try:
                 _sp.run(trim_cmd, check=True, capture_output=True)
                 temp_video_path = trimmed_path
-                print(f"  ✂️ Duration trimmed: {concat_duration:.2f}s → {target_duration:.2f}s")
+                print(f"  [TRIM] Duration trimmed: {concat_duration:.2f}s -> {target_duration:.2f}s")
             except Exception as _te:
                 print(f"  [WARN] Duration trim failed: {_te}, using untrimmed video")
 
-        # v14.9 Style Control (Post-Editor Layer)
+        # Style metadata is retained for the Vault/editor UI, but exports are clean.
+        # Captions/color treatments are no longer burned into the MP4 here.
         current_style_config = style_config or getattr(blueprint, 'style_config', None)
-        
-        # v14.9: Stylize if Reference Mode has text overlays, or Creator Mode, or explicit StyleConfig
-        if reference_path is None or current_style_config or (blueprint.text_overlay and blueprint.text_overlay.strip()):
-            styled_video_path = temp_session_dir / "temp_video_styled.mp4"
-            try:
-                print(f"[STYLIST] Applying visual styling (v14.9 Style Control)...")
-                apply_visual_styling(
-                    str(temp_video_path),
-                    str(styled_video_path),
-                    blueprint.text_overlay,
-                    blueprint.text_style,
-                    blueprint.color_grading,
-                    text_events=blueprint.text_events, # v12.2 Timed Text
-                    style_config=current_style_config # v14.9 Pass StyleConfig
-                )
-                render_source = styled_video_path
-            except Exception as e:
-                print(f"[WARN] Stylist failed, using unstyled video: {e}")
-                render_source = temp_video_path
-        else:
-            print("[STYLIST] Skipping visual styling (Reference Mode - demo clarity)")
-            render_source = temp_video_path
+        print("[STYLE] Skipping MP4 burn-in; style/text kept as editable metadata")
+        render_source = temp_video_path
         
         # Handle audio
         audio_path = temp_session_dir / "ref_audio.aac"
@@ -640,9 +674,9 @@ def run_mimic_pipeline(
         ref_duration = blueprint.total_duration
         
         print(f"\n{'='*80}")
-        print("✅ SUCCESS!")
+        print("[OK] SUCCESS!")
         print(f"{'='*80}")
-        print(f"\n📊 Basic Results:")
+        print(f"\n[REPORT] Basic Results:")
         print(f"   Output: {final_output_path.name}")
         print(f"   Duration: {output_duration:.2f}s (ref: {ref_duration:.2f}s)")
         print(f"   Difference: {abs(output_duration - ref_duration):.2f}s")
@@ -652,7 +686,7 @@ def run_mimic_pipeline(
         _print_comprehensive_analysis(blueprint, edl, clip_index, clip_paths, advisor=advisor_hints)
         
         print(f"\n{'='*80}")
-        print(f"🎉 Watch the result: {final_output_path}")
+        print(f" Watch the result: {final_output_path}")
         print(f"{'='*80}\n")
         
         # ==================================================================
@@ -670,9 +704,9 @@ def run_mimic_pipeline(
             
             # v12.2: Vault Intelligence Report is now the ONLY explanation system
             vault_report = generate_vault_report(blueprint, edl, advisor_hints, critique_placeholder)
-            print(f"  ✅ Vault Report generated.")
+            print(f"  [OK] Vault Report generated.")
         except Exception as e:
-            print(f"  ⚠️ Vault generation failed: {e}")
+            print(f"  [WARN] Vault generation failed: {e}")
             vault_report = None
             critique_placeholder = None
 
@@ -735,7 +769,7 @@ def run_mimic_pipeline(
         processing_time = time.time() - start_time
         
         print(f"\n{'='*80}")
-        print("❌ FAILED")
+        print("NO FAILED")
         print(f"{'='*80}")
         print(f"   Error: {str(e)}")
         print(f"{'='*80}\n")
@@ -766,11 +800,11 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
         return
     
     print(f"\n{'='*80}")
-    print("🧠 COMPREHENSIVE SYSTEM ANALYSIS")
+    print("[AI] COMPREHENSIVE SYSTEM ANALYSIS")
     print(f"{'='*80}")
     
     # 1. Reference Analysis Breakdown
-    print(f"\n📹 Reference Analysis:")
+    print(f"\n[VIDEO] Reference Analysis:")
     print(f"   Editing Style: {blueprint.editing_style}")
     print(f"   Emotional Intent: {blueprint.emotional_intent}")
     arc_desc = blueprint.arc_description[:100] + "..." if len(blueprint.arc_description) > 100 else blueprint.arc_description
@@ -778,13 +812,13 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
     print(f"   Total Segments: {len(blueprint.segments)}")
     
     # 1.5. Blueprint Full Detail
-    print(f"\n📑 BLUEPRINT FULL SEGMENT LIST:")
+    print(f"\n[PLAN] BLUEPRINT FULL SEGMENT LIST:")
     for i, seg in enumerate(blueprint.segments):
         print(f"   {i+1:02d}: {seg.start:5.2f}-{seg.end:5.2f}s | {seg.energy.value:6} | Vibe: {seg.vibe:10} | {seg.arc_stage}")
     
     # 2. Arc Stage Distribution
     arc_stages = Counter([seg.arc_stage for seg in blueprint.segments])
-    print(f"\n📈 Arc Stage Distribution:")
+    print(f"\n[RISE] Arc Stage Distribution:")
     for stage, count in arc_stages.most_common():
         pct = (count / len(blueprint.segments)) * 100
         print(f"   {stage}: {count} segments ({pct:.1f}%)")
@@ -792,7 +826,7 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
     # 3. Vibe Distribution
     vibes = Counter([seg.vibe for seg in blueprint.segments if seg.vibe != "General"])
     if vibes:
-        print(f"\n🎨 Vibe Distribution:")
+        print(f"\n[PROMPT] Vibe Distribution:")
         for vibe, count in vibes.most_common():
             pct = (count / len(blueprint.segments)) * 100
             print(f"   {vibe}: {count} segments ({pct:.1f}%)")
@@ -805,7 +839,7 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
         clip_usage[clip_name] += 1
         clip_reasoning[clip_name].append(decision.reasoning)
     
-    print(f"\n📎 Clip Usage Analysis:")
+    print(f"\n[CLIP] Clip Usage Analysis:")
     print(f"   Unique clips used: {len(clip_usage)}/{len(clip_paths)}")
     print(f"   Most used clips:")
     for clip_name, count in sorted(clip_usage.items(), key=lambda x: x[1], reverse=True)[:5]:
@@ -813,24 +847,24 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
         print(f"     {clip_name}: {count} times ({pct:.1f}%)")
     
     # 5. Reasoning Breakdown
-    smart_matches = sum(1 for d in edl.decisions if "✨ Smart Match" in d.reasoning)
-    good_fits = sum(1 for d in edl.decisions if "🎯 Good Fit" in d.reasoning)
-    constraint_relax = sum(1 for d in edl.decisions if "⚙️ Constraint Relaxation" in d.reasoning)
+    smart_matches = sum(1 for d in edl.decisions if " Smart Match" in d.reasoning)
+    good_fits = sum(1 for d in edl.decisions if "[MATCH] Good Fit" in d.reasoning)
+    constraint_relax = sum(1 for d in edl.decisions if "[FALLBACK] Constraint Relaxation" in d.reasoning)
     
-    print(f"\n🧠 AI Reasoning Breakdown:")
+    print(f"\n[AI] AI Reasoning Breakdown:")
     if len(edl.decisions) > 0:
-        print(f"   ✨ Smart Match: {smart_matches} ({smart_matches/len(edl.decisions)*100:.1f}%)")
-        print(f"   🎯 Good Fit: {good_fits} ({good_fits/len(edl.decisions)*100:.1f}%)")
-        print(f"   ⚙️ Constraint Relaxation: {constraint_relax} ({constraint_relax/len(edl.decisions)*100:.1f}%)")
+        print(f"    Smart Match: {smart_matches} ({smart_matches/len(edl.decisions)*100:.1f}%)")
+        print(f"   [MATCH] Good Fit: {good_fits} ({good_fits/len(edl.decisions)*100:.1f}%)")
+        print(f"   [FALLBACK] Constraint Relaxation: {constraint_relax} ({constraint_relax/len(edl.decisions)*100:.1f}%)")
     
     # 6. Vibe Matching Stats
     vibe_matches = sum(1 for d in edl.decisions if d.vibe_match)
-    print(f"\n🎨 Vibe Matching:")
+    print(f"\n[PROMPT] Vibe Matching:")
     if len(edl.decisions) > 0:
         print(f"   Matches: {vibe_matches}/{len(edl.decisions)} ({vibe_matches/len(edl.decisions)*100:.1f}%)")
     
     # 7. Cut Statistics by Arc Stage
-    print(f"\n📏 Cut Statistics by Arc Stage:")
+    print(f"\n[TIMING] Cut Statistics by Arc Stage:")
     for stage in ["Intro", "Build-up", "Peak", "Outro", "Main"]:
         stage_decisions = []
         for decision in edl.decisions:
@@ -851,14 +885,14 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
         min_cut = min(durations)
         max_cut = max(durations)
         
-        print(f"\n📏 Overall Cut Statistics:")
+        print(f"\n[TIMING] Overall Cut Statistics:")
         print(f"   Total cuts: {len(edl.decisions)}")
         print(f"   Average cut: {avg_cut:.2f}s")
         print(f"   Shortest cut: {min_cut:.2f}s")
         print(f"   Longest cut: {max_cut:.2f}s")
     
     # 9. Sample Reasoning Examples
-    print(f"\n💭 Sample AI Reasoning (first 5 decisions):")
+    print(f"\n[NOTE] Sample AI Reasoning (first 5 decisions):")
     for i, decision in enumerate(edl.decisions[:5], 1):
         clip_name = Path(decision.clip_path).name
         reasoning_preview = decision.reasoning[:80] + "..." if len(decision.reasoning) > 80 else decision.reasoning
@@ -866,7 +900,7 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
     
     # 10. Clip Index Stats
     if clip_index:
-        print(f"\n📦 CLIP REGISTRY ({len(clip_index.clips)} total):")
+        print(f"\n[CACHE] CLIP REGISTRY ({len(clip_index.clips)} total):")
         for i, clip in enumerate(sorted(clip_index.clips, key=lambda x: x.filename)):
             vibes_str = ", ".join(clip.vibes[:3]) if hasattr(clip, 'vibes') and clip.vibes else "N/A"
             print(f"   {i+1:02d}: {clip.filename:15} | {clip.energy.value:6} | {clip.duration:5.1f}s | Vibes: {vibes_str}")
@@ -874,7 +908,7 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
         clips_with_moments = sum(1 for c in clip_index.clips if hasattr(c, 'best_moments') and c.best_moments)
         clips_with_vibes = sum(1 for c in clip_index.clips if hasattr(c, 'vibes') and c.vibes)
         
-        print(f"\n📋 Metadata Coverage:")
+        print(f"\n[LIST] Metadata Coverage:")
         print(f"   Best Moments: {clips_with_moments}/{len(clip_index.clips)}")
         print(f"   Vibes: {clips_with_vibes}/{len(clip_index.clips)}")
     
@@ -889,21 +923,21 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
             else:
                 overlaps.append((i, abs(gap)))
     
-    print(f"\n🔍 Temporal Precision Check:")
+    print(f"\n[CHECK] Temporal Precision Check:")
     if gaps:
-        print(f"   ⚠️ WARNING: Timeline Gaps Detected ({len(gaps)}):")
+        print(f"   [WARN] WARNING: Timeline Gaps Detected ({len(gaps)}):")
         for i, gap in gaps[:5]:
             print(f"     Gap after decision {i}: {gap:.6f}s")
         if len(gaps) > 5:
             print(f"     ... and {len(gaps) - 5} more gaps")
     elif overlaps:
-        print(f"   ⚠️ WARNING: Timeline Overlaps Detected ({len(overlaps)}):")
+        print(f"   [WARN] WARNING: Timeline Overlaps Detected ({len(overlaps)}):")
         for i, overlap in overlaps[:5]:
             print(f"     Overlap after decision {i}: {overlap:.6f}s")
         if len(overlaps) > 5:
             print(f"     ... and {len(overlaps) - 5} more overlaps")
     else:
-        print(f"   ✅ TIMELINE INTEGRITY: No gaps or overlaps detected (all within 0.001s tolerance)")
+        print(f"   [OK] TIMELINE INTEGRITY: No gaps or overlaps detected (all within 0.001s tolerance)")
     
     # 12. Material Efficiency Stats
     if clip_index:
@@ -916,7 +950,7 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
             segment_key = f"{clip_name}:{decision.clip_start:.2f}-{decision.clip_end:.2f}"
             unique_segments.add(segment_key)
         
-        print(f"\n📦 Material Efficiency:")
+        print(f"\n[CACHE] Material Efficiency:")
         print(f"   Total source duration available: {total_available_duration:.2f}s")
         print(f"   Total duration used in edit: {used_unique_duration:.2f}s")
         print(f"   Unique clip segments used: {len(unique_segments)}")
@@ -924,37 +958,37 @@ def _print_comprehensive_analysis(blueprint: StyleBlueprint, edl: EDL, clip_inde
             utilization = (used_unique_duration / total_available_duration) * 100
             print(f"   Utilization Ratio: {utilization:.1f}%")
             if utilization < 10:
-                print(f"   💡 Note: Low utilization suggests clips may not match reference vibes well")
+                print(f"   [INFO] Note: Low utilization suggests clips may not match reference vibes well")
 
     # 13. ADVISOR STRATEGIC CRITIQUE (v11.0: Director's Cut)
     if advisor:
         print(f"\n{'='*80}")
-        print("💡 POST-EDIT CREATIVE REVIEW (ADVISOR CRITIQUE)")
+        print("[INFO] POST-EDIT CREATIVE REVIEW (ADVISOR CRITIQUE)")
         print(f"{'='*80}")
         
         # A. Library Alignment (The Debrief)
         alignment = advisor.library_alignment
         if alignment:
-            print(f"\n🎨 THE EDITORIAL DEBRIEF:")
+            print(f"\n[PROMPT] THE EDITORIAL DEBRIEF:")
             if hasattr(alignment, 'strengths') and alignment.strengths:
-                print(f"   ✅ STRENGTHS:")
+                print(f"   [OK] STRENGTHS:")
                 for s in alignment.strengths: print(f"      - {s}")
             
             if hasattr(alignment, 'editorial_tradeoffs') and alignment.editorial_tradeoffs:
-                print(f"\n   ⚠️ EDITORIAL TRADEOFFS:")
+                print(f"\n   [WARN] EDITORIAL TRADEOFFS:")
                 for t in alignment.editorial_tradeoffs: print(f"      - {t}")
             
             if hasattr(alignment, 'constraint_gaps') and alignment.constraint_gaps:
-                print(f"\n   🔍 CONSTRAINT GAPS:")
+                print(f"\n   [CHECK] CONSTRAINT GAPS:")
                 for g in alignment.constraint_gaps: print(f"      - {g}")
         
         # B. Overall Strategy
-        print(f"\n🧠 EDITORIAL STRATEGY:")
+        print(f"\n[AI] EDITORIAL STRATEGY:")
         print(f"   {advisor.editorial_strategy}")
 
         # C. Remake Strategy (The Forward-Looking Advice)
         if hasattr(advisor, 'remake_strategy') and advisor.remake_strategy:
-            print(f"\n🚀 REMAKE STRATEGY (HOW TO REACH DIRECTOR'S CUT):")
+            print(f"\n[REMAKE] REMAKE STRATEGY (HOW TO REACH DIRECTOR'S CUT):")
             print(f"   {advisor.remake_strategy}")
         
         print(f"\n{'='*80}\n")
@@ -997,3 +1031,5 @@ def _validate_inputs(reference_path: Optional[str], clip_paths: List[str]) -> No
             get_video_duration(clip_path)
         except Exception as e:
             raise ValueError(f"Could not read clip {i}: {e}")
+
+

@@ -91,7 +91,7 @@ def _generate_moment_plans_for_hints(
     if beat_grid is None:
         beat_grid = []
     
-    print(f"\n  🎯 V14.0: Generating contextual moment plans...")
+    print(f"\n  [MATCH] V14.0: Generating contextual moment plans...")
     segment_moment_plans: Dict[str, Any] = {}
     
     # Determine which segments to process
@@ -102,7 +102,7 @@ def _generate_moment_plans_for_hints(
             target_segments.append(seg)
     
     if not target_segments:
-        print(f"  ⚙️ V14.0: No segments match criteria (visual + Long + whitelist)")
+        print(f"  [FALLBACK] V14.0: No segments match criteria (visual + Long + whitelist)")
         print(f"     Whitelist: {V14_SEGMENT_WHITELIST}")
     else:
         print(f"     Processing {len(target_segments)} segment(s) with V14.0")
@@ -123,10 +123,10 @@ def _generate_moment_plans_for_hints(
             )
             
             if not candidates:
-                print(f"⚠️ No candidates")
+                print(f"[WARN] No candidates")
                 continue
             
-            print(f"✓ {len(candidates)} candidates")
+            print(f"[OK] {len(candidates)} candidates")
             
             from engine.editor import calculate_cut_density_expectation
             cde = calculate_cut_density_expectation(segment, beat_grid, blueprint, "REFERENCE")
@@ -148,10 +148,10 @@ def _generate_moment_plans_for_hints(
                 raise ValueError("No alternatives returned")
             
             top = selection.alternatives[0]
-            print(f"✓ Top pick: {top.clip_filename} [{top.energy_level}] ({top.transition_type})")
+            print(f"[OK] Top pick: {top.clip_filename} [{top.energy_level}] ({top.transition_type})")
             
             # Build a SegmentMomentPlan using the alternatives directly
-            # The editor will waterfall through alternatives — no timestamps here
+            # The editor will waterfall through alternatives - no timestamps here
             plan = SegmentMomentPlan(
                 segment_id=segment.id,
                 moments=[],
@@ -163,10 +163,31 @@ def _generate_moment_plans_for_hints(
             plan_key = str(segment.id)
             segment_moment_plans[plan_key] = plan
             
-            # For legacy continuity field
-            previous_selection = None
+            # Update Advisor state tracking to preserve narrative memory
+            from models import MomentCandidate
+            clip_meta = next((c for c in clip_index.clips if c.filename == top.clip_filename), None)
+            if clip_meta:
+                used_clips[top.clip_filename] = used_clips.get(top.clip_filename, 0) + 1
+                recent_picks.append({
+                    "clip": top.clip_filename,
+                    "energy": top.energy_level,
+                    "tone": clip_meta.emotional_tone if hasattr(clip_meta, "emotional_tone") else [],
+                    "content": clip_meta.content_description if hasattr(clip_meta, "content_description") else ""
+                })
+                previous_selection = MomentCandidate(
+                    clip_filename=top.clip_filename,
+                    moment_energy_level=top.energy_level,
+                    start=0.0,
+                    end=0.0,
+                    duration=segment.duration,
+                    moment_role=top.transition_type,
+                    stable_moment=True,
+                    reason=top.reason
+                )
+            else:
+                previous_selection = None
             
-            print(f"     ✓ Plan stored with {len(selection.alternatives)} alternatives")
+            print(f"     [OK] Plan stored with {len(selection.alternatives)} alternatives")
             
         except Exception as e:
             raise ValueError(f"Segment {segment.id} V14.0 moment plan failed: {e}") from e
@@ -174,11 +195,11 @@ def _generate_moment_plans_for_hints(
     # Attach moment plans to hints
     if segment_moment_plans:
         hints.segment_moment_plans = segment_moment_plans
-        print(f"  ✅ V14.0: {len(segment_moment_plans)} segment(s) with contextual moment plans")
+        print(f"  [OK] V14.0: {len(segment_moment_plans)} segment(s) with contextual moment plans")
     else:
         if target_segments:
             raise ValueError("V14.0 enabled but produced no moment plans")
-        print(f"  ⚙️ V14.0: No segments matched criteria")
+        print(f"  [FALLBACK] V14.0: No segments matched criteria")
     
     return hints
 
@@ -216,22 +237,29 @@ def get_advisor_suggestions(
     
     cache_dir.mkdir(parents=True, exist_ok=True)
     
-    # v12.1 Authority Assertion: Handshake between Reference and Advisor
+    # v12.1 Authority Assertion: Handshake between Reference and Advisor.
+    # Text-prompt blueprints use the generator contract instead of reference-analysis
+    # cache versions, so they are authoritative when explicitly marked as generated.
     from engine.brain import REFERENCE_CACHE_VERSION
     blueprint_ver = blueprint.contract.get("version", "0.0") if blueprint.contract else "0.0"
-    if blueprint_ver != REFERENCE_CACHE_VERSION:
-        print(f"  ❌ AUTHORITY FAILURE: Blueprint version ({blueprint_ver}) != Required ({REFERENCE_CACHE_VERSION})")
-        print(f"  ⚠️ Skipping strategic guidance. Please re-analyze reference {blueprint.contract.get('source_hash', 'unknown') if blueprint.contract else ''}")
+    blueprint_source = blueprint.contract.get("source", "") if blueprint.contract else ""
+    is_text_prompt_blueprint = blueprint_source.startswith("text_prompt") or bool(getattr(blueprint, "text_prompt", None))
+    if blueprint_ver != REFERENCE_CACHE_VERSION and not is_text_prompt_blueprint:
+        print(f"  NO AUTHORITY FAILURE: Blueprint version ({blueprint_ver}) != Required ({REFERENCE_CACHE_VERSION})")
+        print(f"  [WARN] Skipping strategic guidance. Please re-analyze reference {blueprint.contract.get('source_hash', 'unknown') if blueprint.contract else ''}")
         return None
     
-    print(f"  🤝 Authority Confirmed: v{blueprint_ver} Director-Soul Intelligence active.")
+    if is_text_prompt_blueprint and blueprint_ver != REFERENCE_CACHE_VERSION:
+        print(f"  [OK] Text blueprint authority confirmed: v{blueprint_ver} ({blueprint_source or 'prompt mode'})")
+    else:
+        print(f"  [OK] Authority Confirmed: v{blueprint_ver} Director-Soul Intelligence active.")
     
     from engine.processors import get_beat_grid as _get_beat_grid
     beat_grid: list = []
     if bpm and getattr(blueprint, "total_duration", None) and bpm > 0:
         try:
             beat_grid = _get_beat_grid(blueprint.total_duration, bpm)
-            print(f"  🎵 Beat grid for advisor: {len(beat_grid)} beats at {bpm:.1f} BPM")
+            print(f"  [MUSIC] Beat grid for advisor: {len(beat_grid)} beats at {bpm:.1f} BPM")
         except Exception:
             pass
     
@@ -248,30 +276,30 @@ def get_advisor_suggestions(
 
     if not force_refresh and cache_file.exists():
         try:
-            print(f"  📦 Loading cached advisor hints...")
+            print(f"  [CACHE] Loading cached advisor hints...")
             data = json.loads(cache_file.read_text(encoding='utf-8'))
             
             cache_version = data.get("cache_version", "1.0")
             if cache_version != "4.2":
-                print(f"  ⚠️ Cache version mismatch ({cache_version} vs 4.2), regenerating...")
+                print(f"  [WARN] Cache version mismatch ({cache_version} vs 4.2), regenerating...")
                 cache_file.unlink()
             else:
                 hints = AdvisorHints(**data)
-                print(f"  ✅ Loaded from cache: {cache_file.name}")
+                print(f"  [OK] Loaded from cache: {cache_file.name}")
                 
                 # V14.0: If cached hints lack moment plans but V14 is enabled, generate them now
                 if ENABLE_CONTEXTUAL_MOMENTS and not hints.segment_moment_plans:
-                    print(f"  🎯 V14.0: Cached hints lack moment plans, generating now...")
+                    print(f"  [MATCH] V14.0: Cached hints lack moment plans, generating now...")
                     hints = _generate_moment_plans_for_hints(hints, blueprint, clip_index, beat_grid=beat_grid)
                     # Update cache with moment plans
                     cache_file.write_text(hints.model_dump_json(indent=2), encoding='utf-8')
-                    print(f"  ✅ Cache updated with moment plans")
+                    print(f"  [OK] Cache updated with moment plans")
                 
                 return hints
         except Exception as e:
-            print(f"  ⚠️ Cache corrupted, regenerating: {e}")
+            print(f"  [WARN] Cache corrupted, regenerating: {e}")
     
-    print(f"  🧠 Calling DeepSeek for strategic guidance...")
+    print(f"  [AI] Calling DeepSeek for strategic guidance...")
     
     blueprint_summary = _format_blueprint_summary(blueprint)
     library_summary = _format_clip_library_summary(clip_index)
@@ -291,7 +319,7 @@ def get_advisor_suggestions(
             try:
                 data = _parse_json_response(raw_response_text)
             except Exception as parse_error:
-                print(f"  🔴 JSON PARSE FAILED: {parse_error}")
+                print(f"  [ERROR] JSON PARSE FAILED: {parse_error}")
                 raise ValueError(f"JSON parsing failed: {parse_error}") from parse_error
             
             cached_at = datetime.utcnow().isoformat()
@@ -300,7 +328,7 @@ def get_advisor_suggestions(
             required_fields = ['text_overlay_intent', 'dominant_narrative', 'arc_stage_guidance']
             missing_fields = [f for f in required_fields if f not in data]
             if missing_fields:
-                print(f"  🔴 SCHEMA VALIDATION FAILED - Missing fields: {missing_fields}")
+                print(f"  [ERROR] SCHEMA VALIDATION FAILED - Missing fields: {missing_fields}")
                 raise ValueError(f"Missing required fields: {missing_fields}")
             
             # Parse arc stage guidance (intent-driven)
@@ -312,14 +340,14 @@ def get_advisor_suggestions(
                         guidance_data['recommended_clips'] = guidance_data['exemplar_clips']
                     arc_guidance[stage] = ArcStageGuidance(**guidance_data)
                 except Exception as e:
-                    print(f"  ⚠️ Failed to parse guidance for {stage}: {e}")
+                    print(f"  [WARN] Failed to parse guidance for {stage}: {e}")
             
             # Validate arc stage coverage
             blueprint_stages = {seg.arc_stage for seg in blueprint.segments}
             missing_stages = blueprint_stages - set(arc_guidance.keys())
             if missing_stages:
-                print(f"  ⚠️ Advisor provided incomplete arc coverage. Missing: {missing_stages}")
-                print(f"  ⚙️ These stages will use energy/motion matching only")
+                print(f"  [WARN] Advisor provided incomplete arc coverage. Missing: {missing_stages}")
+                print(f"  [FALLBACK] These stages will use energy/motion matching only")
 
             
             # Parse narrative subject lock (v9.5+)
@@ -364,14 +392,14 @@ def get_advisor_suggestions(
                     cache_version="4.2"  # v15.0: Ranked alternatives, advisor_alternatives field
                 )
             except Exception as pydantic_error:
-                print(f"  🔴 PYDANTIC VALIDATION FAILED: {pydantic_error}")
+                print(f"  [ERROR] PYDANTIC VALIDATION FAILED: {pydantic_error}")
                 raise ValueError(f"Pydantic validation failed: {pydantic_error}") from pydantic_error
             
             # ============================================================================
             # V14.0: CONTEXTUAL MOMENT SELECTION (Phase 1 - Minimal Activation)
             # ============================================================================
             if ENABLE_CONTEXTUAL_MOMENTS and hints:
-                print(f"\n  🎯 V14.0: Generating contextual moment plans...")
+                print(f"\n  [MATCH] V14.0: Generating contextual moment plans...")
                 segment_moment_plans: Dict[str, Any] = {}
                 
                 # Determine which segments to process
@@ -382,7 +410,7 @@ def get_advisor_suggestions(
                         target_segments.append(seg)
                 
                 if not target_segments:
-                    print(f"  ⚙️ V14.0: No segments match criteria (visual + Long + whitelist)")
+                    print(f"  [FALLBACK] V14.0: No segments match criteria (visual + Long + whitelist)")
                     print(f"     Whitelist: {V14_SEGMENT_WHITELIST}")
                 else:
                     print(f"     Processing {len(target_segments)} segment(s) with V14.0")
@@ -403,10 +431,10 @@ def get_advisor_suggestions(
                         )
                         
                         if not candidates:
-                            print(f"⚠️ No candidates")
+                            print(f"[WARN] No candidates")
                             continue
                         
-                        print(f"✓ {len(candidates)} candidates")
+                        print(f"[OK] {len(candidates)} candidates")
                         
                         from engine.editor import calculate_cut_density_expectation
                         cde = calculate_cut_density_expectation(segment, beat_grid, blueprint, "REFERENCE")
@@ -428,7 +456,7 @@ def get_advisor_suggestions(
                             raise ValueError("No alternatives returned")
                         
                         top = selection.alternatives[0]
-                        print(f"✓ Top pick: {top.clip_filename} [{top.energy_level}] ({top.transition_type})")
+                        print(f"[OK] Top pick: {top.clip_filename} [{top.energy_level}] ({top.transition_type})")
                         
                         plan = SegmentMomentPlan(
                             segment_id=segment.id,
@@ -441,9 +469,31 @@ def get_advisor_suggestions(
                         plan_key = str(segment.id)
                         segment_moment_plans[plan_key] = plan
                         
-                        previous_selection = None
+                        # Update Advisor state tracking to preserve narrative memory
+                        from models import MomentCandidate
+                        clip_meta = next((c for c in clip_index.clips if c.filename == top.clip_filename), None)
+                        if clip_meta:
+                            used_clips[top.clip_filename] = used_clips.get(top.clip_filename, 0) + 1
+                            recent_picks.append({
+                                "clip": top.clip_filename,
+                                "energy": top.energy_level,
+                                "tone": clip_meta.emotional_tone if hasattr(clip_meta, "emotional_tone") else [],
+                                "content": clip_meta.content_description if hasattr(clip_meta, "content_description") else ""
+                            })
+                            previous_selection = MomentCandidate(
+                                clip_filename=top.clip_filename,
+                                moment_energy_level=top.energy_level,
+                                start=0.0,
+                                end=0.0,
+                                duration=segment.duration,
+                                moment_role=top.transition_type,
+                                stable_moment=True,
+                                reason=top.reason
+                            )
+                        else:
+                            previous_selection = None
                         
-                        print(f"     ✓ Plan stored with {len(selection.alternatives)} alternatives")
+                        print(f"     [OK] Plan stored with {len(selection.alternatives)} alternatives")
                         
                     except Exception as e:
                         raise ValueError(f"Segment {segment.id} V14.0 moment plan failed: {e}") from e
@@ -451,31 +501,31 @@ def get_advisor_suggestions(
                 # Attach moment plans to hints
                 if segment_moment_plans:
                     hints.segment_moment_plans = segment_moment_plans
-                    print(f"  ✅ V14.0: {len(segment_moment_plans)} segment(s) with contextual moment plans")
+                    print(f"  [OK] V14.0: {len(segment_moment_plans)} segment(s) with contextual moment plans")
                 else:
                     if target_segments:
                         raise ValueError("V14.0 enabled but produced no moment plans")
-                    print(f"  ⚙️ V14.0: No segments matched criteria")
+                    print(f"  [FALLBACK] V14.0: No segments matched criteria")
             
             # ============================================================================
             # Cache and return
             # ============================================================================
             cache_file.write_text(hints.model_dump_json(indent=2), encoding='utf-8')
-            print(f"  ✅ Advisor hints generated and cached")
-            print(f"  💡 Text Overlay Intent: {hints.text_overlay_intent}")
-            print(f"  📖 Dominant Narrative: {hints.dominant_narrative}")
-            print(f"  🎯 Editorial Strategy: {hints.editorial_strategy}")
+            print(f"  [OK] Advisor hints generated and cached")
+            print(f"  [INFO] Text Overlay Intent: {hints.text_overlay_intent}")
+            print(f"  [NARRATIVE] Dominant Narrative: {hints.dominant_narrative}")
+            print(f"  [MATCH] Editorial Strategy: {hints.editorial_strategy}")
             
             return hints
             
         except Exception as e:
-            print(f"  🔴 Advisor attempt {attempt + 1} failed: {e}")
+            print(f"  [ERROR] Advisor attempt {attempt + 1} failed: {e}")
             if attempt == 1:
                 print(f"\n{'='*60}")
-                print(f"  ❌❌❌ ADVISOR FAILED AFTER ALL RETRIES ❌❌❌")
+                print(f"  NONONO ADVISOR FAILED AFTER ALL RETRIES NONONO")
                 print(f"{'='*60}")
-                print(f"  ⚠️ SEMANTIC MATCHING DISABLED - Vibe accuracy will be 0%")
-                print(f"  ⚠️ System will fall back to energy/motion matching only")
+                print(f"  [WARN] SEMANTIC MATCHING DISABLED - Vibe accuracy will be 0%")
+                print(f"  [WARN] System will fall back to energy/motion matching only")
                 print(f"{'='*60}\n")
                 return None
             time.sleep(1.0)
@@ -778,3 +828,4 @@ def _format_clip_library_summary(clip_index: ClipIndex) -> str:
         lines.append("  " + " | ".join(clip_info))
     
     return "\n".join(lines)
+

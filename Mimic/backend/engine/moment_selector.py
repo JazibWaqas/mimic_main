@@ -274,7 +274,7 @@ def _build_narrative_history(recent_picks: List[dict]) -> str:
         energy = pick.get("energy", "?")
         tone = ", ".join(pick.get("tone", [])) or "unknown tone"
         desc = (pick.get("content", "") or "")[:60]
-        lines.append(f"{i}. {clip} [{energy}] — {desc} ({tone})")
+        lines.append(f"{i}. {clip} [{energy}] - {desc} ({tone})")
     return "\n".join(lines)
 
 
@@ -302,7 +302,7 @@ def select_moment_with_advisor(
 
     Candidates are normalized (max 2 per clip) before the model sees them.
     The Advisor receives clip usage history and last 5 picks for continuity reasoning.
-    Returns ContextualMomentSelection.alternatives — editor walks and commits first valid.
+    Returns ContextualMomentSelection.alternatives - editor walks and commits first valid.
     """
     if not candidates:
         return None
@@ -397,7 +397,7 @@ def select_moment_with_advisor(
             )
 
         except Exception as e:
-            print(f"  🔴 Advisor Moment Selection attempt {attempt + 1} failed: {e}")
+            print(f"  [ERROR] Advisor Moment Selection attempt {attempt + 1} failed: {e}")
             if attempt == 2:
                 raise RuntimeError(f"Moment selection failed after 3 retries: {e}")
             time.sleep(1.0)
@@ -582,4 +582,5 @@ def _find_chain_moment(
     ))
 
     return candidates[0]
+
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef, useMemo } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import {
     Activity,
     MonitorPlay,
@@ -111,6 +111,7 @@ function saveVaultVisualStore(store: Map<string, TextStyle>) {
 
 export default function VaultPage() {
     const searchParams = useSearchParams();
+    const router = useRouter();
 
     // Data state
     const [clips, setClips] = useState<Clip[]>([]);
@@ -536,7 +537,20 @@ export default function VaultPage() {
                                     >
                                         <Smartphone className="h-5 w-5" />
                                     </button>
-                                    <button className="h-12 px-7 rounded-2xl bg-white text-black font-black text-[10px] uppercase tracking-widest hover:bg-indigo-500 hover:text-white transition-all shadow-xl active:scale-95">Refine Edit</button>
+                                    <button
+                                        onClick={() => {
+                                            if (selectedItem) {
+                                                router.push(`/vault/edit?filename=${selectedItem.filename}`);
+                                            }
+                                        }}
+                                        disabled={viewMode !== "results" || !selectedItem}
+                                        className={cn(
+                                            "h-12 px-7 rounded-2xl bg-white text-black font-black text-[10px] uppercase tracking-widest hover:bg-indigo-500 hover:text-white transition-all shadow-xl active:scale-95",
+                                            (viewMode !== "results" || !selectedItem) && "opacity-20 cursor-not-allowed"
+                                        )}
+                                    >
+                                        Refine Edit
+                                    </button>
                                     <button className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-white/10 transition-all active:scale-95"><Share2 className="h-5 w-5" /></button>
                                     <button
                                         onClick={() => setIsStylingOpen(true)}

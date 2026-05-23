@@ -80,8 +80,8 @@ For each, decide:
 
 Rules:
 - Never rank a clip as #1 if it is in the ALREADY USED list above, unless every single alternative is also used
-- Spread your picks across different clips — don't rank the same clip twice
-- Think beyond energy labels — a medium-energy clip with the right content beats a high-energy clip with the wrong content
+- Spread your picks across different clips - don't rank the same clip twice
+- Think beyond energy labels - a medium-energy clip with the right content beats a high-energy clip with the wrong content
 - Keep your reasons short (one sentence each)
 
 ---
@@ -136,3 +136,4 @@ transition_type must be one of: continue, escalate, contrast, release
 energy_level must be one of: High, Medium, Low
 confidence is a float 0.0-1.0
 """
+

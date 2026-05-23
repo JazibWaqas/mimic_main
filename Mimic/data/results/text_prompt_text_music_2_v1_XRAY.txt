@@ -1,0 +1,504 @@
+================================================================================
+X-RAY DIAGNOSTIC REPORT - PROMPT MODE
+================================================================================
+Reference/Prompt: prompt_edit
+Total Segments: 5
+Total Clips: 27
+Total Decisions: 14
+================================================================================
+
+[PLAN] BLUEPRINT SEGMENTS:
+------------------------------------------------------------
+  Seg 01:  0.00s- 3.70s | Medium | Intro      | CDE=Moderate | Hold=Short  | Origin=visual
+           Vibe: excitement, fun
+  Seg 02:  3.70s- 7.43s | High   | Build-up   | CDE=Moderate | Hold=Short  | Origin=beat
+           Vibe: escalation, celebration
+  Seg 03:  7.43s-11.13s | High   | Peak       | CDE=Dense    | Hold=Short  | Origin=beat
+           Vibe: peak joy, hype
+  Seg 04: 11.13s-14.87s | Medium | Peak       | CDE=Moderate | Hold=Normal | Origin=visual
+           Vibe: camaraderie, warmth
+  Seg 05: 14.87s-20.40s | Low    | Outro      | CDE=Sparse   | Hold=Long   | Origin=visual
+           Vibe: nostalgia, warmth, calm
+
+[REPORT] CLIP USAGE ANALYSIS:
+------------------------------------------------------------
+
+  [OK] USED  clip109.mp4
+       Usage: 1x | Energy: High | Duration: 5.6s
+       Vibes: Group, Celebration | Subjects: People-Group, Activity-Celebration
+       Moments used:
+         [1] 3.20s - 4.43s (1.23s)
+
+  [OK] USED  clip110.mp4
+       Usage: 1x | Energy: High | Duration: 18.2s
+       Vibes: Group, Celebration | Subjects: People-Group, Activity-Celebration
+       Moments used:
+         [1] 0.00s - 1.23s (1.23s)
+
+  [OK] USED  clip116.mp4
+       Usage: 1x | Energy: Medium | Duration: 3.0s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 0.50s - 1.70s (1.20s)
+
+  [OK] USED  clip117.mp4
+       Usage: 1x | Energy: High | Duration: 33.1s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 29.00s - 30.27s (1.27s)
+
+  [OK] USED  clip121.mp4
+       Usage: 1x | Energy: Medium | Duration: 3.4s
+       Vibes: Group, Urban | Subjects: People-Group, Place-Urban
+       Moments used:
+         [1] 0.50s - 3.43s (2.93s)
+
+  [OK] USED  clip159.mp4
+       Usage: 1x | Energy: High | Duration: 5.2s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 2.50s - 3.27s (0.77s)
+
+  [OK] USED  clip166.mp4
+       Usage: 1x | Energy: Medium | Duration: 3.0s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 0.00s - 2.50s (2.50s)
+
+  [OK] USED  clip169.mp4
+       Usage: 1x | Energy: High | Duration: 26.4s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 0.00s - 2.53s (2.53s)
+
+  [OK] USED  clip172.mp4
+       Usage: 1x | Energy: High | Duration: 9.6s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 4.00s - 4.73s (0.73s)
+
+  [OK] USED  VID-20260511-WA0128.mp4
+       Usage: 1x | Energy: High | Duration: 33.6s
+       Vibes: Group, Indoor | Subjects: People-Group, Place-Indoor
+       Moments used:
+         [1] 0.00s - 3.00s (3.00s)
+
+  [OK] USED  VID-20260113-WA0181.mp4
+       Usage: 1x | Energy: High | Duration: 5.5s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 0.00s - 0.70s (0.70s)
+
+  [OK] USED  clip135.mp4
+       Usage: 1x | Energy: Medium | Duration: 5.6s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 1.50s - 2.30s (0.80s)
+
+  [OK] USED  clip136.mp4
+       Usage: 1x | Energy: High | Duration: 48.6s
+       Vibes: Group, Celebration | Subjects: People-Group, Activity-Celebration
+       Moments used:
+         [1] 38.50s - 39.30s (0.80s)
+
+  [OK] USED  clip152.mp4
+       Usage: 1x | Energy: High | Duration: 5.2s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       Moments used:
+         [1] 0.00s - 0.70s (0.70s)
+
+  NO UNUSED  clip108.mp4
+       Usage: 0x | Energy: High | Duration: 12.9s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip111.mp4
+       Usage: 0x | Energy: High | Duration: 3.6s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip120.mp4
+       Usage: 0x | Energy: High | Duration: 29.3s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip165.mp4
+       Usage: 0x | Energy: High | Duration: 3.8s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip167.mp4
+       Usage: 0x | Energy: High | Duration: 13.4s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip168.mp4
+       Usage: 0x | Energy: High | Duration: 9.1s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip170.mp4
+       Usage: 0x | Energy: High | Duration: 16.7s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip171.mp4
+       Usage: 0x | Energy: High | Duration: 7.0s
+       Vibes: Group, Celebration | Subjects: People-Group, Activity-Celebration
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip173.mp4
+       Usage: 0x | Energy: High | Duration: 35.6s
+       Vibes: Group, Celebration | Subjects: People-Group, Activity-Celebration
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip174.mp4
+       Usage: 0x | Energy: High | Duration: 25.4s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  VID-20260511-WA0122.mp4
+       Usage: 0x | Energy: High | Duration: 74.5s
+       Vibes: Group, Leisure | Subjects: People-Group, Activity-Leisure
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip139.mp4
+       Usage: 0x | Energy: High | Duration: 10.4s
+       Vibes: Group, Indoor | Subjects: People-Group, Place-Indoor
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+  NO UNUSED  clip151.mp4
+       Usage: 0x | Energy: High | Duration: 15.9s
+       Vibes: Group, Celebration | Subjects: People-Group, Activity-Celebration
+       [INFO] SUGGESTION: Not used. Consider if vibes/energy match the edit.
+
+[BLOCK] UNUSED CLIPS (Potential Issues):
+------------------------------------------------------------
+  NO clip108.mp4 | High | Vibes: Group, Leisure
+  NO clip111.mp4 | High | Vibes: Group, Leisure
+  NO clip120.mp4 | High | Vibes: Group, Leisure
+  NO clip165.mp4 | High | Vibes: Group, Leisure
+  NO clip167.mp4 | High | Vibes: Group, Leisure
+  NO clip168.mp4 | High | Vibes: Group, Leisure
+  NO clip170.mp4 | High | Vibes: Group, Leisure
+  NO clip171.mp4 | High | Vibes: Group, Celebration
+  NO clip173.mp4 | High | Vibes: Group, Celebration
+  NO clip174.mp4 | High | Vibes: Group, Leisure
+  NO VID-20260511-WA0122.mp4 | High | Vibes: Group, Leisure
+  NO clip139.mp4 | High | Vibes: Group, Indoor
+  NO clip151.mp4 | High | Vibes: Group, Celebration
+
+  Total unused: 13/27 (48%)
+
+[DIRECTOR] EDIT DECISION FLOW:
+------------------------------------------------------------
+  [01]   0.00s-  2.50s (2.50s) | clip_011.mp4         [ 0.00s- 2.50s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Establish shot within this seq...
+  [02]   2.50s-  3.70s (1.20s) | clip_005.mp4         [ 0.50s- 1.70s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Establish shot within this seq...
+  [03]   3.70s-  4.93s (1.23s) | clip_002.mp4         [ 3.20s- 4.43s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [04]   4.93s-  6.17s (1.23s) | clip_003.mp4         [ 0.00s- 1.23s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [05]   6.17s-  7.43s (1.27s) | clip_006.mp4         [29.00s-30.27s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [06]   7.43s-  8.20s (0.77s) | clip_009.mp4         [ 2.50s- 3.27s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [07]   8.20s-  8.90s (0.70s) | clip_022.mp4         [ 0.00s- 0.70s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [08]   8.90s-  9.63s (0.73s) | clip_017.mp4         [ 4.00s- 4.73s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [09]   9.63s- 10.33s (0.70s) | clip_027.mp4         [ 0.00s- 0.70s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [10]  10.33s- 11.13s (0.80s) | clip_024.mp4         [38.50s-39.30s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Action shot within this sequen...
+  [11]  11.13s- 14.07s (2.93s) | clip_008.mp4         [ 0.50s- 3.43s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Reaction shot within this sequ...
+  [12]  14.07s- 14.87s (0.80s) | clip_023.mp4         [ 1.50s- 2.30s]
+        Vibe Match: [OK] | [BEST] Serving as a strategic Reaction shot within this sequ...
+  [13]  14.87s- 17.87s (3.00s) | clip_021.mp4         [ 0.00s- 3.00s]
+        Vibe Match: NO | [BEST] Serving as a strategic Release shot within this seque...
+  [14]  17.87s- 20.40s (2.53s) | clip_014.mp4         [ 0.00s- 2.53s]
+        Vibe Match: NO | [BEST] Serving as a strategic Release shot within this seque...
+
+[XRAY] SEGMENT SCORING X-RAY:
+------------------------------------------------------------
+
+================================================================================
+SEGMENT 1 X-RAY | 0.00s-3.70s | Intro | Vibe: excitement, fun
+================================================================================
+
+[XRAY] TOP 5 CANDIDATES:
+
+[WINNER] WINNER | clip166.mp4 | SCORE: 348.7
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: Medium | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Establish' shot within this sequence. The visual content captures the 'excitement, fun' atmosphe
+
+   #2 | clip116.mp4 | SCORE: 343.0
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: Medium | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Establish' shot within this sequence. The visual content captures the 'excitement, fun' atmosphe
+   Delta from winner: -5.6 points
+
+   #3 | clip173.mp4 | SCORE: 318.3
+   Vibes: Group, Celebration
+   Subjects: People-Group, Activity-Celebration
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   History: 1 past uses, penalty -5
+   Reasoning: Serving as a strategic 'Establish' shot within this sequence. The visual content captures the 'excitement, fun' atmosphe
+   Delta from winner: -30.4 points
+
+   #4 | clip169.mp4 | SCORE: 317.2
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   History: 1 past uses, penalty -5
+   Reasoning: Serving as a strategic 'Establish' shot within this sequence. The visual content captures the 'excitement, fun' atmosphe
+   Delta from winner: -31.4 points
+
+   #5 | clip117.mp4 | SCORE: 304.9
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: The visual content captures the 'excitement, fun' atmosphere perfectly. Maintains visual freshness, lighting consistency
+   Delta from winner: -43.8 points
+
+[MATCH] SELECTION DECISION:
+   Winner: clip166.mp4
+   Final Score: 348.7
+   Vibe Match: [OK] YES
+   Subject Override: [OK] NO
+   Vibe Override: [OK] NO
+
+================================================================================
+SEGMENT 2 X-RAY | 3.70s-7.43s | Build-up | Vibe: escalation, celebration
+================================================================================
+
+[XRAY] TOP 5 CANDIDATES:
+
+[WINNER] WINNER | clip109.mp4 | SCORE: 350.0
+   Vibes: Group, Celebration
+   Subjects: People-Group, Activity-Celebration
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   History: 1 past uses, penalty -5
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'escalation, celebration' atm
+
+   #2 | clip117.mp4 | SCORE: 350.0
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'escalation, celebration' atm
+   Delta from winner: -0.0 points
+
+   #3 | clip159.mp4 | SCORE: 350.0
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'escalation, celebration' atm
+   Delta from winner: -0.0 points
+
+   #4 | clip172.mp4 | SCORE: 350.0
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'escalation, celebration' atm
+   Delta from winner: -0.0 points
+
+   #5 | VID-20260113-WA0181.mp4 | SCORE: 350.0
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'escalation, celebration' atm
+   Delta from winner: -0.0 points
+
+[MATCH] SELECTION DECISION:
+   Winner: clip109.mp4
+   Final Score: 350.0
+   Vibe Match: [OK] YES
+   Subject Override: [OK] NO
+   Vibe Override: [OK] NO
+
+================================================================================
+SEGMENT 3 X-RAY | 7.43s-11.13s | Peak | Vibe: peak joy, hype
+================================================================================
+
+[XRAY] TOP 5 CANDIDATES:
+
+[WINNER] WINNER | clip159.mp4 | SCORE: 350.0
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'peak joy, hype' atmosphere p
+
+   #2 | VID-20260113-WA0181.mp4 | SCORE: 350.0
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'peak joy, hype' atmosphere p
+   Delta from winner: -0.0 points
+
+   #3 | clip151.mp4 | SCORE: 350.0
+   Vibes: Group, Celebration
+   Subjects: People-Group, Activity-Celebration
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'peak joy, hype' atmosphere p
+   Delta from winner: -0.0 points
+
+   #4 | VID-20260511-WA0122.mp4 | SCORE: 349.8
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'peak joy, hype' atmosphere p
+   Delta from winner: -0.2 points
+
+   #5 | clip152.mp4 | SCORE: 347.6
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Action' shot within this sequence. The visual content captures the 'peak joy, hype' atmosphere p
+   Delta from winner: -2.4 points
+
+[MATCH] SELECTION DECISION:
+   Winner: clip159.mp4
+   Final Score: 350.0
+   Vibe Match: [OK] YES
+   Subject Override: [OK] NO
+   Vibe Override: [OK] NO
+
+================================================================================
+SEGMENT 4 X-RAY | 11.13s-14.87s | Peak | Vibe: camaraderie, warmth
+================================================================================
+
+[XRAY] TOP 5 CANDIDATES:
+
+[WINNER] WINNER | clip121.mp4 | SCORE: 350.0
+   Vibes: Group, Urban
+   Subjects: People-Group, Place-Urban
+   Energy: Medium | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Reaction' shot within this sequence. The visual content captures the 'camaraderie, warmth' atmos
+
+   #2 | clip135.mp4 | SCORE: 336.9
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: Medium | Usage: 0x
+   Vibe Match: [OK] YES
+   Reasoning: Serving as a strategic 'Reaction' shot within this sequence. The visual content captures the 'camaraderie, warmth' atmos
+   Delta from winner: -13.1 points
+
+   #3 | VID-20260511-WA0122.mp4 | SCORE: 243.3
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   Reasoning: Serving as a strategic 'Reaction' shot within this sequence. Maintains visual freshness, lighting consistency.
+   Delta from winner: -106.7 points
+
+   #4 | clip151.mp4 | SCORE: 239.9
+   Vibes: Group, Celebration
+   Subjects: People-Group, Activity-Celebration
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   Reasoning: Serving as a strategic 'Reaction' shot within this sequence. Maintains visual freshness, lighting consistency.
+   Delta from winner: -110.1 points
+
+   #5 | clip170.mp4 | SCORE: 238.6
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   History: 1 past uses, penalty -5
+   Reasoning: Serving as a strategic 'Reaction' shot within this sequence. Maintains visual freshness, lighting consistency.
+   Delta from winner: -111.4 points
+
+[MATCH] SELECTION DECISION:
+   Winner: clip121.mp4
+   Final Score: 350.0
+   Vibe Match: [OK] YES
+   Subject Override: [OK] NO
+   Vibe Override: [OK] NO
+
+================================================================================
+SEGMENT 5 X-RAY | 14.87s-20.40s | Outro | Vibe: nostalgia, warmth, calm
+================================================================================
+
+[XRAY] TOP 5 CANDIDATES:
+
+[WINNER] WINNER | VID-20260511-WA0128.mp4 | SCORE: 220.9
+   Vibes: Group, Indoor
+   Subjects: People-Group, Place-Indoor
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   Reasoning: Serving as a strategic 'Release' shot within this sequence. Maintains visual freshness, lighting consistency.
+
+   #2 | clip169.mp4 | SCORE: 197.1
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   History: 1 past uses, penalty -5
+   Reasoning: Serving as a strategic 'Release' shot within this sequence. Maintains visual freshness, lighting consistency.
+   Delta from winner: -23.8 points
+
+   #3 | clip139.mp4 | SCORE: 192.3
+   Vibes: Group, Indoor
+   Subjects: People-Group, Place-Indoor
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   History: 1 past uses, penalty -5
+   Reasoning: Maintains visual freshness, lighting consistency.
+   Delta from winner: -28.6 points
+
+   #4 | clip173.mp4 | SCORE: 191.7
+   Vibes: Group, Celebration
+   Subjects: People-Group, Activity-Celebration
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   History: 1 past uses, penalty -5
+   Reasoning: Maintains visual freshness, lighting consistency.
+   Delta from winner: -29.3 points
+
+   #5 | VID-20260511-WA0122.mp4 | SCORE: 181.9
+   Vibes: Group, Leisure
+   Subjects: People-Group, Activity-Leisure
+   Energy: High | Usage: 0x
+   Vibe Match: NO NO
+   Reasoning: Maintains visual freshness, lighting consistency.
+   Delta from winner: -39.1 points
+
+[MATCH] SELECTION DECISION:
+   Winner: VID-20260511-WA0128.mp4
+   Final Score: 220.9
+   Vibe Match: NO NO
+   Subject Override: [OK] NO
+   Vibe Override: [OK] NO
+
+================================================================================
+[INFO] CLIP CURATION RECOMMENDATIONS:
+================================================================================
+
+[ADD] ADD clips with vibes: calm, nostalgia, warmth
+
+[REMOVE] CONSIDER REMOVING (never used): clip108.mp4, clip111.mp4, clip120.mp4, clip165.mp4, clip167.mp4
+
+================================================================================
+END OF X-RAY REPORT
+================================================================================

@@ -2,7 +2,7 @@
 Brain module: Gemini 3 API integration for video analysis.
 
 This module handles ALL AI interactions. It NEVER touches the filesystem
-directly—paths are provided by the orchestrator.
+directly-paths are provided by the orchestrator.
 """
 
 from __future__ import annotations
@@ -28,13 +28,13 @@ REFERENCE_CACHE_VERSION = "12.1"  # v12.1: Director-Soul Intelligence: Sensory C
 CLIP_CACHE_VERSION = "7.0"        # v7.0: Enhanced analysis with intensity, motion granularity, semantic content, and moment roles (Jan 27, 2026)
 
 # ============================================================================
-# PROMPTS (These are CRITICAL—do not modify without testing)
+# PROMPTS (These are CRITICAL-do not modify without testing)
 # ============================================================================
 
 REFERENCE_ANALYSIS_PROMPT = """
 You are a professional video editor, creative director, and post-production supervisor analyzing a REFERENCE VIDEO.
 
-Your task is to extract the COMPLETE editorial intelligence of this video — not just how it looks, but WHY every decision works.
+Your task is to extract the COMPLETE editorial intelligence of this video - not just how it looks, but WHY every decision works.
 
 This analysis will be used by an automated editorial system to recreate the SAME narrative logic, pacing authority, stylistic rules, continuity intelligence, and emotional restraint using different footage.
 
@@ -449,7 +449,7 @@ You are extracting structure, usability, and constraints.
 
 IMPORTANT RULE:
 If the clip contains ANY clear burst of HIGH energy, classify the clip as HIGH.
-Do NOT default to MEDIUM when uncertain — lean toward LOW or HIGH.
+Do NOT default to MEDIUM when uncertain - lean toward LOW or HIGH.
 
 ### INTENSITY (within the chosen ENERGY level):
 Choose ONE of: 1 | 2 | 3
@@ -709,8 +709,8 @@ rate_limiter.disable()  # Gemini API enforces its own limits, we just rotate key
 class GeminiConfig:
     """Configuration for Gemini API calls."""
     
-    # GEMINI 3 GLOBAL HACKATHON - ONLY GEMINI 3 MODELS ALLOWED
-    MODEL_NAME = "gemini-3-flash-preview"  # Primary model
+    MODEL_NAME = "gemini-3.5-flash"        # Primary model (May 2026 standard)
+    FALLBACK_MODEL = "gemini-3-flash-preview"  # Fallback model (May 2026 standard)
     PRO_MODEL = "gemini-3-pro-preview"      # Pro tier for complex analysis
     
     # Generation config for consistent, structured output
@@ -736,7 +736,8 @@ class GeminiConfig:
 
 class MultiModelConfig:
     """Configuration for DeepSeek and Groq models."""
-    DEEPSEEK_MODEL = "deepseek-chat"  # V3 (Cheaper, supports caching)
+    DEEPSEEK_MODEL = "deepseek-chat"  # V4 standard chat
+    DEEPSEEK_REASONER = "deepseek-reasoner"  # V4 reasoning model (R1 equivalent)
     LLAMA_3_3_70B = "llama-3.3-70b-versatile"  # Groq high tier
     LLAMA_3_1_8B = "llama-3.1-8b-instant"   # Groq fast tier
     
@@ -771,7 +772,7 @@ def call_deepseek_v3(prompt: str, system_prompt: str = "You are a senior film ed
         "Content-Type": "application/json"
     }
     
-    print(f"  🧠 Calling DeepSeek (Chat V3) with Context Caching...")
+    print(f"  [AI] Calling DeepSeek (Chat V3) with Context Caching...")
     
     for attempt in range(GeminiConfig.MAX_RETRIES):
         try:
@@ -794,6 +795,51 @@ def call_deepseek_v3(prompt: str, system_prompt: str = "You are a senior film ed
     
     raise Exception("Failed to call DeepSeek after all retries.")
 
+
+def call_deepseek_reasoner(prompt: str, system_prompt: str = "You are a creative director.") -> dict:
+    """Call DeepSeek Reasoner (R1 equivalent) for holistic blueprint/director decisions."""
+    api_key = os.getenv("DEEPSEEK_API_KEY")
+    if not api_key:
+        raise ValueError("DEEPSEEK_API_KEY not found in environment")
+    
+    payload = {
+        "model": MultiModelConfig.DEEPSEEK_REASONER,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": prompt}
+        ],
+        # Reasoner models are highly sensitive to low temperatures; we omit temperature or set it to 1.0.
+        # DeepSeek Reasoner does not support the json_object response format constraint, so we omit it.
+        "stream": False
+    }
+    
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+    
+    print(f"  [AI] Calling DeepSeek Reasoner ({MultiModelConfig.DEEPSEEK_REASONER})...")
+    
+    for attempt in range(GeminiConfig.MAX_RETRIES):
+        try:
+            with httpx.Client(timeout=150.0) as client:
+                response = client.post(
+                    f"{MultiModelConfig.DEEPSEEK_ENDPOINT}/chat/completions",
+                    headers=headers,
+                    json=payload
+                )
+                response.raise_for_status()
+                result = response.json()
+                
+                content = result["choices"][0]["message"]["content"]
+                return _parse_json_response(content)
+        except Exception as e:
+            print(f"[RETRY DEBUG] DeepSeek Reasoner call failed (attempt {attempt+1}): {e}")
+            if attempt == GeminiConfig.MAX_RETRIES - 1:
+                raise e
+            time.sleep(GeminiConfig.RETRY_DELAY)
+    
+    raise Exception("Failed to call DeepSeek Reasoner after all retries.")
 
 
 def _strip_json_wrapper(text: str) -> str:
@@ -917,12 +963,13 @@ def _handle_rate_limit_error(e: Exception, operation: str = "API call") -> bool:
         return False
 
 
-def initialize_gemini(api_key: str | None = None) -> genai.GenerativeModel:
+def initialize_gemini(api_key: str | None = None, model_name: str | None = None) -> genai.GenerativeModel:
     """
-    Initialize Gemini API client with automatic fallback.
+    Initialize Gemini API client.
     
     Args:
         api_key: Optional API key. If None, uses API key manager.
+        model_name: Optional model name. If None, uses GeminiConfig.MODEL_NAME.
     
     Returns:
         Configured GenerativeModel instance
@@ -941,8 +988,8 @@ def initialize_gemini(api_key: str | None = None) -> genai.GenerativeModel:
     
     genai.configure(api_key=api_key)
     
-    # Use Gemini 3 Flash (default) - NO FALLBACKS
-    model_name = GeminiConfig.MODEL_NAME
+    if model_name is None:
+        model_name = GeminiConfig.MODEL_NAME
     
     try:
         model = genai.GenerativeModel(
@@ -950,10 +997,10 @@ def initialize_gemini(api_key: str | None = None) -> genai.GenerativeModel:
             generation_config=GeminiConfig.GENERATION_CONFIG,
             safety_settings=GeminiConfig.SAFETY_SETTINGS
         )
-        print(f"[OK] Using Gemini 3 model: {model_name}")
+        print(f"[OK] Using Gemini model: {model_name}")
         return model
     except Exception as e:
-        raise ValueError(f"Failed to initialize Gemini 3 model '{model_name}': {e}")
+        raise ValueError(f"Failed to initialize Gemini model '{model_name}': {e}")
 
 
 def _upload_video_with_retry(video_path: str) -> genai.File:
@@ -1269,7 +1316,7 @@ def analyze_reference_video(
     duration = get_video_duration(video_path)
     
     # v12.1 PROGRESSIVE AUDIO AUTHORITY (Fail-Soft Strategy)
-    # Try with original audio first → fallback to muted only if blocked
+    # Try with original audio first -> fallback to muted only if blocked
     # This preserves maximum rhythm fidelity while maintaining safety
     
     muted_path = str(muted_cache_dir / f"muted_{file_hash}.mp4")
@@ -1307,11 +1354,16 @@ Rules for hinted analysis:
     for attempt in range(GeminiConfig.MAX_RETRIES):
         try:
             # Re-initialize model (handles key rotation if needed)
-            model = initialize_gemini(api_key)
+            model = initialize_gemini(api_key, GeminiConfig.MODEL_NAME)
             video_file = _upload_video_with_retry(analysis_video_path)
             
             rate_limiter.wait_if_needed()
-            response = model.generate_content([video_file, prompt])
+            try:
+                response = model.generate_content([video_file, prompt])
+            except Exception as gemini_err:
+                print(f"[BRAIN] Primary model '{GeminiConfig.MODEL_NAME}' failed: {gemini_err}. Trying fallback model '{GeminiConfig.FALLBACK_MODEL}'...")
+                fallback_model = initialize_gemini(api_key, GeminiConfig.FALLBACK_MODEL)
+                response = fallback_model.generate_content([video_file, prompt])
             
             # Check for safety/recitation blocks
             if not response.candidates or response.candidates[0].finish_reason != 1:
@@ -1388,11 +1440,11 @@ Rules for hinted analysis:
             if audio_mode == "original":
                 # Audio analysis succeeded - enable beat snapping
                 blueprint.audio_confidence = "Observed"
-                print(f"[BRAIN] ✅ Audio analysis succeeded - beat snapping ENABLED")
+                print(f"[BRAIN] [OK] Audio analysis succeeded - beat snapping ENABLED")
             else:
                 # Used muted fallback or no audio - disable beat snapping
                 blueprint.audio_confidence = "Inferred"
-                print(f"[BRAIN] ⚠️ Audio {audio_mode} - beat snapping DISABLED")
+                print(f"[BRAIN] [WARN] Audio {audio_mode} - beat snapping DISABLED")
 
             # Apply subdivision only if no scene hints AND style is explicitly fast
             if not scene_timestamps:
@@ -1467,12 +1519,17 @@ def find_best_moment(
         target_duration=target_duration
     )
     
-    model = initialize_gemini(api_key)
+    model = initialize_gemini(api_key, GeminiConfig.MODEL_NAME)
     video_file = _upload_video_with_retry(clip_path)
     
     for attempt in range(GeminiConfig.MAX_RETRIES):
         try:
-            response = model.generate_content([video_file, prompt])
+            try:
+                response = model.generate_content([video_file, prompt])
+            except Exception as gemini_err:
+                print(f"    [BRAIN] Primary model '{GeminiConfig.MODEL_NAME}' failed: {gemini_err}. Trying fallback model '{GeminiConfig.FALLBACK_MODEL}'...")
+                fallback_model = initialize_gemini(api_key, GeminiConfig.FALLBACK_MODEL)
+                response = fallback_model.generate_content([video_file, prompt])
             json_data = _parse_json_response(response.text)
             
             start = float(json_data["best_moment_start"])
@@ -1523,12 +1580,17 @@ def analyze_clip(clip_path: str, api_key: str | None = None) -> tuple[EnergyLeve
     """
     print(f"  Analyzing {Path(clip_path).name}...")
     
-    model = initialize_gemini(api_key)
+    model = initialize_gemini(api_key, GeminiConfig.MODEL_NAME)
     video_file = _upload_video_with_retry(clip_path)
     
     for attempt in range(GeminiConfig.MAX_RETRIES):
         try:
-            response = model.generate_content([video_file, CLIP_ANALYSIS_PROMPT])
+            try:
+                response = model.generate_content([video_file, CLIP_ANALYSIS_PROMPT])
+            except Exception as gemini_err:
+                print(f"    [BRAIN] Primary model '{GeminiConfig.MODEL_NAME}' failed: {gemini_err}. Trying fallback model '{GeminiConfig.FALLBACK_MODEL}'...")
+                fallback_model = initialize_gemini(api_key, GeminiConfig.FALLBACK_MODEL)
+                response = fallback_model.generate_content([video_file, CLIP_ANALYSIS_PROMPT])
             json_data = _parse_json_response(response.text)
             
             energy = EnergyLevel(json_data["energy"])
@@ -1555,7 +1617,7 @@ def analyze_all_clips(clip_paths: List[str], api_key: str | None = None, use_com
     import concurrent.futures
     print(f"\n{'='*60}")
     print(f"[BRAIN] PARALLEL ANALYSIS: {len(clip_paths)} clips")
-    print(f"[BRAIN] Model: gemini-3-flash-preview")
+    print(f"[BRAIN] Model: {GeminiConfig.MODEL_NAME}")
     print(f"{'='*60}\n")
 
     clip_metadata_list = [None] * len(clip_paths)
@@ -1565,7 +1627,7 @@ def analyze_all_clips(clip_paths: List[str], api_key: str | None = None, use_com
         duration = get_video_duration(clip_path)
         
         # Each thread gets its own model instance/key rotation context
-        model = initialize_gemini(api_key)
+        model = initialize_gemini(api_key, GeminiConfig.MODEL_NAME)
         try:
             return _analyze_single_clip_comprehensive(model, clip_path, duration)
         except Exception as e:
@@ -1711,7 +1773,12 @@ def _analyze_single_clip_comprehensive(
             video_file = _upload_video_with_retry(clip_path)
             
             print(f"    Requesting comprehensive analysis (attempt {attempt + 1})...")
-            response = model.generate_content([video_file, CLIP_COMPREHENSIVE_PROMPT])
+            try:
+                response = model.generate_content([video_file, CLIP_COMPREHENSIVE_PROMPT])
+            except Exception as gemini_err:
+                print(f"    [BRAIN] Primary model '{GeminiConfig.MODEL_NAME}' failed: {gemini_err}. Trying fallback model '{GeminiConfig.FALLBACK_MODEL}'...")
+                fallback_model = initialize_gemini(None, GeminiConfig.FALLBACK_MODEL)
+                response = fallback_model.generate_content([video_file, CLIP_COMPREHENSIVE_PROMPT])
             json_data = _parse_json_response(response.text)
             
             # Parse overall classification
@@ -1858,7 +1925,7 @@ def _analyze_single_clip_comprehensive(
         except Exception as e:
             if _handle_rate_limit_error(e, "comprehensive clip analysis"):
                 # Key rotated, REINITIALIZE MODEL
-                model = initialize_gemini()
+                model = initialize_gemini(None, GeminiConfig.MODEL_NAME)
                 continue
                 
             if attempt == GeminiConfig.MAX_RETRIES - 1:
@@ -1907,7 +1974,12 @@ def _analyze_single_clip_simple(model: genai.GenerativeModel, clip_path: str) ->
             # CRITICAL: Upload with CURRENT key (re-upload if key rotated)
             video_file = _upload_video_with_retry(clip_path)
             
-            response = model.generate_content([video_file, CLIP_ANALYSIS_PROMPT])
+            try:
+                response = model.generate_content([video_file, CLIP_ANALYSIS_PROMPT])
+            except Exception as gemini_err:
+                print(f"    [BRAIN] Primary model '{GeminiConfig.MODEL_NAME}' failed: {gemini_err}. Trying fallback model '{GeminiConfig.FALLBACK_MODEL}'...")
+                fallback_model = initialize_gemini(None, GeminiConfig.FALLBACK_MODEL)
+                response = fallback_model.generate_content([video_file, CLIP_ANALYSIS_PROMPT])
             json_data = _parse_json_response(response.text)
             
             energy = EnergyLevel(json_data["energy"])
@@ -1929,7 +2001,7 @@ def _analyze_single_clip_simple(model: genai.GenerativeModel, clip_path: str) ->
         except Exception as e:
             if _handle_rate_limit_error(e, "comprehensive clip analysis"):
                 # Key rotated, REINITIALIZE MODEL
-                model = initialize_gemini()
+                model = initialize_gemini(None, GeminiConfig.MODEL_NAME)
                 continue
                 
             if attempt == GeminiConfig.MAX_RETRIES - 1:
@@ -2113,3 +2185,4 @@ def create_mock_clip_index(clip_paths: List[str]) -> ClipIndex:
         print(f"  [MOCK] {clip.filename}: {energy.value}/{motion.value}")
     
     return ClipIndex(clips=clips)
+

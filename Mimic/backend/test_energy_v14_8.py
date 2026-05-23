@@ -23,7 +23,7 @@ test_cases = [
     ('celebration, intensity', 'High', 'Medium', False, 'Tempo-driven celebration'),
 ]
 
-print('\n📊 TEST CASES:\n')
+print('\nTEST CASES:\n')
 for vibe, target_energy, clip_energy, should_relax, description in test_cases:
     segment_vibes_lower = set(v.strip().lower() for v in vibe.split(','))
     is_emotion_driven = bool(segment_vibes_lower & EMOTION_DRIVEN_VIBES)
@@ -37,10 +37,10 @@ for vibe, target_energy, clip_energy, should_relax, description in test_cases:
     
     will_relax = is_emotion_driven and not is_tempo_driven and is_adjacent
     
-    status = '✅ PASS' if will_relax == should_relax else '❌ FAIL'
-    emoji = '✨' if will_relax else '🔒'
+    status = 'PASS' if will_relax == should_relax else 'FAIL'
+    marker = 'RELAX' if will_relax else 'LOCK'
     
-    print(f'{status} {emoji} {description}')
+    print(f'{status} {marker} {description}')
     print(f'     Vibe: "{vibe}" | Target: {target_energy} | Clip: {clip_energy}')
     print(f'     Emotion: {is_emotion_driven} | Tempo: {is_tempo_driven} | Adjacent: {is_adjacent}')
     print(f'     Expected: {"Relax" if should_relax else "Strict"} | Got: {"Relax" if will_relax else "Strict"}')

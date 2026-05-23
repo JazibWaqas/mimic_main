@@ -22,8 +22,25 @@ import time
 from dotenv import load_dotenv
 from models import *
 from engine.orchestrator import run_mimic_pipeline
-from engine.processors import generate_thumbnail, convert_to_mp4
+from engine.briefing import generate_creative_brief
+from engine.processors import (
+    generate_thumbnail,
+    convert_to_mp4,
+    extract_audio,
+    extract_segment,
+    concatenate_videos,
+    merge_audio_video,
+    create_silent_video,
+    get_video_duration,
+    validate_output,
+    standardize_clip
+)
 from utils import ensure_directory, cleanup_session, get_file_hash, get_bytes_hash, register_file_hash, save_hash_registry
+
+
+class BriefRequest(BaseModel):
+    message: str
+    current_brief: Optional[Dict] = None
 
 # Load environment variables
 load_dotenv()
@@ -644,6 +661,24 @@ async def upload_files(
     }
 
 
+@app.post("/api/brief/understand")
+async def understand_brief(req: BriefRequest):
+    """
+    Convert a rough Creator Mode idea into a short approved brief.
+    This sits before generation and does not mutate sessions or render files.
+    """
+    message = (req.message or "").strip()
+    if not message:
+        raise HTTPException(status_code=400, detail="Message is required")
+
+    try:
+        return generate_creative_brief(message, req.current_brief)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Brief generation failed: {exc}")
+
+
 @app.post("/api/generate/{session_id}")
 async def generate_video(
     session_id: str, 
@@ -759,8 +794,6 @@ def process_video_pipeline(
                 "[WARN]",
                 "[ERROR]",
                 "[OK]",
-                "✅",
-                "❌",
             )
             if s.startswith(keep_prefixes):
                 return True
@@ -771,7 +804,7 @@ def process_video_pipeline(
                 "[NEW]",
                 "[THUMB]",
                 "[INDEX]",
-                "🔬",
+                "[XRAY]",
             )
             if s.startswith(drop_prefixes):
                 return False
@@ -1356,94 +1389,324 @@ async def apply_style(
     style_config: StyleConfig = Body(...)
 ):
     """
-    v14.9: Apply visual styling (color, text, texture) to an existing result video.
-    Uses clean master approach - always applies styling to unstyled version.
+    Persist visual styling metadata for the Vault/editor UI.
+    Styling is no longer burned into the MP4 export.
     """
-    from engine.stylist import apply_visual_styling
-    
-    print(f"[STYLE] Request received for {filename}")
+    print(f"[STYLE] Metadata update received for {filename}")
     print(f"[STYLE] Preset: {style_config.color.preset}, Font: {style_config.text.font}")
     
     result_path = RESULTS_DIR / filename
     if not result_path.exists():
         print(f"[STYLE] ERROR: File not found: {result_path}")
         raise HTTPException(status_code=404, detail="Result video not found")
-    
-    # Check for clean master (the unstyled export)
-    clean_master_path = RESULTS_DIR / f"{Path(filename).stem}_clean.mp4"
-    
-    if clean_master_path.exists():
-        source_video = str(clean_master_path)
-        print(f"[STYLE] Using clean master: {clean_master_path}")
-    else:
-        # First style application - current video becomes clean master
-        source_video = str(result_path)
-        print(f"[STYLE] Creating clean master from: {result_path}")
-        import shutil
-        shutil.copy2(source_video, clean_master_path)
-    
-    # Temp output path
-    temp_output = RESULTS_DIR / f"{Path(filename).stem}_styled_tmp.mp4"
-    if temp_output.exists():
-        temp_output.unlink()
-    
-    # Read existing metadata to keep AI-generated text content
+
     json_path = RESULTS_DIR / f"{Path(filename).stem}.json"
-    blueprint_data = {}
+    if not json_path.exists():
+        return {
+            "status": "success",
+            "filename": filename,
+            "style_config": style_config,
+            "message": "Style metadata accepted; no sidecar JSON found to update."
+        }
+
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            master_data = json.load(f)
+
+        master_data["style_config"] = style_config.model_dump()
+
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(master_data, f, indent=2)
+        print("[STYLE] Updated master JSON with StyleConfig metadata")
+    except Exception as json_error:
+        print(f"[STYLE] WARN: Failed updating result JSON: {json_error}")
+        raise HTTPException(status_code=500, detail=f"Style metadata update failed: {json_error}")
+
+    return {
+        "status": "success",
+        "filename": filename,
+        "style_config": style_config,
+        "message": "Style metadata saved; MP4 was not modified."
+    }
+
+
+class RenderEDLRequest(BaseModel):
+    filename: str
+    decisions: List[EditDecision]
+    style_config: Optional[StyleConfig] = None
+    text_overlay: Optional[str] = None
+
+@app.post("/api/pipeline/render_edl")
+async def render_edl(req: RenderEDLRequest):
+    """
+    POST /api/pipeline/render_edl
+    Stateless high-speed rendering endpoint for refined timeline edits.
+    Uses cached standardized clips to perform stream copy concats in < 2 seconds.
+    """
+    filename = req.filename
+    decisions = req.decisions
+    style_config = req.style_config
+    
+    print(f"\n[RENDER_EDL] Refined render request received for result: {filename}")
+    print(f"[RENDER_EDL] EDL decisions to stitch: {len(decisions)}")
+    
+    # 1. Parse ref_name and session_id from filename to find source paths
+    stem = Path(filename).stem
+    session_id = None
+    ref_name = None
+    
+    if "_sess_" in stem:
+        parts = stem.split("_sess_")
+        ref_name = parts[0]
+        session_id_part = parts[1].split("_v")[0]
+        session_id = f"sess_{session_id_part}"
+    elif "text_music_" in stem:
+        ref_name = "text_prompt"
+        session_id_part = stem.split("text_music_")[1].split("_v")[0]
+        session_id = f"text_music_{session_id_part}"
+    else:
+        parts = stem.split("_v")
+        if len(parts) > 1:
+            ref_name = parts[0]
+            
+    # Load original master JSON report to access existing state and caching details
+    json_path = RESULTS_DIR / f"{stem}.json"
+    original_master_data = None
     if json_path.exists():
         try:
             with open(json_path, "r", encoding="utf-8") as f:
-                master_data = json.load(f)
-                blueprint_data = master_data.get("blueprint", {})
+                original_master_data = json.load(f)
         except Exception as e:
-            print(f"[STYLE] WARN: Could not read master JSON: {e}")
+            print(f"[RENDER_EDL] Warning: Could not parse master JSON: {e}")
+            
+    # Try looking up in memory active_sessions first
+    ref_path = None
+    music_path = None
+    if session_id and session_id in active_sessions:
+        ref_path = active_sessions[session_id].get("reference_path")
+        music_path = active_sessions[session_id].get("music_path")
+        
+    # Hard fallbacks if session not in active_sessions or path doesn't exist
+    if not ref_path and ref_name and ref_name != "text_prompt":
+        matches = list(REFERENCES_DIR.glob(f"{ref_name}*"))
+        if matches:
+            ref_path = str(matches[0])
+            
+    if not music_path and session_id:
+        if session_id.startswith("text_music_"):
+            music_dir = DATA_DIR / "samples" / "music"
+            if music_dir.exists():
+                matches = list(music_dir.glob("*"))
+                if matches:
+                    music_path = str(matches[0])
 
-    try:
-        # Apply visual styling
-        print(f"[STYLE] Calling stylist...")
-        apply_visual_styling(
-            input_video=source_video,
-            output_video=str(temp_output),
-            text_overlay=blueprint_data.get("text_overlay", ""),
-            text_style=blueprint_data.get("text_style", {}),
-            color_grading=blueprint_data.get("color_grading", {}),
-            text_events=blueprint_data.get("text_events", []),
-            style_config=style_config # v14.9 authoritative style
+    # 2. Resolve standardized paths for clips
+    clip_identity_lookup = {}
+    if original_master_data and "clip_index" in original_master_data:
+        for clip_meta in original_master_data.get("clip_index", {}).get("clips", []):
+            clip_filename = clip_meta.get("filename")
+            clip_filepath = clip_meta.get("filepath")
+            if clip_filename:
+                clip_identity_lookup[clip_filename] = clip_filename
+            if clip_filepath and clip_filename:
+                clip_identity_lookup[clip_filepath] = clip_filename
+                clip_identity_lookup[Path(clip_filepath).name] = clip_filename
+
+    def resolve_standardized_clip_path(clip_path_str: str) -> str:
+        original_name = (
+            clip_identity_lookup.get(clip_path_str)
+            or clip_identity_lookup.get(Path(clip_path_str).name)
+            or Path(clip_path_str).name
         )
+        orig_path = CLIPS_DIR / original_name
         
-        if not temp_output.exists():
-            raise Exception("Styling failed - no output file created")
+        if orig_path.exists():
+            h = get_file_hash(orig_path)
+            std_path = STANDARDIZED_DIR / f"std_{h}.mp4"
+            if std_path.exists():
+                return str(std_path)
+            else:
+                # Standardize on the fly
+                print(f"[RENDER_EDL] Standardizing clip on the fly: {original_name}")
+                try:
+                    # Resolve energy from clip_index if available
+                    clip_energy = EnergyLevel.MEDIUM
+                    if original_master_data and "clip_index" in original_master_data:
+                        clips_list = original_master_data["clip_index"].get("clips", [])
+                        for c in clips_list:
+                            if c.get("filename") == original_name:
+                                clip_energy = EnergyLevel(c.get("energy", "Medium"))
+                                break
+                    standardize_clip(str(orig_path), str(std_path), energy=clip_energy)
+                    return str(std_path)
+                except Exception as ex:
+                    print(f"[RENDER_EDL] Error standardizing: {ex}")
+                    return str(orig_path)
         
-        # Replace original with restyled version
-        result_path.unlink()
-        temp_output.rename(result_path)
+        # Fallback to existing path. This supports legacy sidecars whose EDL
+        # still points at a temp standardized clip path.
+        if Path(clip_path_str).exists():
+            return clip_path_str
+        return clip_path_str
+
+    # 3. Render setup
+    render_id = f"render_{uuid.uuid4().hex[:8]}"
+    temp_session_dir = TEMP_DIR / render_id
+    temp_session_dir.mkdir(parents=True, exist_ok=True)
+    segments_dir = temp_session_dir / "segments"
+    segments_dir.mkdir(parents=True, exist_ok=True)
+    
+    try:
+        segment_paths = []
+        for i, decision in enumerate(decisions, start=1):
+            segment_path = segments_dir / f"segment_{i:03d}.mp4"
+            slot_duration = decision.timeline_end - decision.timeline_start
+            resolved_clip = resolve_standardized_clip_path(decision.clip_path)
+            
+            hold_secs = getattr(decision, 'hold_end_seconds', None)
+            if hold_secs and hold_secs > 0.01:
+                content_duration = decision.clip_end - decision.clip_start
+                extract_segment(
+                    resolved_clip,
+                    str(segment_path),
+                    decision.clip_start,
+                    content_duration,
+                    hold_last_frame_seconds=hold_secs
+                )
+            else:
+                extract_segment(
+                    resolved_clip,
+                    str(segment_path),
+                    decision.clip_start,
+                    slot_duration
+                )
+            segment_paths.append(str(segment_path))
+            
+        # Concatenate segments
+        temp_video_path = temp_session_dir / "temp_video.mp4"
+        concatenate_videos(segment_paths, str(temp_video_path))
+        concat_duration = get_video_duration(str(temp_video_path))
         
-        # Update master JSON report
+        # Duration trim guard
+        target_duration = decisions[-1].timeline_end
+        if concat_duration > target_duration + 0.1:
+            trimmed_path = temp_session_dir / "temp_video_trimmed.mp4"
+            import subprocess as _sp
+            trim_cmd = [
+                "ffmpeg", "-y",
+                "-i", str(temp_video_path),
+                "-t", f"{target_duration:.6f}",
+                "-c", "copy",
+                str(trimmed_path)
+            ]
+            try:
+                _sp.run(trim_cmd, check=True, capture_output=True)
+                temp_video_path = trimmed_path
+                print(f"[RENDER_EDL] Precisely trimmed duration to: {target_duration:.2f}s")
+            except Exception as _te:
+                print(f"[RENDER_EDL] Concat copy-trim failed: {_te}")
+                
+        # Keep style/caption data as editable metadata only. Do not burn it into the MP4.
+        current_style_config = style_config or (original_master_data.get("style_config") if original_master_data else None)
+        blueprint_data = original_master_data.get("blueprint", {}) if original_master_data else {}
+        text_overlay = req.text_overlay if req.text_overlay is not None else blueprint_data.get("text_overlay", "")
+        if current_style_config and isinstance(current_style_config, dict):
+            current_style_config = StyleConfig(**current_style_config)
+        print("[RENDER_EDL] Skipping MP4 styling burn-in; style/text kept as metadata")
+        render_source = temp_video_path
+            
+        # 4. Integrate audio track
+        audio_path = temp_session_dir / "ref_audio.aac"
+        source_audio_path = music_path if music_path else ref_path
+        audio_extracted = False
+        
+        if source_audio_path:
+            audio_extracted = extract_audio(source_audio_path, str(audio_path))
+            
+        final_output_path = RESULTS_DIR / filename
+        
+        # Backup original clean master if not present yet
+        if final_output_path.exists():
+            clean_master_path = RESULTS_DIR / f"{Path(filename).stem}_clean.mp4"
+            if not clean_master_path.exists():
+                shutil.copy2(str(final_output_path), str(clean_master_path))
+            final_output_path.unlink()
+            
+        if audio_extracted:
+            merge_audio_video(
+                str(render_source),
+                str(audio_path),
+                str(final_output_path)
+            )
+        else:
+            create_silent_video(str(render_source), str(final_output_path))
+            
+        # Validate output
+        if not validate_output(str(final_output_path)):
+            raise RuntimeError("Final video assembly validation failed.")
+            
+        # Generate thumbnail for Vault UI refresh
+        res_hash = get_file_hash(final_output_path)
+        res_thumb_name = f"thumb_{res_hash}.jpg"
+        res_thumb_path = THUMBNAILS_DIR / res_thumb_name
+        try:
+            if not res_thumb_path.exists():
+                generate_thumbnail(str(final_output_path), str(res_thumb_path))
+        except Exception as te:
+            print(f"[RENDER_EDL] Thumbnail extraction failed: {te}")
+            
+        # Update Master JSON
         if json_path.exists():
             try:
                 with open(json_path, "r", encoding="utf-8") as f:
                     master_data = json.load(f)
+                    
+                master_data["edl"] = {
+                    "decisions": [d.model_dump() for d in decisions]
+                }
                 
-                # Persist style_config
-                master_data["style_config"] = style_config.model_dump()
-                
+                # Update segment timings in blueprint
+                if "blueprint" in master_data and "segments" in master_data["blueprint"]:
+                    segments = master_data["blueprint"]["segments"]
+                    for idx, dec in enumerate(decisions):
+                        if idx < len(segments):
+                            segments[idx]["start"] = dec.timeline_start
+                            segments[idx]["end"] = dec.timeline_end
+                            segments[idx]["duration"] = dec.timeline_end - dec.timeline_start
+                    master_data["blueprint"]["total_duration"] = target_duration
+                    if req.text_overlay is not None:
+                        master_data["blueprint"]["text_overlay"] = req.text_overlay
+                    
+                master_data["output_path"] = str(final_output_path)
+                if current_style_config:
+                    master_data["style_config"] = current_style_config.model_dump() if hasattr(current_style_config, 'model_dump') else current_style_config
+                    
                 with open(json_path, "w", encoding="utf-8") as f:
                     json.dump(master_data, f, indent=2)
-                print(f"[STYLE] Updated master JSON with new StyleConfig")
-            except Exception as json_error:
-                print(f"[STYLE] WARN: Failed updating result JSON: {json_error}")
-
+                print(f"[RENDER_EDL] Master JSON sidecar updated successfully.")
+            except Exception as jex:
+                print(f"[RENDER_EDL] Failed updating master JSON: {jex}")
+                
+        # Clean up render workspace
+        shutil.rmtree(temp_session_dir)
+        
+        # Trigger index refresh safely in background
+        asyncio.create_task(LibraryIndex._refresh())
+        
         return {
             "status": "success",
             "filename": filename,
-            "style_config": style_config
+            "duration": target_duration,
+            "style_config": current_style_config
         }
         
     except Exception as e:
-        print(f"[STYLE] EXCEPTION: {e}")
-        if temp_output.exists():
-            temp_output.unlink()
-        raise HTTPException(status_code=500, detail=f"Styling failed: {str(e)}")
+        print(f"[RENDER_EDL] CRITICAL EXCEPTION during EDL render: {e}")
+        import traceback
+        traceback.print_exc()
+        if temp_session_dir.exists():
+            shutil.rmtree(temp_session_dir)
+        raise HTTPException(status_code=500, detail=f"Stateless render failed: {str(e)}")
 
 
 # ============================================================================
@@ -1471,4 +1734,3 @@ async def startup_event():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-

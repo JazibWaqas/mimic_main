@@ -1,0 +1,57 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 2,
+  "primary_subject": [
+    "People-Group",
+    "Place-Indoor"
+  ],
+  "narrative_utility": [
+    "Transition",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Vlog transitions",
+    "Daily life montages"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional interviews"
+  ],
+  "vibes": [],
+  "content_description": "Two men talk to the camera while riding an elevator and walking into an office.",
+  "best_moments": {
+    "High": {
+      "start": 14.5,
+      "end": 16.5,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "Dynamic movement and rapid visual change as they exit the elevator."
+    },
+    "Medium": {
+      "start": 4.0,
+      "end": 7.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Expressive talking and camera rotation within the elevator space."
+    },
+    "Low": {
+      "start": 0.0,
+      "end": 3.0,
+      "moment_role": "Establishing",
+      "stable_moment": true,
+      "reason": "Relatively stable shot focusing on a coffee cup at the beginning."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "12f450dbe6bcb8151ab6f61e975f8629"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-05-24 02:41:35"
+}

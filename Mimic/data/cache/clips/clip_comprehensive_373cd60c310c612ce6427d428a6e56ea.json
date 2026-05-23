@@ -1,0 +1,59 @@
+{
+  "energy": "High",
+  "motion": "Active",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "High-energy peaks",
+    "Social media montages",
+    "Youthful lifestyle edits"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate presentations"
+  ],
+  "vibes": [],
+  "content_description": "Two young men laughing while one carries the other on his back in a hallway.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Peak laughter and physical interaction between the subjects."
+    },
+    "Medium": {
+      "start": 2.5,
+      "end": 5.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Sustained motion as the subjects move through the hallway."
+    },
+    "Low": {
+      "start": 3.0,
+      "end": 5.526349,
+      "moment_role": "Transition",
+      "stable_moment": true,
+      "reason": "The movement continues but the initial burst of intense laughter subsides."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "373cd60c310c612ce6427d428a6e56ea"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-05-24 02:41:34"
+}

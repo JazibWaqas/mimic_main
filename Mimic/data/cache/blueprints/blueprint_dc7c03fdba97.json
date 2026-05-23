@@ -1,0 +1,159 @@
+{
+  "total_duration": 20.416,
+  "editing_style": "Fast-paced with loose rhythm, prioritizing human moments over aesthetics, with a warm nostalgic ending.",
+  "emotional_intent": "To evoke a sense of fun, energy, and nostalgia for university friendships.",
+  "plan_summary": "This edit uses a 5-segment arc intro sets the scene with lively group moments, build-up escalates with action and celebration, peak delivers the most energetic clips, transition eases into a warmer tone, and outro slows down with a single, cherished memory of friends together.",
+  "style_config": {
+    "text": {
+      "font": "Inter",
+      "weight": 600,
+      "color": "#FFFFFF",
+      "shadow": true,
+      "position": "bottom",
+      "animation": "fade"
+    },
+    "color": {
+      "preset": "warm"
+    },
+    "texture": {
+      "grain": false
+    }
+  },
+  "arc_description": "Energy rises from moderate to high, peaks in the middle, then gradually cools into a warm, nostalgic outro.",
+  "text_overlay": "Uni days",
+  "text_style": {
+    "font_style": "Sans-serif",
+    "animation": "Fade",
+    "placement": "Bottom-third",
+    "color_effects": "Warm"
+  },
+  "color_grading": {
+    "tone": "Warm",
+    "contrast": "Medium",
+    "specific_look": "Vintage Film"
+  },
+  "visual_effects": [
+    "light leaks"
+  ],
+  "narrative_message": "University is about shared moments of joy with friends.",
+  "intent_clarity": "Clear",
+  "assumed_material": [
+    "group celebrations",
+    "laughing friends",
+    "action sequences",
+    "campus buildings"
+  ],
+  "must_have_content": [
+    "group of friends laughing",
+    "action moment (water fight, foam)",
+    "closing warm memory"
+  ],
+  "should_have_content": [
+    "variety of settings",
+    "campus scenery",
+    "dancing"
+  ],
+  "avoid_content": [
+    "sad moments",
+    "long static shots",
+    "polished footage",
+    "solo clips"
+  ],
+  "pacing_feel": "Energetic with a gentle landing",
+  "visual_balance": "People-centric",
+  "peak_density": "Dense",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.715,
+      "duration": 3.715,
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "excitement, fun",
+      "reasoning": "Open with quick cuts of friends laughing and hanging out (e.g., car vlog, elevator) to immediately establish the joyful, energetic tone.",
+      "arc_stage": "Intro",
+      "shot_scale": "Medium",
+      "shot_function": "Establish",
+      "expected_hold": "Short",
+      "cut_origin": "visual",
+      "cde": "Moderate",
+      "emotional_guidance": "Energetic anticipation"
+    },
+    {
+      "id": 2,
+      "start": 3.715,
+      "end": 7.43,
+      "duration": 3.715,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "escalation, celebration",
+      "reasoning": "Increase energy with action shots like water fights and celebration dancing, building towards the music peak at ~7s.",
+      "arc_stage": "Build-up",
+      "shot_scale": "Medium",
+      "shot_function": "Action",
+      "expected_hold": "Short",
+      "cut_origin": "beat",
+      "cde": "Moderate",
+      "emotional_guidance": "Excitement building"
+    },
+    {
+      "id": 3,
+      "start": 7.43,
+      "end": 11.146,
+      "duration": 3.716,
+      "energy": "High",
+      "motion": "Dynamic",
+      "vibe": "peak joy, hype",
+      "reasoning": "The loudest moment of the music aligns with the most energetic clips (water fight, foam spray, balancing stunts) for maximum impact.",
+      "arc_stage": "Peak",
+      "shot_scale": "Medium",
+      "shot_function": "Action",
+      "expected_hold": "Short",
+      "cut_origin": "beat",
+      "cde": "Dense",
+      "emotional_guidance": "Pure joy and excitement"
+    },
+    {
+      "id": 4,
+      "start": 11.146,
+      "end": 14.861,
+      "duration": 3.715,
+      "energy": "Medium",
+      "motion": "Dynamic",
+      "vibe": "camaraderie, warmth",
+      "reasoning": "Slightly reduce intensity with clips of friends laughing together in relaxed settings (car, safety net) to prepare for the outro.",
+      "arc_stage": "Peak",
+      "shot_scale": "Medium",
+      "shot_function": "Reaction",
+      "expected_hold": "Normal",
+      "cut_origin": "visual",
+      "cde": "Moderate",
+      "emotional_guidance": "Warm connection"
+    },
+    {
+      "id": 5,
+      "start": 14.861,
+      "end": 20.416,
+      "duration": 5.555,
+      "energy": "Low",
+      "motion": "Static",
+      "vibe": "nostalgia, warmth, calm",
+      "reasoning": "Slow down with a single, cherished clip of friends together (e.g., lounging on a safety net or laughing in a car) held long, with warm color grading to evoke a fond memory.",
+      "arc_stage": "Outro",
+      "shot_scale": "Wide",
+      "shot_function": "Release",
+      "expected_hold": "Long",
+      "cut_origin": "visual",
+      "cde": "Sparse",
+      "emotional_guidance": "Reflective nostalgia"
+    }
+  ],
+  "text_prompt": "Creator intent Show the fun and energy of university life with friends in a quick, happy edit.\nOutput feel Fun, energetic, happy, nostalgic.\nSubject priority Mixed - friends and campus scenery.\nPacing curve Fast-paced with quick cuts, but loose rhythm to follow natural energy.\nClip selection priorities Prefer clips of friends laughing, goofing around, group activities, action shots, scenic campus shots, variety of settings. Avoid slow or sad moments, clips without friends, long static shots, overly polished footage.\nQuality tolerance Moment over quality - shaky or low-light clips are acceptable if they show a great moment.\nAvoid Slow or sad moments, clips without friends, long static shots, overly polished or staged footage.\nText/caption direction Overlay caption like Uni days in a fun, casual font, maybe animated.\nMusic sync Looser, more natural rhythm, not strictly beat-locked.\nEnding Slow down with a warm memory - final clip should be a calm, nostalgic moment.\nBlueprint bias Use dense cuts for high energy but allow some holds for scenic shots. Keep transitions simple. Prioritize human moments over aesthetics. Make the blueprint fit real uploaded clips and treat requested shots as preferences.\nResolved user choices Mix of friends and campus scenery, moment over quality, slow down ending, loose rhythm sync.\nSubject priority mixed\nClip selection priorities human moments and motion\nQuality tolerance moment over quality\nText/caption direction literal with overlay text like Uni days\nMusic sync loose rhythm\nEnding slow down with a warm memory\nResolved user choices Mix of friends and campus scenery; Moment over quality for shaky/low-light clips; End with slow down and warm memory; Looser, more natural rhythm for music sync",
+  "contract": {
+    "type": "blueprint",
+    "version": "14.8-intent-first",
+    "source": "text_prompt_gemini",
+    "timestamp": "2026-05-24 02:42:15"
+  }
+}

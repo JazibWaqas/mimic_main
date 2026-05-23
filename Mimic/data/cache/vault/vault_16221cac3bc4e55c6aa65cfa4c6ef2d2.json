@@ -1,0 +1,198 @@
+{
+  "header": "This 20.4-second edit aimed to balance fast-paced, loose rhythm with human moments and a warm, nostalgic ending. The goal was to prioritize human connection over aesthetics.",
+  "advisor": {
+    "hero": "The library's limitations significantly impacted the edit, forcing compromises to maintain narrative coherence.",
+    "body": "Specifically, the lack of ideal motifs led to the use of available clips, which sometimes mismatched the desired energy levels. However, this ensured the story's primary focus was preserved."
+  },
+  "decision_stream": [
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to evoke excitement and fun in this segment.",
+      "decision": "I used clip_011.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed for this slot.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 1,
+      "what_i_tried": "I wanted to evoke excitement and fun in this segment.",
+      "decision": "I used clip_011.mp4 because no better alternative was available in the library.",
+      "what_if": "No stronger alternative existed for this slot.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed for escalation and celebration in this segment.",
+      "decision": "I selected clip_002.mp4 as it was the best available option despite the library gap.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed for escalation and celebration in this segment.",
+      "decision": "I selected clip_002.mp4 as it was the best available option despite the library gap.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 2,
+      "what_i_tried": "I aimed for escalation and celebration in this segment.",
+      "decision": "I selected clip_002.mp4 as it was the best available option despite the library gap.",
+      "what_if": "This slot had no viable upgrade.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to capture peak joy and hype in this segment.",
+      "decision": "I locked in clip_009.mp4 due to the lack of better alternatives in the library.",
+      "what_if": "No better option was available to replace this clip.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to capture peak joy and hype in this segment.",
+      "decision": "I locked in clip_009.mp4 due to the lack of better alternatives in the library.",
+      "what_if": "No better option was available to replace this clip.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to capture peak joy and hype in this segment.",
+      "decision": "I locked in clip_009.mp4 due to the lack of better alternatives in the library.",
+      "what_if": "No better option was available to replace this clip.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to capture peak joy and hype in this segment.",
+      "decision": "I locked in clip_009.mp4 due to the lack of better alternatives in the library.",
+      "what_if": "No better option was available to replace this clip.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 3,
+      "what_i_tried": "I sought to capture peak joy and hype in this segment.",
+      "decision": "I locked in clip_009.mp4 due to the lack of better alternatives in the library.",
+      "what_if": "No better option was available to replace this clip.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to convey camaraderie and warmth in this segment.",
+      "decision": "I used clip_008.mp4 as it was the most suitable choice given the library's limitations.",
+      "what_if": "No stronger alternative existed for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 4,
+      "what_i_tried": "I wanted to convey camaraderie and warmth in this segment.",
+      "decision": "I used clip_008.mp4 as it was the most suitable choice given the library's limitations.",
+      "what_if": "No stronger alternative existed for this segment.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 5,
+      "what_i_tried": "I aimed for nostalgia, warmth, and calm in this final segment.",
+      "decision": "I selected clip_021.mp4 to maintain the warm tone and ensure a gentle landing.",
+      "what_if": "This choice preserved the narrative coherence and warmth.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    },
+    {
+      "segment_id": 5,
+      "what_i_tried": "I aimed for nostalgia, warmth, and calm in this final segment.",
+      "decision": "I selected clip_021.mp4 to maintain the warm tone and ensure a gentle landing.",
+      "what_if": "This choice preserved the narrative coherence and warmth.",
+      "is_key": false,
+      "importance": "all",
+      "tags": [
+        "library_gap"
+      ]
+    }
+  ],
+  "executive_summary": [
+    "The edit prioritized narrative coherence over pace and energy due to library gaps.",
+    "Decisions were made to ensure the story remained the primary focus, despite potential pacing issues.",
+    "The warm tone of the edit was preserved throughout, aligning with the desired nostalgic ending."
+  ],
+  "key_decision_stream": [],
+  "friction_log": [
+    "Initially, the edit's fast-paced nature posed a challenge in maintaining narrative coherence.",
+    "Midway, the lack of ideal motifs in the library became a significant friction point.",
+    "Towards the end, ensuring the warm tone was preserved throughout became the main focus."
+  ],
+  "post_mortem": {
+    "worked": "The narrative coherence and warm tone were successfully maintained throughout the edit.",
+    "didnt": "The library's limitations led to compromises in energy levels and pacing in some segments.",
+    "responsibility": {
+      "vibe": "library",
+      "emotion": "system"
+    }
+  },
+  "next_steps": [
+    "Review and expand the library to include more diverse motifs and clips to reduce gaps.",
+    "Consider adding more clips that can evoke excitement and fun without compromising the narrative.",
+    "Explore the use of tone adjustments to enhance the emotional impact of future edits."
+  ],
+  "clip_suggestions": [
+    "Adding clips that capture peak joy without overusing the same motifs would enhance variety.",
+    "Including more clips that convey camaraderie and warmth would strengthen the narrative.",
+    "Acquiring clips with a nostalgic feel would support the edit's warm, calming conclusion.",
+    "Incorporating clips with a similar vibe to clip_011.mp4 but different subjects could reduce repetition."
+  ],
+  "technical": [
+    "The technical discipline maintained a warm tone throughout, aligning with the edit's nostalgic ending.",
+    "Pacing was managed to ensure a gentle landing, despite the fast-paced and loose rhythm.",
+    "The sync fidelity was nominal, supporting the narrative's coherence without drawing attention away."
+  ]
+}

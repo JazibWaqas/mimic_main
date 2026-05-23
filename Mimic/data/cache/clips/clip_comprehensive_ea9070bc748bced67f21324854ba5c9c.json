@@ -1,0 +1,58 @@
+{
+  "energy": "High",
+  "motion": "Kinetic",
+  "intensity": 3,
+  "primary_subject": [
+    "People-Group",
+    "Activity-Leisure"
+  ],
+  "narrative_utility": [
+    "Peak",
+    "Build"
+  ],
+  "emotional_tone": [
+    "Joyful",
+    "Energetic"
+  ],
+  "clip_quality": 3,
+  "best_for": [
+    "Vlog highlights",
+    "Comedic cuts"
+  ],
+  "avoid_for": [
+    "Calm reflective outros",
+    "Professional corporate videos"
+  ],
+  "vibes": [],
+  "content_description": "Friends joking and laughing inside a car while filming a vlog.",
+  "best_moments": {
+    "High": {
+      "start": 0.0,
+      "end": 2.5,
+      "moment_role": "Climax",
+      "stable_moment": false,
+      "reason": "Loud greeting and peak laughter."
+    },
+    "Medium": {
+      "start": 18.0,
+      "end": 21.0,
+      "moment_role": "Build",
+      "stable_moment": true,
+      "reason": "Casual talking to the camera."
+    },
+    "Low": {
+      "start": 30.0,
+      "end": 33.0,
+      "moment_role": "Reflection",
+      "stable_moment": true,
+      "reason": "Quiet pause while waiting."
+    }
+  },
+  "_contract": {
+    "type": "clip",
+    "version": "7.0",
+    "source_hash": "ea9070bc748bced67f21324854ba5c9c"
+  },
+  "_cache_version": "7.0",
+  "_cached_at": "2026-05-24 02:41:30"
+}

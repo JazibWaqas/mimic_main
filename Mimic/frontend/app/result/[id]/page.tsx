@@ -42,7 +42,7 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
       <div className="mx-auto max-w-6xl px-6 py-12 space-y-8">
         <div className="flex items-center justify-between">
           <div className="space-y-1">
-            <h1 className="text-3xl font-bold tracking-tight">🎉 Your Video is Ready!</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Your Video is Ready</h1>
             <p className="text-muted-foreground">Session: {sessionId}</p>
           </div>
           <div className="flex items-center gap-3">
@@ -61,9 +61,9 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
 
         <Card className="bg-card border-border p-6 space-y-4">
           <div className="flex items-center justify-between">
-            <div className="font-semibold">🧠 AI Analysis</div>
+            <div className="font-semibold">AI Analysis</div>
             <Link href="/history" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              View History →
+              View History
             </Link>
           </div>
           <Separator />
@@ -77,5 +77,6 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
     </main>
   );
 }
+
 
 

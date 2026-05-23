@@ -66,7 +66,7 @@ export default function GeneratePage({ params }: { params: Promise<{ id: string 
           </Button>
         </div>
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold tracking-tight">✨ Creating Your Video...</h1>
+          <h1 className="text-3xl font-bold tracking-tight">Creating Your Video...</h1>
           <p className="text-muted-foreground">Powered by Gemini 3 Flash Preview</p>
         </div>
         <ProgressTracker sessionId={sessionId} />

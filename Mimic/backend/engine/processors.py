@@ -138,8 +138,8 @@ def align_to_nearest_beat(time: float, beat_grid: List[float], tolerance: float 
         Nearest beat timestamp, or original time if no beat is close enough
     
     Example:
-        align_to_nearest_beat(1.23, [0.0, 0.5, 1.0, 1.5]) → 1.0
-        align_to_nearest_beat(0.75, [0.0, 0.5, 1.0, 1.5]) → 0.5
+        align_to_nearest_beat(1.23, [0.0, 0.5, 1.0, 1.5]) -> 1.0
+        align_to_nearest_beat(0.75, [0.0, 0.5, 1.0, 1.5]) -> 0.5
     """
     if not beat_grid:
         return time
@@ -234,7 +234,7 @@ def analyze_music(audio_path: str) -> dict:
         onset_times = librosa.frames_to_time(onset_frames, sr=sr).tolist()
 
         # Filter to only keep onsets that are musically significant
-        # (Onset strength above median — removes noise, keeps real hits)
+        # (Onset strength above median - removes noise, keeps real hits)
         onset_env = librosa.onset.onset_strength(y=y, sr=sr)
         onset_env_frames = onset_env[onset_frames] if len(onset_frames) > 0 else np.array([])
         if len(onset_env_frames) > 0:
@@ -246,7 +246,7 @@ def analyze_music(audio_path: str) -> dict:
 
         # === 3. ENERGY CURVE (normalized loudness per second) ===
         # This tells us where the music is quiet vs. loud:
-        # quiet intro → longer clip holds | loud peak → faster cuts
+        # quiet intro -> longer clip holds | loud peak -> faster cuts
         hop_length = 512
         rms = librosa.feature.rms(y=y, hop_length=hop_length)[0]
         # Convert frame-level RMS to per-second values
@@ -259,7 +259,7 @@ def analyze_music(audio_path: str) -> dict:
             chunk = rms[start_f:end_f]
             energy_curve.append(float(np.mean(chunk)) if len(chunk) > 0 else 0.0)
 
-        # Normalize 0→1 (avoid division by zero)
+        # Normalize 0->1 (avoid division by zero)
         max_e = max(energy_curve) if energy_curve else 1.0
         if max_e > 0:
             energy_curve = [e / max_e for e in energy_curve]
@@ -284,7 +284,7 @@ def analyze_music(audio_path: str) -> dict:
 def detect_bpm(audio_path: str) -> float:
     """
     Thin wrapper around analyze_music() for backwards compatibility.
-    Prefer analyze_music() for new code — it does one pass and returns everything.
+    Prefer analyze_music() for new code - it does one pass and returns everything.
     """
     return analyze_music(audio_path)["bpm"]
 
@@ -797,4 +797,5 @@ def validate_output(output_path: str, min_size_kb: int = 100) -> bool:
         return True
     except:
         return False
+
 

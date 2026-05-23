@@ -5,8 +5,33 @@ import { Upload, Video, ArrowRight, MonitorPlay, X, Plus, Sparkles, BrainCircuit
 import { toast } from "sonner";
 import { useRouter, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { api } from "@/lib/api";
+import { api, type CreativeBrief } from "@/lib/api";
 import { useDropzone } from "react-dropzone";
+
+const BRIEF_INTAKE_LABELS: Record<string, string> = {
+  subject_priority: "Subject",
+  clip_selection_bias: "Clip bias",
+  pacing_style: "Pacing",
+  music_sync_style: "Music sync",
+  caption_strategy: "Captions",
+  quality_tolerance: "Shot tolerance",
+  ending_strategy: "Ending",
+};
+
+const VISIBLE_INTAKE_FIELDS = [
+  "subject_priority",
+  "clip_selection_bias",
+  "pacing_style",
+  "music_sync_style",
+  "caption_strategy",
+  "quality_tolerance",
+  "ending_strategy",
+];
+
+type BriefThreadMessage = {
+  role: "user" | "mimic";
+  text: string;
+};
 
 export default function StudioPage() {
   const router = useRouter();
@@ -16,6 +41,11 @@ export default function StudioPage() {
   const [previews, setPreviews] = useState<Record<string, string>>({});
   const [musicFile, setMusicFile] = useState<File | null>(null);
   const [textPrompt, setTextPrompt] = useState("");
+  const [brief, setBrief] = useState<CreativeBrief | null>(null);
+  const [briefThread, setBriefThread] = useState<BriefThreadMessage[]>([]);
+  const [briefAnswers, setBriefAnswers] = useState<Record<string, string>>({});
+  const [briefApproved, setBriefApproved] = useState(false);
+  const [isBriefing, setIsBriefing] = useState(false);
   const [targetDuration, setTargetDuration] = useState(15);
   const [activeMode, setActiveMode] = useState<"text" | "video">("video");
   const [isGenerating, setIsGenerating] = useState(false);
@@ -260,8 +290,102 @@ export default function StudioPage() {
     } catch (err) { }
   };
 
+  const getApprovedPrompt = () => {
+    if (briefApproved && brief?.production_prompt) return brief.production_prompt;
+    return "";
+  };
+
+  const buildCreativeBrief = async (answersOverride?: Record<string, string>) => {
+    const typedMessage = textPrompt.trim();
+    const answers = answersOverride ?? briefAnswers;
+    const usedAnswers = Object.keys(answers).length > 0;
+    const message = typedMessage || (usedAnswers && brief ? "Apply the selected clarification answers to the current brief." : "");
+
+    if (!message || (!brief && !typedMessage)) {
+      toast.error(brief ? "Type an update or answer the questions first." : "Describe the edit first.");
+      return;
+    }
+
+    setIsBriefing(true);
+    try {
+      const nextBrief = await api.understandBrief(message, brief ? { ...brief, clarification_answers: answers } : null);
+      setBrief(nextBrief);
+      setBriefAnswers({});
+      setBriefApproved(false);
+      setTextPrompt("");
+      setBriefThread(prev => [
+        ...prev,
+        ...(typedMessage ? [{ role: "user" as const, text: typedMessage }] : []),
+        ...(usedAnswers ? [{
+          role: "user" as const,
+          text: `Selected: ${Object.values(answers).join("; ")}`,
+        }] : []),
+        {
+          role: "mimic" as const,
+          text: nextBrief.status === "needs_clarification"
+            ? "I updated the brief and need a few decisions before approval."
+            : "I updated the brief. It is ready for approval.",
+        },
+      ].slice(-8));
+      toast.success(
+        usedAnswers
+          ? "Plan updated from your answers"
+          : nextBrief.status === "needs_clarification"
+            ? "MIMIC needs a few choices"
+            : "Plan ready to review"
+      );
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Could not build the plan.";
+      toast.error(message);
+    } finally {
+      setIsBriefing(false);
+    }
+  };
+
+  const approveBrief = () => {
+    if (!brief) return;
+    if (brief.status === "needs_clarification" && (brief.questions?.length || 0) > 0) {
+      toast.error("Answer the alignment questions or use smart defaults first.");
+      return;
+    }
+    setBriefApproved(true);
+    toast.success("Plan approved");
+  };
+
+  const answerBriefQuestion = (id: string, answer: string) => {
+    setBriefAnswers(prev => ({ ...prev, [id]: answer }));
+    setBriefApproved(false);
+  };
+
+  const applyBriefAnswers = () => {
+    if (!brief) return;
+    const questions = brief.questions || [];
+    const missing = questions.filter(q => !briefAnswers[q.id]);
+    if (missing.length > 0) {
+      toast.error("Answer each question first, or use smart defaults.");
+      return;
+    }
+    buildCreativeBrief(briefAnswers);
+  };
+
+  const useBriefDefaults = () => {
+    if (!brief) return;
+    const defaults = Object.fromEntries(
+      (brief.questions || []).map((question) => [
+        question.id,
+        question.options?.[0] || "Use MIMIC's recommended default",
+      ])
+    );
+    setBriefAnswers(defaults);
+    buildCreativeBrief(defaults);
+  };
+
   const startMimic = async () => {
-    if (!refFile && !textPrompt) return toast.error("Provide a reference video or a text description.");
+    const approvedPrompt = getApprovedPrompt();
+    if (activeMode === "text" && !approvedPrompt) {
+      return toast.error(brief ? "Approve the plan first." : "Build a plan first.");
+    }
+    if (!refFile && !approvedPrompt) return toast.error("Provide a reference video or approve a text plan.");
     if (materialFiles.length === 0) return toast.error("Provide source material clips.");
 
     setIsGenerating(true); setStatusMsg("Initializing..."); setProgress(5); setGenerationError(false);
@@ -321,7 +445,7 @@ export default function StudioPage() {
 
       // 2. Start generation with optional text prompt
       if (!session_id) throw new Error("No active session");
-      const genRes = await api.startGeneration(session_id, textPrompt || undefined, targetDuration);
+      const genRes = await api.startGeneration(session_id, approvedPrompt || undefined, targetDuration);
       console.log("[STUDIO] Generation started:", genRes);
 
       const ws = api.connectProgress(session_id);
@@ -380,6 +504,17 @@ export default function StudioPage() {
       console.error("Studio start failed", err);
     }
   };
+
+  const approvedPrompt = getApprovedPrompt();
+  const needsApprovedBrief = activeMode === "text" && Boolean(brief) && !approvedPrompt;
+  const canExecute = !isGenerating && !isIdLoading && materialFiles.length > 0 && (
+    activeMode === "text" ? Boolean(approvedPrompt) : Boolean(refFile || approvedPrompt)
+  );
+  const openBriefQuestions = brief?.status === "needs_clarification" ? (brief.questions || []) : [];
+  const allBriefQuestionsAnswered = openBriefQuestions.length > 0 && openBriefQuestions.every(q => Boolean(briefAnswers[q.id]));
+  const resolvedBriefChoices = brief?.resolved_choices || [];
+  const visibleBriefIntake = brief?.intake || {};
+  const briefIntakeConfidence = brief?.intake_confidence || {};
 
   return (
     <div className="min-h-screen bg-[#020306] overflow-x-hidden pt-4 pb-24">
@@ -468,8 +603,8 @@ export default function StudioPage() {
                 </div>
               </div>
 
-              {/* Taller Unified Box (320px) - Grid stacked layers for smooth transition */}
-              <div className="relative grid grid-cols-1 grid-rows-1 h-[320px] rounded-2xl border border-white/10 bg-white/[0.02] overflow-hidden">
+              {/* Unified input box - Grid stacked layers for smooth transition */}
+              <div className="relative grid grid-cols-1 grid-rows-1 min-h-[420px] rounded-2xl border border-white/10 bg-white/[0.02] overflow-hidden">
                 {/* Animated border color overlay */}
                 <div className={cn(
                   "absolute inset-0 rounded-2xl pointer-events-none transition-colors duration-500 z-20",
@@ -493,24 +628,270 @@ export default function StudioPage() {
                     </div>
                   </div>
 
-                  <div className="flex-1 flex flex-col gap-4 min-h-0">
-                    <div className="bg-white/[0.03] border border-white/10 rounded-2xl rounded-tl-none p-5 relative group/bubble transition-all hover:bg-white/[0.05]">
+                  <div className="flex-1 grid grid-cols-1 xl:grid-cols-[minmax(0,0.9fr)_minmax(280px,0.7fr)] gap-4 min-h-0">
+                    <div className="bg-white/[0.03] border border-white/10 rounded-2xl rounded-tl-none p-5 relative group/bubble transition-all hover:bg-white/[0.05] flex flex-col min-h-[210px]">
+                      <div className="flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-1 space-y-3">
+                        {briefThread.length === 0 ? (
+                          <div className="h-full min-h-[120px] flex items-center text-sm font-medium leading-relaxed text-slate-600">
+                            Start by telling MIMIC what you want. After that, this becomes a running chat where new messages correct or add to the plan.
+                          </div>
+                        ) : (
+                          briefThread.map((message, index) => (
+                            <div
+                              key={`${message.role}-${index}-${message.text}`}
+                              className={cn(
+                                "max-w-[92%] rounded-2xl border px-4 py-3 text-xs font-semibold leading-relaxed",
+                                message.role === "user"
+                                  ? "ml-auto border-[#ff007f]/20 bg-[#ff007f]/10 text-pink-50"
+                                  : "mr-auto border-white/10 bg-black/25 text-slate-300"
+                              )}
+                            >
+                              <div className="mb-1 text-[8px] font-black uppercase tracking-widest text-slate-500">
+                                {message.role === "user" ? "You" : "MIMIC"}
+                              </div>
+                              {message.text}
+                            </div>
+                          ))
+                        )}
+                      </div>
                       <textarea
                         value={textPrompt}
-                        onChange={(e) => setTextPrompt(e.target.value)}
-                        placeholder="Example: 'A nostalgic 15s travel reel. Start with a slow cinematic wide shot of the mountains. Build energy with quick candid cuts of us laughing. Peak with high-intensity dancing and movement. Resolve with a quiet sunset shot.'"
-                        className="w-full bg-transparent text-sm font-medium text-slate-300 placeholder:text-slate-700 outline-none resize-none custom-scrollbar leading-relaxed h-[120px]"
+                        onChange={(e) => {
+                          setTextPrompt(e.target.value);
+                          setBriefApproved(false);
+                          setBriefAnswers({});
+                        }}
+                        placeholder={brief ? "Add a correction or extra detail..." : "Tell MIMIC what you want. Example: quick fun uni edit, people first, happy captions, fast but readable."}
+                        className="mt-4 h-24 w-full shrink-0 rounded-xl border border-white/10 bg-black/25 px-4 py-3 text-sm font-medium text-slate-300 placeholder:text-slate-700 outline-none resize-none custom-scrollbar leading-relaxed focus:border-[#ff007f]/40"
                       />
                       <div className="absolute -left-[9px] top-0 w-0 h-0 border-t-[10px] border-t-white/10 border-l-[10px] border-l-transparent" />
+                      <div className="mt-4 flex items-center justify-between gap-3 border-t border-white/5 pt-4">
+                        <span className="text-[8px] font-black uppercase tracking-widest text-slate-600">
+                          {brief ? "Type a change, then update the brief" : "Send your first edit idea"}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => buildCreativeBrief()}
+                          disabled={isBriefing || !textPrompt.trim()}
+                          className="h-9 px-4 rounded-xl bg-[#ff007f] text-white text-[9px] font-black uppercase tracking-widest hover:bg-[#ff2a94] disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2 shadow-[0_0_20px_rgba(255,0,127,0.25)]"
+                        >
+                          {isBriefing ? <Activity className="h-3.5 w-3.5 animate-spin" /> : <BrainCircuit className="h-3.5 w-3.5" />}
+                          {brief ? "Send Update" : "Send to MIMIC"}
+                        </button>
+                      </div>
                     </div>
 
+                    <div className="rounded-2xl border border-[#ff007f]/15 bg-black/25 p-4 min-h-[210px] overflow-y-auto custom-scrollbar">
+                      {!brief ? (
+                        <div className="h-full flex flex-col justify-center gap-4 text-slate-500">
+                          <div className="h-10 w-10 rounded-2xl bg-[#ff007f]/10 border border-[#ff007f]/20 flex items-center justify-center">
+                            <Sparkles className="h-5 w-5 text-[#ff007f]" />
+                          </div>
+                          <div>
+                            <p className="text-sm font-black text-white">MIMIC will show the plan first.</p>
+                            <p className="mt-2 text-xs leading-relaxed">
+                              You can correct the vibe, pacing, clips, text, or music before anything renders.
+                            </p>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="h-full flex flex-col gap-3">
+                          <div className="flex items-start justify-between gap-3">
+                            <div>
+                              <div className="text-[9px] font-black uppercase tracking-[0.25em] text-[#ff65b5]">MIMIC understands</div>
+                              <p className="mt-2 text-sm font-bold leading-snug text-white">{brief.summary}</p>
+                            </div>
+                            <span className={cn(
+                              "shrink-0 rounded-full px-2.5 py-1 text-[8px] font-black uppercase tracking-widest border",
+                              briefApproved
+                                ? "border-emerald-400/30 bg-emerald-400/10 text-emerald-300"
+                                : openBriefQuestions.length > 0
+                                  ? "border-cyan-400/25 bg-cyan-400/10 text-cyan-200"
+                                  : "border-amber-400/25 bg-amber-400/10 text-amber-300"
+                            )}>
+                              {briefApproved ? "Approved" : openBriefQuestions.length > 0 ? "Needs answers" : "Review"}
+                            </span>
+                          </div>
+
+                          {(brief.assumptions?.length || 0) > 0 && (
+                            <div className="rounded-xl border border-white/10 bg-white/[0.03] p-3 text-xs">
+                              <div className="text-[8px] font-black uppercase tracking-widest text-slate-500">Assumptions</div>
+                              <div className="mt-2 flex flex-wrap gap-1.5">
+                                {brief.assumptions?.map((assumption, index) => (
+                                  <span key={`${assumption}-${index}`} className="rounded-full border border-white/10 bg-black/30 px-2 py-1 text-[10px] font-semibold text-slate-300">
+                                    {assumption}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {resolvedBriefChoices.length > 0 && (
+                            <div className="rounded-xl border border-emerald-400/20 bg-emerald-400/[0.07] p-3 text-xs">
+                              <div className="text-[8px] font-black uppercase tracking-widest text-emerald-300">Your choices applied</div>
+                              <p className="mt-1 text-[11px] leading-relaxed text-emerald-50/75">
+                                MIMIC rebuilt the plan and internal edit prompt using these answers.
+                              </p>
+                              <div className="mt-2 space-y-1.5">
+                                {resolvedBriefChoices.map((choice, index) => (
+                                  <div key={`${choice}-${index}`} className="rounded-lg border border-emerald-400/10 bg-black/20 px-3 py-2 text-[11px] font-semibold leading-relaxed text-emerald-50">
+                                    {choice}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {Object.keys(visibleBriefIntake).length > 0 && (
+                            <div className="rounded-xl border border-white/10 bg-white/[0.03] p-3 text-xs">
+                              <div className="flex items-center justify-between gap-3">
+                                <div className="text-[8px] font-black uppercase tracking-widest text-slate-500">Edit intake</div>
+                                <div className="text-[9px] font-bold text-slate-500">
+                                  {openBriefQuestions.length > 0 ? "Needs decisions" : "Ready to approve"}
+                                </div>
+                              </div>
+                              <div className="mt-3 grid grid-cols-1 2xl:grid-cols-2 gap-2">
+                                {VISIBLE_INTAKE_FIELDS.map((field) => {
+                                  const value = visibleBriefIntake[field];
+                                  if (!value) return null;
+                                  const confidence = briefIntakeConfidence[field] || "assumed";
+                                  return (
+                                    <div key={field} className="min-w-0 rounded-xl border border-white/10 bg-black/25 p-3">
+                                      <div className="flex flex-wrap items-center gap-1.5">
+                                        <div className="min-w-0 text-[8px] font-black uppercase tracking-widest text-slate-500">{BRIEF_INTAKE_LABELS[field]}</div>
+                                        <span className={cn(
+                                          "shrink-0 rounded-full px-2 py-0.5 text-[8px] font-black uppercase tracking-widest border",
+                                          confidence === "confirmed"
+                                            ? "border-emerald-400/20 bg-emerald-400/10 text-emerald-300"
+                                            : confidence === "missing"
+                                              ? "border-amber-400/20 bg-amber-400/10 text-amber-300"
+                                              : "border-slate-400/15 bg-slate-400/10 text-slate-400"
+                                        )}>
+                                          {confidence}
+                                        </span>
+                                      </div>
+                                      <div className="mt-2 min-w-0 break-words text-[11px] font-semibold leading-relaxed text-slate-200">{value}</div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          )}
+
+                          <div className="grid grid-cols-2 gap-2 text-xs">
+                            <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3">
+                              <div className="text-[8px] font-black uppercase tracking-widest text-slate-500">Vibe</div>
+                              <div className="mt-1 text-slate-200">{brief.vibe.join(", ")}</div>
+                            </div>
+                            <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3">
+                              <div className="text-[8px] font-black uppercase tracking-widest text-slate-500">Pacing</div>
+                              <div className="mt-1 text-slate-200 line-clamp-2">{brief.pacing}</div>
+                            </div>
+                          </div>
+
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+                            <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3">
+                              <div className="text-[8px] font-black uppercase tracking-widest text-slate-500">Prefer</div>
+                              <div className="mt-1 text-slate-200 line-clamp-2">{brief.clip_preferences.join(", ")}</div>
+                            </div>
+                            <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3">
+                              <div className="text-[8px] font-black uppercase tracking-widest text-slate-500">Avoid</div>
+                              <div className="mt-1 text-slate-200 line-clamp-2">{brief.avoid.join(", ")}</div>
+                            </div>
+                          </div>
+
+                          <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3 text-xs">
+                            <div className="text-[8px] font-black uppercase tracking-widest text-slate-500">Text + Music</div>
+                            <div className="mt-1 text-slate-200 line-clamp-2">{brief.text_style} · {brief.music_direction}</div>
+                          </div>
+
+                          {openBriefQuestions.length > 0 && (
+                            <div className="rounded-xl border border-cyan-400/20 bg-cyan-400/[0.07] p-3 text-xs text-cyan-100 space-y-3">
+                              <div>
+                                <div className="text-[8px] font-black uppercase tracking-widest text-cyan-300">Quick alignment</div>
+                                <p className="mt-1 text-[11px] leading-relaxed text-cyan-100/80">
+                                  These choices change which clips MIMIC uses and how it cuts the reel.
+                                </p>
+                              </div>
+                              {openBriefQuestions.map((question) => (
+                                <div key={question.id} className="rounded-xl border border-white/10 bg-black/25 p-3">
+                                  <div className="font-bold leading-snug text-white">{question.question}</div>
+                                  {question.impact && (
+                                    <div className="mt-1 text-[10px] leading-relaxed text-slate-400">{question.impact}</div>
+                                  )}
+                                  <div className="mt-3 flex flex-wrap gap-2">
+                                    {(question.options && question.options.length > 0 ? question.options : ["Use MIMIC's best judgment"]).map((option) => {
+                                      const selected = briefAnswers[question.id] === option;
+                                      return (
+                                        <button
+                                          key={option}
+                                          type="button"
+                                          onClick={() => answerBriefQuestion(question.id, option)}
+                                          className={cn(
+                                            "rounded-full border px-3 py-1.5 text-[10px] font-bold transition-all",
+                                            selected
+                                              ? "border-cyan-300 bg-cyan-300 text-black"
+                                              : "border-white/10 bg-white/[0.04] text-slate-300 hover:border-cyan-300/50 hover:text-white"
+                                          )}
+                                        >
+                                          {option}
+                                        </button>
+                                      );
+                                    })}
+                                  </div>
+                                </div>
+                              ))}
+                              <div className="grid grid-cols-2 gap-2">
+                                <button
+                                  type="button"
+                                  onClick={useBriefDefaults}
+                                  disabled={isBriefing}
+                                  className="h-9 rounded-xl border border-white/10 bg-white/[0.04] text-[9px] font-black uppercase tracking-widest text-slate-200 hover:bg-white/[0.08] disabled:opacity-40"
+                                >
+                                  Smart Defaults
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={applyBriefAnswers}
+                                  disabled={isBriefing || !allBriefQuestionsAnswered}
+                                  className="h-9 rounded-xl bg-cyan-300 text-black text-[9px] font-black uppercase tracking-widest hover:bg-white disabled:opacity-40 disabled:cursor-not-allowed"
+                                >
+                                  Apply Answers
+                                </button>
+                              </div>
+                            </div>
+                          )}
+
+                          <div className="mt-auto grid grid-cols-2 gap-2 pt-1">
+                            <button
+                              type="button"
+                              onClick={() => setBriefApproved(false)}
+                              className="h-9 rounded-xl border border-white/10 bg-white/[0.04] text-[9px] font-black uppercase tracking-widest text-slate-300 hover:bg-white/[0.08]"
+                            >
+                              Keep Editing
+                            </button>
+                            <button
+                              type="button"
+                              onClick={approveBrief}
+                              disabled={openBriefQuestions.length > 0}
+                              className="h-9 rounded-xl bg-white text-black text-[9px] font-black uppercase tracking-widest hover:bg-[#ff007f] hover:text-white transition-all flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-black"
+                            >
+                              <CheckCircle2 className="h-3.5 w-3.5" />
+                              {openBriefQuestions.length > 0 ? "Answer First" : "Approve Plan"}
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
-                  <div className="flex items-center justify-between pt-10 border-t border-white/5">
+                  <div className="flex items-center justify-between pt-4 border-t border-white/5">
                     <div className="flex gap-4">
                       <div className="flex items-center gap-2">
-                        <div className={cn("h-1 w-1 rounded-full animate-pulse", textPrompt ? "bg-[#ff007f]" : "bg-slate-700")} />
-                        <span className="text-[8px] font-black text-slate-600 uppercase tracking-widest">AI Synthesis Active</span>
+                        <div className={cn("h-1 w-1 rounded-full animate-pulse", briefApproved ? "bg-emerald-400" : textPrompt ? "bg-[#ff007f]" : "bg-slate-700")} />
+                        <span className="text-[8px] font-black text-slate-600 uppercase tracking-widest">
+                          {briefApproved ? "Approved brief ready" : brief ? "Plan needs approval" : "Brief assistant ready"}
+                        </span>
                       </div>
                     </div>
 
@@ -796,14 +1177,14 @@ export default function StudioPage() {
               <div className="p-5 bg-white/[0.02] border-t border-white/5 relative z-10">
                 <button
                   onClick={startMimic}
-                  disabled={isGenerating || (!refFile && !textPrompt) || materialFiles.length === 0 || isIdLoading}
+                  disabled={!canExecute}
                   className={cn(
                     "w-full h-14 rounded-xl font-black text-[11px] uppercase tracking-[0.25em] transition-all duration-700 flex flex-col items-center justify-center relative overflow-hidden group/execute border",
                     isGenerating
                       ? "bg-gradient-to-r from-[#ff007f] to-[#bf00ff] border-[#ff007f]/40 text-white animate-pulse"
                       : generationError
                         ? "bg-red-600/20 border-red-500/50 text-red-400 shadow-[0_0_20px_rgba(239,68,68,0.2)] hover:bg-red-600/30"
-                        : !refFile && !textPrompt || materialFiles.length === 0
+                        : !canExecute || needsApprovedBrief
                           ? "bg-gradient-to-br from-indigo-500/10 to-cyan-500/10 border-cyan-500/20 text-slate-400 shadow-[0_0_20px_rgba(0,212,255,0.1)] hover:border-cyan-500/40"
                           : "bg-gradient-to-r from-[#00d4ff] via-[#4f46e5] to-[#bf00ff] bg-[length:200%_auto] border-white/30 text-white shadow-[0_0_30px_rgba(0,212,255,0.4)] hover:shadow-[0_0_60px_rgba(0,212,255,0.7)] hover:bg-right hover:scale-[1.02] active:scale-[0.98] animate-pulse-slow"
                   )}
@@ -815,9 +1196,19 @@ export default function StudioPage() {
                         "h-4 w-4",
                         isGenerating || isIdLoading ? "text-white animate-spin-slow" :
                           generationError ? "text-red-400 animate-pulse" :
-                            refFile && materialFiles.length > 0 ? "text-white animate-spin-slow" : "text-cyan-400"
+                            canExecute ? "text-white animate-spin-slow" : "text-cyan-400"
                       )} />
-                      <span>{isGenerating ? "Synthesizing..." : isIdLoading ? "Binding Style..." : generationError ? "Retry Synthesis" : "Execute Synthesis"}</span>
+                      <span>
+                        {isGenerating
+                          ? "Synthesizing..."
+                          : isIdLoading
+                            ? "Binding Style..."
+                            : generationError
+                              ? "Retry Synthesis"
+                              : needsApprovedBrief
+                                ? "Approve Plan First"
+                                : "Execute Synthesis"}
+                      </span>
                     </div>
                   </div>
 
