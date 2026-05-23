@@ -151,6 +151,7 @@ export default function VaultEditPage() {
 
     const videoRef = useRef<HTMLVideoElement>(null);
     const timelineScrollRef = useRef<HTMLDivElement>(null);
+    const lastTimeUpdateRef = useRef(0);
 
     const [loading, setLoading] = useState(true);
     const [rendering, setRendering] = useState(false);
@@ -177,7 +178,7 @@ export default function VaultEditPage() {
     const [colorPreset, setColorPreset] = useState<StyleConfig["color"]["preset"]>("neutral");
     const [originalLook, setOriginalLook] = useState<LookState>(DEFAULT_LOOK);
 
-    const clips = intelligence?.clip_index?.clips || [];
+    const clips = useMemo(() => intelligence?.clip_index?.clips || [], [intelligence?.clip_index?.clips]);
 
     const clipsByFilename = useMemo(() => {
         const map = new Map<string, ClipMetadata>();
@@ -452,7 +453,13 @@ export default function VaultEditPage() {
                 video.pause();
                 video.currentTime = sourcePreviewEnd;
                 setIsPlaying(false);
+                setCurrentTime(video.currentTime);
+                return;
             }
+
+            const now = performance.now();
+            if (now - lastTimeUpdateRef.current < 160) return;
+            lastTimeUpdateRef.current = now;
             setCurrentTime(video.currentTime);
         };
         const onLoaded = () => {

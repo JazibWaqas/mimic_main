@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";
-import { Upload, Video, ArrowRight, MonitorPlay, X, Plus, Sparkles, BrainCircuit, Terminal, Activity, CheckCircle2, ShieldCheck, Zap, Info, Layers, Target, Cpu, Wand2, Film } from "lucide-react";
+import { Upload, Video, MonitorPlay, X, Plus, Sparkles, BrainCircuit, Terminal, Activity, CheckCircle2, Zap, Layers, Wand2 } from "lucide-react";
 import { toast } from "sonner";
 import { useRouter, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -46,14 +46,14 @@ export default function StudioPage() {
   const [briefAnswers, setBriefAnswers] = useState<Record<string, string>>({});
   const [briefApproved, setBriefApproved] = useState(false);
   const [isBriefing, setIsBriefing] = useState(false);
-  const [targetDuration, setTargetDuration] = useState(15);
+  const [targetDuration] = useState(15);
   const [activeMode, setActiveMode] = useState<"text" | "video">("video");
   const [isGenerating, setIsGenerating] = useState(false);
   const [progress, setProgress] = useState(0);
   const [statusMsg, setStatusMsg] = useState("");
   const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
   const [logMessages, setLogMessages] = useState<string[]>([]);
-  const [recommendations, setRecommendations] = useState<string[]>([]);
+  const [, setRecommendations] = useState<string[]>([]);
 
   type BlueprintSegment = {
     arc_stage: string;
@@ -77,7 +77,7 @@ export default function StudioPage() {
 
   const [blueprint, setBlueprint] = useState<BlueprintViewModel | null>(null);
   const [libraryHealth, setLibraryHealth] = useState<LibraryHealthViewModel | null>(null);
-  const [pinnedCritique, setPinnedCritique] = useState<string | null>(null);
+  const [, setPinnedCritique] = useState<string | null>(null);
   const [isIdLoading, setIsIdLoading] = useState(false);
   const [lastMaterialHash, setLastMaterialHash] = useState<string | null>(null);
   const [generationError, setGenerationError] = useState(false);
@@ -170,7 +170,7 @@ export default function StudioPage() {
         const { session_id } = await api.identify(file);
         setCurrentSessionId(session_id);
         toast.success(`Identity Locked: ${session_id.substring(5, 12)}`);
-      } catch (err) {
+      } catch {
         toast.error("Identity mapping failed");
       } finally {
         setIsIdLoading(false);
@@ -204,7 +204,7 @@ export default function StudioPage() {
           ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
           const dataUrl = canvas.toDataURL("image/jpeg", 0.7);
           finish(dataUrl);
-        } catch (e) {
+        } catch {
           finish("");
         }
       };
@@ -261,7 +261,7 @@ export default function StudioPage() {
     }
   }, []);
 
-  const { getRootProps: getRefProps, getInputProps: getRefInputProps, isDragActive: isRefDragActive } = useDropzone({
+  const { getRootProps: getRefProps, getInputProps: getRefInputProps } = useDropzone({
     onDrop: onDropRef, accept: { 'video/*': [] }, multiple: false
   });
 
@@ -287,7 +287,7 @@ export default function StudioPage() {
       } else if (status.status === "error") {
         setIsGenerating(false); toast.error(status.error || "Generation Error");
       }
-    } catch (err) { }
+    } catch { }
   };
 
   const getApprovedPrompt = () => {
@@ -536,7 +536,7 @@ export default function StudioPage() {
             </div>
             <div className="space-y-1.5 ml-10 border-l-2 border-white/5 pl-6 py-1">
               <p className="text-[14px] text-slate-400 leading-relaxed font-medium">
-                MIMIC is a translation engine that uses Gemini 3's power to convert human creative intent into deterministic editorial structure, executes under real-world constraints, and explains the outcome transparently.
+                MIMIC is a translation engine that uses Gemini 3&apos;s power to convert human creative intent into deterministic editorial structure, executes under real-world constraints, and explains the outcome transparently.
               </p>
             </div>
           </div>

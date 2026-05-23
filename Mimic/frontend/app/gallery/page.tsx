@@ -5,15 +5,11 @@ import { useRouter } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import {
     Trash2,
-    Search,
-    ChevronDown,
     Plus,
     Activity,
     Database,
     Zap,
-    Target,
     Layers,
-    Info,
     History,
     Eye,
     X,
@@ -55,7 +51,7 @@ export default function LibraryPage() {
             setClips(clipsData.clips || []);
             setReferences(refsData.references || []);
             setResults(resultsData.results || []);
-        } catch (err) {
+        } catch {
             toast.error("Failed to load assets");
         } finally {
             setLoading(false);
@@ -95,7 +91,7 @@ export default function LibraryPage() {
             await api.deleteClip(sessionId, filename);
             fetchAllAssets();
             toast.success("File deleted");
-        } catch (err) {
+        } catch {
             toast.error("Delete failed");
         }
     };
@@ -109,7 +105,7 @@ export default function LibraryPage() {
             setRenamingItem(null);
             setNewName("");
             fetchAllAssets();
-        } catch (err) {
+        } catch {
             toast.error("Rename failed");
         }
     };
@@ -151,7 +147,7 @@ export default function LibraryPage() {
             window.URL.revokeObjectURL(url);
             document.body.removeChild(a);
             toast.success("Download started");
-        } catch (err) {
+        } catch {
             toast.error("Download failed");
         }
     };

@@ -3,25 +3,13 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import {
-    Activity,
-    MonitorPlay,
-    X,
     Sparkles,
     Zap,
     Palette,
-    BrainCircuit,
     ChevronDown,
     ChevronUp,
-    Video,
-    Search,
     Share2,
     Play,
-    Info,
-    History,
-    MoreHorizontal,
-    Download,
-    Settings,
-    Heart,
     Film,
     Clock,
     Music,
@@ -81,6 +69,11 @@ type IntelligenceViewModel = {
     edl?: { decisions?: EdlDecision[] };
     bpm?: number;
     style_config?: StyleConfig;
+    blueprint?: {
+        text_overlay?: string;
+        text_prompt?: string;
+        contract?: { source?: string };
+    };
 };
 
 type AssetWithPath = { path?: string; filepath?: string; url?: string };
@@ -112,6 +105,8 @@ function saveVaultVisualStore(store: Map<string, TextStyle>) {
 export default function VaultPage() {
     const searchParams = useSearchParams();
     const router = useRouter();
+    const routeFilename = searchParams.get("filename");
+    const routeType = searchParams.get("type") as ViewMode | null;
 
     // Data state
     const [clips, setClips] = useState<Clip[]>([]);
@@ -154,6 +149,8 @@ export default function VaultPage() {
     const [vaultCaptionSizeDraft, setVaultCaptionSizeDraft] = useState<number>(22);
 
     const vaultTextStoreRef = useRef(new Map<string, TextStyle>());
+    const intelligenceRequestRef = useRef(0);
+    const lastTimeUpdateRef = useRef(0);
 
     useEffect(() => {
         const loaded = loadVaultVisualStore();
@@ -175,7 +172,7 @@ export default function VaultPage() {
                 setClips(clipsData.clips || []);
                 setReferences(refsData.references || []);
                 setResults(resultsData.results || []);
-            } catch (err) {
+            } catch {
                 toast.error("Failed to load assets");
             } finally {
                 setLoading(false);
@@ -184,10 +181,38 @@ export default function VaultPage() {
         fetchAllAssets();
     }, []);
 
+    const resetPlaybackState = () => {
+        setCurrentTime(0);
+        setDuration(0);
+        setIsPlaying(false);
+    };
+
+    const selectAsset = (item: AssetItem | null, mode: ViewMode = viewMode) => {
+        setViewMode(mode);
+        setSelectedItem(item);
+        setIntelligence(null);
+        setAdvisorShowMore(false);
+        resetPlaybackState();
+        if (videoRef.current) {
+            videoRef.current.pause();
+        }
+    };
+
+    const assetsForMode = (mode: ViewMode): AssetItem[] => {
+        if (mode === "results") return results;
+        if (mode === "references") return references;
+        return clips;
+    };
+
+    const handleModeChange = (mode: ViewMode) => {
+        const nextAssets = assetsForMode(mode);
+        selectAsset(nextAssets[0] || null, mode);
+    };
+
     // Selection logic
     useEffect(() => {
-        const filename = searchParams.get("filename");
-        const type = searchParams.get("type") as ViewMode | null;
+        const filename = routeFilename;
+        const type = routeType;
 
         if (filename && type && (references.length > 0 || results.length > 0 || clips.length > 0)) {
             let item: AssetItem | undefined;
@@ -198,22 +223,36 @@ export default function VaultPage() {
             if (item) {
                 setSelectedItem(item);
                 setViewMode(type);
+                setIntelligence(null);
+                setAdvisorShowMore(false);
+                setCurrentTime(0);
+                setDuration(0);
+                setIsPlaying(false);
             }
-        } else if (results.length > 0 && !selectedItem) {
-            setSelectedItem(results[0]);
+        } else if (results.length > 0) {
+            setSelectedItem(prev => prev || results[0]);
         }
-    }, [searchParams, results, references, clips, selectedItem]);
+    }, [routeFilename, routeType, results, references, clips]);
 
     // Intelligence Fetch
     useEffect(() => {
+        const requestId = ++intelligenceRequestRef.current;
+        setIntelligence(null);
+        setAdvisorShowMore(false);
+
         if (!selectedItem) return;
+
         const fetchIntel = async () => {
             try {
                 const key = viewMode === "clips" ? (selectedItem as Clip).clip_hash || selectedItem.filename : selectedItem.filename;
                 const data = await api.fetchIntelligence(viewMode, key);
-                setIntelligence(data as IntelligenceViewModel);
-            } catch (_err) {
-                setIntelligence(null);
+                if (intelligenceRequestRef.current === requestId) {
+                    setIntelligence(data as IntelligenceViewModel);
+                }
+            } catch {
+                if (intelligenceRequestRef.current === requestId) {
+                    setIntelligence(null);
+                }
             }
         };
         fetchIntel();
@@ -265,25 +304,25 @@ export default function VaultPage() {
     const videoUrl = useMemo(() => {
         if (!selectedItem) return "";
         const withPath = selectedItem as AssetWithPath;
-        let path = withPath.path || withPath.filepath || withPath.url || "";
+        const path = withPath.path || withPath.filepath || withPath.url || "";
 
         const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+        const cacheToken = encodeURIComponent(`${viewMode}:${selectedItem.filename}:${selectedItem.size || 0}:${selectedItem.created_at || 0}`);
+        const withCacheToken = (url: string) => `${url}${url.includes("?") ? "&" : "?"}v=${cacheToken}`;
 
         // v14.9 Demo Mode Support
         if (path.startsWith("/demo/") || process.env.NEXT_PUBLIC_DEMO_MODE === "true") {
             const relPath = path.startsWith("/") ? path : `/${path}`;
-            return `${relPath}?v=${Date.now()}`;
+            return withCacheToken(relPath);
         }
 
         // Backend assets
         const fullPath = path.startsWith("/") ? path : `/${path}`;
-        return `${API_BASE}${fullPath}?v=${Date.now()}`;
-    }, [selectedItem]);
+        return withCacheToken(`${API_BASE}${fullPath}`);
+    }, [selectedItem, viewMode]);
 
     const selectedKey = selectedItem?.filename ? `${viewMode}:${selectedItem.filename}` : "";
-    const blueprintOverlay = (intelligence as any)?.blueprint?.text_overlay || "";
-    const blueprintSource = (intelligence as any)?.blueprint?.contract?.source || "";
-    const isPromptModeResult = Boolean((intelligence as any)?.blueprint?.text_prompt) || blueprintSource === "text_prompt";
+    const blueprintOverlay = intelligence?.blueprint?.text_overlay || "";
 
     // Keep modal drafts aligned with current committed state when opening
     useEffect(() => {
@@ -343,6 +382,19 @@ export default function VaultPage() {
         return text.slice(0, maxLen).trimEnd() + "...";
     };
 
+    const handleVideoTimeUpdate = () => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        const now = performance.now();
+        if (now - lastTimeUpdateRef.current < 180 && Math.abs(video.currentTime - currentTime) < 0.35) {
+            return;
+        }
+
+        lastTimeUpdateRef.current = now;
+        setCurrentTime(video.currentTime || 0);
+    };
+
     if (loading) return (
         <div className="h-screen flex items-center justify-center bg-[#020306]">
             <div className="text-indigo-500 text-[10px] font-black uppercase tracking-[0.5em] animate-pulse">Syncing_Vault</div>
@@ -378,7 +430,7 @@ export default function VaultPage() {
                     {(["results", "references", "clips"] as ViewMode[]).map(mode => (
                         <button
                             key={mode}
-                            onClick={() => setViewMode(mode)}
+                            onClick={() => handleModeChange(mode)}
                             className={cn(
                                 "px-5 py-1.5 rounded-lg text-[9px] font-black uppercase tracking-widest transition-all",
                                 viewMode === mode ? "text-white bg-indigo-600 shadow-lg shadow-indigo-600/20" : "text-slate-500 hover:text-slate-300"
@@ -393,12 +445,13 @@ export default function VaultPage() {
             {/* ASSET STRIP: Netflix-Style Content Cards */}
             <div className="h-48 border-b border-white/[0.03] bg-black/10 shrink-0 overflow-hidden relative">
                 <div className="flex gap-6 overflow-x-auto p-6 custom-scrollbar-horizontal no-scrollbar h-full items-center px-12">
-                    {currentModeAssets.map((item, idx) => {
-                        const isSelected = selectedItem?.filename === item.filename;
+                    {currentModeAssets.map((item) => {
+                        const itemKey = `${viewMode}:${item.filename}`;
+                        const isSelected = selectedKey === itemKey;
                         return (
                             <div
-                                key={idx}
-                                onClick={() => setSelectedItem(item)}
+                                key={itemKey}
+                                onClick={() => selectAsset(item)}
                                 className="shrink-0 w-64 group/item cursor-pointer"
                             >
                                 <div
@@ -415,6 +468,8 @@ export default function VaultPage() {
                                                 ? item.thumbnail_url
                                                 : `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}${item.thumbnail_url.startsWith("/") ? item.thumbnail_url : `/${item.thumbnail_url}`}`}
                                             alt={item.filename}
+                                            loading="lazy"
+                                            decoding="async"
                                             className="w-full h-full object-cover"
                                         />
                                     ) : (
@@ -459,9 +514,12 @@ export default function VaultPage() {
                                 <div className={cn("relative rounded-[2.5rem] overflow-hidden bg-black shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10 group-hover:border-indigo-500/30 transition-all duration-700", mobileView ? "w-[420px] h-[630px]" : "aspect-[15/14]")}>
                                     {selectedItem ? (
                                         <video
+                                            key={selectedKey}
                                             ref={videoRef}
                                             src={videoUrl}
-                                            onTimeUpdate={() => setCurrentTime(videoRef.current?.currentTime || 0)}
+                                            preload="metadata"
+                                            onTimeUpdate={handleVideoTimeUpdate}
+                                            onLoadStart={resetPlaybackState}
                                             onLoadedMetadata={() => setDuration(videoRef.current?.duration || 0)}
                                             onPlay={() => setIsPlaying(true)}
                                             onPause={() => setIsPlaying(false)}
@@ -520,9 +578,9 @@ export default function VaultPage() {
                                         <div className="flex items-center gap-2"><Clock className="h-3.5 w-3.5" /><span className="text-[10px] font-bold uppercase tracking-wider">{duration.toFixed(1)}s</span></div>
                                         <div className="flex items-center gap-2"><Music className="h-3.5 w-3.5" /><span className="text-[10px] font-bold uppercase tracking-wider">{intelligence?.bpm || 128} BPM</span></div>
                                     </div>
-                                    {(intelligence as any)?.blueprint?.text_overlay && (
+                                    {blueprintOverlay && (
                                         <div className="mt-2 text-[11px] text-white/40 font-medium italic">
-                                            "{(intelligence as any).blueprint.text_overlay}"
+                                            &ldquo;{blueprintOverlay}&rdquo;
                                         </div>
                                     )}
                                 </div>
@@ -617,7 +675,7 @@ export default function VaultPage() {
 
                                                 return (
                                                     <div
-                                                        key={idx}
+                                                        key={`${selectedKey}:decision:${decision.segment_id}:${idx}`}
                                                         onClick={() => {
                                                             if (timing && videoRef.current) {
                                                                 videoRef.current.currentTime = timing.start;
@@ -713,7 +771,7 @@ export default function VaultPage() {
 
 
                                                 return (
-                                                    <div key={`all-${idx}`} className={cn(
+                                                    <div key={`${selectedKey}:edl:${edlDecision.segment_id}:${idx}`} className={cn(
                                                         "p-4 rounded-[1rem] border transition-all duration-300 relative group/card",
                                                         "bg-gradient-to-b from-white/[0.02] to-white/[0.01] border-white/[0.1]",
                                                         "shadow-[0_0_20px_rgba(120,130,255,0.04)]",

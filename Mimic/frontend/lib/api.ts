@@ -11,6 +11,24 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const IS_DEMO = process.env.NEXT_PUBLIC_DEMO_MODE === "true";
 
 const intelCache = new Map<string, unknown>();
+const INTEL_CACHE_LIMIT = 40;
+
+const getCachedIntel = (key: string) => {
+  if (!intelCache.has(key)) return undefined;
+  const value = intelCache.get(key);
+  intelCache.delete(key);
+  intelCache.set(key, value);
+  return value;
+};
+
+const setCachedIntel = (key: string, value: unknown) => {
+  intelCache.set(key, value);
+  while (intelCache.size > INTEL_CACHE_LIMIT) {
+    const oldestKey = intelCache.keys().next().value;
+    if (!oldestKey) break;
+    intelCache.delete(oldestKey);
+  }
+};
 
 type RenderEdlDecision = {
   segment_id: number;
@@ -259,12 +277,13 @@ export const api = {
       return res.json();
     }
     const cacheKey = `${type}:${key}`;
-    if (type !== "results" && intelCache.has(cacheKey)) return intelCache.get(cacheKey);
+    const cached = type !== "results" ? getCachedIntel(cacheKey) : undefined;
+    if (cached) return cached;
 
     const res = await fetch(`${API_BASE}/api/intelligence?type=${type}&filename=${encodeURIComponent(key)}`);
     if (!res.ok) throw new Error("Intelligence data not found");
     const data: unknown = await res.json();
-    if (type !== "results") intelCache.set(cacheKey, data);
+    if (type !== "results") setCachedIntel(cacheKey, data);
     return data;
   },
 

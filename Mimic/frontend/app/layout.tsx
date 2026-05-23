@@ -5,7 +5,6 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { Suspense } from "react";
 import { Header } from "@/components/header";
-import { SystemStatusBar } from "@/components/SystemStatusBar";
 
 const inter = Inter({
   variable: "--font-inter",
