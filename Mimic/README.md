@@ -4,7 +4,26 @@
 
 MIMIC is a multi-model AI video editing system that understands creative intent. It doesn't just chop clips to a beat — it analyzes the *soul* of a reference edit and rebuilds it using your footage, making decisions a real editor would make.
 
-**Built originally for the Google Gemini API Developer Competition. Now being refined into a consumer product.**
+**Built originally for the Google Gemini API Developer Competition. Now being refined into a premium consumer product designed for commercial launch.**
+
+---
+
+## The Product Thesis: Human Paced, Human Controlled
+
+Most AI video tools fail because they treat editing as a black box: you click a button, get a random cut, and have zero control. Or they treat editing as a mechanical math problem, chopping footage exactly to a grid like a metronome, destroying the emotional flow.
+
+MIMIC is designed to solve the real bottlenecks human editors face, acting as your **AI Assistant Editor** while keeping you in the seat of the **Executive Director**.
+
+### 1. Solving the Editor's Bottlenecks
+* **The Footage Combing Nightmare:** Comb Through hours of raw vertical clips to find the "perfect 2 seconds" is the most tedious part of the process. MIMIC standardizes, indexes, and semantically watches all your footage in seconds to surface ideal clip options.
+* **The "Metronome" Trap:** Templated editors cut exactly on every beat, producing exhausting, robotic results. MIMIC protects **Sacred Visual Cuts** and visual holds, allowing the narrative to breathe for emotional holds while snapping tempo points contextually.
+* **The Creative Alignment Gap:** Explaining *why* an edit is good is a struggle. MIMIC's **Vault Report** translates all scoring decisions into human-readable director commentary, creating a clear creative feedback loop.
+
+### 2. Radical Co-Pilot Controllability
+MIMIC is built on a **controllable architecture**, not an autonomous black box. The human user retains ultimate creative authority:
+* **Conversational Intake:** In Creator Mode, you guide the narrative style and approve the **Creative Brief** before rendering.
+* **Adjustable Priorities:** You decide whether to prioritize people first or scenery first, how tolerant to be of low-light shots, and what pacing rules to apply.
+* **Editable Metadata:** Style treatments, overlay text, and segment timelines are kept as editable UI metadata rather than destructively burned into the video. If you don't like a cut, you can tweak the parameters and re-render in seconds.
 
 ---
 
@@ -41,13 +60,14 @@ MIMIC uses the best model for the job at each stage — not one model for everyt
 | Vault report & Director's critique | Groq / Llama 3.3 70B | High-quality human-readable explanations |
 | Timing, scoring, rendering | Python + FFmpeg | Deterministic — AI never controls timestamps |
 
-### The Pipeline (7 Steps)
-1. **Detect cuts** in the reference video (FFmpeg scene detection + BPM analysis)
+### The Pipeline (8 Steps)
+0. **Creator Mode Intake (DeepSeek V3)** — (Optional) User describes an idea; MIMIC translates it into a plain-language plan and structured brief, asks clarifying questions, and compiles a comprehensive "production prompt."
+1. **Detect cuts** in the reference video (FFmpeg scene detection at 0.12 threshold + BPM analysis)
 2. **Analyze the reference** with Gemini — classify each segment by energy, vibe, arc stage, and narrative intent
 3. **Analyze your clips** with Gemini — extract creative DNA: energy, motion, subject matter, best moments
 4. **Strategic Advisor** (DeepSeek) — writes an editorial brief: "This edit is about friendship. Prioritize group clips in the peak. Penalize scenic shots."
 5. **Semantic Editor** — scores every clip against every segment using the brief, energy rules, and global history. Picks the best non-repeated clip for each slot.
-6. **Render** (FFmpeg) — extract segments, concatenate, merge audio. Frame-locked to 30fps CFR. Duration is exact.
+6. **Render** (FFmpeg) — extract frame-exact segments (30fps CFR) using timeline duration as authority, concatenate, apply precision Trim Guard to prevent drift, and merge audio.
 7. **Reflect** (Groq Llama) — AI critiques the finished edit and generates the Vault Report
 
 ### What Makes Edits Good (The Philosophy)
@@ -55,6 +75,7 @@ MIMIC uses the best model for the job at each stage — not one model for everyt
 - **No Repeats, Ever** — Global clip history tracks the last 20 renders. The system explores your whole library.
 - **The Right Clip in the Right Place** — Advisor reads the reference narrative (e.g., "it's about the people") and enforces subject-aware selection.
 - **Sacred Cuts** — If the original editor made a cut at a specific frame, that cut boundary is protected. The algorithm cannot subdivide it.
+- **Beat Snapping Separation** — Snapping is disabled in Reference Mode to preserve the original visual boundaries. Snapping is allowed in Prompt Mode with a -80ms offset to anticipate tempo hits.
 
 ---
 
@@ -105,7 +126,7 @@ npm run dev
 ### First Edit
 1. Go to **Studio**
 2. Upload your clips (MP4, vertical preferred)
-3. Upload a reference video **or** type a prompt
+3. Upload a reference video **or** type a prompt (Creative Brief Intake starts automatically)
 4. Add music (optional)
 5. Hit **Execute**
 6. Check the **Vault tab** for AI reasoning
@@ -121,7 +142,7 @@ npm run dev
 - Re-runs with cache: ~15s
 - Tested with 220+ clips in library
 - Cache hit rate: 95%+ on reruns
-- Timeline accuracy: ±0.001s (Clock-Lock system)
+- Timeline accuracy: ±0.001s (Clock-Lock system + Duration Trim Guard)
 
 ---
 
@@ -133,11 +154,21 @@ Mimic/
 │   ├── engine/
 │   │   ├── orchestrator.py     # Pipeline entry point
 │   │   ├── brain.py            # Gemini 3 (clip + reference analysis)
+│   │   ├── briefing.py         # DeepSeek V3 (Creator Mode intake & brief assistant)
+│   │   ├── music_profile.py    # Packages BPM, onsets, and energy quarters
+│   │   ├── text_safety.py      # Plain-text sanitization utility
 │   │   ├── generator.py        # DeepSeek V3 (Prompt Mode blueprint)
 │   │   ├── gemini_advisor.py   # DeepSeek V3 (editorial brief)
+│   │   ├── gemini_advisor_prompt.py # The advisor LLM prompt
+│   │   ├── gemini_moment_prompt.py  # Moment analysis prompt
 │   │   ├── editor.py           # Python scoring engine (V15.0 Vibe-over-Math)
+│   │   ├── moment_selector.py  # V14.0 moment-selection engine
+│   │   ├── creative_director.py # Music-sync analysis and guidance
 │   │   ├── reflector.py        # Groq Llama 3.3 70B (vault + critique)
-│   │   └── processors.py       # FFmpeg + Librosa
+│   │   ├── processors.py       # FFmpeg + Librosa
+│   │   ├── stylist.py          # Color grading and overlays
+│   │   ├── ENGINE_AUDIT_AND_CLEANUP.txt # Diagnostic state snapshot
+│   │   └── vault_compiler.py   # Compiles structured reasoning data for vault
 │   ├── models.py               # All Pydantic schemas
 │   └── main.py                 # FastAPI server
 ├── frontend/                   # Next.js 14 UI
@@ -162,8 +193,8 @@ Mimic/
 
 ## Documentation
 
-- **[ARCHITECTURE.md](ContextFiles/ARCHITECTURE.md)** — Full system design, model routing, scoring logic, data flow
-- **[SYSTEM_STATE.md](ContextFiles/SYSTEM_STATE.md)** — Current status, known issues, version history
+- **[ARCHITECTURE.md](ContextFiles/ARCHITECTURE.md)** — Full system design, model routing, scoring logic, data flow, and Creator Mode briefs
+- **[SYSTEM_STATE.md](ContextFiles/SYSTEM_STATE.md)** — Current status, known issues, version history, and latest rendering/briefing features
 
 ---
 

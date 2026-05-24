@@ -22,8 +22,11 @@ A real editor never reuses the same 3 seconds of a clip in the same video. MIMIC
 ### "The Right Clip in the Right Place"
 Clips must match the edit's narrative. If the text overlay says "it's about the people," the clips should show people. If the reference was nostalgic and slow-building, the edit should feel slow-building. The Advisor layer enforces this semantic coherence.
 
+### "Co-Pilot Controllability (The Assistant Editor Model)"
+MIMIC rejects the "autonomous black-box AI" approach. It is built as a collaborative co-pilot: the AI acts as a tireless **Assistant Editor** (culling footage, mapping tempos, generating structure, matching metadata, and writing briefs), while the human retains the role of **Executive Director**. Controllability is baked into the engine: the human guides style parameters via a conversational intake loop, sets strict formatting boundaries, and can manipulate timelines and overlay styling non-destructively through editable frontend metadata. AI proposes; human directs.
+
 ### Commercial Direction
-This project is local-first right now. The plan is to get perfect edits locally, record demo content, gauge interest from real people, and then decide how to build it into a startup product. Perfect local results come first.
+The goal is to deliver commercial-grade visual editing locally first, validate output quality, and position MIMIC as a high-value SaaS product for creators, marketers, and editors. By solving the primary bottlenecks of short-form editing—combing footage, robotic pacing, and black-box editing constraints—MIMIC is designed to serve as a launch-ready creative partner.
 
 ---
 
@@ -33,6 +36,7 @@ MIMIC uses a *best model for the job* architecture. NOT Gemini-only.
 
 | Stage | Model | File | Why this model |
 |---|---|---|---|
+| **Intake / Brief Understanding** | `DeepSeek V3` (`deepseek-chat`) | `briefing.py` | Conversational creative brief synthesis — translates user idea to normalized intake parameters and production brief |
 | **Clip Analysis** | `gemini-3-flash-preview` | `brain.py` | Multimodal video understanding — only Gemini 3 can watch raw clips |
 | **Reference Analysis** | `gemini-3-flash-preview` | `brain.py` | Same — visual analysis of reference TikTok video |
 | **Blueprint Generation (Prompt Mode)** | `DeepSeek V3` (`deepseek-chat`) | `generator.py` | Fast, structured JSON reasoning. Cheaper, deterministic |
@@ -63,15 +67,18 @@ main.py (FastAPI)
         ▼
 orchestrator.py → run_mimic_pipeline()
         │
-        ├── STEP 0 (Prompt Mode ONLY): generate_blueprint_from_text() via DeepSeek V3
+        ├── STEP 0 (Creator Mode): understand_brief() via DeepSeek V3 in briefing.py
+        │                           Translates user's rough idea into approved intake schema
+        │
+        ├── STEP 0b (Prompt Mode ONLY): generate_blueprint_from_text() via DeepSeek V3
         │                               Pre-scans clip library BEFORE blueprint generation
         │
         ├── STEP 1: Validate inputs / Setup session dirs
         │
         ├── STEP 2 (Reference Mode): analyze_reference_video() via Gemini 3
-        │           FFmpeg scene detection → BPM analysis → Hybrid cut list → Gemini brain analysis
+        │           FFmpeg scene detection (0.12 threshold) → BPM analysis → Hybrid cut list → Gemini brain analysis
         │           OR
-        │           (Prompt Mode): Skip — blueprint already generated in Step 0
+        │           (Prompt Mode): Skip — blueprint already generated in Step 0b
         │
         ├── STEP 3: analyze_all_clips() via Gemini 3
         │           Check persistent standardized cache → Standardize new clips only
@@ -82,8 +89,7 @@ orchestrator.py → run_mimic_pipeline()
         │           Returns EDL (Edit Decision List)
         │
         ├── STEP 5: Render via FFmpeg
-        │           extract_segment() per clip → concatenate_videos() → merge_audio_video()
-        │           Duration Trim Guard (v15.0): trim final video if >0.1s over target
+        │           extract_segment() (frame-exact 30fps) per clip → concatenate_videos() → Duration Trim Guard (V15.0 trim) → merge_audio_video()
         │
         └── STEP 6: Reflect & Vault via Groq (Llama 3.3 70B)
                     reflect_on_edit() → generate_vault_report()
@@ -136,16 +142,21 @@ Mimic/
 │   ├── engine/                     # All AI and processing logic
 │   │   ├── orchestrator.py         # Pipeline controller (single entry point)
 │   │   ├── brain.py                # Gemini 3 (clip analysis + reference analysis)
+│   │   ├── briefing.py             # DeepSeek V3 (Creator Mode intake & brief assistant)
+│   │   ├── music_profile.py        # Packages BPM, onsets, and energy quarters
+│   │   ├── text_safety.py          # Plain-text sanitization utility
 │   │   ├── generator.py            # DeepSeek V3 (Prompt Mode blueprint)
 │   │   ├── gemini_advisor.py       # DeepSeek V3 (editorial brief + advisor scoring)
 │   │   ├── gemini_advisor_prompt.py # The actual ADVISOR_PROMPT template string
+│   │   ├── gemini_moment_prompt.py # Moment analysis prompt
 │   │   ├── editor.py               # Python matching + V15.0 Vibe scoring engine
+│   │   ├── moment_selector.py      # V14.0 contextual moment selection engine
+│   │   ├── creative_director.py    # Additional creative layer (music-sync analysis)
 │   │   ├── reflector.py            # Groq Llama 3.3 70B (critique + vault translation)
-│   │   ├── vault_compiler.py       # Compiles structured reasoning data for vault
 │   │   ├── processors.py           # FFmpeg + Librosa wrappers
 │   │   ├── stylist.py              # Text overlay + color grading application
-│   │   ├── moment_selector.py      # V14.0 contextual moment selection engine
-│   │   └── creative_director.py    # Additional creative layer (music-sync analysis)
+│   │   ├── ENGINE_AUDIT_AND_CLEANUP.txt # Diagnostic state snapshot
+│   │   └── vault_compiler.py       # Compiles structured reasoning data for vault
 │   ├── models.py                   # ALL Pydantic schemas — single source of truth
 │   ├── main.py                     # FastAPI server + file management endpoints
 │   └── utils/                      # API key manager, hashing utilities
@@ -394,7 +405,49 @@ Frame-level temporal accuracy:
 
 ---
 
-## XII. Known Design Decisions and Trade-offs
+---
+
+## XII. Creator Mode & Creative Brief Intake
+
+To solve the ambiguity of plain-text description prompts in Prompt Mode, MIMIC introduces a conversational alignment layer prior to rendering.
+
+### 1. The Intake Schema
+Rough ideas are parsed into a normalized structure (`models.py → BriefRequest`):
+- `main_intent`: Core narrative or viewer reaction goal.
+- `subject_priority`: `people/faces` | `scenery/aesthetic` | `product/place` | `action` | `mixed`.
+- `emotional_direction`: Target mood (warm, funny, high-energy, cinematic).
+- `pacing_style` & `music_sync_style`: Pacing intent.
+- `clip_selection_bias`: Human moments vs. details vs. aesthetics.
+- `quality_tolerance`: Acceptance threshold for shaky or low-light clips.
+- `caption_strategy` & `ending_strategy`: Text styling and climax rules.
+
+### 2. Conversational Alignment (briefing.py)
+- **DeepSeek V3** analyzes the prompt against current state data.
+- **Clarification Loop:** Instead of guessing missing critical details, it returns up to 4 highly-focused questions (with pre-filled options, placing its recommended default first).
+- **Production Brief:** Once approved, it compiles these settings into an optimized internal "production prompt" containing explicit instructions on styling, avoids, and blueprint structural bias, which is fed directly into `generator.py`.
+
+---
+
+## XIII. Structured Music Profiling
+
+Music-driven editing is powered by `music_profile.py`, which compiles raw audio metrics (onsets, BPM, spectrogram curves) into a high-level creative blueprint context.
+
+### 1. Profile Compilation Math
+- **Quarterly Segmenting:** Cuts the audio into four quarters and averages the RMS loudness ($E_{rms}$).
+- **Energy and Pacing Labeling:** Each quarter is assigned a feel and editorial guideline:
+  - $E_{rms} < 0.35$ $\rightarrow$ `"quiet"` energy, `"hold longer shots"`.
+  - $0.35 \le E_{rms} < 0.70$ $\rightarrow$ `"moderate"` energy, `"use moderate cuts"`.
+  - $E_{rms} \ge 0.70$ $\rightarrow$ `"strong"` energy, `"allow shorter beat-driven cuts"`.
+- **Quiet & Strong Ranges:** Group contiguous seconds where energy boundaries are breached to identify holds or build-up areas.
+- **Phrase Boundaries:** Marks standard 4-beat musical phrase boundaries using the tempo:
+  $$\text{phrase\_seconds} = \frac{60}{\text{BPM}} \times 4$$
+
+### 2. Planning Guidance
+The structured musical profile is translated into a prompt injection for the blueprint generator, ensuring that generated segments correspond exactly to musical segments (e.g. holds during quiet ranges, peak cuts during strong ranges, drops placed near the peak loudness second).
+
+---
+
+## XIV. Known Design Decisions and Trade-offs
 
 | Decision | Reason |
 |---|---|

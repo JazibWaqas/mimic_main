@@ -48,44 +48,47 @@ MIMIC was originally built as a hackathon submission for the Google Gemini API D
 | Candidate ranking before truncation | ✅ Implemented | March 2026: semantic 0.7 + musical 0.3 |
 | Richer candidate metadata to advisor prompt | ✅ Implemented | March 2026: content_description, tone, subject |
 | Advisor receives real beat grid (music-aware planning) | ✅ Implemented | March 2026: BPM passed in, get_beat_grid used when available |
+| Creator Mode Creative Brief Intake | ✅ Functional | May 2026: DeepSeek V3 briefing.py alignment layer |
+| Structured Music Profiling | ✅ Functional | May 2026: music_profile.py tempo & loudness curve analysis |
+| Duration Trim Guard (v15.0) | ✅ Implemented | Precision FFmpeg trim pass to prevent tail music/drift |
+| Snapping Mode Separation | ✅ Implemented | Snap disabled in Reference mode, enabled in Prompt Mode |
 
 ---
 
-## V15.0 Changes (March 2026)
+## Creator Mode, Music Profiling & Snapping Updates (May 2026)
 
 ### Problem Being Solved
-Edits were getting the same clips repeatedly across different runs because the "best" clips always won. Subject tags (like People-Group) were being weighted so heavily they overrode aesthetic vibe matching. Fast-cut reference segments (<1.0s) were getting static, low-energy frames because no special handling existed.
+1. **Intake Ambiguity:** In Prompt Mode, writing a raw text description often led to guessing user intent across many conflicting axes (e.g. funny vs. nostalgic, people vs. scenery, caption strategies). 
+2. **Music Blindness:** The engine lacked a structured, high-level summary of the music track's emotional energy curve, limiting Prompt Mode's ability to sync narrative holds and drop build-ups to visual clips.
+3. **Pacing Jitter in Reference Mode:** Applying beat snapping to Reference Mode visual cuts destroyed the human timing decisions made in the reference video, introducing visual stutter.
+4. **Tail Accumulation Drift:** Small millisecond rounding errors across 10-20 visual segments accumulated into a 0.5s-1.0s video length discrepancy, causing audio/video desync and silent endings.
 
 ### Changes Made
 
-**1. Score Rebalancing**
-- `Narrative Anchor` bonus: `+15/+5` → `+8/+3` (first use vs. repeat)
-- Narrative mismatch penalty: was flat `-15`, now context-aware: `-3.0` to `-8.0`
-  - Only applies heavy penalty when narrative strongly disagrees (people narrative + no people clip)
-  - Near-zero penalty when narrative is ambiguous
-- Result: Vibe + Energy now dominate clip selection. Subject matching is a soft guide, not a hard rule.
+**1. Creator Mode Intake Assistant (`briefing.py`)**
+- Added a dedicated FastAPI endpoint `/api/brief/understand` powered by DeepSeek V3 in `engine/briefing.py`.
+- Sits as a non-mutating pre-generation alignment layer.
+- Takes the user's rough idea and normalizes it into a formal intake schema containing:
+  - `main_intent`, `subject_priority` (people, aesthetic, action, mixed), `emotional_direction` (mood), `pacing_style`, `music_sync_style`, `clip_selection_bias` (emotion, motion, details), `quality_tolerance`, `caption_strategy`, `ending_strategy`, and `avoid_rules`.
+- Generates 2-4 highly-targeted clarifying questions to resolve trade-offs before rendering.
+- Compiles an internal, optimized "production prompt" for the downstream blueprint generator (`generator.py`).
 
-**2. Random Tiebreaker**
-- Added `random.uniform(0, 8.0)` to base score before any other factor.
-- Purpose: Two equally-valid clips for a segment no longer always produce the same result.
-- Effect: Reruns of same reference produce meaningfully different edits over time.
+**2. Structured Music Profiling (`music_profile.py`)**
+- Created `engine/music_profile.py` to compile audio features into a high-level LLM context payload.
+- Packages raw Librosa outputs (BPM, onsets) with:
+  - **Energy Quarters:** Segments the audio into four quadrants and classifies each by energy level (`quiet`, `moderate`, `strong`) with matching cut guidance (`hold longer shots`, `allow shorter cuts`).
+  - **Loudness Ranges:** Detects specific quiet/strong ranges and marks phrase boundaries.
+- The blueprint generator uses this structured profile to design a narrative blueprint that is intrinsically aligned with the music's structure.
 
-**3. Global History Novelty (`clip_history.json`)**
-- `data/cache/clip_history.json` tracks which clip filenames were used across the last 20 renders.
-- On load, each clip's virtual usage count is inflated by prior appearances.
-- Effect: Clips that appeared in recent edits are gently penalized, pushing the system to explore the full library.
+**3. Snapping Mode Separation (`editor.py` & `orchestrator.py`)**
+- `allow_beat_snapping` is now set to `False` in Reference Mode:
+  - `allow_beat_snapping = cuts_in_segment > 0 and mode != "REFERENCE"`
+  - Preserves the original scene changes detected from the reference video exactly.
+- Enabled in `PROMPT` mode using a `0.10s` grid tolerance and `BEAT_PHASE_OFFSET = -0.08` seconds to align cuts slightly before tempo hits, mimicking professional editing.
 
-**4. Smart Moment Selection for Micro-Cuts**
-- For Reference Mode segments with duration < 1.0 seconds:
-  1. Editor actively searches for the highest-energy window in the clip.
-  2. Refuses to reuse windows where start and end are both within 0.1s of a committed interval (exact duplicate prevention).
-  3. Falls back to energy-ranked windows if all high-energy windows are claimed.
-- Result: Fast-cut sequences look kinetic and alive rather than static screencaps.
-
-**5. Duration Trim Guard**
-- After `concatenate_videos()`, if resulting video exceeds `blueprint.total_duration` by >0.1s:
-  - A final FFmpeg trim pass cuts precisely to target duration.
-- Fixes: Music continue playing after video visually ended; video/audio sync drift on long edits.
+**4. Frame-Exact Render & Trim Guard (`processors.py` & `orchestrator.py`)**
+- Upgraded `extract_segment` to be strictly frame-exact (`EXTRACT_FPS = 30.0`), rounding all clip boundaries to frame offsets, passing exact duration via `-t exact_duration`, and mapping PTS in FFmpeg.
+- Added a post-concatenate **Duration Trim Guard**: if the concatenated video exceeds the target duration by more than `0.1s`, FFmpeg trims the stream precisely before audio merging.
 
 ---
 
