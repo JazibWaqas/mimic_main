@@ -103,6 +103,7 @@ pip install -r backend/requirements.txt
 # GEMINI_API_KEY=...
 # DEEPSEEK_API_KEY=...
 # GROQ_API_KEY=...
+# FRONTEND_URL=http://localhost:3000
 
 # Frontend
 cd frontend
@@ -122,6 +123,10 @@ npm run dev
 
 # Open http://localhost:3000
 ```
+
+This portfolio build is public: visitors can view assets exposed by the backend
+and use its available actions. Remove private media and unnecessary API keys or
+costly generation features before deploying it to an untrusted audience.
 
 ### First Edit
 1. Go to **Studio**

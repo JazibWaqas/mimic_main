@@ -5,8 +5,9 @@ import { Upload, Video, MonitorPlay, X, Plus, Sparkles, BrainCircuit, Terminal, 
 import { toast } from "sonner";
 import { useRouter, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { api, type CreativeBrief } from "@/lib/api";
+import { api, getStatus, resolveAssetUrl, type CreativeBrief } from "@/lib/api";
 import { useDropzone } from "react-dropzone";
+import Image from "next/image";
 
 const BRIEF_INTAKE_LABELS: Record<string, string> = {
   subject_priority: "Subject",
@@ -35,7 +36,6 @@ type BriefThreadMessage = {
 
 export default function StudioPage() {
   const router = useRouter();
-  const apiBase = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
   const [refFile, setRefFile] = useState<File | null>(null);
   const [materialFiles, setMaterialFiles] = useState<File[]>([]);
   const [previews, setPreviews] = useState<Record<string, string>>({});
@@ -271,9 +271,7 @@ export default function StudioPage() {
 
   const checkStatus = async (sessionId: string) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/status/${sessionId}`);
-      if (!res.ok) return;
-      const status = await res.json();
+      const status = await getStatus(sessionId);
       setProgress(status.progress * 100);
       if (status.current_step && status.current_step !== statusMsg) setStatusMsg(status.current_step);
       if (status.logs) setLogMessages(status.logs);
@@ -431,7 +429,7 @@ export default function StudioPage() {
               if (clip.original_filename && clip.original_size) {
                 const key = clip.original_filename + clip.original_size;
                 const thumb = clip.thumbnail_url || "";
-                const url = thumb.startsWith("http") ? thumb : `${apiBase}${thumb}`;
+                const url = resolveAssetUrl(thumb);
                 next[key] = url;
               }
             });
@@ -998,7 +996,14 @@ export default function StudioPage() {
                         return (
                           <div key={i} className="aspect-square rounded-xl bg-black border border-white/10 overflow-hidden relative group/item shadow-2xl flex items-center justify-center">
                             {previewUrl ? (
-                              <img src={previewUrl} className="w-full h-full object-cover opacity-90" alt="preview" />
+                              <Image
+                                src={previewUrl}
+                                alt={`Preview of ${file.name}`}
+                                fill
+                                sizes="(max-width: 768px) 25vw, 12vw"
+                                unoptimized
+                                className="object-cover opacity-90"
+                              />
                             ) : isGenerating ? (
                               <div className="flex flex-col items-center justify-center gap-1">
                                 <Video className="h-4 w-4 text-cyan-500 animate-pulse" />

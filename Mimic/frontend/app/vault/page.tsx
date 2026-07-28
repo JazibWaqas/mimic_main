@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef, useMemo } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import Image from "next/image";
 import {
     Sparkles,
     Zap,
@@ -22,7 +23,7 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
-import { api } from "@/lib/api";
+import { api, resolveAssetUrl } from "@/lib/api";
 import type { Result, Reference, Clip, StyleConfig } from "@/lib/types";
 import StylingModal from "@/components/StylingModal";
 import type { TextStyle } from "@/components/StylingModal";
@@ -306,7 +307,6 @@ export default function VaultPage() {
         const withPath = selectedItem as AssetWithPath;
         const path = withPath.path || withPath.filepath || withPath.url || "";
 
-        const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
         const cacheToken = encodeURIComponent(`${viewMode}:${selectedItem.filename}:${selectedItem.size || 0}:${selectedItem.created_at || 0}`);
         const withCacheToken = (url: string) => `${url}${url.includes("?") ? "&" : "?"}v=${cacheToken}`;
 
@@ -317,8 +317,7 @@ export default function VaultPage() {
         }
 
         // Backend assets
-        const fullPath = path.startsWith("/") ? path : `/${path}`;
-        return withCacheToken(`${API_BASE}${fullPath}`);
+        return withCacheToken(resolveAssetUrl(path));
     }, [selectedItem, viewMode]);
 
     const selectedKey = selectedItem?.filename ? `${viewMode}:${selectedItem.filename}` : "";
@@ -445,7 +444,7 @@ export default function VaultPage() {
             {/* ASSET STRIP: Netflix-Style Content Cards */}
             <div className="h-44 sm:h-48 border-b border-white/[0.03] bg-black/10 shrink-0 overflow-hidden relative">
                 <div className="flex gap-3 sm:gap-6 overflow-x-auto p-4 sm:p-6 custom-scrollbar-horizontal no-scrollbar h-full items-center xl:px-12">
-                    {currentModeAssets.map((item) => {
+                    {currentModeAssets.map((item, index) => {
                         const itemKey = `${viewMode}:${item.filename}`;
                         const isSelected = selectedKey === itemKey;
                         return (
@@ -463,14 +462,14 @@ export default function VaultPage() {
                                     )}
                                 >
                                     {item.thumbnail_url ? (
-                                        <img
-                                            src={item.thumbnail_url.startsWith("http") || item.thumbnail_url.startsWith("/demo/")
-                                                ? item.thumbnail_url
-                                                : `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}${item.thumbnail_url.startsWith("/") ? item.thumbnail_url : `/${item.thumbnail_url}`}`}
+                                        <Image
+                                            src={resolveAssetUrl(item.thumbnail_url)}
                                             alt={item.filename}
-                                            loading="lazy"
-                                            decoding="async"
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            sizes="256px"
+                                            unoptimized
+                                            priority={index === 0}
+                                            className="object-cover"
                                         />
                                     ) : (
                                         <div className="w-full h-full flex flex-col items-center justify-center bg-indigo-500/5 gap-2">
@@ -609,9 +608,10 @@ export default function VaultPage() {
                                     >
                                         Refine Edit
                                     </button>
-                                    <button className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-white/10 transition-all active:scale-95"><Share2 className="h-5 w-5" /></button>
+                                    <button aria-label="Share result" className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-white/10 transition-all active:scale-95"><Share2 className="h-5 w-5" /></button>
                                     <button
                                         onClick={() => setIsStylingOpen(true)}
+                                        aria-label="Open styling controls"
                                         disabled={viewMode !== "results" || isStylingLoading}
                                         className={cn(
                                             "h-12 w-12 rounded-2xl bg-white/5 border border-white/10 text-slate-500 flex items-center justify-center hover:bg-white/10 transition-all active:scale-95",

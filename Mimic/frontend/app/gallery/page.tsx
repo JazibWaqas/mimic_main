@@ -18,12 +18,11 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
-import { api } from "@/lib/api";
+import { api, resolveAssetUrl } from "@/lib/api";
 import type { Clip, Reference, Result } from "@/lib/types";
 
 type AssetItem = Clip | Reference | Result;
 
-type ResultLike = Result & { url?: string };
 type ClipLike = Clip & { session_id?: string };
 
 export default function LibraryPage() {
@@ -37,6 +36,7 @@ export default function LibraryPage() {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
+    const [visibleCount, setVisibleCount] = useState(36);
     const scrollRef = useRef<HTMLDivElement>(null);
     const [renamingItem, setRenamingItem] = useState<AssetItem | null>(null);
     const [newName, setNewName] = useState("");
@@ -85,10 +85,23 @@ export default function LibraryPage() {
         setRecentItems(sorted.slice(0, 8)); // First 8 for recent section
     }, [searchQuery, clips, references, results, selectedCategory]);
 
-    const deleteItem = async (sessionId: string, filename: string) => {
-        if (!confirm("Delete this file?")) return;
+    useEffect(() => {
+        setVisibleCount(36);
+    }, [searchQuery, selectedCategory]);
+
+    const deleteItem = async (item: AssetItem) => {
+        const type = getItemType(item);
+        if (type === "Reference") {
+            toast.error("Reference deletion is not available yet");
+            return;
+        }
+        if (!confirm(`Delete ${item.filename}?`)) return;
         try {
-            await api.deleteClip(sessionId, filename);
+            if (type === "Synthesis Output") {
+                await api.deleteResult(item.filename);
+            } else {
+                await api.deleteClip(getSessionId(item), item.filename);
+            }
             fetchAllAssets();
             toast.success("File deleted");
         } catch {
@@ -112,13 +125,12 @@ export default function LibraryPage() {
 
     const getItemType = (item: AssetItem): "Raw Sample" | "Reference" | "Synthesis Output" => {
         if ("session_id" in item) return "Raw Sample";
-        if ("url" in item) return "Synthesis Output";
+        if (results.includes(item as Result)) return "Synthesis Output";
         return "Reference";
     };
 
     const getItemPath = (item: AssetItem): string => {
-        if ("path" in item) return item.path;
-        return (item as ResultLike).url || "";
+        return item.path || "";
     };
 
     const getSessionId = (item: AssetItem): string => {
@@ -133,10 +145,8 @@ export default function LibraryPage() {
     const handleDownload = async (item: AssetItem) => {
         const path = getItemPath(item);
         try {
-            const baseUrl = (path.startsWith("/demo/"))
-                ? ""
-                : (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000");
-            const response = await fetch(`${baseUrl}${path.startsWith("/") ? path : `/${path}`}`);
+            const response = await fetch(resolveAssetUrl(path));
+            if (!response.ok) throw new Error("Download failed");
             const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -174,13 +184,9 @@ export default function LibraryPage() {
 
                 <div className="w-full aspect-video bg-black relative overflow-hidden">
                     <video
-                        src={path.startsWith("http") || path.startsWith("/demo/")
-                            ? path
-                            : `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}${path.startsWith("/") ? path : `/${path}`}`}
+                        src={resolveAssetUrl(path)}
                         poster={item.thumbnail_url
-                            ? (item.thumbnail_url.startsWith("http") || item.thumbnail_url.startsWith("/demo/")
-                                ? item.thumbnail_url
-                                : `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}${item.thumbnail_url.startsWith("/") ? item.thumbnail_url : `/${item.thumbnail_url}`}`)
+                            ? resolveAssetUrl(item.thumbnail_url)
                             : undefined}
                         className="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-opacity duration-300"
                         muted
@@ -214,14 +220,15 @@ export default function LibraryPage() {
                                     className="flex-1 h-6 bg-white/10 border border-white/20 rounded px-2 text-[10px] text-white outline-none focus:border-indigo-500"
                                     autoFocus
                                 />
-                                <button onClick={handleRename} className="h-6 w-6 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all"><Check className="h-3 w-3" /></button>
-                                <button onClick={() => setRenamingItem(null)} className="h-6 w-6 rounded bg-white/5 text-slate-400 flex items-center justify-center hover:bg-white/10 transition-all"><X className="h-3 w-3" /></button>
+                                <button onClick={handleRename} aria-label="Save filename" className="h-6 w-6 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition-all"><Check className="h-3 w-3" /></button>
+                                <button onClick={() => setRenamingItem(null)} aria-label="Cancel rename" className="h-6 w-6 rounded bg-white/5 text-slate-400 flex items-center justify-center hover:bg-white/10 transition-all"><X className="h-3 w-3" /></button>
                             </div>
                         ) : (
                             <div className="flex items-center justify-between group/title mb-1">
                                 <h3 className="text-xs font-bold text-white/90 truncate leading-tight">{item.filename}</h3>
                                 <button
                                     onClick={() => { setRenamingItem(item); setNewName(item.filename); }}
+                                    aria-label={`Rename ${item.filename}`}
                                     className="opacity-0 group-hover/title:opacity-100 p-1 text-slate-500 hover:text-white transition-all"
                                 >
                                     <Pencil className="h-3 w-3" />
@@ -253,13 +260,15 @@ export default function LibraryPage() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                         </button>
-                        <button
-                            onClick={(e) => { e.stopPropagation(); deleteItem(getSessionId(item), item.filename); }}
-                            className="w-8 h-8 flex items-center justify-center bg-white/5 hover:bg-red-500/20 text-slate-600 hover:text-red-400 rounded transition-all border border-white/5"
-                            title="Delete"
-                        >
-                            <Trash2 className="h-3 w-3" />
-                        </button>
+                        {type !== "Reference" && (
+                            <button
+                                onClick={(e) => { e.stopPropagation(); deleteItem(item); }}
+                                className="w-8 h-8 flex items-center justify-center bg-white/5 hover:bg-red-500/20 text-slate-600 hover:text-red-400 rounded transition-all border border-white/5"
+                                title="Delete"
+                            >
+                                <Trash2 className="h-3 w-3" />
+                            </button>
+                        )}
                     </div>
                 </div>
             </Card>
@@ -425,9 +434,21 @@ export default function LibraryPage() {
                             No files found
                         </div>
                     ) : (
-                        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
-                            {allItems.map((item, idx) => renderCard(item, idx))}
-                        </div>
+                        <>
+                            <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
+                                {allItems.slice(0, visibleCount).map((item, idx) => renderCard(item, idx))}
+                            </div>
+                            {visibleCount < allItems.length && (
+                                <div className="mt-8 flex justify-center">
+                                    <button
+                                        onClick={() => setVisibleCount(count => count + 36)}
+                                        className="h-11 rounded-xl border border-indigo-500/30 bg-indigo-500/10 px-8 text-[10px] font-black uppercase tracking-[0.2em] text-indigo-300 transition-colors hover:bg-indigo-500/20 hover:text-white"
+                                    >
+                                        Load more ({allItems.length - visibleCount} remaining)
+                                    </button>
+                                </div>
+                            )}
+                        </>
                     )}
                 </div>
             </section>

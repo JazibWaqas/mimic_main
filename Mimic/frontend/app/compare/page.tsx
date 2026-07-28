@@ -10,6 +10,7 @@ import {
     VolumeX,
     Plus
 } from "lucide-react";
+import { resolveAssetUrl } from "@/lib/api";
 
 export default function ComparePage() {
     const searchParams = useSearchParams();
@@ -21,12 +22,12 @@ export default function ComparePage() {
 
     const refUrl = useMemo(() => {
         const ref = searchParams.get("ref");
-        return ref ? `http://localhost:8000${ref}` : "";
+        return ref ? resolveAssetUrl(ref) : "";
     }, [searchParams]);
 
     const outputUrl = useMemo(() => {
         const output = searchParams.get("output");
-        return output ? `http://localhost:8000${output}` : "";
+        return output ? resolveAssetUrl(output) : "";
     }, [searchParams]);
 
     const togglePlayPause = () => {
@@ -130,6 +131,7 @@ export default function ComparePage() {
                 <div className="flex items-center justify-center gap-6 sm:gap-12">
                     <button
                         onClick={restart}
+                        aria-label="Restart both videos"
                         className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/30 transition-all duration-500"
                     >
                         <RotateCcw className="h-4 w-4" />
@@ -137,6 +139,7 @@ export default function ComparePage() {
 
                     <button
                         onClick={togglePlayPause}
+                        aria-label={isPlaying ? "Pause both videos" : "Play both videos"}
                         className="h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-indigo-500 flex items-center justify-center text-white shadow-[0_0_40px_rgba(99,102,241,0.4)] hover:scale-110 active:scale-95 transition-all duration-500"
                     >
                         {isPlaying ? <Pause className="h-8 w-8 fill-current" /> : <Play className="h-8 w-8 fill-current ml-2" />}
@@ -144,6 +147,7 @@ export default function ComparePage() {
 
                     <button
                         onClick={toggleMute}
+                        aria-label={isMuted ? "Unmute both videos" : "Mute both videos"}
                         className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/30 transition-all duration-500"
                     >
                         {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}

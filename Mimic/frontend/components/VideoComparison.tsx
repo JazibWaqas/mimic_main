@@ -43,14 +43,22 @@ export function VideoComparison({ referenceUrl, outputUrl }: VideoComparisonProp
             <h3 className="font-semibold">📹 Reference Structure</h3>
           </div>
           <div className="relative aspect-video bg-black rounded-lg overflow-hidden border border-border">
-            <video
-              ref={refVideoRef}
-              src={referenceUrl}
-              className="w-full h-full"
-              onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
-              onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
-              controls={false}
-            />
+            {referenceUrl ? (
+              <video
+                ref={refVideoRef}
+                src={referenceUrl}
+                className="w-full h-full"
+                onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
+                onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+                controls={false}
+                preload="metadata"
+                playsInline
+              />
+            ) : (
+              <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+                Reference preview unavailable
+              </div>
+            )}
           </div>
         </div>
 
@@ -59,7 +67,20 @@ export function VideoComparison({ referenceUrl, outputUrl }: VideoComparisonProp
             <h3 className="font-semibold">✨ Your Generated Video</h3>
           </div>
           <div className="relative aspect-video bg-black rounded-lg overflow-hidden border border-border">
-            <video ref={outputVideoRef} src={outputUrl} className="w-full h-full" controls={false} />
+            {outputUrl ? (
+              <video
+                ref={outputVideoRef}
+                src={outputUrl}
+                className="w-full h-full"
+                controls={false}
+                preload="metadata"
+                playsInline
+              />
+            ) : (
+              <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+                Output preview unavailable
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -81,6 +102,7 @@ export function VideoComparison({ referenceUrl, outputUrl }: VideoComparisonProp
 
         <div className="w-full max-w-xl">
           <input
+            aria-label="Video playback position"
             type="range"
             min={0}
             max={duration || 0}

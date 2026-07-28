@@ -11,6 +11,7 @@ import { getDownloadUrl, getStatus } from "@/lib/api";
 export default function ResultPage({ params }: { params: Promise<{ id: string }> }) {
   const { id: sessionId } = use(params);
   const [status, setStatus] = useState<unknown>(null);
+  const [statusError, setStatusError] = useState("");
 
   type StatusLike = {
     blueprint?: unknown;
@@ -19,8 +20,12 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
   useEffect(() => {
     let cancelled = false;
     async function load() {
-      const s = await getStatus(sessionId);
-      if (!cancelled) setStatus(s);
+      try {
+        const s = await getStatus(sessionId);
+        if (!cancelled) setStatus(s);
+      } catch {
+        if (!cancelled) setStatusError("This session could not be loaded.");
+      }
     }
     load();
     return () => {
@@ -42,21 +47,25 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
       <div className="mx-auto max-w-6xl px-6 py-12 space-y-8">
         <div className="flex items-center justify-between">
           <div className="space-y-1">
-            <h1 className="text-3xl font-bold tracking-tight">Your Video is Ready</h1>
+            <h1 className="text-3xl font-bold tracking-tight">
+              {statusError ? "Video unavailable" : "Your Video is Ready"}
+            </h1>
             <p className="text-muted-foreground">Session: {sessionId}</p>
           </div>
           <div className="flex items-center gap-3">
-            <Button asChild>
-              <a href={outputUrl}>Download</a>
-            </Button>
+            {!statusError && (
+              <Button asChild>
+                <a href={outputUrl}>Download</a>
+              </Button>
+            )}
             <Button asChild variant="secondary">
-              <Link href="/upload">New Project</Link>
+              <Link href="/">New Project</Link>
             </Button>
           </div>
         </div>
 
         <Card className="bg-card border-border p-6 space-y-6">
-          <VideoComparison referenceUrl={referenceUrl} outputUrl={outputUrl} />
+          <VideoComparison referenceUrl={referenceUrl} outputUrl={statusError ? "" : outputUrl} />
         </Card>
 
         <Card className="bg-card border-border p-6 space-y-4">
@@ -68,7 +77,9 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
           </div>
           <Separator />
           <pre className="text-xs whitespace-pre-wrap text-muted-foreground">
-            {status
+            {statusError
+              ? statusError
+              : status
               ? JSON.stringify(((status as StatusLike).blueprint ?? status), null, 2)
               : "Loading..."}
           </pre>

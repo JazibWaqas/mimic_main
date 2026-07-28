@@ -7,8 +7,13 @@
 
 import type { StyleConfig } from "@/lib/types";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+export const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/+$/, "");
 const IS_DEMO = process.env.NEXT_PUBLIC_DEMO_MODE === "true";
+
+export const resolveAssetUrl = (path: string) => {
+  if (!path || /^(https?:|blob:|data:)/.test(path) || path.startsWith("/demo/")) return path;
+  return `${API_BASE}${path.startsWith("/") ? path : `/${path}`}`;
+};
 
 const intelCache = new Map<string, unknown>();
 const INTEL_CACHE_LIMIT = 40;
@@ -97,7 +102,10 @@ export const getDownloadUrl = (sessionId: string) => {
 
 export const getWebSocketUrl = (sessionId: string) => {
   if (IS_DEMO) return ""; // No WS in demo
-  return `ws://localhost:8000/ws/progress/${encodeURIComponent(sessionId)}`;
+  const websocketBase = API_BASE.startsWith("https://")
+    ? API_BASE.replace(/^https:/, "wss:")
+    : API_BASE.replace(/^http:/, "ws:");
+  return `${websocketBase}/ws/progress/${encodeURIComponent(sessionId)}`;
 };
 
 export const getHistory = async () => {
@@ -207,8 +215,8 @@ export const api = {
   },
 
   connectProgress: (sessionId: string) => {
-    if (IS_DEMO) return null;
-    return new WebSocket(`ws://localhost:8000/ws/progress/${sessionId}`);
+    const url = getWebSocketUrl(sessionId);
+    return url ? new WebSocket(url) : null;
   },
 
   fetchClips: async () => {

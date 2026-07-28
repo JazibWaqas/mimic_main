@@ -71,10 +71,10 @@ export function Header() {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-3 p-1.5 sm:p-2 lg:px-6 rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/10 hover:bg-white/10 transition-colors cursor-pointer group shadow-2xl">
+                    <div className="flex items-center gap-3 p-1.5 sm:p-2 lg:px-6 rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/10 transition-colors cursor-default group shadow-2xl">
                         <div className="hidden lg:flex flex-col items-end">
                             <span className="text-[11px] font-black text-white uppercase tracking-tight">Jazib Waqas</span>
-                            <span className="text-[9px] font-bold text-indigo-400 uppercase tracking-widest leading-none mt-1">Pro Account</span>
+                            <span className="text-[9px] font-bold text-indigo-400 uppercase tracking-widest leading-none mt-1">Public Portfolio</span>
                         </div>
                         <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg sm:rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center group-hover:bg-indigo-500 group-hover:text-white transition-all">
                             <UserCircle className="h-5 w-5 sm:h-6 sm:w-6 text-indigo-400 group-hover:text-white" />

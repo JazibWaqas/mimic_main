@@ -19,10 +19,8 @@ export default function GeneratePage({ params }: { params: Promise<{ id: string 
       if (started || !sessionId || sessionId === "undefined") return;
       setStarted(true);
       try {
-        const result = await generateVideo(sessionId);
-        console.log("Generation started:", result);
+        await generateVideo(sessionId);
       } catch (e: unknown) {
-        console.error("Failed to start generation:", e);
         // Don't reset started - prevent infinite retry loop
         const msg = e instanceof Error ? e.message : "Failed to start generation. Please try uploading again.";
         toast.error(msg);
@@ -61,7 +59,7 @@ export default function GeneratePage({ params }: { params: Promise<{ id: string 
     <main className="min-h-screen bg-background">
       <div className="mx-auto max-w-3xl px-6 py-16 space-y-10">
         <div className="flex items-center justify-end">
-          <Button variant="secondary" onClick={() => router.push("/upload")}>
+          <Button variant="secondary" onClick={() => router.push("/")}>
             Cancel
           </Button>
         </div>
