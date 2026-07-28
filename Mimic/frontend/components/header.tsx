@@ -15,23 +15,23 @@ export function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="w-full z-50 py-4 px-6 md:px-12 bg-transparent">
-            <div className="max-w-[1700px] mx-auto flex items-center justify-between">
+        <header className="w-full z-50 py-3 sm:py-4 px-4 sm:px-6 lg:px-12 bg-transparent">
+            <div className="max-w-[1700px] mx-auto flex flex-wrap items-center justify-between gap-y-3">
                 <div className="flex items-center gap-6">
-                    <Link href="/" className="flex items-center gap-4 group">
-                        <div className="h-12 w-12 bg-indigo-500 border border-white/20 rounded-2xl flex items-center justify-center shadow-[0_0_30px_rgba(99,102,241,0.4)] transition-all duration-500 group-hover:rotate-12 group-hover:scale-110">
-                            <Wand2 className="h-6 w-6 text-white" />
+                    <Link href="/" className="flex items-center gap-3 sm:gap-4 group">
+                        <div className="h-10 w-10 sm:h-12 sm:w-12 bg-indigo-500 border border-white/20 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-[0_0_30px_rgba(99,102,241,0.4)] transition-all duration-500 group-hover:rotate-12 group-hover:scale-110">
+                            <Wand2 className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-2xl font-black tracking-tighter text-white leading-none">MIMIC</span>
-                            <span className="text-[11px] font-black tracking-[0.2em] text-indigo-400 mt-1 uppercase">Smart Editor</span>
+                            <span className="text-xl sm:text-2xl font-black tracking-tighter text-white leading-none">MIMIC</span>
+                            <span className="text-[9px] sm:text-[11px] font-black tracking-[0.16em] sm:tracking-[0.2em] text-indigo-400 mt-1 uppercase">Smart Editor</span>
                         </div>
                     </Link>
 
                 </div>
 
                 {/* Navigation - High Visibility */}
-                <nav className="flex items-center gap-12">
+                <nav className="order-3 flex w-full items-center justify-around gap-1 border-t border-white/5 pt-3 md:order-none md:w-auto md:justify-center md:gap-6 md:border-0 md:pt-0 lg:gap-12">
                     {navItems.map((item) => {
                         const isActive = pathname === item.href;
                         const Icon = item.icon;
@@ -40,7 +40,7 @@ export function Header() {
                                 key={item.href}
                                 href={item.href}
                                 className={cn(
-                                    "relative flex items-center gap-3 text-[14px] font-black uppercase tracking-[0.2em] transition-all duration-300 group py-1",
+                                    "relative flex items-center gap-2 px-2 text-[10px] sm:text-[11px] lg:text-[14px] font-black uppercase tracking-[0.12em] lg:tracking-[0.2em] transition-all duration-300 group py-1",
                                     isActive ? "text-white" : "text-slate-400 hover:text-white"
                                 )}
                             >
@@ -56,7 +56,7 @@ export function Header() {
                 </nav>
 
                 {/* Account Section - Premium Indigo */}
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-3 lg:gap-6">
                     {/* Status Info (Studio Only or Global) */}
                     <div className="hidden xl:flex items-center gap-6 border-r border-white/5 pr-6">
                         <div className="flex flex-col items-end gap-1">
@@ -71,13 +71,13 @@ export function Header() {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-4 py-2 px-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:bg-white/10 transition-colors cursor-pointer group shadow-2xl">
-                        <div className="flex flex-col items-end">
+                    <div className="flex items-center gap-3 p-1.5 sm:p-2 lg:px-6 rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/10 hover:bg-white/10 transition-colors cursor-pointer group shadow-2xl">
+                        <div className="hidden lg:flex flex-col items-end">
                             <span className="text-[11px] font-black text-white uppercase tracking-tight">Jazib Waqas</span>
                             <span className="text-[9px] font-bold text-indigo-400 uppercase tracking-widest leading-none mt-1">Pro Account</span>
                         </div>
-                        <div className="h-10 w-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center group-hover:bg-indigo-500 group-hover:text-white transition-all">
-                            <UserCircle className="h-6 w-6 text-indigo-400 group-hover:text-white" />
+                        <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg sm:rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                            <UserCircle className="h-5 w-5 sm:h-6 sm:w-6 text-indigo-400 group-hover:text-white" />
                         </div>
                     </div>
                 </div>

@@ -267,21 +267,21 @@ export default function LibraryPage() {
     };
 
     return (
-        <div className="min-h-[calc(100vh-80px)] flex flex-col mx-auto max-w-7xl px-6 pt-6 pb-12">
+        <div className="min-h-[calc(100vh-80px)] flex flex-col mx-auto max-w-7xl px-4 sm:px-6 pt-6 pb-12">
             {/* Header - Compact */}
             <div className="flex flex-col gap-6 mb-8">
-                <div className="flex items-center justify-between border-b border-white/10 pb-6">
-                    <div className="space-y-2">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-b border-white/10 pb-6">
+                    <div className="space-y-2 min-w-0">
                         <div className="flex items-center gap-3">
                             <div className="h-8 w-8 rounded-lg bg-indigo-600 flex items-center justify-center">
                                 <Database className="h-4 w-4 text-white" />
                             </div>
                             <h1 className="text-2xl font-bold text-white">Library</h1>
                         </div>
-                        <p className="text-xs text-slate-500">Compressed asset index with real-time access to synchronized data</p>
+                        <p className="text-xs text-slate-500 max-w-xl">Compressed asset index with real-time access to synchronized data</p>
                     </div>
 
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 self-start sm:self-auto">
                         <div className="px-4 py-2 rounded-lg bg-white/[0.03] border border-white/10 flex items-center gap-3">
                             <div className="text-right">
                                 <p className="text-2xs font-medium text-slate-500 uppercase">Total Assets</p>
@@ -304,10 +304,10 @@ export default function LibraryPage() {
                         />
                     </div>
 
-                    <div className="relative">
+                    <div className="relative shrink-0">
                         <button
                             onClick={() => setIsFilterModalOpen(true)}
-                            className="h-10 px-6 bg-indigo-500/20 hover:bg-indigo-500 border border-indigo-500/30 text-indigo-400 hover:text-white rounded-lg text-xs font-black uppercase tracking-widest transition-all flex items-center gap-3 group"
+                            className="h-10 px-4 sm:px-6 bg-indigo-500/20 hover:bg-indigo-500 border border-indigo-500/30 text-indigo-400 hover:text-white rounded-lg text-xs font-black uppercase tracking-widest transition-all flex items-center gap-2 sm:gap-3 group"
                         >
                             <Plus className="h-4 w-4 transition-transform group-hover:rotate-90" />
                             <span>Filters</span>
@@ -318,13 +318,13 @@ export default function LibraryPage() {
 
             {/* Filter Modal */}
             {isFilterModalOpen && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 animate-in fade-in duration-300">
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-300">
                     <div className="absolute inset-0 bg-black/60 backdrop-blur-md" onClick={() => setIsFilterModalOpen(false)} />
-                    <div className="relative w-full max-w-[500px] bg-[#0b0d14]/90 backdrop-blur-2xl rounded-3xl p-8 border border-white/10 shadow-[0_40px_100px_rgba(0,0,0,0.8)]">
-                        <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/5 relative z-10">
+                    <div className="relative w-full max-w-[500px] max-h-[calc(100vh-1.5rem)] overflow-y-auto custom-scrollbar bg-[#0b0d14]/90 backdrop-blur-2xl rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-white/10 shadow-[0_40px_100px_rgba(0,0,0,0.8)]">
+                        <div className="flex items-center justify-between gap-3 mb-6 sm:mb-8 pb-4 border-b border-white/5 relative z-10">
                             <div className="flex items-center gap-3">
                                 <Plus className="h-5 w-5 text-indigo-400" />
-                                <h3 className="text-xl font-black text-white uppercase tracking-tighter">Advanced Filters</h3>
+                                <h3 className="text-lg sm:text-xl font-black text-white uppercase tracking-tighter">Advanced Filters</h3>
                             </div>
                             <button onClick={() => setIsFilterModalOpen(false)} className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white transition-all border border-white/5">
                                 <X className="h-5 w-5" />
@@ -334,7 +334,7 @@ export default function LibraryPage() {
                         <div className="space-y-8 relative z-10">
                             <div className="space-y-4">
                                 <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Select Sources</p>
-                                <div className="grid grid-cols-2 gap-3">
+                                <div className="grid grid-cols-1 min-[380px]:grid-cols-2 gap-3">
                                     {[
                                         { id: null, label: 'All Sources' },
                                         { id: 'raw_samples', label: 'Raw Samples' },
@@ -360,7 +360,7 @@ export default function LibraryPage() {
 
                             <div className="space-y-4">
                                 <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Energy & Content</p>
-                                <div className="grid grid-cols-2 gap-3">
+                                <div className="grid grid-cols-1 min-[380px]:grid-cols-2 gap-3">
                                     {['High Energy', 'Cinematic', 'Fast Cuts', 'Slow Motion', 'Color Graded', 'Raw'].map((tag) => (
                                         <label key={tag} className="flex items-center gap-3 p-3.5 rounded-xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.08] transition-all cursor-pointer group">
                                             <div className="h-4 w-4 rounded border border-white/20 flex items-center justify-center group-hover:border-indigo-400 transition-all">
@@ -375,7 +375,7 @@ export default function LibraryPage() {
 
                         <button
                             onClick={() => setIsFilterModalOpen(false)}
-                            className="w-full mt-10 h-14 bg-indigo-500 text-white rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-xl"
+                            className="w-full mt-8 sm:mt-10 h-12 sm:h-14 bg-indigo-500 text-white rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-xl"
                         >
                             Apply Parameters
                         </button>
@@ -403,7 +403,7 @@ export default function LibraryPage() {
                         </div>
                     ) : (
                         recentItems.slice(0, 5).map((item, idx) => (
-                            <div key={idx} className="min-w-[300px] snap-start">
+                            <div key={idx} className="min-w-[min(300px,calc(100vw-3rem))] snap-start">
                                 {renderCard(item, idx)}
                             </div>
                         ))

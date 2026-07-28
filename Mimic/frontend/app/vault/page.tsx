@@ -402,10 +402,10 @@ export default function VaultPage() {
     );
 
     return (
-        <div className="min-h-screen bg-[#08090a] text-slate-100 flex flex-col overflow-hidden">
+        <div className="min-h-screen bg-[#08090a] text-slate-100 flex flex-col overflow-x-hidden xl:overflow-hidden">
 
             {/* STAGE HEADER: Netflix-Deep Glass */}
-            <header className="h-14 flex items-center justify-between px-12 bg-[#08090a]/80 backdrop-blur-2xl border-b border-white/[0.03] shrink-0 z-[100]">
+            <header className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 xl:h-14 xl:flex-nowrap xl:px-12 xl:py-0 bg-[#08090a]/80 backdrop-blur-2xl border-b border-white/[0.03] shrink-0 z-[100]">
                 <div className="flex items-center gap-6">
                     <div className="flex items-center gap-2">
                         <div className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_#10b981]" />
@@ -413,7 +413,7 @@ export default function VaultPage() {
                     </div>
                 </div>
 
-                <div className="flex-1 max-w-lg mx-auto">
+                <div className="order-3 w-full xl:order-none xl:flex-1 xl:max-w-lg xl:mx-auto">
                     <div className="relative group">
                         <div className="absolute inset-0 bg-white/[0.03] backdrop-blur-3xl rounded-3xl border border-white/5 group-focus-within:border-indigo-500/20 group-focus-within:bg-white/[0.05] transition-all duration-700" />
                         <input
@@ -426,13 +426,13 @@ export default function VaultPage() {
                     </div>
                 </div>
 
-                <nav className="flex items-center bg-white/5 p-1 rounded-xl border border-white/10 shrink-0">
+                <nav className="flex max-w-[calc(100vw-6rem)] items-center overflow-x-auto no-scrollbar bg-white/5 p-1 rounded-xl border border-white/10 shrink-0">
                     {(["results", "references", "clips"] as ViewMode[]).map(mode => (
                         <button
                             key={mode}
                             onClick={() => handleModeChange(mode)}
                             className={cn(
-                                "px-5 py-1.5 rounded-lg text-[9px] font-black uppercase tracking-widest transition-all",
+                                "px-3 sm:px-5 py-1.5 rounded-lg text-[8px] sm:text-[9px] font-black uppercase tracking-wider sm:tracking-widest transition-all",
                                 viewMode === mode ? "text-white bg-indigo-600 shadow-lg shadow-indigo-600/20" : "text-slate-500 hover:text-slate-300"
                             )}
                         >
@@ -443,8 +443,8 @@ export default function VaultPage() {
             </header>
 
             {/* ASSET STRIP: Netflix-Style Content Cards */}
-            <div className="h-48 border-b border-white/[0.03] bg-black/10 shrink-0 overflow-hidden relative">
-                <div className="flex gap-6 overflow-x-auto p-6 custom-scrollbar-horizontal no-scrollbar h-full items-center px-12">
+            <div className="h-44 sm:h-48 border-b border-white/[0.03] bg-black/10 shrink-0 overflow-hidden relative">
+                <div className="flex gap-3 sm:gap-6 overflow-x-auto p-4 sm:p-6 custom-scrollbar-horizontal no-scrollbar h-full items-center xl:px-12">
                     {currentModeAssets.map((item) => {
                         const itemKey = `${viewMode}:${item.filename}`;
                         const isSelected = selectedKey === itemKey;
@@ -452,7 +452,7 @@ export default function VaultPage() {
                             <div
                                 key={itemKey}
                                 onClick={() => selectAsset(item)}
-                                className="shrink-0 w-64 group/item cursor-pointer"
+                                className="shrink-0 w-[min(16rem,calc(100vw-2rem))] group/item cursor-pointer"
                             >
                                 <div
                                     className={cn(
@@ -502,16 +502,16 @@ export default function VaultPage() {
             </div>
 
             {/* WORKBENCH: Dense Two-Column Stage */}
-            <main className="flex-1 flex overflow-hidden">
-                <div className="flex-1 flex flex-col overflow-y-auto custom-scrollbar p-12">
+            <main className="flex-1 flex overflow-visible xl:overflow-hidden">
+                <div className="flex-1 flex flex-col overflow-visible xl:overflow-y-auto custom-scrollbar p-4 sm:p-6 xl:p-12">
 
-                    <div className="max-w-[1500px] mx-auto w-full flex gap-10 items-start">
+                    <div className="max-w-[1500px] mx-auto w-full flex flex-col xl:flex-row gap-6 xl:gap-10 items-start">
 
                         {/* LEFT: Video Stage (Increased height for cinematic feel) */}
                         <div className="flex-1 flex flex-col gap-6 min-w-0 -mt-4">
-                            <div className={cn("relative mx-auto group transition-all duration-300", mobileView ? "w-[420px] max-w-[420px]" : "w-full max-w-[640px]")}>
+                            <div className={cn("relative mx-auto group transition-all duration-300", mobileView ? "w-full sm:w-[420px] max-w-[420px]" : "w-full max-w-[640px]")}>
                                 <div className={cn("video-aura", isPlaying && "video-aura-active animate-pulse-vibrant")} />
-                                <div className={cn("relative rounded-[2.5rem] overflow-hidden bg-black shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10 group-hover:border-indigo-500/30 transition-all duration-700", mobileView ? "w-[420px] h-[630px]" : "aspect-[15/14]")}>
+                                <div className={cn("relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden bg-black shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10 group-hover:border-indigo-500/30 transition-all duration-700", mobileView ? "w-full aspect-[2/3]" : "aspect-[15/14]")}>
                                     {selectedItem ? (
                                         <video
                                             key={selectedKey}
@@ -569,10 +569,10 @@ export default function VaultPage() {
                             </div>
 
                             {/* Info & Secondary Controls */}
-                            <div className={cn("mx-auto flex items-center justify-between px-4", mobileView ? "w-[420px] max-w-[420px]" : "w-full max-w-[640px]")}>
-                                <div className="space-y-1">
+                            <div className={cn("mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:px-4", mobileView ? "w-full sm:w-[420px] max-w-[420px]" : "w-full max-w-[640px]")}>
+                                <div className="space-y-1 min-w-0">
                                     <div className="flex flex-col gap-1">
-                                        <span className="text-2xl font-black text-white uppercase tracking-tighter italic drop-shadow-sm">{selectedItem?.filename.replace(/\.[^/.]+$/, "") || "UNTITLED"}</span>
+                                        <span className="break-words text-xl sm:text-2xl font-black text-white uppercase tracking-tighter italic drop-shadow-sm">{selectedItem?.filename.replace(/\.[^/.]+$/, "") || "UNTITLED"}</span>
                                     </div>
                                     <div className="flex items-center gap-5 opacity-50">
                                         <div className="flex items-center gap-2"><Clock className="h-3.5 w-3.5" /><span className="text-[10px] font-bold uppercase tracking-wider">{duration.toFixed(1)}s</span></div>
@@ -584,7 +584,7 @@ export default function VaultPage() {
                                         </div>
                                     )}
                                 </div>
-                                <div className="flex gap-3">
+                                <div className="flex w-full flex-wrap gap-2 sm:w-auto sm:flex-nowrap sm:gap-3">
                                     <button
                                         onClick={() => setMobileView(!mobileView)}
                                         className={cn(
@@ -625,11 +625,11 @@ export default function VaultPage() {
                         </div>
 
                         {/* RIGHT COLUMN: DECISION STREAM */}
-                        <div className="w-[420px] flex flex-col gap-6 shrink-0">
+                        <div className="w-full xl:w-[420px] flex flex-col gap-6 shrink-0">
 
                             {/* DECISION STREAM: THE WHITEBOX */}
-                            <div className="flex flex-col bg-gradient-to-b from-white/[0.02] to-transparent border border-white/[0.05] rounded-[2.5rem] overflow-hidden shadow-2xl" style={{ height: '630px' }}>
-                                <div className="p-7 border-b border-white/[0.05] flex items-center justify-between bg-black/20 backdrop-blur-md">
+                            <div className="flex h-[560px] sm:h-[630px] flex-col bg-gradient-to-b from-white/[0.02] to-transparent border border-white/[0.05] rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl">
+                                <div className="p-4 sm:p-7 border-b border-white/[0.05] flex flex-wrap items-center justify-between gap-3 bg-black/20 backdrop-blur-md">
                                     <div className="flex items-center gap-4">
                                         <div className="h-2 w-2 rounded-full bg-indigo-500 shadow-[0_0_10px_#6366f1]" />
                                         <h3 className="text-[11px] font-black text-white uppercase tracking-[0.4em]">Decision Stream</h3>
@@ -659,7 +659,7 @@ export default function VaultPage() {
                                     </div>
                                 </div>
 
-                                <div ref={decisionListRef} className="flex-1 overflow-y-auto p-7 space-y-4 custom-scrollbar-thin">
+                                <div ref={decisionListRef} className="flex-1 overflow-y-auto p-4 sm:p-7 space-y-4 custom-scrollbar-thin">
                                     {!displayDecisions.length ? (
                                         <div className="h-full flex flex-col items-center justify-center opacity-20 text-center px-12">
                                             <Zap className="h-10 w-10 mb-6 text-indigo-500" />
@@ -684,18 +684,18 @@ export default function VaultPage() {
                                                         className={cn(
                                                             "transition-all duration-300 relative group/card cursor-pointer",
                                                             isKeyDecision ? (
-                                                                "p-6 rounded-[1.25rem] bg-gradient-to-b from-white/[0.04] to-white/[0.015] border-[rgba(130,140,255,0.15)] shadow-[0_0_40px_rgba(120,130,255,0.08)] border-l-2 border-[rgba(59,130,246,0.6)]"
+                                                                "p-4 sm:p-6 rounded-[1.25rem] bg-gradient-to-b from-white/[0.04] to-white/[0.015] border-[rgba(130,140,255,0.15)] shadow-[0_0_40px_rgba(120,130,255,0.08)] border-l-2 border-[rgba(59,130,246,0.6)]"
                                                             ) : (
                                                                 "p-4 rounded-[1rem] bg-gradient-to-b from-white/[0.02] to-white/[0.01] border-white/[0.1] shadow-[0_0_20px_rgba(120,130,255,0.04)]"
                                                             ),
                                                             isActive
-                                                                ? "scale-[1.05] z-20 border-2 border-indigo-400 shadow-[0_0_100px_rgba(99,102,241,0.4)] bg-gradient-to-b from-indigo-500/10 to-indigo-500/5 animate-pulse"
+                                                                ? "xl:scale-[1.05] z-20 border-2 border-indigo-400 shadow-[0_0_100px_rgba(99,102,241,0.4)] bg-gradient-to-b from-indigo-500/10 to-indigo-500/5 animate-pulse"
                                                                 : isKeyDecision
                                                                     ? "opacity-90 hover:opacity-100 hover:-translate-y-0.5 hover:shadow-[0_0_60px_rgba(120,130,255,0.15)]"
                                                                     : "opacity-60 hover:opacity-80 hover:-translate-y-0.5"
                                                         )}
                                                     >
-                                                        <div className="flex items-center justify-between mb-3">
+                                                        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-3">
                                                             <div className="flex items-center gap-3">
                                                                 <span className={cn(
                                                                     "font-mono tracking-[0.12em]",
@@ -811,7 +811,7 @@ export default function VaultPage() {
                     </div>
 
                     {/* LOWER HALF: Two-column Intelligence Grid */}
-                    <div className="max-w-[1500px] mx-auto w-full mt-2 grid grid-cols-[60%_40%] gap-6">
+                    <div className="max-w-[1500px] mx-auto w-full mt-2 grid grid-cols-1 xl:grid-cols-[minmax(0,60%)_minmax(0,40%)] gap-6">
 
                         {/* LEFT COLUMN: Intelligence Stack */}
                         <div className="space-y-4">

@@ -71,10 +71,10 @@ export default function StylingModal({
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center p-6 sm:p-12">
+        <div className="fixed inset-0 z-[200] flex items-center justify-center p-3 sm:p-12">
             <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
 
-            <div className="relative w-full max-w-2xl bg-[#0d1017] border border-white/10 rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+            <div className="relative w-full max-w-2xl bg-[#0d1017] border border-white/10 rounded-2xl sm:rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col max-h-[calc(100vh-1.5rem)] sm:max-h-[90vh]">
                 {/* Header */}
                 <div className="p-8 border-b border-white/5 flex items-center justify-between bg-black/20">
                     <div className="flex items-center gap-4">
@@ -91,7 +91,7 @@ export default function StylingModal({
                     </button>
                 </div>
 
-                <div className="flex-1 overflow-y-auto p-8 space-y-8 custom-scrollbar">
+                <div className="flex-1 overflow-y-auto p-4 sm:p-8 space-y-6 sm:space-y-8 custom-scrollbar">
 
                     {/* Caption */}
                     <section className="space-y-3">
@@ -131,7 +131,7 @@ export default function StylingModal({
                     {/* Font picker */}
                     <section className="space-y-3">
                         <p className="text-[9px] font-bold text-slate-600 uppercase tracking-widest">Font</p>
-                        <div className="grid grid-cols-3 gap-2">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                             {FONTS.map(f => (
                                 <button
                                     key={f.key}

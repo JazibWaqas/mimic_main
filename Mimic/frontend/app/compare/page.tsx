@@ -61,23 +61,23 @@ export default function ComparePage() {
     };
 
     return (
-        <div className="pt-32 p-10 max-w-[1400px] mx-auto mimic-fade-in pb-40">
-            <header className="mb-20">
-                <div className="inline-flex items-center gap-4 px-4 py-1.5 rounded-xl glass-indigo border-indigo-500/20 mb-6">
+        <div className="px-4 pt-12 sm:px-6 sm:pt-20 lg:p-10 lg:pt-32 max-w-[1400px] mx-auto mimic-fade-in pb-20 sm:pb-40">
+            <header className="mb-12 sm:mb-20">
+                <div className="inline-flex items-center gap-3 px-3 sm:px-4 py-1.5 rounded-xl glass-indigo border-indigo-500/20 mb-6">
                     <Plus className="h-3 w-3 text-indigo-400 rotate-45" />
-                    <span className="text-[9px] font-black uppercase tracking-[0.4em] text-indigo-300">Side-by-Side Diagnostic</span>
+                    <span className="text-[8px] sm:text-[9px] font-black uppercase tracking-[0.22em] sm:tracking-[0.4em] text-indigo-300">Side-by-Side Diagnostic</span>
                 </div>
-                <h1 className="text-6xl font-black uppercase tracking-tighter">
+                <h1 className="text-[clamp(2.5rem,12vw,3.75rem)] leading-[0.95] font-black uppercase tracking-tighter">
                     <span className="shiny-text">NEURAL.</span> <br />
                     <span className="text-white/95">COMPARISON.</span>
                 </h1>
             </header>
 
-            <div className="grid lg:grid-cols-2 gap-10 mb-20">
+            <div className="grid lg:grid-cols-2 gap-10 mb-12 sm:mb-20">
                 {/* Reference Module */}
                 <div className="space-y-6">
-                    <div className="flex items-center justify-between px-2">
-                        <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-indigo-400">Structural Blueprint</h2>
+                    <div className="flex items-center justify-between gap-3 px-2">
+                        <h2 className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.25em] sm:tracking-[0.4em] text-indigo-400">Structural Blueprint</h2>
                         <span className="text-[9px] font-bold text-slate-500 uppercase tracking-[0.2em]">Source DNA</span>
                     </div>
                     <div className="aspect-video bg-black rounded-3xl overflow-hidden glass-indigo border-indigo-500/30 relative">
@@ -101,8 +101,8 @@ export default function ComparePage() {
 
                 {/* Output Module */}
                 <div className="space-y-6">
-                    <div className="flex items-center justify-between px-2">
-                        <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-cyan-400">Synthesized Master</h2>
+                    <div className="flex items-center justify-between gap-3 px-2">
+                        <h2 className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.25em] sm:tracking-[0.4em] text-cyan-400">Synthesized Master</h2>
                         <span className="text-[9px] font-bold text-slate-500 uppercase tracking-[0.2em]">Neural Output</span>
                     </div>
                     <div className="aspect-video bg-black rounded-3xl overflow-hidden glass-cyan border-cyan-500/30 relative">
@@ -126,8 +126,8 @@ export default function ComparePage() {
             </div>
 
             {/* Global Playback Terminal */}
-            <div className="glass rounded-[2rem] p-10 border-white/5 flex flex-col items-center gap-10">
-                <div className="flex items-center justify-center gap-12">
+            <div className="glass rounded-[2rem] p-5 sm:p-10 border-white/5 flex flex-col items-center gap-8 sm:gap-10">
+                <div className="flex items-center justify-center gap-6 sm:gap-12">
                     <button
                         onClick={restart}
                         className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/30 transition-all duration-500"
@@ -137,7 +137,7 @@ export default function ComparePage() {
 
                     <button
                         onClick={togglePlayPause}
-                        className="h-24 w-24 rounded-full bg-indigo-500 flex items-center justify-center text-white shadow-[0_0_40px_rgba(99,102,241,0.4)] hover:scale-110 active:scale-95 transition-all duration-500"
+                        className="h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-indigo-500 flex items-center justify-center text-white shadow-[0_0_40px_rgba(99,102,241,0.4)] hover:scale-110 active:scale-95 transition-all duration-500"
                     >
                         {isPlaying ? <Pause className="h-8 w-8 fill-current" /> : <Play className="h-8 w-8 fill-current ml-2" />}
                     </button>
@@ -150,9 +150,9 @@ export default function ComparePage() {
                     </button>
                 </div>
 
-                <div className="h-[2px] w-64 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+                <div className="h-[2px] w-full max-w-64 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-                <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600">Synchronized Playback Matrix // Active</p>
+                <p className="text-center text-[9px] sm:text-[10px] font-black uppercase tracking-[0.25em] sm:tracking-[0.4em] text-slate-600">Synchronized Playback Matrix // Active</p>
             </div>
         </div>
     );

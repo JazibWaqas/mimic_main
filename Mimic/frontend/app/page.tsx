@@ -518,7 +518,7 @@ export default function StudioPage() {
 
   return (
     <div className="min-h-screen bg-[#020306] overflow-x-hidden pt-4 pb-24">
-      <div className="max-w-[1700px] mx-auto px-6 md:px-12 relative transition-all duration-700">
+      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 md:px-12 relative transition-all duration-700">
 
         {/* Hero Section - More Compact */}
         <div className="shrink-0 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-white/10">
@@ -566,12 +566,12 @@ export default function StudioPage() {
         </div>
 
         {/* Glass Content Interface - Added significant margin top */}
-        <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12 mt-12">
+        <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-6 lg:gap-12 mt-8 sm:mt-12">
           <div className="space-y-12">
 
             {/* 01. Style Binding - Unified Toggle Interface */}
             <div className="space-y-5">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-3">
                   <div className={cn(
                     "h-1.5 w-1.5 rounded-full shadow-[0_0_12px_rgba(99,102,241,1)]",
@@ -604,7 +604,7 @@ export default function StudioPage() {
               </div>
 
               {/* Unified input box - Grid stacked layers for smooth transition */}
-              <div className="relative grid grid-cols-1 grid-rows-1 min-h-[420px] rounded-2xl border border-white/10 bg-white/[0.02] overflow-hidden">
+              <div className="relative grid grid-cols-1 grid-rows-1 min-h-[360px] sm:min-h-[420px] rounded-2xl border border-white/10 bg-white/[0.02] overflow-hidden">
                 {/* Animated border color overlay */}
                 <div className={cn(
                   "absolute inset-0 rounded-2xl pointer-events-none transition-colors duration-500 z-20",
@@ -613,7 +613,7 @@ export default function StudioPage() {
 
                 {/* Text/Creator Mode Layer */}
                 <div className={cn(
-                  "col-start-1 row-start-1 flex flex-col p-8 space-y-6 transition-opacity duration-300",
+                  "col-start-1 row-start-1 flex flex-col p-4 sm:p-8 space-y-6 transition-opacity duration-300",
                   activeMode === "text" ? "opacity-100 pointer-events-auto z-10" : "opacity-0 pointer-events-none z-0"
                 )}>
                   <div className="flex items-center justify-between">
@@ -1231,11 +1231,11 @@ export default function StudioPage() {
         </div>
 
         {/* System Protocol Description & Pipeline Preview */}
-        <div className="rounded-[2.5rem] bg-white/[0.02] border border-white/5 p-10 mt-12 space-y-12 shadow-inner group/blueprint relative overflow-hidden">
+        <div className="rounded-2xl sm:rounded-[2.5rem] bg-white/[0.02] border border-white/5 p-5 sm:p-10 mt-8 sm:mt-12 space-y-8 sm:space-y-12 shadow-inner group/blueprint relative overflow-hidden">
           <div className="absolute top-0 left-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-[120px] -ml-32 -mt-32" />
 
           <div className="space-y-8 relative z-10">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h3 className="text-[11px] font-black text-indigo-400 uppercase tracking-[0.5em]">HOW MIMIC WORKS</h3>
                 <p className="text-[9px] text-slate-600 uppercase tracking-[0.3em] mt-1">INTENT → EDIT → EXPLANATION</p>
